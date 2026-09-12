@@ -6,7 +6,10 @@
     scoreboard objectives remove stellarity.config.enable_totem_void_saving
     scoreboard objectives remove stellarity.config.dragon_health
     scoreboard objectives remove stellarity.config.shulking_health
-    scoreboard objectives remove stellarity.config.empress_of_light_health
+    scoreboard objectives remove stellarity.config.nighttime_empress_of_light_health
+    scoreboard objectives remove stellarity.config.daytime_empress_of_light_health
+    scoreboard objectives remove stellarity.config.radiant_empress_of_light_health
+    scoreboard objectives remove stellarity.config.harvester_mb_health
     scoreboard objectives remove stellarity.config.allow_disenchanting
     scoreboard objectives remove stellarity.config.track_loop_delay.empress_of_light
     scoreboard objectives remove stellarity.config.track_loop_delay.dragon

@@ -76,7 +76,6 @@
       "element": {
         "element_type": "minecraft:feature_pool_element",
         "projection": "rigid",
-        "override_liquid_settings": "ignore_waterlogging",
         "feature": "minecraft:oak"
       }
     },
@@ -85,7 +84,6 @@
       "element": {
         "element_type": "minecraft:feature_pool_element",
         "projection": "rigid",
-        "override_liquid_settings": "ignore_waterlogging",
         "feature": "minecraft:pile_hay"
       }
     },
@@ -94,7 +92,6 @@
       "element": {
         "element_type": "minecraft:feature_pool_element",
         "projection": "rigid",
-        "override_liquid_settings": "ignore_waterlogging",
         "feature": "minecraft:pile_melon"
       }
     },
@@ -103,7 +100,6 @@
       "element": {
         "element_type": "minecraft:feature_pool_element",
         "projection": "rigid",
-        "override_liquid_settings": "ignore_waterlogging",
         "feature": "minecraft:pile_pumpkin"
       }
     }

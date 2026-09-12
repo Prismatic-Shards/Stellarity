@@ -1,8 +1,8 @@
 {
   "id": "stellarity",
   "pack": {
-    "pack_format": 118,
-    "max_format": 118,
+    "pack_format": 94,
+    "max_format": 999,
     "min_format": 94,
     "description": [
       {

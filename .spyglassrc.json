@@ -1,0 +1,48 @@
+{
+    "env": {
+        "dependencies": [
+            "@vanilla-datapack",
+            "@vanilla-resourcepack",
+            "@vanilla-mcdoc"
+        ],
+        "exclude": [
+            "**/.*/**",
+            "**/node_modules/**",
+            "**/__pycache__/**",
+            "**/overlay_*/**",
+            "resource_pack/**",
+            "**/resource_pack/**",
+            "nullscape_compat/**",
+            "**/nullscape_compat/**"
+        ]
+    },
+    "lint": {
+        "nbtTypeCheck": "loosely",
+        "nbtArrayLengthCheck": true,
+        "undeclaredSymbol": [
+            {
+                "if": {
+                    "category": "advancement",
+                    "pattern": "^[^/:]+$"
+                },
+                "then": {
+                    "declare": "public"
+                }
+            },
+            {
+                "if": {
+                    "category": [
+                        "attribute_modifier",
+                        "attribute_modifier_uuid",
+                        "tag",
+                        "score_holder",
+                        "translation_key"
+                    ]
+                },
+                "then": {
+                    "declare": "public"
+                }
+            }
+        ]
+    }
+}
