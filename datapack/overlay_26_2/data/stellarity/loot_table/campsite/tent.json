@@ -164,7 +164,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "value": "stellarity:item/explorer_map/village"
+          "value": "stellarity:item/maps/village"
         }
       ]
     },

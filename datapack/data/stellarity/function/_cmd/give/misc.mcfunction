@@ -1,7 +1,7 @@
-loot give @s loot stellarity:item/explorer_map/end_city
-loot give @s loot stellarity:item/explorer_map/village
-loot give @s loot stellarity:item/explorer_map/chapel_of_light
-loot give @s loot stellarity:item/explorer_map/floating_treasure
+loot give @s loot stellarity:item/maps/end_city
+loot give @s loot stellarity:item/maps/village
+loot give @s loot stellarity:item/maps/chapel_of_light
+loot give @s loot stellarity:item/maps/floating_treasure
 
 loot give @s loot stellarity:item/material/chorus_plating
 loot give @s loot stellarity:item/material/empty_enchanted_book

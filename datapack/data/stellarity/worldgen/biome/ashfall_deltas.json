@@ -53,7 +53,7 @@
 				],
 				"creature": [
 					{
-						"type": "illusioner",
+						"type": "frog",
 						"count": {
 							"type": "minecraft:uniform",
 							"min_inclusive": 1,

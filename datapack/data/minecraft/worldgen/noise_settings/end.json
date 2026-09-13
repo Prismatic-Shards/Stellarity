@@ -1,6 +1,6 @@
 {
   "sea_level": 0,
-  "disable_mob_generation": true,
+  "disable_mob_generation": false,
   "legacy_random_source": false,
   "default_block": "minecraft:end_stone",
   "default_fluid": "minecraft:air",

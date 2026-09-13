@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "stellarity:item/map/chapel_of_light_map"
+  }
+}

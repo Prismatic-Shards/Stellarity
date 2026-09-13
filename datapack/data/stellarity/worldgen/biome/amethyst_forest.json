@@ -48,18 +48,54 @@
         ],
         "creature": [
           {
-            "type": "illusioner",
+            "type": "minecraft:pig",
             "count": {
               "type": "minecraft:uniform",
               "min_inclusive": 1,
               "max_inclusive": 4
             },
-            "weight": 100
+            "weight": 25
+          },
+          {
+            "type": "minecraft:sheep",
+            "count": {
+              "type": "minecraft:uniform",
+              "min_inclusive": 1,
+              "max_inclusive": 4
+            },
+            "weight": 25
+          },
+          {
+            "type": "minecraft:cow",
+            "count": {
+              "type": "minecraft:uniform",
+              "min_inclusive": 1,
+              "max_inclusive": 4
+            },
+            "weight": 25
+          },
+          {
+            "type": "minecraft:chicken",
+            "count": {
+              "type": "minecraft:uniform",
+              "min_inclusive": 1,
+              "max_inclusive": 4
+            },
+            "weight": 25
+          },
+          {
+            "type": "minecraft:wolf",
+            "count": {
+              "type": "minecraft:uniform",
+              "min_inclusive": 1,
+              "max_inclusive": 4
+            },
+            "weight": 20
           }
         ]
       }
     },
-    "gameplay/creature_world_gen_spawn_probability": 0
+    "gameplay/creature_world_gen_spawn_probability": 0.2
   },
   "effects": {
     "water_color": 15979007,

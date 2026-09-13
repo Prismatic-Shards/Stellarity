@@ -1,0 +1,50 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:filled_map",
+          "modifier": [
+            {
+              "type": "minecraft:exploration_map",
+              "destination": "#stellarity:exploration_map/end_city",
+              "decoration": "banner_purple",
+              "zoom": 3,
+              "search_radius": 96,
+              "skip_existing_chunks": false
+            },
+            {
+              "type": "minecraft:set_name",
+              "name": {
+                "translate": "filled_map.stellarity.end_city",
+                "italic": false
+              }
+            },
+            {
+              "type": "minecraft:set_lore",
+              "mode": "replace_all",
+              "lore": [
+                "",
+                {
+                  "translate": "Stellarity",
+                  "color": "#eaa7ff",
+                  "font": "stellarity:tooltip",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:rarity": "rare",
+                "minecraft:item_model": "stellarity:end_city_map"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

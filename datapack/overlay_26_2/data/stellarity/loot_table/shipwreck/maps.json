@@ -6,11 +6,11 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "value": "stellarity:item/explorer_map/end_city"
+          "value": "stellarity:item/maps/end_city"
         },
         {
           "type": "minecraft:loot_table",
-          "value": "stellarity:item/explorer_map/floating_treasure"
+          "value": "stellarity:item/maps/floating_treasure"
         }
       ]
     },
