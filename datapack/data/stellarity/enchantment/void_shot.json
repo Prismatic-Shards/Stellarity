@@ -61,8 +61,7 @@
                       "type": "minecraft:fixed",
                       "name": "#difficulty"
                     },
-                    "score": "stellarity.misc",
-                    "scale": 1
+                    "score": "stellarity.misc"
                   },
                   "test": 3
                 },

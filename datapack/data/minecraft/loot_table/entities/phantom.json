@@ -6,7 +6,7 @@
         "type": "minecraft:score",
         "target": "this",
         "score": "stellarity.phantom.size",
-        "scale": 1
+        "fallback": 1
       },
       "bonus_rolls": 0,
       "entries": [
@@ -41,7 +41,7 @@
         "type": "minecraft:score",
         "target": "this",
         "score": "stellarity.phantom.size",
-        "scale": 1
+        "fallback": 1
       },
       "bonus_rolls": 0,
       "entries": [

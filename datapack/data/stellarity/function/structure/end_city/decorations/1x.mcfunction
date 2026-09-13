@@ -6,52 +6,52 @@ execute if score #random stellarity.misc matches 1 run \
 	setblock ~ ~ ~ decorated_pot
 
 execute if score #random stellarity.misc matches 2 run \
-	setblock ~ ~ ~ decorated_pot[facing=east]{LootTable:"stellarity:end_city/pot",sherds:["minecraft:brick","minecraft:brick","minecraft:brick","minecraft:burn_pottery_sherd"]}
+	setblock ~ ~ ~ decorated_pot[facing=east]{LootTable:"stellarity:end_city/pot",sherds:{back:"minecraft:brick",left:"minecraft:brick",right:"minecraft:brick",front:"minecraft:burn_pottery_sherd"}}
 
 execute if score #random stellarity.misc matches 3 run \
-	setblock ~ ~ ~ decorated_pot[facing=west]{LootTable:"stellarity:end_city/pot",sherds:["minecraft:brick","minecraft:brick","minecraft:brick","minecraft:burn_pottery_sherd"]}
+	setblock ~ ~ ~ decorated_pot[facing=west]{LootTable:"stellarity:end_city/pot",sherds:{back:"minecraft:brick",left:"minecraft:brick",right:"minecraft:brick",front:"minecraft:burn_pottery_sherd"}}
 
 execute if score #random stellarity.misc matches 4 run \
-	setblock ~ ~ ~ decorated_pot[facing=north]{LootTable:"stellarity:end_city/pot",sherds:["minecraft:brick","minecraft:brick","minecraft:brick","minecraft:burn_pottery_sherd"]}
+	setblock ~ ~ ~ decorated_pot[facing=north]{LootTable:"stellarity:end_city/pot",sherds:{back:"minecraft:brick",left:"minecraft:brick",right:"minecraft:brick",front:"minecraft:burn_pottery_sherd"}}
 
 execute if score #random stellarity.misc matches 5 run \
-	setblock ~ ~ ~ decorated_pot[facing=south]{LootTable:"stellarity:end_city/pot",sherds:["minecraft:brick","minecraft:brick","minecraft:brick","minecraft:burn_pottery_sherd"]}
+	setblock ~ ~ ~ decorated_pot[facing=south]{LootTable:"stellarity:end_city/pot",sherds:{back:"minecraft:brick",left:"minecraft:brick",right:"minecraft:brick",front:"minecraft:burn_pottery_sherd"}}
 
 execute if score #random stellarity.misc matches 6 run \
-	setblock ~ ~ ~ decorated_pot[facing=east]{LootTable:"stellarity:end_city/pot",sherds:["minecraft:brick","minecraft:brick","minecraft:brick","minecraft:blade_pottery_sherd"]}
+	setblock ~ ~ ~ decorated_pot[facing=east]{LootTable:"stellarity:end_city/pot",sherds:{back:"minecraft:brick",left:"minecraft:brick",right:"minecraft:brick",front:"minecraft:blade_pottery_sherd"}}
 
 execute if score #random stellarity.misc matches 7 run \
-	setblock ~ ~ ~ decorated_pot[facing=west]{LootTable:"stellarity:end_city/pot",sherds:["minecraft:brick","minecraft:brick","minecraft:brick","minecraft:blade_pottery_sherd"]}
+	setblock ~ ~ ~ decorated_pot[facing=west]{LootTable:"stellarity:end_city/pot",sherds:{back:"minecraft:brick",left:"minecraft:brick",right:"minecraft:brick",front:"minecraft:blade_pottery_sherd"}}
 
 execute if score #random stellarity.misc matches 8 run \
-	setblock ~ ~ ~ decorated_pot[facing=north]{LootTable:"stellarity:end_city/pot",sherds:["minecraft:brick","minecraft:brick","minecraft:brick","minecraft:blade_pottery_sherd"]}
+	setblock ~ ~ ~ decorated_pot[facing=north]{LootTable:"stellarity:end_city/pot",sherds:{back:"minecraft:brick",left:"minecraft:brick",right:"minecraft:brick",front:"minecraft:blade_pottery_sherd"}}
 
 execute if score #random stellarity.misc matches 9 run \
-	setblock ~ ~ ~ decorated_pot[facing=south]{LootTable:"stellarity:end_city/pot",sherds:["minecraft:brick","minecraft:brick","minecraft:brick","minecraft:blade_pottery_sherd"]}
+	setblock ~ ~ ~ decorated_pot[facing=south]{LootTable:"stellarity:end_city/pot",sherds:{back:"minecraft:brick",left:"minecraft:brick",right:"minecraft:brick",front:"minecraft:blade_pottery_sherd"}}
 
 execute if score #random stellarity.misc matches 10 run \
-	setblock ~ ~ ~ decorated_pot[facing=east]{LootTable:"stellarity:end_city/pot",sherds:["minecraft:brick","minecraft:brick","minecraft:brick","minecraft:brewer_pottery_sherd"]}
+	setblock ~ ~ ~ decorated_pot[facing=east]{LootTable:"stellarity:end_city/pot",sherds:{back:"minecraft:brick",left:"minecraft:brick",right:"minecraft:brick",front:"minecraft:brewer_pottery_sherd"}}
 
 execute if score #random stellarity.misc matches 11 run \
-	setblock ~ ~ ~ decorated_pot[facing=west]{LootTable:"stellarity:end_city/pot",sherds:["minecraft:brick","minecraft:brick","minecraft:brick","minecraft:brewer_pottery_sherd"]}
+	setblock ~ ~ ~ decorated_pot[facing=west]{LootTable:"stellarity:end_city/pot",sherds:{back:"minecraft:brick",left:"minecraft:brick",right:"minecraft:brick",front:"minecraft:brewer_pottery_sherd"}}
 
 execute if score #random stellarity.misc matches 12 run \
-	setblock ~ ~ ~ decorated_pot[facing=north]{LootTable:"stellarity:end_city/pot",sherds:["minecraft:brick","minecraft:brick","minecraft:brick","minecraft:brewer_pottery_sherd"]}
+	setblock ~ ~ ~ decorated_pot[facing=north]{LootTable:"stellarity:end_city/pot",sherds:{back:"minecraft:brick",left:"minecraft:brick",right:"minecraft:brick",front:"minecraft:brewer_pottery_sherd"}}
 
 execute if score #random stellarity.misc matches 13 run \
-	setblock ~ ~ ~ decorated_pot[facing=south]{LootTable:"stellarity:end_city/pot",sherds:["minecraft:brick","minecraft:brick","minecraft:brick","minecraft:brewer_pottery_sherd"]}
+	setblock ~ ~ ~ decorated_pot[facing=south]{LootTable:"stellarity:end_city/pot",sherds:{back:"minecraft:brick",left:"minecraft:brick",right:"minecraft:brick",front:"minecraft:brewer_pottery_sherd"}}
 
 execute if score #random stellarity.misc matches 14 run \
-	setblock ~ ~ ~ decorated_pot[facing=east]{LootTable:"stellarity:end_city/pot",sherds:["minecraft:brick","minecraft:brick","minecraft:brick","minecraft:skull_pottery_sherd"]}
+	setblock ~ ~ ~ decorated_pot[facing=east]{LootTable:"stellarity:end_city/pot",sherds:{back:"minecraft:brick",left:"minecraft:brick",right:"minecraft:brick",front:"minecraft:skull_pottery_sherd"}}
 
 execute if score #random stellarity.misc matches 15 run \
-	setblock ~ ~ ~ decorated_pot[facing=west]{LootTable:"stellarity:end_city/pot",sherds:["minecraft:brick","minecraft:brick","minecraft:brick","minecraft:skull_pottery_sherd"]}
+	setblock ~ ~ ~ decorated_pot[facing=west]{LootTable:"stellarity:end_city/pot",sherds:{back:"minecraft:brick",left:"minecraft:brick",right:"minecraft:brick",front:"minecraft:skull_pottery_sherd"}}
 
 execute if score #random stellarity.misc matches 16 run \
-	setblock ~ ~ ~ decorated_pot[facing=north]{LootTable:"stellarity:end_city/pot",sherds:["minecraft:brick","minecraft:brick","minecraft:brick","minecraft:skull_pottery_sherd"]}
+	setblock ~ ~ ~ decorated_pot[facing=north]{LootTable:"stellarity:end_city/pot",sherds:{back:"minecraft:brick",left:"minecraft:brick",right:"minecraft:brick",front:"minecraft:skull_pottery_sherd"}}
 
 execute if score #random stellarity.misc matches 17 run \
-	setblock ~ ~ ~ decorated_pot[facing=south]{LootTable:"stellarity:end_city/pot",sherds:["minecraft:brick","minecraft:brick","minecraft:brick","minecraft:skull_pottery_sherd"]}
+	setblock ~ ~ ~ decorated_pot[facing=south]{LootTable:"stellarity:end_city/pot",sherds:{back:"minecraft:brick",left:"minecraft:brick",right:"minecraft:brick",front:"minecraft:skull_pottery_sherd"}}
 
 execute if score #random stellarity.misc matches 18..27 run \
 	setblock ~ ~ ~ barrel[facing=up]{LootTable:"stellarity:end_city/junk"}

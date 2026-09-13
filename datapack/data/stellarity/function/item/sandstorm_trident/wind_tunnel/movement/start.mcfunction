@@ -4,7 +4,7 @@ scoreboard players operation #current_segment stellarity.misc = @n[type=area_eff
 scoreboard players remove #current_segment stellarity.misc 1
 
 # execute at @n[type=area_effect_cloud,tag=stellarity.wind_tunnel.activated] run 
-  summon block_display ~ ~ ~ {block_state:{id:"air"},Tags:["stellarity.sandstorm_trident","smithed.entity","smithed.strict"],start_interpolation:-1,teleport_duration:1}
+  summon block_display ~ ~ ~ {block_state:{id:"minecraft:air"},Tags:["stellarity.sandstorm_trident","smithed.entity","smithed.strict"],start_interpolation:-1,teleport_duration:1}
 
 ride @s mount @n[type=block_display,tag=stellarity.sandstorm_trident]
 

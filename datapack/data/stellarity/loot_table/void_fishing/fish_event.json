@@ -28,8 +28,7 @@
             "type": "minecraft:fixed",
             "name": "#luck_of_the_sea"
           },
-          "score": "stellarity.misc",
-          "scale": 1
+          "score": "stellarity.misc"
         },
         "test": 0
       }
@@ -61,8 +60,7 @@
             "type": "minecraft:fixed",
             "name": "#luck_of_the_sea"
           },
-          "score": "stellarity.misc",
-          "scale": 1
+          "score": "stellarity.misc"
         },
         "test": 1
       }
@@ -94,8 +92,7 @@
             "type": "minecraft:fixed",
             "name": "#luck_of_the_sea"
           },
-          "score": "stellarity.misc",
-          "scale": 1
+          "score": "stellarity.misc"
         },
         "test": 2
       }
@@ -127,8 +124,7 @@
             "type": "minecraft:fixed",
             "name": "#luck_of_the_sea"
           },
-          "score": "stellarity.misc",
-          "scale": 1
+          "score": "stellarity.misc"
         },
         "test": 3
       }
@@ -160,8 +156,7 @@
             "type": "minecraft:fixed",
             "name": "#luck_of_the_sea"
           },
-          "score": "stellarity.misc",
-          "scale": 1
+          "score": "stellarity.misc"
         },
         "test": 4
       }
@@ -193,8 +188,7 @@
             "type": "minecraft:fixed",
             "name": "#luck_of_the_sea"
           },
-          "score": "stellarity.misc",
-          "scale": 1
+          "score": "stellarity.misc"
         },
         "test": 5
       }
@@ -226,8 +220,7 @@
             "type": "minecraft:fixed",
             "name": "#luck_of_the_sea"
           },
-          "score": "stellarity.misc",
-          "scale": 1
+          "score": "stellarity.misc"
         },
         "test": 6
       }
@@ -259,8 +252,7 @@
             "type": "minecraft:fixed",
             "name": "#luck_of_the_sea"
           },
-          "score": "stellarity.misc",
-          "scale": 1
+          "score": "stellarity.misc"
         },
         "test": 7
       }
@@ -292,8 +284,7 @@
             "type": "minecraft:fixed",
             "name": "#luck_of_the_sea"
           },
-          "score": "stellarity.misc",
-          "scale": 1
+          "score": "stellarity.misc"
         },
         "test": 8
       }
@@ -325,8 +316,7 @@
             "type": "minecraft:fixed",
             "name": "#luck_of_the_sea"
           },
-          "score": "stellarity.misc",
-          "scale": 1
+          "score": "stellarity.misc"
         },
         "test": 9
       }
@@ -358,8 +348,7 @@
             "type": "minecraft:fixed",
             "name": "#luck_of_the_sea"
           },
-          "score": "stellarity.misc",
-          "scale": 1
+          "score": "stellarity.misc"
         },
         "test": {
           "min": 10
