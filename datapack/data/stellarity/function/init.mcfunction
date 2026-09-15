@@ -255,6 +255,7 @@
             scoreboard objectives add stellarity.item.tamaris.math.health.percentage dummy
             scoreboard objectives add stellarity.item.tamaris.animation.progress dummy
             scoreboard objectives add stellarity.item.tamaris.execute_cooldown dummy
+            scoreboard objectives add stellarity.item.tamaris.safe_cooldown dummy
 
           # Chorus Dagger
             scoreboard objectives add stellarity.item.chorus_dagger.cooldown dummy

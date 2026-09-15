@@ -7,5 +7,5 @@ scoreboard players operation @s stellarity.item.tamaris.math.health.percentage /
 tag @s remove stellarity.item.tamaris.executable
 
 # Other mobs
-  execute as @s if score @s[type=!#kohara:boss,tag=!kohara.boss] stellarity.item.tamaris.math.health.percentage matches ..25 run tag @s add stellarity.item.tamaris.executable
+  execute as @s[type=!#kohara:boss,tag=!kohara.boss] unless score @s stellarity.item.tamaris.safe_cooldown matches 1.. if score @s stellarity.item.tamaris.math.health.percentage matches ..25 run tag @s add stellarity.item.tamaris.executable
 
