@@ -34,8 +34,8 @@ execute if score #stellarity.config stellarity.config.enable_pho matches 0 run d
 execute if score #stellarity.config stellarity.config.enable_prismatic_sushi matches 1 run data modify storage stellarity:temp stellarity.config.item.consumables.food.dialog.inputs[{key:"prismatic_sushi"}].options[1].initial set value true
 execute if score #stellarity.config stellarity.config.enable_prismatic_sushi matches 0 run data modify storage stellarity:temp stellarity.config.item.consumables.food.dialog.inputs[{key:"prismatic_sushi"}].options[1].initial set value false
 
-execute if score #stellarity.config stellarity.config.enable_shepherds_pie matches 1 run data modify storage stellarity:temp stellarity.config.item.consumables.food.dialog.inputs[{key:"shepherds_pie"}].options[1].initial set value true
-execute if score #stellarity.config stellarity.config.enable_shepherds_pie matches 0 run data modify storage stellarity:temp stellarity.config.item.consumables.food.dialog.inputs[{key:"shepherds_pie"}].options[1].initial set value false
+execute if score #stellarity.config stellarity.config.enable_shepherd_pie matches 1 run data modify storage stellarity:temp stellarity.config.item.consumables.food.dialog.inputs[{key:"shepherd_pie"}].options[1].initial set value true
+execute if score #stellarity.config stellarity.config.enable_shepherd_pie matches 0 run data modify storage stellarity:temp stellarity.config.item.consumables.food.dialog.inputs[{key:"shepherd_pie"}].options[1].initial set value false
 
 execute if score #stellarity.config stellarity.config.enable_shulker_body matches 1 run data modify storage stellarity:temp stellarity.config.item.consumables.food.dialog.inputs[{key:"shulker_body"}].options[1].initial set value true
 execute if score #stellarity.config stellarity.config.enable_shulker_body matches 0 run data modify storage stellarity:temp stellarity.config.item.consumables.food.dialog.inputs[{key:"shulker_body"}].options[1].initial set value false

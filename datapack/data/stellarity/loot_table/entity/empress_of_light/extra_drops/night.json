@@ -56,8 +56,18 @@
         }
       ],
       "condition": {
-        "type": "minecraft:random_chance",
-        "chance": 0.2
+        "type": "all_of",
+        "terms": [
+          {
+            "type": "minecraft:random_chance",
+            "chance": 0.2
+          },
+          {
+            "type": "int_value_check",
+            "value": "stellarity:item_check/pixie_in_a_jar",
+            "test": 1
+          }
+        ]
       }
     },
     {

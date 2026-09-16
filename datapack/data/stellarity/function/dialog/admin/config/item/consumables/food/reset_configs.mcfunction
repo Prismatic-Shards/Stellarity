@@ -10,7 +10,7 @@ scoreboard players set #stellarity.config stellarity.config.enable_grilled_ender
 scoreboard players set #stellarity.config stellarity.config.enable_loaf_of_plenty 1
 scoreboard players set #stellarity.config stellarity.config.enable_pho 1
 scoreboard players set #stellarity.config stellarity.config.enable_prismatic_sushi 1
-scoreboard players set #stellarity.config stellarity.config.enable_shepherds_pie 1
+scoreboard players set #stellarity.config stellarity.config.enable_shepherd_pie 1
 scoreboard players set #stellarity.config stellarity.config.enable_shulker_body 1
 scoreboard players set #stellarity.config stellarity.config.enable_sushi 1
 

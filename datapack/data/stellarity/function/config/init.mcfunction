@@ -101,7 +101,7 @@ execute unless score #stellarity.config stellarity.config.enable_grilled_enderma
 execute unless score #stellarity.config stellarity.config.enable_loaf_of_plenty matches ..2147483647 run scoreboard players set #stellarity.config stellarity.config.enable_loaf_of_plenty 1
 execute unless score #stellarity.config stellarity.config.enable_pho matches ..2147483647 run scoreboard players set #stellarity.config stellarity.config.enable_pho 1
 execute unless score #stellarity.config stellarity.config.enable_prismatic_sushi matches ..2147483647 run scoreboard players set #stellarity.config stellarity.config.enable_prismatic_sushi 1
-execute unless score #stellarity.config stellarity.config.enable_shepherds_pie matches ..2147483647 run scoreboard players set #stellarity.config stellarity.config.enable_shepherds_pie 1
+execute unless score #stellarity.config stellarity.config.enable_shepherd_pie matches ..2147483647 run scoreboard players set #stellarity.config stellarity.config.enable_shepherd_pie 1
 execute unless score #stellarity.config stellarity.config.enable_shulker_body matches ..2147483647 run scoreboard players set #stellarity.config stellarity.config.enable_shulker_body 1
 execute unless score #stellarity.config stellarity.config.enable_sushi matches ..2147483647 run scoreboard players set #stellarity.config stellarity.config.enable_sushi 1
 

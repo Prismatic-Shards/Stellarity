@@ -11,6 +11,5 @@ execute if score @s stellarity.misc2 matches 9.. run function stellarity:entity/
 execute if score @s stellarity.misc2 matches 1.. run function stellarity:entity/pixie/particles/hurt
 execute if score @s stellarity.misc2 matches 0 run function stellarity:entity/pixie/particles/regular
 
->>>>>>> eea1c5bdceb883085fdfa514809e08c3de048370
 effect clear @s glowing
 

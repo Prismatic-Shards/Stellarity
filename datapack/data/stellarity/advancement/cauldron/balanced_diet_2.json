@@ -159,13 +159,13 @@
         }
       }
     },
-    "shepherds_pie": {
+    "shepherd_pie": {
       "trigger": "minecraft:consume_item",
       "conditions": {
         "item": {
           "components": {
             "minecraft:custom_data": {
-              "stellarity:item": "shepherds_pie"
+              "stellarity:item": "shepherd_pie"
             }
           }
         }
@@ -376,7 +376,7 @@
     ["grilled_enderman_flesh"],
     ["pho"],
     ["prismatic_sushi"],
-    ["shepherds_pie"],
+    ["shepherd_pie"],
     ["shulker_body"],
     ["sushi"],
     ["bubblefish"],

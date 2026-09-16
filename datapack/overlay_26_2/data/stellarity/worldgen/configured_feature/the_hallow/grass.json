@@ -62,12 +62,7 @@
         {
           "weight": 8,
           "data": {
-            "Name": "minecraft:acacia_leaves",
-            "Properties": {
-              "distance": "1",
-              "persistent": "true",
-              "waterlogged": "false"
-            }
+            "Name": "minecraft:bush"
           }
         },
         {

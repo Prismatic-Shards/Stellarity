@@ -37,7 +37,8 @@
 	"effects": {
 		"water_color": 4445678,
 		"grass_color": 16699956,
-		"foliage_color": 16699956
+		"foliage_color": 16699956,
+		"dry_foliage_color": 12426798
 	},
 	"spawners": {
 		"monster": [

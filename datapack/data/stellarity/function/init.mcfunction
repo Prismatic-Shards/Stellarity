@@ -134,7 +134,7 @@
       scoreboard objectives add stellarity.config.enable_loaf_of_plenty dummy
       scoreboard objectives add stellarity.config.enable_pho dummy
       scoreboard objectives add stellarity.config.enable_prismatic_sushi dummy
-      scoreboard objectives add stellarity.config.enable_shepherds_pie dummy
+      scoreboard objectives add stellarity.config.enable_shepherd_pie dummy
       scoreboard objectives add stellarity.config.enable_shulker_body dummy
       scoreboard objectives add stellarity.config.enable_sushi dummy
 

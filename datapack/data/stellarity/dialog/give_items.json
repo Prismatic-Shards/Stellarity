@@ -1760,17 +1760,17 @@
       "label": [
         {
           "atlas": "minecraft:items",
-          "sprite": "stellarity:item/food/shepherds_pie"
+          "sprite": "stellarity:item/food/shepherd_pie"
         }
       ],
       "tooltip": {
-        "translate": "item.stellarity.shepherds_pie",
+        "translate": "item.stellarity.shepherd_pie",
         "fallback": "Shepherd's Pie"
       },
       "width": 20,
       "action": {
         "type": "minecraft:run_command",
-        "command": "loot give @s loot stellarity:item/food/shepherds_pie"
+        "command": "loot give @s loot stellarity:item/food/shepherd_pie"
       }
     },
     {

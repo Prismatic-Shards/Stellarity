@@ -10,7 +10,7 @@ $scoreboard players set #stellarity.config stellarity.config.enable_grilled_ende
 $scoreboard players set #stellarity.config stellarity.config.enable_loaf_of_plenty $(loaf_of_plenty)
 $scoreboard players set #stellarity.config stellarity.config.enable_pho $(pho)
 $scoreboard players set #stellarity.config stellarity.config.enable_prismatic_sushi $(prismatic_sushi)
-$scoreboard players set #stellarity.config stellarity.config.enable_shepherds_pie $(shepherds_pie)
+$scoreboard players set #stellarity.config stellarity.config.enable_shepherd_pie $(shepherd_pie)
 $scoreboard players set #stellarity.config stellarity.config.enable_shulker_body $(shulker_body)
 $scoreboard players set #stellarity.config stellarity.config.enable_sushi $(sushi)
 

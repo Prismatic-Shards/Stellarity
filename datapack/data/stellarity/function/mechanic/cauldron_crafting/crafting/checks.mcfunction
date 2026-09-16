@@ -27,7 +27,7 @@
   execute if data storage stellarity:temp {cauldron_crafting:{ingredients:["golden_chorus_fruit","minecraft:bowl","grilled_enderman_flesh"],amount:3}} run function stellarity:mechanic/cauldron_crafting/crafting/check_scoreboards {scoreboard:"enable_pho", macro:"loot_table", loot:"stellarity:item/food/pho",breath:"4"}
 
 # Shepherd's Pie
-  execute if data storage stellarity:temp {cauldron_crafting:{ingredients:["shulker_body","minecraft:golden_carrot","minecraft:baked_potato","minecraft:chorus_fruit","minecraft:chorus_fruit"],amount:5}} run function stellarity:mechanic/cauldron_crafting/crafting/check_scoreboards {scoreboard:"enable_shepherds_pie", macro:"loot_table", loot:"stellarity:item/food/shepherds_pie",breath:"5"}
+  execute if data storage stellarity:temp {cauldron_crafting:{ingredients:["shulker_body","minecraft:golden_carrot","minecraft:baked_potato","minecraft:chorus_fruit","minecraft:chorus_fruit"],amount:5}} run function stellarity:mechanic/cauldron_crafting/crafting/check_scoreboards {scoreboard:"enable_shepherd_pie", macro:"loot_table", loot:"stellarity:item/food/shepherd_pie",breath:"5"}
 
 # Sushi
   execute if data storage stellarity:temp {cauldron_crafting:{ingredients:["ender_koi","minecraft:dried_kelp"],amount:2}} run function stellarity:mechanic/cauldron_crafting/crafting/check_scoreboards {scoreboard:"enable_sushi", macro:"loot_table", loot:"stellarity:item/food/sushi",breath:"1"}

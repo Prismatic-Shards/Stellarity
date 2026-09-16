@@ -38,6 +38,7 @@
     "water_color": 5818862,
     "grass_color": 9764856,
     "foliage_color": 11403007,
+    "dry_foliage_color": 6001813,
     "grass_color_modifier": "none"
   },
   "spawners": {

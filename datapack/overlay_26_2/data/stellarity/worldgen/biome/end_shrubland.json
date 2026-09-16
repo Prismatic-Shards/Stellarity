@@ -2,7 +2,7 @@
 	"temperature": 0.8,
 	"downfall": 0.4,
 	"has_precipitation": false,
-	"creature_spawn_probability": 0,
+	"creature_spawn_probability": 0.2,
 	"attributes": {
 		"visual/sky_color": 0,
 		"visual/fog_color": 0,
@@ -37,7 +37,8 @@
 	"effects": {
 		"water_color": 4445678,
 		"grass_color": 16446345,
-		"foliage_color": 16772469
+		"foliage_color": 16772469,
+		"dry_foliage_color": 13154646
 	},
 	"spawners": {
 		"monster": [
@@ -62,10 +63,34 @@
 		],
 		"creature": [
 			{
-				"type": "illusioner",
+				"type": "pig",
 				"maxCount": 4,
 				"minCount": 1,
-				"weight": 100
+				"weight": 20
+			},
+			{
+				"type": "cow",
+				"maxCount": 4,
+				"minCount": 1,
+				"weight": 20
+			},
+			{
+				"type": "sheep",
+				"maxCount": 4,
+				"minCount": 1,
+				"weight": 20
+			},
+			{
+				"type": "chicken",
+				"maxCount": 4,
+				"minCount": 1,
+				"weight": 20
+			},
+			{
+				"type": "wolf",
+				"maxCount": 4,
+				"minCount": 1,
+				"weight": 20
 			}
 		]
 	},

@@ -121,7 +121,7 @@
     },
     {
       "type": "bitmap",
-      "file": "stellarity:item/food/shepherds_pie.png",
+      "file": "stellarity:item/food/shepherd_pie.png",
       "ascent": 32,
       "height": 32,
       "chars": ["3"]

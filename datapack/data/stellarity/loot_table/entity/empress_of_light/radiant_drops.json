@@ -11,14 +11,7 @@
       ],
       "condition": {
         "type": "int_value_check",
-        "value": {
-          "type": "minecraft:score",
-          "target": {
-            "type": "minecraft:fixed",
-            "name": "#stellarity.config"
-          },
-          "score": "stellarity.config.enable_radiant_jewel"
-        },
+        "value": "stellarity:item_check/radiant_jewel",
         "test": 1
       }
     },
@@ -32,14 +25,7 @@
       ],
       "condition": {
         "type": "int_value_check",
-        "value": {
-          "type": "minecraft:score",
-          "target": {
-            "type": "minecraft:fixed",
-            "name": "#stellarity.config"
-          },
-          "score": "stellarity.config.enable_empress_wings"
-        },
+        "value": "stellarity:item_check/empress_wings",
         "test": 1
       }
     },
@@ -60,14 +46,7 @@
           },
           {
             "type": "int_value_check",
-            "value": {
-              "type": "minecraft:score",
-              "target": {
-                "type": "minecraft:fixed",
-                "name": "#stellarity.config"
-              },
-              "score": "stellarity.config.enable_kaleidoscope"
-            },
+            "value": "stellarity:item_check/kaleidoscope",
             "test": 1
           }
         ]
@@ -90,14 +69,7 @@
           },
           {
             "type": "int_value_check",
-            "value": {
-              "type": "minecraft:score",
-              "target": {
-                "type": "minecraft:fixed",
-                "name": "#stellarity.config"
-              },
-              "score": "stellarity.config.enable_pixie_in_a_jar"
-            },
+            "value": "stellarity:item_check/pixie_in_a_jar",
             "test": 1
           }
         ]

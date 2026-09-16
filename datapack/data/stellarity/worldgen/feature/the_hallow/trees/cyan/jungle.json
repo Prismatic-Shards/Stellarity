@@ -1,67 +1,67 @@
 {
   "type": "minecraft:tree",
-    "ignore_vines": true,
-    "minimum_size": {
-      "type": "minecraft:two_layers_feature_size",
-      "limit": 1,
-      "lower_size": 0,
-      "upper_size": 1
-    },
-    "below_trunk_provider": {
-      "type": "minecraft:simple",
-      "state": {
-        "id": "minecraft:dirt"
+  "ignore_vines": true,
+  "minimum_size": {
+    "type": "minecraft:two_layers_feature_size",
+    "limit": 1,
+    "lower_size": 0,
+    "upper_size": 1
+  },
+  "below_trunk_provider": {
+    "type": "minecraft:simple",
+    "state": {
+      "id": "minecraft:dirt"
+    }
+  },
+  "trunk_provider": {
+    "type": "minecraft:simple",
+    "state": {
+      "id": "minecraft:stripped_jungle_log",
+      "properties": {
+        "axis": "y"
       }
-    },
-    "trunk_provider": {
-      "type": "minecraft:simple",
-      "state": {
-        "id": "minecraft:stripped_jungle_log",
-        "properties": {
-          "axis": "y"
-        }
-      }
-    },
-    "foliage_provider": {
-      "type": "minecraft:weighted",
-      "entries": [
-        {
-          "weight": 5,
-          "data": {
-            "id": "minecraft:oak_leaves",
-            "properties": {
-              "persistent": "true"
-            }
+    }
+  },
+  "foliage_provider": {
+    "type": "minecraft:weighted",
+    "entries": [
+      {
+        "weight": 5,
+        "data": {
+          "id": "minecraft:oak_leaves",
+          "properties": {
+            "persistent": "true"
           }
         }
-      ]
+      }
+    ]
+  },
+  "trunk_placer": {
+    "type": "minecraft:mega_jungle_trunk_placer",
+    "base_height": 12,
+    "height_rand_a": 7,
+    "height_rand_b": 10
+  },
+  "foliage_placer": {
+    "type": "minecraft:random_spread_foliage_placer",
+    "radius": {
+      "type": "minecraft:uniform",
+      "min_inclusive": 3,
+      "max_inclusive": 7
     },
-    "trunk_placer": {
-      "type": "minecraft:mega_jungle_trunk_placer",
-      "base_height": 12,
-      "height_rand_a": 7,
-      "height_rand_b": 10
+    "offset": {
+      "type": "minecraft:uniform",
+      "min_inclusive": 0,
+      "max_inclusive": 12
     },
-    "foliage_placer": {
-      "type": "minecraft:random_spread_foliage_placer",
-      "radius": {
-        "type": "minecraft:uniform",
-        "min_inclusive": 3,
-        "max_inclusive": 7
-      },
-      "offset": {
-        "type": "minecraft:uniform",
-        "min_inclusive": 0,
-        "max_inclusive": 12
-      },
-      "foliage_height": {
-        "type": "minecraft:uniform",
-        "min_inclusive": 6,
-        "max_inclusive": 18
-      },
-      "leaf_placement_attempts": 256
+    "foliage_height": {
+      "type": "minecraft:uniform",
+      "min_inclusive": 6,
+      "max_inclusive": 18
     },
-    "decorators": [
+    "leaf_placement_attempts": 256
+  },
+  "decorators": [
     {
       "type": "minecraft:place_on_ground",
       "block_state_provider": {

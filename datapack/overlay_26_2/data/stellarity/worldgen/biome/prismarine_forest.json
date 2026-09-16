@@ -2,7 +2,7 @@
   "temperature": 0.8,
   "downfall": 0.4,
   "has_precipitation": false,
-  "creature_spawn_probability": 0,
+  "creature_spawn_probability": 0.2,
   "attributes": {
     "visual/sky_color": 0,
     "visual/fog_color": 0,
@@ -38,15 +38,22 @@
     "water_color": 5818862,
     "grass_color": 9764856,
     "foliage_color": 11403007,
+    "dry_foliage_color": 6001813,
     "grass_color_modifier": "none"
   },
   "spawners": {
     "creature": [
       {
-        "type": "illusioner",
+        "type": "frog",
         "maxCount": 4,
         "minCount": 1,
         "weight": 100
+      },
+      {
+        "type": "axolotl",
+        "maxCount": 4,
+        "minCount": 1,
+        "weight": 50
       }
     ]
   },

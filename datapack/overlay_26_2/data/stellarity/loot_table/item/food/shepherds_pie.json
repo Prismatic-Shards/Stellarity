@@ -10,9 +10,9 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_model": "stellarity:shepherds_pie",
+                "minecraft:item_model": "stellarity:shepherd_pie",
                 "minecraft:custom_data": {
-                  "stellarity:item": "shepherds_pie"
+                  "stellarity:item": "shepherd_pie"
                 },
                 "minecraft:food": {
                   "nutrition": 20,
@@ -50,7 +50,7 @@
                 },
                 "rarity": "epic",
                 "minecraft:item_name": {
-                  "translate": "item.stellarity.shepherds_pie"
+                  "translate": "item.stellarity.shepherd_pie"
                 }
               }
             },
@@ -114,7 +114,7 @@
                 ],
                 "",
                 {
-                  "translate": "item.stellarity.shepherds_pie.flavor_text",
+                  "translate": "item.stellarity.shepherd_pie.flavor_text",
                   "color": "#EEEEEE",
                   "italic": true
                 },
