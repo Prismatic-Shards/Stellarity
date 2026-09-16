@@ -2,7 +2,7 @@
   "feature": "stellarity:amethyst_forest/vegetation/patch_grass",
   "placement": [
     {
-      "type": "count_on_every_layer",
+      "type": "minecraft:count_on_every_layer",
       "count": 4
     },
     {

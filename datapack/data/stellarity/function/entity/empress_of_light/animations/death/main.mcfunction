@@ -4,8 +4,7 @@ tp @s ~ ~0.05 ~
 
 particle end_rod ~ ~ ~ 0 0 0 0.35 2
 
-kill @e[type=marker,tag=stellarity.empress_of_light.ethereal_lance]
-kill @e[type=marker,tag=stellarity.empress_of_light.prismatic_bolt]
+execute at @s run function stellarity:entity/empress_of_light/attacks/clear_all
 
 execute if score @s stellarity.empress_of_light.animation matches 1 run playsound entity.vex.death hostile @a[distance=0..] ~ ~ ~ 2.2 1
 

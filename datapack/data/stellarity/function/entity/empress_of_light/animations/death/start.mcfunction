@@ -5,6 +5,8 @@ tag @s add stellarity.empress_of_light.death_animation
 tag @s remove stellarity.empress_of_light.phase_2
 tag @s remove stellarity.empress_of_light.can_attack
 
+execute at @s run function stellarity:entity/empress_of_light/attacks/clear_all
+
 data merge entity @s {Invulnerable:1b}
 
 function #kohara:status_effects/clear_all

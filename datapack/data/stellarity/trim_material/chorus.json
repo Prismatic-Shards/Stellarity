@@ -1,5 +1,6 @@
 {
   "palette_id": "stellarity:trim/chorus",
+  "palette": "stellarity:trim/chorus",
   "description": {
     "color": "#976997",
     "translate": "trim_material.stellarity.chorus"

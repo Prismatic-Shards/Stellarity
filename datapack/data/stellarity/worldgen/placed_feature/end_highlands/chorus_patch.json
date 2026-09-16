@@ -1,5 +1,5 @@
 {
-	"feature": "chorus_plant",
+	"feature": "minecraft:chorus_plant",
 	"placement": [
 		{
 			"type": "minecraft:noise_based_count",

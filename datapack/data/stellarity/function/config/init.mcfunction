@@ -27,6 +27,7 @@ execute unless score #stellarity.config stellarity.config.enable_shulking matche
 execute unless score #stellarity.config stellarity.config.enable_ender_dragon matches ..2147483647 run scoreboard players set #stellarity.config stellarity.config.enable_ender_dragon 1
 execute unless score #stellarity.config stellarity.config.enable_harvester_mb matches ..2147483647 run scoreboard players set #stellarity.config stellarity.config.enable_harvester_mb 1
 execute unless score #stellarity.config stellarity.config.enable_pixie matches ..2147483647 run scoreboard players set #stellarity.config stellarity.config.enable_pixie 1
+execute unless score #stellarity.config stellarity.config.enable_pixie_in_a_jar matches ..2147483647 run scoreboard players set #stellarity.config stellarity.config.enable_pixie_in_a_jar 1
 
 execute unless score #stellarity.config stellarity.config.enable_dragonblade matches ..2147483647 run scoreboard players set #stellarity.config stellarity.config.enable_dragonblade 1
 execute unless score #stellarity.config stellarity.config.enable_harvester matches ..2147483647 run scoreboard players set #stellarity.config stellarity.config.enable_harvester 1

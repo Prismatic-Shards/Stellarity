@@ -2,7 +2,7 @@
   "feature": "stellarity:small_end_islands/bricks_scattered",
   "placement": [
     {
-      "type": "count",
+      "type": "minecraft:count",
       "count": 256
     },
     {

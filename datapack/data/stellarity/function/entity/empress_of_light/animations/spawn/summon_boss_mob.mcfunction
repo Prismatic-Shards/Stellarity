@@ -8,6 +8,9 @@ playsound minecraft:entity.warden.sonic_boom hostile @a[distance=0..] ~ ~1 ~ 0.5
 
 # Vindicator for hitbox and HP
   summon minecraft:vindicator ~ ~-1.5 ~ {NoAI:1b,NoGravity:1b,PersistenceRequired:1b,Silent:1b,active_effects:[{id:"minecraft:invisibility",duration:-1,show_particles:0b}],Tags:["stellarity.empress_of_light","kohara.boss","stellarity.empress_of_light.phase_1","smithed.entity"],Invulnerable:1b,attributes:[{id:"armor",base:12d},{id:"armor_toughness",base:4d},{id:"max_health",base:500d}],equipment:{mainhand:{id:"minecraft:totem_of_undying",count:1},offhand:{id:"minecraft:totem_of_undying",count:1b}},drop_chances:{mainhand:0.0,offhand:0.0}, Health:500f,DeathLootTable:""}
+  execute if entity @s[tag=stellarity.empress_of_light.radiant] run tag @n[type=vindicator,tag=stellarity.empress_of_light] add stellarity.empress_of_light.radiant
+  execute if entity @s[tag=stellarity.empress_of_light.daytime] run tag @n[type=vindicator,tag=stellarity.empress_of_light] add stellarity.empress_of_light.daytime
+  execute if entity @s[tag=stellarity.empress_of_light.nighttime] run tag @n[type=vindicator,tag=stellarity.empress_of_light] add stellarity.empress_of_light.nighttime
 
 # Summon Animated Java model
   execute if entity @s[tag=stellarity.empress_of_light.nighttime] run function stellarity:util/animated_java/eol/summon {args: {animation: 'eol_flying', variant: 'default', start_animation: true}}
@@ -39,5 +42,7 @@ execute if entity @n[type=vindicator,tag=stellarity.empress_of_light.radiant,tag
   execute if score #stellarity.config stellarity.config.boss_status_messages matches 1 if entity @s[tag=stellarity.empress_of_light.nighttime] run tellraw @a ["\n",{"translate":"entity.stellarity.empress_of_light.spawn","with":[{"translate":"entity.stellarity.empress_of_light"}],"color":"#AF4BFF"},"\n"]
   execute if score #stellarity.config stellarity.config.boss_status_messages matches 1 if entity @s[tag=stellarity.empress_of_light.daytime] run tellraw @a ["\n",{"translate":"entity.stellarity.empress_of_light.spawn","with":[{"translate":"entity.stellarity.empress_of_light"}],"color":"#ffea2f"},"\n"]
   execute if score #stellarity.config stellarity.config.boss_status_messages matches 1 if entity @s[tag=stellarity.empress_of_light.radiant] run tellraw @a ["\n",{"translate":"entity.stellarity.empress_of_light.spawn","with":[{"translate":"entity.stellarity.empress_of_light"}],"color":"#ff4b4b"},"\n"]
+
+scoreboard players set #empress_of_light.is_alive stellarity.misc 1
 
 execute as @a run function stellarity:entity/dragon/music/reset

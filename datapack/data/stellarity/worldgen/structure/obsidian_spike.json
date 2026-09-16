@@ -3,7 +3,7 @@
   "biomes": "#stellarity:has_structure/obsidian_spike",
   "step": "surface_structures",
   "spawn_overrides": {},
-  "terrain_adaptation": "beard_box",
+  "terrain_adaptation": "beard_thin",
   "start_pool": "stellarity:obsidian_spikes",
   "size": 1,
   "start_height": {

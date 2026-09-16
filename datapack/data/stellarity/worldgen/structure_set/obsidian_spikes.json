@@ -8,6 +8,10 @@
   "placement": {
     "type": "minecraft:random_spread",
     "salt": 1018075954,
+    "exclusion_zone": {
+      "other_set": "minecraft:end_cities",
+      "chunk_count": 10
+    },
     "frequency": 0.5,
     "spread_type": "linear",
     "spacing": 12,

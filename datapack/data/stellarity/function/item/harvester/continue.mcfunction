@@ -12,10 +12,7 @@
   function stellarity:item/harvester/effects/crack/crack
 
 ## Item modifier part thingy
-  # Make the sword fireproof after reaching 6 extra damage (10 total)
 
-  data modify storage stellarity:temp harvester.fire_resistant set value ""
-  execute if score #damage stellarity.misc matches 600.. run data modify storage stellarity:temp harvester.fire_resistant set value "\"minecraft:damage_resistant\": {types:\"#is_fire\"},"
 
 # Custom model data depending on extra damage
 # Level 0 (Base)
@@ -98,16 +95,25 @@ scoreboard players get #damage stellarity.misc
 data modify storage stellarity:temp harvester.custom_data."stellarity:harvester".damage set from storage stellarity:temp harvester.damage
 # PATCHES AERY SWORD DAMAGE
   data modify storage stellarity:temp harvester.attributes[{type:"minecraft:attack_damage"}].amount set from storage stellarity:temp harvester.damage_inc
+  data modify storage stellarity:temp harvester.attributes.modifiers[{type:"minecraft:attack_damage"}].amount set from storage stellarity:temp harvester.damage_inc
   data modify storage stellarity:temp harvester.attributes[{type:"minecraft:movement_speed"}].amount set from storage stellarity:temp harvester.speed
+  data modify storage stellarity:temp harvester.attributes.modifiers[{type:"minecraft:movement_speed"}].amount set from storage stellarity:temp harvester.speed
   data modify storage stellarity:temp harvester.attributes[{type:"minecraft:attack_speed"}].amount set from storage stellarity:temp harvester.atk_speed
+  data modify storage stellarity:temp harvester.attributes.modifiers[{type:"minecraft:attack_speed"}].amount set from storage stellarity:temp harvester.atk_speed
 
 # PATCHES AERY SWORD DAMAGE
 
 
-data modify storage stellarity:temp harvester.custom_data set string storage stellarity:temp harvester.custom_data
-data modify storage stellarity:temp harvester.attributes set string storage stellarity:temp harvester.custom_data
+# Build components compound cleanly without string concatenation issues
+  data remove storage stellarity:temp harvester.components
+  data modify storage stellarity:temp harvester.components."minecraft:attribute_modifiers" set from storage stellarity:temp harvester.attributes
+  data modify storage stellarity:temp harvester.components."minecraft:custom_data" set from storage stellarity:temp harvester.custom_data
+  data modify storage stellarity:temp harvester.components."minecraft:custom_model_data" set from storage stellarity:temp harvester.cmd
+  execute if score #damage stellarity.misc matches 600.. run data modify storage stellarity:temp harvester.components."minecraft:damage_resistant" set value {types:"#is_fire"}
 
-function stellarity:item/harvester/item_modifier/harvester_increase_damage with storage stellarity:temp harvester
+  data modify storage stellarity:temp harvester.components set string storage stellarity:temp harvester.components
+
+  function stellarity:item/harvester/item_modifier/harvester_increase_damage with storage stellarity:temp harvester
 
 # Advancement for getting any damage
   advancement grant @s only stellarity:exploration/harvester/frozen_reaper

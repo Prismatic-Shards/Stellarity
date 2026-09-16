@@ -12,3 +12,6 @@ execute as @s at @s facing entity @p eyes run tp @s ~ ~ ~ ~ ~
 
 execute if entity @s[tag=stellarity.empress_of_light.daytime,tag=stellarity.empress_of_light.phase_1] run scoreboard players set @s stellarity.empress_of_light.attack_cooldown 7
 execute if entity @s[tag=stellarity.empress_of_light.daytime,tag=stellarity.empress_of_light.phase_2] run scoreboard players set @s stellarity.empress_of_light.attack_cooldown 5
+
+execute if entity @s[tag=stellarity.empress_of_light.radiant,tag=stellarity.empress_of_light.phase_1] run scoreboard players set @s stellarity.empress_of_light.attack_cooldown 6
+execute if entity @s[tag=stellarity.empress_of_light.radiant,tag=stellarity.empress_of_light.phase_2] run scoreboard players set @s stellarity.empress_of_light.attack_cooldown 4

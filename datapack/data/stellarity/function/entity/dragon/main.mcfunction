@@ -1,7 +1,7 @@
 # End Crystal stuff
   scoreboard players reset #crystal_count stellarity.misc
-  # Count Crystals (only the ones with the bottom part count)
-    execute as @e[type=end_crystal,nbt={ShowBottom:1b},distance=..200] at @s run function stellarity:entity/dragon/crystal/loop
+  # Count Crystals (any End Crystal on obsidian pillars, excluding the exit portal)
+    execute in minecraft:the_end positioned 0 80 0 as @e[type=end_crystal,nbt={ShowBottom:1b},distance=0..250,tag=!stellarity.respawn_crystal,predicate=!stellarity:entity/dragon/exit_portal_crystal] at @s run function stellarity:entity/dragon/crystal/loop
     # Make Dragon invulnerable if there is more than 1 Crystal
       execute if score #crystal_count stellarity.misc matches 1.. run function stellarity:entity/dragon/crystal/update_bossbar
       execute unless score #crystal_count stellarity.misc matches 1.. run function stellarity:entity/dragon/crystal/hide_bossbar
@@ -12,12 +12,15 @@
 
     # Get health
       execute store result score @s stellarity.dragon.health run data get entity @s Health 1
+      execute unless score @s stellarity.dragon.health_old matches 1.. run scoreboard players operation @s stellarity.dragon.health_old = @s stellarity.dragon.health
       # Convert to percentage
         execute store result score #max stellarity.misc run attribute @s max_health get
         scoreboard players set #100 stellarity.misc 100
         scoreboard players operation @s stellarity.dragon.health_percent = @s stellarity.dragon.health
         scoreboard players operation @s stellarity.dragon.health_percent *= #100 stellarity.misc
         scoreboard players operation @s stellarity.dragon.health_percent /= #max stellarity.misc
+        # Prevent Dragon from taking damage while End Crystals are alive
+          execute if entity @s[tag=stellarity.dragon.invulnerable] if score @s stellarity.dragon.health < @s stellarity.dragon.health_old run function stellarity:entity/dragon/invulnerability/prevent_damage
         # Prevent Crystals from healing the Dragon
           execute if score @s stellarity.dragon.health_old < @s stellarity.dragon.health run function stellarity:entity/dragon/prevent_heal
           scoreboard players operation @s stellarity.dragon.health_old = @s stellarity.dragon.health

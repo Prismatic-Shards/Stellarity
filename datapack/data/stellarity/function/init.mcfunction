@@ -60,6 +60,7 @@
       scoreboard objectives add stellarity.config.enable_nighttime_empress_of_light dummy
       scoreboard objectives add stellarity.config.enable_radiant_empress_of_light dummy
       scoreboard objectives add stellarity.config.enable_pixie dummy
+      scoreboard objectives add stellarity.config.enable_pixie_in_a_jar dummy
 
       scoreboard objectives add stellarity.config.enable_dragonblade dummy
       scoreboard objectives add stellarity.config.enable_harvester dummy

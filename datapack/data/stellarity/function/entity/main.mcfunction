@@ -3,8 +3,10 @@
 
 # Slay Queen ✨✨✨✨✨
 # (Empress of Light)
-  execute as @e[type=vindicator,tag=stellarity.empress_of_light] at @s run function stellarity:entity/empress_of_light/main
-  execute as @e[type=marker,tag=stellarity.empress_of_light.tracker] at @s run function stellarity:entity/empress_of_light/animations/death/check_death with entity @s data."stellarity:owner"
+  execute if score #empress_of_light.is_alive stellarity.misc matches 1 as @e[type=vindicator,tag=stellarity.empress_of_light] at @s run function stellarity:entity/empress_of_light/main
+  execute if score #empress_of_light.is_alive stellarity.misc matches 1 as @e[type=marker,tag=stellarity.empress_of_light.tracker] at @s run function stellarity:entity/empress_of_light/animations/death/check_death with entity @s data."stellarity:owner"
+  execute if score #empress_of_light.is_alive stellarity.misc matches 1 unless entity @e[type=vindicator,tag=stellarity.empress_of_light] as @e[type=item_display,tag=stellarity.empress_of_light.ethereal_lance] at @s run function stellarity:entity/empress_of_light/attacks/clear_all
+  execute if score #empress_of_light.is_alive stellarity.misc matches 1 unless entity @e[type=vindicator,tag=stellarity.empress_of_light] run scoreboard players set #empress_of_light.is_alive stellarity.misc 0
 
 # Dragon stuff
   execute as @e[type=ender_dragon,tag=stellarity.ender_dragon] at @s run function stellarity:entity/dragon/main
@@ -19,15 +21,15 @@ execute as @e[type=zombified_piglin,tag=stellarity.flesh_piglin] at @s run funct
 
 execute as @e[type=illusioner,tag=!smithed.entity] at @s if biome ~ ~ ~ #is_end run function stellarity:entity/animal/end_spawn
 
-execute as @e[type=allay,tag=stellarity.shulking] at @s run function stellarity:entity/shulking/main
-execute as @e[type=shulker,tag=stellarity.shulking.body] at @s run function stellarity:entity/shulking/main_body
-execute as @e[type=item_display,tag=stellarity.shulking.spike] at @s run function stellarity:entity/shulking/attacks/spike/loop
+execute if score #shulking.is_alive stellarity.misc matches 1 as @e[type=allay,tag=stellarity.shulking] at @s run function stellarity:entity/shulking/main
+execute if score #shulking.is_alive stellarity.misc matches 1 as @e[type=shulker,tag=stellarity.shulking.body] at @s run function stellarity:entity/shulking/main_body
+execute if score #shulking.is_alive stellarity.misc matches 1 as @e[type=item_display,tag=stellarity.shulking.spike] at @s run function stellarity:entity/shulking/attacks/spike/loop
 
 execute as @e[type=#stellarity:end_variant_animals,tag=!smithed.entity,nbt={variant:"stellarity:end"}] run function stellarity:entity/animal/convert
 execute as @e[type=sheep,tag=!stellarity.invalid_animal,tag=!smithed.entity] at @s run function stellarity:entity/animal/convert_sheep
 
-execute as @e[tag=stellarity.shulking.body] at @s run bossbar set stellarity:shulking players @a[distance=..64]
-execute unless entity @e[tag=stellarity.shulking.body] run bossbar set stellarity:shulking players
+execute if score #shulking.is_alive stellarity.misc matches 1 as @e[tag=stellarity.shulking.body] at @s run bossbar set stellarity:shulking players @a[distance=..64]
+execute if score #shulking.is_alive stellarity.misc matches 1 unless entity @e[tag=stellarity.shulking.body] run function stellarity:entity/shulking/death/clear_bossbar
 
-execute as @e[type=item_display,tag=stellarity.shulking.ray] at @s run function stellarity:entity/shulking/attacks/ray/loop with entity @s data."stellarity:owner"
+execute if score #shulking.is_alive stellarity.misc matches 1 as @e[type=item_display,tag=stellarity.shulking.ray] at @s run function stellarity:entity/shulking/attacks/ray/loop with entity @s data."stellarity:owner"
 

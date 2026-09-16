@@ -1,5 +1,6 @@
 {
   "palette_id": "stellarity:trim/enderite",
+  "palette": "stellarity:trim/enderite",
   "description": {
     "color": "#be6b93",
     "translate": "trim_material.stellarity.enderite"

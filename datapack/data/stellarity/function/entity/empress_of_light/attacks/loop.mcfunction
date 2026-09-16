@@ -6,7 +6,6 @@ execute if score @s stellarity.empress_of_light.attack_cooldown matches 0 run fu
 execute if entity @s[tag=stellarity.empress_of_light.dash,tag=!stellarity.empress_of_light.phase_2] run function stellarity:entity/empress_of_light/attacks/code/loops/dash
 execute if entity @s[tag=stellarity.empress_of_light.prismatic_bolts] run function stellarity:entity/empress_of_light/attacks/code/loops/prismatic_bolts
 
-execute as @e[type=marker,tag=stellarity.empress_of_light.prismatic_bolt_2] at @s anchored eyes run function stellarity:entity/empress_of_light/attacks/code/prismatic_bolts_2/loop
 execute as @e[type=marker,tag=stellarity.empress_of_light.evercomets] at @s anchored eyes run function stellarity:entity/empress_of_light/attacks/code/evercomet/loop
 # Day
 execute if entity @s[tag=stellarity.empress_of_light.prismatic_bolts_2,tag=stellarity.empress_of_light.daytime] run function stellarity:entity/empress_of_light/attacks/code/loops/day/prismatic_bolts_2

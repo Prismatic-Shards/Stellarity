@@ -13,7 +13,7 @@
   execute as @e[type=trident,predicate=stellarity:location/below_y_0,predicate=stellarity:location/in_the_end] run data merge entity @s {DealtDamage:1b}
 
 # Villagers
-  execute as @e[type=villager,tag=!stellarity.aware,tag=!stellarity.villager,predicate=stellarity:location/in_structure/end_village] at @s run function stellarity:entity/villager/check
+  execute as @e[type=villager,tag=!stellarity.villager,predicate=stellarity:location/in_the_end] at @s run function stellarity:entity/villager/check
 
 execute as @e[type=#stellarity:stat_buff,tag=!stellarity.aware,tag=!stellarity.buffed,predicate=stellarity:location/in_the_end,tag=!smithed.entity] run function stellarity:entity/convert_to_end_variants
 
@@ -21,6 +21,10 @@ execute as @e[type=#stellarity:entity_awareness_checks,tag=!stellarity.aware] ru
 
 execute as @e[type=#stellarity:end_variant_animals,tag=stellarity.animal] at @s run function stellarity:entity/animal/effects/aura
 
-execute as @e[type=allay,tag=stellarity.shulking] at @s run function stellarity:entity/shulking/main_1s
+execute if score #shulking.is_alive stellarity.misc matches 1 as @e[type=allay,tag=stellarity.shulking] at @s run function stellarity:entity/shulking/main_1s
+
+execute unless score #shulking.is_alive stellarity.misc matches 1 if entity @e[type=allay,tag=stellarity.shulking] run scoreboard players set #shulking.is_alive stellarity.misc 1
+execute unless score #empress_of_light.is_alive stellarity.misc matches 1 if entity @e[type=vindicator,tag=stellarity.empress_of_light] run scoreboard players set #empress_of_light.is_alive stellarity.misc 1
+execute unless score #empress_of_light.is_alive stellarity.misc matches 1 unless entity @e[type=vindicator,tag=stellarity.empress_of_light] as @e[type=item_display,tag=stellarity.empress_of_light.ethereal_lance] at @s run function stellarity:entity/empress_of_light/attacks/clear_all
 
 schedule function stellarity:loop/timed/1_second 1s

@@ -38,7 +38,7 @@
       "type": "minecraft:biome"
     },
     {
-      "type": "offset",
+      "type": "minecraft:offset",
       "y": 1,
       "x": 0,
       "z": 0

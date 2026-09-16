@@ -7,6 +7,7 @@
 # Also, the values need to be updated anyway
   data remove storage stellarity:temp harvester.item
   data modify storage stellarity:temp harvester.item set from entity @s SelectedItem.components
+  data modify storage stellarity:temp harvester.custom_data set from storage stellarity:temp harvester.item."minecraft:custom_data"
   execute store result score #ability_count stellarity.misc run data get storage stellarity:temp harvester.item."minecraft:custom_data"."stellarity:harvester".abilities
   execute store result score #damage stellarity.misc run data get storage stellarity:temp harvester.item."minecraft:custom_data"."stellarity:harvester".damage 100
 

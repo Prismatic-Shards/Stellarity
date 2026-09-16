@@ -23,4 +23,5 @@ execute as @e[type=item,tag=stellarity.item] at @s run function stellarity:loop/
 # Moved from stellarity:structure/check
 
 
-execute as @e[type=minecraft:end_crystal,predicate=stellarity:entity/dragon/exit_portal_crystal] at @s run function stellarity:structure/exit_portal/replace
+execute in minecraft:the_end positioned 0.5 61 0.5 as @e[type=minecraft:end_crystal,distance=..1,predicate=stellarity:entity/dragon/exit_portal_crystal] at @s run function stellarity:structure/exit_portal/replace
+

@@ -16,6 +16,7 @@ playsound minecraft:entity.generic.explode hostile @a[distance=0..] ~ ~ ~ 10 0
 
 execute store result entity @e[type=ender_dragon,tag=stellarity.ender_dragon,limit=1] attributes[{id:"minecraft:max_health"}].base float 1 run scoreboard players get #stellarity.config stellarity.config.dragon_health
 execute store result entity @e[type=ender_dragon,tag=stellarity.ender_dragon,limit=1] Health float 1 run scoreboard players get #stellarity.config stellarity.config.dragon_health
+execute store result score @e[type=ender_dragon,tag=stellarity.ender_dragon,limit=1] stellarity.dragon.health_old run scoreboard players get #stellarity.config stellarity.config.dragon_health
 execute store result bossbar stellarity:ender_dragon max run scoreboard players get #stellarity.config stellarity.config.dragon_health
 
 team join stellarity.dragon.pacify_others @e[type=minecraft:ender_dragon,tag=stellarity.ender_dragon]

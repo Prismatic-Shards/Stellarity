@@ -27,4 +27,6 @@ function stellarity:entity/villager/trades/toolsmith/1
 execute if data entity @s VillagerData{profession:"minecraft:weaponsmith"} run \
 function stellarity:entity/villager/trades/weaponsmith/1
 
+data remove entity @s Offers.Recipes[{buyB:{id:"minecraft:air"}}].buyB
+
 tag @s add stellarity.villager.employed

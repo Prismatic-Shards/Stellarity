@@ -10,8 +10,9 @@ summon block_display ~-0.5 ~ ~-0.5 {Tags:["stellarity.cryonics","smithed.entity"
 {id:"minecraft:block_display",Tags:["smithed.entity","smithed.strict"],block_state:{id:"minecraft:ice"},transformation:{translation:[0.5f,0.6875f,1.3125f],left_rotation:[0.2683f,0.8182f,0.0852f,0.5012f],scale:[1f,1f,1f],right_rotation:[0f,0f,0f,1f]}},\
 {id:"minecraft:block_display",Tags:["smithed.entity","smithed.strict"],block_state:{id:"minecraft:ice"},transformation:{translation:[0.375f,0.8125f,-0.0625f],left_rotation:[0.2147f,0.3353f,0.2853f,0.8718f],scale:[1f,1f,1f],right_rotation:[0f,0f,0f,1f]}}]}
 
+
 particle minecraft:block{block_state: 'minecraft:ice'} ~ ~0.5 ~ 0.5 0.7 0.5 1 40
-particle flash{color:-1} ~ ~1 ~
+particle minecraft:flash{color:-12596510} ~ ~1 ~
 
 playsound minecraft:block.glass.place player @a ~ ~ ~ 1 0.6
 playsound minecraft:block.amethyst_block.place player @a ~ ~ ~ 1 0.6

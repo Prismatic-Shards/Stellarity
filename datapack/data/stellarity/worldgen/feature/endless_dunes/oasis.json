@@ -16,8 +16,8 @@
           "type": "minecraft:offset",
           "x": {
             "type": "minecraft:trapezoid",
-            "max": 12,
-            "min": -12,
+            "max": 6,
+            "min": -6,
             "plateau": 0
           },
           "y": {
@@ -28,8 +28,8 @@
           },
           "z": {
             "type": "minecraft:trapezoid",
-            "max": 12,
-            "min": -12,
+            "max": 6,
+            "min": -6,
             "plateau": 0
           }
         }
@@ -46,8 +46,8 @@
           "type": "minecraft:offset",
           "x": {
             "type": "minecraft:trapezoid",
-            "max": 11,
-            "min": -11,
+            "max": 5,
+            "min": -5,
             "plateau": 0
           },
           "y": {
@@ -58,8 +58,8 @@
           },
           "z": {
             "type": "minecraft:trapezoid",
-            "max": 11,
-            "min": -11,
+            "max": 5,
+            "min": -5,
             "plateau": 0
           }
         },
@@ -84,8 +84,8 @@
           "type": "minecraft:offset",
           "x": {
             "type": "minecraft:trapezoid",
-            "max": 8,
-            "min": -8,
+            "max": 5,
+            "min": -5,
             "plateau": 0
           },
           "y": {
@@ -96,8 +96,8 @@
           },
           "z": {
             "type": "minecraft:trapezoid",
-            "max": 8,
-            "min": -8,
+            "max": 5,
+            "min": -5,
             "plateau": 0
           }
         },
@@ -156,8 +156,8 @@
           "type": "minecraft:offset",
           "x": {
             "type": "minecraft:trapezoid",
-            "max": 11,
-            "min": -11,
+            "max": 5,
+            "min": -5,
             "plateau": 0
           },
           "y": {
@@ -168,8 +168,8 @@
           },
           "z": {
             "type": "minecraft:trapezoid",
-            "max": 11,
-            "min": -11,
+            "max": 5,
+            "min": -5,
             "plateau": 0
           }
         },

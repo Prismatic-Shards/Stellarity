@@ -2,7 +2,7 @@
   "feature": "stellarity:amethyst_forest/vegetation/flower",
   "placement": [
     {
-      "type": "count_on_every_layer",
+      "type": "minecraft:count_on_every_layer",
       "count": 1
     },
     {

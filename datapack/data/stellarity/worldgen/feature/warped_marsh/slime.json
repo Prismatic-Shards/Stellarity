@@ -4,6 +4,10 @@
     "id": "minecraft:slime_block"
   },
   "can_place_on": {
-    "type": "minecraft:true"
+    "type": "minecraft:matching_blocks",
+    "blocks": [
+      "minecraft:warped_wart_block",
+      "minecraft:end_stone"
+    ]
   }
 }

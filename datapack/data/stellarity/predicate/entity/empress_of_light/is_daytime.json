@@ -1,23 +1,12 @@
 {
-    "type": "minecraft:all_of",
-    "terms": [
-        {
-            "type": "minecraft:location_check",
-            "predicate": {
-                "dimension": "minecraft:overworld"
-            }
+    "type": "minecraft:inverted",
+    "term": {
+        "type": "minecraft:time_check",
+        "clock": "minecraft:overworld",
+        "value": {
+            "min": 12786,
+            "max": 23460
         },
-        {
-            "type": "minecraft:inverted",
-            "term": {
-                "type": "minecraft:time_check",
-                "clock": "minecraft:overworld",
-                "value": {
-                    "min": 12786,
-                    "max": 23460
-                },
-                "period": 24000
-            }
-        }
-    ]
+        "period": 24000
+    }
 }

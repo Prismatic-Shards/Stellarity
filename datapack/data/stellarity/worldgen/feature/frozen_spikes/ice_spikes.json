@@ -24,7 +24,32 @@
     }
   },
   "allowed_tree_position": {
-    "type": "minecraft:true"
+    "type": "minecraft:any_of",
+    "predicates": [
+      {
+        "type": "minecraft:matching_blocks",
+        "blocks": [
+          "minecraft:end_stone",
+          "minecraft:packed_ice",
+          "minecraft:blue_ice",
+          "minecraft:snow_block"
+        ]
+      },
+      {
+        "type": "minecraft:matching_blocks",
+        "blocks": [
+          "minecraft:end_stone",
+          "minecraft:packed_ice",
+          "minecraft:blue_ice",
+          "minecraft:snow_block"
+        ],
+        "offset": [
+          0,
+          -1,
+          0
+        ]
+      }
+    ]
   },
   "feature": {
     "feature": {

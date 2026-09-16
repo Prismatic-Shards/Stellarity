@@ -4,6 +4,9 @@
     "id": "minecraft:diorite"
   },
   "can_place_on": {
-    "type": "minecraft:true"
+    "type": "minecraft:matching_blocks",
+    "blocks": [
+      "minecraft:end_stone"
+    ]
   }
 }

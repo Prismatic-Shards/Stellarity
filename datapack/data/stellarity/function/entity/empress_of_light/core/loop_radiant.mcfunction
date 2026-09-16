@@ -6,4 +6,4 @@ bossbar set stellarity:empress_of_light color red
 bossbar set stellarity:empress_of_light name {"translate":"entity.stellarity.empress_of_light","color":"red"}
 
 tag @s[tag=stellarity.empress_of_light.nighttime] remove stellarity.empress_of_light.nighttime
-tag @s[tag=stellarity.empress_of_light.nighttime] remove stellarity.empress_of_light.daytime
+tag @s[tag=stellarity.empress_of_light.daytime] remove stellarity.empress_of_light.daytime

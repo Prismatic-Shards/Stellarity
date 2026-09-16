@@ -9,4 +9,8 @@ function stellarity:entity/shulking/death/kill_rod with entity @s data."stellari
 function stellarity:entity/shulking/death/kill_rod with entity @s data."stellarity:shulking_rods"[7]
 
 
+scoreboard players set #shulking.is_alive stellarity.misc 0
+bossbar set stellarity:shulking players
+
 kill @s
+

@@ -1,5 +1,6 @@
 # Constant Biome Generation
-## For copying and pasting!
+
+## For copying and pasting
 
 <hr>
 

@@ -24,6 +24,12 @@ execute if score @s[tag=stellarity.empress_of_light.hurt] stellarity.empress_of_
 execute store result score @s stellarity.empress_of_light.health run data get entity @s Health
 execute store result bossbar stellarity:empress_of_light value run scoreboard players get @s stellarity.empress_of_light.health
 
+scoreboard players set #100 stellarity.misc 100
+scoreboard players operation @s stellarity.empress_of_light.health_percent = @s stellarity.empress_of_light.health
+scoreboard players operation @s stellarity.empress_of_light.health_percent *= #100 stellarity.misc
+execute store result score #max stellarity.misc run attribute @s minecraft:max_health get
+scoreboard players operation @s stellarity.empress_of_light.health_percent /= #max stellarity.misc
+
 bossbar set stellarity:empress_of_light players
 execute at @e[type=vindicator,tag=stellarity.empress_of_light] run bossbar set stellarity:empress_of_light players @a[distance=..100]
 

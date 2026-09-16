@@ -7,4 +7,6 @@ execute as @n[type=shulker,tag=stellarity.shulking.body,distance=..5] at @s run 
 
 execute store result bossbar stellarity:shulking max run scoreboard players get #stellarity.config stellarity.config.shulking_health
 
+scoreboard players set #shulking.is_alive stellarity.misc 1
+
 execute if score #stellarity.config stellarity.config.boss_status_messages matches 1 run tellraw @a ["\n",{"translate":"entity.stellarity.shulking.spawn","with":[{"translate":"entity.stellarity.shulking"}],"color":"#AF4BFF"},"\n"]

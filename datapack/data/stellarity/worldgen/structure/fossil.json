@@ -3,7 +3,7 @@
   "biomes": "#stellarity:has_structure/fossil",
   "step": "underground_decoration",
   "spawn_overrides": {},
-  "terrain_adaptation": "beard_box",
+  "terrain_adaptation": "beard_thin",
   "height": {
     "type": "minecraft:uniform",
     "min_inclusive": {
