@@ -11,27 +11,111 @@
       "entries": [
         {
           "type": "loot_table",
-          "value": "stellarity:item/spellbook/book_of_jinx"
+          "value": "stellarity:item/spellbook/book_of_jinx",
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#stellarity.config"
+                },
+                "score": "stellarity.config.enable_book_of_jinx"
+              },
+              "range": 1
+            }
+          ]
         },
         {
           "type": "loot_table",
-          "value": "stellarity:item/spellbook/book_of_light"
+          "value": "stellarity:item/spellbook/book_of_light",
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#stellarity.config"
+                },
+                "score": "stellarity.config.enable_book_of_light"
+              },
+              "range": 1
+            }
+          ]
         },
         {
           "type": "loot_table",
-          "value": "stellarity:item/spellbook/book_of_obstruct"
+          "value": "stellarity:item/spellbook/book_of_obstruct",
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#stellarity.config"
+                },
+                "score": "stellarity.config.enable_book_of_obstruct"
+              },
+              "range": 1
+            }
+          ]
         },
         {
           "type": "loot_table",
-          "value": "stellarity:item/spellbook/book_of_updraft"
+          "value": "stellarity:item/spellbook/book_of_updraft",
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#stellarity.config"
+                },
+                "score": "stellarity.config.enable_book_of_updraft"
+              },
+              "range": 1
+            }
+          ]
         },
         {
           "type": "loot_table",
-          "value": "stellarity:item/spellbook/book_of_conveyance"
+          "value": "stellarity:item/spellbook/book_of_conveyance",
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#stellarity.config"
+                },
+                "score": "stellarity.config.enable_book_of_conveyance"
+              },
+              "range": 1
+            }
+          ]
         },
         {
           "type": "loot_table",
-          "value": "stellarity:item/spellbook/book_of_return"
+          "value": "stellarity:item/spellbook/book_of_return",
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#stellarity.config"
+                },
+                "score": "stellarity.config.enable_book_of_return"
+              },
+              "range": 1
+            }
+          ]
         }
       ]
     },
@@ -153,6 +237,20 @@
               "function": "limit_count",
               "limit": 1
             }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#stellarity.config"
+                },
+                "score": "stellarity.config.enable_luck_potion"
+              },
+              "range": 1
+            }
           ]
         },
         {
@@ -167,6 +265,20 @@
             {
               "function": "limit_count",
               "limit": 1
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#stellarity.config"
+                },
+                "score": "stellarity.config.enable_enderman_hand"
+              },
+              "range": 1
             }
           ]
         },
@@ -219,6 +331,20 @@
                 "min": 3,
                 "max": 7
               }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#stellarity.config"
+                },
+                "score": "stellarity.config.enable_fried_chorus_fruit"
+              },
+              "range": 1
             }
           ]
         },

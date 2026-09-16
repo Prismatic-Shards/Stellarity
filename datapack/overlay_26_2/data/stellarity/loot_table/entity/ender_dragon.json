@@ -6,7 +6,21 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "value": "stellarity:item/trinket/life_crystal"
+          "value": "stellarity:item/trinket/life_crystal",
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#stellarity.config"
+                },
+                "score": "stellarity.config.enable_life_crystal"
+              },
+              "range": 1
+            }
+          ]
         }
       ]
     },
@@ -48,7 +62,21 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "value": "stellarity:item/armor/elytra/dragon_wings"
+          "value": "stellarity:item/armor/elytra/dragon_wings",
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#stellarity.config"
+                },
+                "score": "stellarity.config.enable_dragon_wings"
+              },
+              "range": 1
+            }
+          ]
         }
       ],
       "conditions": [

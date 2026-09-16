@@ -71,7 +71,21 @@
                 "entries": [
                   {
                     "type": "minecraft:loot_table",
-                    "value": "stellarity:item/weapon/sharanga"
+                    "value": "stellarity:item/weapon/sharanga",
+                    "conditions": [
+                      {
+                        "condition": "minecraft:value_check",
+                        "value": {
+                          "type": "minecraft:score",
+                          "target": {
+                            "type": "minecraft:fixed",
+                            "name": "#stellarity.config"
+                          },
+                          "score": "stellarity.config.enable_sharanga"
+                        },
+                        "range": 1
+                      }
+                    ]
                   }
                 ]
               },

@@ -14,5 +14,7 @@ execute if score #empress_of_light.is_radiant stellarity.misc matches 1 if score
 
 tag @s add stellarity.damage.empress_of_light.prismatic_bolts
 
+scoreboard players set #effect.duration stellarity.misc 120
 function stellarity:util/status_effects/prismatic_inferno/apply
+
 function kohara:damage/calculate {armor_penetration:10,damage_boost_efficiency:0,ap_damage_type:"kohara:armor_piercing",damage_type:"stellarity:empress_of_light/projectile",tag:"stellarity.damage.empress_of_light.ethereal_lance"}

@@ -174,15 +174,57 @@
                 "entries": [
                   {
                     "type": "minecraft:loot_table",
-                    "value": "stellarity:item/spellbook/book_of_light"
+                    "value": "stellarity:item/spellbook/book_of_light",
+                    "conditions": [
+                      {
+                        "condition": "minecraft:value_check",
+                        "value": {
+                          "type": "minecraft:score",
+                          "target": {
+                            "type": "minecraft:fixed",
+                            "name": "#stellarity.config"
+                          },
+                          "score": "stellarity.config.enable_book_of_light"
+                        },
+                        "range": 1
+                      }
+                    ]
                   },
                   {
                     "type": "minecraft:loot_table",
-                    "value": "stellarity:item/spellbook/book_of_updraft"
+                    "value": "stellarity:item/spellbook/book_of_updraft",
+                    "conditions": [
+                      {
+                        "condition": "minecraft:value_check",
+                        "value": {
+                          "type": "minecraft:score",
+                          "target": {
+                            "type": "minecraft:fixed",
+                            "name": "#stellarity.config"
+                          },
+                          "score": "stellarity.config.enable_book_of_updraft"
+                        },
+                        "range": 1
+                      }
+                    ]
                   },
                   {
                     "type": "minecraft:loot_table",
-                    "value": "stellarity:item/spellbook/book_of_obstruct"
+                    "value": "stellarity:item/spellbook/book_of_obstruct",
+                    "conditions": [
+                      {
+                        "condition": "minecraft:value_check",
+                        "value": {
+                          "type": "minecraft:score",
+                          "target": {
+                            "type": "minecraft:fixed",
+                            "name": "#stellarity.config"
+                          },
+                          "score": "stellarity.config.enable_book_of_obstruct"
+                        },
+                        "range": 1
+                      }
+                    ]
                   }
                 ]
               }

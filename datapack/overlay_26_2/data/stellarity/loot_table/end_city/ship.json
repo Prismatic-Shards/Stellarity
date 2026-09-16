@@ -200,7 +200,21 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "value": "stellarity:item/trinket/duskberry"
+          "value": "stellarity:item/trinket/duskberry",
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#stellarity.config"
+                },
+                "score": "stellarity.config.enable_duskberry_potion"
+              },
+              "range": 1
+            }
+          ]
         }
       ],
       "conditions": [

@@ -168,11 +168,6 @@
           "type": "minecraft:loot_table",
           "weight": 4,
           "value": "stellarity:item/material/enderite_smithing_template"
-        },
-        {
-          "type": "minecraft:loot_table",
-          "weight": 1,
-          "value": "stellarity:item/trinket/void_pendant"
         }
       ]
     }

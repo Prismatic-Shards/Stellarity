@@ -6,7 +6,21 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "value": "stellarity:item/weapon/kaleidoscope"
+          "value": "stellarity:item/weapon/kaleidoscope",
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#stellarity.config"
+                },
+                "score": "stellarity.config.enable_kalediscope"
+              },
+              "range": 1
+            }
+          ]
         }
       ]
     },
@@ -15,7 +29,21 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "value": "stellarity:item/trinket/soaring_insignia"
+          "value": "stellarity:item/trinket/soaring_insignia",
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#stellarity.config"
+                },
+                "score": "stellarity.config.enable_soaring_insignia"
+              },
+              "range": 1
+            }
+          ]
         }
       ]
     }

@@ -129,7 +129,12 @@
                 "max": 1
               }
             }
-          ]
+          ],
+          "condition": {
+            "type": "int_value_check",
+            "value": "stellarity:item_check/food/enderman_flesh",
+            "test": 1
+          }
         }
       ]
     },

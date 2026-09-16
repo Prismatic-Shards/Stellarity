@@ -16,16 +16,27 @@
                 "minecraft:item_model": "stellarity:radiant_jewel",
                 "minecraft:item_name": {
                   "translate": "item.stellarity.radiant_jewel",
-                  "color": "#ff5555"
+                  "color": "#C92222"
                 },
                 "minecraft:max_stack_size": 1,
-                "enchantment_glint_override": true,
+                "minecraft:enchantment_glint_override": true,
                 "!minecraft:entity_data": {}
               }
             },
             {
               "function": "minecraft:set_lore",
               "lore": [
+                "",
+                {
+                  "translate": "item.stellarity.radiant_jewel.description.1",
+                  "color": "white",
+                  "italic": false
+                },
+                {
+                  "translate": "item.stellarity.radiant_jewel.description.2",
+                  "color": "white",
+                  "italic": false
+                },
                 "",
                 {
                   "translate": "Stellarity",

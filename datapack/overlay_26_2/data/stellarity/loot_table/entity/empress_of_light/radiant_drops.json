@@ -6,7 +6,21 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "value": "stellarity:item/trinket/radiant_jewel"
+          "value": "stellarity:item/trinket/radiant_jewel",
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#stellarity.config"
+                },
+                "score": "stellarity.config.enable_radiant_jewel"
+              },
+              "range": 1
+            }
+          ]
         }
       ]
     },
@@ -15,7 +29,21 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "value": "stellarity:item/armor/elytra/empress_wings"
+          "value": "stellarity:item/armor/elytra/empress_wings",
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#stellarity.config"
+                },
+                "score": "stellarity.config.enable_empress_wings"
+              },
+              "range": 1
+            }
+          ]
         }
       ]
     },
@@ -24,7 +52,21 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "value": "stellarity:block/pixie_in_a_jar"
+          "value": "stellarity:block/pixie_in_a_jar",
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#stellarity.config"
+                },
+                "score": "stellarity.config.enable_pixie_in_a_jar"
+              },
+              "range": 1
+            }
+          ]
         }
       ],
       "conditions": [

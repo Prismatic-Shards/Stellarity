@@ -48,6 +48,18 @@
           "value": "stellarity:item/food/shulker_body",
           "conditions": [
             {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#stellarity.config"
+                },
+                "score": "stellarity.config.enable_shulker_body"
+              },
+              "range": 1
+            },
+            {
               "condition": "minecraft:random_chance_with_enchanted_bonus",
               "enchantment": "minecraft:looting",
               "unenchanted_chance": 0.75,

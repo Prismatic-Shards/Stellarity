@@ -14,17 +14,71 @@
         {
           "type": "minecraft:loot_table",
           "value": "stellarity:item/spellbook/book_of_return",
-          "weight": 3
+          "weight": 3,
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#stellarity.config"
+                },
+                "score": "stellarity.config.enable_book_of_return"
+              },
+              "range": 1
+            }
+          ]
         },
         {
           "type": "minecraft:loot_table",
           "value": "stellarity:item/weapon/starless_scythe",
-          "weight": 3
+          "weight": 3,
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#stellarity.config"
+                },
+                "score": "stellarity.config.enable_starless_scythe"
+              },
+              "range": 1
+            }
+          ]
         },
         {
           "type": "minecraft:loot_table",
           "value": "stellarity:item/weapon/the_beginning_and_the_end",
-          "weight": 3
+          "weight": 3,
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#stellarity.config"
+                },
+                "score": "stellarity.config.enable_the_beginning"
+              },
+              "range": 1
+            },
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#stellarity.config"
+                },
+                "score": "stellarity.config.enable_the_end"
+              },
+              "range": 1
+            }
+          ]
         }
       ]
     }

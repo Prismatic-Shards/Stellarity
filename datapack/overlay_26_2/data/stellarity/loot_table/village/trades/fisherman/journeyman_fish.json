@@ -5,19 +5,75 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "value": "stellarity:item/food/fish/crimson_tigerfish"
+          "value": "stellarity:item/food/fish/crimson_tigerfish",
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#stellarity.config"
+                },
+                "score": "stellarity.config.enable_crimson_tigerfish"
+              },
+              "range": 1
+            }
+          ]
         },
         {
           "type": "minecraft:loot_table",
-          "value": "stellarity:item/food/fish/fleshy_piranha"
+          "value": "stellarity:item/food/fish/fleshy_piranha",
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#stellarity.config"
+                },
+                "score": "stellarity.config.enable_fleshy_piranha"
+              },
+              "range": 1
+            }
+          ]
         },
         {
           "type": "minecraft:loot_table",
-          "value": "stellarity:item/food/fish/flarefin_koi"
+          "value": "stellarity:item/food/fish/flarefin_koi",
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#stellarity.config"
+                },
+                "score": "stellarity.config.enable_flarefin_koi"
+              },
+              "range": 1
+            }
+          ]
         },
         {
           "type": "minecraft:loot_table",
-          "value": "stellarity:item/food/fish/potassifish"
+          "value": "stellarity:item/food/fish/potassifish",
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#stellarity.config"
+                },
+                "score": "stellarity.config.enable_potassifish"
+              },
+              "range": 1
+            }
+          ]
         }
       ]
     }

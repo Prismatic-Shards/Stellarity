@@ -16,21 +16,5 @@
   },
   "anvil_cost": 0,
   "slots": ["any"],
-  "effects": {
-    "minecraft:tick": [
-      {
-        "effect": {
-          "type": "minecraft:run_function",
-          "function": "stellarity:mechanic/enchantments/void_pendant/amethyst"
-        },
-        "requirements": {
-          "condition": "minecraft:entity_properties",
-          "entity": "this",
-          "predicate": {
-            "periodic_tick": 100
-          }
-        }
-      }
-    ]
-  }
+  "effects": {}
 }

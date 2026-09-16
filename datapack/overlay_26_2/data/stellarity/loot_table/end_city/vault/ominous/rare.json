@@ -85,7 +85,21 @@
         {
           "type": "loot_table",
           "value": "stellarity:item/potion/royal_jelly",
-          "weight": 2
+          "weight": 2,
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#stellarity.config"
+                },
+                "score": "stellarity.config.enable_royal_jelly"
+              },
+              "range": 1
+            }
+          ]
         }
       ]
     }

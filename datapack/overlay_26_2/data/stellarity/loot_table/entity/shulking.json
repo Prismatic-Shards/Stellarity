@@ -9,6 +9,18 @@
           "value": "stellarity:item/spellbook/book_of_obstruct",
           "conditions": [
             {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#stellarity.config"
+                },
+                "score": "stellarity.config.enable_book_of_obstruct"
+              },
+              "range": 1
+            },
+            {
               "enchantment": "minecraft:looting",
               "unenchanted_chance": 0.1,
               "condition": "random_chance_with_enchanted_bonus",
@@ -29,6 +41,18 @@
           "type": "loot_table",
           "value": "stellarity:item/spellbook/book_of_obstruct",
           "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#stellarity.config"
+                },
+                "score": "stellarity.config.enable_book_of_obstruct"
+              },
+              "range": 1
+            },
             {
               "condition": "random_chance_with_enchanted_bonus",
               "enchantment": "minecraft:looting",
@@ -57,6 +81,20 @@
                 "max": 3
               }
             }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#stellarity.config"
+                },
+                "score": "stellarity.config.enable_golden_chorus_fruit"
+              },
+              "range": 1
+            }
           ]
         },
         {
@@ -79,43 +117,183 @@
       "entries": [
         {
           "type": "loot_table",
-          "value": "stellarity:item/tool/shulker_pickaxe"
+          "value": "stellarity:item/tool/shulker_pickaxe",
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#stellarity.config"
+                },
+                "score": "stellarity.config.enable_shulker_tools"
+              },
+              "range": 1
+            }
+          ]
         },
         {
           "type": "loot_table",
-          "value": "stellarity:item/tool/shulker_axe"
+          "value": "stellarity:item/tool/shulker_axe",
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#stellarity.config"
+                },
+                "score": "stellarity.config.enable_shulker_tools"
+              },
+              "range": 1
+            }
+          ]
         },
         {
           "type": "loot_table",
-          "value": "stellarity:item/tool/shulker_sword"
+          "value": "stellarity:item/tool/shulker_sword",
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#stellarity.config"
+                },
+                "score": "stellarity.config.enable_shulker_tools"
+              },
+              "range": 1
+            }
+          ]
         },
         {
           "type": "loot_table",
-          "value": "stellarity:item/tool/shulker_spear"
+          "value": "stellarity:item/tool/shulker_spear",
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#stellarity.config"
+                },
+                "score": "stellarity.config.enable_shulker_tools"
+              },
+              "range": 1
+            }
+          ]
         },
         {
           "type": "loot_table",
-          "value": "stellarity:item/tool/shulker_shovel"
+          "value": "stellarity:item/tool/shulker_shovel",
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#stellarity.config"
+                },
+                "score": "stellarity.config.enable_shulker_tools"
+              },
+              "range": 1
+            }
+          ]
         },
         {
           "type": "loot_table",
-          "value": "stellarity:item/tool/shulker_hoe"
+          "value": "stellarity:item/tool/shulker_hoe",
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#stellarity.config"
+                },
+                "score": "stellarity.config.enable_shulker_tools"
+              },
+              "range": 1
+            }
+          ]
         },
         {
           "type": "loot_table",
-          "value": "stellarity:item/armor/shulker/boots"
+          "value": "stellarity:item/armor/shulker/boots",
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#stellarity.config"
+                },
+                "score": "stellarity.config.enable_shulker_tools"
+              },
+              "range": 1
+            }
+          ]
         },
         {
           "type": "loot_table",
-          "value": "stellarity:item/armor/shulker/chestplate"
+          "value": "stellarity:item/armor/shulker/chestplate",
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#stellarity.config"
+                },
+                "score": "stellarity.config.enable_shulker_tools"
+              },
+              "range": 1
+            }
+          ]
         },
         {
           "type": "loot_table",
-          "value": "stellarity:item/armor/shulker/leggings"
+          "value": "stellarity:item/armor/shulker/leggings",
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#stellarity.config"
+                },
+                "score": "stellarity.config.enable_shulker_tools"
+              },
+              "range": 1
+            }
+          ]
         },
         {
           "type": "loot_table",
-          "value": "stellarity:item/armor/shulker/boots"
+          "value": "stellarity:item/armor/shulker/boots",
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#stellarity.config"
+                },
+                "score": "stellarity.config.enable_shulker_tools"
+              },
+              "range": 1
+            }
+          ]
         }
       ]
     }

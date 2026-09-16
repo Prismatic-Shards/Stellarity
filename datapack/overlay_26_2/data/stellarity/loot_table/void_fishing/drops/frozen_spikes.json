@@ -13,6 +13,20 @@
               "function": "minecraft:set_count",
               "count": 1
             }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#stellarity.config"
+                },
+                "score": "stellarity.config.enable_frost_minnow"
+              },
+              "range": 1
+            }
           ]
         },
         {

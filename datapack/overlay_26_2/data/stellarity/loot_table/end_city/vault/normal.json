@@ -52,7 +52,21 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "value": "stellarity:end_city/vault/normal/unique"
+          "value": "stellarity:end_city/vault/normal/unique",
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#stellarity.config"
+                },
+                "score": "stellarity.config.enable_book_of_return"
+              },
+              "range": 1
+            }
+          ]
         }
       ],
       "conditions": [
@@ -98,7 +112,21 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "value": "stellarity:item/music_disc/fires_of_hokkai"
+          "value": "stellarity:item/music_disc/fires_of_hokkai",
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#stellarity.config"
+                },
+                "score": "stellarity.config.enable_music_discs"
+              },
+              "range": 1
+            }
+          ]
         }
       ],
       "conditions": [

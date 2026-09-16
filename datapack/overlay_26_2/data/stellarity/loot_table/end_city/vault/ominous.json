@@ -100,6 +100,18 @@
         {
           "condition": "minecraft:random_chance",
           "chance": 0.25
+        },
+        {
+          "condition": "minecraft:value_check",
+          "value": {
+            "type": "minecraft:score",
+            "target": {
+              "type": "minecraft:fixed",
+              "name": "#stellarity.config"
+            },
+            "score": "stellarity.config.enable_music_discs"
+          },
+          "range": 1
         }
       ]
     }

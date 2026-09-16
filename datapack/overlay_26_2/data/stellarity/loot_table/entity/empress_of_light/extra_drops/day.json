@@ -6,7 +6,21 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "value": "stellarity:item/armor/elytra/empress_wings"
+          "value": "stellarity:item/armor/elytra/empress_wings",
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#stellarity.config"
+                },
+                "score": "stellarity.config.enable_empress_wings"
+              },
+              "range": 1
+            }
+          ]
         }
       ],
       "conditions": [
@@ -21,7 +35,21 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "value": "stellarity:item/weapon/fluffy_hammer"
+          "value": "stellarity:item/weapon/fluffy_hammer",
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#stellarity.config"
+                },
+                "score": "stellarity.config.enable_fluffy_hammer_of_justice"
+              },
+              "range": 1
+            }
+          ]
         }
       ],
       "conditions": [
@@ -36,7 +64,21 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "value": "stellarity:item/music_disc/precipice_stereo"
+          "value": "stellarity:item/music_disc/precipice_stereo",
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#stellarity.config"
+                },
+                "score": "stellarity.config.enable_music_discs"
+              },
+              "range": 1
+            }
+          ]
         }
       ],
       "conditions": [
@@ -51,7 +93,21 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "value": "stellarity:block/pixie_in_a_jar"
+          "value": "stellarity:block/pixie_in_a_jar",
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#stellarity.config"
+                },
+                "score": "stellarity.config.enable_pixie_in_a_jar"
+              },
+              "range": 1
+            }
+          ]
         }
       ],
       "conditions": [
@@ -66,7 +122,21 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "value": "stellarity:item/trinket/prismatic_pearl"
+          "value": "stellarity:item/trinket/prismatic_pearl",
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#stellarity.config"
+                },
+                "score": "stellarity.config.enable_prismatic_pearl"
+              },
+              "range": 1
+            }
+          ]
         }
       ],
       "conditions": [

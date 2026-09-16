@@ -7,6 +7,7 @@
     "stellarity:util/status_effects/creative_shock/remove",
     "stellarity:util/status_effects/brittle/remove",
     "stellarity:util/status_effects/echo/remove",
+    "stellarity:util/status_effects/holy_flames/remove",
     "stellarity:util/status_effects/bloom/remove"
   ]
 }

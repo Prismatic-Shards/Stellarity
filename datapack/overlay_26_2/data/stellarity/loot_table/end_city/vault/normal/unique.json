@@ -10,7 +10,21 @@
           "value": "stellarity:item/spellbook/book_of_return",
           "weight": 3
         }
-      ]
+      ],
+      "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#stellarity.config"
+                },
+                "score": "stellarity.config.enable_book_of_return"
+              },
+              "range": 1
+            }
+          ]
     }
   ]
 }

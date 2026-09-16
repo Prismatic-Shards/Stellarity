@@ -5,19 +5,75 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "value": "stellarity:item/food/fish/ender_koi"
+          "value": "stellarity:item/food/fish/ender_koi",
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#stellarity.config"
+                },
+                "score": "stellarity.config.enable_ender_koi"
+              },
+              "range": 1
+            }
+          ]
         },
         {
           "type": "minecraft:loot_table",
-          "value": "stellarity:item/food/fish/overgrown_cod"
+          "value": "stellarity:item/food/fish/overgrown_cod",
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#stellarity.config"
+                },
+                "score": "stellarity.config.enable_overgrown_cod"
+              },
+              "range": 1
+            }
+          ]
         },
         {
           "type": "minecraft:loot_table",
-          "value": "stellarity:item/food/fish/frost_minnow"
+          "value": "stellarity:item/food/fish/frost_minnow",
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#stellarity.config"
+                },
+                "score": "stellarity.config.enable_frost_minnow"
+              },
+              "range": 1
+            }
+          ]
         },
         {
           "type": "minecraft:loot_table",
-          "value": "stellarity:item/food/fish/goosh"
+          "value": "stellarity:item/food/fish/goosh",
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#stellarity.config"
+                },
+                "score": "stellarity.config.enable_goosh"
+              },
+              "range": 1
+            }
+          ]
         }
       ]
     }

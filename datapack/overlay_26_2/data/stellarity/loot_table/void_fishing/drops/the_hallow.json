@@ -7,7 +7,21 @@
         {
           "type": "minecraft:loot_table",
           "value": "stellarity:item/food/fish/prismite",
-          "weight": 25
+          "weight": 25,
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#stellarity.config"
+                },
+                "score": "stellarity.config.enable_prismite"
+              },
+              "range": 1
+            }
+          ]
         },
         {
           "type": "minecraft:loot_table",

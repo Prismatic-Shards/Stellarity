@@ -10,7 +10,21 @@
         {
           "type": "minecraft:loot_table",
           "weight": 26,
-          "value": "stellarity:item/food/fish/ender_koi"
+          "value": "stellarity:item/food/fish/ender_koi",
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#stellarity.config"
+                },
+                "score": "stellarity.config.enable_ender_koi"
+              },
+              "range": 1
+            }
+          ]
         },
         {
           "type": "minecraft:loot_table",
@@ -22,6 +36,18 @@
               "predicate": {
                 "biomes": ["stellarity:amethyst_forest"]
               }
+            },
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#stellarity.config"
+                },
+                "score": "stellarity.config.enable_amethyst_budfish"
+              },
+              "range": 1
             }
           ]
         },
@@ -35,6 +61,18 @@
               "predicate": {
                 "biomes": ["stellarity:flesh_tundra"]
               }
+            },
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#stellarity.config"
+                },
+                "score": "stellarity.config.enable_crimson_tigerfish"
+              },
+              "range": 1
             }
           ]
         },
@@ -48,6 +86,18 @@
               "predicate": {
                 "biomes": ["stellarity:flesh_tundra"]
               }
+            },
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#stellarity.config"
+                },
+                "score": "stellarity.config.enable_fleshy_piranha"
+              },
+              "range": 1
             }
           ]
         },
@@ -55,7 +105,20 @@
           "type": "minecraft:loot_table",
           "quality": 1,
           "value": "stellarity:item/food/fish/crystal_heartfish",
-          "conditions": []
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#stellarity.config"
+                },
+                "score": "stellarity.config.enable_crystal_heartfish"
+              },
+              "range": 1
+            }
+          ]
         },
         {
           "type": "minecraft:loot_table",
@@ -67,6 +130,18 @@
               "predicate": {
                 "biomes": ["stellarity:the_hallow"]
               }
+            },
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#stellarity.config"
+                },
+                "score": "stellarity.config.enable_prismite"
+              },
+              "range": 1
             }
           ]
         },
@@ -80,6 +155,18 @@
               "predicate": {
                 "biomes": ["stellarity:fiery_hills"]
               }
+            },
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#stellarity.config"
+                },
+                "score": "stellarity.config.enable_flarefin_koi"
+              },
+              "range": 1
             }
           ]
         },
@@ -108,6 +195,18 @@
                   "name": "stellarity:location/in_biome/end_barrens"
                 }
               ]
+            },
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#stellarity.config"
+                },
+                "score": "stellarity.config.enable_overgrown_cod"
+              },
+              "range": 1
             }
           ]
         },
@@ -121,6 +220,18 @@
               "predicate": {
                 "biomes": ["stellarity:frozen_spikes"]
               }
+            },
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#stellarity.config"
+                },
+                "score": "stellarity.config.enable_frost_minnow"
+              },
+              "range": 1
             }
           ]
         },
@@ -134,6 +245,18 @@
               "predicate": {
                 "biomes": ["stellarity:prismarine_forest"]
               }
+            },
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#stellarity.config"
+                },
+                "score": "stellarity.config.enable_bubblefish"
+              },
+              "range": 1
             }
           ]
         }

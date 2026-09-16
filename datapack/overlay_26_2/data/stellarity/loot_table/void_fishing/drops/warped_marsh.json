@@ -16,6 +16,20 @@
                                 "max": 8
                             }
                         }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:value_check",
+                            "value": {
+                                "type": "minecraft:score",
+                                "target": {
+                                    "type": "minecraft:fixed",
+                                    "name": "#stellarity.config"
+                                },
+                                "score": "stellarity.config.enable_goosh"
+                            },
+                            "range": 1
+                        }
                     ]
                 },
                 {

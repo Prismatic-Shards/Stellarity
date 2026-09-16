@@ -39,14 +39,24 @@
           "type": "minecraft:loot_table",
           "value": "stellarity:item/food/shulker_body",
           "condition": {
-            "type": "minecraft:random_chance_with_enchanted_bonus",
-            "enchantment": "minecraft:looting",
-            "unenchanted_chance": 0.75,
-            "enchanted_chance": {
-              "type": "minecraft:linear",
-              "base": 0.8,
-              "per_level_above_first": 0.05
-            }
+            "type": "all_of",
+            "terms": [
+              {
+                "type": "minecraft:random_chance_with_enchanted_bonus",
+                "enchantment": "minecraft:looting",
+                "unenchanted_chance": 0.75,
+                "enchanted_chance": {
+                  "type": "minecraft:linear",
+                  "base": 0.8,
+                  "per_level_above_first": 0.05
+                }
+              },
+              {
+                "type": "int_value_check",
+                "value": "stellarity:item_check/food/shulker_body",
+                "test": 1
+              }
+            ]
           }
         }
       ]

@@ -95,6 +95,18 @@
       ],
       "conditions": [
         {
+          "condition": "minecraft:value_check",
+          "value": {
+            "type": "minecraft:score",
+            "target": {
+              "type": "minecraft:fixed",
+              "name": "#stellarity.config"
+            },
+            "score": "stellarity.config.enable_phantom_wings"
+          },
+          "range": 1
+        },
+        {
           "condition": "minecraft:random_chance",
           "chance": {
             "type": "minecraft:score",

@@ -61,6 +61,20 @@
                 "max": 0.79
               }
             }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#stellarity.config"
+                },
+                "score": "stellarity.config.enable_starless_scythe"
+              },
+              "range": 1
+            }
           ]
         }
       ]
