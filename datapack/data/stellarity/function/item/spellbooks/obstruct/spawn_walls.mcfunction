@@ -1,5 +1,5 @@
 
-function stellarity:sfx/enter_leave_end_wave
+function stellarity:sfx/enter_leave_end/wave
 playsound block.anvil.land player @a[distance=..32] ~ ~ ~ 1 0.5
 
 scoreboard players set @s stellarity.item.spellbook.obstruct.cooldown 15

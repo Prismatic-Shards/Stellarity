@@ -9,7 +9,8 @@ advancement grant @s only stellarity:altar_of_the_accursed/cancel_damage_hallowe
 # I-frames of some sort
 # Such high amplifier values make sure that
 # these roman numbers do not appear at all!
-  effect give @s resistance 2 100 false
+  effect give @s resistance 2 100 true
+
   effect give @s fire_resistance 6 0 false
   effect give @s water_breathing 6 0 false
 

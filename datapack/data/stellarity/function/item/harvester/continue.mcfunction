@@ -109,7 +109,7 @@ data modify storage stellarity:temp harvester.custom_data."stellarity:harvester"
   data modify storage stellarity:temp harvester.components."minecraft:attribute_modifiers" set from storage stellarity:temp harvester.attributes
   data modify storage stellarity:temp harvester.components."minecraft:custom_data" set from storage stellarity:temp harvester.custom_data
   data modify storage stellarity:temp harvester.components."minecraft:custom_model_data" set from storage stellarity:temp harvester.cmd
-  execute if score #damage stellarity.misc matches 600.. run data modify storage stellarity:temp harvester.components."minecraft:damage_resistant" set value {types:"#is_fire"}
+  execute if score #damage stellarity.misc matches 600.. run data modify storage stellarity:temp harvester.components."minecraft:damage_resistant" set value {types:"#minecraft:is_fire"}
 
   data modify storage stellarity:temp harvester.components set string storage stellarity:temp harvester.components
 

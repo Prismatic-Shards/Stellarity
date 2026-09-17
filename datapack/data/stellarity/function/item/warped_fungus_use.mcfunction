@@ -6,5 +6,3 @@ execute if entity @s[predicate=stellarity:item/holding/spellbooks/return] run fu
 execute if entity @s[predicate=stellarity:item/holding/spellbooks/obstruct] run function stellarity:item/spellbooks/obstruct/use
 
 execute if entity @s[predicate=stellarity:item/holding/satchel_of_voids] run function stellarity:item/satchel_of_voids/use
-
-execute if entity @s[predicate=stellarity:item/holding/endonomicon] run function stellarity:item/endonomicon/right_click

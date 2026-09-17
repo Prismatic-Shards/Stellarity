@@ -39,10 +39,10 @@
         }
       }
     ],
-    "trident_return_acceleration": [
+    "minecraft:trident_return_acceleration": [
       {
         "effect": {
-          "type": "add",
+          "type": "minecraft:add",
           "value": 3
         }
       }

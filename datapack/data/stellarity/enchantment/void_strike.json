@@ -3,7 +3,7 @@
     "translate": "enchantment.stellarity.void_strike",
     "color": "#D600F4"
   },
-  "supported_items": "#enchantable/weapon",
+  "supported_items": "#minecraft:enchantable/sharp_weapon",
   "weight": 1,
   "max_level": 1,
   "min_cost": {

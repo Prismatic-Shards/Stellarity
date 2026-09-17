@@ -755,5 +755,11 @@
   "subtitles.stellarity.item.living_flesh.boost": "Máu thịt tươi sống nhận sát thương",
   "subtitles.stellarity.item.void_pendant.zap": "Electric Shock",
   "trim_material.stellarity.chorus": "Chorus Material",
-  "trim_material.stellarity.enderite": "Enderite Material"
+  "trim_material.stellarity.enderite": "Enderite Material",
+  "death.attack.stellarity.dot.holy_flames.1": "%1$s was incinerated by holy flames",
+  "death.attack.stellarity.dot.holy_flames.2": "%1$s was cleansed by divine fire",
+  "death.attack.stellarity.carcanet.1": "%1$s was struck down by %2$s's falling star",
+  "death.attack.stellarity.carcanet.2": "%1$s was crushed by the stars summoned by %2$s",
+  "death.attack.stellarity.sharanga_explosion": "%1$s was caught in %2$s's radiant blast",
+  "message.stellarity.void_pendant.amethyst_ready": "Ability is ready:"
 }

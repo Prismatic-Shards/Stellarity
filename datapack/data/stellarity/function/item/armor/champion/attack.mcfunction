@@ -1,5 +1,6 @@
 attribute @s attack_damage modifier remove stellarity:champion_armor.combo
 attribute @s attack_speed modifier remove stellarity:champion_armor.combo
+attribute @s sweeping_damage_ratio modifier remove stellarity:champion_armor.combo
 
 execute unless score @s stellarity.item.armors.champion_armor.combo matches 1.. run function stellarity:item/armor/champion/sounds/0
 execute if score @s stellarity.item.armors.champion_armor.combo matches 1 run function stellarity:item/armor/champion/sounds/1

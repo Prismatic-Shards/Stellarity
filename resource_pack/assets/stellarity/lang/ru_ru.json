@@ -173,6 +173,8 @@
   "death.attack.stellarity.dot.frostburn.1": "%1$s стал ледышкой",
   "death.attack.stellarity.dot.frostburn.2": "Кровь %1$s застыла",
   "death.attack.stellarity.dot.leeching": "Жизненные силы %1$s были исчерпаны",
+  "death.attack.stellarity.dot.holy_flames.1": "%1$s сгорел дотла в священном пламени",
+  "death.attack.stellarity.dot.holy_flames.2": "%1$s был очищен божественным огнём",
   "death.attack.stellarity.dot.prismatic_inferno.1": "%1$s был сожжён заживо радужными огнями",
   "death.attack.stellarity.dot.prismatic_inferno.2": "%1$s был превращён в радужные угли",
   "death.attack.stellarity.dragonblade.1": "%1$s был отправлен %2$s в мир иной",
@@ -780,5 +782,9 @@
   "subtitles.stellarity.item.living_flesh.boost": "Живая плоть изнывает",
   "subtitles.stellarity.item.void_pendant.zap": "Electric Shock",
   "trim_material.stellarity.chorus": "Хорус",
-  "trim_material.stellarity.enderite": "Эндерит"
+  "trim_material.stellarity.enderite": "Эндерит",
+  "death.attack.stellarity.carcanet.1": "%1$s был сражён упавшей звездой игрока %2$s",
+  "death.attack.stellarity.carcanet.2": "%1$s был раздавлен звёздами, призванными %2$s",
+  "death.attack.stellarity.sharanga_explosion": "%1$s пал жертвой лучезарного взрыва %2$s",
+  "message.stellarity.void_pendant.amethyst_ready": "Способность готова:"
 }

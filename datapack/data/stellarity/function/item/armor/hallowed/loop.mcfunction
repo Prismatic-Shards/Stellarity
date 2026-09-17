@@ -9,7 +9,8 @@ execute if score @s stellarity.item.armors.holy_protection_cooldown matches 1 ru
 function stellarity:item/armor/hallowed/holy_protection/on
 
 # Because Milk Buckets exist :/
-  execute if entity @s[tag=stellarity.holy_protection] run summon minecraft:area_effect_cloud ~ ~ ~ {potion_contents:{custom_effects:[{id:"minecraft:resistance",amplifier:100b,duration:-1,show_particles:0b,show_icon:1b,ambient:1b}]},Duration:1,ReapplicationDelay:0,WaitTime:-1,Age:-1,Tags:["smithed.entity","smithed.strict"],custom_particle:{type:"block","block_state":"air"}}
+  execute if entity @s[tag=stellarity.holy_protection] run effect give @s resistance 2 100 true
+
 
 # Remove knockback resistance
   execute if score @s stellarity.item.armors.holy_protection_cooldown matches 500..539 run particle minecraft:poof ~ ~1 ~ 0.3 0.5 0.3 0 1

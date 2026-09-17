@@ -1,8 +1,9 @@
 # Ticked directly from marker loop
 
-execute facing entity @p feet anchored eyes positioned ^ ^ ^1 rotated as @s positioned ^ ^ ^5 facing entity @s eyes facing ^ ^ ^-1 positioned as @s run tp @s ^ ^ ^0.15 ~ ~
+execute unless block ~ ~ ~ #kohara:non_solid run function stellarity:entity/dragon/attacks/ball_of_blight/detonate
+execute if entity @p[distance=..1.5] run function stellarity:entity/dragon/attacks/ball_of_blight/detonate
 
-damage @p[distance=..1.5] 10 mob_attack by @n[type=ender_dragon]
+execute facing entity @p feet anchored eyes positioned ^ ^ ^1 rotated as @s positioned ^ ^ ^5 facing entity @s eyes facing ^ ^ ^-1 positioned as @s run tp @s ^ ^ ^0.15 ~ ~
 
 # Debug
 #particle block_marker{block_state: 'minecraft:barrier'} ~ ~ ~ 0 0 0 0 1 force

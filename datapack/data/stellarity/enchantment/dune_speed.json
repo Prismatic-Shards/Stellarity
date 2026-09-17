@@ -3,7 +3,9 @@
     "translate": "enchantment.stellarity.dune_speed",
     "color": "#ffd026"
   },
-  "exclusive_set": "minecraft:soul_speed",
+  "exclusive_set": [
+    "minecraft:soul_speed"
+  ],
   "supported_items": "#minecraft:enchantable/foot_armor",
   "weight": 1,
   "max_level": 3,
@@ -27,7 +29,7 @@
           "effects": [
             {
               "type": "minecraft:attribute",
-              "id": "minecraft:stellarity.dune_speed",
+              "id": "stellarity:enchantment.dune_speed",
               "attribute": "minecraft:movement_speed",
               "amount": {
                 "type": "minecraft:linear",

@@ -79,7 +79,7 @@
               "entity": "direct_attacker",
               "predicate": {
                 "entity_type": "#minecraft:arrows",
-                "nbt": "{weapon:{id:bow,components:{\"minecraft:custom_data\":{\"stellarity:item\":\"call_of_the_void\"}}}}"
+                "nbt": "{weapon:{id:\"minecraft:bow\",components:{\"minecraft:custom_data\":{\"stellarity:item\":\"call_of_the_void\"}}}}"
               }
             }
           ]

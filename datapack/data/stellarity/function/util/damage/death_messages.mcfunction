@@ -18,7 +18,10 @@
   execute if entity @s[tag=stellarity.damage.tamaris] run function stellarity:util/damage/death_messages/tamaris
 
 #> Prismatic Inferno
-  execute if entity @s[tag=stellarity.damage.dot.prismaric_inferno] run function stellarity:util/damage/death_messages/prismatic_inferno
+  execute if entity @s[tag=stellarity.damage.dot.prismatic_inferno] run function stellarity:util/damage/death_messages/prismatic_inferno
+
+#> Holy Flames
+  execute if entity @s[tag=stellarity.damage.dot.holy_flames] run function stellarity:util/damage/death_messages/holy_flames
 
 #> Frostburn
   execute if entity @s[tag=stellarity.damage.dot.frostburn] run function stellarity:util/damage/death_messages/frostburn
