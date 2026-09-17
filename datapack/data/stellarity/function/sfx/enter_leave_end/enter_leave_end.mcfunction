@@ -8,6 +8,6 @@ particle reverse_portal ~ ~1 ~ 1 1 1 .02 50 normal @a[distance=0..]
 particle dragon_breath ~ ~1 ~ 0 0 0 .03 15 normal
 particle dragon_breath ~ ~1 ~ 0 0 0 .06 15 normal
 
-function stellarity:sfx/enter_leave_end_wave
+function stellarity:sfx/enter_leave_end/wave
 
 advancement revoke @s only stellarity:event/enter_leave_end

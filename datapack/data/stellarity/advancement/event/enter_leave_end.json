@@ -30,6 +30,6 @@
     ]
   ],
   "rewards": {
-    "function": "stellarity:sfx/enter_leave_end"
+    "function": "stellarity:sfx/enter_leave_end/check"
   }
 }

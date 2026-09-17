@@ -2,7 +2,7 @@
 	"temperature": 0.8,
 	"downfall": 0.9,
 	"has_precipitation": false,
-	"creature_spawn_probability": 0,
+	"creature_spawn_probability": 0.3,
 	"attributes": {
 		"visual/sky_color": 0,
 		"visual/fog_color": 0,
@@ -51,7 +51,7 @@
 		],
 		"creature": [
 			{
-				"type": "illusioner",
+				"type": "frog",
 				"maxCount": 4,
 				"minCount": 1,
 				"weight": 100

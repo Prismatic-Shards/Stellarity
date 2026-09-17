@@ -16,8 +16,9 @@
   execute if entity @s[predicate=stellarity:item/holding/tamaris] if entity @n[type=!#kohara:invalid_targets,distance=0.01..10,tag=stellarity.item.tamaris.executable] run function stellarity:item/tamaris/holding_loop
 
 # Soaring Insignia
-  execute if entity @s[predicate=stellarity:item/holding/trinket/soaring_insignia] run function stellarity:item/soaring_insignia/loop
-  execute if entity @s[tag=stellarity.insignia.flying,predicate=!stellarity:item/holding/trinket/soaring_insignia] run function stellarity:item/soaring_insignia/stop_flight
+  execute if entity @s[predicate=stellarity:item/holding/trinket/soaring_insignia] if score #stellarity.config stellarity.config.enable_soaring_insignia matches 1 run function stellarity:item/soaring_insignia/loop
+  execute if entity @s[tag=stellarity.insignia.flying,predicate=!stellarity:item/holding/trinket/soaring_insignia] if score #stellarity.config stellarity.config.enable_soaring_insignia matches 1 run function stellarity:item/soaring_insignia/stop_flight
+  execute if entity @s[tag=stellarity.insignia.flying] if score #stellarity.config stellarity.config.enable_soaring_insignia matches 0 run function stellarity:item/soaring_insignia/stop_flight
 
 # Kaleidoscope
   execute if entity @s[predicate=stellarity:item/holding/kaleidoscope] run function stellarity:item/kaleidoscope/loop
@@ -50,25 +51,31 @@
   execute if entity @s[tag=stellarity.holding_stellar_striker,predicate=!stellarity:item/holding/stellar_striker] run function stellarity:item/stellar_striker/holding/stop
 
 # Void Pendant
-  execute if entity @s[predicate=stellarity:item/holding/void_pendant/amethyst] run function stellarity:item/void_pendant/amethyst/loop
+  execute if entity @s[predicate=stellarity:item/holding/void_pendant/amethyst] if score #stellarity.config stellarity.config.enable_void_pendant matches 1 run function stellarity:item/void_pendant/amethyst/loop
 
-  execute if entity @s[predicate=stellarity:item/holding/void_pendant/diamond] run function stellarity:item/void_pendant/diamond/loop
-  execute if entity @s[tag=stellarity.void_pendant.diamond,predicate=!stellarity:item/holding/void_pendant/diamond] run function stellarity:item/void_pendant/diamond/remove_buff
+  execute if entity @s[predicate=stellarity:item/holding/void_pendant/diamond] if score #stellarity.config stellarity.config.enable_void_pendant matches 1 run function stellarity:item/void_pendant/diamond/loop
+  execute if entity @s[tag=stellarity.void_pendant.diamond,predicate=!stellarity:item/holding/void_pendant/diamond] if score #stellarity.config stellarity.config.enable_void_pendant matches 1 run function stellarity:item/void_pendant/diamond/remove_buff
+  execute if entity @s[tag=stellarity.void_pendant.diamond] if score #stellarity.config stellarity.config.enable_void_pendant matches 0 run function stellarity:item/void_pendant/diamond/remove_buff
 
-  execute if entity @s[predicate=stellarity:item/holding/void_pendant/emerald] run function stellarity:item/void_pendant/emerald/loop
-  execute if entity @s[tag=stellarity.void_pendant.emerald,predicate=!stellarity:item/holding/void_pendant/emerald] run function stellarity:item/void_pendant/emerald/remove_buff
+  execute if entity @s[predicate=stellarity:item/holding/void_pendant/emerald] if score #stellarity.config stellarity.config.enable_void_pendant matches 1 run function stellarity:item/void_pendant/emerald/loop
+  execute if entity @s[tag=stellarity.void_pendant.emerald,predicate=!stellarity:item/holding/void_pendant/emerald] if score #stellarity.config stellarity.config.enable_void_pendant matches 1 run function stellarity:item/void_pendant/emerald/remove_buff
+  execute if entity @s[tag=stellarity.void_pendant.emerald] if score #stellarity.config stellarity.config.enable_void_pendant matches 0 run function stellarity:item/void_pendant/emerald/remove_buff
 
-  execute if entity @s[predicate=stellarity:item/holding/void_pendant/iron] run function stellarity:item/void_pendant/iron/loop
-  execute if entity @s[tag=stellarity.void_pendant.iron,predicate=!stellarity:item/holding/void_pendant/iron] run function stellarity:item/void_pendant/iron/remove_buff
+  execute if entity @s[predicate=stellarity:item/holding/void_pendant/iron] if score #stellarity.config stellarity.config.enable_void_pendant matches 1 run function stellarity:item/void_pendant/iron/loop
+  execute if entity @s[tag=stellarity.void_pendant.iron,predicate=!stellarity:item/holding/void_pendant/iron] if score #stellarity.config stellarity.config.enable_void_pendant matches 1 run function stellarity:item/void_pendant/iron/remove_buff
+  execute if entity @s[tag=stellarity.void_pendant.iron] if score #stellarity.config stellarity.config.enable_void_pendant matches 0 run function stellarity:item/void_pendant/iron/remove_buff
   
-  execute if entity @s[predicate=stellarity:item/holding/void_pendant/gold] run function stellarity:item/void_pendant/gold/loop
-  execute if entity @s[tag=stellarity.void_pendant.gold,predicate=!stellarity:item/holding/void_pendant/gold] run function stellarity:item/void_pendant/gold/remove_buff
+  execute if entity @s[predicate=stellarity:item/holding/void_pendant/gold] if score #stellarity.config stellarity.config.enable_void_pendant matches 1 run function stellarity:item/void_pendant/gold/loop
+  execute if entity @s[tag=stellarity.void_pendant.gold,predicate=!stellarity:item/holding/void_pendant/gold] if score #stellarity.config stellarity.config.enable_void_pendant matches 1 run function stellarity:item/void_pendant/gold/remove_buff
+  execute if entity @s[tag=stellarity.void_pendant.gold] if score #stellarity.config stellarity.config.enable_void_pendant matches 0 run function stellarity:item/void_pendant/gold/remove_buff
 
-  execute if entity @s[predicate=stellarity:item/holding/void_pendant/netherite] run function stellarity:item/void_pendant/netherite/loop
-  execute if entity @s[tag=stellarity.void_pendant.netherite,predicate=!stellarity:item/holding/void_pendant/netherite] run function stellarity:item/void_pendant/netherite/remove_buff
+  execute if entity @s[predicate=stellarity:item/holding/void_pendant/netherite] if score #stellarity.config stellarity.config.enable_void_pendant matches 1 run function stellarity:item/void_pendant/netherite/loop
+  execute if entity @s[tag=stellarity.void_pendant.netherite,predicate=!stellarity:item/holding/void_pendant/netherite] if score #stellarity.config stellarity.config.enable_void_pendant matches 1 run function stellarity:item/void_pendant/netherite/remove_buff
+  execute if entity @s[tag=stellarity.void_pendant.netherite] if score #stellarity.config stellarity.config.enable_void_pendant matches 0 run function stellarity:item/void_pendant/netherite/remove_buff
 
-  execute if entity @s[predicate=stellarity:item/holding/void_pendant/quartz] run function stellarity:item/void_pendant/quartz/loop
-  execute if entity @s[tag=stellarity.void_pendant.quartz,predicate=!stellarity:item/holding/void_pendant/quartz] run function stellarity:item/void_pendant/quartz/remove_buff
+  execute if entity @s[predicate=stellarity:item/holding/void_pendant/quartz] if score #stellarity.config stellarity.config.enable_void_pendant matches 1 run function stellarity:item/void_pendant/quartz/loop
+  execute if entity @s[tag=stellarity.void_pendant.quartz,predicate=!stellarity:item/holding/void_pendant/quartz] if score #stellarity.config stellarity.config.enable_void_pendant matches 1 run function stellarity:item/void_pendant/quartz/remove_buff
+  execute if entity @s[tag=stellarity.void_pendant.quartz] if score #stellarity.config stellarity.config.enable_void_pendant matches 0 run function stellarity:item/void_pendant/quartz/remove_buff
 ## Armor sets
   # Has to be ticked after everything so
     # that Floral Armor effects can work

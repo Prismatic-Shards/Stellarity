@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "player_attack_clicked_interaction_entity": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": {
+          "entity_type": "minecraft:interaction"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "animated_java:global/interactions/attack/on"
+  }
+}

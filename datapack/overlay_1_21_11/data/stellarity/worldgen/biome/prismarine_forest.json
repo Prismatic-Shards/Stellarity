@@ -3,6 +3,7 @@
   "downfall": 0.4,
   "has_precipitation": false,
   "creature_spawn_probability": 0,
+  "creature_spawn_probability": 0.3,
   "attributes": {
     "visual/sky_color": 0,
     "visual/fog_color": 0,
@@ -44,7 +45,7 @@
   "spawners": {
     "creature": [
       {
-        "type": "illusioner",
+        "type": "axolotl",
         "maxCount": 4,
         "minCount": 1,
         "weight": 100

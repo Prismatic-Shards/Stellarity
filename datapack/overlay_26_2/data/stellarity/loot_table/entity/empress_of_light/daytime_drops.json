@@ -16,7 +16,7 @@
                   "type": "minecraft:fixed",
                   "name": "#stellarity.config"
                 },
-                "score": "stellarity.config.enable_kalediscope"
+                "score": "stellarity.config.enable_kaleidoscope"
               },
               "range": 1
             }

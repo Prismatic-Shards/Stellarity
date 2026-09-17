@@ -19,13 +19,11 @@ execute as @e[type=zombified_piglin,tag=stellarity.flesh_piglin] at @s run funct
 # execute as @e[type=slime,predicate=stellarity:location/in_the_end,tag=!stellarity.voided_slime,tag=!stellarity.end_city] at @s run function stellarity:entity/voided_slime/abort_offsprings
   execute as @e[type=marker,tag=stellarity.spawn_egg] at @s run function stellarity:entity/handle_spawn_egg with entity @s data
 
-execute as @e[type=illusioner,tag=!smithed.entity] at @s if biome ~ ~ ~ #is_end run function stellarity:entity/animal/end_spawn
-
 execute if score #shulking.is_alive stellarity.misc matches 1 as @e[type=allay,tag=stellarity.shulking] at @s run function stellarity:entity/shulking/main
 execute if score #shulking.is_alive stellarity.misc matches 1 as @e[type=shulker,tag=stellarity.shulking.body] at @s run function stellarity:entity/shulking/main_body
 execute if score #shulking.is_alive stellarity.misc matches 1 as @e[type=item_display,tag=stellarity.shulking.spike] at @s run function stellarity:entity/shulking/attacks/spike/loop
 
-execute as @e[type=#stellarity:end_variant_animals,tag=!smithed.entity,nbt={variant:"stellarity:end"}] run function stellarity:entity/animal/convert
+execute as @e[type=#stellarity:end_variant_animals,predicate=stellarity:entity/end_variant_animals,tag=!smithed.entity] run function stellarity:entity/animal/convert
 execute as @e[type=sheep,tag=!stellarity.invalid_animal,tag=!smithed.entity] at @s run function stellarity:entity/animal/convert_sheep
 
 execute if score #shulking.is_alive stellarity.misc matches 1 as @e[tag=stellarity.shulking.body] at @s run bossbar set stellarity:shulking players @a[distance=..64]

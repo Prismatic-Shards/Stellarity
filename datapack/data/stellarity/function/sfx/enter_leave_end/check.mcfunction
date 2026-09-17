@@ -1,0 +1,1 @@
+execute if entity @s[gamemode=!spectator] run function stellarity:sfx/enter_leave_end/enter_leave_end

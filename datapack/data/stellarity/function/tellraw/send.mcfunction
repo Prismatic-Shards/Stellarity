@@ -16,7 +16,13 @@ tellraw @s [\
 tellraw @s [\
 {"text": "| ","color":"gray","bold":true},\
 {"text": "     Cʀᴇᴀᴛᴇᴅ ʙʏ ","bold":false,"color":"#BB80B9","italic":true},\
-{"text":"ᴋᴏʜᴀʀᴀ","bold":true,"color":"#AA5096","italic":true}\
+{"text":"ᴋᴏʜᴀʀᴀ","bold":true,"color":"#AA5096","italic":true},\
+]
+
+tellraw @s [\
+{"text": "| ","color":"gray","bold":true},\
+{"text": "     Mᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ ","bold":false,"color":"#755074","italic":true},\
+{"text":"ʙᴀɴᴀɴᴀᴋɪɴɢхᴏ","bold":true,"color":"#773e6b","italic":true}\
 ]
 
 tellraw @s {"text": "| ","color":"gray","bold":true}
@@ -42,13 +48,13 @@ tellraw @s {"text": "| ","color":"gray","bold":true}
   {"text":"Discord","color":"#589CF2","bold":false,"click_event": {"action": "open_url","url": "http://discord.prismaticshards.xyz"},"hover_event": {"action": "show_text","value":{"text":"Click to visit"}}},\
   {"text": " ▪ ","color":"gray","bold":true},\
   {"text":"⚙ ","color":"#C2C2C2","bold":true},\
-  {"text":"Config","color":"#DCDCDC","bold":false,"click_event": {"action": "run_command","command": "/function stellarity:_cmd/configuration"},"hover_event": {"action": "show_text","value":{"text":"Click to edit"}}}\
+  {"text":"Configuration","color":"#DCDCDC","bold":false,"click_event": {"action": "run_command","command": "/dialog show @s stellarity:config/config"},"hover_event": {"action": "show_text","value":{"text":"Click to edit"}}}\
   ]
 
 tellraw @s [\
 {"text": "| ","color":"gray","bold":true},\
-{"text":" ⭐ ","color":"#FF5E5B","bold":true},\
-{"text":"Ko-Fi","color":"#FF8987","bold":false,"click_event": {"action": "open_url","url": "https://ko-fi.com/kohara"},"hover_event": {"action": "show_text","value":{"text":"Click to visit"}}},\
+{"text":" ⭐ ","color":"#9a78f8","bold":true},\
+{"text":"Translations","color":"#cbb8fd","bold":false,"click_event": {"action": "open_url","url": "https://github.com/Prismatic-Shards/translations"},"hover_event": {"action": "show_text","value":{"text":"Click to visit"}}},\
 {"text": " ▪ ","color":"gray","bold":true},\
 {"text":"❓ ","color":"#E70000","bold":true},\
 {"text":"FAQ","color":"white","bold":false,"click_event": {"action": "open_url","url": "https://prismaticshards.wiki.gg/wiki/Stellarity"},"hover_event": {"action": "show_text","value":{"text":"Click to read"}}},{"text": " ▪ ","color":"gray","bold":true},{"text":"🖥 ","color":"#01E0FF","bold":true},\
@@ -60,8 +66,8 @@ tellraw @s {"text": "| ","color":"gray","bold":true}
 ## Project Pages
   tellraw @s [{"text": "| ","color":"gray","bold":true},{"text":"Pʀᴏᴊᴇᴄᴛ Pᴀɢᴇ","color":"gray","bold":false,"italic":true}]
 
-# PlanetMinecraft
-  tellraw @s [{"text": "| ","color":"gray","bold":true},{"text":" 🌍 ","color":"#3DA2FF","bold":true},{"text":"PlanetMinecraft","color":"#7DEA00","bold":false,"click_event": {"action": "open_url","url": "https://planetminecraft.com/data-pack/fokastudio-s-ender-expansion"},"hover_event": {"action": "show_text","value":{"text":"Click to visit"}}}]
+# GitHub
+  tellraw @s [{"text": "| ","color":"gray","bold":true},{"text":" 🐱 ","color":"#797979","bold":true},{"text":"GitHub","color":"#ffffff","bold":false,"click_event": {"action": "open_url","url": "https://github.com/Prismatic-Shards/Stellarity"},"hover_event": {"action": "show_text","value":{"text":"Click to visit"}}}]
 
 # CurseForge
   tellraw @s [{"text": "| ","color":"gray","bold":true},{"text":" 🔨 ","color":"#D85831","bold":true},{"text":"CurseForge","color":"#FF683A","bold":false,"click_event": {"action": "open_url","url": "https://curseforge.com/minecraft/mc-mods/stellarity"},"hover_event": {"action": "show_text","value":{"text":"Click to visit"}}}]

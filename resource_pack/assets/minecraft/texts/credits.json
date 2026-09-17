@@ -15,7 +15,9 @@
           },
           {
             "title": "Original Creator §7(§5Far End§7, MC-1.17)",
-            "names": ["Hex"]
+            "names": [
+              "Hex"
+            ]
           }
         ]
       },
@@ -25,9 +27,9 @@
           {
             "title": "Artists",
             "names": [
-              "kohara", 
+              "kohara",
               "BrokenEmp",
-              "MiadsDaEpik",
+              "MidasDaEpik",
               "Alligator",
               "WildPlacedPixel"
             ]
@@ -42,7 +44,11 @@
           },
           {
             "title": "Other",
-            "names": ["u/Hekademos §7(Animated Dragon's Breath)"]
+            "names": [
+              "u/Hekademos §7(Animated Dragon's Breath)",
+              "LunaStartune §7Potassifish name",
+              "TheOrenith §7Flavors of The Void name"
+            ]
           }
         ]
       },
@@ -75,13 +81,16 @@
         "titles": [
           {
             "title": "Builders",
-            "names": ["Bush_King", "kohara", "Coder2195"]
+            "names": [
+              "Bush_King",
+              "kohara",
+              "Coder2195"
+            ]
           },
           {
             "title": "Contributors",
             "names": [
               "WildPlacedPixel",
-              "MidasDaEpik",
               "IEatPotatoes_",
               "RaiderRoss",
               "DuskAdler",
@@ -96,11 +105,17 @@
         "titles": [
           {
             "title": "Brazilian Portugese",
-            "names": ["MeiaQuatru"]
+            "names": [
+              "MeiaQuatru"
+            ]
           },
           {
             "title": "Russian",
-            "names": ["Tefny", "Progames723"]
+            "names": [
+              "Tefny",
+              "Progames723",
+              "Void7676_"
+            ]
           }
         ]
       },
@@ -113,19 +128,31 @@
         "titles": [
           {
             "title": "Discord Server Management",
-            "names": ["Bush_King", "theammir", "lynx"]
+            "names": [
+              "Bush_King",
+              "theammir",
+              "lynx"
+            ]
           },
           {
             "title": "GitHub Actions Automation",
-            "names": ["Phoenix"]
+            "names": [
+              "Phoenix"
+            ]
           },
           {
             "title": "Screenshots",
-            "names": ["Dat1Mexican", "Junbra", "BananaKingXO"]
+            "names": [
+              "Dat1Mexican",
+              "Junbra",
+              "BananaKingXO"
+            ]
           },
           {
             "title": "",
-            "names": ["§7"]
+            "names": [
+              "§7"
+            ]
           },
           {
             "title": "",
@@ -148,19 +175,34 @@
           },
           {
             "title": "",
-            "names": ["§7"]
+            "names": [
+              "§7"
+            ]
           },
           {
             "title": "§lAnd §6§lyou§r§l!",
-            "names": ["§e§lThank you for playing §d§lStellarity§e§l!"]
+            "names": [
+              "§e§lThank you for playing §d§lStellarity§e§l!"
+            ]
           },
           {
             "title": "",
-            "names": ["§f~ kohara"]
+            "names": [
+              "§f~ kohara"
+            ]
           },
           {
             "title": "",
-            "names": ["§7", "§7", "§7", "§7", "§7", "§7", "§7", "§7"]
+            "names": [
+              "§7",
+              "§7",
+              "§7",
+              "§7",
+              "§7",
+              "§7",
+              "§7",
+              "§7"
+            ]
           }
         ]
       }

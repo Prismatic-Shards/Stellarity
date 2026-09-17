@@ -2,7 +2,7 @@
 	"temperature": 0.8,
 	"downfall": 0.4,
 	"has_precipitation": false,
-	"creature_spawn_probability": 0,
+	"creature_spawn_probability": 0.3,
 	"attributes": {
 		"visual/sky_color": 0,
 		"visual/fog_color": 0,
@@ -63,11 +63,35 @@
 		],
 		"creature": [
 			{
-				"type": "illusioner",
-				"maxCount": 4,
-				"minCount": 1,
-				"weight": 100
-			}
+        "type": "pig",
+        "maxCount": 4,
+        "minCount": 1,
+        "weight": 20
+      },
+      {
+        "type": "cow",
+        "maxCount": 4,
+        "minCount": 1,
+        "weight": 20
+      },
+      {
+        "type": "sheep",
+        "maxCount": 4,
+        "minCount": 1,
+        "weight": 20
+      },
+      {
+        "type": "chicken",
+        "maxCount": 4,
+        "minCount": 1,
+        "weight": 20
+      },
+      {
+        "type": "wolf",
+        "maxCount": 4,
+        "minCount": 1,
+        "weight": 20
+      }
 		]
 	},
 	"spawn_costs": {

@@ -19,5 +19,8 @@ loot give @s loot stellarity:item/music_disc/deviants_light_music_box
 loot give @s loot stellarity:item/music_disc/fires_of_hokkai
 loot give @s loot stellarity:item/music_disc/precipice_stereo
 
+loot give @s loot stellarity:item/book/endonomicon
+loot give @s loot stellarity:item/book/flavors_of_the_void
+
 loot give @s loot stellarity:item/ingredients/ender_egg
 

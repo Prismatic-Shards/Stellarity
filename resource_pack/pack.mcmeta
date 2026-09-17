@@ -14,7 +14,7 @@
       }
     ],
     "min_format": 75,
-    "max_format": 88
+    "max_format": [97,1]
   },
   "overlays": {
     "entries": [
