@@ -45,9 +45,7 @@
           {
             "title": "Other",
             "names": [
-              "u/Hekademos §7(Animated Dragon's Breath)",
-              "LunaStartune §7Potassifish name",
-              "TheOrenith §7Flavors of The Void name"
+              "u/Hekademos §7(Animated Dragon's Breath)"
             ]
           }
         ]
@@ -113,7 +111,7 @@
             "title": "Russian",
             "names": [
               "Tefny",
-              "Progames723",
+              "voided_ptr",
               "Void7676_"
             ]
           }
@@ -121,7 +119,10 @@
       },
       {
         "discipline": "Other",
-        "titles": []
+        "titles": [
+          "LunaStartune §7Potassifish name",
+          "The_Orenith §7Flavors of The Void name"
+        ]
       },
       {
         "discipline": "§bSpecial Thanks",
@@ -144,8 +145,7 @@
             "title": "Screenshots",
             "names": [
               "Dat1Mexican",
-              "Junbra",
-              "BananaKingXO"
+              "Junbra"
             ]
           },
           {

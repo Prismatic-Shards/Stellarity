@@ -4,7 +4,6 @@
   "predicate": {
     "slots": {
       "container.*": {
-        "items": ["minecraft:endermite_spawn_egg"],
         "predicates": {
           "minecraft:custom_data": {
             "stellarity:item": "radiant_jewel"

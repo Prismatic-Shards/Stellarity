@@ -30,7 +30,6 @@
                 },
                 "tooltip_display": {
                   "hidden_components": [
-                    "potion_contents",
                     "attribute_modifiers"
                   ]
                 }
