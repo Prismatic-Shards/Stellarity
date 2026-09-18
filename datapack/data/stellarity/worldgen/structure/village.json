@@ -36,7 +36,7 @@
       "spawns": []
     }
   },
-  "terrain_adaptation": "beard_box",
+  "terrain_adaptation": "beard_thin",
   "start_pool": "stellarity:village/layouts",
   "size": 6,
   "start_height": {
