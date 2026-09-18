@@ -35,12 +35,12 @@
 		"gameplay/natural_mob_spawns": {
 			"spawn_costs": {},
 			"spawns_by_category": {
-				"water_ambient": [
+				"water_creature": [
 					{
 						"type": "minecraft:tropical_fish",
 						"count": {
 							"type": "uniform",
-							"min_inclusive": 8,
+							"min_inclusive": 6,
 							"max_inclusive": 8
 						},
 						"weight": 25
@@ -54,7 +54,7 @@
 							"min_inclusive": 1,
 							"max_inclusive": 4
 						},
-						"weight": 100
+						"weight": 25
 					}
 				]
 			}
