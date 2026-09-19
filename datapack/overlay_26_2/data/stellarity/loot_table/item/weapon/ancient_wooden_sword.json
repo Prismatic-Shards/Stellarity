@@ -63,7 +63,8 @@
                   "translate": "item.stellarity.ancient_wooden_sword",
                   "color": "white",
                   "italic": false
-                }
+                },
+                "minecraft:blocks_attacks": {}
               }
             }
           ]

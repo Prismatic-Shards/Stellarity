@@ -58,13 +58,13 @@
               "lore": [
                 "",
                 {
-                  "translate": "item.stellarity.amarene.description",
+                  "translate": "item.minecraft.potion.effect.stellarity.amarene.description",
                   "italic": false,
                   "color": "#EEEEEE"
                 },
                 "",
                 {
-                  "translate": "item.stellarity.amarene.flavor_text",
+                  "translate": "item.minecraft.potion.effect.stellarity.amarene.flavor_text",
                   "italic": true,
                   "color": "#EEEEEE"
                 },

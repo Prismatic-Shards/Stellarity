@@ -13,7 +13,7 @@
               "lore": [
                 "",
                 {
-                  "translate": "item.stellarity.red_potion.flavor_text",
+                  "translate": "item.minecraft.potion.effect.stellarity.red.flavor_text",
                   "color": "#EEEEEE",
                   "italic": true
                 },

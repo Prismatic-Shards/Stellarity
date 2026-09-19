@@ -61,7 +61,7 @@ execute if score #damage stellarity.misc matches 1200 unless score #ability_coun
 # Append the usual crap
   data modify storage stellarity:temp harvester.lore append value {"translate": "items.stellarity.developer","color": "#BA02D7","italic": false}
   data modify storage stellarity:temp harvester.lore append value {"text":""}
-  data modify storage stellarity:temp harvester.lore append value {"color":"#CC26FF","italic":true,"translate":"Stellarity"}
+  data modify storage stellarity:temp harvester.lore append value {"translate": "Stellarity", "color": "#eaa7ff", "font": "stellarity:tooltip", "italic": false}
 
 # And then finally modify the description
   function stellarity:item/harvester/item_modifier/update_description with storage stellarity:temp harvester
