@@ -36,4 +36,4 @@ scoreboard players operation #temp5 stellarity.misc /= #100 stellarity.misc
 scoreboard players operation #temp5 stellarity.misc /= #3 stellarity.misc
 execute unless score #temp5 stellarity.misc matches 0 run scoreboard players operation #damage_extra stellarity.misc /= #temp5 stellarity.misc
 
-execute unless score #damage_extra stellarity.misc matches 0..1 run function stellarity:item/harvester/continue
+execute if score #damage_extra stellarity.misc matches 1.. run function stellarity:item/harvester/continue

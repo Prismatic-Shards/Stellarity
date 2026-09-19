@@ -1,6 +1,5 @@
 tag @s remove stellarity.holy_protection
 scoreboard players set @s stellarity.item.armors.holy_protection_cooldown 540
-effect clear @s resistance
 
 execute rotated ~ 0 positioned ^ ^1 ^ run function stellarity:item/armor/hallowed/holy_protection/dodge_visual
 
