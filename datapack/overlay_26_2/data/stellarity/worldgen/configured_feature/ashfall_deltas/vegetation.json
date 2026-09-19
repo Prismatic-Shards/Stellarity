@@ -28,10 +28,7 @@
       "slow_scale": 1,
       "states": [
         {
-          "Name": "minecraft:dead_tube_coral",
-          "Properties": {
-            "waterlogged": "false"
-          }
+          "Name": "minecraft:bush"
         },
         {
           "Name": "minecraft:dead_bush"
@@ -40,43 +37,22 @@
           "Name": "minecraft:wither_rose"
         },
         {
-          "Name": "minecraft:dead_fire_coral",
-          "Properties": {
-            "waterlogged": "false"
-          }
-        },
-        {
-          "Name": "minecraft:dead_bubble_coral",
-          "Properties": {
-            "waterlogged": "false"
-          }
-        },
-        {
-          "Name": "minecraft:dead_fire_coral",
-          "Properties": {
-            "waterlogged": "false"
-          }
-        },
-        {
           "Name": "minecraft:wither_rose"
         },
         {
-          "Name": "minecraft:dead_bubble_coral",
-          "Properties": {
-            "waterlogged": "false"
-          }
+          "Name": "minecraft:closed_eyeblossom"
         },
         {
           "Name": "minecraft:dead_bush"
         },
         {
-          "Name": "minecraft:dead_tube_coral",
-          "Properties": {
-            "waterlogged": "false"
-          }
+          "Name": "minecraft:bush"
         },
         {
           "Name": "minecraft:wither_rose"
+        },
+        {
+          "Name": "minecraft:closed_eyeblossom"
         }
       ]
     }
