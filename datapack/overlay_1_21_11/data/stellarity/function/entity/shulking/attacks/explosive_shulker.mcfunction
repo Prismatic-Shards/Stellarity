@@ -1,0 +1,1 @@
+$execute at @a[distance=..40,gamemode=!creative,gamemode=!spectator] run summon tnt ~ ~1 ~ {block_state:{Name:"blue_shulker_box"},explosion_power:2,owner:$(UUID),Tags:["stellarity.shulking.explosive_shulker","smithed.entity"]}

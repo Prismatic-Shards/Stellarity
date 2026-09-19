@@ -1,0 +1,45 @@
+{
+  "type": "minecraft:equipment",
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_sword"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_sword",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_axe"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_axe"
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:enchant_randomly",
+          "options": [
+            "minecraft:sharpness",
+            "minecraft:knockback",
+            "minecraft:fire_aspect"
+          ],
+          "only_compatible": true,
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.5
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

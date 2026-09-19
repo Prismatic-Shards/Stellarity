@@ -1,0 +1,42 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:mossy_stone_bricks"
+    },
+    "title": {
+      "translate": "advancements.story.follow_ender_eye.title"
+    },
+    "description": [
+      {
+        "translate": "advancements.story.follow_ender_eye.description"
+      },
+      {
+        "translate": "advancements.stellarity.follow_ender_eye.extra"
+      }
+    ],
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "stellarity:minecraft/story/strengthened_by_fire",
+  "criteria": {
+    "in_stronghold": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "structures": "minecraft:stronghold"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [["in_stronghold"]]
+}

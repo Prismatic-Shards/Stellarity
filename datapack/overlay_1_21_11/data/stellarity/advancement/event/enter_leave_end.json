@@ -1,0 +1,44 @@
+{
+  "parent": "stellarity:event/root",
+  "criteria": {
+    "1": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:reference",
+              "name": "stellarity:item/holding/spellbooks/return"
+            }
+          }
+        ],
+        "to": "minecraft:the_end"
+      }
+    },
+    "2": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:reference",
+              "name": "stellarity:item/holding/spellbooks/return"
+            }
+          }
+        ],
+        "from": "minecraft:the_end"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "1",
+      "2"
+    ]
+  ],
+  "rewards": {
+    "function": "stellarity:sfx/enter_leave_end/check"
+  }
+}

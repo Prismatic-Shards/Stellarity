@@ -1,0 +1,125 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_leggings",
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "mode": "replace_all",
+              "entity": "this",
+              "lore": [
+                "",
+                {
+                  "translate": "items.stellarity.armor.set_bonus",
+                  "color": "#FF9952",
+                  "italic": false
+                },
+                {
+                  "translate": "items.stellarity.shulker_armor.bonus.1",
+                  "color": "#EEEEEE",
+                  "italic": false
+                },
+                {
+                  "translate": "items.stellarity.shulker_armor.bonus.2",
+                  "color": "#EEEEEE",
+                  "italic": false
+                },
+                "",
+                {
+                  "translate": "items.stellarity.armor.piece_bonus",
+                  "color": "#FF9952",
+                  "italic": false
+                },
+                {
+                  "translate": "item.stellarity.shulker_leggings.bonus",
+                  "color": "#EEEEEE",
+                  "italic": false
+                },
+                "",
+                {
+                  "translate": "Stellarity",
+                  "color": "#eaa7ff",
+                  "font": "stellarity:tooltip",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "tooltip_display": {
+                  "hidden_components": ["dyed_color"]
+                },
+                "minecraft:dyed_color": 12219878,
+                "minecraft:item_model": "stellarity:shulker_leggings",
+                "minecraft:custom_data": {
+                  "stellarity:item": "shulker_leggings"
+                },
+                "minecraft:damage_resistant": {
+                  "types": "#is_fire"
+                },
+                "minecraft:equippable": {
+                  "slot": "legs",
+                  "asset_id": "stellarity:shulker",
+                  "damage_on_hurt": true,
+                  "equip_sound": "minecraft:item.armor.equip_netherite"
+                },
+                "minecraft:max_damage": 755,
+                "rarity": "uncommon",
+                "minecraft:item_name": {
+                  "translate": "item.stellarity.shulker_leggings",
+                  "color": "#976A97",
+                  "italic": false
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "minecraft:armor",
+                  "id": "minecraft:armor.leggings",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "attribute": "minecraft:armor_toughness",
+                  "id": "minecraft:armor.leggings",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "attribute": "minecraft:knockback_resistance",
+                  "id": "minecraft:armor.leggings",
+                  "amount": 0.2,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "attribute": "minecraft:attack_speed",
+                  "id": "minecraft:armor.leggings",
+                  "amount": -0.03,
+                  "operation": "add_multiplied_total",
+                  "slot": "legs"
+                },
+                {
+                  "attribute": "minecraft:movement_speed",
+                  "id": "minecraft:armor.leggings",
+                  "amount": -0.03,
+                  "operation": "add_multiplied_total",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

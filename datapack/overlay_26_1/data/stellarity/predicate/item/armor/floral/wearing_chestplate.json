@@ -1,0 +1,15 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "equipment": {
+      "chest": {
+        "predicates": {
+          "minecraft:custom_data": {
+            "stellarity:item": "floral_chestplate"
+          }
+        }
+      }
+    }
+  }
+}

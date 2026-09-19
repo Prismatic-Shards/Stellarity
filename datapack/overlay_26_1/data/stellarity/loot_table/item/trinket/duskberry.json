@@ -1,0 +1,118 @@
+{
+  "type": "minecraft:command",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:sweet_berries",
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                "",
+                {
+                  "translate": "item.stellarity.duskberry.description.1",
+                  "color": "#EEEEEE",
+                  "italic": false
+                },
+                {
+                  "translate": "item.stellarity.duskberry.description.2",
+                  "color": "#EEEEEE",
+                  "italic": false
+                },
+                {
+                  "translate": "item.stellarity.duskberry.description.3",
+                  "color": "#EEEEEE",
+                  "italic": false
+                },
+                {
+                  "translate": "item.stellarity.duskberry.description.4",
+                  "color": "#EEEEEE",
+                  "italic": false
+                },
+                " ",
+                {
+                  "translate": "- Member #666 Item -",
+                  "color": "#76389B",
+                  "font": "minecraft:illageralt",
+                  "italic": false,
+                  "obfuscated": false
+                },
+                "",
+                {
+                  "translate": "Stellarity",
+                  "color": "#eaa7ff",
+                  "font": "stellarity:tooltip",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:item_model": "stellarity:duskberry",
+                "minecraft:custom_data": {
+                  "stellarity:item": "duskberry"
+                },
+                "minecraft:max_stack_size": 1,
+                "tooltip_display": {
+                  "hidden_components": ["attribute_modifiers", "enchantments"]
+                },
+                "minecraft:item_name": {
+                  "translate": "item.stellarity.duskberry",
+                  "color": "#AB6AD1",
+                  "italic": false
+                },
+                "minecraft:rarity": "epic",
+                "minecraft:enchantments": {
+                  "stellarity:_technical/void_pendant/amethyst": 1
+                },
+                "attribute_modifiers": [
+                  {
+                    "id": "stellarity:duskberry",
+                    "type": "minecraft:attack_damage",
+                    "amount": 0.1,
+                    "operation": "add_multiplied_base",
+                    "slot": "hand"
+                  },
+                  {
+                    "id": "stellarity:duskberry",
+                    "type": "minecraft:movement_speed",
+                    "amount": 0.1,
+                    "operation": "add_multiplied_base",
+                    "slot": "hand"
+                  },
+                  {
+                    "id": "stellarity:duskberry",
+                    "type": "minecraft:attack_speed",
+                    "amount": 0.12,
+                    "operation": "add_multiplied_base",
+                    "slot": "hand"
+                  },
+                  {
+                    "id": "stellarity:duskberry",
+                    "type": "minecraft:sweeping_damage_ratio",
+                    "amount": 0.2,
+                    "operation": "add_value",
+                    "slot": "hand"
+                  },
+                  {
+                    "id": "stellarity:duskberry",
+                    "type": "minecraft:movement_efficiency",
+                    "amount": 0.25,
+                    "operation": "add_multiplied_total",
+                    "slot": "hand"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

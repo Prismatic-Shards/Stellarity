@@ -1,0 +1,90 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:cooked_cod",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "stellarity:overgrown_cod",
+                "minecraft:custom_data": {
+                  "stellarity:item": "overgrown_cod"
+                },
+                "minecraft:item_name": {
+                  "translate": "item.stellarity.overgrown_cod"
+                },
+                "food": {
+                  "nutrition": 1,
+                  "saturation": 0.2,
+                  "can_always_eat": false
+                },
+                "minecraft:consumable": {
+                  "animation": "eat",
+                  "consume_seconds": 1.6,
+                  "has_consume_particles": true,
+                  "sound": "entity.generic.eat",
+                  "on_consume_effects": [
+                    {
+                      "type": "apply_effects",
+                      "effects": [
+                        {
+                          "id": "minecraft:slowness",
+                          "duration": 80,
+                          "amplifier": 3,
+                          "ambient": false,
+                          "show_particles": true,
+                          "show_icon": true
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "replace_all",
+              "lore": [
+                [
+                  {
+                    "text": "1",
+                    "color": "#EEEEEE",
+                    "italic": false
+                  },
+                  {
+                    "text": " 🍖",
+                    "color": "#587653",
+                    "italic": false
+                  },
+                  " ",
+                  {
+                    "text": "0.2",
+                    "color": "#EEEEEE",
+                    "italic": false
+                  },
+                  {
+                    "text": " 🍖",
+                    "color": "#FFDE4C",
+                    "italic": false
+                  }
+                ],
+                "",
+                {
+                  "translate": "Stellarity",
+                  "color": "#eaa7ff",
+                  "font": "stellarity:tooltip",
+                  "italic": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

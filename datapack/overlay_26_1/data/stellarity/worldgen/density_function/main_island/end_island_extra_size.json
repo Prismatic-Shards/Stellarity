@@ -1,0 +1,10 @@
+{
+  "type": "cache_once",
+  "argument": {
+    "type": "add",
+    "argument1": {
+      "type": "end_islands"
+    },
+    "argument2": 0.3
+  }
+}

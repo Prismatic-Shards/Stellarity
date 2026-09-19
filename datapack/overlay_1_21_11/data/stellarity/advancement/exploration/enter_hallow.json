@@ -1,0 +1,306 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:amethyst_cluster"
+    },
+    "title": {
+      "translate": "advancements.stellarity.enter_hallow"
+    },
+    "description": [
+      {
+        "text": "'",
+        "color": "#ffafaf",
+        "italic": true
+      },
+      {
+        "text": "O",
+        "color": "#f9b0a4",
+        "italic": true
+      },
+      {
+        "text": "n",
+        "color": "#f4b19a",
+        "italic": true
+      },
+      {
+        "text": "c",
+        "color": "#eeb290",
+        "italic": true
+      },
+      {
+        "text": "e ",
+        "color": "#e9b385",
+        "italic": true
+      },
+      {
+        "text": "y",
+        "color": "#e3b47b",
+        "italic": true
+      },
+      {
+        "text": "o",
+        "color": "#deb571",
+        "italic": true
+      },
+      {
+        "text": "u ",
+        "color": "#ddba6c",
+        "italic": true
+      },
+      {
+        "text": "e",
+        "color": "#e2c570",
+        "italic": true
+      },
+      {
+        "text": "n",
+        "color": "#e7d074",
+        "italic": true
+      },
+      {
+        "text": "t",
+        "color": "#eddb78",
+        "italic": true
+      },
+      {
+        "text": "e",
+        "color": "#f2e67c",
+        "italic": true
+      },
+      {
+        "text": "r ",
+        "color": "#f8f180",
+        "italic": true
+      },
+      {
+        "text": "h",
+        "color": "#fdfc84",
+        "italic": true
+      },
+      {
+        "text": "a",
+        "color": "#f1ff85",
+        "italic": true
+      },
+      {
+        "text": "l",
+        "color": "#deff85",
+        "italic": true
+      },
+      {
+        "text": "l",
+        "color": "#ccff85",
+        "italic": true
+      },
+      {
+        "text": "o",
+        "color": "#b9ff85",
+        "italic": true
+      },
+      {
+        "text": "w",
+        "color": "#a7ff85",
+        "italic": true
+      },
+      {
+        "text": "e",
+        "color": "#95ff85",
+        "italic": true
+      },
+      {
+        "text": "d ",
+        "color": "#85ff87",
+        "italic": true
+      },
+      {
+        "text": "l",
+        "color": "#85ff99",
+        "italic": true
+      },
+      {
+        "text": "a",
+        "color": "#85ffac",
+        "italic": true
+      },
+      {
+        "text": "n",
+        "color": "#85ffbe",
+        "italic": true
+      },
+      {
+        "text": "d",
+        "color": "#85ffd0",
+        "italic": true
+      },
+      {
+        "text": ", ",
+        "color": "#85ffe3",
+        "italic": true
+      },
+      {
+        "text": "y",
+        "color": "#85fff5",
+        "italic": true
+      },
+      {
+        "text": "o",
+        "color": "#80fafa",
+        "italic": true
+      },
+      {
+        "text": "u ",
+        "color": "#78f0f0",
+        "italic": true
+      },
+      {
+        "text": "w",
+        "color": "#6fe6e6",
+        "italic": true
+      },
+      {
+        "text": "i",
+        "color": "#67dcdc",
+        "italic": true
+      },
+      {
+        "text": "l",
+        "color": "#5ed2d2",
+        "italic": true
+      },
+      {
+        "text": "l ",
+        "color": "#56c8c8",
+        "italic": true
+      },
+      {
+        "text": "s",
+        "color": "#4ebebe",
+        "italic": true
+      },
+      {
+        "text": "e",
+        "color": "#52b3c5",
+        "italic": true
+      },
+      {
+        "text": "e ",
+        "color": "#58a8cf",
+        "italic": true
+      },
+      {
+        "text": "a ",
+        "color": "#5e9dd9",
+        "italic": true
+      },
+      {
+        "text": "r",
+        "color": "#6492e3",
+        "italic": true
+      },
+      {
+        "text": "a",
+        "color": "#6a88ed",
+        "italic": true
+      },
+      {
+        "text": "i",
+        "color": "#707df7",
+        "italic": true
+      },
+      {
+        "text": "n",
+        "color": "#7a74ff",
+        "italic": true
+      },
+      {
+        "text": "b",
+        "color": "#8f74ff",
+        "italic": true
+      },
+      {
+        "text": "o",
+        "color": "#a373ff",
+        "italic": true
+      },
+      {
+        "text": "w ",
+        "color": "#b873ff",
+        "italic": true
+      },
+      {
+        "text": "i",
+        "color": "#cd72ff",
+        "italic": true
+      },
+      {
+        "text": "n ",
+        "color": "#e271ff",
+        "italic": true
+      },
+      {
+        "text": "t",
+        "color": "#f771ff",
+        "italic": true
+      },
+      {
+        "text": "h",
+        "color": "#f86df8",
+        "italic": true
+      },
+      {
+        "text": "e ",
+        "color": "#ef68ef",
+        "italic": true
+      },
+      {
+        "text": "s",
+        "color": "#e562e5",
+        "italic": true
+      },
+      {
+        "text": "k",
+        "color": "#db5ddb",
+        "italic": true
+      },
+      {
+        "text": "y",
+        "color": "#d257d2",
+        "italic": true
+      },
+      {
+        "text": ".",
+        "color": "#c852c8",
+        "italic": true
+      },
+      {
+        "text": "'",
+        "color": "#bf4dbf",
+        "italic": true
+      },
+      "\n\n",
+      {
+        "translate": "Stellarity",
+        "color": "#eaa7ff",
+        "font": "stellarity:tooltip",
+        "italic": false
+      }
+    ],
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "minecraft:end/enter_end_gateway",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "biomes": "stellarity:the_hallow"
+          }
+        }
+      }
+    }
+  }
+}

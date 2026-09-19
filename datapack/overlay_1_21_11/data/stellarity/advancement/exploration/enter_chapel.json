@@ -1,0 +1,39 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:cherry_leaves"
+    },
+    "title": {
+      "translate": "advancements.stellarity.enter_chapel"
+    },
+    "description": [
+      {
+        "translate": "advancements.stellarity.enter_chapel.description"
+      },
+      "\n\n",
+      {
+        "translate": "Stellarity",
+        "color": "#eaa7ff",
+        "font": "stellarity:tooltip",
+        "italic": false
+      }
+    ],
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "stellarity:exploration/enter_hallow",
+  "criteria": {
+    "enter_chapel": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "structures": "stellarity:chapel_of_light"
+          }
+        }
+      }
+    }
+  }
+}

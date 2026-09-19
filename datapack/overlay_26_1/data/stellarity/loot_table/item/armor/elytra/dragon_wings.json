@@ -1,0 +1,90 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:elytra",
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                "",
+                {
+                  "translate": "item.stellarity.dragon_wings.description.1",
+                  "color": "#EEEEEE",
+                  "italic": false
+                },
+                {
+                  "translate": "item.stellarity.dragon_wings.description.2",
+                  "color": "#EEEEEE",
+                  "italic": false
+                },
+                "",
+                {
+                  "translate": "Stellarity",
+                  "color": "#eaa7ff",
+                  "font": "stellarity:tooltip",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "stellarity:dragon_wings",
+                "minecraft:custom_data": {
+                  "stellarity:item": "dragon_wings"
+                },
+                "minecraft:damage_resistant": {
+                  "types": "#is_fire"
+                },
+                "minecraft:equippable": {
+                  "slot": "chest",
+                  "asset_id": "stellarity:dragon_wings",
+                  "damage_on_hurt": false
+                },
+                "minecraft:max_damage": 648,
+                "rarity": "rare",
+                "minecraft:item_name": {
+                  "translate": "item.stellarity.dragon_wings",
+                  "color": "#9936D6",
+                  "italic": false
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "minecraft:armor.chestplate",
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "minecraft:armor.chestplate",
+                  "attribute": "minecraft:armor_toughness",
+                  "amount": 2,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "minecraft:armor.chestplate",
+                  "attribute": "minecraft:movement_speed",
+                  "amount": -0.08,
+                  "operation": "add_multiplied_base",
+                  "slot": "chest"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

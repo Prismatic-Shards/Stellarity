@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:simple_random_selector",
+  "config": {
+    "features": [
+      {
+        "feature": {
+          "type": "minecraft:block_blob",
+          "config": {
+            "can_place_on": {
+              "type": "minecraft:true"
+            },
+            "state": {
+              "Name": "minecraft:cobblestone"
+            }
+          }
+        },
+        "placement": []
+      },
+      {
+        "feature": {
+          "type": "minecraft:block_blob",
+          "config": {
+            "can_place_on": {
+              "type": "minecraft:true"
+            },
+            "state": {
+              "Name": "minecraft:mossy_cobblestone"
+            }
+          }
+        },
+        "placement": []
+      }
+    ]
+  }
+}

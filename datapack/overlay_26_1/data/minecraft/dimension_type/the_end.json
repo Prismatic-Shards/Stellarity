@@ -1,0 +1,37 @@
+{
+  "attributes": {
+    "gameplay/water_evaporates": false,
+    "gameplay/piglins_zombify": false,
+    "gameplay/bed_rule": {
+      "can_set_spawn": "always",
+      "can_sleep": "always",
+      "explodes": false
+    },
+    "gameplay/can_start_raid": false,
+    "minecraft:gameplay/respawn_anchor_works": true,
+    "minecraft:visual/ambient_light_color": "#3f473f",
+    "minecraft:visual/fog_color": "#181318",
+    "minecraft:visual/sky_color": "#000000",
+    "minecraft:visual/sky_light_color": "#ac60cd",
+    "minecraft:visual/sky_light_factor": 0
+  },
+  "has_ender_dragon_fight": true,
+  "default_clock": "minecraft:the_end",
+  "skybox": "end",
+  "has_fixed_time": true,
+  "has_skylight": true,
+  "has_ceiling": false,
+  "timelines": "#minecraft:in_end",
+  "coordinate_scale": 1,
+  "ambient_light": 0.25,
+  "logical_height": 384,
+  "infiniburn": "#minecraft:infiniburn_end",
+  "min_y": 0,
+  "height": 384,
+  "monster_spawn_light_level": {
+    "type": "minecraft:uniform",
+    "min_inclusive": 0,
+    "max_inclusive": 7
+  },
+  "monster_spawn_block_light_limit": 15
+}

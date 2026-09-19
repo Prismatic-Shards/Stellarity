@@ -1,0 +1,84 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_sword",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "stellarity:prismember",
+                "minecraft:custom_data": {
+                  "stellarity:item": "prismember"
+                },
+                "minecraft:rarity": "epic",
+                "minecraft:item_name": {
+                  "translate": "item.stellarity.prismember",
+                  "color": "#FF76D0",
+                  "italic": false
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                "",
+                {
+                  "translate": "item.stellarity.prismember.description.1",
+                  "color": "#EEEEEE",
+                  "italic": false
+                },
+                {
+                  "translate": "item.stellarity.prismember.description.2",
+                  "color": "#EEEEEE",
+                  "italic": false
+                },
+                {
+                  "translate": "item.stellarity.prismember.description.3",
+                  "color": "#EEEEEE",
+                  "italic": false
+                },
+                "",
+                {
+                  "translate": "Stellarity",
+                  "color": "#eaa7ff",
+                  "font": "stellarity:tooltip",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "minecraft:base_attack_damage",
+                  "attribute": "minecraft:attack_damage",
+                  "amount": 7,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                },
+                {
+                  "id": "minecraft:base_attack_speed",
+                  "attribute": "minecraft:attack_speed",
+                  "amount": -2.4,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "stellarity:_technical/infernal_infusion": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

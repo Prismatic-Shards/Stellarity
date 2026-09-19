@@ -1,0 +1,75 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:tropical_fish",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "stellarity:sushi",
+                "minecraft:custom_data": {
+                  "stellarity:item": "sushi"
+                },
+                "minecraft:food": {
+                  "nutrition": 4,
+                  "saturation": 2.4,
+                  "can_always_eat": false
+                },
+                "minecraft:consumable": {
+                  "animation": "eat",
+                  "consume_seconds": 1,
+                  "has_consume_particles": true,
+                  "sound": "entity.generic.eat"
+                },
+                "minecraft:item_name": {
+                  "translate": "item.stellarity.sushi",
+                  "color": "white"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "replace_all",
+              "lore": [
+                [
+                  {
+                    "text": "4",
+                    "color": "#EEEEEE",
+                    "italic": false
+                  },
+                  {
+                    "text": " 🍖",
+                    "color": "#B88458",
+                    "italic": false
+                  },
+                  " ",
+                  {
+                    "text": "2.4",
+                    "color": "#EEEEEE",
+                    "italic": false
+                  },
+                  {
+                    "text": " 🍖",
+                    "color": "#FFDE4C",
+                    "italic": false
+                  }
+                ],
+                "",
+                {
+                  "translate": "Stellarity",
+                  "color": "#eaa7ff",
+                  "font": "stellarity:tooltip",
+                  "italic": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

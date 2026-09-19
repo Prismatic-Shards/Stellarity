@@ -1,0 +1,281 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:leather_boots",
+      "components": {
+        "minecraft:enchantments": {
+          "soul_speed": 1
+        },
+        "minecraft:dyed_color": 7078047
+      }
+    },
+    "title": {
+      "translate": "advancements.stellarity.discover_all_biomes"
+    },
+    "description": [
+      {
+        "translate": "advancements.stellarity.discover_all_biomes.description"
+      },
+      "\n\n",
+      {
+        "translate": "Stellarity",
+        "color": "#eaa7ff",
+        "font": "stellarity:tooltip",
+        "italic": false
+      }
+    ],
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "minecraft:end/enter_end_gateway",
+  "criteria": {
+    "amethyst_forest": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "biomes": "stellarity:amethyst_forest"
+          }
+        }
+      }
+    },
+    "ashfall_deltas": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "biomes": "stellarity:ashfall_deltas"
+          }
+        }
+      }
+    },
+    "crystal_crags": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "biomes": "stellarity:crystal_crags"
+          }
+        }
+      }
+    },
+    "end_shrubland": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "biomes": "stellarity:end_shrubland"
+          }
+        }
+      }
+    },
+    "end_wilds": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "biomes": "stellarity:end_wilds"
+          }
+        }
+      }
+    },
+    "ender_wastes": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "biomes": "stellarity:ender_wastes"
+          }
+        }
+      }
+    },
+    "endless_dunes": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "biomes": "stellarity:endless_dunes"
+          }
+        }
+      }
+    },
+    "fiery_hills": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "biomes": "stellarity:fiery_hills"
+          }
+        }
+      }
+    },
+    "flesh_tundra": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "biomes": "stellarity:flesh_tundra"
+          }
+        }
+      }
+    },
+    "frosted_valley": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "biomes": "stellarity:frosted_valley"
+          }
+        }
+      }
+    },
+    "frozen_marsh": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "biomes": "stellarity:frozen_marsh"
+          }
+        }
+      }
+    },
+    "frozen_shrubland": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "biomes": "stellarity:frozen_shrubland"
+          }
+        }
+      }
+    },
+    "frozen_spikes": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "biomes": "stellarity:frozen_spikes"
+          }
+        }
+      }
+    },
+    "hallowed_tundra": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "biomes": "stellarity:hallowed_tundra"
+          }
+        }
+      }
+    },
+    "prismarine_forest": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "biomes": "stellarity:prismarine_forest"
+          }
+        }
+      }
+    },
+    "prismatic_dunes": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "biomes": "stellarity:prismatic_dunes"
+          }
+        }
+      }
+    },
+    "the_hallow": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "biomes": "stellarity:the_hallow"
+          }
+        }
+      }
+    },
+    "the_nest": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "biomes": "stellarity:the_nest"
+          }
+        }
+      }
+    },
+    "warped_marsh": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "biomes": "stellarity:warped_marsh"
+          }
+        }
+      }
+    },
+    "end_barrens": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "biomes": "minecraft:end_barrens"
+          }
+        }
+      }
+    },
+    "end_highlands": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "biomes": "minecraft:end_highlands"
+          }
+        }
+      }
+    },
+    "end_midlands": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "biomes": "minecraft:end_midlands"
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    ["amethyst_forest"],
+    ["ashfall_deltas"],
+    ["crystal_crags"],
+    ["end_shrubland"],
+    ["end_wilds"],
+    ["ender_wastes"],
+    ["endless_dunes"],
+    ["fiery_hills"],
+    ["flesh_tundra"],
+    ["frosted_valley"],
+    ["frozen_marsh"],
+    ["frozen_shrubland"],
+    ["frozen_spikes"],
+    ["hallowed_tundra"],
+    ["prismarine_forest"],
+    ["prismatic_dunes"],
+    ["the_hallow"],
+    ["the_nest"],
+    ["warped_marsh"],
+    ["end_barrens"],
+    ["end_highlands"],
+    ["end_midlands"]
+  ],
+  "rewards": {
+    "experience": 4500
+  }
+}

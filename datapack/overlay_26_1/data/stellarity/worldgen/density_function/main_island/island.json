@@ -1,0 +1,46 @@
+{
+  "type": "minecraft:squeeze",
+  "argument": {
+    "type": "minecraft:interpolated",
+    "argument": {
+      "type": "minecraft:interpolated",
+      "argument": {
+        "type": "add",
+        "argument1": -1,
+        "argument2": {
+          "type": "mul",
+          "argument1": {
+            "type": "y_clamped_gradient",
+            "from_value": 1,
+            "to_value": 0,
+            "from_y": 45,
+            "to_y": 65
+          },
+          "argument2": {
+            "type": "add",
+            "argument1": 1,
+            "argument2": {
+              "type": "add",
+              "argument1": -1,
+              "argument2": {
+                "type": "mul",
+                "argument1": {
+                  "type": "y_clamped_gradient",
+                  "from_value": 0,
+                  "to_value": 1,
+                  "from_y": 2,
+                  "to_y": 26
+                },
+                "argument2": {
+                  "type": "add",
+                  "argument1": 1,
+                  "argument2": "stellarity:main_island/island_builder"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

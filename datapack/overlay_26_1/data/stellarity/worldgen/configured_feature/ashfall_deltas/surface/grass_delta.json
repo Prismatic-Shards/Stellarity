@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:delta_feature",
+  "config": {
+    "contents": {
+      "Name": "minecraft:grass_block",
+      "Properties": {
+        "snowy": "false"
+      }
+    },
+    "rim": {
+      "Name": "minecraft:mud"
+    },
+    "size": {
+      "type": "minecraft:uniform",
+      "min_inclusive": 8,
+      "max_inclusive": 10
+    },
+    "rim_size": 0
+  }
+}

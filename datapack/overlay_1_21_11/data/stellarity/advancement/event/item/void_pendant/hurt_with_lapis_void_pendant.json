@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:reference",
+            "name": "stellarity:item/holding/void_pendant/lapis"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "stellarity:item/void_pendant/lapis/hurt"
+  }
+}

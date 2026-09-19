@@ -1,0 +1,85 @@
+{
+  "temperature": 0.5,
+  "downfall": 0.5,
+  "has_precipitation": false,
+  "attributes": {
+    "visual/sky_color": 0,
+    "visual/fog_color": 0,
+    "visual/water_fog_color": 6105711,
+    "audio/ambient_sounds": {
+      "loop": {
+        "sound_id": "stellarity:ambient.the_end.heavenly_grim"
+      },
+      "mood": {
+        "sound": "minecraft:ambient.basalt_deltas.mood",
+        "tick_delay": 1100,
+        "block_search_extent": 6,
+        "offset": 2
+      },
+      "additions": {
+        "sound": "ambient.basalt_deltas.additions",
+        "tick_chance": 0.0111
+      }
+    },
+    "visual/ambient_particles": {
+      "argument": [
+        {
+          "particle": {
+            "type": "minecraft:dripping_obsidian_tear"
+          },
+          "probability": 0.00022
+        }
+      ],
+      "modifier": "override"
+    }
+  },
+  "effects": {
+    "water_color": 14981631,
+    "grass_color": 14520574,
+    "foliage_color": 14520574
+  },
+  "spawners": {
+    "monster": [
+      {
+        "type": "minecraft:enderman",
+        "weight": 20,
+        "minCount": 4,
+        "maxCount": 4
+      }
+    ],
+    "creature": [],
+    "ambient": [],
+    "underground_water_creature": [],
+    "water_creature": [],
+    "water_ambient": [],
+    "misc": []
+  },
+  "spawn_costs": {
+    "minecraft:enderman": {
+      "charge": 0.7,
+      "energy_budget": 1
+    }
+  },
+  "carvers": [],
+  "features": [
+    ["stellarity:global/stalactite", "stellarity:crystal_crags/hills"],
+    [
+      "stellarity:crystal_crags/large_crystals",
+      "stellarity:crystal_crags/crystals_amethyst",
+      "stellarity:crystal_crags/delta_amethyst",
+      "stellarity:crystal_crags/delta_grass"
+    ],
+    ["stellarity:crystal_crags/ore_budding_amethyst"],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      "stellarity:crystal_crags/chorus",
+      "stellarity:crystal_crags/amethyst",
+      "stellarity:crystal_crags/vegetation"
+    ],
+    ["stellarity:global/end_dungeon", "stellarity:global/fossil"]
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_sword",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "stellarity:harvester",
+                "minecraft:custom_data": {
+                  "stellarity:item": "harvester",
+                  "stellarity:harvester": {
+                    "damage": 0,
+                    "abilities": []
+                  }
+                },
+                "minecraft:item_name": {
+                  "translate": "item.stellarity.harvester",
+                  "color": "#4BC6FF"
+                },
+                "enchantments": {
+                  "stellarity:_technical/soul_harvest": 1
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "replace_all",
+              "lore": [
+                "",
+                {
+                  "translate": "item.stellarity.harvester.description.1",
+                  "color": "#EEEEEE",
+                  "italic": false
+                },
+                {
+                  "translate": "item.stellarity.harvester.description.2",
+                  "color": "#EEEEEE",
+                  "italic": false
+                },
+                {
+                  "translate": "item.stellarity.harvester.description.3",
+                  "color": "#EEEEEE",
+                  "italic": false
+                },
+                "",
+                {
+                  "translate": "items.stellarity.developer",
+                  "color": "#BA02D7",
+                  "italic": false
+                },
+                "",
+                {
+                  "translate": "Stellarity",
+                  "color": "#eaa7ff",
+                  "font": "stellarity:tooltip",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "minecraft:attack_damage",
+                  "id": "minecraft:base_attack_damage",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                },
+                {
+                  "attribute": "minecraft:attack_speed",
+                  "id": "minecraft:base_attack_speed",
+                  "amount": -3,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                },
+                {
+                  "attribute": "minecraft:movement_speed",
+                  "amount": 0,
+                  "id": "minecraft:base_attack_damage",
+                  "operation": "add_multiplied_total",
+                  "slot": "mainhand"
+                },
+                {
+                  "id": "stellarity:weapon_reach",
+                  "attribute": "minecraft:entity_interaction_range",
+                  "amount": 0.5,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

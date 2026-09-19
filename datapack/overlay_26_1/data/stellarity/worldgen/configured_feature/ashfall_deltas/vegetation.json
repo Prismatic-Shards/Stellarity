@@ -1,0 +1,60 @@
+{
+  "type": "minecraft:simple_block",
+  "config": {
+    "to_place": {
+      "type": "minecraft:dual_noise_provider",
+      "seed": 1234567,
+      "noise": {
+        "firstOctave": -7,
+        "amplitudes": [
+          1,
+          0,
+          2
+        ]
+      },
+      "scale": 0.75,
+      "variety": {
+        "min_inclusive": 1,
+        "max_inclusive": 1
+      },
+      "slow_noise": {
+        "firstOctave": -7,
+        "amplitudes": [
+          1,
+          0,
+          2
+        ]
+      },
+      "slow_scale": 1,
+      "states": [
+        {
+          "Name": "minecraft:bush"
+        },
+        {
+          "Name": "minecraft:dead_bush"
+        },
+        {
+          "Name": "minecraft:wither_rose"
+        },
+        {
+          "Name": "minecraft:wither_rose"
+        },
+        {
+          "Name": "minecraft:closed_eyeblossom"
+        },
+        {
+          "Name": "minecraft:dead_bush"
+        },
+        {
+          "Name": "minecraft:bush"
+        },
+        {
+          "Name": "minecraft:wither_rose"
+        },
+        {
+          "Name": "minecraft:closed_eyeblossom"
+        }
+      ]
+    }
+  }
+}

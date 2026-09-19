@@ -1,0 +1,9 @@
+{
+  "function": "enchant_with_levels",
+  "levels": {
+    "type": "uniform",
+    "min": 12,
+    "max": 31
+  },
+  "options": "#minecraft:on_random_loot"
+}

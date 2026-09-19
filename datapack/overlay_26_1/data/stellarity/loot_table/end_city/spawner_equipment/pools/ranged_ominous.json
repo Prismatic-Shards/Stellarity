@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:equipment",
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "stellarity:item/weapon/call_of_the_void",
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:power": {
+                  "min": 3,
+                  "max": 4
+                }
+              },
+              "add": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

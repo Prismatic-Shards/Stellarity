@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:command",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:tag",
+          "name": "stellarity:waystones/forge",
+          "expand": false
+        }
+      ]
+    }
+  ]
+}

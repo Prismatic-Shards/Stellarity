@@ -1,0 +1,103 @@
+{
+  "temperature": 0.8,
+  "downfall": 0.4,
+  "has_precipitation": false,
+  "attributes": {
+    "visual/sky_color": 7907327,
+    "visual/fog_color": 12638463,
+    "visual/water_fog_color": 270131,
+    "audio/ambient_sounds": {
+      "loop": {
+        "sound_id": "stellarity:ambient.the_end.heavenly_grim"
+      },
+      "mood": {
+        "sound": "minecraft:ambient.cave",
+        "tick_delay": 1000,
+        "block_search_extent": 4,
+        "offset": 2.0
+      },
+      "additions": {
+        "sound": "minecraft:ambient.cave",
+        "tick_chance": 0.001
+      }
+    },
+    "visual/ambient_particles": {
+      "modifier": "override",
+      "argument": [
+        {
+          "particle": {
+            "type": "white_ash"
+          },
+          "probability": 0.0011
+        }
+      ]
+    }
+  },
+  "effects": {
+    "water_color": 4445678,
+    "grass_color": 9551690,
+    "foliage_color": 7712284
+  },
+  "spawners": {
+    "monster": [
+      {
+        "type": "minecraft:enderman",
+        "weight": 80,
+        "minCount": 4,
+        "maxCount": 4
+      },
+      {
+        "type": "minecraft:zombie",
+        "weight": 30,
+        "minCount": 4,
+        "maxCount": 4
+      },
+      {
+        "type": "minecraft:skeleton",
+        "weight": 15,
+        "minCount": 4,
+        "maxCount": 4
+      }
+    ]
+  },
+  "spawn_costs": {
+    "minecraft:enderman": {
+      "energy_budget": 0.3,
+      "charge": 1
+    },
+    "minecraft:zombie": {
+      "energy_budget": 0.14,
+      "charge": 1
+    },
+    "minecraft:skeleton": {
+      "energy_budget": 0.15,
+      "charge": 1
+    }
+  },
+  "carvers": ["stellarity:ravine", "stellarity:crack"],
+  "features": [
+    [ 
+      "stellarity:global/stalactite",
+      "stellarity:endless_dunes/oasis"
+    ],
+    [],
+    [
+      "stellarity:endless_dunes/delta_sand_on_endstone"
+    ],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      "stellarity:endless_dunes/vegetation",
+      "minecraft:patch_dry_grass_desert",
+      "stellarity:endless_dunes/grass"
+    ],
+    [
+      "stellarity:global/end_dungeon", 
+      "stellarity:global/fossil"
+    ]
+  ]
+}

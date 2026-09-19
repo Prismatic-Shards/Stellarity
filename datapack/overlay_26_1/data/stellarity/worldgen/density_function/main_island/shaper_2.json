@@ -1,0 +1,40 @@
+{
+  "type": "mul",
+  "argument1": 2,
+  "argument2": {
+    "type": "shifted_noise",
+    "xz_scale": -2,
+    "y_scale": -1,
+    "noise": "stellarity:main_island/shaper_2",
+    "shift_x": {
+      "type": "mul",
+      "argument1": 150,
+      "argument2": {
+        "type": "noise",
+        "noise": "stellarity:main_island/shift_x",
+        "xz_scale": -2,
+        "y_scale": -4
+      }
+    },
+    "shift_y": {
+      "type": "mul",
+      "argument1": 75,
+      "argument2": {
+        "type": "noise",
+        "noise": "stellarity:main_island/shift_y",
+        "xz_scale": -1,
+        "y_scale": -2
+      }
+    },
+    "shift_z": {
+      "type": "mul",
+      "argument1": 150,
+      "argument2": {
+        "type": "noise",
+        "noise": "stellarity:main_island/shift_z",
+        "xz_scale": -2,
+        "y_scale": -4
+      }
+    }
+  }
+}

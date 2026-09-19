@@ -1,0 +1,23 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:pink_petals",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:hanging_roots",
+          "weight": 6
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:glow_berries"
+        }
+      ]
+    }
+  ]
+}

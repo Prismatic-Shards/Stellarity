@@ -1,0 +1,398 @@
+{
+  "pools": [
+    {
+      "conditions": [
+        {
+          "condition": "random_chance",
+          "chance": 0.2
+        }
+      ],
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "stellarity:item/spellbook/book_of_jinx",
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#stellarity.config"
+                },
+                "score": "stellarity.config.enable_book_of_jinx"
+              },
+              "range": 1
+            }
+          ]
+        },
+        {
+          "type": "loot_table",
+          "value": "stellarity:item/spellbook/book_of_light",
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#stellarity.config"
+                },
+                "score": "stellarity.config.enable_book_of_light"
+              },
+              "range": 1
+            }
+          ]
+        },
+        {
+          "type": "loot_table",
+          "value": "stellarity:item/spellbook/book_of_obstruct",
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#stellarity.config"
+                },
+                "score": "stellarity.config.enable_book_of_obstruct"
+              },
+              "range": 1
+            }
+          ]
+        },
+        {
+          "type": "loot_table",
+          "value": "stellarity:item/spellbook/book_of_updraft",
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#stellarity.config"
+                },
+                "score": "stellarity.config.enable_book_of_updraft"
+              },
+              "range": 1
+            }
+          ]
+        },
+        {
+          "type": "loot_table",
+          "value": "stellarity:item/spellbook/book_of_conveyance",
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#stellarity.config"
+                },
+                "score": "stellarity.config.enable_book_of_conveyance"
+              },
+              "range": 1
+            }
+          ]
+        },
+        {
+          "type": "loot_table",
+          "value": "stellarity:item/spellbook/book_of_return",
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#stellarity.config"
+                },
+                "score": "stellarity.config.enable_book_of_return"
+              },
+              "range": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.5
+            }
+          ],
+          "type": "loot_table",
+          "value": "stellarity:item/keys/gilded_purpur_key",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "diamond_axe"
+        },
+        {
+          "type": "item",
+          "name": "diamond_hoe"
+        },
+        {
+          "type": "item",
+          "name": "diamond_spear"
+        },
+        {
+          "type": "item",
+          "name": "diamond_pickaxe"
+        },
+        {
+          "type": "item",
+          "name": "diamond_shovel"
+        },
+        {
+          "type": "item",
+          "name": "diamond_sword"
+        },
+        {
+          "type": "item",
+          "name": "diamond_helmet"
+        },
+        {
+          "type": "item",
+          "name": "diamond_chestplate"
+        },
+        {
+          "type": "item",
+          "name": "diamond_leggings"
+        },
+        {
+          "type": "item",
+          "name": "diamond_boots"
+        }
+      ],
+      "functions": [
+        {
+          "function": "enchant_with_levels",
+          "levels": {
+            "min": 30,
+            "max": 60
+          }
+        }
+      ]
+    },
+
+    {
+      "rolls": 8,
+      "entries": [
+        {
+          "type": "loot_table",
+          "value": "stellarity:item/material/enderite_shard",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "max": 5,
+                "min": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "loot_table",
+          "value": "stellarity:item/material/hallowed_ingot",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "max": 4,
+                "min": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "loot_table",
+          "value": "stellarity:item/potion/luck_potion",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1,
+              "add": true
+            },
+            {
+              "function": "limit_count",
+              "limit": 1
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#stellarity.config"
+                },
+                "score": "stellarity.config.enable_luck_potion"
+              },
+              "range": 1
+            }
+          ]
+        },
+        {
+          "type": "loot_table",
+          "value": "stellarity:item/trinket/enderman_hand",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1,
+              "add": true
+            },
+            {
+              "function": "limit_count",
+              "limit": 1
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#stellarity.config"
+                },
+                "score": "stellarity.config.enable_enderman_hand"
+              },
+              "range": 1
+            }
+          ]
+        },
+        {
+          "type": "loot_table",
+          "value": "stellarity:void_fishing/fish",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "purpur_block",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 6,
+                "max": 12
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "purpur_pillar",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 4,
+                "max": 8
+              }
+            }
+          ]
+        },
+        {
+          "type": "loot_table",
+          "value": "stellarity:item/food/fried_chorus_fruit",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 3,
+                "max": 7
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#stellarity.config"
+                },
+                "score": "stellarity.config.enable_fried_chorus_fruit"
+              },
+              "range": 1
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:end_crystal"
+        },
+        {
+          "type": "loot_table",
+          "value": "stellarity:block/ashen_froglight",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 2,
+                "max": 8
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:chorus_fruit",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 4,
+                "max": 10
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "ender_pearl",
+          "functions": [
+            {
+              "function": "set_count",
+
+              "count": {
+                "min": 1,
+                "max": 4
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

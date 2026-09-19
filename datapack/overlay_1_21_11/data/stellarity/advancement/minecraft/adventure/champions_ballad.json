@@ -1,0 +1,57 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:jukebox"
+    },
+    "title": {
+      "translate": "advancements.stellarity.champions_ballad"
+    },
+    "description": [
+      {
+        "translate": "advancements.stellarity.champions_ballad.description",
+        "color": "aqua"
+      },
+      "\n\n",
+      {
+        "translate": "Stellarity",
+        "color": "#eaa7ff",
+        "font": "stellarity:tooltip",
+        "italic": false
+      }
+    ],
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "minecraft:adventure/play_jukebox_in_meadows",
+  "criteria": {
+    "play_jukebox_in_the_end": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "predicates": {
+                "minecraft:jukebox_playable": {}
+              }
+            }
+          },
+          {
+            "condition": "minecraft:block_state_property",
+            "block": "minecraft:jukebox",
+            "properties": {}
+          },
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "biomes": "stellarity:dragons_den"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [["play_jukebox_in_the_end"]]
+}

@@ -1,0 +1,174 @@
+{
+  "type": "minecraft:random_selector",
+  "config": {
+    "default": {
+      "feature": {
+        "type": "minecraft:simple_block",
+        "config": {
+          "to_place": {
+            "type": "minecraft:weighted_state_provider",
+            "entries": [
+              {
+                "data": {
+                  "Name": "minecraft:dead_bush"
+                },
+                "weight": 9
+              },
+              {
+                "data": {
+                  "Name": "minecraft:cactus_flower"
+                },
+                "weight": 1
+              }
+            ]
+          }
+        }
+      },
+      "placement": [
+        {
+          "type": "minecraft:count",
+          "count": 24
+        },
+        {
+          "type": "minecraft:random_offset",
+          "xz_spread": {
+            "type": "minecraft:trapezoid",
+            "max": 7,
+            "min": -7,
+            "plateau": 0
+          },
+          "y_spread": {
+            "type": "minecraft:trapezoid",
+            "max": 4,
+            "min": -4,
+            "plateau": 0
+          }
+        },
+        {
+          "type": "minecraft:block_predicate_filter",
+          "predicate": {
+            "type": "minecraft:all_of",
+            "predicates": [
+              {
+                "type": "minecraft:matching_blocks",
+                "blocks": "minecraft:air"
+              },
+              {
+                "type": "minecraft:would_survive",
+                "state": {
+                  "Name": "minecraft:dead_bush"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "features": [
+      {
+        "chance": 0.1,
+        "feature": {
+          "feature": {
+            "type": "minecraft:block_column",
+            "config": {
+              "allowed_placement": {
+                "type": "minecraft:true"
+              },
+              "direction": "up",
+              "layers": [
+                {
+                  "height": 1,
+                  "provider": {
+                    "type": "minecraft:simple_state_provider",
+                    "state": {
+                      "Name": "minecraft:end_stone"
+                    }
+                  }
+                },
+                {
+                  "height": {
+                    "type": "minecraft:uniform",
+                    "max_inclusive": 3,
+                    "min_inclusive": 0
+                  },
+                  "provider": {
+                    "type": "minecraft:simple_state_provider",
+                    "state": {
+                      "Name": "minecraft:chorus_plant",
+                      "Properties": {
+                        "down": "true",
+                        "east": "false",
+                        "north": "false",
+                        "south": "false",
+                        "up": "true",
+                        "west": "false"
+                      }
+                    }
+                  }
+                },
+                {
+                  "height": 1,
+                  "provider": {
+                    "type": "minecraft:simple_state_provider",
+                    "state": {
+                      "Name": "minecraft:chorus_flower",
+                      "Properties": {
+                        "age": "0"
+                      }
+                    }
+                  }
+                }
+              ],
+              "prioritize_tip": true
+            }
+          },
+          "placement": [
+            {
+              "type": "minecraft:count",
+              "count": 16
+            },
+            {
+              "type": "minecraft:random_offset",
+              "xz_spread": {
+                "type": "minecraft:trapezoid",
+                "max": 6,
+                "min": -6,
+                "plateau": 0
+              },
+              "y_spread": {
+                "type": "minecraft:trapezoid",
+                "max": 4,
+                "min": -4,
+                "plateau": 0
+              }
+            },
+            {
+              "type": "minecraft:block_predicate_filter",
+              "predicate": {
+                "type": "minecraft:all_of",
+                "predicates": [
+                  {
+                    "type": "minecraft:matching_blocks",
+                    "blocks": "minecraft:air",
+                    "offset": [
+                      0,
+                      1,
+                      0
+                    ]
+                  },
+                  {
+                    "type": "minecraft:matching_blocks",
+                    "blocks": [
+                      "minecraft:sand",
+                      "minecraft:end_stone"
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

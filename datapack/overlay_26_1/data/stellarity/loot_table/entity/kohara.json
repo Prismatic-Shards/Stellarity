@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "stellarity:item/food/golden_chorus_fruit",
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#stellarity.config"
+                },
+                "score": "stellarity.config.enable_golden_chorus_fruit"
+              },
+              "range": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

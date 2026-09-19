@@ -1,0 +1,36 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "equipment": {
+      "head": {
+        "predicates": {
+          "minecraft:custom_data": {
+            "stellarity:item": "hallowed_helmet"
+          }
+        }
+      },
+      "chest": {
+        "predicates": {
+          "minecraft:custom_data": {
+            "stellarity:item": "hallowed_chestplate"
+          }
+        }
+      },
+      "legs": {
+        "predicates": {
+          "minecraft:custom_data": {
+            "stellarity:item": "hallowed_leggings"
+          }
+        }
+      },
+      "feet": {
+        "predicates": {
+          "minecraft:custom_data": {
+            "stellarity:item": "hallowed_boots"
+          }
+        }
+      }
+    }
+  }
+}

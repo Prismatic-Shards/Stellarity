@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:simple_block",
+  "config": {
+    "to_place": {
+      "type": "minecraft:weighted_state_provider",
+      "entries": [
+        {
+          "weight": 2,
+          "data": {
+            "Name": "minecraft:sea_pickle",
+            "Properties": {
+              "pickles": "2",
+              "waterlogged": "true"
+            }
+          }
+        },
+        {
+          "weight": 3,
+          "data": {
+            "Name": "minecraft:sea_pickle",
+            "Properties": {
+              "pickles": "1",
+              "waterlogged": "true"
+            }
+          }
+        },
+        {
+          "weight": 100,
+          "data": {
+            "Name": "minecraft:seagrass"
+          }
+        }
+      ]
+    }
+  }
+}

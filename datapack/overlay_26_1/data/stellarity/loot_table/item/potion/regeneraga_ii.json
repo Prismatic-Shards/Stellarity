@@ -1,0 +1,56 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:potion_contents": {
+                  "custom_color": 16121975,
+                  "custom_effects": [
+                    {
+                      "id": "minecraft:instant_health",
+                      "duration": 1,
+                      "amplifier": 1
+                    },
+                    {
+                      "id": "minecraft:regeneration",
+                      "amplifier": 4,
+                      "duration": 70
+                    }
+                  ]
+                },
+                "minecraft:custom_data": {
+                  "stellarity:item": "regeneraga_ii"
+                },
+                "minecraft:custom_name": {
+                  "translate": "item.stellarity.regeneraga",
+                  "color": "yellow",
+                  "italic": false
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "replace_all",
+              "lore": [
+                "",
+                {
+                  "translate": "Stellarity",
+                  "color": "#eaa7ff",
+                  "font": "stellarity:tooltip",
+                  "italic": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

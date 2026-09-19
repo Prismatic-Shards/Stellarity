@@ -1,0 +1,27 @@
+{
+  "parent": "stellarity:event/root",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:used_totem",
+      "conditions": {
+        "player": {
+          "slots": {
+            "weapon.*": {
+              "predicates": {
+                "minecraft:custom_data": {
+                  "stellarity:item": "harvester",
+                  "stellarity:harvester": {
+                    "abilities": ["cryonics"]
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "stellarity:item/harvester/abilities/cryonics/trigger"
+  }
+}

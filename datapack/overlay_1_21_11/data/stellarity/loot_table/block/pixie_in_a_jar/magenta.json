@@ -1,0 +1,49 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:glass",
+                    "weight": 25,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:custom_data": {
+                                    "stellarity:item": "pixie_in_a_jar_magenta"
+                                },
+                                "minecraft:item_model": "stellarity:pixie_in_a_jar",
+                                "minecraft:item_name": {
+                                    "translate": "block.stellarity.pixie_in_a_jar",
+                                    "color": "#FF76D0"
+                                },
+                                "minecraft:max_stack_size": 1
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "lore": [
+                                "",
+                                {
+                                    "translate": "Magenta",
+                                    "color": "light_purple",
+                                    "italic": true
+                                },
+                                "",
+                                {
+                                    "translate": "Stellarity",
+                                    "color": "#eaa7ff",
+                                    "font": "stellarity:tooltip",
+                                    "italic": false
+                                }
+                            ],
+                            "mode": "replace_all"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

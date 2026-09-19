@@ -1,0 +1,49 @@
+{
+  "type": "minecraft:simple_block",
+  "config": {
+    "to_place": {
+      "type": "minecraft:weighted_state_provider",
+      "entries": [
+        {
+          "weight": 2,
+          "data": {
+            "Name": "minecraft:fern"
+          }
+        },
+        {
+          "weight": 11,
+          "data": {
+            "Name": "minecraft:short_grass"
+          }
+        },
+        {
+          "weight": 2,
+          "data": {
+            "Name": "minecraft:tall_grass",
+            "Properties": {
+              "half": "lower"
+            }
+          }
+        },
+        {
+          "weight": 2,
+          "data": {
+            "Name": "minecraft:large_fern",
+            "Properties": {
+              "half": "lower"
+            }
+          }
+        },
+        {
+          "weight": 2,
+          "data": {
+            "Name": "minecraft:acacia_leaves",
+            "Properties": {
+              "persistent": "true"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

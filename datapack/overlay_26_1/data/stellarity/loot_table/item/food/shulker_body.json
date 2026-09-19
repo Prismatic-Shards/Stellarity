@@ -1,0 +1,100 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:chorus_fruit",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "stellarity:shulker_body",
+                "minecraft:custom_data": {
+                  "stellarity:item": "shulker_body"
+                },
+                "minecraft:food": {
+                  "nutrition": 4,
+                  "saturation": 0.8,
+                  "can_always_eat": true
+                },
+                "minecraft:consumable": {
+                  "animation": "eat",
+                  "consume_seconds": 1.6,
+                  "has_consume_particles": true,
+                  "sound": "entity.generic.eat",
+                  "on_consume_effects": [
+                    {
+                      "type": "apply_effects",
+                      "probability": 0.3,
+                      "effects": [
+                        {
+                          "id": "minecraft:hunger",
+                          "duration": 800,
+                          "ambient": false,
+                          "show_particles": true,
+                          "show_icon": true
+                        }
+                      ]
+                    },
+                    {
+                      "type": "teleport_randomly",
+                      "diameter": 16
+                    }
+                  ]
+                },
+                "minecraft:item_name": {
+                  "translate": "item.stellarity.shulker_body",
+                  "color": "white"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                [
+                  {
+                    "text": "4",
+                    "color": "#EEEEEE",
+                    "italic": false
+                  },
+                  {
+                    "text": " 🍖",
+                    "color": "#587653",
+                    "italic": false
+                  },
+                  " ",
+                  {
+                    "text": "0.8",
+                    "color": "#EEEEEE",
+                    "italic": false
+                  },
+                  {
+                    "text": " 🍖",
+                    "color": "#FFDE4C",
+                    "italic": false
+                  }
+                ],
+                "",
+                {
+                  "translate": "item.stellarity.shulker_body.flavor_text",
+                  "color": "#EEEEEE",
+                  "italic": true
+                },
+                "",
+                {
+                  "translate": "Stellarity",
+                  "color": "#eaa7ff",
+                  "font": "stellarity:tooltip",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

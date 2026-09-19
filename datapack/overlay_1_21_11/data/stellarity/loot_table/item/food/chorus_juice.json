@@ -1,0 +1,67 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "stellarity:chorus_juice",
+                "minecraft:custom_data": {
+                  "stellarity:item": "chorus_juice"
+                },
+                "minecraft:custom_name": {
+                  "translate": "item.stellarity.chorus_juice",
+                  "italic": false
+                },
+                "minecraft:potion_contents": {
+                  "potion": "minecraft:water",
+                  "custom_color": 6494569,
+                  "custom_effects": [
+                    {
+                      "id": "minecraft:speed",
+                      "duration": 1000,
+                      "ambient": false,
+                      "show_particles": true,
+                      "show_icon": true
+                    },
+                    {
+                      "id": "minecraft:jump_boost",
+                      "duration": 1000,
+                      "ambient": false,
+                      "show_particles": true,
+                      "show_icon": true
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                "",
+                {
+                  "text": "'Juu-u-uuuice, lalala lala la'",
+                  "color": "#EEEEEE",
+                  "italic": true
+                },
+                "",
+                {
+                  "translate": "Stellarity",
+                  "color": "#eaa7ff",
+                  "font": "stellarity:tooltip",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

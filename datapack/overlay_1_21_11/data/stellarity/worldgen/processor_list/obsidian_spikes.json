@@ -1,0 +1,24 @@
+{
+  "processors": [
+    {
+      "processor_type": "minecraft:rule",
+      "rules": [
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_blockstate_match",
+            "block_state": {
+              "Name": "minecraft:obsidian"
+            },
+            "probability": 0.076
+          },
+          "output_state": {
+            "Name": "minecraft:crying_obsidian"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "mode": "replace_all",
+              "entity": "this",
+              "lore": [
+                "",
+                {
+                  "translate": "items.stellarity.armor.set_bonus",
+                  "color": "#FF9952",
+                  "italic": false
+                },
+                {
+                  "translate": "items.stellarity.champion_armor.bonus.1",
+                  "color": "#EEEEEE",
+                  "italic": false
+                },
+                {
+                  "translate": "items.stellarity.champion_armor.bonus.2",
+                  "color": "#EEEEEE",
+                  "italic": false
+                },
+                {
+                  "translate": "items.stellarity.champion_armor.bonus.3",
+                  "color": "#EEEEEE",
+                  "italic": false
+                },
+                "",
+                {
+                  "translate": "Stellarity",
+                  "color": "#eaa7ff",
+                  "font": "stellarity:tooltip",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "tooltip_display": {
+                  "hidden_components": ["dyed_color"]
+                },
+                "minecraft:dyed_color": 11041988,
+                "minecraft:item_model": "stellarity:champion_chestplate",
+                "minecraft:custom_data": {
+                  "stellarity:item": "champion_chestplate"
+                },
+                "minecraft:damage_resistant": {
+                  "types": "#is_fire"
+                },
+                "minecraft:equippable": {
+                  "slot": "chest",
+                  "asset_id": "stellarity:champion",
+                  "damage_on_hurt": true,
+                  "equip_sound": "minecraft:item.armor.equip_netherite"
+                },
+                "minecraft:max_damage": 528,
+                "rarity": "uncommon",
+                "minecraft:item_name": {
+                  "translate": "item.stellarity.champion_chestplate",
+                  "color": "#A87CC4",
+                  "italic": false
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "minecraft:armor",
+                  "id": "minecraft:armor.chestplate",
+                  "amount": 8,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "attribute": "minecraft:armor_toughness",
+                  "id": "minecraft:armor.chestplate",
+                  "amount": 2,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "attribute": "minecraft:knockback_resistance",
+                  "id": "minecraft:armor.chestplate",
+                  "amount": 0.08,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "attribute": "minecraft:attack_damage",
+                  "id": "minecraft:armor.chestplate",
+                  "amount": 0.025,
+                  "operation": "add_multiplied_base",
+                  "slot": "chest"
+                },
+                {
+                  "attribute": "minecraft:attack_speed",
+                  "id": "minecraft:armor.chestplate",
+                  "amount": 0.15,
+                  "operation": "add_multiplied_base",
+                  "slot": "chest"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

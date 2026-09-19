@@ -1,0 +1,96 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_axe",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "stellarity:fluffy_hammer",
+                "minecraft:custom_data": {
+                  "stellarity:item": "fluffy_hammer"
+                },
+                "minecraft:rarity": "rare",
+                "minecraft:max_damage": 1562,
+                "minecraft:item_name": {
+                  "translate": "item.stellarity.fluffy_hammer",
+                  "color": "#9936D6",
+                  "italic": false
+                },
+                "minecraft:food": {
+                  "can_always_eat": true,
+                  "nutrition": 0,
+                  "saturation": 0
+                },
+                "consumable": {
+                  "animation": "none",
+                  "consume_seconds": 100,
+                  "has_consume_particles": false
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "replace_all",
+              "lore": [
+                "",
+                {
+                  "translate": "item.stellarity.fluffy_hammer.description.1",
+                  "color": "#EEEEEE",
+                  "italic": false
+                },
+                {
+                  "translate": "item.stellarity.fluffy_hammer.description.2",
+                  "color": "#EEEEEE",
+                  "italic": false
+                },
+                "",
+                {
+                  "translate": "item.stellarity.fluffy_hammer.flavor_text",
+                  "color": "#EEEEEE",
+                  "italic": true
+                },
+                "",
+                {
+                  "translate": "items.stellarity.donator",
+                  "color": "#F96854",
+                  "italic": false
+                },
+                "",
+                {
+                  "translate": "Stellarity",
+                  "color": "#eaa7ff",
+                  "font": "stellarity:tooltip",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "minecraft:attack_damage",
+                  "id": "minecraft:base_attack_damage",
+                  "amount": 14,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                },
+                {
+                  "attribute": "minecraft:attack_speed",
+                  "id": "minecraft:base_attack_speed",
+                  "amount": -3.8,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

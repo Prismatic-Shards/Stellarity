@@ -1,0 +1,9 @@
+{
+  "function": "minecraft:set_components",
+  "components": {
+    "minecraft:entity_data": {
+      "id": "minecraft:painting",
+      "variant": "minecraft:wind"
+    }
+  }
+}

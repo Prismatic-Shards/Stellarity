@@ -32,7 +32,7 @@
         "condition": "minecraft:entity_properties",
         "entity": "this",
         "predicate": {
-          "nbt": "{fall_distance:0.0f}"
+          "nbt": "{fall_distance:0.0d}"
         }
       },
       {
@@ -64,6 +64,9 @@
         "condition": "minecraft:entity_properties",
         "entity": "this",
         "predicate": {
+          "type_specific": {
+            "type": "minecraft:player"
+          },
           "flags": {
             "is_swimming": true
           }

@@ -1,0 +1,49 @@
+{
+  "description": {
+    "translate": "enchantment.stellarity.void_strike",
+    "color": "#D600F4"
+  },
+  "supported_items": "#enchantable/weapon",
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 75,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 100,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 10,
+  "slots": [
+    "mainhand"
+  ],
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "enchanted": "attacker",
+        "affected": "victim",
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "stellarity:mechanic/enchantments/void_strike/apply_voided"
+        },
+        "requirements": {
+          "condition": "minecraft:damage_source_properties",
+          "predicate": {
+            "tags": [
+              {
+                "id": "stellarity:melee",
+                "expected": true
+              },
+              {
+                "id": "minecraft:bypasses_invulnerability",
+                "expected": false
+              }
+            ],
+            "is_direct": true
+          }
+        }
+      }
+    ]
+  }
+}

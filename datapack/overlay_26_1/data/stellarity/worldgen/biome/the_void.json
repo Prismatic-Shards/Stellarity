@@ -1,0 +1,64 @@
+{
+  "temperature": 0.8,
+  "downfall": 0.4,
+  "has_precipitation": false,
+  "creature_spawn_probability": 0,
+  "attributes": {
+    "visual/sky_color": 0,
+    "visual/fog_color": 0,
+    "visual/water_fog_color": 4405100,
+    "audio/ambient_sounds": {
+      "mood": {
+        "sound": "minecraft:ambient.nether_wastes.mood",
+        "tick_delay": 800,
+        "block_search_extent": 6,
+        "offset": 2
+      },
+      "additions": {
+        "sound": "minecraft:ambient.nether_wastes.additions",
+        "tick_chance": 0.001111
+      }
+    },
+    "visual/ambient_particles": {
+      "modifier": "override",
+      "argument": [
+        {
+          "particle": {
+            "type": "minecraft:mycelium"
+          },
+          "probability": 0.012
+        }
+      ]
+    }
+  },
+  "effects": {
+    "water_color": 6443678,
+    "grass_color": 5782142,
+    "foliage_color": 6240114
+  },
+  "spawners": {
+    "monster": [
+      {
+        "type": "minecraft:enderman",
+        "weight": 10,
+        "minCount": 4,
+        "maxCount": 4
+      }
+    ]
+  },
+  "spawn_costs": {},
+  "carvers": [],
+  "features": [
+    ["stellarity:the_void/stalactite"],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    ["stellarity:global/end_dungeon"]
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bow",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": {
+                  "stellarity:item": "call_of_the_void"
+                },
+                "minecraft:item_model": "stellarity:call_of_the_void",
+                "minecraft:max_damage": 424,
+                "minecraft:item_name": {
+                  "translate": "item.stellarity.call_of_the_void",
+                  "color": "dark_purple"
+                },
+                "minecraft:damage_resistant": {
+                  "types": "#is_fire"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "replace_all",
+              "entity": "this",
+              "lore": [
+                "",
+                {
+                  "translate": "item.stellarity.call_of_the_void.description.1",
+                  "color": "#EEEEEE",
+                  "italic": false
+                },
+                {
+                  "translate": "item.stellarity.call_of_the_void.description.2",
+                  "color": "#EEEEEE",
+                  "italic": false
+                },
+                "",
+                {
+                  "translate": "Stellarity",
+                  "color": "#eaa7ff",
+                  "font": "stellarity:tooltip",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "stellarity:void_shot": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

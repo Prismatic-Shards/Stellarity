@@ -1,0 +1,81 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:chiseled_quartz_block",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": {
+                  "stellarity:item": "altar_of_the_sacred"
+                },
+                "minecraft:item_model": "stellarity:altar_of_the_sacred",
+                "minecraft:damage_resistant": {
+                  "types": "#is_fire"
+                },
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:item_name": {
+                  "translate": "block.stellarity.altar_of_the_sacred",
+                  "color": "#FFD655"
+                },
+                "minecraft:max_stack_size": 1
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                "",
+                {
+                  "translate": "block.stellarity.altar_of_the_sacred.description.1",
+                  "color": "#EEEEEE",
+                  "italic": false
+                },
+                {
+                  "translate": "block.stellarity.altar_of_the_sacred.description.2",
+                  "color": "#EEEEEE",
+                  "italic": false
+                },
+                "",
+                {
+                  "translate": "block.stellarity.altar_of_the_sacred.description.3",
+                  "with": [
+                    {
+                      "translate": "item.stellarity.starlight_soot",
+                      "color": "#FFD655",
+                      "italic": false
+                    }
+                  ],
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "translate": "block.stellarity.altar_of_the_sacred.description.4",
+                  "color": "gray",
+                  "italic": false
+                },
+                "",
+                {
+                  "translate": "block.stellarity.altar_of_the_sacred.flavor_text",
+                  "color": "#EEEEEE",
+                  "italic": true
+                },
+                "",
+                {
+                  "translate": "Stellarity",
+                  "color": "#eaa7ff",
+                  "font": "stellarity:tooltip",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:warped_fungus_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:item_model": "stellarity:book_of_updraft",
+                "minecraft:custom_data": {
+                  "stellarity:item": "book_of_updraft",
+                  "kohara:right_click": true
+                },
+                "rarity": "uncommon",
+                "minecraft:item_name": {
+                  "translate": "item.stellarity.book_of_updraft",
+                  "color": "#E0E0E0",
+                  "italic": false
+                },
+                "!max_damage": {}
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "replace_all",
+              "lore": [
+                "",
+                {
+                  "translate": "item.stellarity.book_of_updraft.description.1",
+                  "color": "#EEEEEE",
+                  "italic": false
+                },
+                {
+                  "translate": "item.stellarity.book_of_updraft.description.2",
+                  "color": "#EEEEEE",
+                  "italic": false
+                },
+                {
+                  "translate": "item.stellarity.book_of_updraft.description.3",
+                  "color": "#EEEEEE",
+                  "italic": false
+                },
+                "",
+                {
+                  "translate": "items.stellarity.spellbooks.cooldown",
+                  "color": "#9E9E9E",
+                  "italic": false,
+                  "with": [
+                    {
+                      "text": "16",
+                      "color": "#C6C6C6",
+                      "italic": false
+                    }
+                  ]
+                },
+                "",
+                {
+                  "translate": "Stellarity",
+                  "color": "#eaa7ff",
+                  "font": "stellarity:tooltip",
+                  "italic": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

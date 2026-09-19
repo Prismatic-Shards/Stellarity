@@ -1,0 +1,9 @@
+{
+  "function": "minecraft:enchant_randomly",
+  "options": [
+    "minecraft:sharpness",
+    "minecraft:knockback",
+    "minecraft:fire_aspect"
+  ],
+  "only_compatible": true
+}

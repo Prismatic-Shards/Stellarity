@@ -1,0 +1,47 @@
+{
+  "feature": "minecraft:end_island",
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": {
+        "type": "minecraft:weighted_list",
+        "distribution": [
+          {
+            "weight": 7,
+            "data": 1
+          },
+          {
+            "weight": 6,
+            "data": 2
+          },
+          {
+            "weight": 3,
+            "data": 3
+          }
+        ]
+      }
+    },
+    {
+      "type": "minecraft:rarity_filter",
+      "chance": 4
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:uniform",
+        "min_inclusive": {
+          "above_bottom": 25
+        },
+        "max_inclusive": {
+          "below_top": 25
+        }
+      }
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

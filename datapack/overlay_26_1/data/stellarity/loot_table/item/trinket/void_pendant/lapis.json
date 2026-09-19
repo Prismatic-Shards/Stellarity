@@ -1,0 +1,86 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:endermite_spawn_egg",
+          "functions": [
+            {
+              "components": {
+                "minecraft:item_model": "stellarity:void_pendant",
+                "minecraft:custom_data": {
+                  "stellarity:item": "void_pendant"
+                },
+                "minecraft:item_name": {
+                  "translate": "item.stellarity.void_pendant"
+                },
+                "minecraft:max_stack_size": 1,
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "minecraft:enchantments"
+                  ]
+                },
+                "!minecraft:entity_data": {},
+                "minecraft:rarity": "rare"
+              },
+              "function": "minecraft:set_components"
+            },
+            {
+              "enchantments": {
+                "stellarity:_technical/void_pendant/lapis": 1
+              },
+              "function": "minecraft:set_enchantments"
+            },
+            {
+              "lore": [
+                "",
+                [
+                  {
+                    "bold": true,
+                    "color": "blue",
+                    "italic": false,
+                    "translate": "item.stellarity.void_pendant.lapis.description.name"
+                  },
+                  {
+                    "bold": false,
+                    "color": "white",
+                    "italic": false,
+                    "text": ": "
+                  },
+                  {
+                    "bold": false,
+                    "color": "white",
+                    "italic": false,
+                    "translate": "item.stellarity.void_pendant.lapis.description.1"
+                  }
+                ],
+                "",
+                {
+                  "translate": "item.stellarity.void_pendant.description.1",
+                  "color": "#EEEEEE",
+                  "italic": false
+                },
+                {
+                  "translate": "item.stellarity.void_pendant.description.2",
+                  "color": "#EEEEEE",
+                  "italic": false
+                },
+                "",
+                {
+                  "translate": "Stellarity",
+                  "color": "#eaa7ff",
+                  "font": "stellarity:tooltip",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all",
+              "function": "minecraft:set_lore"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

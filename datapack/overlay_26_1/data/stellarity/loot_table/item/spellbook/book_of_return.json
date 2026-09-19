@@ -1,0 +1,65 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:warped_fungus_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:item_model": "stellarity:book_of_return",
+                "minecraft:custom_data": {
+                  "stellarity:item": "book_of_return",
+                  "kohara:right_click": true
+                },
+                "rarity": "uncommon",
+                "minecraft:item_name": {
+                  "translate": "item.stellarity.book_of_return",
+                  "color": "#9C369F",
+                  "italic": false
+                },
+                "!max_damage": {}
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "replace_all",
+              "lore": [
+                "",
+                {
+                  "translate": "item.stellarity.book_of_return.description",
+                  "color": "#EEEEEE",
+                  "italic": false
+                },
+                "",
+                {
+                  "translate": "items.stellarity.spellbooks.cooldown_long",
+                  "color": "#9E9E9E",
+                  "italic": false,
+                  "with": [
+                    {
+                      "text": "1",
+                      "color": "#C6C6C6",
+                      "italic": false
+                    }
+                  ]
+                },
+                "",
+                {
+                  "translate": "Stellarity",
+                  "color": "#eaa7ff",
+                  "font": "stellarity:tooltip",
+                  "italic": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

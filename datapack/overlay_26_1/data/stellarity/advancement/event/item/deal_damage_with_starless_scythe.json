@@ -1,0 +1,62 @@
+{
+  "parent": "stellarity:event/root",
+  "criteria": {
+    "attack": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "mainhand": {
+              "items": ["minecraft:wooden_hoe"],
+              "components": {
+                "minecraft:custom_data": {
+                  "stellarity:item": "starless_scythe"
+                }
+              }
+            }
+          }
+        },
+        "damage": {
+          "blocked": false,
+          "type": {
+            "tags": [
+              {
+                "id": "stellarity:melee",
+                "expected": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    "kill": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "mainhand": {
+              "items": ["minecraft:wooden_hoe"],
+              "components": {
+                "minecraft:custom_data": {
+                  "stellarity:item": "starless_scythe"
+                }
+              }
+            }
+          }
+        },
+        "killing_blow": {
+          "tags": [
+            {
+              "id": "stellarity:melee",
+              "expected": true
+            }
+          ]
+        }
+      }
+    }
+  },
+  "requirements": [["attack", "kill"]],
+  "rewards": {
+    "function": "stellarity:item/starless_scythe/attack"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "type": "minecraft:archaeology",
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:emerald"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:beetroot_seeds"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:coal"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:gold_nugget"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:end_rod"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:sandstone"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:terracotta"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "stellarity:item/material/enderite_shard"
+        }
+      ]
+    }
+  ]
+}

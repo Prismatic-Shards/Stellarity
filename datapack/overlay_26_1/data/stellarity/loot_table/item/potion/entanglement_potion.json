@@ -1,0 +1,52 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:splash_potion",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:potion_contents": {
+                  "potion": "minecraft:water",
+                  "custom_color": 8463733,
+                  "custom_effects": [
+                    {
+                      "id": "minecraft:slowness",
+                      "amplifier": 4,
+                      "duration": 220
+                    }
+                  ]
+                },
+                "minecraft:custom_data": {
+                  "stellarity:item": "entanglement_potion"
+                },
+                "minecraft:custom_name": {
+                  "translate": "item.stellarity.entanglement_potion",
+                  "color": "white",
+                  "italic": false
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "replace_all",
+              "lore": [
+                "",
+                {
+                  "translate": "Stellarity",
+                  "color": "#eaa7ff",
+                  "font": "stellarity:tooltip",
+                  "italic": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "glow_item_frame",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "item_name": {
+                  "translate": "block.stellarity.ender_grass_block"
+                },
+                "custom_data": {
+                  "stellarity:item": "ender_grass_block"
+                },
+                "lore": [
+                  "",
+                  {
+                    "translate": "Stellarity",
+                    "color": "#eaa7ff",
+                    "font": "stellarity:tooltip",
+                    "italic": false
+                  }
+                ],
+                "max_stack_size": 64,
+                "item_model": "stellarity:ender_grass_block",
+                "entity_data": {
+                  "id": "minecraft:glow_item_frame",
+                  "Tags": [
+                    "stellarity.placed_block",
+                    "smithed.entity",
+                    "smithed.strict"
+                  ],
+                  "Invisible": true,
+                  "Invulnerable": true,
+                  "data": {
+                    "stellarity:block": {
+                      "id": "ender_grass_block",
+                      "block": "grass_block",
+                      "model": "stellarity:ender_grass_block",
+                      "loot_table": "stellarity:block/ender_grass_block",
+                      "place_sound": "block.grass.place",
+                      "valid_placement": "all",
+                      "rotation": "none"
+                    }
+                  }
+                },
+                "rarity": "common"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

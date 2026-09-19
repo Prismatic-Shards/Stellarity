@@ -1,0 +1,71 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:popped_chorus_fruit",
+          "functions": [
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "stellarity:decayed_clover.1",
+                  "attribute": "minecraft:luck",
+                  "amount": 1,
+                  "operation": "add_value",
+                  "slot": "offhand"
+                },
+                {
+                  "id": "stellarity:decayed_clover.2",
+                  "attribute": "minecraft:luck",
+                  "amount": 0.1,
+                  "operation": "add_multiplied_base",
+                  "slot": "offhand"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "stellarity:decayed_clover",
+                "minecraft:item_name": {
+                  "translate": "item.stellarity.decayed_clover",
+                  "italic": false
+                },
+                "minecraft:custom_data": {
+                  "stellarity:item": "decayed_clover"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                "",
+                {
+                  "translate": "item.stellarity.decayed_clover.description.1",
+                  "color": "#EEEEEE",
+                  "italic": false
+                },
+                {
+                  "translate": "item.stellarity.decayed_clover.description.2",
+                  "color": "#EEEEEE",
+                  "italic": false
+                },
+                "",
+                {
+                  "translate": "Stellarity",
+                  "color": "#eaa7ff",
+                  "font": "stellarity:tooltip",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

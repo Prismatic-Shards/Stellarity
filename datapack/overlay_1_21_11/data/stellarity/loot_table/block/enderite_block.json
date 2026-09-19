@@ -1,0 +1,59 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "glow_item_frame",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "item_name": {
+                  "translate": "block.stellarity.enderite_block"
+                },
+                "custom_data": {
+                  "stellarity:item": "enderite_block"
+                },
+                "lore": [
+                  "",
+                  {
+                    "translate": "Stellarity",
+                    "color": "#eaa7ff",
+                    "font": "stellarity:tooltip",
+                    "italic": false
+                  }
+                ],
+                "max_stack_size": 64,
+                "item_model": "stellarity:enderite_block",
+                "entity_data": {
+                  "id": "minecraft:glow_item_frame",
+                  "Tags": [
+                    "stellarity.placed_block",
+                    "smithed.entity",
+                    "smithed.strict"
+                  ],
+                  "Invisible": true,
+                  "Invulnerable": true,
+                  "data": {
+                    "stellarity:block": {
+                      "id": "enderite_block",
+                      "block": "amethyst_block",
+                      "model": "stellarity:enderite_block",
+                      "loot_table": "stellarity:block/enderite_block",
+                      "place_sound": "block.amethyst_block.place",
+                      "valid_placement": "all",
+                      "rotation": "none"
+                    }
+                  }
+                },
+                "rarity": "common"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

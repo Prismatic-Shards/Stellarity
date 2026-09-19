@@ -1,0 +1,85 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:potion_contents": {
+                  "custom_color": 13176087,
+                  "custom_effects": [
+                    {
+                      "id": "minecraft:speed",
+                      "amplifier": 1,
+                      "duration": 960
+                    },
+                    {
+                      "id": "minecraft:regeneration",
+                      "duration": 960
+                    },
+                    {
+                      "id": "minecraft:weakness",
+                      "duration": 960
+                    },
+                    {
+                      "id": "minecraft:saturation",
+                      "amplifier": 3,
+                      "duration": 1
+                    },
+                    {
+                      "id": "minecraft:luck",
+                      "duration": 4800
+                    }
+                  ]
+                },
+                "tooltip_display": {
+                  "hidden_components": ["potion_contents"]
+                },
+                "minecraft:custom_name": {
+                  "translate": "item.stellarity.amarene",
+                  "color": "#C90D17",
+                  "italic": false
+                },
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:custom_data": {
+                  "stellarity:item": "amarene"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "replace_all",
+              "entity": "this",
+              "lore": [
+                "",
+                {
+                  "translate": "item.minecraft.potion.effect.stellarity.amarene.description",
+                  "italic": false,
+                  "color": "#EEEEEE"
+                },
+                "",
+                {
+                  "translate": "item.minecraft.potion.effect.stellarity.amarene.flavor_text",
+                  "italic": true,
+                  "color": "#EEEEEE"
+                },
+                "",
+                {
+                  "translate": "Stellarity",
+                  "color": "#eaa7ff",
+                  "font": "stellarity:tooltip",
+                  "italic": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

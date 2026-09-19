@@ -1,0 +1,26 @@
+{
+  "values": [
+    "#minecraft:boat",
+    "#kohara:chest_boats",
+    "#minecraft:impact_projectiles",
+    "#kohara:command_entity",
+    "#kohara:minecarts",
+    "#kohara:hanging_entities",
+    "minecraft:end_crystal",
+    "minecraft:ender_pearl",
+    "minecraft:evoker_fangs",
+    "minecraft:experience_bottle",
+    "minecraft:experience_orb",
+    "minecraft:eye_of_ender",
+    "minecraft:falling_block",
+    "minecraft:fishing_bobber",
+    "minecraft:item",
+    "minecraft:leash_knot",
+    "minecraft:lightning_bolt",
+    "minecraft:llama_spit",
+    "minecraft:ominous_item_spawner",
+    "minecraft:splash_potion",
+    "minecraft:lingering_potion",
+    "minecraft:shulker_bullet"
+  ]
+}

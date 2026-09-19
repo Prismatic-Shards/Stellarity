@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:fossil",
+  "config": {
+    "max_empty_corners_allowed": 2,
+    "fossil_structures": [
+      "stellarity:fossils/phantom"
+    ],
+    "overlay_structures": [
+      "stellarity:fossils/phantom_overlay"
+    ],
+    "fossil_processors": "minecraft:fossil_rot",
+    "overlay_processors": "minecraft:fossil_coal"
+  }
+}

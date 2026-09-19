@@ -1,0 +1,22 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "stellarity:item/tool/fisher_of_voids",
+          "functions": [
+            {
+              "function": "minecraft:set_damage",
+              "damage": {
+                "min": 0.15,
+                "max": 0.75
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

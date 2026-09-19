@@ -1,0 +1,23 @@
+{
+  "parent": "stellarity:event/root",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "type": {
+            "source_entity": {
+              "type": "minecraft:ender_dragon"
+            },
+            "direct_entity": {
+              "type": "minecraft:area_effect_cloud"
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "stellarity:entity/dragon/attacks/cloud_voided"
+  }
+}

@@ -79,6 +79,12 @@
         "condition": "minecraft:entity_properties",
         "entity": "this",
         "predicate": {
+          "minecraft:type_specific/player": {
+            "gamemode": [
+              "survival",
+              "adventure"
+            ]
+          },
           "equipment": {
             "mainhand": {
               "items": [
@@ -92,12 +98,6 @@
                 ]
               }
             }
-          },
-          "minecraft:type_specific/player": {
-            "gamemode": [
-              "survival",
-              "adventure"
-            ]
           }
         }
       }
@@ -188,6 +188,11 @@
         "condition": "minecraft:entity_properties",
         "entity": "this",
         "predicate": {
+          "minecraft:type_specific/player": {
+            "gamemode": [
+              "creative"
+            ]
+          },
           "equipment": {
             "mainhand": {
               "items": [
@@ -201,11 +206,6 @@
                 ]
               }
             }
-          },
-          "minecraft:type_specific/player": {
-            "gamemode": [
-              "creative"
-            ]
           }
         }
       }

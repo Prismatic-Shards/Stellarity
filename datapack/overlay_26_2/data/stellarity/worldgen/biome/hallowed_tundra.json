@@ -91,7 +91,9 @@
       "stellarity:frozen_spikes/replace_dripstone/8",
       "stellarity:frozen_spikes/replace_dripstone/9",
       "stellarity:frozen_spikes/replace_dripstone/10",
-      "stellarity:frozen_spikes/replace_dripstone/11"
+      "stellarity:frozen_spikes/replace_dripstone/11",
+      "minecraft:freeze_top_layer",
+      "stellarity:hallowed_tundra/snow_covering"
     ]
   ]
 }

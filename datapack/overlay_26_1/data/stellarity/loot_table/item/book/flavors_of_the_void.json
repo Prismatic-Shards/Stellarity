@@ -1,0 +1,1699 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "stellarity:flavors_of_the_void",
+                "minecraft:custom_data": {
+                  "stellarity:item": "flavors_of_the_void"
+                },
+                "minecraft:rarity": "rare",
+                "minecraft:item_name": {
+                  "translate": "item.stellarity.flavors_of_the_void"
+                },
+                "!max_damage": {},
+                "damage_resistant": {
+                  "types": "#is_fire"
+                },
+                "enchantment_glint_override": true,
+                "minecraft:written_book_content": {
+                  "author": "",
+                  "title": "",
+                  "pages": [
+                    [
+                      {
+                        "text": "\n\n\n              \n",
+                        "strikethrough": true
+                      },
+                      {
+                        "text": "FLAVORS OF\nTHE VOID",
+                        "bold": true,
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "\nRecipes for\nCauldron Crafting\n",
+                        "bold": false,
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "              ",
+                        "strikethrough": true
+                      }
+                    ],
+                    [
+                      {
+                        "text": "\n\nCAULDRON CRAFTING:",
+                        "bold": true
+                      },
+                      {
+                        "text": "\nCauldron Crafting is a crafting system used to make many different Stellarity items, mostly Foods and Potions.",
+                        "bold": false
+                      }
+                    ],
+                    [
+                      {
+                        "text": "\n\nUSAGE:",
+                        "bold": true
+                      },
+                      {
+                        "text": "\nFill a Cauldron with Water and throw 1 Dragon's Breath into the Cauldron, you can useup to 7 items before needing to throw another Dragon's Breath.",
+                        "bold": false
+                      }
+                    ],
+                    [
+                      {
+                        "text": "                 ",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "bold": false,
+                        "strikethrough": true
+                      },
+                      {
+                        "text": "\nCHORUS\nSTEW",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "bold": true,
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "\n6",
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "🍖",
+                        "font": "minecraft:default",
+                        "shadow_color": -11913949,
+                        "color": "#B88458",
+                        "bold": false,
+                        "strikethrough": false
+                      },
+                      {
+                        "text": " 7.2",
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "🍖",
+                        "font": "minecraft:default",
+                        "shadow_color": -10924517,
+                        "color": "#FFDE4C",
+                        "bold": false,
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "\nꜰᴏᴏᴅ             ",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "strikethrough": false
+                      },
+                      {
+                        "text": " ",
+                        "font": "stellarity:flavors_of_the_void",
+                        "color": "white",
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "\nᴡɪᴋɪ ᴘᴀɢᴇ       ",
+                        "font": "minecraft:default",
+                        "color": "dark_gray",
+                        "strikethrough": false,
+                        "click_event": {
+                          "action": "open_url",
+                          "url": "https://prismaticshards.wiki.gg/wiki/Chorus_Stew"
+                        }
+                      },
+                      {
+                        "text": "\n                 ",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "strikethrough": true
+                      },
+                      {
+                        "text": "\nMaterials:\n- 1x Bowl\n- 1x Chorus Fruit\n- 1x Chorus Flower",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "bold": false,
+                        "strikethrough": false
+                      }
+                    ],
+                    [
+                      {
+                        "text": "                 ",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "bold": false,
+                        "strikethrough": true
+                      },
+                      {
+                        "text": "\nCHORUS\nPIE",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "bold": true,
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "\n8",
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "🍖",
+                        "font": "minecraft:default",
+                        "shadow_color": -11913949,
+                        "color": "#B88458",
+                        "bold": false,
+                        "strikethrough": false
+                      },
+                      {
+                        "text": " 4.8",
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "🍖",
+                        "font": "minecraft:default",
+                        "shadow_color": -10924517,
+                        "color": "#FFDE4C",
+                        "bold": false,
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "\nꜰᴏᴏᴅ             ",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "(",
+                        "font": "stellarity:flavors_of_the_void",
+                        "color": "white",
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "\nᴡɪᴋɪ ᴘᴀɢᴇ       ",
+                        "font": "minecraft:default",
+                        "color": "dark_gray",
+                        "strikethrough": false,
+                        "click_event": {
+                          "action": "open_url",
+                          "url": "https://prismaticshards.wiki.gg/wiki/Chorus_Pie"
+                        }
+                      },
+                      {
+                        "text": "\n                 ",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "strikethrough": true
+                      },
+                      {
+                        "text": "\nMaterials:\n- 1x Chorus Fruit\n- 1x Sugar\n- 1x Ender Egg",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "bold": false,
+                        "strikethrough": false
+                      }
+                    ],
+                    [
+                      {
+                        "text": "                 ",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "bold": false,
+                        "strikethrough": true
+                      },
+                      {
+                        "text": "\nCHORUS\nJUICE",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "bold": true,
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "\nꜰᴏᴏᴅ    ",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "\nᴡɪᴋɪ ᴘᴀɢᴇ       ",
+                        "font": "minecraft:default",
+                        "color": "dark_gray",
+                        "strikethrough": false,
+                        "click_event": {
+                          "action": "open_url",
+                          "url": "https://prismaticshards.wiki.gg/wiki/Chorus_Juice"
+                        }
+                      },
+                      {
+                        "text": "7",
+                        "font": "stellarity:flavors_of_the_void",
+                        "color": "white",
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "\n                 ",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "strikethrough": true
+                      },
+                      {
+                        "text": "\nMaterials:\n- 1x Glass Bottle\n- 2x Chorus Fruit",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "bold": false,
+                        "strikethrough": false
+                      }
+                    ],
+                    [
+                      {
+                        "text": "                 ",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "bold": false,
+                        "strikethrough": true
+                      },
+                      {
+                        "text": "\nGOLDEN\nCHORUS\nFRUIT",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "bold": true,
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "\n6",
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "🍖",
+                        "font": "minecraft:default",
+                        "shadow_color": -11913949,
+                        "color": "#B88458",
+                        "bold": false,
+                        "strikethrough": false
+                      },
+                      {
+                        "text": " 14.4",
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "🍖       ",
+                        "font": "minecraft:default",
+                        "shadow_color": -10924517,
+                        "color": "#FFDE4C",
+                        "bold": false,
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "#",
+                        "font": "stellarity:flavors_of_the_void",
+                        "color": "white",
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "\nꜰᴏᴏᴅ   ",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "\nᴡɪᴋɪ ᴘᴀɢᴇ       ",
+                        "font": "minecraft:default",
+                        "color": "dark_gray",
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "\n                 ",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "strikethrough": true
+                      },
+                      {
+                        "text": "\nMaterials:\n- 1x Chorus Fruit\n- 1x Block of Gold",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "bold": false,
+                        "strikethrough": false
+                      }
+                    ],
+                    [
+                      {
+                        "text": "                 ",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "bold": false,
+                        "strikethrough": true
+                      },
+                      {
+                        "text": "\nCANDIED\nCHORUS\nFRUIT",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "bold": true,
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "\n4",
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "🍖",
+                        "font": "minecraft:default",
+                        "shadow_color": -11913949,
+                        "color": "#B88458",
+                        "bold": false,
+                        "strikethrough": false
+                      },
+                      {
+                        "text": " 2.4",
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "🍖        ",
+                        "font": "minecraft:default",
+                        "shadow_color": -10924517,
+                        "color": "#FFDE4C",
+                        "bold": false,
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "  ",
+                        "font": "stellarity:invisible_text",
+                        "color": "black",
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "$",
+                        "font": "stellarity:flavors_of_the_void",
+                        "color": "white",
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "\nꜰᴏᴏᴅ    ",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "\nᴡɪᴋɪ ᴘᴀɢᴇ       ",
+                        "font": "minecraft:default",
+                        "color": "dark_gray",
+                        "strikethrough": false,
+                        "click_event": {
+                          "action": "open_url",
+                          "url": "https://prismaticshards.wiki.gg/wiki/Candied_Chorus_Fruit"
+                        }
+                      },
+                      {
+                        "text": "\n                 ",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "strikethrough": true
+                      },
+                      {
+                        "text": "\nMaterials:\n- 1x Chorus Fruit\n- 2x Sugar",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "bold": false,
+                        "strikethrough": false
+                      }
+                    ],
+                    [
+                      {
+                        "text": "                 ",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "bold": false,
+                        "strikethrough": true
+                      },
+                      {
+                        "text": "\nFRIED\nCHORUS\nFRUIT",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "bold": true,
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "\n7",
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "🍖",
+                        "font": "minecraft:default",
+                        "shadow_color": -11913949,
+                        "color": "#B88458",
+                        "bold": false,
+                        "strikethrough": false
+                      },
+                      {
+                        "text": " 11.2",
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "🍖       ",
+                        "font": "minecraft:default",
+                        "shadow_color": -10924517,
+                        "color": "#FFDE4C",
+                        "bold": false,
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "&",
+                        "font": "stellarity:flavors_of_the_void",
+                        "color": "white",
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "\nꜰᴏᴏᴅ   ",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "\nᴡɪᴋɪ ᴘᴀɢᴇ       ",
+                        "font": "minecraft:default",
+                        "color": "dark_gray",
+                        "strikethrough": false,
+                        "click_event": {
+                          "action": "open_url",
+                          "url": "https://prismaticshards.wiki.gg/wiki/Fried_Chorus_Fruit"
+                        }
+                      },
+                      {
+                        "text": "\n                 ",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "strikethrough": true
+                      },
+                      {
+                        "text": "\nMaterials:\n- 1x Chorus Fruit\n- 1x Wheat\n- 1x Blaze Powder",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "bold": false,
+                        "strikethrough": false
+                      }
+                    ],
+                    [
+                      {
+                        "text": "                 ",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "bold": false,
+                        "strikethrough": true
+                      },
+                      {
+                        "text": "\nGRILLED\nENDERMAN\nFLESH",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "bold": true,
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "\n6",
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "🍖",
+                        "font": "minecraft:default",
+                        "shadow_color": -11913949,
+                        "color": "#B88458",
+                        "bold": false,
+                        "strikethrough": false
+                      },
+                      {
+                        "text": " 9.6",
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "🍖        ",
+                        "font": "minecraft:default",
+                        "shadow_color": -10924517,
+                        "color": "#FFDE4C",
+                        "bold": false,
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "  ",
+                        "font": "stellarity:invisible_text",
+                        "color": "black",
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "'",
+                        "font": "stellarity:flavors_of_the_void",
+                        "color": "white",
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "\nꜰᴏᴏᴅ  ",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "\nᴡɪᴋɪ ᴘᴀɢᴇ       ",
+                        "font": "minecraft:default",
+                        "color": "dark_gray",
+                        "strikethrough": false,
+                        "click_event": {
+                          "action": "open_url",
+                          "url": "https://prismaticshards.wiki.gg/wiki/Grilled_Enderman_Flesh"
+                        }
+                      },
+                      {
+                        "text": "\n                 ",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "strikethrough": true
+                      },
+                      {
+                        "text": "\nMaterials:\n- 1x Enderman Flesh\n- 1x Blaze Powder",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "bold": false,
+                        "strikethrough": false
+                      }
+                    ],
+                    [
+                      {
+                        "text": "                 ",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "bold": false,
+                        "strikethrough": true
+                      },
+                      {
+                        "text": "\nFROZEN\nCARPACCIO",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "bold": true,
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "\n7",
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "🍖",
+                        "font": "minecraft:default",
+                        "shadow_color": -11913949,
+                        "color": "#B88458",
+                        "bold": false,
+                        "strikethrough": false
+                      },
+                      {
+                        "text": " 8.4",
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "🍖",
+                        "font": "minecraft:default",
+                        "shadow_color": -10924517,
+                        "color": "#FFDE4C",
+                        "bold": false,
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "\nꜰᴏᴏᴅ             ",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "%",
+                        "font": "stellarity:flavors_of_the_void",
+                        "color": "white",
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "\nᴡɪᴋɪ ᴘᴀɢᴇ       ",
+                        "font": "minecraft:default",
+                        "color": "dark_gray",
+                        "strikethrough": false,
+                        "click_event": {
+                          "action": "open_url",
+                          "url": "https://prismaticshards.wiki.gg/wiki/Frozen_Carpaccio"
+                        }
+                      },
+                      {
+                        "text": "\n                 ",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "strikethrough": true
+                      },
+                      {
+                        "text": "\nMaterials:\n- 1x Enderman Flesh\n- 1x Ice",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "bold": false,
+                        "strikethrough": false
+                      }
+                    ],
+                    [
+                      {
+                        "text": "                 ",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "bold": false,
+                        "strikethrough": true
+                      },
+                      {
+                        "text": "\nPHO",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "bold": true,
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "\n13",
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "🍖",
+                        "font": "minecraft:default",
+                        "shadow_color": -11913949,
+                        "color": "#B88458",
+                        "bold": false,
+                        "strikethrough": false
+                      },
+                      {
+                        "text": " 20",
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "🍖",
+                        "font": "minecraft:default",
+                        "shadow_color": -10924517,
+                        "color": "#FFDE4C",
+                        "bold": false,
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "\nꜰᴏᴏᴅ   ",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "\nᴡɪᴋɪ ᴘᴀɢᴇ       ",
+                        "font": "minecraft:default",
+                        "color": "dark_gray",
+                        "strikethrough": false,
+                        "click_event": {
+                          "action": "open_url",
+                          "url": "https://prismaticshards.wiki.gg/wiki/Pho"
+                        }
+                      },
+                      {
+                        "text": "-",
+                        "font": "stellarity:flavors_of_the_void",
+                        "color": "white",
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "\n                 ",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "strikethrough": true
+                      },
+                      {
+                        "text": "\nMaterials:\n- 1x Golden Chorus Fruit\n- 1x Bowl\n- 1x Grilled Enderman Flesh",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "bold": false,
+                        "strikethrough": false
+                      }
+                    ],
+                    [
+                      {
+                        "text": "                 ",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "bold": false,
+                        "strikethrough": true
+                      },
+                      {
+                        "text": "\nSHEPHERD'S\nPIE",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "bold": true,
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "\n20",
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "🍖",
+                        "font": "minecraft:default",
+                        "shadow_color": -11913949,
+                        "color": "#B88458",
+                        "bold": false,
+                        "strikethrough": false
+                      },
+                      {
+                        "text": " 20",
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "🍖",
+                        "font": "minecraft:default",
+                        "shadow_color": -10924517,
+                        "color": "#FFDE4C",
+                        "bold": false,
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "\nꜰᴏᴏᴅ             ",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "3",
+                        "font": "stellarity:flavors_of_the_void",
+                        "color": "white",
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "\nᴡɪᴋɪ ᴘᴀɢᴇ       ",
+                        "font": "minecraft:default",
+                        "color": "dark_gray",
+                        "strikethrough": false,
+                        "click_event": {
+                          "action": "open_url",
+                          "url": "https://prismaticshards.wiki.gg/wiki/shepherd_pie"
+                        }
+                      },
+                      {
+                        "text": "\n                 ",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "strikethrough": true
+                      },
+                      {
+                        "text": "\nMaterials:\n- 1x Shulker Body\n- 1x Golden Carrot\n- 1x Baked Potato\n- 2x Chorus Fruit",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "bold": false,
+                        "strikethrough": false
+                      }
+                    ],
+                    [
+                      {
+                        "text": "                 ",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "bold": false,
+                        "strikethrough": true
+                      },
+                      {
+                        "text": "\nSUSHI",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "bold": true,
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "\n4",
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "🍖",
+                        "font": "minecraft:default",
+                        "shadow_color": -11913949,
+                        "color": "#B88458",
+                        "bold": false,
+                        "strikethrough": false
+                      },
+                      {
+                        "text": " 2.4",
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "🍖",
+                        "font": "minecraft:default",
+                        "shadow_color": -10924517,
+                        "color": "#FFDE4C",
+                        "bold": false,
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "\nꜰᴏᴏᴅ             ",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "\nᴡɪᴋɪ ᴘᴀɢᴇ       ",
+                        "font": "minecraft:default",
+                        "color": "dark_gray",
+                        "strikethrough": false,
+                        "click_event": {
+                          "action": "open_url",
+                          "url": "https://prismaticshards.wiki.gg/wiki/Sushi"
+                        }
+                      },
+                      {
+                        "text": "4",
+                        "font": "stellarity:flavors_of_the_void",
+                        "color": "white",
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "\n                 ",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "strikethrough": true
+                      },
+                      {
+                        "text": "\nMaterials:\n- 1x Ender Koi\n- 1x Dried Kelp",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "bold": false,
+                        "strikethrough": false
+                      }
+                    ],
+                    [
+                      {
+                        "text": "                 ",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "bold": false,
+                        "strikethrough": true
+                      },
+                      {
+                        "text": "\nPRISMATIC\nSUSHI",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "bold": true,
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "\n4",
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "🍖",
+                        "font": "minecraft:default",
+                        "shadow_color": -11913949,
+                        "color": "#B88458",
+                        "bold": false,
+                        "strikethrough": false
+                      },
+                      {
+                        "text": " 2.4",
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "🍖",
+                        "font": "minecraft:default",
+                        "shadow_color": -10924517,
+                        "color": "#FFDE4C",
+                        "bold": false,
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "\nꜰᴏᴏᴅ             ",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "*",
+                        "font": "stellarity:flavors_of_the_void",
+                        "color": "white",
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "\nᴡɪᴋɪ ᴘᴀɢᴇ       ",
+                        "font": "minecraft:default",
+                        "color": "dark_gray",
+                        "strikethrough": false,
+                        "click_event": {
+                          "action": "open_url",
+                          "url": "https://prismaticshards.wiki.gg/wiki/Prismatic_Sushi"
+                        }
+                      },
+                      {
+                        "text": "\n                 ",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "strikethrough": true
+                      },
+                      {
+                        "text": "\nMaterials:\n- 1x Prismtie\n- 1x Dried Kelp",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "bold": false,
+                        "strikethrough": false
+                      }
+                    ],
+                    [
+                      {
+                        "text": "                 ",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "bold": false,
+                        "strikethrough": true
+                      },
+                      {
+                        "text": "\nBOTTLE O'\nENCHANTING",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "bold": true,
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "\nᴘᴏᴛɪᴏɴ? ",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "\nᴡɪᴋɪ ᴘᴀɢᴇ       ",
+                        "font": "minecraft:default",
+                        "color": "dark_gray",
+                        "strikethrough": false,
+                        "click_event": {
+                          "action": "open_url",
+                          "url": "https://prismaticshards.wiki.gg/wiki/Satchel_of_Voids"
+                        }
+                      },
+                      {
+                        "text": "i",
+                        "font": "stellarity:flavors_of_the_void",
+                        "color": "white",
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "\n                 ",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "strikethrough": true
+                      },
+                      {
+                        "text": "\nMaterials:\n- 1x Glass Bottle\n- 2x Lapis Lazuli",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "bold": false,
+                        "strikethrough": false
+                      }
+                    ],
+                    [
+                      {
+                        "text": "                 ",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "bold": false,
+                        "strikethrough": true
+                      },
+                      {
+                        "text": "\nBLIND RAGE\nPOTION",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "bold": true,
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "\nᴘᴏᴛɪᴏɴ   ",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "\nᴡɪᴋɪ ᴘᴀɢᴇ       ",
+                        "font": "minecraft:default",
+                        "color": "dark_gray",
+                        "strikethrough": false,
+                        "click_event": {
+                          "action": "open_url",
+                          "url": "https://prismaticshards.wiki.gg/wiki/Blind_Rage_Potion"
+                        }
+                      },
+                      {
+                        "text": "6",
+                        "font": "stellarity:flavors_of_the_void",
+                        "color": "white",
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "\n                 ",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "strikethrough": true
+                      },
+                      {
+                        "text": "\nMaterials:\n- 1x Glass Bottle\n- 1x Fleshy Piranha\n- 1x Glowstone Dust\n- 1x Nether Wart",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "bold": false,
+                        "strikethrough": false
+                      }
+                    ],
+                    [
+                      {
+                        "text": "                 ",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "bold": false,
+                        "strikethrough": true
+                      },
+                      {
+                        "text": "\nENDURANCE\nPOTION",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "bold": true,
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "\nᴘᴏᴛɪᴏɴ    ",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "\nᴡɪᴋɪ ᴘᴀɢᴇ       ",
+                        "font": "minecraft:default",
+                        "color": "dark_gray",
+                        "strikethrough": false,
+                        "click_event": {
+                          "action": "open_url",
+                          "url": "https://prismaticshards.wiki.gg/wiki/Endurance_Potion"
+                        }
+                      },
+                      {
+                        "text": "8",
+                        "font": "stellarity:flavors_of_the_void",
+                        "color": "white",
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "\n                 ",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "strikethrough": true
+                      },
+                      {
+                        "text": "\nMaterials:\n- 1x Glass Bottle\n- 1x Iron Ingot\n- 1x Nether Wart\n- 1x Popped Chorus Fruit",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "bold": false,
+                        "strikethrough": false
+                      }
+                    ],
+                    [
+                      {
+                        "text": "                 ",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "bold": false,
+                        "strikethrough": true
+                      },
+                      {
+                        "text": "\nENTANGLEMENT\nPOTION",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "bold": true,
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "\nᴘᴏᴛɪᴏɴ    ",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "\nᴡɪᴋɪ ᴘᴀɢᴇ       ",
+                        "font": "minecraft:default",
+                        "color": "dark_gray",
+                        "strikethrough": false,
+                        "click_event": {
+                          "action": "open_url",
+                          "url": "https://prismaticshards.wiki.gg/wiki/Entanglement_Potion"
+                        }
+                      },
+                      {
+                        "text": "9",
+                        "font": "stellarity:flavors_of_the_void",
+                        "color": "white",
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "\n                 ",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "strikethrough": true
+                      },
+                      {
+                        "text": "\nMaterials:\n- 1x Glass Bottle\n- 1x Gunpowder\n- 1x Nether Wart\n- 1x Overgrown Cod",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "bold": false,
+                        "strikethrough": false
+                      }
+                    ],
+                    [
+                      {
+                        "text": "                 ",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "bold": false,
+                        "strikethrough": true
+                      },
+                      {
+                        "text": "\nFROST CLOUD\nPOTION",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "bold": true,
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "\nᴘᴏᴛɪᴏɴ    ",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "\nᴡɪᴋɪ ᴘᴀɢᴇ       ",
+                        "font": "minecraft:default",
+                        "color": "dark_gray",
+                        "strikethrough": false,
+                        "click_event": {
+                          "action": "open_url",
+                          "url": "https://prismaticshards.wiki.gg/wiki/Frost_Cloud_Potion"
+                        }
+                      },
+                      {
+                        "text": "0",
+                        "font": "stellarity:flavors_of_the_void",
+                        "color": "white",
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "\n                 ",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "strikethrough": true
+                      },
+                      {
+                        "text": "\nMaterials:\n- 1x Glass Bottle\n- 3x Packed Ice\n- 1x Nether Wart\n- 1x Frost Minnow",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "bold": false,
+                        "strikethrough": false
+                      }
+                    ],
+                    [
+                      {
+                        "text": "                 ",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "bold": false,
+                        "strikethrough": true
+                      },
+                      {
+                        "text": "\nHELLFIRE\nTREADER\nPOTION",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "bold": true,
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "\nᴘᴏᴛɪᴏɴ          ",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "  ",
+                        "font": "stellarity:invisible_text",
+                        "color": "black",
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "a",
+                        "font": "stellarity:flavors_of_the_void",
+                        "color": "white",
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "\nᴡɪᴋɪ ᴘᴀɢᴇ       ",
+                        "font": "minecraft:default",
+                        "color": "dark_gray",
+                        "strikethrough": false,
+                        "click_event": {
+                          "action": "open_url",
+                          "url": "https://prismaticshards.wiki.gg/wiki/Hellfire_Treader_Potion"
+                        }
+                      },
+                      {
+                        "text": "\n                 ",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "strikethrough": true
+                      },
+                      {
+                        "text": "\nMaterials:\n- 1x Glass Bottle\n- 1x Sugar\n- 1x Nether Wart\n- 1x Flarefin Koi",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "bold": false,
+                        "strikethrough": false
+                      }
+                    ],
+                    [
+                      {
+                        "text": "                 ",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "bold": false,
+                        "strikethrough": true
+                      },
+                      {
+                        "text": "\nLIFEFORCE\nPOTION",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "bold": true,
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "\nᴘᴏᴛɪᴏɴ    ",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "\nᴡɪᴋɪ ᴘᴀɢᴇ       ",
+                        "font": "minecraft:default",
+                        "color": "dark_gray",
+                        "strikethrough": false,
+                        "click_event": {
+                          "action": "open_url",
+                          "url": "https://prismaticshards.wiki.gg/wiki/Lifeforce_Potion"
+                        }
+                      },
+                      {
+                        "text": "b",
+                        "font": "stellarity:flavors_of_the_void",
+                        "color": "white",
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "\n                 ",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "strikethrough": true
+                      },
+                      {
+                        "text": "\nMaterials:\n- 1x Glass Bottle\n- 1x Starlight Soot\n- 1x Nether Wart\n- 1x Prismite",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "bold": false,
+                        "strikethrough": false
+                      }
+                    ],
+                    [
+                      {
+                        "text": "                 ",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "bold": false,
+                        "strikethrough": true
+                      },
+                      {
+                        "text": "\nLUCK\nPOTION",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "bold": true,
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "\nᴘᴏᴛɪᴏɴ    ",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "\nᴡɪᴋɪ ᴘᴀɢᴇ       ",
+                        "font": "minecraft:default",
+                        "color": "dark_gray",
+                        "strikethrough": false,
+                        "click_event": {
+                          "action": "open_url",
+                          "url": "https://prismaticshards.wiki.gg/wiki/Luck_Potion"
+                        }
+                      },
+                      {
+                        "text": "c",
+                        "font": "stellarity:flavors_of_the_void",
+                        "color": "white",
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "\n                 ",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "strikethrough": true
+                      },
+                      {
+                        "text": "\nMaterials:\n- 1x Glass Bottle\n- 2x Short Grass\n- 1x Nether Wart\n- 1x Diamond",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "bold": false,
+                        "strikethrough": false
+                      }
+                    ],
+                    [
+                      {
+                        "text": "                 ",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "bold": false,
+                        "strikethrough": true
+                      },
+                      {
+                        "text": "\nPOSEIDON'S\nNECTAR",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "bold": true,
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "\nᴘᴏᴛɪᴏɴ    ",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "\nᴡɪᴋɪ ᴘᴀɢᴇ       ",
+                        "font": "minecraft:default",
+                        "color": "dark_gray",
+                        "strikethrough": false,
+                        "click_event": {
+                          "action": "open_url",
+                          "url": "https://prismaticshards.wiki.gg/wiki/Poseidons_Potion"
+                        }
+                      },
+                      {
+                        "text": "d",
+                        "font": "stellarity:flavors_of_the_void",
+                        "color": "white",
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "\n                 ",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "strikethrough": true
+                      },
+                      {
+                        "text": "\nMaterials:\n- 1x Honey Bottle\n- 1x Prismarine Shard\n- 1x Nautilus Shell\n- 1x Bubblefish\n- 1x Kelp",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "bold": false,
+                        "strikethrough": false
+                      }
+                    ],
+                    [
+                      {
+                        "text": "                 ",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "bold": false,
+                        "strikethrough": true
+                      },
+                      {
+                        "text": "\nRED\nPOTION",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "bold": true,
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "\nᴘᴏᴛɪᴏɴ    ",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "\nᴡɪᴋɪ ᴘᴀɢᴇ       ",
+                        "font": "minecraft:default",
+                        "color": "dark_gray",
+                        "strikethrough": false,
+                        "click_event": {
+                          "action": "open_url",
+                          "url": "https://prismaticshards.wiki.gg/wiki/Red_Potion"
+                        }
+                      },
+                      {
+                        "text": "e",
+                        "font": "stellarity:flavors_of_the_void",
+                        "color": "white",
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "\n                 ",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "strikethrough": true
+                      },
+                      {
+                        "text": "\nMaterials:\n- 1x Glass Bottle\n- 1x Wither Rose\n- 9x Nether Wart\n- 1x Sweet Berries\n- 1x Wither Skeleton Skull\n- 1x Red Dye",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "bold": false,
+                        "strikethrough": false
+                      }
+                    ],
+                    [
+                      {
+                        "text": "                 ",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "bold": false,
+                        "strikethrough": true
+                      },
+                      {
+                        "text": "\nREGENERAGA\n",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "bold": true,
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "\nᴘᴏᴛɪᴏɴ    ",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "\nᴡɪᴋɪ ᴘᴀɢᴇ       ",
+                        "font": "minecraft:default",
+                        "color": "dark_gray",
+                        "strikethrough": false,
+                        "click_event": {
+                          "action": "open_url",
+                          "url": "https://prismaticshards.wiki.gg/wiki/Regeneraga"
+                        }
+                      },
+                      {
+                        "text": "f",
+                        "font": "stellarity:flavors_of_the_void",
+                        "color": "white",
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "\n                 ",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "strikethrough": true
+                      },
+                      {
+                        "text": "\nMaterials:\n- 1x Glass Bottle\n- 1x Ghast Tear\n- 1x Nether Wart\n- 1x Prismite\n- 1x Crimson Tigerfish\n- 1x Glistering Melon Slice",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "bold": false,
+                        "strikethrough": false
+                      }
+                    ],
+                    [
+                      {
+                        "text": "                 ",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "bold": false,
+                        "strikethrough": true
+                      },
+                      {
+                        "text": "\nROYAL\nJELLY",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "bold": true,
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "\nᴘᴏᴛɪᴏɴ    ",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "\nᴡɪᴋɪ ᴘᴀɢᴇ       ",
+                        "font": "minecraft:default",
+                        "color": "dark_gray",
+                        "strikethrough": false,
+                        "click_event": {
+                          "action": "open_url",
+                          "url": "https://prismaticshards.wiki.gg/wiki/Royal_Jelly"
+                        }
+                      },
+                      {
+                        "text": "h",
+                        "font": "stellarity:flavors_of_the_void",
+                        "color": "white",
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "\n                 ",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "strikethrough": true
+                      },
+                      {
+                        "text": "\nMaterials:\n- 1x Honey Bottle\n- 1x Starlight Soot\n- 2x Amethyst Shard",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "bold": false,
+                        "strikethrough": false
+                      }
+                    ],
+                    [
+                      {
+                        "text": "                 ",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "bold": false,
+                        "strikethrough": true
+                      },
+                      {
+                        "text": "\nSPELUNKER\nPOTION",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "bold": true,
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "\nᴘᴏᴛɪᴏɴ    ",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "\nᴡɪᴋɪ ᴘᴀɢᴇ       ",
+                        "font": "minecraft:default",
+                        "color": "dark_gray",
+                        "strikethrough": false,
+                        "click_event": {
+                          "action": "open_url",
+                          "url": "https://prismaticshards.wiki.gg/wiki/Spelunker_Potion"
+                        }
+                      },
+                      {
+                        "text": "g",
+                        "font": "stellarity:flavors_of_the_void",
+                        "color": "white",
+                        "strikethrough": false
+                      },
+                      {
+                        "text": "\n                 ",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "strikethrough": true
+                      },
+                      {
+                        "text": "\nMaterials:\n- 1x Glass Bottle\n- 1x Any Mushroom\n- 1x Gold Ingot\n- 1x Nether Wart",
+                        "font": "minecraft:default",
+                        "color": "black",
+                        "bold": false,
+                        "strikethrough": false
+                      }
+                    ],
+                    [
+                      {
+                        "text": "UPGRADING POTIONS:",
+                        "bold": true
+                      },
+                      {
+                        "text": "\nMost potions can be upgraded through Cauldron Crafting. To upgrade a potion, throw in an eligible potion alongside a piece of Glowstone Dust. The only exception to this is Royal Jelly, which uses Starlight Soot.",
+                        "bold": false
+                      }
+                    ],
+                    [
+                      {
+                        "text": "\nEXTENDING POTIONS:",
+                        "bold": true
+                      },
+                      {
+                        "text": "\nAll potions ending with ''Potion'', with the exception of Red Potion, can be extended through Cauldron Crafting. To extend a potion, throw in an eligible potion alongside a piece of Redstone Dust.",
+                        "bold": false
+                      }
+                    ]
+                  ]
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                "",
+                {
+                  "translate": "item.stellarity.flavors_of_the_void.flavor_text.1",
+                  "color": "#dec36b",
+                  "italic": true
+                },
+                {
+                  "translate": "item.stellarity.flavors_of_the_void.flavor_text.2",
+                  "color": "#dec36b",
+                  "italic": true
+                },
+                "",
+                {
+                  "text": "vol 6.0.0",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "translate": "book.byAuthor",
+                  "with": [
+                    {
+                      "text": "BananaKingXO",
+                      "color": "gray",
+                      "font": "illageralt"
+                    }
+                  ],
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "translate": "book.generation.3",
+                  "color": "gray",
+                  "italic": false
+                },
+                "",
+                {
+                  "translate": "Stellarity",
+                  "color": "#eaa7ff",
+                  "font": "stellarity:tooltip",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "processors": [
+    {
+      "processor_type": "minecraft:rule",
+      "rules": [
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:end_gateway"
+          },
+          "output_state": {
+            "Name": "minecraft:end_gateway"
+          },
+          "block_entity_modifier": {
+            "type": "minecraft:append_static",
+            "data": {
+              "Age": 0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "processor_type": "minecraft:block_ignore",
+      "blocks": [
+        {
+          "Name": "minecraft:structure_void"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "type": "minecraft:simple_block",
+  "config": {
+    "to_place": {
+      "type": "minecraft:noise_provider",
+      "seed": 14112006,
+      "noise": {
+        "firstOctave": -7,
+        "amplitudes": [
+          1
+        ]
+      },
+      "scale": 1,
+      "states": [
+        {
+          "Name": "minecraft:red_stained_glass"
+        },
+        {
+          "Name": "minecraft:red_stained_glass"
+        },
+        {
+          "Name": "minecraft:orange_stained_glass"
+        },
+        {
+          "Name": "minecraft:orange_stained_glass"
+        },
+        {
+          "Name": "minecraft:yellow_stained_glass"
+        },
+        {
+          "Name": "minecraft:yellow_stained_glass"
+        },
+        {
+          "Name": "minecraft:lime_stained_glass"
+        },
+        {
+          "Name": "minecraft:green_stained_glass"
+        },
+        {
+          "Name": "minecraft:light_blue_stained_glass"
+        },
+        {
+          "Name": "minecraft:light_blue_stained_glass"
+        },
+        {
+          "Name": "minecraft:magenta_stained_glass"
+        },
+        {
+          "Name": "minecraft:magenta_stained_glass"
+        },
+        {
+          "Name": "minecraft:purple_stained_glass"
+        },
+        {
+          "Name": "minecraft:purple_stained_glass"
+        }
+      ]
+    }
+  }
+}

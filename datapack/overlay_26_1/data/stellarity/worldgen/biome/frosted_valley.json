@@ -1,0 +1,111 @@
+{
+  "temperature": -0.5,
+  "downfall": 0.4,
+  "has_precipitation": false,
+  "temperature_modifier": "frozen",
+  "creature_spawn_probability": 0,
+  "attributes": {
+    "visual/sky_color": 0,
+    "visual/fog_color": 0,
+    "visual/water_fog_color": 329011,
+    "audio/ambient_sounds": {
+      "loop": {
+        "sound_id": "stellarity:ambient.the_end.dark"
+      },
+      "mood": {
+        "sound": "ambient.warped_forest.mood",
+        "tick_delay": 200,
+        "block_search_extent": 4,
+        "offset": 4
+      },
+      "additions": {
+        "sound": "ambient.nether_wastes.additions",
+        "tick_chance": 0.011111
+      }
+    },
+    "visual/ambient_particles": {
+      "modifier": "override",
+      "argument": [
+        {
+          "particle": {
+            "type": "minecraft:white_ash"
+          },
+          "probability": 0.0094
+        }
+      ]
+    }
+  },
+  "effects": {
+    "water_color": 4020182,
+    "grass_color": 16777215,
+    "foliage_color": 16777215
+  },
+  "spawners": {
+    "monster": [
+      {
+        "type": "minecraft:enderman",
+        "weight": 50,
+        "minCount": 4,
+        "maxCount": 4
+      },
+      {
+        "type": "minecraft:skeleton",
+        "weight": 40,
+        "minCount": 4,
+        "maxCount": 4
+      },
+      {
+        "type": "minecraft:silverfish",
+        "weight": 10,
+        "minCount": 2,
+        "maxCount": 2
+      }
+    ]
+  },
+  "spawn_costs": {
+    "minecraft:enderman": {
+      "energy_budget": 0.4,
+      "charge": 1
+    },
+    "minecraft:skeleton": {
+      "energy_budget": 0.4,
+      "charge": 1
+    },
+    "minecraft:silverfish": {
+      "energy_budget": 0.5,
+      "charge": 1
+    }
+  },
+  "carvers": ["stellarity:ravine", "stellarity:crack"],
+  "features": [
+    [
+      "stellarity:global/stalactite",
+      "stellarity:frozen_spikes/large_dripstone",
+      "stellarity:frosted_valley/hills"
+    ],
+    [],
+    [],
+    ["stellarity:frozen_spikes/ore_blue_ice"],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      "stellarity:global/end_dungeon",
+      "stellarity:global/fossil",
+      "stellarity:frozen_spikes/replace_dripstone/1",
+      "stellarity:frozen_spikes/replace_dripstone/2",
+      "stellarity:frozen_spikes/replace_dripstone/3",
+      "stellarity:frozen_spikes/replace_dripstone/4",
+      "stellarity:frozen_spikes/replace_dripstone/5",
+      "stellarity:frozen_spikes/replace_dripstone/6",
+      "stellarity:frozen_spikes/replace_dripstone/7",
+      "stellarity:frozen_spikes/replace_dripstone/8",
+      "stellarity:frozen_spikes/replace_dripstone/9",
+      "stellarity:frozen_spikes/replace_dripstone/10",
+      "stellarity:frozen_spikes/replace_dripstone/11"
+    ]
+  ]
+}

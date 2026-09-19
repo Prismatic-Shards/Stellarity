@@ -1,0 +1,26 @@
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:trim": {
+        "material": "minecraft:emerald",
+        "pattern": "minecraft:spire"
+      }
+    },
+    "conditions": [
+      {
+        "condition": "minecraft:random_chance",
+        "chance": 0.5
+      }
+    ]
+  },
+  {
+    "function": "minecraft:enchant_randomly",
+    "conditions": [
+      {
+        "condition": "minecraft:random_chance",
+        "chance": 0.5
+      }
+    ]
+  }
+]

@@ -1,0 +1,92 @@
+{
+  "type": "minecraft:gift",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "loot_table",
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "components": {
+                      "minecraft:chicken/variant": "stellarity:end"
+                    }
+                  }
+                }
+              ],
+              "value": "stellarity:item/ingredients/ender_egg"
+            },
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "components": {
+                      "minecraft:chicken/variant": "minecraft:temperate"
+                    }
+                  }
+                }
+              ],
+              "name": "minecraft:egg"
+            },
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "components": {
+                      "minecraft:chicken/variant": "minecraft:warm"
+                    }
+                  }
+                }
+              ],
+              "name": "minecraft:brown_egg"
+            },
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "components": {
+                      "minecraft:chicken/variant": "minecraft:cold"
+                    }
+                  }
+                }
+              ],
+              "name": "minecraft:blue_egg"
+            }
+          ]
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "minecraft:gameplay/chicken_lay",
+  "__smithed__": {
+    "priority": {
+      "stage": "early"
+    },
+    "rules": [
+      {
+        "type": "append",
+        "target": "pools[0].entries[0].children",
+        "source": {
+          "type": "reference",
+          "path": "pools[0].entries[0].children[0]"
+        }
+      }
+    ]
+  }
+}

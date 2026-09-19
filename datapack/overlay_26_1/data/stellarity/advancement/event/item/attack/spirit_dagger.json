@@ -1,0 +1,32 @@
+{
+  "parent": "stellarity:event/root",
+  "criteria": {
+    "click": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:reference",
+            "name": "stellarity:item/holding/spirit_dagger/any"
+          }
+        ],
+        "damage": {
+          "dealt": {
+            "min": 3
+          },
+          "blocked": false,
+          "source_entity": {
+            "distance": {
+              "absolute": {
+                "max": 70
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "stellarity:item/spirit_dagger/attack"
+  }
+}

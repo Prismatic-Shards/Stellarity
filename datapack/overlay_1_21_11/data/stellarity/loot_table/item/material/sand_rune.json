@@ -1,0 +1,43 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:endermite_spawn_egg",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "stellarity:sand_rune",
+                "minecraft:custom_data": {
+                  "stellarity:item": "sand_rune"
+                },
+                "minecraft:rarity": "uncommon",
+                "minecraft:item_name": {
+                  "translate": "item.stellarity.sand_rune"
+                },
+                "!minecraft:entity_data": {}
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "replace_all",
+              "entity": "this",
+              "lore": [
+                "",
+                {
+                  "translate": "Stellarity",
+                  "color": "#eaa7ff",
+                  "font": "stellarity:tooltip",
+                  "italic": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

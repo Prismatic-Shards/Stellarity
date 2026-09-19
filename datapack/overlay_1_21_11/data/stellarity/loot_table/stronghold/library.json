@@ -1,0 +1,237 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:emerald",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 0,
+                "max": 5
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "type": "minecraft:uniform",
+        "min": 5,
+        "max": 7
+      },
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:book",
+          "weight": 14,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 2
+              },
+              "add": false
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "weight": 12,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 3
+              },
+              "add": false
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:candle",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 0,
+                "max": 2
+              },
+              "add": false
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:book",
+          "quality": 1,
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+                "min": 15,
+                "max": 28
+              },
+              "options": "#minecraft:on_random_loot"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:feather",
+          "weight": 7,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 0,
+                "max": 2
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:ink_sac",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 0,
+                "max": 2
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 0,
+        "max": 2
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:compass",
+          "weight": 4
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:map",
+          "weight": 4
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:clock",
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:eye_armor_trim_smithing_template"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.25
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 8
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": {
+            "pools": [
+              {
+                "rolls": 1,
+                "entries": [
+                  {
+                    "type": "minecraft:loot_table",
+                    "value": "stellarity:item/spellbook/book_of_light",
+                    "conditions": [
+                      {
+                        "condition": "minecraft:value_check",
+                        "value": {
+                          "type": "minecraft:score",
+                          "target": {
+                            "type": "minecraft:fixed",
+                            "name": "#stellarity.config"
+                          },
+                          "score": "stellarity.config.enable_book_of_light"
+                        },
+                        "range": 1
+                      }
+                    ]
+                  },
+                  {
+                    "type": "minecraft:loot_table",
+                    "value": "stellarity:item/spellbook/book_of_updraft",
+                    "conditions": [
+                      {
+                        "condition": "minecraft:value_check",
+                        "value": {
+                          "type": "minecraft:score",
+                          "target": {
+                            "type": "minecraft:fixed",
+                            "name": "#stellarity.config"
+                          },
+                          "score": "stellarity.config.enable_book_of_updraft"
+                        },
+                        "range": 1
+                      }
+                    ]
+                  },
+                  {
+                    "type": "minecraft:loot_table",
+                    "value": "stellarity:item/spellbook/book_of_obstruct",
+                    "conditions": [
+                      {
+                        "condition": "minecraft:value_check",
+                        "value": {
+                          "type": "minecraft:score",
+                          "target": {
+                            "type": "minecraft:fixed",
+                            "name": "#stellarity.config"
+                          },
+                          "score": "stellarity.config.enable_book_of_obstruct"
+                        },
+                        "range": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

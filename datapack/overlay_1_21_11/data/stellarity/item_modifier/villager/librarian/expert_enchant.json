@@ -1,0 +1,13 @@
+{
+  "function": "minecraft:enchant_randomly",
+  "options": [
+    "minecraft:mending",
+    "minecraft:fortune",
+    "minecraft:knockback",
+    "minecraft:depth_strider",
+    "minecraft:breach",
+    "minecraft:density",
+    "minecraft:sharpness"
+  ],
+  "only_compatible": true
+}

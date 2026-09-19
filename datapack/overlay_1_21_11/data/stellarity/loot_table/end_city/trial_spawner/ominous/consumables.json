@@ -1,0 +1,56 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "stellarity:item/food/candied_chorus_fruit",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 2
+              },
+              "add": false
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "stellarity:item/food/frozen_carpaccio",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 3
+              },
+              "add": false
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "stellarity:item/food/chorus_juice",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "stellarity:item/potion/lifeforce_potion"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "stellarity:item/potion/endurance_potion"
+        }
+      ]
+    }
+  ]
+}

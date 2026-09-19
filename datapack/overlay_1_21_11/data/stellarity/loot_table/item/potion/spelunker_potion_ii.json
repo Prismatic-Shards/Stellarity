@@ -1,0 +1,57 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:potion_contents": {
+                  "potion": "minecraft:water",
+                  "custom_color": 16767232,
+                  "custom_effects": [
+                    {
+                      "id": "minecraft:night_vision",
+
+                      "duration": 1800
+                    },
+                    {
+                      "id": "minecraft:haste",
+                      "amplifier": 1,
+                      "duration": 1800
+                    }
+                  ]
+                },
+                "minecraft:custom_data": {
+                  "stellarity:item": "spelunker_potion_ii"
+                },
+                "minecraft:custom_name": {
+                  "translate": "item.stellarity.spelunker_potion",
+                  "color": "white",
+                  "italic": false
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "replace_all",
+              "lore": [
+                "",
+                {
+                  "translate": "Stellarity",
+                  "color": "#eaa7ff",
+                  "font": "stellarity:tooltip",
+                  "italic": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:ender_pearl",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:use_cooldown": {
+                                    "seconds": 2.45,
+                                    "cooldown_group": "prismatic_pearl"
+                                }
+                            },
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:entity_properties",
+                                    "entity": "this",
+                                    "predicate": {
+                                        "slots": {
+                                            "container.*": {
+                                                "predicates": {
+                                                    "minecraft:custom_data": {
+                                                        "stellarity:item": "radiant_jewel"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:item_model": "stellarity:prismatic_pearl",
+                                "minecraft:custom_data": {
+                                    "stellarity:item": "prismatic_pearl"
+                                },
+                                "minecraft:item_name": {
+                                    "translate": "item.stellarity.prismatic_pearl",
+                                    "color": "#FF76D0",
+                                    "italic": false
+                                },
+                                "minecraft:rarity": "epic",
+                                "enchantments": {
+                                    "stellarity:_technical/prismatic_pearl_return": 1
+                                },
+                                "tooltip_display": {
+                                    "hidden_components": [
+                                        "enchantments"
+                                    ]
+                                },
+                                "enchantment_glint_override": false,
+                                "use_cooldown": {
+                                    "seconds": 4.9,
+                                    "cooldown_group": "prismatic_pearl"
+                                }
+                            },
+                            "conditions": []
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "mode": "replace_all",
+                            "lore": [
+                                "",
+                                {
+                                    "translate": "Stellarity",
+                                    "color": "#CC26FF",
+                                    "italic": true
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:cobblestone",
+    "minecraft:blackstone",
+    "minecraft:cobbled_deepslate",
+    "minecraft:end_stone",
+    "minecraft:diorite",
+    "minecraft:andesite",
+    "minecraft:granite"
+  ]
+}

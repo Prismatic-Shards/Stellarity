@@ -1,0 +1,232 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_sword",
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "mode": "replace_all",
+              "lore": [
+                "",
+                {
+                  "translate": "item.stellarity.spirit_dagger.description.1",
+                  "color": "#EEEEEE",
+                  "italic": false
+                },
+                {
+                  "translate": "item.stellarity.spirit_dagger.description.2",
+                  "color": "#EEEEEE",
+                  "italic": false,
+                  "with": [
+                    {
+                      "translate": "item.stellarity.spirit_dagger.2",
+                      "color": "#68C6F5",
+                      "italic": false
+                    }
+                  ]
+                },
+                {
+                  "translate": "item.stellarity.spirit_dagger.description.3",
+                  "color": "#EEEEEE",
+                  "italic": false
+                },
+                {
+                  "translate": "item.stellarity.spirit_dagger.description.4",
+                  "color": "#EEEEEE",
+                  "italic": false
+                },
+                "",
+                {
+                  "translate": "item.stellarity.spirit_dagger.flavor_text",
+                  "color": "#EEEEEE",
+                  "italic": true
+                },
+                "",
+                {
+                  "translate": "items.stellarity.developer",
+                  "color": "#BA02D7",
+                  "italic": false
+                },
+                "",
+                {
+                  "translate": "Stellarity",
+                  "color": "#eaa7ff",
+                  "font": "stellarity:tooltip",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "minecraft:attack_damage",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "id": "minecraft:base_attack_damage",
+                  "slot": "mainhand"
+                },
+                {
+                  "attribute": "minecraft:attack_damage",
+                  "amount": 1,
+                  "operation": "add_value",
+                  "id": "stellarity:the_beginning",
+                  "slot": "offhand"
+                },
+                {
+                  "attribute": "minecraft:attack_speed",
+                  "amount": -2,
+                  "operation": "add_value",
+                  "id": "minecraft:base_attack_speed",
+                  "slot": "mainhand"
+                },
+                {
+                  "id": "stellarity:weapon_reach",
+                  "attribute": "minecraft:entity_interaction_range",
+                  "amount": -0.3,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "stellarity:the_beginning",
+                "minecraft:custom_data": {
+                  "stellarity:item": "spirit_dagger"
+                },
+                "minecraft:max_damage": 484,
+                "rarity": "uncommon",
+                "item_name": {
+                  "translate": "item.stellarity.spirit_dagger.1",
+                  "fallback": "The Beginning",
+                  "color": "#F5DC68",
+                  "italic": false
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_sword",
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "mode": "replace_all",
+              "lore": [
+                "",
+                {
+                  "translate": "item.stellarity.spirit_dagger.description.1",
+                  "color": "#EEEEEE",
+                  "italic": false
+                },
+                {
+                  "translate": "item.stellarity.spirit_dagger.description.2",
+                  "color": "#EEEEEE",
+                  "italic": false,
+                  "with": [
+                    {
+                      "translate": "item.stellarity.spirit_dagger.1",
+                      "color": "#F5DC68",
+                      "italic": false
+                    }
+                  ]
+                },
+                {
+                  "translate": "item.stellarity.spirit_dagger.description.3",
+                  "color": "#EEEEEE",
+                  "italic": false
+                },
+                {
+                  "translate": "item.stellarity.spirit_dagger.description.4",
+                  "color": "#EEEEEE",
+                  "italic": false
+                },
+                "",
+                {
+                  "translate": "item.stellarity.spirit_dagger.flavor_text",
+                  "color": "#EEEEEE",
+                  "italic": true
+                },
+                "",
+                {
+                  "translate": "items.stellarity.developer",
+                  "color": "#BA02D7",
+                  "italic": false
+                },
+                "",
+                {
+                  "translate": "Stellarity",
+                  "color": "#eaa7ff",
+                  "font": "stellarity:tooltip",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "minecraft:attack_damage",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "id": "minecraft:base_attack_damage",
+                  "slot": "mainhand"
+                },
+                {
+                  "attribute": "minecraft:movement_speed",
+                  "amount": 0.05,
+                  "operation": "add_multiplied_total",
+                  "id": "stellarity:the_end",
+                  "slot": "offhand"
+                },
+                {
+                  "attribute": "minecraft:attack_speed",
+                  "amount": -2,
+                  "operation": "add_value",
+                  "id": "minecraft:base_attack_speed",
+                  "slot": "mainhand"
+                },
+                {
+                  "id": "stellarity:weapon_reach",
+                  "attribute": "minecraft:entity_interaction_range",
+                  "amount": -0.3,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "stellarity:the_end",
+                "minecraft:custom_data": {
+                  "stellarity:item": "spirit_dagger"
+                },
+                "minecraft:max_damage": 484,
+                "rarity": "uncommon",
+                "item_name": {
+                  "translate": "item.stellarity.spirit_dagger.2",
+                  "fallback": "The End",
+                  "color": "#68C6F5",
+                  "italic": false
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

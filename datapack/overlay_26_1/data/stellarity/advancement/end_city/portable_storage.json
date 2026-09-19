@@ -1,0 +1,43 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:shulker_box"
+    },
+    "title": {
+      "translate": "advancements.stellarity.portable_storage"
+    },
+    "description": [
+      {
+        "translate": "advancements.stellarity.portable_storage.description"
+      },
+      "\n\n",
+      {
+        "translate": "Stellarity",
+        "color": "#eaa7ff",
+        "font": "stellarity:tooltip",
+        "italic": false
+      }
+    ],
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "stellarity:end_city/defeat_shulker",
+  "criteria": {
+    "craft_shulker_box": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {},
+        "items": [
+          {
+            "items": ["minecraft:shulker_box"]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [["craft_shulker_box"]],
+  "rewards": {
+    "recipes": ["minecraft:shulker_box_coloring"]
+  }
+}

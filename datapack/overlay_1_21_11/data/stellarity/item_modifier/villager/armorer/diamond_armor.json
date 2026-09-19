@@ -1,0 +1,69 @@
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:trim": {
+        "material": "minecraft:emerald",
+        "pattern": "minecraft:eye"
+      }
+    },
+    "conditions": [
+      {
+        "condition": "minecraft:random_chance",
+        "chance": 0.5
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:trim": {
+        "material": "minecraft:amethyst",
+        "pattern": "minecraft:eye"
+      }
+    },
+    "conditions": [
+      {
+        "condition": "minecraft:random_chance",
+        "chance": 0.5
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:trim": {
+        "material": "stellarity:enderite",
+        "pattern": "minecraft:eye"
+      }
+    },
+    "conditions": [
+      {
+        "condition": "minecraft:random_chance",
+        "chance": 0.5
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:trim": {
+        "material": "stellarity:chorus",
+        "pattern": "minecraft:eye"
+      }
+    },
+    "conditions": [
+      {
+        "condition": "minecraft:random_chance",
+        "chance": 0.5
+      }
+    ]
+  },
+  {
+    "function": "minecraft:enchant_with_levels",
+    "levels": {
+      "min": 15,
+      "max": 31
+    }
+  }
+]

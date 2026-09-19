@@ -1,0 +1,33 @@
+{
+  "feature": "stellarity:amethyst_forest/tree",
+  "placement": [
+    {
+      "type": "minecraft:count_on_every_layer",
+      "count": 2
+    },
+    {
+      "type": "minecraft:biome"
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:all_of",
+        "predicates": [
+          {
+            "type": "minecraft:matching_blocks",
+            "blocks": ["minecraft:air"]
+          },
+          {
+            "type": "minecraft:would_survive",
+            "state": {
+              "Name": "minecraft:dark_oak_sapling",
+              "Properties": {
+                "stage": "0"
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

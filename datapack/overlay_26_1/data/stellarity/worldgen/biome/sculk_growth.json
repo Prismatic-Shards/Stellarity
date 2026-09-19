@@ -1,0 +1,35 @@
+{
+  "temperature": 0.5,
+  "downfall": 0.5,
+  "has_precipitation": false,
+  "attributes": {
+    "visual/sky_color": 0,
+    "visual/fog_color": 0,
+    "visual/water_fog_color": 1714487,
+    "audio/ambient_sounds": {
+      "loop": {
+        "sound_id": "stellarity:ambient.the_end.dark_calm"
+      }
+    },
+    "visual/ambient_particles": {
+      "modifier": "override",
+      "argument": [
+        {
+          "particle": {
+            "type": "minecraft:mycelium"
+          },
+          "probability": 0.012
+        }
+      ]
+    }
+  },
+  "effects": {
+    "water_color": 2438726,
+    "grass_color": 2635843,
+    "foliage_color": 2635843
+  },
+  "spawners": {},
+  "spawn_costs": {},
+  "carvers": [],
+  "features": [[], [], [], [], [], [], [], [], [], []]
+}

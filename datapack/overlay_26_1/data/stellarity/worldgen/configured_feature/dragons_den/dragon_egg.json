@@ -1,0 +1,127 @@
+{
+  "type": "minecraft:geode",
+  "config": {
+    "blocks": {
+      "filling_provider": {
+        "type": "minecraft:weighted_state_provider",
+        "entries": [
+          {
+            "weight": 30,
+            "data": {
+              "Name": "minecraft:air",
+              "Properties": {}
+            }
+          }
+        ]
+      },
+      "inner_layer_provider": {
+        "type": "minecraft:weighted_state_provider",
+        "entries": [
+          {
+            "weight": 35,
+            "data": {
+              "Name": "minecraft:obsidian"
+            }
+          },
+          {
+            "weight": 1,
+            "data": {
+              "Name": "minecraft:crying_obsidian"
+            }
+          }
+        ]
+      },
+      "alternate_inner_layer_provider": {
+        "type": "minecraft:weighted_state_provider",
+        "entries": [
+          {
+            "weight": 2,
+            "data": {
+              "Name": "minecraft:obsidian"
+            }
+          },
+          {
+            "weight": 1,
+            "data": {
+              "Name": "minecraft:crying_obsidian"
+            }
+          }
+        ]
+      },
+      "middle_layer_provider": {
+        "type": "minecraft:weighted_state_provider",
+        "entries": [
+          {
+            "weight": 1,
+            "data": {
+              "Name": "minecraft:obsidian"
+            }
+          },
+          {
+            "weight": 1,
+            "data": {
+              "Name": "minecraft:crying_obsidian"
+            }
+          }
+        ]
+      },
+      "outer_layer_provider": {
+        "type": "minecraft:weighted_state_provider",
+        "entries": [
+          {
+            "weight": 4,
+            "data": {
+              "Name": "minecraft:obsidian"
+            }
+          },
+          {
+            "weight": 1,
+            "data": {
+              "Name": "minecraft:crying_obsidian"
+            }
+          }
+        ]
+      },
+      "inner_placements": [
+        {
+          "Name": "minecraft:crying_obsidian"
+        }
+      ],
+      "cannot_replace": "#minecraft:features_cannot_replace",
+      "invalid_blocks": "#stellarity:_worldgen/single/end_stone"
+    },
+    "layers": {
+      "filling": 1.2,
+      "inner_layer": 1.75,
+      "middle_layer": 2.15,
+      "outer_layer": 3.5
+    },
+    "crack": {
+      "generate_crack_chance": 0.1,
+      "base_crack_size": 0.5,
+      "crack_point_offset": 2
+    },
+    "noise_multiplier": 0.065,
+    "use_potential_placements_chance": 0,
+    "use_alternate_layer0_chance": 0,
+    "placements_require_layer0_alternate": false,
+    "outer_wall_distance": {
+      "type": "minecraft:uniform",
+      "min_inclusive": 3,
+      "max_inclusive": 6
+    },
+    "distribution_points": {
+      "type": "minecraft:uniform",
+      "min_inclusive": 3,
+      "max_inclusive": 3
+    },
+    "point_offset": {
+      "type": "minecraft:uniform",
+      "min_inclusive": 1,
+      "max_inclusive": 5
+    },
+    "min_gen_offset": -12,
+    "max_gen_offset": 12,
+    "invalid_blocks_threshold": 0
+  }
+}

@@ -4,9 +4,9 @@
   "predicate": {
     "minecraft:type_specific/player": {
       "looking_at": {
-        "minecraft:entity_type": "minecraft:interaction",
-        "minecraft:nbt": "{Tags:[\"stellarity.spirit_dagger.spirit_ready\"]}",
-        "minecraft:distance": {
+        "entity_type": "minecraft:interaction",
+        "nbt": "{Tags:[\"stellarity.spirit_dagger.spirit_ready\"]}",
+        "distance": {
           "absolute": {
             "max": 70
           }

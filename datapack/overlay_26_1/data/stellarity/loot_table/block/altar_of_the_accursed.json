@@ -1,0 +1,42 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:end_portal_frame",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": {
+                  "stellarity:item": "altar_of_the_accursed"
+                },
+                "minecraft:item_model": "stellarity:altar_of_the_accursed",
+                "minecraft:item_name": {
+                  "translate": "block.stellarity.altar_of_the_accursed",
+                  "color": "#FFD655"
+                },
+                "minecraft:max_stack_size": 1
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                "",
+                {
+                  "translate": "Stellarity",
+                  "color": "#eaa7ff",
+                  "font": "stellarity:tooltip",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

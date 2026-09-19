@@ -1,0 +1,53 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:magenta_terracotta"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:white_terracotta"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:purple_terracotta"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:black_terracotta"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:light_gray_terracotta"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:pink_terracotta"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:yellow_terracotta"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:red_terracotta"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:lime_terracotta"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:light_blue_terracotta"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:orange_terracotta"
+        }
+      ]
+    }
+  ]
+}

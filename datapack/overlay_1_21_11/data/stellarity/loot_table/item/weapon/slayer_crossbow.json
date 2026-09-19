@@ -1,0 +1,58 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:crossbow",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "stellarity:slayer_crossbow",
+                "minecraft:custom_data": {
+                  "stellarity:item": "slayer_crossbow"
+                },
+                "minecraft:damage_resistant": {
+                  "types": "#is_fire"
+                },
+                "minecraft:item_name": {
+                  "translate": "item.stellarity.slayer_crossbow",
+                  "color": "gold",
+                  "italic": false
+                },
+                "rarity": "rare"
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "replace_all",
+              "entity": "this",
+              "lore": [
+                "",
+                {
+                  "translate": "item.stellarity.slayer_crossbow.description.1",
+                  "color": "#EEEEEE",
+                  "italic": false
+                },
+                {
+                  "translate": "item.stellarity.slayer_crossbow.description.2",
+                  "color": "#EEEEEE",
+                  "italic": false
+                },
+                "",
+                {
+                  "translate": "Stellarity",
+                  "color": "#eaa7ff",
+                  "font": "stellarity:tooltip",
+                  "italic": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:cache_once",
+  "argument": {
+    "type": "minecraft:shifted_noise",
+    "noise": "stellarity:climate/weirdness",
+    "xz_scale": 0.2325,
+    "y_scale": 0,
+    "shift_x": "minecraft:shift_x",
+    "shift_y": 0,
+    "shift_z": "minecraft:shift_z"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:ominous_trial_key",
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                "",
+                {
+                  "translate": "item.stellarity.winged_key.description",
+                  "color": "#EEEEEE",
+                  "italic": false
+                },
+                "",
+                {
+                  "translate": "Stellarity",
+                  "color": "#eaa7ff",
+                  "font": "stellarity:tooltip",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "stellarity:winged_key",
+                "minecraft:custom_data": {
+                  "stellarity:item": "winged_key"
+                },
+                "minecraft:item_name": {
+                  "translate": "item.stellarity.winged_key"
+                },
+                "rarity": "rare"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

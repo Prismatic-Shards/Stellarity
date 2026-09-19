@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:range_choice",
+  "input": "stellarity:main_island/avg",
+  "min_inclusive": 0,
+  "max_exclusive": 0.0019,
+  "when_in_range": "stellarity:main_island/island",
+  "when_out_of_range": {
+    "type": "min",
+    "argument1": "stellarity:sloped_cheese",
+    "argument2": "stellarity:cave/noodle"
+  }
+}

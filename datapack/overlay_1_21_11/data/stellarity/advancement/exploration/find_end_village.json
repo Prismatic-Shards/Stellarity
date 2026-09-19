@@ -1,0 +1,43 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:amethyst_shard",
+      "components": {
+        "minecraft:enchantment_glint_override": true,
+        "minecraft:item_model": "stellarity:enderite_shard"
+      }
+    },
+    "title": {
+      "translate": "advancements.stellarity.find_end_village"
+    },
+    "description": [
+      {
+        "translate": "advancements.stellarity.find_end_village.description"
+      },
+      "\n\n",
+      {
+        "translate": "Stellarity",
+        "color": "#eaa7ff",
+        "font": "stellarity:tooltip",
+        "italic": false
+      }
+    ],
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "minecraft:end/enter_end_gateway",
+  "criteria": {
+    "find_a_town_in_a_complete_shithole": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "structures": "stellarity:village"
+          }
+        }
+      }
+    }
+  }
+}

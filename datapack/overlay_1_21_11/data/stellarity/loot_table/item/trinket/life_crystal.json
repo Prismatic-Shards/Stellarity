@@ -1,0 +1,52 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:endermite_spawn_egg",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:item_model": "stellarity:life_crystal",
+                "minecraft:custom_data": {
+                  "stellarity:item": "life_crystal"
+                },
+                "rarity": "rare",
+                "minecraft:max_stack_size": 1,
+                "minecraft:item_name": {
+                  "translate": "item.stellarity.life_crystal",
+                  "color": "#9936D6",
+                  "italic": false
+                },
+                "!minecraft:entity_data": {}
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "replace_all",
+              "lore": [
+                "",
+                {
+                  "translate": "item.stellarity.life_crystal.description",
+                  "color": "#EEEEEE",
+                  "italic": false
+                },
+                "",
+                {
+                  "translate": "Stellarity",
+                  "color": "#eaa7ff",
+                  "font": "stellarity:tooltip",
+                  "italic": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

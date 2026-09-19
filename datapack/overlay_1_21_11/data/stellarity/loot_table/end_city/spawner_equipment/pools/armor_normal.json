@@ -1,0 +1,265 @@
+{
+  "type": "minecraft:equipment",
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": {
+            "pools": [
+              {
+                "rolls": 1,
+                "bonus_rolls": 0,
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "name": "minecraft:iron_helmet",
+                    "functions": [
+                      {
+                        "function": "minecraft:set_components",
+                        "components": {
+                          "minecraft:trim": {
+                            "material": "minecraft:amethyst",
+                            "pattern": "minecraft:spire"
+                          }
+                        }
+                      },
+                      {
+                        "function": "minecraft:set_enchantments",
+                        "enchantments": {
+                          "minecraft:protection": 3
+                        },
+                        "add": false
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "rolls": 1,
+                "bonus_rolls": 0,
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "name": "minecraft:iron_chestplate",
+                    "functions": [
+                      {
+                        "function": "minecraft:set_components",
+                        "components": {
+                          "minecraft:trim": {
+                            "material": "minecraft:amethyst",
+                            "pattern": "minecraft:spire"
+                          }
+                        }
+                      },
+                      {
+                        "function": "minecraft:set_enchantments",
+                        "enchantments": {
+                          "minecraft:protection": 3
+                        },
+                        "add": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "weight": 2
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": {
+            "pools": [
+              {
+                "rolls": 1,
+                "bonus_rolls": 0,
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "name": "minecraft:diamond_helmet",
+                    "functions": [
+                      {
+                        "function": "minecraft:set_components",
+                        "components": {
+                          "minecraft:trim": {
+                            "material": "minecraft:amethyst",
+                            "pattern": "minecraft:spire"
+                          }
+                        }
+                      },
+                      {
+                        "function": "minecraft:set_enchantments",
+                        "enchantments": {
+                          "minecraft:protection": 3
+                        },
+                        "add": false
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "rolls": 1,
+                "bonus_rolls": 0,
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "name": "minecraft:diamond_chestplate",
+                    "functions": [
+                      {
+                        "function": "minecraft:set_components",
+                        "components": {
+                          "minecraft:trim": {
+                            "material": "minecraft:amethyst",
+                            "pattern": "minecraft:spire"
+                          }
+                        }
+                      },
+                      {
+                        "function": "minecraft:set_enchantments",
+                        "enchantments": {
+                          "minecraft:protection": 3
+                        },
+                        "add": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": {
+            "pools": [
+              {
+                "rolls": 1,
+                "bonus_rolls": 0,
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "name": "minecraft:iron_helmet",
+                    "functions": [
+                      {
+                        "function": "minecraft:set_components",
+                        "components": {
+                          "minecraft:trim": {
+                            "material": "minecraft:gold",
+                            "pattern": "minecraft:spire"
+                          }
+                        }
+                      },
+                      {
+                        "function": "minecraft:set_enchantments",
+                        "enchantments": {
+                          "minecraft:protection": 3
+                        },
+                        "add": false
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "rolls": 1,
+                "bonus_rolls": 0,
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "name": "minecraft:iron_chestplate",
+                    "functions": [
+                      {
+                        "function": "minecraft:set_components",
+                        "components": {
+                          "minecraft:trim": {
+                            "material": "minecraft:gold",
+                            "pattern": "minecraft:spire"
+                          }
+                        }
+                      },
+                      {
+                        "function": "minecraft:set_enchantments",
+                        "enchantments": {
+                          "minecraft:protection": 3
+                        },
+                        "add": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "weight": 2
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": {
+            "pools": [
+              {
+                "rolls": 1,
+                "bonus_rolls": 0,
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "name": "minecraft:diamond_helmet",
+                    "functions": [
+                      {
+                        "function": "minecraft:set_components",
+                        "components": {
+                          "minecraft:trim": {
+                            "material": "minecraft:gold",
+                            "pattern": "minecraft:spire"
+                          }
+                        }
+                      },
+                      {
+                        "function": "minecraft:set_enchantments",
+                        "enchantments": {
+                          "minecraft:protection": 3
+                        },
+                        "add": false
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "rolls": 1,
+                "bonus_rolls": 0,
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "name": "minecraft:diamond_chestplate",
+                    "functions": [
+                      {
+                        "function": "minecraft:set_components",
+                        "components": {
+                          "minecraft:trim": {
+                            "material": "minecraft:gold",
+                            "pattern": "minecraft:spire"
+                          }
+                        }
+                      },
+                      {
+                        "function": "minecraft:set_enchantments",
+                        "enchantments": {
+                          "minecraft:protection": 3
+                        },
+                        "add": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_axe",
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                " ",
+                {
+                  "translate": "items.stellarity.donator",
+                  "color": "#F96854",
+                  "italic": false
+                },
+                "",
+                {
+                  "translate": "Stellarity",
+                  "color": "#eaa7ff",
+                  "font": "stellarity:tooltip",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "stellarity:shulker_axe",
+                "minecraft:custom_data": {
+                  "stellarity:item": "shulker_axe"
+                },
+                "minecraft:max_damage": 2701,
+                "minecraft:item_name": {
+                  "translate": "item.stellarity.shulker_axe",
+                  "color": "#976A97",
+                  "italic": false
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "minecraft:base_attack_damage",
+                  "attribute": "minecraft:attack_damage",
+                  "amount": 9.5,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                },
+                {
+                  "id": "minecraft:base_attack_speed",
+                  "attribute": "minecraft:attack_speed",
+                  "amount": -3,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                },
+                {
+                  "id": "minecraft:base_attack_damage",
+                  "attribute": "minecraft:block_break_speed",
+                  "amount": 0.2,
+                  "operation": "add_multiplied_total",
+                  "slot": "mainhand"
+                },
+                {
+                  "id": "minecraft:base_attack_damage",
+                  "attribute": "minecraft:attack_speed",
+                  "amount": 0.1,
+                  "operation": "add_multiplied_total",
+                  "slot": "mainhand"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

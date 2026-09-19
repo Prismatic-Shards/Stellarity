@@ -1,0 +1,75 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:wooden_sword",
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                "",
+                {
+                  "translate": "item.stellarity.ancient_wooden_sword.flavor_text",
+                  "color": "#EEEEEE",
+                  "italic": true
+                },
+                "",
+                {
+                  "translate": "Stellarity",
+                  "color": "#eaa7ff",
+                  "font": "stellarity:tooltip",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "minecraft:base_attack_damage",
+                  "attribute": "minecraft:attack_damage",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                },
+                {
+                  "id": "minecraft:base_attack_speed",
+                  "attribute": "minecraft:attack_speed",
+                  "amount": 2133,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": {
+                  "stellarity:item": "alpha_wooden_sword"
+                },
+                "minecraft:item_model": "stellarity:ancient_wooden_sword",
+                "minecraft:damage_resistant": {
+                  "types": "#is_fire"
+                },
+                "minecraft:unbreakable": {},
+                "tooltip_display": {
+                  "hidden_components": ["unbreakable"]
+                },
+                "minecraft:item_name": {
+                  "translate": "item.stellarity.ancient_wooden_sword",
+                  "color": "white",
+                  "italic": false
+                },
+                "minecraft:blocks_attacks": {}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

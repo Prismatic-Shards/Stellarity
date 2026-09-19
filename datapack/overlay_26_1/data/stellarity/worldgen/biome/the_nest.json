@@ -1,0 +1,75 @@
+{
+  "temperature": 0.8,
+  "downfall": 0.4,
+  "has_precipitation": false,
+  "creature_spawn_probability": 0,
+  "attributes": {
+    "visual/sky_color": 0,
+    "visual/fog_color": 0,
+    "visual/water_fog_color": 3355443,
+    "audio/ambient_sounds": {
+      "loop": {
+        "sound_id": "stellarity:ambient.the_end.dark_calm"
+      },
+      "mood": {
+        "sound": "ambient.basalt_deltas.mood",
+        "tick_delay": 1600,
+        "block_search_extent": 5,
+        "offset": 1
+      },
+      "additions": {
+        "sound": "ambient.basalt_deltas.additions",
+        "tick_chance": 0.0033
+      }
+    },
+    "visual/ambient_particles": {
+      "modifier": "override",
+      "argument": [
+        {
+          "particle": {
+            "type": "minecraft:white_ash"
+          },
+          "probability": 0.01
+        }
+      ]
+    }
+  },
+  "effects": {
+    "water_color": 5855577,
+    "grass_color": 8882055,
+    "foliage_color": 9079434
+  },
+  "spawners": {
+    "monster": [
+      {
+        "type": "minecraft:enderman",
+        "weight": 90,
+        "minCount": 4,
+        "maxCount": 4
+      }
+    ]
+  },
+  "spawn_costs": {
+    "minecraft:enderman": {
+      "charge": 0.8,
+      "energy_budget": 1
+    }
+  },
+  "carvers": ["stellarity:ravine", "stellarity:crack"],
+  "features": [
+    [
+      "stellarity:global/stalactite",
+      "stellarity:the_nest/deepslate",
+      "stellarity:the_nest/tuff"
+    ],
+    [],
+    ["stellarity:dragons_den/dragon_egg"],
+    [],
+    [],
+    [],
+    [],
+    ["stellarity:the_nest/dead_corals"],
+    [],
+    ["stellarity:the_nest/transition"]
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:crossbow",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "stellarity:prismatic_punch",
+                "minecraft:custom_data": {
+                  "stellarity:item": "prismatic_punch"
+                },
+                "minecraft:damage_resistant": {
+                  "types": "#is_fire"
+                },
+                "minecraft:item_name": {
+                  "translate": "item.stellarity.prismatic_punch",
+                  "color": "#FF76D0",
+                  "italic": false
+                },
+                "minecraft:rarity": "epic"
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "replace_all",
+              "entity": "this",
+              "lore": [
+                "",
+                {
+                  "translate": "item.stellarity.prismatic_punch.description.1",
+                  "color": "#EEEEEE",
+                  "italic": false
+                },
+                {
+                  "translate": "item.stellarity.prismatic_punch.description.2",
+                  "color": "#EEEEEE",
+                  "italic": false
+                },
+                {
+                  "translate": "item.stellarity.prismatic_punch.description.3",
+                  "color": "#EEEEEE",
+                  "italic": false
+                },
+                "",
+                {
+                  "translate": "Stellarity",
+                  "color": "#eaa7ff",
+                  "font": "stellarity:tooltip",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "stellarity:_technical/infernal_infusion": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
