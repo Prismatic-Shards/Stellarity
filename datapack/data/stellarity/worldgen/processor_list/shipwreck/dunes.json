@@ -120,6 +120,14 @@
           }
         ]
       }
+    },
+    {
+      "processor_type": "minecraft:block_ignore",
+      "blocks": [
+        {
+          "id": "minecraft:structure_void"
+        }
+      ]
     }
   ]
 }

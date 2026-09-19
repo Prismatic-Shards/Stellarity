@@ -5,7 +5,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:endermite_spawn_egg",
+          "name": "minecraft:amethyst_shard",
           "functions": [
             {
               "function": "minecraft:set_components",
@@ -18,8 +18,7 @@
                 "minecraft:item_name": {
                   "translate": "item.stellarity.enderite_shard"
                 },
-                "minecraft:provides_trim_material": "stellarity:enderite",
-                "!minecraft:entity_data": {}
+                "minecraft:provides_trim_material": "stellarity:enderite"
               }
             },
             {

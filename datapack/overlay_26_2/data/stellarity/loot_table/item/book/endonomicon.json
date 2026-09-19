@@ -551,7 +551,7 @@
                         "strikethrough": true
                       },
                       {
-                        "text": "\nMaterials:\n- 1x Netherite Armor\n- 32x Enderite Shards\n- 16x Ender Pearls",
+                        "text": "\nMaterials:\n- 1x Book\n- 32x Enderite Shards\n- 16x Ender Pearls",
                         "font": "minecraft:default",
                         "color": "black",
                         "bold": false,
@@ -602,7 +602,7 @@
                         "strikethrough": true
                       },
                       {
-                        "text": "\nMaterials:\n- 1x Bundle\n- 2x Nether Star\n- 64x Enderite Shards\n- 64x Starlight Soot",
+                        "text": "\nMaterials:\n- 1x Bundle\n- 4x Netherite Ingots\n- 2x Nether Stars\n- 64x Enderite Shards\n- 64x Starlight Soot",
                         "font": "minecraft:default",
                         "color": "black",
                         "bold": false,

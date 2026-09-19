@@ -1,5 +1,6 @@
 scoreboard players set #hit stellarity.misc 1
 
+execute align xyz if block ~ ~1 ~ minecraft:snow run setblock ~ ~1 ~ air destroy
 execute align xyz positioned ~.5 ~.5 ~.5 run summon marker ~ ~1 ~ {Tags:["stellarity.altar_of_the_accursed","stellarity.altar_of_the_accursed_activated","stellarity.marker","smithed.entity","smithed.strict"]}
 execute align xyz positioned ~.5 ~ ~.5 run summon item_display ~ ~0.5 ~ {item:{id:"minecraft:end_portal_frame",count:1,components:{"minecraft:item_model":"stellarity:altar_of_the_accursed"}},Tags:["stellarity.altar_of_the_accursed_display","smithed.entity","smithed.strict"]}
 
