@@ -7,11 +7,11 @@
         "damage": {
           "type": {
             "source_entity": {
-              "type": "minecraft:shulker",
+              "entity_type": "minecraft:shulker",
               "nbt": "{Tags:[\"stellarity.dragon_shulker\"]}"
             },
             "direct_entity": {
-              "type": "minecraft:shulker_bullet"
+              "entity_type": "minecraft:shulker_bullet"
             }
           }
         }
