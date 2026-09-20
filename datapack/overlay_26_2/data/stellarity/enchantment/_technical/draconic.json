@@ -61,7 +61,7 @@
               "condition": "minecraft:entity_properties",
               "entity": "this",
               "predicate": {
-                "type": "#kohara:boss"
+                "entity_type": "#kohara:boss"
               }
             }
           },
@@ -102,7 +102,7 @@
               "condition": "minecraft:entity_properties",
               "entity": "this",
               "predicate": {
-                "type": "#kohara:boss"
+                "entity_type": "#kohara:boss"
               }
             }
           ]

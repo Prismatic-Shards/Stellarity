@@ -7,10 +7,10 @@
         "damage": {
           "type": {
             "source_entity": {
-              "type": "minecraft:ender_dragon"
+              "entity_type": "minecraft:ender_dragon"
             },
             "direct_entity": {
-              "type": "minecraft:area_effect_cloud"
+              "entity_type": "minecraft:area_effect_cloud"
             }
           }
         }

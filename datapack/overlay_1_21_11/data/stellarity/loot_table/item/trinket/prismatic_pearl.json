@@ -69,8 +69,9 @@
                                 "",
                                 {
                                     "translate": "Stellarity",
-                                    "color": "#CC26FF",
-                                    "italic": true
+                                    "color": "#eaa7ff",
+                                    "font": "stellarity:tooltip",
+                                    "italic": false
                                 }
                             ]
                         }

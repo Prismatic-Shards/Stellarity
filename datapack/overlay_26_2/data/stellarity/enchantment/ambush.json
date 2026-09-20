@@ -46,7 +46,7 @@
                 "condition": "minecraft:entity_properties",
                 "entity": "this",
                 "predicate": {
-                  "type": "minecraft:player"
+                  "entity_type": "minecraft:player"
                 }
               }
             },
@@ -56,7 +56,7 @@
                 "condition": "minecraft:entity_properties",
                 "entity": "this",
                 "predicate": {
-                  "type": "#kohara:invalid_targets"
+                  "entity_type": "#kohara:invalid_targets"
                 }
               }
             },
@@ -67,7 +67,7 @@
                 "entity": "this",
                 "predicate": {
                   "targeted_entity": {
-                    "type": "minecraft:player"
+                    "entity_type": "minecraft:player"
                   }
                 }
               }
@@ -275,7 +275,7 @@
                 "condition": "minecraft:entity_properties",
                 "entity": "this",
                 "predicate": {
-                  "type": "minecraft:player"
+                  "entity_type": "minecraft:player"
                 }
               }
             },
@@ -285,7 +285,7 @@
                 "condition": "minecraft:entity_properties",
                 "entity": "this",
                 "predicate": {
-                  "type": "#kohara:invalid_targets"
+                  "entity_type": "#kohara:invalid_targets"
                 }
               }
             },
@@ -296,7 +296,7 @@
                 "entity": "this",
                 "predicate": {
                   "targeted_entity": {
-                    "type": "minecraft:player"
+                    "entity_type": "minecraft:player"
                   }
                 }
               }
@@ -337,7 +337,7 @@
                     "condition": "minecraft:entity_properties",
                     "entity": "this",
                     "predicate": {
-                      "type": "minecraft:player"
+                      "entity_type": "minecraft:player"
                     }
                   }
                 },
@@ -347,7 +347,7 @@
                     "condition": "minecraft:entity_properties",
                     "entity": "this",
                     "predicate": {
-                      "type": "#kohara:invalid_targets"
+                      "entity_type": "#kohara:invalid_targets"
                     }
                   }
                 },
@@ -358,7 +358,7 @@
                     "entity": "this",
                     "predicate": {
                       "targeted_entity": {
-                        "type": "minecraft:player"
+                        "entity_type": "minecraft:player"
                       }
                     }
                   }
@@ -413,7 +413,7 @@
                     "condition": "minecraft:entity_properties",
                     "entity": "this",
                     "predicate": {
-                      "type": "minecraft:player"
+                      "entity_type": "minecraft:player"
                     }
                   }
                 },
@@ -423,7 +423,7 @@
                     "condition": "minecraft:entity_properties",
                     "entity": "this",
                     "predicate": {
-                      "type": "#kohara:invalid_targets"
+                      "entity_type": "#kohara:invalid_targets"
                     }
                   }
                 },
@@ -434,7 +434,7 @@
                     "entity": "this",
                     "predicate": {
                       "targeted_entity": {
-                        "type": "minecraft:player"
+                        "entity_type": "minecraft:player"
                       }
                     }
                   }
@@ -489,7 +489,7 @@
                     "condition": "minecraft:entity_properties",
                     "entity": "this",
                     "predicate": {
-                      "type": "minecraft:player"
+                      "entity_type": "minecraft:player"
                     }
                   }
                 },
@@ -499,7 +499,7 @@
                     "condition": "minecraft:entity_properties",
                     "entity": "this",
                     "predicate": {
-                      "type": "#kohara:invalid_targets"
+                      "entity_type": "#kohara:invalid_targets"
                     }
                   }
                 },
@@ -510,7 +510,7 @@
                     "entity": "this",
                     "predicate": {
                       "targeted_entity": {
-                        "type": "minecraft:player"
+                        "entity_type": "minecraft:player"
                       }
                     }
                   }

@@ -36,7 +36,7 @@
               "condition": "minecraft:entity_properties",
               "entity": "attacker",
               "predicate": {
-                "type": "#minecraft:skeletons"
+                "entity_type": "#minecraft:skeletons"
               }
             },
             {
@@ -81,7 +81,7 @@
                   "condition": "minecraft:entity_properties",
                   "entity": "attacker",
                   "predicate": {
-                    "type": "minecraft:player"
+                    "entity_type": "minecraft:player"
                   }
                 }
               ]
@@ -90,14 +90,14 @@
               "condition": "minecraft:entity_properties",
               "entity": "direct_attacker",
               "predicate": {
-                "type": "#minecraft:arrows"
+                "entity_type": "#minecraft:arrows"
               }
             },
             {
               "condition": "minecraft:entity_properties",
               "entity": "direct_attacker",
               "predicate": {
-                "type": "arrow",
+                "entity_type": "arrow",
                 "nbt": "{weapon:{id:\"minecraft:bow\",components:{\"minecraft:custom_data\":{\"stellarity:item\":\"call_of_the_void\"}}}}"
               }
             }
@@ -115,7 +115,7 @@
           "condition": "minecraft:entity_properties",
           "entity": "direct_attacker",
           "predicate": {
-            "type": "#minecraft:arrows"
+            "entity_type": "#minecraft:arrows"
           }
         }
       }

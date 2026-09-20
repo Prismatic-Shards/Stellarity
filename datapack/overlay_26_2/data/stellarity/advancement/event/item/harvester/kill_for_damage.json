@@ -16,7 +16,7 @@
           }
         },
         "entity": {
-          "type": "#stellarity:harvester/damage_boost/1_minor",
+          "entity_type": "#stellarity:harvester/damage_boost/1_minor",
           "distance": {
             "absolute": {
               "max": 6.5
@@ -40,7 +40,7 @@
           }
         },
         "entity": {
-          "type": "#stellarity:harvester/damage_boost/2_small",
+          "entity_type": "#stellarity:harvester/damage_boost/2_small",
           "distance": {
             "absolute": {
               "max": 6.5
@@ -64,7 +64,7 @@
           }
         },
         "entity": {
-          "type": "#stellarity:harvester/damage_boost/3_big",
+          "entity_type": "#stellarity:harvester/damage_boost/3_big",
           "distance": {
             "absolute": {
               "max": 6.5
@@ -88,7 +88,7 @@
           }
         },
         "entity": {
-          "type": "#stellarity:harvester/damage_boost/4_large",
+          "entity_type": "#stellarity:harvester/damage_boost/4_large",
           "distance": {
             "absolute": {
               "max": 6.5
@@ -112,7 +112,7 @@
           }
         },
         "entity": {
-          "type": "#stellarity:harvester/damage_boost/5_huge",
+          "entity_type": "#stellarity:harvester/damage_boost/5_huge",
           "distance": {
             "absolute": {
               "max": 6.5

@@ -5,7 +5,7 @@
       "trigger": "minecraft:player_killed_entity",
       "conditions": {
         "entity": {
-          "type": "vex",
+          "entity_type": "vex",
           "nbt": "{Tags:[\"stellarity.pixie\"]}"
         }
       }

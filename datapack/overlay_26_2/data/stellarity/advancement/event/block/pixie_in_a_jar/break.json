@@ -5,7 +5,7 @@
             "trigger": "minecraft:player_hurt_entity",
             "conditions": {
                 "entity": {
-                    "type": "minecraft:interaction",
+                    "entity_type": "minecraft:interaction",
                     "nbt": {
                         "Tags": [
                             "stellarity.pixie_in_a_jar_interaction"

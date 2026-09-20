@@ -6,7 +6,7 @@
       "conditions": {
         "damage": {
           "source_entity": {
-            "type": "minecraft:zombie",
+            "entity_type": "minecraft:zombie",
             "nbt": "{Tags:[\"stellarity.voided_zombie\"]}"
           }
         }

@@ -30,7 +30,7 @@
           "condition": "minecraft:entity_properties",
           "entity": "this",
           "predicate": {
-            "type": "minecraft:trident"
+            "entity_type": "minecraft:trident"
           }
         },
         "effect": {

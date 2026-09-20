@@ -12,7 +12,7 @@
           }
         },
         "entity": {
-          "type": "#kohara:item_frames"
+          "entity_type": "#kohara:item_frames"
         }
       }
     }

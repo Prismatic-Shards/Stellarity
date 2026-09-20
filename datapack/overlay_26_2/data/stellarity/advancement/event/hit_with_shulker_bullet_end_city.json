@@ -7,13 +7,13 @@
         "damage": {
           "type": {
             "source_entity": {
-              "type": "minecraft:shulker",
+              "entity_type": "minecraft:shulker",
               "location": {
                 "structures": ["minecraft:end_city"]
               }
             },
             "direct_entity": {
-              "type": "minecraft:shulker_bullet"
+              "entity_type": "minecraft:shulker_bullet"
             }
           }
         }

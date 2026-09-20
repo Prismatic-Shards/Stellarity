@@ -481,6 +481,7 @@
     "lava_cauldron",
     "lectern",
     "lever",
+    "leaf_litter",
     "light",
     "light_blue_banner",
     "light_blue_bed",
@@ -1058,6 +1059,7 @@
     "yellow_wall_banner",
     "yellow_wool",
     "zombie_head",
-    "zombie_wall_head"
+    "zombie_wall_head",
+    "wildflowers"
   ]
 }

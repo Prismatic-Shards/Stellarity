@@ -6,7 +6,7 @@
       "conditions": {
         "damage": {
           "source_entity": {
-            "type": "minecraft:enderman"
+            "entity_type": "minecraft:enderman"
           }
         }
       }

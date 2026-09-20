@@ -4,7 +4,7 @@
       "trigger": "minecraft:player_interacted_with_entity",
       "conditions": {
         "entity": {
-          "type": "minecraft:interaction"
+          "entity_type": "minecraft:interaction"
         }
       }
     }

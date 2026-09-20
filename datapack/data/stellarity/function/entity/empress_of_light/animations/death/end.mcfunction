@@ -21,4 +21,6 @@ bossbar set stellarity:empress_of_light players
 
 execute as @a run function stellarity:entity/empress_of_light/music/reset
 
-execute if score #stellarity.config stellarity.config.boss_status_messages matches 1 run tellraw @a ["\n",{"translate":"entity.stellarity.empress_of_light.death","with":[{"translate":"entity.stellarity.empress_of_light"}],"color":"#AF4BFF"},"\n"]
+execute if score #stellarity.config stellarity.config.boss_status_messages matches 1 if entity @s[tag=stellarity.empress_of_light.nighttime] run tellraw @a ["\n",{"translate":"entity.stellarity.empress_of_light.death","with":[{"translate":"entity.stellarity.empress_of_light"}],"color":"#AF4BFF"},"\n"]
+execute if score #stellarity.config stellarity.config.boss_status_messages matches 1 if entity @s[tag=stellarity.empress_of_light.daytime] run tellraw @a ["\n",{"translate":"entity.stellarity.empress_of_light.death","with":[{"translate":"entity.stellarity.empress_of_light"}],"color":"#ffea2f"},"\n"]
+execute if score #stellarity.config stellarity.config.boss_status_messages matches 1 if entity @s[tag=stellarity.empress_of_light.radiant] run tellraw @a ["\n",{"translate":"entity.stellarity.empress_of_light.death","with":[{"translate":"entity.stellarity.empress_of_light"}],"color":"#ff4b4b"},"\n"]

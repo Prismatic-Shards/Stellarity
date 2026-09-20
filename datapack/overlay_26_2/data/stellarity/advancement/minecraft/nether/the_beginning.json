@@ -41,7 +41,7 @@
       "trigger": "minecraft:player_killed_entity",
       "conditions": {
         "entity": {
-          "type": "minecraft:wither",
+          "entity_type": "minecraft:wither",
           "location": {
             "dimension": "minecraft:the_end"
           }

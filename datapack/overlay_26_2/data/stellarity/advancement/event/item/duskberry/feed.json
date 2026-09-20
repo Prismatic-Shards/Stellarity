@@ -13,7 +13,7 @@
           }
         },
         "entity": {
-          "type": "fox"
+          "entity_type": "fox"
         }
       }
     }

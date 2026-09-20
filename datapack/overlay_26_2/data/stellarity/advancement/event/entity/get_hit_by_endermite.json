@@ -6,7 +6,7 @@
       "conditions": {
         "damage": {
           "source_entity": {
-            "type": "minecraft:endermite"
+            "entity_type": "minecraft:endermite"
           }
         }
       }

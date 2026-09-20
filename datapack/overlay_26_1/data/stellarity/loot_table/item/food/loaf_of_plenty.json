@@ -37,8 +37,9 @@
                   "",
                   {
                     "translate": "Stellarity",
-                    "color": "#CC26FF",
-                    "italic": true
+                    "color": "#eaa7ff",
+                    "font": "stellarity:tooltip",
+                    "italic": false
                   }
                 ],
                 "minecraft:custom_data": {
@@ -92,8 +93,9 @@
                       "",
                       {
                         "translate": "Stellarity",
-                        "color": "#CC26FF",
-                        "italic": true
+                        "color": "#eaa7ff",
+                        "font": "stellarity:tooltip",
+                        "italic": false
                       }
                     ],
                     "minecraft:custom_data": {
@@ -147,8 +149,9 @@
                           "",
                           {
                             "translate": "Stellarity",
-                            "color": "#CC26FF",
-                            "italic": true
+                            "color": "#eaa7ff",
+                            "font": "stellarity:tooltip",
+                            "italic": false
                           }
                         ],
                         "minecraft:custom_data": {
@@ -195,10 +198,10 @@
                               },
                               "",
                               {
-                  "translate": "Stellarity",
-                  "color": "#eaa7ff",
-                  "font": "stellarity:tooltip",
-                  "italic": false
+                                "translate": "Stellarity",
+                                "color": "#eaa7ff",
+                                "font": "stellarity:tooltip",
+                                "italic": false
                               }
                             ],
                             "minecraft:custom_data": {
@@ -252,8 +255,9 @@
                                   "",
                                   {
                                     "translate": "Stellarity",
-                                    "color": "#CC26FF",
-                                    "italic": true
+                                    "color": "#eaa7ff",
+                                    "font": "stellarity:tooltip",
+                                    "italic": false
                                   }
                                 ],
                                 "minecraft:custom_data": {
@@ -301,8 +305,9 @@
                                       "",
                                       {
                                         "translate": "Stellarity",
-                                        "color": "#CC26FF",
-                                        "italic": true
+                                        "color": "#eaa7ff",
+                                        "font": "stellarity:tooltip",
+                                        "italic": false
                                       }
                                     ],
                                     "minecraft:custom_data": {
@@ -356,8 +361,9 @@
                                           "",
                                           {
                                             "translate": "Stellarity",
-                                            "color": "#CC26FF",
-                                            "italic": true
+                                            "color": "#eaa7ff",
+                                            "font": "stellarity:tooltip",
+                                            "italic": false
                                           }
                                         ],
                                         "minecraft:custom_data": {
@@ -411,8 +417,9 @@
                                               "",
                                               {
                                                 "translate": "Stellarity",
-                                                "color": "#CC26FF",
-                                                "italic": true
+                                                "color": "#eaa7ff",
+                                                "font": "stellarity:tooltip",
+                                                "italic": false
                                               }
                                             ],
                                             "minecraft:custom_data": {
@@ -460,8 +467,9 @@
                                                   "",
                                                   {
                                                     "translate": "Stellarity",
-                                                    "color": "#CC26FF",
-                                                    "italic": true
+                                                    "color": "#eaa7ff",
+                                                    "font": "stellarity:tooltip",
+                                                    "italic": false
                                                   }
                                                 ],
                                                 "minecraft:custom_data": {
@@ -515,8 +523,9 @@
                                                       "",
                                                       {
                                                         "translate": "Stellarity",
-                                                        "color": "#CC26FF",
-                                                        "italic": true
+                                                        "color": "#eaa7ff",
+                                                        "font": "stellarity:tooltip",
+                                                        "italic": false
                                                       }
                                                     ],
                                                     "minecraft:custom_data": {
@@ -570,8 +579,9 @@
                                                           "",
                                                           {
                                                             "translate": "Stellarity",
-                                                            "color": "#CC26FF",
-                                                            "italic": true
+                                                            "color": "#eaa7ff",
+                                                            "font": "stellarity:tooltip",
+                                                            "italic": false
                                                           }
                                                         ],
                                                         "minecraft:custom_data": {
@@ -625,8 +635,9 @@
                                                               "",
                                                               {
                                                                 "translate": "Stellarity",
-                                                                "color": "#CC26FF",
-                                                                "italic": true
+                                                                "color": "#eaa7ff",
+                                                                "font": "stellarity:tooltip",
+                                                                "italic": false
                                                               }
                                                             ],
                                                             "minecraft:custom_data": {
@@ -680,8 +691,9 @@
                                                                   "",
                                                                   {
                                                                     "translate": "Stellarity",
-                                                                    "color": "#CC26FF",
-                                                                    "italic": true
+                                                                    "color": "#eaa7ff",
+                                                                    "font": "stellarity:tooltip",
+                                                                    "italic": false
                                                                   }
                                                                 ],
                                                                 "minecraft:custom_data": {
@@ -735,8 +747,9 @@
                                                                       "",
                                                                       {
                                                                         "translate": "Stellarity",
-                                                                        "color": "#CC26FF",
-                                                                        "italic": true
+                                                                        "color": "#eaa7ff",
+                                                                        "font": "stellarity:tooltip",
+                                                                        "italic": false
                                                                       }
                                                                     ],
                                                                     "minecraft:custom_data": {
@@ -777,8 +790,9 @@
                                                                           "",
                                                                           {
                                                                             "translate": "Stellarity",
-                                                                            "color": "#CC26FF",
-                                                                            "italic": true
+                                                                            "color": "#eaa7ff",
+                                                                            "font": "stellarity:tooltip",
+                                                                            "italic": false
                                                                           }
                                                                         ],
                                                                         "minecraft:custom_data": {
