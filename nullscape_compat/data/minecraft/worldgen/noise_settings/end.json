@@ -10,7 +10,7 @@
   },
   "noise": {
     "min_y": 0,
-    "height": 288
+    "height": 384
   },
   "noise_router": {
     "temperature": "stellarity:climate/temperature",
