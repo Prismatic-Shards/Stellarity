@@ -1,0 +1,17 @@
+{
+  "parent": "stellarity:event/root",
+  "criteria": {
+    "kill_pixie": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "vex",
+          "nbt": "{Tags:[\"stellarity.pixie\"]}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "stellarity:entity/pixie/despawn"
+  }
+}

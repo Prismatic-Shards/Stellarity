@@ -1,7 +1,7 @@
 {
   "temperature": -0.5,
   "downfall": 0.6,
-  "has_precipitation": false,
+  "has_precipitation": true,
   "attributes": {
     "visual/sky_color": 8103167,
     "visual/fog_color": 12638463,
@@ -100,7 +100,8 @@
       "stellarity:frozen_spikes/replace_dripstone/9",
       "stellarity:frozen_spikes/replace_dripstone/10",
       "stellarity:frozen_spikes/replace_dripstone/11",
-      "minecraft:freeze_top_layer"
+      "minecraft:freeze_top_layer",
+      "stellarity:hallowed_tundra/snow_covering"
     ]
   ]
 }

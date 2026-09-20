@@ -1,0 +1,15 @@
+{
+  "argument1": 4,
+  "argument2": {
+    "argument": {
+      "argument1": "stellarity:climate/depth",
+      "argument2": {
+        "argument": "stellarity:factor",
+        "type": "minecraft:cache_2d"
+      },
+      "type": "minecraft:mul"
+    },
+    "type": "minecraft:quarter_negative"
+  },
+  "type": "minecraft:mul"
+}

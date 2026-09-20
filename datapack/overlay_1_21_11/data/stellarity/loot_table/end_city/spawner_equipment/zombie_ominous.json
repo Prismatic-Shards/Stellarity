@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:equipment",
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "stellarity:end_city/spawner_equipment/pools/weapon_ominous"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "stellarity:end_city/spawner_equipment/pools/armor_ominous"
+        }
+      ]
+    }
+  ]
+}

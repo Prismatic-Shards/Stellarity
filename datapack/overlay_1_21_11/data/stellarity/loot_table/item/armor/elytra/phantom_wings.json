@@ -1,0 +1,68 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:elytra",
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                "",
+                {
+                  "translate": "item.stellarity.phantom_wings.description.1",
+                  "color": "#EEEEEE",
+                  "italic": false
+                },
+                "",
+                {
+                  "translate": "Stellarity",
+                  "color": "#eaa7ff",
+                  "font": "stellarity:tooltip",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "stellarity:phantom_wings",
+                "minecraft:custom_data": {
+                  "stellarity:item": "phantom_wings"
+                },
+                "rarity": "uncommon",
+                "minecraft:equippable": {
+                  "slot": "chest",
+                  "asset_id": "stellarity:phantom_wings",
+                  "damage_on_hurt": false
+                },
+                "minecraft:max_damage": 70,
+                "minecraft:item_name": {
+                  "translate": "item.stellarity.phantom_wings",
+                  "color": "yellow",
+                  "italic": false
+                },
+                "attribute_modifiers": [
+                  {
+                    "id": "stellarity.phantom_wings.gravity",
+                    "type": "gravity",
+                    "operation": "add_multiplied_total",
+                    "amount": 0.65,
+                    "slot": "chest"
+                  }
+                ],
+                "tooltip_display": {
+                  "hidden_components": ["attribute_modifiers"]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

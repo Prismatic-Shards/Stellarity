@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:simple_block",
+  "config": {
+    "to_place": {
+      "type": "minecraft:weighted_state_provider",
+      "entries": [
+        {
+          "weight": 1,
+          "data": {
+            "Name": "minecraft:oak_leaves",
+            "Properties": {
+              "distance": "7",
+              "persistent": "true",
+              "waterlogged": "false"
+            }
+          }
+        },
+        {
+          "weight": 6,
+          "data": {
+            "Name": "minecraft:nether_wart_block"
+          }
+        }
+      ]
+    }
+  }
+}

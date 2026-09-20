@@ -1,0 +1,59 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "glow_item_frame",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "item_name": {
+                  "translate": "block.stellarity.rooted_ender_dirt"
+                },
+                "custom_data": {
+                  "stellarity:item": "rooted_ender_dirt"
+                },
+                "lore": [
+                  "",
+                  {
+                    "translate": "Stellarity",
+                    "color": "#eaa7ff",
+                    "font": "stellarity:tooltip",
+                    "italic": false
+                  }
+                ],
+                "max_stack_size": 64,
+                "item_model": "stellarity:rooted_ender_dirt",
+                "entity_data": {
+                  "id": "minecraft:glow_item_frame",
+                  "Tags": [
+                    "stellarity.placed_block",
+                    "smithed.entity",
+                    "smithed.strict"
+                  ],
+                  "Invisible": true,
+                  "Invulnerable": true,
+                  "data": {
+                    "stellarity:block": {
+                      "id": "rooted_ender_dirt",
+                      "block": "rooted_dirt",
+                      "model": "stellarity:rooted_ender_dirt",
+                      "loot_table": "stellarity:block/rooted_ender_dirt",
+                      "place_sound": "block.rooted_dirt.place",
+                      "valid_placement": "all",
+                      "rotation": "none"
+                    }
+                  }
+                },
+                "rarity": "common"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

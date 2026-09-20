@@ -1,0 +1,10 @@
+loot give @s loot stellarity:item/trinket/void_pendant
+loot give @s loot stellarity:item/trinket/void_pendant/amethyst
+loot give @s loot stellarity:item/trinket/void_pendant/copper
+loot give @s loot stellarity:item/trinket/void_pendant/diamond
+loot give @s loot stellarity:item/trinket/void_pendant/emerald
+loot give @s loot stellarity:item/trinket/void_pendant/gold
+loot give @s loot stellarity:item/trinket/void_pendant/iron
+loot give @s loot stellarity:item/trinket/void_pendant/lapis
+loot give @s loot stellarity:item/trinket/void_pendant/netherite
+loot give @s loot stellarity:item/trinket/void_pendant/quartz

@@ -1,0 +1,54 @@
+{
+	"type": "minecraft:random_selector",
+	"config": {
+		"features": [
+			{
+				"chance": 0.1,
+				"feature": {
+					"feature": {
+						"type": "minecraft:simple_random_selector",
+						"config": {
+							"features": [
+								{
+									"feature": {
+										"type": "minecraft:block_blob",
+										"config": {
+											"state": {
+												"Name": "minecraft:amethyst_block"
+											},
+											"can_place_on": {
+												"type": "minecraft:true"
+											}
+										}
+									},
+									"placement": []
+								},
+								{
+									"feature": {
+										"type": "minecraft:block_blob",
+										"config": {
+											"state": {
+												"Name": "minecraft:budding_amethyst"
+											},
+											"can_place_on": {
+												"type": "minecraft:true"
+											}
+										}
+									},
+									"placement": []
+								}
+							]
+						}
+					},
+					"placement": [
+						{
+							"type": "minecraft:heightmap",
+							"heightmap": "OCEAN_FLOOR"
+						}
+					]
+				}
+			}
+		],
+		"default": "stellarity:nothing"
+	}
+}

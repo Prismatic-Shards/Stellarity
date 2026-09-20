@@ -1,0 +1,73 @@
+{
+  "type": "minecraft:vegetation_patch",
+  "config": {
+    "surface": "floor",
+    "depth": 1,
+    "vertical_range": 1,
+    "extra_bottom_block_chance": 0,
+    "extra_edge_column_chance": 0,
+    "vegetation_chance": 1,
+    "xz_radius": 0,
+    "replaceable": "#stellarity:_worldgen/single/end_stone",
+    "ground_state": {
+      "type": "minecraft:weighted_state_provider",
+      "entries": [
+        {
+          "weight": 1,
+          "data": {
+            "Name": "minecraft:grass_block",
+            "Properties": {
+              "snowy": "false"
+            }
+          }
+        }
+      ]
+    },
+    "vegetation_feature": {
+      "feature": {
+        "type": "minecraft:simple_block",
+        "config": {
+          "to_place": {
+            "type": "minecraft:simple_state_provider",
+            "state": {
+              "Name": "minecraft:oak_leaves",
+              "Properties": {
+                "distance": "7",
+                "persistent": "true",
+                "waterlogged": "false"
+              }
+            }
+          }
+        }
+      },
+      "placement": [
+        {
+          "type": "minecraft:count",
+          "count": 3
+        },
+        {
+          "type": "minecraft:random_offset",
+          "xz_spread": {
+            "type": "minecraft:trapezoid",
+            "min": -1,
+            "max": 1,
+            "plateau": 0
+          },
+          "y_spread": {
+            "type": "minecraft:trapezoid",
+            "min": -1,
+            "max": 1,
+            "plateau": 0
+          }
+        },
+        {
+          "type": "minecraft:block_predicate_filter",
+          "predicate": {
+            "type": "minecraft:all_of",
+            "predicates": []
+          }
+        }
+      ]
+    }
+  }
+}

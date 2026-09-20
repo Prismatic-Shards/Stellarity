@@ -1,0 +1,111 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "bonus_rolls": 0,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:slime_ball",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:item_model": "stellarity:goosh",
+                                "minecraft:custom_data": {
+                                    "stellarity:item": "goosh"
+                                },
+                                "minecraft:item_name": {
+                                    "translate": "item.stellarity.goosh"
+                                },
+                                "minecraft:consumable": {
+                                    "consume_seconds": 1.6,
+                                    "animation": "eat",
+                                    "has_consume_particles": true,
+                                    "on_consume_effects": [
+                                        {
+                                            "type": "minecraft:apply_effects",
+                                            "effects": [
+                                                {
+                                                    "id": "minecraft:oozing",
+                                                    "duration": 1180,
+                                                    "show_icon": true
+                                                },
+                                                {
+                                                    "id": "minecraft:jump_boost",
+                                                    "duration": 300,
+                                                    "show_icon": true
+                                                },
+                                                {
+                                                    "id": "minecraft:nausea",
+                                                    "duration": 100,
+                                                    "show_icon": true
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                "minecraft:food": {
+                                    "nutrition": 1,
+                                    "saturation": 0
+                                }
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "lore": [
+                                [
+                                    {
+                                        "text": "1 ",
+                                        "color": "#EEEEEE",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": "🍖 ",
+                                        "color": "#B88458",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": "0.6 ",
+                                        "color": "#EEEEEE",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": "🍖",
+                                        "color": "#FFDE4C",
+                                        "italic": false
+                                    }
+                                ],
+                                "",
+                                {
+                                    "translate": "item.stellarity.goosh.description.1",
+                                    "color": "#EEEEEE",
+                                    "italic": false
+                                },
+                                {
+                                    "translate": "item.stellarity.dish.goosh.description.2",
+                                    "color": "#EEEEEE",
+                                    "italic": false
+                                },
+                                "",
+                                {
+                                    "translate": "item.stellarity.goosh.flavor_text",
+                                    "color": "#EEEEEE",
+                                    "italic": true
+                                },
+                                "",
+                                {
+                                    "translate": "Stellarity",
+                                    "color": "#eaa7ff",
+                                    "font": "stellarity:tooltip",
+                                    "italic": false
+                                }
+                            ],
+                            "mode": "replace_all"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

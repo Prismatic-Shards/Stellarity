@@ -1,0 +1,35 @@
+{
+  "condition": "minecraft:inverted",
+  "term": {
+    "condition": "minecraft:any_of",
+    "terms": [
+      {
+        "condition": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {
+          "stellarity.item.dragonblade.until_stack_reset": {
+            "min": 1
+          }
+        }
+      },
+      {
+        "condition": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {
+          "stellarity.item.spirit_dagger.attract_cooldown": {
+            "min": 1
+          }
+        }
+      },
+      {
+        "condition": "minecraft:entity_scores",
+        "entity": "this",
+        "scores": {
+          "stellarity.item.dragonblade.cooldown": {
+            "min": 1
+          }
+        }
+      }
+    ]
+  }
+}

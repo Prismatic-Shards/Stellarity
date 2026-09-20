@@ -1,0 +1,26 @@
+[
+    {
+        "condition": "minecraft:weather_check",
+        "raining": false,
+        "thundering": false
+    },
+    {
+        "condition": "minecraft:location_check",
+        "predicate": {
+            "dimension": "minecraft:overworld",
+            "can_see_sky": true
+        }
+    },
+    {
+        "condition": "minecraft:inverted",
+        "term": {
+            "condition": "minecraft:time_check",
+            "clock": "overworld",
+            "value": {
+                "min": 12786,
+                "max": 23460
+            },
+            "period": 24000
+        }
+    }
+]

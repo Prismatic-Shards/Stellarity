@@ -1,12 +1,11 @@
 {
-  "condition": "inverted",
-
+  "condition": "minecraft:inverted",
   "term": {
-    "condition": "entity_properties",
+    "condition": "minecraft:entity_properties",
     "entity": "this",
     "predicate": {
       "vehicle": {
-        "entity_type": "#stellarity:end_variant_animals"
+        "nbt": "{variant:\"stellarity:end\"}"
       }
     }
   }

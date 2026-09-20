@@ -1,0 +1,78 @@
+{
+  "type": "minecraft:end_spike",
+  "config": {
+    "crystal_invulnerable": false,
+    "spikes": [
+      {
+        "centerX": 63,
+        "centerZ": 0,
+        "radius": 5,
+        "height": 100,
+        "guarded": false
+      },
+      {
+        "centerX": 50,
+        "centerZ": 36,
+        "radius": 4,
+        "height": 105,
+        "guarded": false
+      },
+      {
+        "centerX": 18,
+        "centerZ": 59,
+        "radius": 4,
+        "height": 94,
+        "guarded": false
+      },
+      {
+        "centerX": -19,
+        "centerZ": 59,
+        "radius": 5,
+        "height": 106,
+        "guarded": false
+      },
+      {
+        "centerX": -51,
+        "centerZ": 36,
+        "radius": 4,
+        "height": 105,
+        "guarded": false
+      },
+      {
+        "centerX": -63,
+        "centerZ": 0,
+        "radius": 5,
+        "height": 93,
+        "guarded": false
+      },
+      {
+        "centerX": -51,
+        "centerZ": -39,
+        "radius": 6,
+        "height": 100,
+        "guarded": false
+      },
+      {
+        "centerX": -19,
+        "centerZ": -60,
+        "radius": 6,
+        "height": 96,
+        "guarded": false
+      },
+      {
+        "centerX": 18,
+        "centerZ": -60,
+        "radius": 5,
+        "height": 87,
+        "guarded": false
+      },
+      {
+        "centerX": 50,
+        "centerZ": -39,
+        "radius": 8,
+        "height": 95,
+        "guarded": false
+      }
+    ]
+  }
+}

@@ -4,11 +4,7 @@
             "trigger": "minecraft:player_hurt_entity",
             "conditions": {
                 "entity": {
-                    "type": "minecraft:entity_properties",
-                    "entity": "this",
-                    "predicate": {
-                        "entity_type": "minecraft:interaction"
-                    }
+                    "type": "minecraft:interaction"
                 }
             }
         }

@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_glowstone_dust": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["minecraft:glowstone_dust"]
+          }
+        ]
+      }
+    },
+    "has_glowstone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["minecraft:glowstone"]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "minecraft:spectral_arrow"
+      }
+    }
+  },
+  "requirements": [["has_the_recipe", "has_glowstone_dust", "has_glowstone"]],
+  "rewards": {
+    "recipes": ["minecraft:spectral_arrow", "stellarity:spectral_arrow_alt"]
+  }
+}

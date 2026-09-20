@@ -1,0 +1,141 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:endermite_spawn_egg",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "stellarity:enderite_smithing_template",
+                "minecraft:custom_data": {
+                  "stellarity:item": "enderite_smithing_template"
+                },
+                "minecraft:rarity": "rare",
+                "minecraft:item_name": {
+                  "translate": "item.stellarity.enderite_smithing_template",
+                  "color": "light_purple",
+                  "italic": false
+                },
+                "!minecraft:entity_data": {}
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "replace_all",
+              "entity": "this",
+              "lore": [
+                {
+                  "translate": "item.stellarity.enderite_smithing_template.upgrade",
+                  "color": "gray",
+                  "italic": false
+                },
+                "",
+                {
+                  "translate": "item.minecraft.smithing_template.applies_to",
+                  "color": "gray",
+                  "italic": false
+                },
+                [
+                  " ",
+                  {
+                    "translate": "item.stellarity.enderite_smithing_template.applies_to",
+                    "color": "blue",
+                    "italic": false
+                  }
+                ],
+                [
+                  " ",
+                  {
+                    "translate": "item.stellarity.enderite_smithing_template.description",
+                    "color": "blue",
+                    "italic": false
+                  }
+                ],
+                {
+                  "translate": "item.minecraft.smithing_template.ingredients",
+                  "color": "gray",
+                  "italic": false
+                },
+                [
+                  " ",
+                  {
+                    "translate": "item.stellarity.enderite_smithing_template.ingredients",
+                    "color": "blue",
+                    "italic": false,
+                    "with": [
+                      {
+                        "translate": "item.stellarity.enderite_smithing_template.ingredients.count.4"
+                      },
+                      {
+                        "translate": "item.stellarity.hallowed_ingot"
+                      }
+                    ]
+                  }
+                ],
+                [
+                  " ",
+                  {
+                    "translate": "item.stellarity.enderite_smithing_template.ingredients",
+                    "color": "blue",
+                    "italic": false,
+                    "with": [
+                      {
+                        "translate": "item.stellarity.enderite_smithing_template.ingredients.count.4"
+                      },
+                      {
+                        "translate": "item.stellarity.chorus_plating"
+                      }
+                    ]
+                  }
+                ],
+                [
+                  " ",
+                  {
+                    "translate": "item.stellarity.enderite_smithing_template.ingredients",
+                    "color": "blue",
+                    "italic": false,
+                    "with": [
+                      {
+                        "translate": "item.stellarity.enderite_smithing_template.ingredients.count.4"
+                      },
+                      {
+                        "translate": "item.minecraft.shulker_shell"
+                      }
+                    ]
+                  }
+                ],
+                [
+                  " ",
+                  {
+                    "translate": "item.stellarity.enderite_smithing_template.ingredients",
+                    "color": "blue",
+                    "italic": false,
+                    "with": [
+                      {
+                        "translate": "item.stellarity.enderite_smithing_template.ingredients.count.8"
+                      },
+                      {
+                        "translate": "block.minecraft.cherry_leaves"
+                      }
+                    ]
+                  }
+                ],
+                "",
+                {
+                  "translate": "Stellarity",
+                  "color": "#eaa7ff",
+                  "font": "stellarity:tooltip",
+                  "italic": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

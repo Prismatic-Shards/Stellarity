@@ -1,0 +1,33 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "stellarity:block/pixie_in_a_jar/yellow",
+                    "weight": 25,
+                    "functions": []
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "stellarity:block/pixie_in_a_jar/magenta",
+                    "weight": 25,
+                    "functions": []
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "stellarity:block/pixie_in_a_jar/lime",
+                    "weight": 25,
+                    "functions": []
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "stellarity:block/pixie_in_a_jar/light_blue",
+                    "weight": 25,
+                    "functions": []
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+  "parent": "stellarity:event/root",
+  "criteria": {
+    "get_hit_by_endermite": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "source_entity": {
+            "type": "minecraft:endermite"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "stellarity:entity/endermite/attack"
+  }
+}

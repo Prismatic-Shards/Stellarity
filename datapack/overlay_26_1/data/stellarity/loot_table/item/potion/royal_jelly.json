@@ -1,0 +1,84 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:honey_bottle",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": {
+                  "stellarity:item": "royal_jelly"
+                },
+                "minecraft:max_stack_size": 1,
+                "minecraft:item_name": {
+                  "translate": "item.stellarity.royal_jelly",
+                  "color": "yellow",
+                  "italic": false
+                },
+                "consumable": {
+                  "consume_seconds": 1.5,
+                  "on_consume_effects": [
+                    {
+                      "type": "apply_effects",
+                      "effects": [
+                        {
+                          "id": "minecraft:absorption",
+                          "duration": 60,
+
+                          "ambient": false,
+                          "show_particles": true,
+                          "show_icon": true
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "minecraft:food": {
+                  "nutrition": 6,
+                  "saturation": 3.6,
+                  "can_always_eat": true
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  {
+                    "translate": "effect.minecraft.absorption",
+                    "color": "blue",
+                    "italic": false
+                  },
+                  " ",
+                  {
+                    "text": "(1:00)",
+                    "color": "blue",
+                    "italic": false
+                  }
+                ],
+                {
+                  "translate": "item.stellarity.royal_jelly.usage",
+                  "color": "blue",
+                  "italic": false
+                },
+                "",
+                {
+                  "translate": "Stellarity",
+                  "color": "#eaa7ff",
+                  "font": "stellarity:tooltip",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

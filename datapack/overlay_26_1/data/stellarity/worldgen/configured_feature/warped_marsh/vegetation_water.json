@@ -1,0 +1,145 @@
+{
+  "type": "minecraft:simple_block",
+  "config": {
+    "to_place": {
+      "type": "minecraft:weighted_state_provider",
+      "entries": [
+        {
+          "weight": 5,
+          "data": {
+            "Name": "minecraft:brain_coral_fan",
+            "Properties": {
+              "waterlogged": "true"
+            }
+          }
+        },
+        {
+          "weight": 5,
+          "data": {
+            "Name": "minecraft:bubble_coral_fan",
+            "Properties": {
+              "waterlogged": "true"
+            }
+          }
+        },
+        {
+          "weight": 5,
+          "data": {
+            "Name": "minecraft:horn_coral_fan",
+            "Properties": {
+              "waterlogged": "true"
+            }
+          }
+        },
+        {
+          "weight": 5,
+          "data": {
+            "Name": "minecraft:fire_coral_fan",
+            "Properties": {
+              "waterlogged": "true"
+            }
+          }
+        },
+        {
+          "weight": 5,
+          "data": {
+            "Name": "minecraft:tube_coral_fan",
+            "Properties": {
+              "waterlogged": "true"
+            }
+          }
+        },
+        {
+          "weight": 5,
+          "data": {
+            "Name": "minecraft:brain_coral",
+            "Properties": {
+              "waterlogged": "true"
+            }
+          }
+        },
+        {
+          "weight": 5,
+          "data": {
+            "Name": "minecraft:bubble_coral",
+            "Properties": {
+              "waterlogged": "true"
+            }
+          }
+        },
+        {
+          "weight": 5,
+          "data": {
+            "Name": "minecraft:horn_coral",
+            "Properties": {
+              "waterlogged": "true"
+            }
+          }
+        },
+        {
+          "weight": 5,
+          "data": {
+            "Name": "minecraft:fire_coral",
+            "Properties": {
+              "waterlogged": "true"
+            }
+          }
+        },
+        {
+          "weight": 5,
+          "data": {
+            "Name": "minecraft:tube_coral",
+            "Properties": {
+              "waterlogged": "true"
+            }
+          }
+        },
+        {
+          "weight": 1,
+          "data": {
+            "Name": "minecraft:sea_pickle",
+            "Properties": {
+              "pickles": "4",
+              "waterlogged": "true"
+            }
+          }
+        },
+        {
+          "weight": 2,
+          "data": {
+            "Name": "minecraft:sea_pickle",
+            "Properties": {
+              "pickles": "3",
+              "waterlogged": "true"
+            }
+          }
+        },
+        {
+          "weight": 3,
+          "data": {
+            "Name": "minecraft:sea_pickle",
+            "Properties": {
+              "pickles": "2",
+              "waterlogged": "true"
+            }
+          }
+        },
+        {
+          "weight": 4,
+          "data": {
+            "Name": "minecraft:sea_pickle",
+            "Properties": {
+              "waterlogged": "true"
+            }
+          }
+        },
+        {
+          "weight": 100,
+          "data": {
+            "Name": "minecraft:seagrass"
+          }
+        }
+      ]
+    }
+  }
+}

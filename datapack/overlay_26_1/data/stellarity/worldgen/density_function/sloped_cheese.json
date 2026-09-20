@@ -1,0 +1,83 @@
+{
+  "type": "minecraft:mul",
+  "argument1": 0.1111111,
+  "argument2": {
+    "type": "minecraft:add",
+    "argument1": -0.2,
+    "argument2": {
+      "type": "minecraft:interpolated",
+      "argument": {
+        "type": "minecraft:blend_density",
+        "argument": {
+          "type": "minecraft:add",
+          "argument1": -1.4,
+          "argument2": {
+            "type": "minecraft:mul",
+            "argument1": {
+              "type": "minecraft:y_clamped_gradient",
+              "from_y": -10,
+              "to_y": 27,
+              "from_value": 0,
+              "to_value": 1
+            },
+            "argument2": {
+              "type": "minecraft:add",
+              "argument1": 1.4,
+              "argument2": {
+                "type": "minecraft:add",
+                "argument1": -0.1,
+                "argument2": {
+                  "type": "minecraft:mul",
+                  "argument1": {
+                    "type": "minecraft:y_clamped_gradient",
+                    "from_y": 105,
+                    "to_y": 165,
+                    "from_value": 1,
+                    "to_value": 0
+                  },
+                  "argument2": {
+                    "type": "minecraft:add",
+                    "argument1": 0.1,
+                    "argument2": {
+                      "type": "minecraft:add",
+                      "argument1": {
+                        "type": "minecraft:mul",
+                        "argument1": 0.8,
+                        "argument2": {
+                          "type": "minecraft:mul",
+                          "argument1": {
+                            "type": "minecraft:add",
+                            "argument1": "stellarity:climate/depth",
+                            "argument2": {
+                              "type": "minecraft:mul",
+                              "argument1": "stellarity:jaggedness",
+                              "argument2": {
+                                "type": "minecraft:half_negative",
+                                "argument": {
+                                  "type": "minecraft:mul",
+                                  "argument1": "stellarity:factor",
+                                  "argument2": {
+                                    "type": "minecraft:noise",
+                                    "noise": "minecraft:jagged",
+                                    "xz_scale": 1500,
+                                    "y_scale": 0
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "argument2": "stellarity:factor"
+                        }
+                      },
+                      "argument2": "stellarity:base_3d_noise"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

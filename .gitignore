@@ -1,4 +1,5 @@
 /.vscode/
+/scratch/
 spyglass.json
 Stellarity.zip
 artifacts/
@@ -10,3 +11,5 @@ nullscape/
 
 build/
 .spyglassrc.json
+
+hs_err_pid22536.log

@@ -1,0 +1,93 @@
+{
+  "temperature": 0.8,
+  "downfall": 0.4,
+  "has_precipitation": false,
+  "attributes": {
+    "visual/sky_color": 0,
+    "visual/fog_color": 0,
+    "visual/water_fog_color": 16711680,
+    "audio/ambient_sounds": {
+      "loop": {
+        "sound_id": "stellarity:ambient.the_end.dark"
+      },
+      "mood": {
+        "sound": "ambient.crimson_forest.mood",
+        "tick_delay": 1200,
+        "block_search_extent": 6,
+        "offset": 2
+      },
+      "additions": {
+        "sound": "ambient.warped_forest.additions",
+        "tick_chance": 0.00111
+      }
+    },
+    "visual/ambient_particles": {
+      "modifier": "override",
+      "argument": [
+        {
+          "particle": {
+            "type": "crimson_spore"
+          },
+          "probability": 0.0056
+        }
+      ]
+    }
+  },
+  "effects": {
+    "water_color": 16711680,
+    "grass_color": 12860219,
+    "foliage_color": 12860219
+  },
+  "spawners": {
+    "monster": [
+      {
+        "type": "minecraft:silverfish",
+        "weight": 7,
+        "minCount": 2,
+        "maxCount": 2
+      },
+      {
+        "type": "minecraft:skeleton",
+        "weight": 15,
+        "minCount": 2,
+        "maxCount": 2
+      },
+      {
+        "type": "minecraft:zombified_piglin",
+        "weight": 40,
+        "minCount": 4,
+        "maxCount": 4
+      }
+    ]
+  },
+  "spawn_costs": {
+    "minecraft:skeleton": {
+      "energy_budget": 0.8,
+      "charge": 1
+    },
+    "minecraft:silverfish": {
+      "energy_budget": 0.5,
+      "charge": 1
+    }
+  },
+  "carvers": [],
+  "features": [
+    [
+      "stellarity:flesh_tundra/stalactite",
+      "stellarity:flesh_tundra/island/island_bottom"
+    ],
+    ["stellarity:flesh_tundra/aquatic/delta"],
+    ["minecraft:basalt_pillar", "stellarity:flesh_tundra/bone_ceiling"],
+    [],
+    [],
+    [],
+    ["stellarity:flesh_tundra/vegetation/bone_trees"],
+    [],
+    [
+      "stellarity:flesh_tundra/vegetation/surface_plants",
+      "stellarity:flesh_tundra/weeping_vines",
+      "stellarity:flesh_tundra/roots"
+    ],
+    []
+  ]
+}

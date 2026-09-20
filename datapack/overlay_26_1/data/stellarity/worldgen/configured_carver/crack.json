@@ -1,0 +1,69 @@
+{
+  "type": "minecraft:canyon",
+  "config": {
+    "probability": 0.066,
+    "y": {
+      "type": "minecraft:uniform",
+      "min_inclusive": {
+        "above_bottom": 16
+      },
+      "max_inclusive": {
+        "below_top": 16
+      }
+    },
+    "yScale": {
+      "type": "minecraft:uniform",
+      "min_inclusive": 6,
+      "max_exclusive": 8
+    },
+    "lava_level": {
+      "absolute": 0
+    },
+    "replaceable": "#stellarity:_worldgen/carvers_replaceable",
+    "debug_settings": {
+      "debug_mode": false,
+      "air_state": {
+        "Name": "minecraft:orange_stained_glass"
+      },
+      "water_state": {
+        "Name": "minecraft:candle",
+        "Properties": {
+          "waterlogged": "false",
+          "lit": "false",
+          "candles": "1"
+        }
+      },
+      "lava_state": {
+        "Name": "minecraft:orange_stained_glass"
+      },
+      "barrier_state": {
+        "Name": "minecraft:glass"
+      }
+    },
+    "vertical_rotation": {
+      "type": "minecraft:uniform",
+      "min_inclusive": -0.125,
+      "max_exclusive": 0.125
+    },
+    "shape": {
+      "distance_factor": {
+        "type": "minecraft:uniform",
+        "min_inclusive": 0.5,
+        "max_exclusive": 1
+      },
+      "thickness": {
+        "type": "minecraft:uniform",
+        "min_inclusive": 0,
+        "max_exclusive": 1
+      },
+      "width_smoothness": 6,
+      "horizontal_radius_factor": {
+        "type": "minecraft:uniform",
+        "min_inclusive": 0.25,
+        "max_exclusive": 1
+      },
+      "vertical_radius_default_factor": 0,
+      "vertical_radius_center_factor": 5
+    }
+  }
+}

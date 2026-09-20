@@ -1,0 +1,225 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:ender_pearl",
+              "conditions": [
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "minecraft:the_nether"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:chorus_fruit"
+            }
+          ]
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_count",
+          "count": {
+            "min": 0,
+            "max": 1
+          }
+        },
+        {
+          "function": "minecraft:enchanted_count_increase",
+          "enchantment": "minecraft:looting",
+          "count": {
+            "min": 0,
+            "max": 1
+          }
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "dimension": "minecraft:the_end"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 0,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:ender_eye",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.2
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:ender_pearl",
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": {
+                    "min": 0,
+                    "max": 1
+                  }
+                },
+                {
+                  "function": "minecraft:enchanted_count_increase",
+                  "enchantment": "minecraft:looting",
+                  "count": {
+                    "min": 0,
+                    "max": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:location_check",
+          "predicate": {
+            "dimension": "minecraft:the_end"
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "stellarity:item/food/enderman_flesh",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 0,
+                "max": 2
+              }
+            },
+            {
+              "function": "minecraft:enchanted_count_increase",
+              "enchantment": "minecraft:looting",
+              "count": {
+                "min": 0,
+                "max": 1
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#stellarity.config"
+                },
+                "score": "stellarity.config.enable_enderman_flesh"
+              },
+              "range": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "stellarity:item/trinket/enderman_hand",
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#stellarity.config"
+                },
+                "score": "stellarity.config.enable_enderman_hand"
+              },
+              "range": 1
+            },
+            {
+              "condition": "any_of",
+              "terms": [
+                {
+                  "condition": "all_of",
+                  "terms": [
+                    {
+                      "condition": "minecraft:random_chance_with_enchanted_bonus",
+                      "enchantment": "minecraft:looting",
+                      "unenchanted_chance": 0.02,
+                      "enchanted_chance": {
+                        "type": "minecraft:linear",
+                        "base": 0.02,
+                        "per_level_above_first": 0.01
+                      }
+                    },
+                    {
+                      "condition": "location_check",
+                      "predicate": {
+                        "dimension": "the_end"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "condition": "all_of",
+                  "terms": [
+                    {
+                      "condition": "minecraft:random_chance_with_enchanted_bonus",
+                      "enchantment": "minecraft:looting",
+                      "unenchanted_chance": 0.1,
+                      "enchanted_chance": {
+                        "type": "minecraft:linear",
+                        "base": 0.025,
+                        "per_level_above_first": 0.015
+                      }
+                    },
+                    {
+                      "condition": "inverted",
+                      "term": {
+                        "condition": "location_check",
+                        "predicate": {
+                          "dimension": "the_end"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

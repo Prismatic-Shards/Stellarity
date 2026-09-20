@@ -1,0 +1,217 @@
+{
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "override_liquid_settings": "ignore_waterlogging",
+        "location": "stellarity:village/decorations/campfire_1",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "override_liquid_settings": "ignore_waterlogging",
+        "location": "stellarity:village/decorations/campfire_2",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "override_liquid_settings": "ignore_waterlogging",
+        "location": "stellarity:village/decorations/lamp_1",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "override_liquid_settings": "ignore_waterlogging",
+        "location": "stellarity:village/decorations/lamp_2",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "override_liquid_settings": "ignore_waterlogging",
+        "location": "stellarity:village/decorations/lamp_3",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "override_liquid_settings": "ignore_waterlogging",
+        "location": "stellarity:village/decorations/lamp_4",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "override_liquid_settings": "ignore_waterlogging",
+        "location": "stellarity:village/decorations/lamp_5",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "override_liquid_settings": "ignore_waterlogging",
+        "location": "stellarity:village/decorations/lamp_6",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "override_liquid_settings": "ignore_waterlogging",
+        "location": "stellarity:village/decorations/lamp_7",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "override_liquid_settings": "ignore_waterlogging",
+        "location": "stellarity:village/decorations/planter_box_1",
+        "processors": {
+          "processors": [
+            {
+              "processor_type": "minecraft:rule",
+              "rules": [
+                {
+                  "location_predicate": {
+                    "predicate_type": "minecraft:always_true"
+                  },
+                  "input_predicate": {
+                    "predicate_type": "minecraft:random_block_match",
+                    "block": "minecraft:azalea_leaves",
+                    "probability": 0.3
+                  },
+                  "output_state": {
+                    "Name": "minecraft:flowering_azalea_leaves",
+                    "Properties": {
+                      "distance": "7",
+                      "waterlogged": "false",
+                      "persistent": "true"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "override_liquid_settings": "ignore_waterlogging",
+        "location": "stellarity:village/decorations/planter_box_2",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "override_liquid_settings": "ignore_waterlogging",
+        "location": "stellarity:village/decorations/planter_box_3",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "override_liquid_settings": "ignore_waterlogging",
+        "location": "stellarity:village/decorations/planter_box_4",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "override_liquid_settings": "ignore_waterlogging",
+        "location": "stellarity:village/decorations/planter_box_5",
+        "processors": {
+          "processors": [
+            {
+              "processor_type": "minecraft:rule",
+              "rules": [
+                {
+                  "location_predicate": {
+                    "predicate_type": "minecraft:always_true"
+                  },
+                  "input_predicate": {
+                    "predicate_type": "minecraft:random_block_match",
+                    "block": "minecraft:azalea_leaves",
+                    "probability": 0.3
+                  },
+                  "output_state": {
+                    "Name": "minecraft:flowering_azalea_leaves",
+                    "Properties": {
+                      "distance": "7",
+                      "waterlogged": "false",
+                      "persistent": "true"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "override_liquid_settings": "ignore_waterlogging",
+        "location": "stellarity:village/decorations/planter_box_6",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "override_liquid_settings": "ignore_waterlogging",
+        "location": "stellarity:village/decorations/planter_box_7",
+        "processors": "minecraft:empty"
+      }
+    }
+  ]
+}

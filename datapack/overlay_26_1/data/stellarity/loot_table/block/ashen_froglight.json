@@ -1,0 +1,59 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "glow_item_frame",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "item_name": {
+                  "translate": "block.stellarity.ashen_froglight"
+                },
+                "custom_data": {
+                  "stellarity:item": "ashen_froglight"
+                },
+                "lore": [
+                  "",
+                  {
+                    "translate": "Stellarity",
+                    "color": "#eaa7ff",
+                    "font": "stellarity:tooltip",
+                    "italic": false
+                  }
+                ],
+                "max_stack_size": 64,
+                "item_model": "stellarity:ashen_froglight",
+                "entity_data": {
+                  "id": "minecraft:glow_item_frame",
+                  "Tags": [
+                    "stellarity.placed_block",
+                    "smithed.entity",
+                    "smithed.strict"
+                  ],
+                  "Invisible": true,
+                  "Invulnerable": true,
+                  "data": {
+                    "stellarity:block": {
+                      "id": "ashen_froglight",
+                      "block": "pearlescent_froglight",
+                      "model": "stellarity:ashen_froglight",
+                      "loot_table": "stellarity:block/ashen_froglight",
+                      "place_sound": "block.froglight.place",
+                      "valid_placement": "all",
+                      "rotation": "axis"
+                    }
+                  }
+                },
+                "rarity": "common"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

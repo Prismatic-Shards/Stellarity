@@ -1,0 +1,54 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:fishing_rod",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "stellarity:fisher_of_voids",
+                "minecraft:custom_data": {
+                  "stellarity:item": "fisher_of_voids"
+                },
+                "rarity": "uncommon",
+                "minecraft:damage_resistant": {
+                  "types": "#is_fire"
+                },
+                "minecraft:max_damage": 264,
+                "minecraft:item_name": {
+                  "translate": "item.stellarity.fisher_of_voids",
+                  "color": "#8865AF",
+                  "italic": false
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "replace_all",
+              "entity": "this",
+              "lore": [
+                "",
+                {
+                  "translate": "item.stellarity.fisher_of_voids.description",
+                  "color": "#EEEEEE",
+                  "italic": false
+                },
+                "",
+                {
+                  "translate": "Stellarity",
+                  "color": "#eaa7ff",
+                  "font": "stellarity:tooltip",
+                  "italic": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

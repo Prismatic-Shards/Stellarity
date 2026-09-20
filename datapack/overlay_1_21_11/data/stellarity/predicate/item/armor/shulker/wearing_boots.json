@@ -1,0 +1,15 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "equipment": {
+      "feet": {
+        "predicates": {
+          "minecraft:custom_data": {
+            "stellarity:item": "shulker_boots"
+          }
+        }
+      }
+    }
+  }
+}

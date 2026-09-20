@@ -1,0 +1,44 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:endermite_spawn_egg",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "stellarity:hallowed_ingot",
+                "minecraft:custom_data": {
+                  "stellarity:item": "hallowed_ingot"
+                },
+                "minecraft:item_name": {
+                  "translate": "item.stellarity.hallowed_ingot",
+                  "color": "#D9E3ED",
+                  "italic": false
+                },
+                "!minecraft:entity_data": {}
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "replace_all",
+              "entity": "this",
+              "lore": [
+                "",
+                {
+                  "translate": "Stellarity",
+                  "color": "#eaa7ff",
+                  "font": "stellarity:tooltip",
+                  "italic": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

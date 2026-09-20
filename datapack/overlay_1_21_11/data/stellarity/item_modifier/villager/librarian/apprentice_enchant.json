@@ -1,0 +1,13 @@
+{
+  "function": "minecraft:enchant_randomly",
+  "options": [
+    "minecraft:protection",
+    "minecraft:fire_protection",
+    "minecraft:blast_protection",
+    "minecraft:projectile_protection",
+    "minecraft:silk_touch",
+    "minecraft:feather_falling",
+    "minecraft:unbreaking"
+  ],
+  "only_compatible": true
+}

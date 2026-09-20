@@ -128,7 +128,11 @@
                         "text": "\nᴡɪᴋɪ ᴘᴀɢᴇ       ",
                         "font": "minecraft:default",
                         "color": "dark_gray",
-                        "strikethrough": false
+                        "strikethrough": false,
+                        "click_event": {
+                          "action": "open_url",
+                          "url": "https://prismaticshards.wiki.gg/wiki/Spectral_Fury"
+                        }
                       },
                       {
                         "text": "#",
@@ -382,7 +386,7 @@
                         "strikethrough": false,
                         "click_event": {
                           "action": "open_url",
-                          "url": "https://prismaticshards.wiki.gg/wiki/Satchel_of_Voids"
+                          "url": "https://prismaticshards.wiki.gg/wiki/Shulker_Armor"
                         }
                       },
                       {
@@ -433,7 +437,7 @@
                         "strikethrough": false,
                         "click_event": {
                           "action": "open_url",
-                          "url": "https://prismaticshards.wiki.gg/wiki/Satchel_of_Voids"
+                          "url": "https://prismaticshards.wiki.gg/wiki/Shulker_Tools"
                         }
                       },
                       {
@@ -484,7 +488,7 @@
                         "strikethrough": false,
                         "click_event": {
                           "action": "open_url",
-                          "url": "https://prismaticshards.wiki.gg/wiki/Satchel_of_Voids"
+                          "url": "https://prismaticshards.wiki.gg/wiki/Book_of_Jinx"
                         }
                       },
                       {
@@ -535,7 +539,7 @@
                         "strikethrough": false,
                         "click_event": {
                           "action": "open_url",
-                          "url": "https://prismaticshards.wiki.gg/wiki/Satchel_of_Voids"
+                          "url": "https://prismaticshards.wiki.gg/wiki/Grand_Tome_of_Teleportation"
                         }
                       },
                       {
@@ -551,7 +555,7 @@
                         "strikethrough": true
                       },
                       {
-                        "text": "\nMaterials:\n- 1x Netherite Armor\n- 32x Enderite Shards\n- 16x Ender Pearls",
+                        "text": "\nMaterials:\n- 1x Book\n- 32x Enderite Shards\n- 16x Ender Pearls",
                         "font": "minecraft:default",
                         "color": "black",
                         "bold": false,
@@ -602,7 +606,7 @@
                         "strikethrough": true
                       },
                       {
-                        "text": "\nMaterials:\n- 1x Bundle\n- 2x Nether Star\n- 64x Enderite Shards\n- 64x Starlight Soot",
+                        "text": "\nMaterials:\n- 1x Bundle\n- 4x Netherite Ingots\n- 2x Nether Stars\n- 64x Enderite Shards\n- 64x Starlight Soot",
                         "font": "minecraft:default",
                         "color": "black",
                         "bold": false,
@@ -637,7 +641,7 @@
                         "strikethrough": false,
                         "click_event": {
                           "action": "open_url",
-                          "url": "https://prismaticshards.wiki.gg/wiki/Satchel_of_Voids"
+                          "url": "https://prismaticshards.wiki.gg/wiki/Crest_of_The_End"
                         }
                       },
                       {
@@ -688,7 +692,7 @@
                         "strikethrough": false,
                         "click_event": {
                           "action": "open_url",
-                          "url": "https://prismaticshards.wiki.gg/wiki/Satchel_of_Voids"
+                          "url": "https://prismaticshards.wiki.gg/wiki/Enderite_Smithing_Template"
                         }
                       },
                       {
@@ -739,7 +743,7 @@
                         "strikethrough": false,
                         "click_event": {
                           "action": "open_url",
-                          "url": "https://prismaticshards.wiki.gg/wiki/Satchel_of_Voids"
+                          "url": "https://prismaticshards.wiki.gg/wiki/Chorus_Plating"
                         }
                       },
                       {

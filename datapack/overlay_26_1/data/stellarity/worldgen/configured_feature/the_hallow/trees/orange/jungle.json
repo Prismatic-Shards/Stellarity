@@ -1,0 +1,70 @@
+{
+  "type": "minecraft:tree",
+  "config": {
+    "ignore_vines": true,
+    "minimum_size": {
+      "type": "minecraft:two_layers_feature_size",
+      "limit": 1,
+      "lower_size": 0,
+      "upper_size": 1
+    },
+    "below_trunk_provider": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "minecraft:dirt"
+      }
+    },
+    "trunk_provider": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "minecraft:stripped_jungle_log",
+        "Properties": {
+          "axis": "y"
+        }
+      }
+    },
+    "foliage_provider": {
+      "type": "minecraft:weighted_state_provider",
+      "entries": [
+        {
+          "weight": 5,
+          "data": {
+            "Name": "minecraft:orange_wool"
+          }
+        },
+        {
+          "weight": 2,
+          "data": {
+            "Name": "minecraft:orange_stained_glass"
+          }
+        }
+      ]
+    },
+    "trunk_placer": {
+      "type": "minecraft:mega_jungle_trunk_placer",
+      "base_height": 12,
+      "height_rand_a": 7,
+      "height_rand_b": 10
+    },
+    "foliage_placer": {
+      "type": "minecraft:random_spread_foliage_placer",
+      "radius": {
+        "type": "minecraft:uniform",
+        "min_inclusive": 3,
+        "max_inclusive": 7
+      },
+      "offset": {
+        "type": "minecraft:uniform",
+        "min_inclusive": 0,
+        "max_inclusive": 12
+      },
+      "foliage_height": {
+        "type": "minecraft:uniform",
+        "min_inclusive": 6,
+        "max_inclusive": 18
+      },
+      "leaf_placement_attempts": 256
+    },
+    "decorators": []
+  }
+}

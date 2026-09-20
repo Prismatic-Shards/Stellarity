@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:abs",
+  "argument": {
+    "type": "minecraft:add",
+    "argument1": {
+      "type": "minecraft:noise",
+      "noise": "stellarity:main_island/n4",
+      "xz_scale": 1.0,
+      "y_scale": 0.0
+    },
+    "argument2": {
+      "type": "minecraft:mul",
+      "argument1": -1,
+      "argument2": {
+        "type": "minecraft:noise",
+        "noise": "stellarity:main_island/n4",
+        "xz_scale": 0.95,
+        "y_scale": 0.0
+      }
+    }
+  }
+}

@@ -1,7 +1,7 @@
 scoreboard players set #damage kohara.misc 10
 
 scoreboard players set #mul stellarity.misc 2
-execute if entity @s[type=#minecraft:freeze_hurts_extra_types] run scoreboard players operation #damage stellarity.misc *= #mul stellarity.misc
+execute if entity @s[type=#minecraft:freeze_hurts_extra_types] run scoreboard players operation #damage kohara.misc *= #mul stellarity.misc
 
 scoreboard players reset @s stellarity.dot.frostburn.progress
 

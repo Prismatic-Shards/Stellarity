@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:block_blob",
+  "config": {
+    "state": {
+      "Name": "minecraft:slime_block"
+    },
+    "can_place_on": {
+      "type": "minecraft:true"
+    }
+  }
+}

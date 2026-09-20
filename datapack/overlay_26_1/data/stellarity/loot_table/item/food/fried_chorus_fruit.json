@@ -1,0 +1,81 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:chorus_fruit",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "stellarity:fried_chorus_fruit",
+                "minecraft:custom_data": {
+                  "stellarity:item": "fried_chorus_fruit"
+                },
+                "minecraft:item_name": {
+                  "translate": "item.stellarity.fried_chorus_fruit",
+                  "color": "white"
+                },
+                "minecraft:food": {
+                  "nutrition": 7,
+                  "saturation": 11.2,
+                  "can_always_eat": true
+                },
+                "minecraft:consumable": {
+                  "animation": "eat",
+                  "consume_seconds": 1.6,
+                  "has_consume_particles": true,
+                  "sound": "entity.generic.eat",
+                  "on_consume_effects": [
+                    {
+                      "type": "teleport_randomly",
+                      "diameter": 16
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "replace_all",
+              "lore": [
+                [
+                  {
+                    "text": "7",
+                    "color": "#EEEEEE",
+                    "italic": false
+                  },
+                  {
+                    "text": " 🍖",
+                    "color": "#B88458",
+                    "italic": false
+                  },
+                  " ",
+                  {
+                    "text": "11.2",
+                    "color": "#EEEEEE",
+                    "italic": false
+                  },
+                  {
+                    "text": " 🍖",
+                    "color": "#FFDE4C",
+                    "italic": false
+                  }
+                ],
+                "",
+                {
+                  "translate": "Stellarity",
+                  "color": "#eaa7ff",
+                  "font": "stellarity:tooltip",
+                  "italic": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -22,3 +22,4 @@ scoreboard players add @s stellarity.misc.loop.1s 1
 execute if entity @s[scores={stellarity.misc.loop.1s=20..}] run function stellarity:loop/player/main_1s
 
 execute if entity @s[scores={stellarity.dialog.admin=-2147483648..}] run function stellarity:dialog/admin/check_trigger
+scoreboard players enable @s stellarity.dialog.admin

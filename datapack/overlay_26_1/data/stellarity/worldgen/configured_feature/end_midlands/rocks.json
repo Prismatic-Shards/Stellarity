@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:block_blob",
+  "config": {
+    "state": {
+      "Name": "minecraft:smooth_basalt"
+    },
+    "can_place_on": {
+      "type": "minecraft:true"
+    }
+  }
+}

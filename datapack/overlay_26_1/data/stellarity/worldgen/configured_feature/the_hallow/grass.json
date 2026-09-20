@@ -1,0 +1,89 @@
+{
+  "type": "minecraft:simple_block",
+  "config": {
+    "to_place": {
+      "type": "minecraft:weighted_state_provider",
+      "entries": [
+        {
+          "weight": 88,
+          "data": {
+            "Name": "minecraft:short_grass"
+          }
+        },
+        {
+          "weight": 23,
+          "data": {
+            "Name": "minecraft:tall_grass",
+            "Properties": {
+              "half": "lower"
+            }
+          }
+        },
+        {
+          "weight": 3,
+          "data": {
+            "Name": "minecraft:amethyst_cluster",
+            "Properties": {
+              "facing": "up",
+              "waterlogged": "false"
+            }
+          }
+        },
+        {
+          "weight": 3,
+          "data": {
+            "Name": "minecraft:small_amethyst_bud",
+            "Properties": {
+              "facing": "up",
+              "waterlogged": "false"
+            }
+          }
+        },
+        {
+          "weight": 3,
+          "data": {
+            "Name": "minecraft:medium_amethyst_bud",
+            "Properties": {
+              "facing": "up",
+              "waterlogged": "false"
+            }
+          }
+        },
+        {
+          "weight": 3,
+          "data": {
+            "Name": "minecraft:large_amethyst_bud",
+            "Properties": {
+              "facing": "up",
+              "waterlogged": "false"
+            }
+          }
+        },
+        {
+          "weight": 8,
+          "data": {
+            "Name": "minecraft:bush"
+          }
+        },
+        {
+          "weight": 1,
+          "data": {
+            "Name": "minecraft:dead_bush"
+          }
+        },
+        {
+          "weight": 19,
+          "data": {
+            "Name": "minecraft:warped_roots"
+          }
+        },
+        {
+          "weight": 18,
+          "data": {
+            "Name": "minecraft:nether_sprouts"
+          }
+        }
+      ]
+    }
+  }
+}

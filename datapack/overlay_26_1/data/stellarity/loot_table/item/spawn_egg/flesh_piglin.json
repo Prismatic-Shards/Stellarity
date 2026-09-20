@@ -1,0 +1,53 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:hoglin_spawn_egg",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "stellarity:flesh_piglin_spawn_egg",
+                "custom_data": {
+                  "stellarity:item": "flesh_piglin_spawn_egg"
+                },
+                "minecraft:item_name": {
+                  "translate": "item.stellarity.flesh_piglin_spawn_egg"
+                },
+                "minecraft:entity_data": {
+                  "id": "minecraft:marker",
+                  "Tags": [
+                    "stellarity.spawn_egg",
+                    "smithed.entity",
+                    "smithed.strict"
+                  ],
+                  "data": {
+                    "mob": "flesh_piglin"
+                  }
+                },
+                "rarity": "common"
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                "",
+                {
+                  "translate": "Stellarity",
+                  "color": "#eaa7ff",
+                  "font": "stellarity:tooltip",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

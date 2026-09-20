@@ -1,0 +1,106 @@
+{
+  "processors": [
+    {
+      "processor_type": "minecraft:capped",
+      "limit": {
+        "type": "minecraft:uniform",
+        "min_inclusive": 4,
+        "max_inclusive": 7
+      },
+      "delegate": {
+        "processor_type": "minecraft:rule",
+        "rules": [
+          {
+            "location_predicate": {
+              "predicate_type": "minecraft:always_true"
+            },
+            "input_predicate": {
+              "predicate_type": "minecraft:block_match",
+              "block": "minecraft:sand"
+            },
+            "output_state": {
+              "Name": "minecraft:suspicious_sand",
+              "Properties": {
+                "dusted": "0"
+              }
+            },
+            "block_entity_modifier": {
+              "type": "minecraft:append_loot",
+              "loot_table": "stellarity:desert_ruin_archaeology/common"
+            }
+          },
+          {
+            "location_predicate": {
+              "predicate_type": "minecraft:block_match",
+              "block": "minecraft:sand"
+            },
+            "input_predicate": {
+              "predicate_type": "minecraft:always_true"
+            },
+            "output_state": {
+              "Name": "minecraft:suspicious_sand",
+              "Properties": {
+                "dusted": "0"
+              }
+            },
+            "block_entity_modifier": {
+              "type": "minecraft:append_loot",
+              "loot_table": "stellarity:desert_ruin_archaeology/common"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "processor_type": "minecraft:capped",
+      "limit": {
+        "type": "minecraft:uniform",
+        "min_inclusive": 2,
+        "max_inclusive": 3
+      },
+      "delegate": {
+        "processor_type": "minecraft:rule",
+        "rules": [
+          {
+            "location_predicate": {
+              "predicate_type": "minecraft:always_true"
+            },
+            "input_predicate": {
+              "predicate_type": "minecraft:block_match",
+              "block": "minecraft:sand"
+            },
+            "output_state": {
+              "Name": "minecraft:suspicious_sand",
+              "Properties": {
+                "dusted": "0"
+              }
+            },
+            "block_entity_modifier": {
+              "type": "minecraft:append_loot",
+              "loot_table": "stellarity:desert_ruin_archaeology/rare"
+            }
+          },
+          {
+            "location_predicate": {
+              "predicate_type": "minecraft:block_match",
+              "block": "minecraft:sand"
+            },
+            "input_predicate": {
+              "predicate_type": "minecraft:always_true"
+            },
+            "output_state": {
+              "Name": "minecraft:suspicious_sand",
+              "Properties": {
+                "dusted": "0"
+              }
+            },
+            "block_entity_modifier": {
+              "type": "minecraft:append_loot",
+              "loot_table": "stellarity:desert_ruin_archaeology/rare"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

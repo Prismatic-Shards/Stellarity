@@ -1,0 +1,44 @@
+{
+  "type": "minecraft:block_column",
+  "config": {
+    "direction": "down",
+    "allowed_placement": {
+      "type": "minecraft:matching_blocks",
+      "offset": [0, -1, 0],
+      "blocks": ["minecraft:air"]
+    },
+    "prioritize_tip": true,
+    "layers": [
+      {
+        "height": {
+          "type": "minecraft:uniform",
+          "min_inclusive": 4,
+          "max_inclusive": 16
+        },
+        "provider": {
+          "type": "minecraft:simple_state_provider",
+          "state": {
+            "Name": "iron_chain",
+            "Properties": {
+              "axis": "y",
+              "waterlogged": "false"
+            }
+          }
+        }
+      },
+      {
+        "height": 1,
+        "provider": {
+          "type": "minecraft:simple_state_provider",
+          "state": {
+            "Name": "minecraft:lantern",
+            "Properties": {
+              "hanging": "true",
+              "waterlogged": "false"
+            }
+          }
+        }
+      }
+    ]
+  }
+}

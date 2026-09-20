@@ -1,0 +1,53 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:ender_dragon_spawn_egg",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "stellarity:voided_zombie_spawn_egg",
+                "custom_data": {
+                  "stellarity:item": "voided_zombie_spawn_egg"
+                },
+                "minecraft:item_name": {
+                  "translate": "item.stellarity.voided_zombie_spawn_egg"
+                },
+                "minecraft:entity_data": {
+                  "id": "minecraft:marker",
+                  "Tags": [
+                    "stellarity.spawn_egg",
+                    "smithed.entity",
+                    "smithed.strict"
+                  ],
+                  "data": {
+                    "mob": "voided_zombie"
+                  }
+                },
+                "rarity": "common"
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                "",
+                {
+                  "translate": "Stellarity",
+                  "color": "#eaa7ff",
+                  "font": "stellarity:tooltip",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

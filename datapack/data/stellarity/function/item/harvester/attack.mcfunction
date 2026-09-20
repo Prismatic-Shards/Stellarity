@@ -1,6 +1,3 @@
-data remove storage stellarity:temp harvester.item
-data modify storage stellarity:temp harvester.item set from entity @p SelectedItem.components."minecraft:custom_data"
-
 # Frostburn
   execute if data storage stellarity:temp {harvester:{item:{"stellarity:harvester":{abilities:["frostburn"]}}}} run function stellarity:item/harvester/abilities/frostburn/apply
 
@@ -12,3 +9,6 @@ data modify storage stellarity:temp harvester.item set from entity @p SelectedIt
 
 # Echo
   execute if data storage stellarity:temp {harvester:{item:{"stellarity:harvester":{abilities:["echo"]}}}} at @s run function stellarity:item/harvester/abilities/echo/apply
+
+data remove storage stellarity:temp harvester.item
+

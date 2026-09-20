@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:disk",
+  "config": {
+    "state_provider": {
+      "type": "minecraft:rule_based_state_provider",
+      "fallback": {
+        "type": "minecraft:weighted_state_provider",
+        "entries": [
+          {
+            "weight": 3,
+            "data": {
+              "Name": "minecraft:coarse_dirt"
+            }
+          },
+          {
+            "weight": 2,
+            "data": {
+              "Name": "minecraft:rooted_dirt"
+            }
+          }
+        ]
+      },
+      "rules": []
+    },
+    "target": {
+      "type": "minecraft:matching_block_tag",
+      "tag": "stellarity:_worldgen/endless_dunes/dune_replaceables"
+    },
+    "radius": {
+      "type": "minecraft:uniform",
+      "min_inclusive": 6,
+      "max_inclusive": 8
+    },
+    "half_height": 1
+  }
+}

@@ -1,0 +1,392 @@
+{
+  "type": "minecraft:fishing",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "weight": 15,
+          "value": "stellarity:void_fishing/junk"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 4,
+          "value": "stellarity:void_fishing/treasure"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 70,
+          "value": "stellarity:void_fishing/fish"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:value_check",
+          "value": {
+            "type": "minecraft:score",
+            "target": {
+              "type": "minecraft:fixed",
+              "name": "#luck_of_the_sea"
+            },
+            "score": "stellarity.misc",
+            "scale": 1
+          },
+          "range": 0
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "weight": 14,
+          "value": "stellarity:void_fishing/junk"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 5,
+          "value": "stellarity:void_fishing/treasure"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 69,
+          "value": "stellarity:void_fishing/fish"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:value_check",
+          "value": {
+            "type": "minecraft:score",
+            "target": {
+              "type": "minecraft:fixed",
+              "name": "#luck_of_the_sea"
+            },
+            "score": "stellarity.misc",
+            "scale": 1
+          },
+          "range": 1
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "weight": 13,
+          "value": "stellarity:void_fishing/junk"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 6,
+          "value": "stellarity:void_fishing/treasure"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 68,
+          "value": "stellarity:void_fishing/fish"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:value_check",
+          "value": {
+            "type": "minecraft:score",
+            "target": {
+              "type": "minecraft:fixed",
+              "name": "#luck_of_the_sea"
+            },
+            "score": "stellarity.misc",
+            "scale": 1
+          },
+          "range": 2
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "weight": 12,
+          "value": "stellarity:void_fishing/junk"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 7,
+          "value": "stellarity:void_fishing/treasure"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 67,
+          "value": "stellarity:void_fishing/fish"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:value_check",
+          "value": {
+            "type": "minecraft:score",
+            "target": {
+              "type": "minecraft:fixed",
+              "name": "#luck_of_the_sea"
+            },
+            "score": "stellarity.misc",
+            "scale": 1
+          },
+          "range": 3
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "weight": 11,
+          "value": "stellarity:void_fishing/junk"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 8,
+          "value": "stellarity:void_fishing/treasure"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 66,
+          "value": "stellarity:void_fishing/fish"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:value_check",
+          "value": {
+            "type": "minecraft:score",
+            "target": {
+              "type": "minecraft:fixed",
+              "name": "#luck_of_the_sea"
+            },
+            "score": "stellarity.misc",
+            "scale": 1
+          },
+          "range": 4
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "weight": 10,
+          "value": "stellarity:void_fishing/junk"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 9,
+          "value": "stellarity:void_fishing/treasure"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 65,
+          "value": "stellarity:void_fishing/fish"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:value_check",
+          "value": {
+            "type": "minecraft:score",
+            "target": {
+              "type": "minecraft:fixed",
+              "name": "#luck_of_the_sea"
+            },
+            "score": "stellarity.misc",
+            "scale": 1
+          },
+          "range": 5
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "weight": 9,
+          "value": "stellarity:void_fishing/junk"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 10,
+          "value": "stellarity:void_fishing/treasure"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 64,
+          "value": "stellarity:void_fishing/fish"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:value_check",
+          "value": {
+            "type": "minecraft:score",
+            "target": {
+              "type": "minecraft:fixed",
+              "name": "#luck_of_the_sea"
+            },
+            "score": "stellarity.misc",
+            "scale": 1
+          },
+          "range": 6
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "weight": 8,
+          "value": "stellarity:void_fishing/junk"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 11,
+          "value": "stellarity:void_fishing/treasure"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 63,
+          "value": "stellarity:void_fishing/fish"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:value_check",
+          "value": {
+            "type": "minecraft:score",
+            "target": {
+              "type": "minecraft:fixed",
+              "name": "#luck_of_the_sea"
+            },
+            "score": "stellarity.misc",
+            "scale": 1
+          },
+          "range": 7
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "weight": 7,
+          "value": "stellarity:void_fishing/junk"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 12,
+          "value": "stellarity:void_fishing/treasure"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 62,
+          "value": "stellarity:void_fishing/fish"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:value_check",
+          "value": {
+            "type": "minecraft:score",
+            "target": {
+              "type": "minecraft:fixed",
+              "name": "#luck_of_the_sea"
+            },
+            "score": "stellarity.misc",
+            "scale": 1
+          },
+          "range": 8
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "weight": 6,
+          "value": "stellarity:void_fishing/junk"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 13,
+          "value": "stellarity:void_fishing/treasure"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 61,
+          "value": "stellarity:void_fishing/fish"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:value_check",
+          "value": {
+            "type": "minecraft:score",
+            "target": {
+              "type": "minecraft:fixed",
+              "name": "#luck_of_the_sea"
+            },
+            "score": "stellarity.misc",
+            "scale": 1
+          },
+          "range": 9
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "weight": 5,
+          "value": "stellarity:void_fishing/junk"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 14,
+          "value": "stellarity:void_fishing/treasure"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 60,
+          "value": "stellarity:void_fishing/fish"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:value_check",
+          "value": {
+            "type": "minecraft:score",
+            "target": {
+              "type": "minecraft:fixed",
+              "name": "#luck_of_the_sea"
+            },
+            "score": "stellarity.misc",
+            "scale": 1
+          },
+          "range": {
+            "min": 10
+          }
+        }
+      ]
+    }
+  ]
+}

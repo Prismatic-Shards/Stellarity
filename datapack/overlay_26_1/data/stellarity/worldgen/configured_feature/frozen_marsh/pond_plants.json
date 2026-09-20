@@ -1,0 +1,141 @@
+{
+  "type": "minecraft:random_boolean_selector",
+  "config": {
+    "feature_false": {
+      "feature": {
+        "type": "minecraft:block_column",
+        "config": {
+          "direction": "up",
+          "allowed_placement": {
+            "type": "minecraft:matching_blocks",
+            "blocks": ["minecraft:air", "minecraft:water"]
+          },
+          "prioritize_tip": false,
+          "layers": [
+            {
+              "height": 1,
+              "provider": {
+                "type": "minecraft:simple_state_provider",
+                "state": {
+                  "Name": "minecraft:ice"
+                }
+              }
+            },
+            {
+              "height": {
+                "type": "minecraft:uniform",
+                "min_inclusive": 1,
+                "max_inclusive": 3
+              },
+              "provider": {
+                "type": "minecraft:simple_state_provider",
+                "state": {
+                  "Name": "minecraft:spruce_fence",
+                  "Properties": {
+                    "east": "false",
+                    "north": "false",
+                    "waterlogged": "false",
+                    "south": "false",
+                    "west": "false"
+                  }
+                }
+              }
+            },
+            {
+              "height": {
+                "type": "minecraft:uniform",
+                "min_inclusive": 1,
+                "max_inclusive": 3
+              },
+              "provider": {
+                "type": "minecraft:weighted_state_provider",
+                "entries": [
+                  {
+                    "weight": 1,
+                    "data": {
+                      "Name": "minecraft:oak_leaves",
+                      "Properties": {
+                        "distance": "1",
+                        "persistent": "true",
+                        "waterlogged": "false"
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "placement": []
+    },
+    "feature_true": {
+      "feature": {
+        "type": "minecraft:block_column",
+        "config": {
+          "direction": "up",
+          "allowed_placement": {
+            "type": "minecraft:matching_blocks",
+            "blocks": ["minecraft:air", "minecraft:water"]
+          },
+          "prioritize_tip": false,
+          "layers": [
+            {
+              "height": 1,
+              "provider": {
+                "type": "minecraft:simple_state_provider",
+                "state": {
+                  "Name": "minecraft:ice"
+                }
+              }
+            },
+            {
+              "height": {
+                "type": "minecraft:uniform",
+                "min_inclusive": 1,
+                "max_inclusive": 3
+              },
+              "provider": {
+                "type": "minecraft:simple_state_provider",
+                "state": {
+                  "Name": "minecraft:dark_oak_fence",
+                  "Properties": {
+                    "east": "false",
+                    "north": "false",
+                    "waterlogged": "false",
+                    "south": "false",
+                    "west": "false"
+                  }
+                }
+              }
+            },
+            {
+              "height": {
+                "type": "minecraft:uniform",
+                "min_inclusive": 1,
+                "max_inclusive": 3
+              },
+              "provider": {
+                "type": "minecraft:weighted_state_provider",
+                "entries": [
+                  {
+                    "weight": 1,
+                    "data": {
+                      "Name": "minecraft:mangrove_leaves",
+                      "Properties": {
+                        "distance": "1",
+                        "persistent": "true",
+                        "waterlogged": "false"
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "placement": []
+    }
+  }
+}

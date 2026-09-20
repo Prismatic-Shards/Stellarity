@@ -1,0 +1,103 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_sword",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:unbreakable": {},
+                "tooltip_display": {
+                  "hidden_components": ["unbreakable"]
+                },
+                "minecraft:item_model": "stellarity:dragonblade",
+                "minecraft:custom_data": {
+                  "stellarity:item": "dragonblade"
+                },
+                "minecraft:damage_resistant": {
+                  "types": "#is_fire"
+                },
+                "minecraft:item_name": {
+                  "translate": "item.stellarity.dragonblade",
+                  "color": "#CD6AFF",
+                  "italic": false
+                },
+                "minecraft:rarity": "epic",
+                "minecraft:enchantments": {
+                  "stellarity:_technical/draconic": 1
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                "",
+                {
+                  "translate": "item.stellarity.dragonblade.description",
+                  "color": "#EEEEEE",
+                  "italic": false
+                },
+                "",
+                {
+                  "translate": "item.stellarity.dragonblade.flavor_text",
+                  "color": "#EEEEEE",
+                  "italic": true
+                },
+                {
+                  "translate": "item.stellarity.dragonblade.tip",
+                  "color": "#727272",
+                  "italic": true
+                },
+                "",
+                {
+                  "translate": "Stellarity",
+                  "color": "#eaa7ff",
+                  "font": "stellarity:tooltip",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "minecraft:base_attack_damage",
+                  "attribute": "minecraft:attack_damage",
+                  "amount": 8,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                },
+                {
+                  "id": "minecraft:base_attack_speed",
+                  "attribute": "minecraft:attack_speed",
+                  "amount": -3,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                },
+                {
+                  "id": "stellarity:base_sweeping_damage",
+                  "attribute": "minecraft:sweeping_damage_ratio",
+                  "amount": 0.5,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                },
+                {
+                  "id": "stellarity:weapon_reach",
+                  "attribute": "minecraft:entity_interaction_range",
+                  "amount": 0.3,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

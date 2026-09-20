@@ -1,0 +1,56 @@
+{
+  "description": {
+    "translate": "enchantment.stellarity.infernal_infusion",
+    "color": "#E27E13"
+  },
+  "exclusive_set": [
+    "minecraft:fire_aspect",
+    "minecraft:flame"
+  ],
+  "supported_items": [
+    "minecraft:netherite_sword",
+    "minecraft:crossbow"
+  ],
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 2,
+  "slots": [
+    "mainhand"
+  ],
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "enchanted": "attacker",
+        "affected": "victim",
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "stellarity:mechanic/enchantments/infernal_infusion/apply_prismatic_inferno"
+        },
+        "requirements": {
+          "condition": "minecraft:damage_source_properties",
+          "predicate": {
+            "tags": [
+              {
+                "id": "stellarity:procs_infernal_infusion",
+                "expected": true
+              },
+              {
+                "id": "minecraft:bypasses_invulnerability",
+                "expected": false
+              }
+            ],
+            "is_direct": true
+          }
+        }
+      }
+    ]
+  }
+}

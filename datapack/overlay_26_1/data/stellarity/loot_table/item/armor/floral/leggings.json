@@ -1,0 +1,123 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_leggings",
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "mode": "replace_all",
+              "entity": "this",
+              "lore": [
+                "",
+                {
+                  "translate": "items.stellarity.armor.set_bonus",
+                  "color": "#FF9952",
+                  "italic": false
+                },
+                {
+                  "translate": "items.stellarity.floral_armor.bonus.1",
+                  "color": "#EEEEEE",
+                  "italic": false
+                },
+                {
+                  "translate": "items.stellarity.floral_armor.bonus.2",
+                  "color": "#EEEEEE",
+                  "italic": false
+                },
+                {
+                  "translate": "items.stellarity.floral_armor.bonus.3",
+                  "color": "#EEEEEE",
+                  "italic": false
+                },
+                "",
+                {
+                  "translate": "items.stellarity.armor.piece_bonus",
+                  "color": "#FF9952",
+                  "italic": false
+                },
+                {
+                  "translate": "item.stellarity.floral_leggings.bonus",
+                  "color": "#EEEEEE",
+                  "italic": false
+                },
+                "",
+                {
+                  "translate": "Stellarity",
+                  "color": "#eaa7ff",
+                  "font": "stellarity:tooltip",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "tooltip_display": {
+                  "hidden_components": ["dyed_color"]
+                },
+                "minecraft:dyed_color": 16552659,
+                "minecraft:item_model": "stellarity:floral_leggings",
+                "minecraft:custom_data": {
+                  "stellarity:item": "floral_leggings"
+                },
+                "minecraft:damage_resistant": {
+                  "types": "#is_fire"
+                },
+                "minecraft:equippable": {
+                  "slot": "legs",
+                  "asset_id": "stellarity:floral",
+                  "damage_on_hurt": true,
+                  "equip_sound": "minecraft:item.armor.equip_netherite"
+                },
+                "minecraft:max_damage": 555,
+                "rarity": "uncommon",
+                "minecraft:item_name": {
+                  "translate": "item.stellarity.floral_leggings",
+                  "color": "#FC92D3",
+                  "italic": false
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "minecraft:armor",
+                  "id": "minecraft:armor.leggings",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "attribute": "minecraft:armor_toughness",
+                  "id": "minecraft:armor.leggings",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "attribute": "minecraft:knockback_resistance",
+                  "id": "minecraft:armor.leggings",
+                  "amount": 0.1,
+                  "operation": "add_value",
+                  "slot": "legs"
+                },
+                {
+                  "attribute": "minecraft:attack_damage",
+                  "id": "minecraft:armor.leggings",
+                  "amount": -0.05,
+                  "operation": "add_multiplied_base",
+                  "slot": "legs"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

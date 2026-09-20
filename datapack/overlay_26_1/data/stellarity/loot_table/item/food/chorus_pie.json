@@ -1,0 +1,75 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:pumpkin_pie",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "stellarity:chorus_pie",
+                "minecraft:custom_data": {
+                  "stellarity:item": "chorus_pie"
+                },
+                "minecraft:item_name": {
+                  "translate": "item.stellarity.chorus_pie",
+                  "color": "white"
+                },
+                "minecraft:food": {
+                  "nutrition": 8,
+                  "saturation": 4.8,
+                  "can_always_eat": false
+                },
+                "minecraft:consumable": {
+                  "animation": "eat",
+                  "consume_seconds": 1.6,
+                  "has_consume_particles": true,
+                  "sound": "entity.generic.eat"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "replace_all",
+              "lore": [
+                [
+                  {
+                    "text": "8",
+                    "color": "#EEEEEE",
+                    "italic": false
+                  },
+                  {
+                    "text": " 🍖",
+                    "color": "#B88458",
+                    "italic": false
+                  },
+                  " ",
+                  {
+                    "text": "4.8",
+                    "color": "#EEEEEE",
+                    "italic": false
+                  },
+                  {
+                    "text": " 🍖",
+                    "color": "#FFDE4C",
+                    "italic": false
+                  }
+                ],
+                "",
+                {
+                  "translate": "Stellarity",
+                  "color": "#eaa7ff",
+                  "font": "stellarity:tooltip",
+                  "italic": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

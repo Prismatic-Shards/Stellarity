@@ -755,5 +755,11 @@
   "subtitles.stellarity.item.living_flesh.boost": "Living Flesh hurts",
   "subtitles.stellarity.item.void_pendant.zap": "Electric Shock",
   "trim_material.stellarity.chorus": "Chorus Material",
-  "trim_material.stellarity.enderite": "Enderite Material"
+  "trim_material.stellarity.enderite": "Enderite Material",
+  "death.attack.stellarity.dot.holy_flames.1": "%1$s згорів дотла у святому полум'ї",
+  "death.attack.stellarity.dot.holy_flames.2": "%1$s був очищений божественним вогнем",
+  "death.attack.stellarity.carcanet.1": "%1$s був вражений падаючою зіркою %2$s",
+  "death.attack.stellarity.carcanet.2": "%1$s був розчавлений зірками, призваними %2$s",
+  "death.attack.stellarity.sharanga_explosion": "%1$s потрапив під променистий вибух %2$s",
+  "message.stellarity.void_pendant.amethyst_ready": "Здібність готова:"
 }

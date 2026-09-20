@@ -1,0 +1,119 @@
+{
+  "description": {
+    "translate": "enchantment.stellarity.critical_strike",
+    "color": "#d600f4"
+  },
+  "exclusive_set": "#minecraft:exclusive_set/damage",
+  "supported_items": "#minecraft:enchantable/sharp_weapon",
+  "primary_items": "#minecraft:swords",
+  "weight": 1,
+  "max_level": 3,
+  "min_cost": {
+    "base": 50,
+    "per_level_above_first": 11
+  },
+  "max_cost": {
+    "base": 75,
+    "per_level_above_first": 15
+  },
+  "anvil_cost": 4,
+  "slots": ["mainhand"],
+  "effects": {
+    "minecraft:damage": [
+      {
+        "effect": {
+          "type": "minecraft:multiply",
+          "factor": 2
+        },
+        "requirements": {
+          "condition": "minecraft:entity_scores",
+          "entity": "attacker",
+          "scores": {
+            "stellarity.enchantments.critical_strike.can_crit": 1
+          }
+        }
+      }
+    ],
+    "minecraft:post_attack": [
+      {
+        "enchanted": "attacker",
+        "affected": "victim",
+        "effect": {
+          "type": "minecraft:all_of",
+          "effects": [
+            {
+              "type": "minecraft:run_function",
+              "function": "stellarity:mechanic/enchantments/crit_strike/critical_hit"
+            }
+          ]
+        },
+        "requirements": [
+          {
+            "condition": "minecraft:all_of",
+            "terms": [
+              {
+                "condition": "minecraft:entity_scores",
+                "entity": "attacker",
+                "scores": {
+                  "stellarity.enchantments.critical_strike.can_crit": 1
+                }
+              },
+              {
+                "condition": "minecraft:damage_source_properties",
+                "predicate": {
+                  "is_direct": true
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "enchanted": "attacker",
+        "affected": "attacker",
+        "effect": {
+          "type": "minecraft:all_of",
+          "effects": [
+            {
+              "type": "minecraft:run_function",
+              "function": "stellarity:mechanic/enchantments/crit_strike/next_attack_will_crit"
+            }
+          ]
+        },
+        "requirements": [
+          {
+            "condition": "minecraft:all_of",
+            "terms": [
+              {
+                "condition": "minecraft:inverted",
+                "term": {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "stellarity.enchantments.critical_strike.can_crit": 1
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:random_chance_with_enchanted_bonus",
+                "enchantment": "stellarity:critical_strike",
+                "unenchanted_chance": 0,
+                "enchanted_chance": {
+                  "type": "minecraft:linear",
+                  "base": 0.1,
+                  "per_level_above_first": 0.1
+                }
+              },
+              {
+                "condition": "minecraft:damage_source_properties",
+                "predicate": {
+                  "is_direct": true
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

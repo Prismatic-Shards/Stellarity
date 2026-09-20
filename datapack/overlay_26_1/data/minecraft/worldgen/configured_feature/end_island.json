@@ -1,0 +1,249 @@
+{
+  "type": "minecraft:random_selector",
+  "config": {
+    "features": [
+      {
+        "chance": 0.6,
+        "feature": {
+          "feature": {
+            "type": "minecraft:geode",
+            "config": {
+              "blocks": {
+                "filling_provider": {
+                  "type": "minecraft:simple_state_provider",
+                  "state": {
+                    "Name": "minecraft:end_stone"
+                  }
+                },
+                "inner_layer_provider": {
+                  "type": "minecraft:simple_state_provider",
+                  "state": {
+                    "Name": "minecraft:end_stone"
+                  }
+                },
+                "alternate_inner_layer_provider": {
+                  "type": "minecraft:simple_state_provider",
+                  "state": {
+                    "Name": "minecraft:end_stone"
+                  }
+                },
+                "middle_layer_provider": {
+                  "type": "minecraft:weighted_state_provider",
+                  "entries": [
+                    {
+                      "weight": 1,
+                      "data": {
+                        "Name": "minecraft:air"
+                      }
+                    },
+                    {
+                      "weight": 10,
+                      "data": {
+                        "Name": "minecraft:end_stone"
+                      }
+                    }
+                  ]
+                },
+                "outer_layer_provider": {
+                  "type": "minecraft:weighted_state_provider",
+                  "entries": [
+                    {
+                      "weight": 7,
+                      "data": {
+                        "Name": "minecraft:end_stone"
+                      }
+                    },
+                    {
+                      "weight": 1,
+                      "data": {
+                        "Name": "minecraft:air"
+                      }
+                    }
+                  ]
+                },
+                "inner_placements": [
+                  {
+                    "Name": "minecraft:end_stone"
+                  }
+                ],
+                "cannot_replace": "#minecraft:features_cannot_replace",
+                "invalid_blocks": "#minecraft:features_cannot_replace"
+              },
+              "layers": {
+                "filling": 1,
+                "inner_layer": 1.5,
+                "middle_layer": 2,
+                "outer_layer": 2.75
+              },
+              "crack": {
+                "generate_crack_chance": 0,
+                "base_crack_size": 1.2,
+                "crack_point_offset": 7
+              },
+              "noise_multiplier": 0.095,
+              "use_potential_placements_chance": 0,
+              "use_alternate_layer0_chance": 0,
+              "placements_require_layer0_alternate": false,
+              "outer_wall_distance": {
+                "type": "minecraft:uniform",
+                "min_inclusive": 3,
+                "max_inclusive": 7
+              },
+              "distribution_points": {
+                "type": "minecraft:biased_to_bottom",
+                "min_inclusive": 3,
+                "max_inclusive": 5
+              },
+              "point_offset": {
+                "type": "minecraft:uniform",
+                "min_inclusive": 3,
+                "max_inclusive": 6
+              },
+              "min_gen_offset": -16,
+              "max_gen_offset": 16,
+              "invalid_blocks_threshold": 30
+            }
+          },
+          "placement": []
+        }
+      },
+      {
+        "chance": 0.07,
+        "feature": {
+          "feature": {
+            "type": "minecraft:geode",
+            "config": {
+              "blocks": {
+                "filling_provider": {
+                  "type": "minecraft:simple_state_provider",
+                  "state": {
+                    "Name": "minecraft:air"
+                  }
+                },
+                "inner_layer_provider": {
+                  "type": "minecraft:simple_state_provider",
+                  "state": {
+                    "Name": "minecraft:amethyst_block"
+                  }
+                },
+                "alternate_inner_layer_provider": {
+                  "type": "minecraft:simple_state_provider",
+                  "state": {
+                    "Name": "minecraft:budding_amethyst"
+                  }
+                },
+                "middle_layer_provider": {
+                  "type": "minecraft:weighted_state_provider",
+                  "entries": [
+                    {
+                      "weight": 1,
+                      "data": {
+                        "Name": "minecraft:air"
+                      }
+                    },
+                    {
+                      "weight": 10,
+                      "data": {
+                        "Name": "minecraft:end_stone"
+                      }
+                    }
+                  ]
+                },
+                "outer_layer_provider": {
+                  "type": "minecraft:weighted_state_provider",
+                  "entries": [
+                    {
+                      "weight": 7,
+                      "data": {
+                        "Name": "minecraft:end_stone"
+                      }
+                    },
+                    {
+                      "weight": 1,
+                      "data": {
+                        "Name": "minecraft:air"
+                      }
+                    }
+                  ]
+                },
+                "inner_placements": [
+                  {
+                    "Name": "minecraft:small_amethyst_bud",
+                    "Properties": {
+                      "facing": "north",
+                      "waterlogged": "false"
+                    }
+                  },
+                  {
+                    "Name": "minecraft:medium_amethyst_bud",
+                    "Properties": {
+                      "facing": "north",
+                      "waterlogged": "false"
+                    }
+                  },
+                  {
+                    "Name": "minecraft:large_amethyst_bud",
+                    "Properties": {
+                      "facing": "north",
+                      "waterlogged": "false"
+                    }
+                  },
+                  {
+                    "Name": "minecraft:amethyst_cluster",
+                    "Properties": {
+                      "facing": "north",
+                      "waterlogged": "false"
+                    }
+                  }
+                ],
+                "cannot_replace": "#minecraft:features_cannot_replace",
+                "invalid_blocks": "#minecraft:features_cannot_replace"
+              },
+              "layers": {
+                "filling": 2,
+                "inner_layer": 2.2,
+                "middle_layer": 3,
+                "outer_layer": 4
+              },
+              "crack": {
+                "generate_crack_chance": 0,
+                "base_crack_size": 1.2,
+                "crack_point_offset": 7
+              },
+              "noise_multiplier": 0.015,
+              "use_potential_placements_chance": 0.36,
+              "use_alternate_layer0_chance": 0.14,
+              "placements_require_layer0_alternate": false,
+              "outer_wall_distance": {
+                "type": "minecraft:uniform",
+                "min_inclusive": 4,
+                "max_inclusive": 7
+              },
+              "distribution_points": {
+                "type": "minecraft:biased_to_bottom",
+                "min_inclusive": 3,
+                "max_inclusive": 5
+              },
+              "point_offset": {
+                "type": "minecraft:uniform",
+                "min_inclusive": 3,
+                "max_inclusive": 6
+              },
+              "min_gen_offset": -16,
+              "max_gen_offset": 16,
+              "invalid_blocks_threshold": 30
+            }
+          },
+          "placement": []
+        }
+      }
+    ],
+    "default": {
+      "feature": {
+        "type": "minecraft:end_island",
+        "config": {}
+      },
+      "placement": []
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:ominous_trial_key",
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                "",
+                {
+                  "translate": "item.stellarity.gilded_purpur_key.description",
+                  "color": "#EEEEEE",
+                  "italic": false
+                },
+                "",
+                {
+                  "translate": "Stellarity",
+                  "color": "#eaa7ff",
+                  "font": "stellarity:tooltip",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "stellarity:gilded_purpur_key",
+                "minecraft:custom_data": {
+                  "stellarity:item": "gilded_purpur_key"
+                },
+                "minecraft:item_name": {
+                  "translate": "item.stellarity.gilded_purpur_key"
+                },
+                "rarity": "rare"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:egg",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_lore",
+                            "entity": "this",
+                            "lore": [
+                                "",
+                                {
+                                    "translate": "Stellarity",
+                                    "color": "#eaa7ff",
+                                    "font": "stellarity:tooltip",
+                                    "italic": false
+                                }
+                            ],
+                            "mode": "replace_all"
+                        },
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:item_model": "stellarity:ender_egg",
+                                "minecraft:custom_data": {
+                                    "stellarity:item": "ender_egg"
+                                },
+                                "minecraft:item_name": {
+                                    "translate": "item.stellarity.ender_egg",
+                                    "italic": false
+                                },
+                                "minecraft:chicken/variant": "stellarity:end"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

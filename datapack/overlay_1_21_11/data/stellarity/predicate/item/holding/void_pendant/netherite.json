@@ -1,0 +1,21 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "slots": {
+      "container.*": {
+        "items": ["minecraft:endermite_spawn_egg"],
+        "predicates": {
+          "minecraft:custom_data": {
+            "stellarity:item": "void_pendant"
+          },
+          "minecraft:enchantments": [
+            {
+              "enchantments": "stellarity:_technical/void_pendant/netherite"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

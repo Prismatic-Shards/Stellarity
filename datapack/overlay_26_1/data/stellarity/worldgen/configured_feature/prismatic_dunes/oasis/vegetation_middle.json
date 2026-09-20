@@ -1,0 +1,73 @@
+{
+  "type": "minecraft:simple_block",
+  "config": {
+    "to_place": {
+      "type": "minecraft:weighted_state_provider",
+      "entries": [
+        {
+          "weight": 3,
+          "data": {
+            "Name": "minecraft:acacia_leaves",
+            "Properties": {
+              "distance": "1",
+              "persistent": "true",
+              "waterlogged": "false"
+            }
+          }
+        },
+        {
+          "weight": 1,
+          "data": {
+            "Name": "minecraft:pink_petals",
+            "Properties": {
+              "facing": "north",
+              "flower_amount": "4"
+            }
+          }
+        },
+        {
+          "weight": 3,
+          "data": {
+            "Name": "minecraft:orange_tulip"
+          }
+        },
+        {
+          "weight": 4,
+          "data": {
+            "Name": "minecraft:pink_tulip"
+          }
+        },
+        {
+          "weight": 4,
+          "data": {
+            "Name": "minecraft:white_tulip"
+          }
+        },
+        {
+          "weight": 4,
+          "data": {
+            "Name": "minecraft:allium"
+          }
+        },
+        {
+          "weight": 4,
+          "data": {
+            "Name": "minecraft:lilac",
+            "Properties": {
+              "half": "lower"
+            }
+          }
+        },
+        {
+          "weight": 3,
+          "data": {
+            "Name": "minecraft:pitcher_plant",
+            "Properties": {
+              "half": "lower"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

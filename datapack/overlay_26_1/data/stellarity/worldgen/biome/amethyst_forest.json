@@ -1,0 +1,114 @@
+{
+  "temperature": 0.8,
+  "downfall": 0.4,
+  "has_precipitation": false,
+  "creature_spawn_probability": 0.2,
+  "attributes": {
+    "visual/sky_color": 0,
+    "visual/fog_color": 0,
+    "visual/water_fog_color": 0,
+    "audio/ambient_sounds": {
+      "loop": {
+        "sound_id": "stellarity:ambient.the_end.heavenly_grim"
+      },
+      "mood": {
+        "sound": "ambient.underwater.loop.additions.rare",
+        "tick_delay": 1000,
+        "block_search_extent": 4,
+        "offset": 2
+      },
+      "additions": {
+        "sound": "ambient.underwater.loop.additions.ultra_rare",
+        "tick_chance": 0.001
+      }
+    },
+    "visual/ambient_particles": {
+      "modifier": "override",
+      "argument": [
+        {
+          "particle": {
+            "type": "cherry_leaves"
+          },
+          "probability": 0.00077
+        }
+      ]
+    }
+  },
+  "effects": {
+    "water_color": 15979007,
+    "grass_color": 14593535,
+    "foliage_color": 13931775,
+    "dry_foliage_color": 11231197
+  },
+  "spawners": {
+    "monster": [
+      {
+        "type": "minecraft:enderman",
+        "weight": 33,
+        "minCount": 4,
+        "maxCount": 4
+      }
+    ],
+    "creature": [
+      {
+        "type": "pig",
+        "maxCount": 4,
+        "minCount": 1,
+        "weight": 25
+      },
+      {
+        "type": "cow",
+        "maxCount": 4,
+        "minCount": 1,
+        "weight": 25
+      },
+      {
+        "type": "sheep",
+        "maxCount": 4,
+        "minCount": 1,
+        "weight": 25
+      },
+      {
+        "type": "chicken",
+        "maxCount": 4,
+        "minCount": 1,
+        "weight": 25
+      },
+      {
+        "type": "wolf",
+        "maxCount": 4,
+        "minCount": 1,
+        "weight": 20
+      }
+    ]
+  },
+  "spawn_costs": {},
+  "carvers": [],
+  "features": [
+    [
+      "stellarity:amethyst_forest/island/calcite_bottom"
+    ],
+    [],
+    [
+      "stellarity:amethyst_forest/geode/amethyst",
+      "stellarity:amethyst_forest/rock/tuff",
+      "stellarity:amethyst_forest/vegetation/patch_crying_obsidian",
+      "stellarity:amethyst_forest/dirt"
+    ],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      "stellarity:amethyst_forest/trees",
+      "stellarity:amethyst_forest/vegetation/amethyst",
+      "stellarity:amethyst_forest/vegetation/flower",
+      "stellarity:amethyst_forest/vegetation/patch_grass",
+      "minecraft:patch_bush",
+      "stellarity:amethyst_forest/roots"
+    ],
+    []
+  ]
+}

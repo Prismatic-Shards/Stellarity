@@ -1,0 +1,17 @@
+{
+  "values": [
+    "minecraft:end_midlands",
+    "stellarity:end_shrubland",
+    "stellarity:frozen_shrubland",
+    "stellarity:frozen_marsh",
+    "stellarity:frozen_spikes",
+    "stellarity:warped_marsh",
+    "minecraft:end_highlands",
+    "stellarity:amethyst_forest",
+    "stellarity:prismarine_forest",
+    "stellarity:flesh_tundra",
+    "stellarity:frosted_valley",
+    "stellarity:fiery_hills",
+    "stellarity:endless_dunes"
+  ]
+}

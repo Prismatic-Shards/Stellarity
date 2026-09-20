@@ -1,0 +1,80 @@
+{
+	"temperature": 0.8,
+	"downfall": 0.4,
+	"has_precipitation": false,
+	"creature_spawn_probability": 0.3,
+	"attributes": {
+		"visual/sky_color": 0,
+		"visual/fog_color": 0,
+		"visual/water_fog_color": 6798273,
+		"audio/ambient_sounds": {
+			"loop": {
+				"sound_id": "stellarity:ambient.the_end.heavenly_blessed"
+			},
+			"mood": {
+				"sound": "ambient.warped_forest.mood",
+				"tick_delay": 1200,
+				"block_search_extent": 4,
+				"offset": 1
+			},
+			"additions": {
+				"sound": "ambient.warped_forest.additions",
+				"tick_chance": 0.0111
+			}
+		},
+		"visual/ambient_particles": {
+			"modifier": "override",
+			"argument": [
+				{
+					"particle": {
+						"type": "minecraft:spore_blossom_air"
+					},
+					"probability": 0.001
+				}
+			]
+		}
+	},
+	"effects": {
+		"water_color": 10672615,
+		"grass_color": 117978,
+		"foliage_color": 56800
+	},
+	"spawners": {
+		"water_ambient": [
+			{
+				"type": "minecraft:tropical_fish",
+				"weight": 25,
+				"minCount": 8,
+				"maxCount": 8
+			}
+		],
+		"creature": [
+			{
+				"type": "frog",
+				"maxCount": 4,
+				"minCount": 1,
+				"weight": 100
+			}
+		]
+	},
+	"spawn_costs": {},
+	"carvers": [],
+	"features": [
+		["stellarity:global/stalactite"],
+		["stellarity:warped_marsh/dripping_water"],
+		[],
+		["stellarity:warped_marsh/puddles"],
+		[],
+		[],
+		[],
+		[],
+		[
+			"stellarity:warped_marsh/vegetation_grass",
+			"stellarity:warped_marsh/vegetation_water",
+			"stellarity:warped_marsh/vegetation_land",
+			"stellarity:warped_marsh/slime",
+			"stellarity:warped_marsh/froglight"
+		],
+		[]
+	]
+}

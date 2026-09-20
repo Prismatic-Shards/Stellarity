@@ -1,0 +1,123 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:pufferfish",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "stellarity:pufferfish",
+                "minecraft:custom_data": {
+                  "stellarity:item": "pufferfish"
+                },
+                "minecraft:enchantment_glint_override": true,
+                "rarity": "rare",
+                "minecraft:item_name": [
+                  {
+                    "text": "P",
+                    "color": "#f9f9f9",
+                    "italic": false
+                  },
+                  {
+                    "text": "u",
+                    "color": "#f9f1e1",
+                    "italic": false
+                  },
+                  {
+                    "text": "f",
+                    "color": "#faeaca",
+                    "italic": false
+                  },
+                  {
+                    "text": "f",
+                    "color": "#fbe3b2",
+                    "italic": false
+                  },
+                  {
+                    "text": "e",
+                    "color": "#fbdc9b",
+                    "italic": false
+                  },
+                  {
+                    "text": "r",
+                    "color": "#fcd483",
+                    "italic": false
+                  },
+                  {
+                    "text": "f",
+                    "color": "#fdcd6c",
+                    "italic": false
+                  },
+                  {
+                    "text": "i",
+                    "color": "#fdc654",
+                    "italic": false
+                  },
+                  {
+                    "text": "s",
+                    "color": "#febf3d",
+                    "italic": false
+                  },
+                  {
+                    "text": "h",
+                    "color": "#ffb826",
+                    "italic": false
+                  }
+                ],
+                "minecraft:food": {
+                  "nutrition": 1,
+                  "saturation": 0,
+                  "can_always_eat": true
+                },
+                "minecraft:consumable": {
+                  "animation": "eat",
+                  "consume_seconds": 5,
+                  "has_consume_particles": true,
+                  "sound": "entity.generic.eat"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                "",
+                {
+                  "text": "'A highly optimized Paper fork",
+                  "color": "#EEEEEE",
+                  "italic": true
+                },
+                {
+                  "text": "designed for large servers",
+                  "color": "#EEEEEE",
+                  "italic": true
+                },
+                {
+                  "text": "requiring both maximum performance,",
+                  "color": "#EEEEEE",
+                  "italic": true
+                },
+                {
+                  "text": "stability, and \"enterprise\" features.'",
+                  "color": "#EEEEEE",
+                  "italic": true
+                },
+                "",
+                {
+                  "translate": "Stellarity",
+                  "color": "#eaa7ff",
+                  "font": "stellarity:tooltip",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

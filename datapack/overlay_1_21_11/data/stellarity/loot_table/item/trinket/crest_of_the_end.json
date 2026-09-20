@@ -1,0 +1,109 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:shield",
+          "functions": [
+            {
+              "function": "minecraft:set_banner_pattern",
+              "patterns": [
+                {
+                  "pattern": "minecraft:base",
+                  "color": "purple"
+                },
+                {
+                  "pattern": "minecraft:gradient",
+                  "color": "magenta"
+                },
+                {
+                  "pattern": "minecraft:triangle_top",
+                  "color": "black"
+                },
+                {
+                  "pattern": "minecraft:triangle_bottom",
+                  "color": "black"
+                },
+                {
+                  "pattern": "minecraft:cross",
+                  "color": "purple"
+                },
+                {
+                  "pattern": "minecraft:curly_border",
+                  "color": "black"
+                },
+                {
+                  "pattern": "minecraft:flower",
+                  "color": "purple"
+                },
+                {
+                  "pattern": "minecraft:flower",
+                  "color": "black"
+                }
+              ],
+              "append": false
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": {
+                  "stellarity:item": "crest_of_the_end"
+                },
+                "rarity": "rare",
+                "minecraft:item_name": {
+                  "translate": "item.stellarity.crest_of_the_end",
+                  "color": "#9936D6",
+                  "italic": false
+                },
+                "minecraft:damage_resistant": {
+                  "types": "#is_fire"
+                },
+                "tooltip_display": {
+                  "hidden_components": ["banner_patterns"]
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "replace_all",
+              "lore": [
+                "",
+                {
+                  "translate": "item.stellarity.crest_of_the_end.description.1",
+                  "color": "#EEEEEE",
+                  "italic": false
+                },
+                {
+                  "translate": "item.stellarity.crest_of_the_end.description.2",
+                  "color": "#EEEEEE",
+                  "italic": false
+                },
+                "",
+                {
+                  "translate": "Stellarity",
+                  "color": "#eaa7ff",
+                  "font": "stellarity:tooltip",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "minecraft:attack_damage",
+                  "id": "stellarity:crest_of_the_end.attack_damage",
+                  "amount": 0.05,
+                  "operation": "add_multiplied_total",
+                  "slot": "hand"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

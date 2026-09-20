@@ -1,0 +1,134 @@
+{
+	"temperature": 0.8,
+	"downfall": 0.4,
+	"has_precipitation": false,
+	"creature_spawn_probability": 0.2,
+	"attributes": {
+		"visual/sky_color": 0,
+		"visual/fog_color": 0,
+		"visual/water_fog_color": 270131,
+		"audio/ambient_sounds": {
+			"loop": {
+				"sound_id": "stellarity:ambient.the_end.dark"
+			},
+			"mood": {
+				"sound": "ambient.soul_sand_valley.mood",
+				"tick_delay": 1000,
+				"block_search_extent": 2,
+				"offset": 1
+			},
+			"additions": {
+				"sound": "ambient.soul_sand_valley.additions",
+				"tick_chance": 0.0111
+			}
+		},
+		"visual/ambient_particles": {
+			"modifier": "override",
+			"argument": [
+				{
+					"particle": {
+						"type": "spore_blossom_air"
+					},
+					"probability": 0.0002
+				}
+			]
+		}
+	},
+	"effects": {
+		"water_color": 4445678,
+		"grass_color": 16699956,
+		"foliage_color": 16699956,
+		"dry_foliage_color": 12426798
+	},
+	"spawners": {
+		"monster": [
+			{
+				"type": "minecraft:enderman",
+				"weight": 60,
+				"minCount": 4,
+				"maxCount": 4
+			},
+			{
+				"type": "minecraft:zombie",
+				"weight": 30,
+				"minCount": 4,
+				"maxCount": 4
+			},
+			{
+				"type": "minecraft:phantom",
+				"weight": 10,
+				"minCount": 2,
+				"maxCount": 2
+			}
+		],
+		"creature": [
+			{
+				"type": "pig",
+				"maxCount": 4,
+				"minCount": 1,
+				"weight": 20
+			},
+			{
+				"type": "cow",
+				"maxCount": 4,
+				"minCount": 1,
+				"weight": 20
+			},
+			{
+				"type": "sheep",
+				"maxCount": 4,
+				"minCount": 1,
+				"weight": 20
+			},
+			{
+				"type": "chicken",
+				"maxCount": 4,
+				"minCount": 1,
+				"weight": 20
+			},
+			{
+				"type": "wolf",
+				"maxCount": 4,
+				"minCount": 1,
+				"weight": 20
+			}
+		]
+	},
+	"spawn_costs": {
+		"minecraft:enderman": {
+			"charge": 0.7,
+			"energy_budget": 1
+		},
+		"minecraft:zombie": {
+			"charge": 0.7,
+			"energy_budget": 1
+		},
+		"minecraft:phantom": {
+			"energy_budget": 0.3,
+			"charge": 1
+		}
+	},
+	"carvers": [],
+	"features": [
+		[
+			"stellarity:global/stalactite",
+			"stellarity:end_wilds/dirt",
+			"stellarity:end_wilds/roots"
+		],
+		[],
+		[],
+		[],
+		[],
+		[],
+		[],
+		[],
+		[
+			"stellarity:end_wilds/single_tree",
+			"stellarity:end_wilds/baobab_forest",
+			"stellarity:end_wilds/chorus_plant",
+			"stellarity:end_wilds/grass",
+			"stellarity:end_wilds/large_bushes"
+		],
+		["stellarity:global/end_dungeon", "stellarity:global/fossil"]
+	]
+}

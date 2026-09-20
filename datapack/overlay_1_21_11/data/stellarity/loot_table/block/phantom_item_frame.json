@@ -1,0 +1,54 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:item_frame",
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "mode": "replace_all",
+              "entity": "this",
+              "lore": [
+                {
+                  "text": ""
+                },
+                {
+                  "translate": "item.stellarity.phantom_item_frame.description",
+                  "color": "#EEEEEE",
+                  "italic": false
+                },
+                "",
+                {
+                  "translate": "Stellarity",
+                  "color": "#eaa7ff",
+                  "font": "stellarity:tooltip",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "stellarity:phantom_item_frame",
+                "minecraft:entity_data": {
+                  "id": "minecraft:item_frame",
+                  "Tags": ["stellarity.phantom_item_frame"]
+                },
+                "minecraft:rarity": "uncommon",
+                "minecraft:custom_data": {
+                  "stellarity:item": "phantom_item_frame"
+                },
+                "minecraft:item_name": {
+                  "translate": "item.stellarity.phantom_item_frame"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

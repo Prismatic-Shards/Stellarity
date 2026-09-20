@@ -1,0 +1,30 @@
+{
+  "parent": "stellarity:event/root",
+  "criteria": {
+    "criteria": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:reference",
+            "name": "stellarity:item/armor/wearing_full_champion_armor"
+          }
+        ],
+        "damage": {
+          "type": {
+            "tags": [
+              {
+                "id": "stellarity:melee",
+                "expected": true
+              }
+            ],
+            "is_direct": true
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "stellarity:item/armor/champion/attack"
+  }
+}

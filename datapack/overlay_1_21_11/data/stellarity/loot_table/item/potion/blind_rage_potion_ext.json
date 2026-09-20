@@ -1,0 +1,56 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:potion_contents": {
+                  "custom_color": 7230976,
+                  "custom_effects": [
+                    {
+                      "id": "minecraft:strength",
+                      "amplifier": 2,
+                      "duration": 450
+                    },
+                    {
+                      "id": "minecraft:darkness",
+
+                      "duration": 450
+                    }
+                  ]
+                },
+                "minecraft:custom_data": {
+                  "stellarity:item": "blind_rage_potion_ext"
+                },
+                "minecraft:custom_name": {
+                  "translate": "item.stellarity.blind_rage_potion",
+                  "color": "white",
+                  "italic": false
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "replace_all",
+              "lore": [
+                "",
+                {
+                  "translate": "Stellarity",
+                  "color": "#eaa7ff",
+                  "font": "stellarity:tooltip",
+                  "italic": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

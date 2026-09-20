@@ -1,0 +1,112 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "mode": "replace_all",
+              "entity": "this",
+              "lore": [
+                "",
+                {
+                  "translate": "items.stellarity.armor.set_bonus",
+                  "color": "#FF9952",
+                  "italic": false
+                },
+                {
+                  "translate": "items.stellarity.champion_armor.bonus.1",
+                  "color": "#EEEEEE",
+                  "italic": false
+                },
+                {
+                  "translate": "items.stellarity.champion_armor.bonus.2",
+                  "color": "#EEEEEE",
+                  "italic": false
+                },
+                {
+                  "translate": "items.stellarity.champion_armor.bonus.3",
+                  "color": "#EEEEEE",
+                  "italic": false
+                },
+                "",
+                {
+                  "translate": "Stellarity",
+                  "color": "#eaa7ff",
+                  "font": "stellarity:tooltip",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "tooltip_display": {
+                  "hidden_components": ["dyed_color"]
+                },
+                "minecraft:dyed_color": 11041988,
+                "minecraft:item_model": "stellarity:champion_boots",
+                "minecraft:custom_data": {
+                  "stellarity:item": "champion_boots"
+                },
+                "minecraft:damage_resistant": {
+                  "types": "#is_fire"
+                },
+                "minecraft:equippable": {
+                  "slot": "feet",
+                  "asset_id": "stellarity:champion",
+                  "damage_on_hurt": true,
+                  "equip_sound": "minecraft:item.armor.equip_netherite"
+                },
+                "minecraft:max_damage": 429,
+                "rarity": "uncommon",
+                "minecraft:item_name": {
+                  "translate": "item.stellarity.champion_boots",
+                  "color": "#A87CC4",
+                  "italic": false
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "minecraft:armor",
+                  "id": "minecraft:armor.boots",
+                  "amount": 3,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "attribute": "minecraft:armor_toughness",
+                  "id": "minecraft:armor.boots",
+                  "amount": 2,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "attribute": "minecraft:knockback_resistance",
+                  "id": "minecraft:armor.boots",
+                  "amount": 0.08,
+                  "operation": "add_value",
+                  "slot": "feet"
+                },
+                {
+                  "attribute": "minecraft:attack_damage",
+                  "id": "minecraft:armor.boots",
+                  "amount": 0.025,
+                  "operation": "add_multiplied_base",
+                  "slot": "feet"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:shield",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "tooltip_display": {
+                                    "hidden_components": [
+                                        "banner_patterns"
+                                    ]
+                                },
+                                "minecraft:max_damage": 512,
+                                "minecraft:custom_data": {
+                                    "stellarity:item": "prismatic_shield"
+                                },
+                                "banner_patterns": [
+                                    {
+                                        "pattern": "minecraft:gradient_up",
+                                        "color": "light_blue"
+                                    },
+                                    {
+                                        "pattern": "gradient",
+                                        "color": "pink"
+                                    },
+                                    {
+                                        "pattern": "minecraft:triangles_bottom",
+                                        "color": "white"
+                                    },
+                                    {
+                                        "pattern": "minecraft:triangles_top",
+                                        "color": "white"
+                                    },
+                                    {
+                                        "pattern": "minecraft:curly_border",
+                                        "color": "white"
+                                    },
+                                    {
+                                        "color": "white",
+                                        "pattern": "minecraft:flower"
+                                    }
+                                ],
+                                "rarity": "epic",
+                                "minecraft:damage_resistant": {
+                                    "types": "#is_fire"
+                                },
+                                "minecraft:item_name": {
+                                    "translate": "item.stellarity.prismatic_shield",
+                                    "color": "#FF76D0",
+                                    "italic": false
+                                }
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "mode": "replace_all",
+                            "lore": [
+                                "",
+                                {
+                                    "translate": "Stellarity",
+                                    "color": "#CC26FF",
+                                    "italic": true
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,57 @@
+{
+  "type": "minecraft:block_column",
+  "config": {
+    "direction": "down",
+    "allowed_placement": {
+      "type": "minecraft:matching_blocks",
+      "blocks": ["minecraft:air"]
+    },
+    "prioritize_tip": true,
+    "layers": [
+      {
+        "height": {
+          "type": "minecraft:uniform",
+          "min_inclusive": 9,
+          "max_inclusive": 24
+        },
+        "provider": {
+          "type": "minecraft:simple_state_provider",
+          "state": {
+            "Name": "minecraft:bone_block",
+            "Properties": {
+              "axis": "y"
+            }
+          }
+        }
+      },
+      {
+        "height": {
+          "type": "minecraft:uniform",
+          "min_inclusive": 0,
+          "max_inclusive": 1
+        },
+        "provider": {
+          "type": "minecraft:weighted_state_provider",
+          "entries": [
+            {
+              "weight": 40,
+              "data": {
+                "Name": "minecraft:air"
+              }
+            },
+            {
+              "weight": 1,
+              "data": {
+                "Name": "minecraft:soul_lantern",
+                "Properties": {
+                  "hanging": "true",
+                  "waterlogged": "false"
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

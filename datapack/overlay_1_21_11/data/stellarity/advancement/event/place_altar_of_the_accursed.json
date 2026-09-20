@@ -1,0 +1,26 @@
+{
+  "parent": "stellarity:event/root",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": ["minecraft:end_portal_frame"],
+              "predicates": {
+                "minecraft:custom_data": {
+                  "stellarity:item": "altar_of_the_accursed"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "stellarity:mechanic/altar_of_the_accursed/place"
+  }
+}

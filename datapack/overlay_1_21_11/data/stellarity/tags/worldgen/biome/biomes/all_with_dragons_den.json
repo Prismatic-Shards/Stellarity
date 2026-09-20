@@ -1,0 +1,10 @@
+{
+  "values": [
+    "#stellarity:biomes/all",
+    {
+      "id": "stellarity:dragons_den",
+      "required": false
+    },
+    "minecraft:the_end"
+  ]
+}

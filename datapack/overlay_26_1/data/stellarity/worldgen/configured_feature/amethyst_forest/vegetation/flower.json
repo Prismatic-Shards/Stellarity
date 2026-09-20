@@ -1,0 +1,73 @@
+{
+  "type": "minecraft:simple_block",
+  "config": {
+    "to_place": {
+      "type": "minecraft:noise_provider",
+      "seed": 12345,
+      "noise": {
+        "firstOctave": 1,
+        "amplitudes": [
+          1,
+          1
+        ]
+      },
+      "scale": 1,
+      "states": [
+        {
+          "Name": "minecraft:allium"
+        },
+        {
+          "Name": "minecraft:amethyst_cluster",
+          "Properties": {
+            "facing": "up",
+            "waterlogged": "false"
+          }
+        },
+        {
+          "Name": "minecraft:pink_tulip"
+        },
+        {
+          "Name": "minecraft:peony",
+          "Properties": {
+            "half": "lower"
+          }
+        },
+        {
+          "Name": "minecraft:pink_tulip"
+        },
+        {
+          "Name": "minecraft:allium"
+        },
+        {
+          "Name": "minecraft:amethyst_cluster",
+          "Properties": {
+            "facing": "up",
+            "waterlogged": "false"
+          }
+        },
+        {
+          "Name": "minecraft:pink_tulip"
+        },
+        {
+          "Name": "minecraft:allium"
+        },
+        {
+          "Name": "minecraft:lilac",
+          "Properties": {
+            "half": "lower"
+          }
+        },
+        {
+          "Name": "minecraft:allium"
+        },
+        {
+          "Name": "minecraft:amethyst_cluster",
+          "Properties": {
+            "facing": "up",
+            "waterlogged": "false"
+          }
+        }
+      ]
+    }
+  }
+}

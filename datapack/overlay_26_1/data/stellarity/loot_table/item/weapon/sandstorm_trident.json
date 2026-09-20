@@ -1,0 +1,86 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:trident",
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                "",
+                {
+                  "translate": "item.stellarity.sandstorm_trident.description",
+                  "color": "#EEEEEE",
+                  "italic": false
+                },
+                "",
+                {
+                  "translate": "item.stellarity.sandstorm_trident.flavor_text",
+                  "color": "#EEEEEE",
+                  "italic": true
+                },
+                "",
+                {
+                  "translate": "items.stellarity.donator",
+                  "color": "#F96854",
+                  "italic": false
+                },
+                "",
+                {
+                  "translate": "Stellarity",
+                  "color": "#eaa7ff",
+                  "font": "stellarity:tooltip",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "minecraft:base_attack_damage",
+                  "attribute": "minecraft:attack_damage",
+                  "amount": 5,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                },
+                {
+                  "id": "minecraft:base_attack_speed",
+                  "attribute": "minecraft:attack_speed",
+                  "amount": -3.1,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": {
+                  "stellarity:item": "sandstorm_trident"
+                },
+                "minecraft:item_model": "stellarity:sandstorm_trident",
+                "minecraft:damage_resistant": {
+                  "types": "#is_fire"
+                },
+                "max_damage": 1264,
+                "minecraft:item_name": {
+                  "translate": "item.stellarity.sandstorm_trident",
+                  "italic": false
+                },
+                "minecraft:enchantments": {
+                  "stellarity:_technical/mighty_wind": 1
+                },
+                "minecraft:rarity": "epic"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

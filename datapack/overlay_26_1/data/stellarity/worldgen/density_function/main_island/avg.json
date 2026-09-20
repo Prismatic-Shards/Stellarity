@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:mul",
+  "argument1": 0.25,
+  "argument2": {
+    "type": "minecraft:add",
+    "argument1": {
+      "type": "minecraft:add",
+      "argument1": "stellarity:main_island/d1",
+      "argument2": "stellarity:main_island/d2"
+    },
+    "argument2": {
+      "type": "minecraft:add",
+      "argument1": "stellarity:main_island/d3",
+      "argument2": "stellarity:main_island/d4"
+    }
+  }
+}

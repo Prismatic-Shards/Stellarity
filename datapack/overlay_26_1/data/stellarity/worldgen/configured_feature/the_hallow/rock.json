@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:block_blob",
+  "config": {
+    "state": {
+      "Name": "minecraft:diorite"
+    },
+    "can_place_on": {
+      "type": "minecraft:true"
+    }
+  }
+}

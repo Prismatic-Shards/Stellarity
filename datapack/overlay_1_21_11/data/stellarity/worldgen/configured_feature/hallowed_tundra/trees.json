@@ -1,0 +1,102 @@
+{
+  "type": "minecraft:random_selector",
+  "config": {
+    "features": [
+      {
+        "chance": 0.25,
+        "feature": {
+          "feature": "stellarity:the_hallow/trees/scattered_bush",
+          "placement": []
+        }
+      },
+      {
+        "chance": 0.3,
+        "feature": {
+          "feature": "stellarity:the_hallow/trees/red/pine",
+          "placement": []
+        }
+      },
+      {
+        "chance": 0.3,
+        "feature": {
+          "feature": "stellarity:the_hallow/trees/orange/pine",
+          "placement": []
+        }
+      },
+      {
+        "chance": 0.3,
+        "feature": {
+          "feature": "stellarity:the_hallow/trees/yellow/pine",
+          "placement": []
+        }
+      },
+      {
+        "chance": 0.3,
+        "feature": {
+          "feature": "stellarity:the_hallow/trees/lime/pine",
+          "placement": []
+        }
+      },
+      {
+        "chance": 0.3,
+        "feature": {
+          "feature": "stellarity:the_hallow/trees/green/pine",
+          "placement": []
+        }
+      },
+      {
+        "chance": 0.3,
+        "feature": {
+          "feature": "stellarity:the_hallow/trees/light_blue/pine",
+          "placement": []
+        }
+      },
+      {
+        "chance": 0.3,
+        "feature": {
+          "feature": "stellarity:the_hallow/trees/cyan/pine",
+          "placement": []
+        }
+      },
+      {
+        "chance": 0.3,
+        "feature": {
+          "feature": "stellarity:the_hallow/trees/blue/pine",
+          "placement": []
+        }
+      },
+      {
+        "chance": 0.3,
+        "feature": {
+          "feature": "stellarity:the_hallow/trees/purple/pine",
+          "placement": []
+        }
+      },
+      {
+        "chance": 0.3,
+        "feature": {
+          "feature": "stellarity:the_hallow/trees/magenta/pine",
+          "placement": []
+        }
+      },
+      {
+        "chance": 0.3,
+        "feature": {
+          "feature": "stellarity:the_hallow/trees/pink/pine",
+          "placement": []
+        }
+      },
+      {
+        "chance": 0.3,
+        "feature": {
+          "feature": "stellarity:the_hallow/trees/white/pine",
+          "placement": []
+        }
+      }
+    ],
+    "default": {
+      "feature": "stellarity:hallowed_tundra/pine",
+      "placement": []
+    }
+  }
+}

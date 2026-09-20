@@ -17,6 +17,13 @@
 
 execute as @e[type=#stellarity:stat_buff,tag=!stellarity.aware,tag=!stellarity.buffed,predicate=stellarity:location/in_the_end,tag=!smithed.entity] run function stellarity:entity/convert_to_end_variants
 
+# Lingering potion buff
+  execute as @e[type=area_effect_cloud,tag=!stellarity.area_effect_cloud,tag=!stellarity.aware] \
+  unless predicate {"type": "minecraft:location_check","predicate":{"structures": "#stellarity:prevents_lingering_potion_buff"}} \
+  if data entity @s potion_contents.potion \
+  if data entity @s {custom_particle:{"type":"minecraft:entity_effect"}} \
+  run function stellarity:mechanic/lingering_potion_buff
+
 execute as @e[type=#stellarity:entity_awareness_checks,tag=!stellarity.aware] run tag @s add stellarity.aware
 
 execute as @e[type=#stellarity:end_variant_animals,tag=stellarity.animal] at @s run function stellarity:entity/animal/effects/aura

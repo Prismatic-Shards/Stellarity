@@ -1,0 +1,54 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:totem_of_undying",
+      "components": {
+        "minecraft:enchantment_glint_override": true
+      }
+    },
+    "title": {
+      "translate": "advancements.stellarity.postmortal_2"
+    },
+    "description": [
+      {
+        "translate": "advancements.stellarity.postmortal_2.description"
+      },
+      "\n\n",
+      {
+        "translate": "Stellarity",
+        "color": "#eaa7ff",
+        "font": "stellarity:tooltip",
+        "italic": false
+      }
+    ],
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "minecraft:adventure/totem_of_undying",
+  "criteria": {
+    "used_totem": {
+      "trigger": "minecraft:used_totem",
+      "conditions": {
+        "player": {
+          "location": {
+            "position": {
+              "y": {
+                "max": -32
+              }
+            },
+            "dimension": "minecraft:the_end"
+          }
+        },
+        "item": {
+          "items": ["minecraft:totem_of_undying"]
+        }
+      }
+    }
+  },
+  "requirements": [["used_totem"]],
+  "rewards": {
+    "experience": 50
+  }
+}

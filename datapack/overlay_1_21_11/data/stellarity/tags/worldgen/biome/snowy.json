@@ -1,0 +1,12 @@
+{
+  "values": [
+    "stellarity:frozen_spikes",
+    "stellarity:frosted_valley",
+    "stellarity:frozen_marsh",
+    "stellarity:hallowed_tundra",
+    "stellarity:frozen_shrubland",
+    {
+      "id": "stellarity:frosted_hills"
+    }
+  ]
+}

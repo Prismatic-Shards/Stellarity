@@ -1,40 +1,40 @@
 {
-    "type": "minecraft:lake",
-    "config": {
-        "fluid": {
-            "type": "minecraft:simple_state_provider",
-            "state": {
-                "Name": "minecraft:ice"
-            }
-        },
-        "barrier": {
-            "type": "minecraft:simple_state_provider",
-            "state": {
-                "Name": "minecraft:calcite"
-            }
-        },
-        "can_place_feature": {
-            "type": "minecraft:true"
-        },
-        "can_replace_with_air_or_fluid": {
-            "type": "minecraft:matching_blocks",
-            "blocks": [
-                "minecraft:grass_block",
-                "minecraft:dirt",
-                "minecraft:rooted_dirt",
-                "minecraft:end_stone",
-                "minecraft:snow_block"
-            ]
-        },
-        "can_replace_with_barrier": {
-            "type": "minecraft:matching_blocks",
-            "blocks": [
-                "minecraft:grass_block",
-                "minecraft:dirt",
-                "minecraft:rooted_dirt",
-                "minecraft:end_stone",
-                "minecraft:snow_block"
-            ]
-        }
+  "type": "minecraft:lake",
+  "config": {
+    "fluid": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "minecraft:ice"
+      }
+    },
+    "barrier": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "minecraft:calcite"
+      }
+    },
+    "can_place_feature": {
+      "type": "minecraft:true"
+    },
+    "can_replace_with_air_or_fluid": {
+      "type": "minecraft:matching_blocks",
+      "blocks": [
+        "minecraft:grass_block",
+        "minecraft:dirt",
+        "minecraft:rooted_dirt",
+        "minecraft:end_stone",
+        "minecraft:snow_block"
+      ]
+    },
+    "can_replace_with_barrier": {
+      "type": "minecraft:matching_blocks",
+      "blocks": [
+        "minecraft:grass_block",
+        "minecraft:dirt",
+        "minecraft:rooted_dirt",
+        "minecraft:end_stone",
+        "minecraft:snow_block"
+      ]
     }
+  }
 }

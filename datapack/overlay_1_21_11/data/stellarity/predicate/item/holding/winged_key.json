@@ -1,0 +1,16 @@
+{
+  "condition": "minecraft:entity_properties",
+
+  "entity": "this",
+  "predicate": {
+    "slots": {
+      "weapon.*": {
+        "predicates": {
+          "minecraft:custom_data": {
+            "stellarity:item": "winged_key"
+          }
+        }
+      }
+    }
+  }
+}

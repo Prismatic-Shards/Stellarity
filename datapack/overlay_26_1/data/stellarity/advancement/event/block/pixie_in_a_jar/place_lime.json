@@ -1,0 +1,26 @@
+{
+  "parent": "stellarity:event/root",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": ["minecraft:glass"],
+              "predicates": {
+                "minecraft:custom_data": {
+                  "stellarity:item": "pixie_in_a_jar_lime"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "stellarity:mechanic/pixie_in_a_jar/place_lime"
+  }
+}

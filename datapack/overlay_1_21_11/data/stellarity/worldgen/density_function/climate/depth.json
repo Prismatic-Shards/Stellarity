@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:cache_once",
+  "argument": {
+    "type": "minecraft:range_choice",
+    "input": {
+      "type": "minecraft:y_clamped_gradient",
+      "from_y": 0,
+      "to_y": 256,
+      "from_value": 0,
+      "to_value": 256
+    },
+    "min_inclusive": 0,
+    "max_exclusive": 1,
+    "when_in_range": 2,
+    "when_out_of_range": {
+      "type": "minecraft:mul",
+      "argument1": {
+        "type": "minecraft:y_clamped_gradient",
+        "from_y": 24,
+        "to_y": 256,
+        "from_value": -2,
+        "to_value": 2
+      },
+      "argument2": "stellarity:offset"
+    }
+  }
+}

@@ -1,0 +1,167 @@
+{
+  "type": "minecraft:random_selector",
+  "config": {
+    "features": [
+      {
+        "chance": 0.08,
+        "feature": {
+          "feature": {
+            "type": "minecraft:simple_block",
+            "config": {
+              "to_place": {
+                "type": "minecraft:noise_provider",
+                "seed": 0,
+                "noise": {
+                  "firstOctave": -7,
+                  "amplitudes": [
+                    1,
+                    1
+                  ]
+                },
+                "scale": 1,
+                "states": [
+                  {
+                    "Name": "minecraft:blue_orchid"
+                  },
+                  {
+                    "Name": "minecraft:blue_orchid"
+                  },
+                  {
+                    "Name": "minecraft:blue_orchid"
+                  },
+                  {
+                    "Name": "minecraft:pitcher_plant",
+                    "Properties": {
+                      "half": "lower"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "placement": [
+            {
+              "type": "minecraft:count",
+              "count": 40
+            },
+            {
+              "type": "minecraft:random_offset",
+              "xz_spread": {
+                "type": "minecraft:trapezoid",
+                "min": -7,
+                "max": 7,
+                "plateau": 0
+              },
+              "y_spread": {
+                "type": "minecraft:trapezoid",
+                "min": -3,
+                "max": 3,
+                "plateau": 0
+              }
+            },
+            {
+              "type": "minecraft:block_predicate_filter",
+              "predicate": {
+                "type": "minecraft:all_of",
+                "predicates": [
+                  {
+                    "type": "minecraft:would_survive",
+                    "state": {
+                      "Name": "minecraft:short_grass"
+                    }
+                  },
+                  {
+                    "type": "minecraft:matching_blocks",
+                    "blocks": [
+                      "minecraft:air"
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "default": {
+      "feature": {
+        "type": "minecraft:simple_block",
+        "config": {
+          "to_place": {
+            "type": "minecraft:weighted_state_provider",
+            "entries": [
+              {
+                "weight": 1,
+                "data": {
+                  "Name": "minecraft:nether_sprouts"
+                }
+              },
+              {
+                "weight": 5,
+                "data": {
+                  "Name": "minecraft:warped_roots"
+                }
+              },
+              {
+                "weight": 3,
+                "data": {
+                  "Name": "minecraft:tall_grass",
+                  "Properties": {
+                    "half": "lower"
+                  }
+                }
+              },
+              {
+                "weight": 2,
+                "data": {
+                  "Name": "minecraft:short_grass"
+                }
+              }
+            ]
+          }
+        }
+      },
+      "placement": [
+        {
+          "type": "minecraft:count",
+          "count": 32
+        },
+        {
+          "type": "minecraft:random_offset",
+          "xz_spread": {
+            "type": "minecraft:trapezoid",
+            "min": -7,
+            "max": 7,
+            "plateau": 0
+          },
+          "y_spread": {
+            "type": "minecraft:trapezoid",
+            "min": -3,
+            "max": 3,
+            "plateau": 0
+          }
+        },
+        {
+          "type": "minecraft:block_predicate_filter",
+          "predicate": {
+            "type": "minecraft:all_of",
+            "predicates": [
+              {
+                "type": "minecraft:would_survive",
+                "state": {
+                  "Name": "minecraft:short_grass"
+                }
+              },
+              {
+                "type": "minecraft:matching_blocks",
+                "blocks": [
+                  "minecraft:air"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

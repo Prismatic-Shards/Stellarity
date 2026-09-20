@@ -1,0 +1,26 @@
+{
+  "parent": "stellarity:event/root",
+  "criteria": {
+    "shulker": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "type": {
+            "source_entity": {
+              "type": "minecraft:shulker",
+              "location": {
+                "structures": ["minecraft:end_city"]
+              }
+            },
+            "direct_entity": {
+              "type": "minecraft:shulker_bullet"
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "stellarity:entity/shulker/hit_with_shulker_bullet"
+  }
+}

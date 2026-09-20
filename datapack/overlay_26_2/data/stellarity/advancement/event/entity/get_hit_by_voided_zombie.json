@@ -1,0 +1,19 @@
+{
+  "parent": "stellarity:event/root",
+  "criteria": {
+    "get_hit_by_endermite": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "source_entity": {
+            "type": "minecraft:zombie",
+            "nbt": "{Tags:[\"stellarity.voided_zombie\"]}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "stellarity:entity/voided_zombie/attack"
+  }
+}

@@ -10,9 +10,10 @@ particle reverse_portal ~ ~1 ~ 1 1 1 .02 50 normal @a[distance=0..]
 particle dragon_breath ~ ~1 ~ 0 0 0 .03 15 normal
 particle dragon_breath ~ ~1 ~ 0 0 0 .06 15 normal
 
-function stellarity:sfx/enter_leave_end_wave
+function stellarity:sfx/enter_leave_end/wave
 
-tag @p[predicate=stellarity:item/holding/spellbooks/return] remove stellarity.book_of_return.in_animation
-tag @p[predicate=stellarity:item/holding/spellbooks/return] remove stellarity.book_of_return.teleport
+tag @s remove stellarity.book_of_return.in_animation
+tag @s remove stellarity.book_of_return.teleport
+tag @a[tag=stellarity.book_of_return.in_animation,distance=..6] remove stellarity.book_of_return.in_animation
 
 scoreboard players set @s stellarity.item.spellbook.return.cooldown 120

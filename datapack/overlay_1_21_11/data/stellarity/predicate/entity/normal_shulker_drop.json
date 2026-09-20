@@ -1,0 +1,29 @@
+{
+  "condition": "inverted",
+  "term": {
+    "condition": "any_of",
+    "terms": [
+      {
+        "entity": "this",
+        "condition": "entity_properties",
+        "predicate": {
+          "nbt": "{Tags:[\"stellarity.obstruct.walls_solid\"]}"
+        }
+      },
+      {
+        "entity": "this",
+        "condition": "entity_properties",
+        "predicate": {
+          "nbt": "{Tags:[\"stellarity.shulking.rod_shulker\"]}"
+        }
+      },
+      {
+        "entity": "this",
+        "condition": "entity_properties",
+        "predicate": {
+          "nbt": "{Tags:[\"stellarity.shulking.body\"]}"
+        }
+      }
+    ]
+  }
+}

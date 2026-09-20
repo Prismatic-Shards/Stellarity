@@ -1,0 +1,47 @@
+{
+  "type": "minecraft:spline",
+  "spline": {
+    "coordinate": {
+      "type": "minecraft:end_islands"
+    },
+    "points": [
+      {
+        "location": -0.5,
+        "derivative": 1,
+        "value": -0.5
+      },
+      {
+        "location": 0,
+        "derivative": 1,
+        "value": {
+          "coordinate": {
+            "type": "minecraft:abs",
+            "argument": {
+              "type": "minecraft:noise",
+              "noise": "stellarity:main_island/shaper_1",
+              "xz_scale": 1,
+              "y_scale": 1
+            }
+          },
+          "points": [
+            {
+              "location": 0,
+              "derivative": 1,
+              "value": 0.25
+            },
+            {
+              "location": 0,
+              "derivative": -1,
+              "value": 0.25
+            }
+          ]
+        }
+      },
+      {
+        "location": 0.5,
+        "derivative": 1,
+        "value": 0.5
+      }
+    ]
+  }
+}

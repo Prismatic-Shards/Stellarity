@@ -1,0 +1,112 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:shield",
+          "functions": [
+            {
+              "function": "minecraft:set_banner_pattern",
+              "patterns": [
+                {
+                  "pattern": "minecraft:base",
+                  "color": "orange"
+                },
+                {
+                  "pattern": "minecraft:cross",
+                  "color": "yellow"
+                },
+                {
+                  "pattern": "minecraft:gradient",
+                  "color": "orange"
+                },
+                {
+                  "pattern": "minecraft:gradient_up",
+                  "color": "orange"
+                },
+                {
+                  "pattern": "minecraft:border",
+                  "color": "yellow"
+                },
+                {
+                  "pattern": "minecraft:border",
+                  "color": "orange"
+                },
+                {
+                  "pattern": "minecraft:flower",
+                  "color": "yellow"
+                },
+                {
+                  "pattern": "minecraft:flower",
+                  "color": "orange"
+                },
+                {
+                  "pattern": "minecraft:curly_border",
+                  "color": "yellow"
+                },
+                {
+                  "pattern": "minecraft:curly_border",
+                  "color": "orange"
+                }
+              ],
+              "append": false
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": {
+                  "stellarity:item": "copper_elektra_shield"
+                },
+                "minecraft:item_name": {
+                  "translate": "item.stellarity.copper_elektra_shield",
+                  "color": "#E0976B",
+                  "italic": false
+                },
+                "minecraft:rarity": "uncommon",
+                "tooltip_display": {
+                  "hidden_components": ["banner_patterns"]
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                "",
+                {
+                  "translate": "item.stellarity.copper_elektra_shield.description.1",
+                  "color": "#EEEEEE",
+                  "italic": false
+                },
+                {
+                  "translate": "item.stellarity.copper_elektra_shield.description.2",
+                  "color": "#EEEEEE",
+                  "italic": false
+                },
+                {
+                  "translate": "item.stellarity.copper_elektra_shield.description.3",
+                  "color": "#EEEEEE",
+                  "italic": false
+                },
+                {
+                  "translate": "item.stellarity.copper_elektra_shield.description.4",
+                  "color": "#EEEEEE",
+                  "italic": false
+                },
+                "",
+                {
+                  "translate": "Stellarity",
+                  "color": "#eaa7ff",
+                  "font": "stellarity:tooltip",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

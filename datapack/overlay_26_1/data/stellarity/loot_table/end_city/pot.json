@@ -1,0 +1,20 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "stellarity:end_city/pot_common",
+          "weight": 16
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "stellarity:end_city/pot_rare",
+          "weight": 2,
+          "quality": 1
+        }
+      ]
+    }
+  ]
+}

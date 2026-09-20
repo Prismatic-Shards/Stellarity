@@ -1,0 +1,59 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:endermite_spawn_egg",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:item_model": "stellarity:void_pendant",
+                                "minecraft:custom_data": {
+                                    "stellarity:item": "void_pendant"
+                                },
+                                "rarity": "rare",
+                                "minecraft:item_name": {
+                                    "translate": "item.stellarity.void_pendant"
+                                },
+                                "minecraft:max_stack_size": 1,
+                                "minecraft:tooltip_display": {
+                                    "hidden_components": [
+                                        "minecraft:enchantments"
+                                    ]
+                                },
+                                "!minecraft:entity_data": {}
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "lore": [
+                                "",
+                                {
+                                    "translate": "item.stellarity.void_pendant.description.1",
+                                    "color": "#EEEEEE",
+                                    "italic": false
+                                },
+                                {
+                                    "translate": "item.stellarity.void_pendant.description.2",
+                                    "color": "#EEEEEE",
+                                    "italic": false
+                                },
+                                "",
+                                {
+                                    "translate": "Stellarity",
+                                    "color": "#eaa7ff",
+                                    "font": "stellarity:tooltip",
+                                    "italic": false
+                                }
+                            ],
+                            "mode": "replace_all"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

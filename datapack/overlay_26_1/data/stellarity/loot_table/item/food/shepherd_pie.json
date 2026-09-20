@@ -1,0 +1,136 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:pumpkin_pie",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "stellarity:shepherd_pie",
+                "minecraft:custom_data": {
+                  "stellarity:item": "shepherd_pie"
+                },
+                "minecraft:food": {
+                  "nutrition": 20,
+                  "saturation": 20,
+                  "can_always_eat": true
+                },
+                "minecraft:consumable": {
+                  "animation": "eat",
+                  "consume_seconds": 5,
+                  "has_consume_particles": true,
+                  "sound": "entity.generic.eat",
+                  "on_consume_effects": [
+                    {
+                      "type": "apply_effects",
+                      "effects": [
+                        {
+                          "id": "minecraft:instant_health",
+                          "amplifier": 2,
+                          "duration": 1,
+                          "ambient": false,
+                          "show_particles": true,
+                          "show_icon": true
+                        },
+                        {
+                          "id": "minecraft:regeneration",
+                          "amplifier": 1,
+                          "duration": 1280,
+                          "ambient": true,
+                          "show_particles": true,
+                          "show_icon": true
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "rarity": "epic",
+                "minecraft:item_name": {
+                  "translate": "item.stellarity.shepherd_pie"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                [
+                  {
+                    "text": "20",
+                    "color": "#EEEEEE",
+                    "italic": false
+                  },
+                  {
+                    "text": " 🍖",
+                    "color": "#B88458",
+                    "italic": false
+                  },
+                  " ",
+                  {
+                    "text": "20",
+                    "color": "#EEEEEE",
+                    "italic": false
+                  },
+                  {
+                    "text": " 🍖",
+                    "color": "#FFDE4C",
+                    "italic": false
+                  }
+                ],
+                [
+                  {
+                    "translate": "effect.minecraft.instant_health",
+                    "color": "blue",
+                    "italic": false
+                  },
+                  " ",
+                  {
+                    "translate": "potion.potency.2",
+                    "color": "blue",
+                    "italic": false
+                  }
+                ],
+                [
+                  {
+                    "translate": "effect.minecraft.regeneration",
+                    "color": "blue",
+                    "italic": false
+                  },
+                  " ",
+                  {
+                    "translate": "potion.potency.1",
+                    "color": "blue",
+                    "italic": false
+                  },
+                  " ",
+                  {
+                    "text": "(1:04)",
+                    "color": "blue",
+                    "italic": false
+                  }
+                ],
+                "",
+                {
+                  "translate": "item.stellarity.shepherd_pie.flavor_text",
+                  "color": "#EEEEEE",
+                  "italic": true
+                },
+                "",
+                {
+                  "translate": "Stellarity",
+                  "color": "#eaa7ff",
+                  "font": "stellarity:tooltip",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

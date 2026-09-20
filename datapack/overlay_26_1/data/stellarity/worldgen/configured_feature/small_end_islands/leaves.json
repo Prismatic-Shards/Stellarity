@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:simple_block",
+  "config": {
+    "to_place": {
+      "type": "minecraft:weighted_state_provider",
+      "entries": [
+        {
+          "weight": 6,
+          "data": {
+            "Name": "minecraft:oak_leaves",
+            "Properties": {
+              "distance": "1",
+              "persistent": "true",
+              "waterlogged": "false"
+            }
+          }
+        },
+        {
+          "weight": 1,
+          "data": {
+            "Name": "minecraft:jungle_leaves",
+            "Properties": {
+              "distance": "1",
+              "persistent": "true",
+              "waterlogged": "false"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "parent": "stellarity:event/root",
+  "criteria": {
+    "plant_duskberry": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": ["minecraft:sweet_berries"],
+              "predicates": {
+                "minecraft:custom_data": {
+                  "stellarity:item": "duskberry"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [["plant_duskberry"]],
+  "rewards": {
+    "function": "stellarity:item/duskberry/plant"
+  }
+}

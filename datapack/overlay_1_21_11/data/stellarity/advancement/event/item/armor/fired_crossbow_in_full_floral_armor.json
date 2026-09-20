@@ -1,0 +1,19 @@
+{
+  "parent": "stellarity:event/root",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:shot_crossbow",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:reference",
+            "name": "stellarity:item/armor/floral/wearing_full_set"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "stellarity:item/armor/floral/shot_crossbow"
+  }
+}

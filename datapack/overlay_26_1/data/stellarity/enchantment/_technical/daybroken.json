@@ -1,0 +1,51 @@
+{
+  "description": {
+    "translate": "enchantment.stellarity.daybroken",
+    "color": "#e88b20"
+  },
+  "exclusive_set": [
+    "minecraft:fire_aspect",
+    "minecraft:flame"
+  ],
+  "supported_items": [
+    "minecraft:diamond_sword"
+  ],
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 2,
+  "slots": [
+    "mainhand"
+  ],
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "requirements": {
+          "condition": "minecraft:damage_source_properties",
+          "predicate": {
+            "tags": [
+              {
+                "id": "stellarity:melee",
+                "expected": true
+              }
+            ],
+            "is_direct": true
+          }
+        },
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "stellarity:item/kaleidoscope/attack"
+        },
+        "enchanted": "attacker",
+        "affected": "victim"
+      }
+    ]
+  }
+}

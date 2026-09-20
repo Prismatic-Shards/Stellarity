@@ -10,3 +10,4 @@ loot give @s loot stellarity:item/trinket/prismatic_pearl
 #loot give @s loot stellarity:item/trinket/prismatic_shield
 loot give @s loot stellarity:item/trinket/radiant_jewel
 loot give @s loot stellarity:item/trinket/void_pendant
+function stellarity:_cmd/give/void_pendants

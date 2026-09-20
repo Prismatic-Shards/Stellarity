@@ -1,0 +1,75 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:warped_fungus_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "text": ""
+                },
+                {
+                  "translate": "item.stellarity.satchel_of_voids.description.1",
+                  "color": "#EEEEEE",
+                  "italic": false
+                },
+                {
+                  "translate": "item.stellarity.satchel_of_voids.description.2",
+                  "color": "#EEEEEE",
+                  "italic": false
+                },
+                {
+                  "translate": "item.stellarity.satchel_of_voids.description.3",
+                  "color": "#EEEEEE",
+                  "italic": false
+                },
+                {
+                  "translate": "item.stellarity.satchel_of_voids.description.4",
+                  "color": "#EEEEEE",
+                  "italic": false
+                },
+                {
+                  "translate": "item.stellarity.satchel_of_voids.description.5",
+                  "color": "#EEEEEE",
+                  "italic": false
+                },
+                "",
+                {
+                  "translate": "Stellarity",
+                  "color": "#eaa7ff",
+                  "font": "stellarity:tooltip",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "stellarity:satchel_of_voids",
+                "minecraft:custom_data": {
+                  "stellarity:item": "satchel_of_voids",
+                  "kohara:right_click": true
+                },
+                "rarity": "epic",
+                "minecraft:item_name": {
+                  "translate": "item.stellarity.satchel_of_voids"
+                },
+                "!max_damage": {},
+                "damage_resistant": {
+                  "types": "#is_fire"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

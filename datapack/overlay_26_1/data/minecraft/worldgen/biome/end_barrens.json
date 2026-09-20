@@ -1,0 +1,85 @@
+{
+  "temperature": 0.5,
+  "downfall": 0.5,
+  "has_precipitation": false,
+  "attributes": {
+    "visual/sky_color": 0,
+    "visual/fog_color": 0,
+    "visual/water_fog_color": 3156295,
+    "audio/ambient_sounds": {
+      "loop": {
+        "sound_id": "stellarity:ambient.the_end.dark"
+      },
+      "mood": {
+        "sound": "minecraft:ambient.cave",
+        "tick_delay": 800,
+        "block_search_extent": 8,
+        "offset": 2
+      },
+      "additions": {
+        "sound": "ambient.nether_wastes.additions",
+        "tick_chance": 0.005
+      }
+    },
+    "visual/ambient_particles": {
+      "modifier": "override",
+      "argument": [
+        {
+          "particle": {
+            "type": "minecraft:ash"
+          },
+          "probability": 0.0111
+        }
+      ]
+    }
+  },
+  "effects": {
+    "water_color": 5261169,
+    "grass_color": 4994644,
+    "foliage_color": 5585503
+  },
+  "spawners": {
+    "monster": [
+      {
+        "type": "minecraft:zombie",
+        "weight": 30,
+        "minCount": 4,
+        "maxCount": 4
+      },
+      {
+        "type": "minecraft:enderman",
+        "weight": 30,
+        "minCount": 4,
+        "maxCount": 4
+      }
+    ]
+  },
+  "spawn_costs": {
+    "minecraft:enderman": {
+      "charge": 0.8,
+      "energy_budget": 1
+    },
+    "minecraft:zombie": {
+      "charge": 0.68,
+      "energy_budget": 1
+    }
+  },
+  "carvers": [],
+  "features": [
+    [
+      "stellarity:end_barrens/hills",
+      "stellarity:global/stalactite",
+      "stellarity:end_barrens/stalactite"
+    ],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    ["stellarity:global/end_dungeon", "stellarity:global/fossil"]
+  ]
+}

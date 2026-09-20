@@ -1,0 +1,102 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:elytra",
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                "",
+                {
+                  "translate": "item.stellarity.empress_wings.description.1",
+                  "color": "#EEEEEE",
+                  "italic": false
+                },
+                {
+                  "translate": "item.stellarity.empress_wings.description.2",
+                  "color": "#EEEEEE",
+                  "italic": false
+                },
+                "",
+                {
+                  "translate": "item.stellarity.empress_wings.flavor_text",
+                  "color": "#EEEEEE",
+                  "italic": true
+                },
+                "",
+                {
+                  "translate": "Stellarity",
+                  "color": "#eaa7ff",
+                  "font": "stellarity:tooltip",
+                  "italic": false
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "stellarity:empress_wings",
+                "minecraft:custom_data": {
+                  "stellarity:item": "empress_wings"
+                },
+                "minecraft:damage_resistant": {
+                  "types": "#is_fire"
+                },
+                "minecraft:equippable": {
+                  "slot": "chest",
+                  "asset_id": "stellarity:empress_wings",
+                  "damage_on_hurt": false
+                },
+                "rarity": "epic",
+                "minecraft:item_name": {
+                  "translate": "item.stellarity.empress_wings",
+                  "color": "#FF76D0",
+                  "italic": false
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "id": "minecraft:armor.chestplate",
+                  "attribute": "minecraft:movement_speed",
+                  "amount": 0.1,
+                  "operation": "add_multiplied_base",
+                  "slot": "chest"
+                },
+                {
+                  "id": "minecraft:armor.chestplate",
+                  "attribute": "minecraft:fall_damage_multiplier",
+                  "amount": -0.25,
+                  "operation": "add_multiplied_total",
+                  "slot": "chest"
+                },
+                {
+                  "id": "minecraft:armor.chestplate",
+                  "attribute": "minecraft:safe_fall_distance",
+                  "amount": 4,
+                  "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "id": "minecraft:armor.chestplate",
+                  "attribute": "minecraft:gravity",
+                  "amount": -0.35,
+                  "operation": "add_multiplied_total",
+                  "slot": "chest"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

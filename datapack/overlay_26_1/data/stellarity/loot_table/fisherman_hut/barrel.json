@@ -1,0 +1,325 @@
+{
+  "pools": [
+    {
+      "rolls": {
+        "type": "minecraft:binomial",
+        "n": 8,
+        "p": 0.5
+      },
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "weight": 13,
+          "value": "stellarity:item/food/fish/ender_koi",
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#stellarity.config"
+                },
+                "score": "stellarity.config.enable_ender_koi"
+              },
+              "range": 1
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 6,
+          "value": "stellarity:item/food/fish/goosh",
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#stellarity.config"
+                },
+                "score": "stellarity.config.enable_goosh"
+              },
+              "range": 1
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 4,
+          "value": "stellarity:item/food/fish/amethyst_budfish",
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#stellarity.config"
+                },
+                "score": "stellarity.config.enable_amethyst_budfish"
+              },
+              "range": 1
+            },
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "biomes": ["stellarity:amethyst_forest"]
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 3,
+          "value": "stellarity:item/food/fish/crimson_tigerfish",
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#stellarity.config"
+                },
+                "score": "stellarity.config.enable_crimson_tigerfish"
+              },
+              "range": 1
+            },
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "biomes": ["stellarity:flesh_tundra"]
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 3,
+          "value": "stellarity:item/food/fish/fleshy_piranha",
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#stellarity.config"
+                },
+                "score": "stellarity.config.enable_fleshy_piranha"
+              },
+              "range": 1
+            },
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "biomes": ["stellarity:flesh_tundra"]
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "quality": 1,
+          "value": "stellarity:item/food/fish/crystal_heartfish",
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#stellarity.config"
+                },
+                "score": "stellarity.config.enable_crystal_heartfish"
+              },
+              "range": 1
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 8,
+          "value": "stellarity:item/food/fish/prismite",
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#stellarity.config"
+                },
+                "score": "stellarity.config.enable_prismite"
+              },
+              "range": 1
+            },
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "biomes": ["stellarity:the_hallow"]
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 7,
+          "value": "stellarity:item/food/fish/flarefin_koi",
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#stellarity.config"
+                },
+                "score": "stellarity.config.enable_flarefin_koi"
+              },
+              "range": 1
+            },
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "biomes": ["stellarity:fiery_hills"]
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 6,
+          "value": "stellarity:item/food/fish/overgrown_cod",
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#stellarity.config"
+                },
+                "score": "stellarity.config.enable_overgrown_cod"
+              },
+              "range": 1
+            },
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "biomes": [
+                  "minecraft:end_midlands",
+                  "minecraft:end_highlands",
+                  "minecraft:small_end_islands",
+                  "minecraft:end_barrens"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 6,
+          "value": "stellarity:item/food/fish/frost_minnow",
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#stellarity.config"
+                },
+                "score": "stellarity.config.enable_frost_minnow"
+              },
+              "range": 1
+            },
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "biomes": ["stellarity:frozen_spikes"]
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 5,
+          "value": "stellarity:item/food/fish/bubblefish",
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#stellarity.config"
+                },
+                "score": "stellarity.config.enable_bubblefish"
+              },
+              "range": 1
+            },
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "biomes": ["stellarity:prismarine_forest"]
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 5,
+          "value": "stellarity:item/food/fish/potassifish",
+          "conditions": [
+            {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#stellarity.config"
+                },
+                "score": "stellarity.config.enable_potassifish"
+              },
+              "range": 1
+            },
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "biomes": ["stellarity:endless_dunes"]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": -1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:water_bucket"
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "type": "minecraft:binomial",
+        "n": 8,
+        "p": 0.7
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:seagrass"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "condition": "any_of",
+  "terms": [
+    {
+      "condition": "location_check",
+      "predicate": {
+        "light": {
+          "light": 12
+        }
+      }
+    },
+    {
+      "condition": "location_check",
+      "offsetX": 1,
+      "predicate": {
+        "light": {
+          "light": 13
+        }
+      }
+    },
+    {
+      "condition": "location_check",
+      "offsetX": -1,
+      "predicate": {
+        "light": {
+          "light": 13
+        }
+      }
+    },
+    {
+      "condition": "location_check",
+      "offsetY": 1,
+      "predicate": {
+        "light": {
+          "light": 13
+        }
+      }
+    },
+    {
+      "condition": "location_check",
+      "offsetY": -1,
+      "predicate": {
+        "light": {
+          "light": 13
+        }
+      }
+    },
+    {
+      "condition": "location_check",
+      "offsetZ": 1,
+      "predicate": {
+        "light": {
+          "light": 13
+        }
+      }
+    },
+    {
+      "condition": "location_check",
+      "offsetZ": -1,
+      "predicate": {
+        "light": {
+          "light": 13
+        }
+      }
+    }
+  ]
+}
+

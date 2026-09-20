@@ -1,0 +1,26 @@
+{
+  "parent": "stellarity:event/root",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": ["minecraft:chiseled_quartz_block"],
+              "predicates": {
+                "minecraft:custom_data": {
+                  "stellarity:item": "altar_of_the_sacred"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "stellarity:mechanic/altar_of_the_sacred/place"
+  }
+}

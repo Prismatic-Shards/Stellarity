@@ -1,0 +1,81 @@
+{
+  "temperature": 0.8,
+  "downfall": 0.4,
+  "has_precipitation": false,
+  "creature_spawn_probability": 0.2,
+  "attributes": {
+    "visual/sky_color": 0,
+    "visual/fog_color": 0,
+    "visual/water_fog_color": 1456474,
+    "audio/ambient_sounds": {
+      "loop": {
+        "sound_id": "stellarity:ambient.the_end.heavenly_blessed"
+      },
+      "mood": {
+        "sound": "ambient.warped_forest.mood",
+        "tick_delay": 800,
+        "block_search_extent": 4,
+        "offset": 4
+      },
+      "additions": {
+        "sound": "ambient.underwater.loop.additions.rare",
+        "tick_chance": 0.0111
+      }
+    },
+    "visual/ambient_particles": {
+      "modifier": "override",
+      "argument": [
+        {
+          "particle": {
+            "type": "minecraft:dripping_dripstone_water"
+          },
+          "probability": 0.001
+        }
+      ]
+    }
+  },
+  "effects": {
+    "water_color": 5818862,
+    "grass_color": 9764856,
+    "foliage_color": 11403007,
+    "dry_foliage_color": 6001813,
+    "grass_color_modifier": "none"
+  },
+  "spawners": {
+    "creature": [
+      {
+        "type": "frog",
+        "maxCount": 4,
+        "minCount": 1,
+        "weight": 100
+      },
+      {
+        "type": "axolotl",
+        "maxCount": 4,
+        "minCount": 1,
+        "weight": 50
+      }
+    ]
+  },
+  "spawn_costs": {},
+  "carvers": ["stellarity:ravine", "stellarity:crack"],
+  "features": [
+    ["stellarity:prismarine_forest/island_bottom"],
+    [],
+    ["stellarity:prismarine_forest/puddle"],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      "stellarity:prismarine_forest/trees",
+      "stellarity:prismarine_forest/vegetation",
+      "stellarity:prismarine_forest/grass",
+      "minecraft:patch_bush",
+      "stellarity:amethyst_forest/roots"
+    ],
+    []
+  ]
+}
