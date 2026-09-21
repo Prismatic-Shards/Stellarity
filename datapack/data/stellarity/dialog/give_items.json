@@ -1097,6 +1097,240 @@
       "label": [
         {
           "atlas": "minecraft:items",
+          "sprite": "stellarity:item/void_pendant/amethyst"
+        }
+      ],
+      "tooltip": [
+        {
+        "translate": "item.stellarity.void_pendant",
+        "fallback": "Void Pendant"
+        },
+        "",
+        {
+          "translate": "item.stellarity.void_pendant.amethyst.description.name",
+          "fallback": "VISION",
+          "color": "light_purple",
+          "bold": true
+        }
+      ],
+      "width": 20,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "loot give @s loot stellarity:item/trinket/void_pendant/amethyst"
+      }
+    },
+    {
+      "label": [
+        {
+          "atlas": "minecraft:items",
+          "sprite": "stellarity:item/void_pendant/copper"
+        }
+      ],
+      "tooltip": [
+        {
+        "translate": "item.stellarity.void_pendant",
+        "fallback": "Void Pendant"
+        },
+        "",
+        {
+          "translate": "item.stellarity.void_pendant.copper.description.name",
+          "fallback": "POWER",
+          "color": "gold",
+          "bold": true
+        }
+      ],
+      "width": 20,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "loot give @s loot stellarity:item/trinket/void_pendant/copper"
+      }
+    },
+    {
+      "label": [
+        {
+          "atlas": "minecraft:items",
+          "sprite": "stellarity:item/void_pendant/diamond"
+        }
+      ],
+      "tooltip": [
+        {
+        "translate": "item.stellarity.void_pendant",
+        "fallback": "Void Pendant"
+        },
+        "",
+        {
+          "translate": "item.stellarity.void_pendant.diamond.description.name",
+          "fallback": "FUROR",
+          "color": "aqua",
+          "bold": true
+        }
+      ],
+      "width": 20,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "loot give @s loot stellarity:item/trinket/void_pendant/diamond"
+      }
+    },
+    {
+      "label": [
+        {
+          "atlas": "minecraft:items",
+          "sprite": "stellarity:item/void_pendant/emerald"
+        }
+      ],
+      "tooltip": [
+        {
+        "translate": "item.stellarity.void_pendant",
+        "fallback": "Void Pendant"
+        },
+        "",
+        {
+          "translate": "item.stellarity.void_pendant.emerald.description.name",
+          "fallback": "FORTUNE",
+          "color": "green",
+          "bold": true
+        }
+      ],
+      "width": 20,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "loot give @s loot stellarity:item/trinket/void_pendant/emerald"
+      }
+    },
+    {
+      "label": [
+        {
+          "atlas": "minecraft:items",
+          "sprite": "stellarity:item/void_pendant/gold"
+        }
+      ],
+      "tooltip": [
+        {
+        "translate": "item.stellarity.void_pendant",
+        "fallback": "Void Pendant"
+        },
+        "",
+        {
+          "translate": "item.stellarity.void_pendant.gold.description.name",
+          "fallback": "SPELUNKING",
+          "color": "yellow",
+          "bold": true
+        }
+      ],
+      "width": 20,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "loot give @s loot stellarity:item/trinket/void_pendant/gold"
+      }
+    },
+    {
+      "label": [
+        {
+          "atlas": "minecraft:items",
+          "sprite": "stellarity:item/void_pendant/iron"
+        }
+      ],
+      "tooltip": [
+        {
+        "translate": "item.stellarity.void_pendant",
+        "fallback": "Void Pendant"
+        },
+        "",
+        {
+          "translate": "item.stellarity.void_pendant.iron.description.name",
+          "fallback": "FORTITUDE",
+          "color": "gray",
+          "bold": true
+        }
+      ],
+      "width": 20,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "loot give @s loot stellarity:item/trinket/void_pendant/iron"
+      }
+    },
+    {
+      "label": [
+        {
+          "atlas": "minecraft:items",
+          "sprite": "stellarity:item/void_pendant/lapis"
+        }
+      ],
+      "tooltip": [
+        {
+        "translate": "item.stellarity.void_pendant",
+        "fallback": "Void Pendant"
+        },
+        "",
+        {
+          "translate": "item.stellarity.void_pendant.lapis.description.name",
+          "fallback": "WISDOM",
+          "color": "blue",
+          "bold": true
+        }
+      ],
+      "width": 20,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "loot give @s loot stellarity:item/trinket/void_pendant/lapis"
+      }
+    },
+    {
+      "label": [
+        {
+          "atlas": "minecraft:items",
+          "sprite": "stellarity:item/void_pendant/netherite"
+        }
+      ],
+      "tooltip": [
+        {
+        "translate": "item.stellarity.void_pendant",
+        "fallback": "Void Pendant"
+        },
+        "",
+        {
+          "translate": "item.stellarity.void_pendant.netherite.description.name",
+          "fallback": "RAGE",
+          "color": "dark_gray",
+          "bold": true
+        }
+      ],
+      "width": 20,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "loot give @s loot stellarity:item/trinket/void_pendant/netherite"
+      }
+    },
+    {
+      "label": [
+        {
+          "atlas": "minecraft:items",
+          "sprite": "stellarity:item/void_pendant/quartz"
+        }
+      ],
+      "tooltip": [
+        {
+        "translate": "item.stellarity.void_pendant",
+        "fallback": "Void Pendant"
+        },
+        "",
+        {
+          "translate": "item.stellarity.void_pendant.quartz.description.name",
+          "fallback": "AGILITY",
+          "color": "white",
+          "bold": true
+        }
+      ],
+      "width": 20,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "loot give @s loot stellarity:item/trinket/void_pendant/quartz"
+      }
+    },
+    {
+      "label": [
+        {
+          "atlas": "minecraft:items",
           "sprite": "stellarity:item/endonomicon"
         }
       ],
@@ -2053,7 +2287,7 @@
         }
       ],
       "tooltip": {
-        "translate": "item.stellarity.voided_silverfish",
+        "translate": "item.stellarity.voided_silverfish_spawn_egg",
         "fallback": "Voided Silverfish Spawn Egg"
       },
       "width": 20,
@@ -2070,7 +2304,7 @@
         }
       ],
       "tooltip": {
-        "translate": "item.stellarity.voided_skeleton",
+        "translate": "item.stellarity.voided_skeleton_spawn_egg",
         "fallback": "Voided Skeleton Spawn Egg"
       },
       "width": 20,
@@ -2087,7 +2321,7 @@
         }
       ],
       "tooltip": {
-        "translate": "item.stellarity.voided_slime",
+        "translate": "item.stellarity.voided_slime_spawn_egg",
         "fallback": "Voided Slime Spawn Egg"
       },
       "width": 20,
@@ -2104,7 +2338,7 @@
         }
       ],
       "tooltip": {
-        "translate": "item.stellarity.voided_zombie",
+        "translate": "item.stellarity.voided_zombie_spawn_egg",
         "fallback": "Voided Zombie Spawn Egg"
       },
       "width": 20,

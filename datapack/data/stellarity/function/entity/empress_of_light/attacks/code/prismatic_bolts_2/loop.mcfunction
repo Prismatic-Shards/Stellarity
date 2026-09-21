@@ -19,4 +19,5 @@ execute if entity @s[tag=stellarity.empress_of_light.prismatic_bolt_2.gold] run 
 
 execute if entity @e[type=player,distance=..1.2] as @a[distance=..1.2,nbt={HurtTime:0s}] at @s run function stellarity:entity/empress_of_light/attacks/code/prismatic_bolts_2/damage
 
-execute if score @s stellarity.empress_of_light.projectile_age matches 75.. run kill @s
+execute unless score #empress_of_light.is_radiant stellarity.misc matches 1 if score @s stellarity.empress_of_light.projectile_age matches 75.. run kill @s
+execute if score #empress_of_light.is_radiant stellarity.misc matches 1 if score @s stellarity.empress_of_light.projectile_age matches 95.. run kill @s
