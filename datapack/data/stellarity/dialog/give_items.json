@@ -1105,7 +1105,7 @@
         "translate": "item.stellarity.void_pendant",
         "fallback": "Void Pendant"
         },
-        " ",
+        "\n",
         {
           "translate": "item.stellarity.void_pendant.amethyst.description.name",
           "fallback": "VISION",
@@ -1131,7 +1131,7 @@
         "translate": "item.stellarity.void_pendant",
         "fallback": "Void Pendant"
         },
-        "",
+        "\n",
         {
           "translate": "item.stellarity.void_pendant.copper.description.name",
           "fallback": "POWER",
@@ -1157,7 +1157,7 @@
         "translate": "item.stellarity.void_pendant",
         "fallback": "Void Pendant"
         },
-        "",
+        "\n",
         {
           "translate": "item.stellarity.void_pendant.diamond.description.name",
           "fallback": "FUROR",
@@ -1183,7 +1183,7 @@
         "translate": "item.stellarity.void_pendant",
         "fallback": "Void Pendant"
         },
-        "",
+        "\n",
         {
           "translate": "item.stellarity.void_pendant.emerald.description.name",
           "fallback": "FORTUNE",
@@ -1209,7 +1209,7 @@
         "translate": "item.stellarity.void_pendant",
         "fallback": "Void Pendant"
         },
-        "",
+        "\n",
         {
           "translate": "item.stellarity.void_pendant.gold.description.name",
           "fallback": "SPELUNKING",
@@ -1235,7 +1235,7 @@
         "translate": "item.stellarity.void_pendant",
         "fallback": "Void Pendant"
         },
-        "",
+        "\n",
         {
           "translate": "item.stellarity.void_pendant.iron.description.name",
           "fallback": "FORTITUDE",
@@ -1261,7 +1261,7 @@
         "translate": "item.stellarity.void_pendant",
         "fallback": "Void Pendant"
         },
-        "",
+        "\n",
         {
           "translate": "item.stellarity.void_pendant.lapis.description.name",
           "fallback": "WISDOM",
@@ -1287,7 +1287,7 @@
         "translate": "item.stellarity.void_pendant",
         "fallback": "Void Pendant"
         },
-        "",
+        "\n",
         {
           "translate": "item.stellarity.void_pendant.netherite.description.name",
           "fallback": "RAGE",
@@ -1313,7 +1313,7 @@
         "translate": "item.stellarity.void_pendant",
         "fallback": "Void Pendant"
         },
-        "",
+        "\n",
         {
           "translate": "item.stellarity.void_pendant.quartz.description.name",
           "fallback": "AGILITY",

@@ -4,6 +4,9 @@
     "translate": "Stellarity",
     "fallback": "Stellarity"
   },
+  "can_close_with_escape": true,
+  "after_action": "none",
+  "pause": false,
   "body": {
     "type": "minecraft:plain_message",
     "contents": [
