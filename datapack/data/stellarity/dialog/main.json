@@ -40,12 +40,12 @@
         {
           "translate": "gui.stellarity.main.maintained_by",
           "fallback": "ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ",
-          "color": "#BB80B9",
+          "color": "#E27E13",
           "bold": false
         },
         {
-          "text": " ʙᴀɴᴀɴᴀᴋɪɴɢхᴏ",
-          "color": "#AA5096",
+          "text": " ᴘʀɪѕᴍᴀᴛɪᴄ ѕʜᴀʀᴅѕ",
+          "color": "#FF76D0",
           "bold": true
         }
       ],
