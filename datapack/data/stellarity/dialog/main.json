@@ -4,6 +4,9 @@
     "translate": "Stellarity",
     "fallback": "Stellarity"
   },
+  "can_close_with_escape": true,
+  "after_action": "none",
+  "pause": false,
   "body": {
     "type": "minecraft:plain_message",
     "contents": [
@@ -40,12 +43,12 @@
         {
           "translate": "gui.stellarity.main.maintained_by",
           "fallback": "ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ",
-          "color": "#BB80B9",
+          "color": "#E27E13",
           "bold": false
         },
         {
-          "text": " ʙᴀɴᴀɴᴀᴋɪɴɢхᴏ",
-          "color": "#AA5096",
+          "text": " ᴘʀɪѕᴍᴀᴛɪᴄ ѕʜᴀʀᴅѕ",
+          "color": "#FF76D0",
           "bold": true
         }
       ],

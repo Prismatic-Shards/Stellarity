@@ -1,0 +1,90 @@
+{
+  "id": "stellarity",
+  "pack": {
+    "pack_format": 88,
+    "max_format": 999,
+    "min_format": 84,
+    "description": [
+      {
+        "text": "This ender expansion is kinda beyond hardcore :drum:",
+        "color": "#CB4BFF"
+      }
+    ]
+  },
+  "overlays": {
+    "entries": [
+      {
+        "directory": "overlay_data_26_2",
+        "formats": [
+          94,
+          107
+        ],
+        "min_format": [
+          94,
+          1
+        ],
+        "max_format": [
+          107,
+          1
+        ]
+      },
+      {
+        "directory": "overlay_data_26_1",
+        "formats": [
+          94,
+          101
+        ],
+        "min_format": [
+          94,
+          1
+        ],
+        "max_format": [
+          101,
+          1
+        ]
+      },
+      {
+        "directory": "overlay_data_1_21_11",
+        "formats": 94,
+        "min_format": [
+          94,
+          1
+        ],
+        "max_format": [
+          94,
+          1
+        ]
+      },
+      {
+        "directory": "overlay_assets_1_21_11",
+        "formats": [
+          64,
+          75
+        ],
+        "min_format": 64,
+        "max_format": 75
+      },
+      {
+        "directory": "overlay_assets_26_1",
+        "formats": 84,
+        "min_format": 84,
+        "max_format": 84
+      },
+      {
+        "directory": "overlay_assets_26_2",
+        "formats": 88,
+        "min_format": 88,
+        "max_format": 88
+      },
+      {
+        "directory": "overlay_assets_26_3",
+        "formats": 97,
+        "min_format": 97,
+        "max_format": [
+          97,
+          1
+        ]
+      }
+    ]
+  }
+}

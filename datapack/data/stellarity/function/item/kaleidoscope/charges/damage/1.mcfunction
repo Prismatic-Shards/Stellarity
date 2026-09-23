@@ -1,4 +1,5 @@
-scoreboard players set #effect.duration stellarity.misc 60
+execute unless predicate stellarity:item/holding/trinket/radiant_jewel run scoreboard players set #effect.duration stellarity.misc 60
+execute if predicate stellarity:item/holding/trinket/radiant_jewel run scoreboard players set #effect.duration stellarity.misc 80
 function stellarity:util/status_effects/holy_flames/apply
 
 scoreboard players set #damage kohara.misc 30

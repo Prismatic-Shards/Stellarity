@@ -14,7 +14,7 @@
   "overlays": {
     "entries": [
       {
-        "directory": "overlay_26_2",
+        "directory": "overlay_data_26_2",
         "min_format": [
           94,
           1
@@ -25,7 +25,7 @@
         ]
       },
       {
-        "directory": "overlay_26_1",
+        "directory": "overlay_data_26_1",
         "min_format": [
           94,
           1
@@ -36,7 +36,7 @@
         ]
       },
       {
-        "directory": "overlay_1_21_11",
+        "directory": "overlay_data_1_21_11",
         "min_format": [
           94,
           1

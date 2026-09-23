@@ -19,22 +19,22 @@
   "overlays": {
     "entries": [
       {
-        "directory": "overlay_1_21_11",
+        "directory": "overlay_assets_1_21_11",
         "min_format": 75,
         "max_format": 75
       },
       {
-        "directory": "overlay_26_1",
+        "directory": "overlay_assets_26_1",
         "min_format": 84,
         "max_format": 84
       },
       {
-        "directory": "overlay_26_2",
+        "directory": "overlay_assets_26_2",
         "min_format": 88,
         "max_format": 88
       },
       {
-        "directory": "overlay_26_3",
+        "directory": "overlay_assets_26_3",
         "min_format": 97,
         "max_format": 97
       }

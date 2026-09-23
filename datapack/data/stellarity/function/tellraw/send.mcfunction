@@ -21,8 +21,8 @@ tellraw @s [\
 
 tellraw @s [\
 {"text": "| ","color":"gray","bold":true},\
-{"text": "     Mᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ ","bold":false,"color":"#755074","italic":true},\
-{"text":"ʙᴀɴᴀɴᴀᴋɪɴɢхᴏ","bold":true,"color":"#773e6b","italic":true}\
+{"text": "     Mᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ ","bold":false,"color":"#E27E13","italic":true},\
+{"text":"ᴘʀɪѕᴍᴀᴛɪᴄ ѕʜᴀʀᴅѕ","bold":true,"color":"#FF76D0","italic":true}\
 ]
 
 tellraw @s {"text": "| ","color":"gray","bold":true}
