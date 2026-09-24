@@ -1,6 +1,11 @@
 execute if data storage kohara:temp {item_nbt:{Item:{id:"minecraft:dragon_egg"}}} run function stellarity:sfx/boss_drop/dragon_egg
 execute if data storage kohara:temp {item_nbt:{Item:{id:"minecraft:dragon_breath",count:1}}} run function stellarity:mechanic/cauldron_crafting/dragons_breath/add_tags
-execute if data storage kohara:temp {item_nbt:{Item:{id:"minecraft:endermite_spawn_egg",count:1,components:{"minecraft:custom_data":{"stellarity:item":"starlight_soot"}}}}} run function stellarity:mechanic/consecration/cauldron/add_tags
+execute if data storage kohara:temp {item_nbt:{Item:{components:{"minecraft:custom_data":{"stellarity:item":"starlight_soot"}}}}} run function stellarity:mechanic/consecration/cauldron/add_tags
+execute if data storage kohara:temp {item_nbt:{Item:{components:{"minecraft:custom_data":{"stellarity.item":"starlight_soot"}}}}} run function stellarity:mechanic/consecration/cauldron/add_tags
+execute if data storage kohara:temp {item_nbt:{Item:{components:{"minecraft:custom_data":{stellarity:{item:"starlight_soot"}}}}}} run function stellarity:mechanic/consecration/cauldron/add_tags
+execute if data storage kohara:temp {item_nbt:{Item:{tag:{"stellarity.item":"starlight_soot"}}}} run function stellarity:mechanic/consecration/cauldron/add_tags
+execute if data storage kohara:temp {item_nbt:{Item:{tag:{"stellarity:item":"starlight_soot"}}}} run function stellarity:mechanic/consecration/cauldron/add_tags
+execute if data storage kohara:temp {item_nbt:{Item:{tag:{stellarity:{item:"starlight_soot"}}}}} run function stellarity:mechanic/consecration/cauldron/add_tags
 
 execute if data storage kohara:temp {item_nbt:{Item:{id:"minecraft:netherite_sword",components:{"minecraft:custom_data":{"stellarity:item":"dragonblade"}}}}} run function stellarity:sfx/boss_drop/dragonblade
 

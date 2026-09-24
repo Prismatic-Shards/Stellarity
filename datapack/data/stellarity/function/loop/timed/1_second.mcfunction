@@ -32,6 +32,7 @@ execute if score #shulking.is_alive stellarity.misc matches 1 as @e[type=allay,t
 
 execute unless score #shulking.is_alive stellarity.misc matches 1 if entity @e[type=allay,tag=stellarity.shulking] run scoreboard players set #shulking.is_alive stellarity.misc 1
 execute unless score #empress_of_light.is_alive stellarity.misc matches 1 if entity @e[type=vindicator,tag=stellarity.empress_of_light] run scoreboard players set #empress_of_light.is_alive stellarity.misc 1
-execute unless score #empress_of_light.is_alive stellarity.misc matches 1 unless entity @e[type=vindicator,tag=stellarity.empress_of_light] as @e[type=item_display,tag=stellarity.empress_of_light.ethereal_lance] at @s run function stellarity:entity/empress_of_light/attacks/clear_all
+execute unless score #empress_of_light.is_alive stellarity.misc matches 1 if entity @e[type=marker,tag=stellarity.empress_of_light.spawn_animation] run scoreboard players set #empress_of_light.is_alive stellarity.misc 1
+execute unless score #empress_of_light.is_alive stellarity.misc matches 1 unless entity @e[type=vindicator,tag=stellarity.empress_of_light] unless entity @e[type=marker,tag=stellarity.empress_of_light.spawn_animation] as @e[type=item_display,tag=stellarity.empress_of_light.ethereal_lance] at @s run function stellarity:entity/empress_of_light/attacks/clear_all
 
 schedule function stellarity:loop/timed/1_second 1s

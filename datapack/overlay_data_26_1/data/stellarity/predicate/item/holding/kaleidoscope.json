@@ -1,15 +1,35 @@
 {
-  "condition": "minecraft:entity_properties",
-  "entity": "this",
-  "predicate": {
-    "slots": {
-      "weapon.*": {
-        "predicates": {
-          "minecraft:custom_data": {
-            "stellarity:item": "kaleidoscope"
+  "condition": "minecraft:any_of",
+  "terms": [
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "slots": {
+          "weapon.*": {
+            "predicates": {
+              "minecraft:custom_data": {
+                "stellarity:item": "kaleidoscope"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "slots": {
+          "weapon.*": {
+            "predicates": {
+              "minecraft:custom_data": {
+                "stellarity.item": "kaleidoscope"
+              }
+            }
           }
         }
       }
     }
-  }
+  ]
 }

@@ -1,17 +1,16 @@
 {
-  "type": "minecraft:mul",
-  "left": 0.25,
-  "right": {
-    "type": "minecraft:add",
-    "left": {
-      "type": "minecraft:add",
-      "left": "stellarity:main_island/d1",
-      "right": "stellarity:main_island/d2"
-    },
-    "right": {
-      "type": "minecraft:add",
-      "left": "stellarity:main_island/d3",
-      "right": "stellarity:main_island/d4"
-    }
-  }
+  "type": "minecraft:range_choice",
+  "input": {
+    "type": "minecraft:distance_to_point",
+    "point": [
+      0,
+      0,
+      0
+    ],
+    "metric": "euclidean"
+  },
+  "min_inclusive": 0,
+  "max_exclusive": 320,
+  "when_in_range": 0.001,
+  "when_out_of_range": 1.0
 }
