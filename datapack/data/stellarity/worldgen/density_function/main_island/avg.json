@@ -10,7 +10,7 @@
     "metric": "euclidean"
   },
   "min_inclusive": 0,
-  "max_exclusive": 320,
+  "max_exclusive": 1000,
   "when_in_range": 0.001,
   "when_out_of_range": 1.0
 }
