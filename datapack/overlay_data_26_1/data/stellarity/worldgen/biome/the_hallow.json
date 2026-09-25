@@ -50,52 +50,56 @@
     ],
     "creature": [
       {
-				"type": "pig",
-				"maxCount": 4,
-				"minCount": 1,
-				"weight": 20
-			},
-			{
-				"type": "cow",
-				"maxCount": 4,
-				"minCount": 1,
-				"weight": 20
-			},
-			{
-				"type": "sheep",
-				"maxCount": 4,
-				"minCount": 1,
-				"weight": 20
-			},
-			{
-				"type": "chicken",
-				"maxCount": 4,
-				"minCount": 1,
-				"weight": 20
-			},
-			{
-				"type": "wolf",
-				"maxCount": 4,
-				"minCount": 1,
-				"weight": 20
-			}
+        "type": "pig",
+        "maxCount": 4,
+        "minCount": 1,
+        "weight": 20
+      },
+      {
+        "type": "cow",
+        "maxCount": 4,
+        "minCount": 1,
+        "weight": 20
+      },
+      {
+        "type": "sheep",
+        "maxCount": 4,
+        "minCount": 1,
+        "weight": 20
+      },
+      {
+        "type": "chicken",
+        "maxCount": 4,
+        "minCount": 1,
+        "weight": 20
+      },
+      {
+        "type": "wolf",
+        "maxCount": 4,
+        "minCount": 1,
+        "weight": 20
+      }
     ]
   },
   "spawn_costs": {
     "minecraft:vex": {
-      "energy_budget": 0.25,
-      "charge": 1
+      "energy_budget": 1,
+      "charge": 0.6
     }
   },
   "carvers": [],
   "features": [
-    ["stellarity:the_hallow/stalactite"],
+    [
+      "stellarity:the_hallow/stalactite"
+    ],
     [
       "stellarity:the_hallow/crystals",
       "stellarity:the_hallow/crystals_amethyst",
       "stellarity:the_hallow/rock"
     ],
-    ["stellarity:the_hallow/large_lake"],
+    [
+      "stellarity:the_hallow/large_lake"
+    ],
     [],
     [],
     [],

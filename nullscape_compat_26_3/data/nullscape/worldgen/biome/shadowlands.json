@@ -58,9 +58,7 @@
     "carvers": [],
     "features": [
         [],
-        [
-            "minecraft:end_gateway_return"
-        ],
+        [],
         [],
         [
             "nullscape:shadow/shadow_cut"

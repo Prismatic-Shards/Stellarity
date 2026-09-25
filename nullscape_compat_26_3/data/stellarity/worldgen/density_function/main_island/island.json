@@ -1,0 +1,76 @@
+{
+  "type": "minecraft:add",
+  "left": {
+    "type": "minecraft:add",
+    "left": {
+      "type": "minecraft:squeeze",
+      "input": {
+        "type": "minecraft:interpolated",
+        "cell_size_xz": 4,
+        "cell_size_y": 8,
+        "input": {
+          "type": "minecraft:interpolated",
+          "cell_size_xz": 4,
+          "cell_size_y": 8,
+          "input": {
+            "type": "add",
+            "left": -1,
+            "right": {
+              "type": "mul",
+              "left": {
+                "type": "minecraft:gradient",
+                "axis": "y",
+                "from_value": 1,
+                "to_value": 0,
+                "from_coordinate": 45,
+                "to_coordinate": 75
+              },
+              "right": {
+                "type": "add",
+                "left": 1,
+                "right": {
+                  "type": "add",
+                  "left": -1,
+                  "right": {
+                    "type": "mul",
+                    "left": {
+                      "type": "minecraft:gradient",
+                      "axis": "y",
+                      "from_value": 0,
+                      "to_value": 1,
+                      "from_coordinate": 2,
+                      "to_coordinate": 26
+                    },
+                    "right": {
+                      "type": "add",
+                      "left": 1,
+                      "right": "stellarity:main_island/island_builder"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "right": {
+      "type": "minecraft:mul",
+      "left": 0.45,
+      "right": {
+        "type": "minecraft:max",
+        "left": "nullscape:island/bubble",
+        "right": "nullscape:island/bubble2"
+      }
+    }
+  },
+  "right": {
+    "type": "minecraft:mul",
+    "left": -6.0,
+    "right": {
+      "type": "minecraft:max",
+      "left": "nullscape:void/void_gauntlet",
+      "right": 0
+    }
+  }
+}

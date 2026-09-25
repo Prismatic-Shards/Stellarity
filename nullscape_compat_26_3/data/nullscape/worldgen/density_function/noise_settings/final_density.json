@@ -1,80 +1,89 @@
 {
-  "type": "minecraft:range_choice",
-  "input": "stellarity:distance_from_center",
-  "min_inclusive": 0,
-  "max_exclusive": 320,
-  "when_in_range": "stellarity:main_island/island",
-  "when_out_of_range": {
-    "type": "minecraft:range_choice",
-    "input": "stellarity:distance_from_center",
-    "min_inclusive": 320,
-    "max_exclusive": 950,
-    "when_in_range": -1.0,
-    "when_out_of_range": {
-      "type": "minecraft:add",
-      "left": {
-        "type": "minecraft:add",
-        "left": {
-          "type": "minecraft:squeeze",
+  "type": "minecraft:add",
+  "left": {
+    "type": "minecraft:lerp",
+    "alpha": {
+      "type": "minecraft:spline",
+      "spline": {
+        "coordinate": "nullscape:distance_from_origin",
+        "points": [
+          {
+            "location": 250,
+            "derivative": 0,
+            "value": 0
+          },
+          {
+            "location": 950,
+            "derivative": 0,
+            "value": 1
+          }
+        ]
+      }
+    },
+    "first": {
+      "type": "minecraft:interpolated",
+      "input": "stellarity:main_island/island",
+      "cell_size_xz": 8,
+      "cell_size_y": 4
+    },
+    "second": {
+      "type": "minecraft:squeeze",
+      "input": {
+        "type": "minecraft:mul",
+        "left": 0.64,
+        "right": {
+          "type": "minecraft:interpolated",
           "input": {
-            "type": "minecraft:mul",
-            "left": 0.64,
-            "right": {
-              "type": "minecraft:interpolated",
-              "input": {
-                "type": "minecraft:blend_density",
-                "input": {
-                  "type": "minecraft:sub",
+            "type": "minecraft:blend_density",
+            "input": {
+              "type": "minecraft:sub",
+              "left": {
+                "type": "minecraft:mul",
+                "left": {
+                  "type": "minecraft:gradient",
+                  "from_coordinate": 4,
+                  "to_coordinate": 32,
+                  "from_value": 0,
+                  "to_value": 1,
+                  "axis": "y",
+                  "tiling": "clamp_to_edge"
+                },
+                "right": {
+                  "type": "minecraft:add",
                   "left": {
-                    "type": "minecraft:mul",
+                    "type": "minecraft:sub",
                     "left": {
-                      "type": "minecraft:gradient",
-                      "from_coordinate": 4,
-                      "to_coordinate": 32,
-                      "from_value": 0,
-                      "to_value": 1,
-                      "axis": "y",
-                      "tiling": "clamp_to_edge"
-                    },
-                    "right": {
-                      "type": "minecraft:add",
+                      "type": "minecraft:mul",
                       "left": {
-                        "type": "minecraft:sub",
-                        "left": {
-                          "type": "minecraft:mul",
-                          "left": {
-                            "type": "minecraft:gradient",
-                            "from_coordinate": 256,
-                            "to_coordinate": 304,
-                            "from_value": 1,
-                            "to_value": 0,
-                            "axis": "y",
-                            "tiling": "clamp_to_edge"
-                          },
-                          "right": {
-                            "type": "minecraft:add",
-                            "left": "nullscape:sloped_cheese",
-                            "right": 0.5
-                          }
-                        },
-                        "right": 0.5
+                        "type": "minecraft:gradient",
+                        "from_coordinate": 256,
+                        "to_coordinate": 304,
+                        "from_value": 1,
+                        "to_value": 0,
+                        "axis": "y",
+                        "tiling": "clamp_to_edge"
                       },
-                      "right": 0.234375
-                    }
+                      "right": {
+                        "type": "minecraft:add",
+                        "left": "nullscape:sloped_cheese",
+                        "right": 0.5
+                      }
+                    },
+                    "right": 0.5
                   },
                   "right": 0.234375
                 }
               },
-              "cell_size_xz": 8,
-              "cell_size_y": 4
+              "right": 0.234375
             }
-          }
-        },
-        "right": {
-          "type": "minecraft:beardifier"
+          },
+          "cell_size_xz": 8,
+          "cell_size_y": 4
         }
-      },
-      "right": "stellarity:outer_islands_falloff"
+      }
     }
+  },
+  "right": {
+    "type": "minecraft:beardifier"
   }
 }

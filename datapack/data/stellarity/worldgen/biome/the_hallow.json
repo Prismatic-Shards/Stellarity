@@ -34,11 +34,11 @@
     },
     "gameplay/natural_mob_spawns": {
       "spawn_costs": {
-    "minecraft:vex": {
-      "energy_budget": 0.25,
-      "charge": 1
-    }
-  },
+        "minecraft:vex": {
+          "energy_budget": 1.0,
+          "charge": 0.6
+        }
+      },
       "spawns_by_category": {
         "monster": [
           {
@@ -109,13 +109,17 @@
   },
   "carvers": [],
   "features": [
-    ["stellarity:the_hallow/stalactite"],
+    [
+      "stellarity:the_hallow/stalactite"
+    ],
     [
       "stellarity:the_hallow/crystals",
       "stellarity:the_hallow/crystals_amethyst",
       "stellarity:the_hallow/rock"
     ],
-    ["stellarity:the_hallow/large_lake"],
+    [
+      "stellarity:the_hallow/large_lake"
+    ],
     [],
     [],
     [],

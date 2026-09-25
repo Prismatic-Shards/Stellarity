@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:end_city",
+  "biomes": "#minecraft:has_structure/end_city",
+  "step": "surface_structures",
+  "terrain_adaptation": "none",
+  "spawn_overrides": {}
+}

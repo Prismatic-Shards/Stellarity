@@ -48,9 +48,7 @@
     "carvers": [],
     "features": [
         [],
-        [
-            "minecraft:end_gateway_return"
-        ],
+        [],
         [
             "nullscape:infestation/spike"
         ],

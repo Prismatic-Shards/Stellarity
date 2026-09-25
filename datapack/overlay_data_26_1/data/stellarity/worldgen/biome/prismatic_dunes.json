@@ -50,13 +50,15 @@
   },
   "spawn_costs": {
     "minecraft:vex": {
-      "energy_budget": 0.14,
-      "charge": 1
+      "energy_budget": 1,
+      "charge": 0.6
     }
   },
   "carvers": [],
   "features": [
-    ["stellarity:the_hallow/stalactite"],
+    [
+      "stellarity:the_hallow/stalactite"
+    ],
     [
       "stellarity:the_hallow/crystals",
       "stellarity:the_hallow/crystals_amethyst"
@@ -77,6 +79,8 @@
       "stellarity:prismatic_dunes/prismatic_cacti",
       "stellarity:prismatic_dunes/rare_grass_patch"
     ],
-    ["stellarity:global/fossil"]
+    [
+      "stellarity:global/fossil"
+    ]
   ]
 }

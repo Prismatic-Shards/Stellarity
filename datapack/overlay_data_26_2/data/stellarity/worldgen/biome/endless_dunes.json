@@ -62,21 +62,24 @@
   },
   "spawn_costs": {
     "minecraft:enderman": {
-      "energy_budget": 0.3,
-      "charge": 1
+      "energy_budget": 1,
+      "charge": 0.6
     },
     "minecraft:zombie": {
-      "energy_budget": 0.14,
-      "charge": 1
+      "energy_budget": 1,
+      "charge": 0.6
     },
     "minecraft:skeleton": {
-      "energy_budget": 0.15,
-      "charge": 1
+      "energy_budget": 1,
+      "charge": 0.6
     }
   },
-  "carvers": ["stellarity:ravine", "stellarity:crack"],
+  "carvers": [
+    "stellarity:ravine",
+    "stellarity:crack"
+  ],
   "features": [
-    [ 
+    [
       "stellarity:global/stalactite",
       "stellarity:endless_dunes/oasis"
     ],
@@ -96,7 +99,7 @@
       "stellarity:endless_dunes/grass"
     ],
     [
-      "stellarity:global/end_dungeon", 
+      "stellarity:global/end_dungeon",
       "stellarity:global/fossil"
     ]
   ]

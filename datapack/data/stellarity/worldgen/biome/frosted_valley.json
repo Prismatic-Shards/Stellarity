@@ -36,16 +36,16 @@
     "gameplay/natural_mob_spawns": {
       "spawn_costs": {
         "minecraft:enderman": {
-          "energy_budget": 0.4,
-          "charge": 1
+          "energy_budget": 1.0,
+          "charge": 0.6
         },
         "minecraft:skeleton": {
-          "energy_budget": 0.4,
-          "charge": 1
+          "energy_budget": 1.0,
+          "charge": 0.6
         },
         "minecraft:silverfish": {
-          "energy_budget": 0.5,
-          "charge": 1
+          "energy_budget": 1.0,
+          "charge": 0.6
         }
       },
       "spawns_by_category": {
