@@ -13,7 +13,12 @@
             "value": 0
           },
           {
-            "location": 1200,
+            "location": 950,
+            "derivative": 0,
+            "value": 0
+          },
+          {
+            "location": 1050,
             "derivative": 0,
             "value": 1
           }
@@ -84,6 +89,11 @@
     }
   },
   "right": {
-    "type": "minecraft:beardifier"
+    "type": "minecraft:clamp",
+    "input": {
+      "type": "minecraft:beardifier"
+    },
+    "min": -0.15,
+    "max": 1.0
   }
 }

@@ -3,117 +3,142 @@
   "left": {
     "type": "minecraft:add",
     "left": {
-      "type": "minecraft:squeeze",
-      "input": {
-        "type": "minecraft:interpolated",
-        "cell_size_xz": 4,
-        "cell_size_y": 8,
-        "input": {
-          "type": "minecraft:interpolated",
-          "cell_size_xz": 4,
-          "cell_size_y": 8,
-          "input": {
-            "type": "add",
-            "left": -1,
-            "right": {
-              "type": "mul",
-              "left": {
+      "type": "minecraft:add",
+      "left": {
+        "type": "minecraft:add",
+        "left": {
+          "type": "minecraft:mul",
+          "left": 0.64,
+          "right": {
+            "type": "minecraft:blend_density",
+            "input": {
+              "type": "minecraft:lerp",
+              "alpha": {
                 "type": "minecraft:gradient",
                 "axis": "y",
-                "from_value": 1,
-                "to_value": 0,
-                "from_coordinate": 45,
-                "to_coordinate": 65
+                "from_coordinate": 4,
+                "from_value": 0.0,
+                "to_coordinate": 32,
+                "to_value": 1.0
               },
-              "right": {
-                "type": "add",
-                "left": 1,
-                "right": {
-                  "type": "add",
-                  "left": -1,
-                  "right": {
-                    "type": "mul",
-                    "left": {
-                      "type": "minecraft:gradient",
+              "first": -0.234375,
+              "second": {
+                "type": "minecraft:lerp",
+                "alpha": {
+                  "type": "minecraft:gradient",
+                  "axis": "y",
+                  "from_coordinate": 56,
+                  "from_value": 1.0,
+                  "to_coordinate": 72,
+                  "to_value": 0.0
+                },
+                "first": -23.4375,
+                "second": {
+                  "type": "minecraft:add",
+                  "left": {
+                    "type": "minecraft:mul",
+                    "left": 2,
+                    "right": {
+                      "type": "minecraft:slice",
                       "axis": "y",
-                      "from_value": 0,
-                      "to_value": 1,
-                      "from_coordinate": 2,
-                      "to_coordinate": 26
+                      "coordinate": 0,
+                      "input": {
+                        "type": "minecraft:mul",
+                        "left": {
+                          "type": "minecraft:sub",
+                          "left": {
+                            "type": "minecraft:clamp",
+                            "input": {
+                              "type": "minecraft:sub",
+                              "left": 100.0,
+                              "right": {
+                                "type": "minecraft:distance_to_point",
+                                "metric": "euclidean",
+                                "point": [
+                                  0,
+                                  0,
+                                  0
+                                ]
+                              }
+                            },
+                            "max": 80.0,
+                            "min": -100.0
+                          },
+                          "right": 8.0
+                        },
+                        "right": 0.0078125
+                      }
+                    }
+                  },
+                  "right": {
+                    "type": "minecraft:max",
+                    "left": {
+                      "type": "minecraft:mul",
+                      "left": 1.75,
+                      "right": "nullscape:island/bubble"
                     },
                     "right": {
-                      "type": "add",
-                      "left": 1,
-                      "right": {
-                        "type": "add",
-                        "left": "stellarity:main_island/island_builder",
-                        "right": {
-                          "type": "mul",
-                          "left": 0.35,
-                          "right": {
-                            "type": "minecraft:max",
-                            "left": "nullscape:island/bubble",
-                            "right": "nullscape:island/bubble2"
-                          }
-                        }
-                      }
+                      "type": "minecraft:mul",
+                      "left": 1.75,
+                      "right": "nullscape:island/bubble2"
                     }
                   }
                 }
               }
             }
           }
-        }
-      }
-    },
-    "right": {
-      "type": "minecraft:mul",
-      "left": -5.0,
-      "right": {
-        "type": "minecraft:max",
-        "left": "nullscape:void/void_gauntlet",
-        "right": 0
-      }
-    }
-  },
-  "right": {
-    "type": "minecraft:add",
-    "left": {
-      "type": "minecraft:spline",
-      "spline": {
-        "coordinate": "nullscape:distance_from_origin",
-        "points": [
-          {
-            "location": 0,
-            "value": 0,
-            "derivative": 0
-          },
-          {
-            "location": 115,
-            "value": 0,
-            "derivative": 0
-          },
-          {
-            "location": 165,
-            "value": 2.5,
-            "derivative": 0
-          },
-          {
-            "location": 200,
-            "value": 100.0,
-            "derivative": 0
+        },
+        "right": {
+          "type": "minecraft:mul",
+          "left": -10,
+          "right": {
+            "type": "minecraft:max",
+            "left": "nullscape:void/void_gauntlet",
+            "right": 0
           }
-        ]
+        }
+      },
+      "right": {
+        "type": "minecraft:gradient",
+        "from_coordinate": 0,
+        "to_coordinate": 35,
+        "from_value": -1.25,
+        "to_value": 0,
+        "axis": "y",
+        "tiling": "clamp_to_edge"
       }
     },
     "right": {
       "type": "minecraft:gradient",
-      "axis": "y",
-      "from_coordinate": 68,
-      "to_coordinate": 80,
+      "from_coordinate": 35,
+      "to_coordinate": 75,
       "from_value": 0,
-      "to_value": 50,
+      "to_value": -6,
+      "axis": "y",
       "tiling": "clamp_to_edge"
+    }
+  },
+  "right": {
+    "type": "minecraft:spline",
+    "spline": {
+      "coordinate": "nullscape:distance_from_origin",
+      "points": [
+        {
+          "location": 0,
+          "value": 0,
+          "derivative": 0
+        },
+        {
+          "location": 160,
+          "value": 0,
+          "derivative": 0
+        },
+        {
+          "location": 190,
+          "value": 50.0,
+          "derivative": 0
+        }
+      ]
     }
   }
 }

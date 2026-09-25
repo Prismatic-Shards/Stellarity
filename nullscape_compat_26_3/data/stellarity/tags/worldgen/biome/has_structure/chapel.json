@@ -2,9 +2,7 @@
   "values": [
     "stellarity:the_hallow",
     "stellarity:prismatic_dunes",
-    "stellarity:hallowed_tundra",
-    "nullscape:shadowlands",
-    "nullscape:crystal_peaks"
+    "stellarity:hallowed_tundra"
   ],
   "replace": false
 }

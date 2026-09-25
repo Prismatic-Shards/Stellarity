@@ -58,6 +58,13 @@
         [],
         [],
         [],
+        [
+            "nullscape:highland/glowstone_patch",
+            "nullscape:highland/patch_bottom",
+            "nullscape:glowstone/roots",
+            "nullscape:glowstone/tree",
+            "nullscape:glowstone/tree2"
+        ],
         []
     ]
 }
