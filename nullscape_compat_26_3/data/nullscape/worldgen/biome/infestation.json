@@ -1,0 +1,65 @@
+{
+    "attributes": {
+        "minecraft:visual/ambient_particles": [
+            {
+                "particle": {
+                    "type": "minecraft:sculk_soul"
+                },
+                "probability": 0.0007
+            }
+        ],
+        "minecraft:visual/fog_color": 6442103,
+        "minecraft:visual/water_fog_color": 3019576,
+        "minecraft:visual/sky_color": 0,
+        "minecraft:audio/ambient_sounds": {
+            "additions": {
+                "sound": "minecraft:ambient.basalt_deltas.additions",
+                "tick_chance": 0.008
+            },
+            "mood": {
+                "sound": "minecraft:ambient.warped_forest.mood",
+                "tick_delay": 6000,
+                "block_search_extent": 8,
+                "offset": 2
+            }
+        },
+        "gameplay/natural_mob_spawns": {
+            "spawn_costs": {},
+            "spawns_by_category": {
+                "monster": [
+                    {
+                        "type": "minecraft:endermite",
+                        "weight": 4,
+                        "count": 2
+                    }
+                ]
+            }
+        }
+    },
+    "effects": {
+        "water_color": 8476868,
+        "grass_color": 3767172,
+        "foliage_color": 681329,
+        "dry_foliage_color": 5182112
+    },
+    "temperature": 1,
+    "downfall": 0,
+    "has_precipitation": false,
+    "carvers": [],
+    "features": [
+        [],
+        [
+            "minecraft:end_gateway_return"
+        ],
+        [
+            "nullscape:infestation/spike"
+        ],
+        [
+            "nullscape:infestation/twisting_vines",
+            "nullscape:infestation/sculk_related"
+        ],
+        [
+            "nullscape:infestation/sculk_vein"
+        ]
+    ]
+}

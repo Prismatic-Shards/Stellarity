@@ -1,0 +1,50 @@
+{
+    "attributes": {
+        "minecraft:visual/fog_color": 10518688,
+        "minecraft:visual/water_fog_color": 329011,
+        "minecraft:visual/sky_color": 0,
+        "minecraft:audio/ambient_sounds": {
+            "mood": {
+                "sound": "minecraft:ambient.cave",
+                "tick_delay": 6000,
+                "block_search_extent": 8,
+                "offset": 2
+            }
+        },
+        "gameplay/natural_mob_spawns": {
+            "spawn_costs": {},
+            "spawns_by_category": {
+                "monster": [
+                    {
+                        "type": "minecraft:enderman",
+                        "weight": 10,
+                        "count": 4
+                    }
+                ]
+            }
+        }
+    },
+    "temperature": 0.5,
+    "downfall": 0.5,
+    "has_precipitation": false,
+    "effects": {
+        "water_color": 9995221,
+        "grass_color": 10717400,
+        "foliage_color": 4561369
+    },
+    "carvers": [],
+    "features": [
+        [],
+        [],
+        [],
+        [],
+        [
+            "minecraft:end_gateway_return"
+        ],
+        [],
+        [],
+        [],
+        [],
+        []
+    ]
+}

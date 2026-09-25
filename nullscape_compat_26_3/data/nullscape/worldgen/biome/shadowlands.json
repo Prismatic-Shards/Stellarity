@@ -1,0 +1,80 @@
+{
+    "attributes": {
+        "minecraft:visual/fog_color": 10518688,
+        "minecraft:visual/water_fog_color": 329011,
+        "minecraft:visual/sky_color": 0,
+        "minecraft:visual/ambient_particles": [
+            {
+                "particle": {
+                    "type": "minecraft:ash"
+                },
+                "probability": 0.08
+            }
+        ],
+        "minecraft:audio/ambient_sounds": {
+            "mood": {
+                "sound": "minecraft:ambient.soul_sand_valley.mood",
+                "tick_delay": 6000,
+                "block_search_extent": 8,
+                "offset": 2
+            },
+            "loop": "minecraft:ambient.warped_forest.loop",
+            "additions": {
+                "sound": "minecraft:ambient.soul_sand_valley.additions",
+                "tick_chance": 0.0111
+            }
+        },
+        "gameplay/natural_mob_spawns": {
+            "spawn_costs": {
+                "phantom": {
+                    "energy_budget": 0.12,
+                    "charge": 1
+                }
+            },
+            "spawns_by_category": {
+                "monster": [
+                    {
+                        "type": "minecraft:phantom",
+                        "weight": 5,
+                        "count": 1
+                    },
+                    {
+                        "type": "minecraft:enderman",
+                        "weight": 10,
+                        "count": 4
+                    }
+                ]
+            }
+        }
+    },
+    "temperature": 2,
+    "downfall": 0,
+    "has_precipitation": false,
+    "effects": {
+        "water_color": 9995221,
+        "grass_color": 10717400,
+        "foliage_color": 4561369
+    },
+    "carvers": [],
+    "features": [
+        [],
+        [
+            "minecraft:end_gateway_return"
+        ],
+        [],
+        [
+            "nullscape:shadow/shadow_cut"
+        ],
+        [
+            "nullscape:shadow/blackstone",
+            "nullscape:shadow/basalt",
+            "nullscape:shadow/bone_trees1",
+            "nullscape:shadow/droop"
+        ],
+        [
+            "nullscape:shadow/pillar",
+            "nullscape:shadow/vegetation",
+            "nullscape:shadow/pillars_coral"
+        ]
+    ]
+}

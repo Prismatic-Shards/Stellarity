@@ -6,8 +6,8 @@ artifacts/
 new_translations/
 .venv/
 
-Nullscape/
-nullscape/
+
+Nullscape_v2.0.0+26.3/
 
 build/
 .spyglassrc.json

@@ -1,0 +1,97 @@
+{
+    "type": "minecraft:geode",
+    "blocks": {
+        "filling_provider": {
+            "type": "minecraft:simple",
+            "state": {
+                "id": "minecraft:end_stone"
+            }
+        },
+        "inner_layer_provider": {
+            "type": "minecraft:simple",
+            "state": {
+                "id": "minecraft:end_stone"
+            }
+        },
+        "alternate_inner_layer_provider": {
+            "type": "minecraft:simple",
+            "state": {
+                "id": "minecraft:end_stone"
+            }
+        },
+        "middle_layer_provider": {
+            "type": "minecraft:weighted",
+            "entries": [
+                {
+                    "weight": 1,
+                    "data": {
+                        "id": "minecraft:air"
+                    }
+                },
+                {
+                    "weight": 13,
+                    "data": {
+                        "id": "minecraft:end_stone"
+                    }
+                }
+            ]
+        },
+        "outer_layer_provider": {
+            "type": "minecraft:weighted",
+            "entries": [
+                {
+                    "weight": 8,
+                    "data": {
+                        "id": "minecraft:end_stone"
+                    }
+                },
+                {
+                    "weight": 1,
+                    "data": {
+                        "id": "minecraft:air"
+                    }
+                }
+            ]
+        },
+        "inner_placements": [
+            {
+                "id": "minecraft:end_stone"
+            }
+        ],
+        "cannot_replace": "#minecraft:combination_step_sound_blocks",
+        "invalid_blocks": "#nullscape:end_bottom"
+    },
+    "layers": {
+        "filling": 1,
+        "inner_layer": 1.5,
+        "middle_layer": 2,
+        "outer_layer": 2.75
+    },
+    "crack": {
+        "generate_crack_chance": 0.625,
+        "base_crack_size": 1.4,
+        "crack_point_offset": 1
+    },
+    "noise_multiplier": 0.095,
+    "use_potential_placements_chance": 0,
+    "use_alternate_layer0_chance": 0,
+    "placements_require_layer0_alternate": false,
+    "outer_wall_distance": {
+        "type": "minecraft:uniform",
+        "min_inclusive": 3,
+        "max_inclusive": 6
+    },
+    "distribution_points": {
+        "type": "minecraft:biased_to_bottom",
+        "min_inclusive": 3,
+        "max_inclusive": 4
+    },
+    "point_offset": {
+        "type": "minecraft:uniform",
+        "min_inclusive": 3,
+        "max_inclusive": 7
+    },
+    "min_gen_offset": -16,
+    "max_gen_offset": 16,
+    "invalid_blocks_threshold": 25
+}

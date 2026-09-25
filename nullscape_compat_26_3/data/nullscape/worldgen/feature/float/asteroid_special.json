@@ -1,0 +1,330 @@
+{
+    "type": "minecraft:geode",
+    "blocks": {
+        "filling_provider": {
+            "type": "minecraft:simple",
+            "state": {
+                "id": "minecraft:air"
+            }
+        },
+        "inner_layer_provider": {
+            "type": "minecraft:dual_noise",
+            "seed": 0,
+            "noise": {
+                "base_octave": -6,
+                "amplitude_modifiers": [
+                    0.15,
+                    0.15
+                ],
+                "octave_count": 2,
+                "normalize": "legacy",
+                "base_amplitude": 1.0
+            },
+            "scale": 1,
+            "variety": {
+                "min_inclusive": 1,
+                "max_inclusive": 19
+            },
+            "slow_noise": {
+                "base_octave": -6,
+                "amplitude_modifiers": [
+                    1,
+                    1.125,
+                    1.25,
+                    1.375
+                ],
+                "octave_count": 4,
+                "normalize": "legacy",
+                "base_amplitude": 1.0
+            },
+            "slow_scale": 1,
+            "states": [
+                {
+                    "id": "minecraft:crying_obsidian"
+                },
+                {
+                    "id": "minecraft:obsidian"
+                },
+                {
+                    "id": "minecraft:obsidian"
+                },
+                {
+                    "id": "minecraft:obsidian"
+                },
+                {
+                    "id": "minecraft:blackstone"
+                },
+                {
+                    "id": "minecraft:obsidian"
+                },
+                {
+                    "id": "minecraft:obsidian"
+                },
+                {
+                    "id": "minecraft:obsidian"
+                },
+                {
+                    "id": "minecraft:blackstone"
+                },
+                {
+                    "id": "minecraft:gilded_blackstone"
+                },
+                {
+                    "id": "minecraft:blackstone"
+                },
+                {
+                    "id": "minecraft:obsidian"
+                },
+                {
+                    "id": "minecraft:obsidian"
+                },
+                {
+                    "id": "minecraft:obsidian"
+                },
+                {
+                    "id": "minecraft:blackstone"
+                },
+                {
+                    "id": "minecraft:obsidian"
+                },
+                {
+                    "id": "minecraft:obsidian"
+                },
+                {
+                    "id": "minecraft:obsidian"
+                },
+                {
+                    "id": "minecraft:crying_obsidian"
+                }
+            ]
+        },
+        "alternate_inner_layer_provider": {
+            "type": "minecraft:simple",
+            "state": {
+                "id": "minecraft:obsidian"
+            }
+        },
+        "middle_layer_provider": {
+            "type": "minecraft:dual_noise",
+            "seed": 0,
+            "noise": {
+                "base_octave": -6,
+                "amplitude_modifiers": [
+                    0.15,
+                    0.15
+                ],
+                "octave_count": 2,
+                "normalize": "legacy",
+                "base_amplitude": 1.0
+            },
+            "scale": 1,
+            "variety": {
+                "min_inclusive": 1,
+                "max_inclusive": 19
+            },
+            "slow_noise": {
+                "base_octave": -6,
+                "amplitude_modifiers": [
+                    1,
+                    1.125,
+                    1.25,
+                    1.375
+                ],
+                "octave_count": 4,
+                "normalize": "legacy",
+                "base_amplitude": 1.0
+            },
+            "slow_scale": 1,
+            "states": [
+                {
+                    "id": "minecraft:crying_obsidian"
+                },
+                {
+                    "id": "minecraft:obsidian"
+                },
+                {
+                    "id": "minecraft:obsidian"
+                },
+                {
+                    "id": "minecraft:obsidian"
+                },
+                {
+                    "id": "minecraft:blackstone"
+                },
+                {
+                    "id": "minecraft:obsidian"
+                },
+                {
+                    "id": "minecraft:obsidian"
+                },
+                {
+                    "id": "minecraft:obsidian"
+                },
+                {
+                    "id": "minecraft:blackstone"
+                },
+                {
+                    "id": "minecraft:gilded_blackstone"
+                },
+                {
+                    "id": "minecraft:blackstone"
+                },
+                {
+                    "id": "minecraft:obsidian"
+                },
+                {
+                    "id": "minecraft:obsidian"
+                },
+                {
+                    "id": "minecraft:obsidian"
+                },
+                {
+                    "id": "minecraft:blackstone"
+                },
+                {
+                    "id": "minecraft:obsidian"
+                },
+                {
+                    "id": "minecraft:obsidian"
+                },
+                {
+                    "id": "minecraft:obsidian"
+                },
+                {
+                    "id": "minecraft:crying_obsidian"
+                }
+            ]
+        },
+        "outer_layer_provider": {
+            "type": "minecraft:dual_noise",
+            "seed": 0,
+            "noise": {
+                "base_octave": -6,
+                "amplitude_modifiers": [
+                    0.15,
+                    0.15
+                ],
+                "octave_count": 2,
+                "normalize": "legacy",
+                "base_amplitude": 1.0
+            },
+            "scale": 1,
+            "variety": {
+                "min_inclusive": 1,
+                "max_inclusive": 19
+            },
+            "slow_noise": {
+                "base_octave": -6,
+                "amplitude_modifiers": [
+                    1,
+                    1.125,
+                    1.25,
+                    1.375
+                ],
+                "octave_count": 4,
+                "normalize": "legacy",
+                "base_amplitude": 1.0
+            },
+            "slow_scale": 1,
+            "states": [
+                {
+                    "id": "minecraft:crying_obsidian"
+                },
+                {
+                    "id": "minecraft:obsidian"
+                },
+                {
+                    "id": "minecraft:obsidian"
+                },
+                {
+                    "id": "minecraft:obsidian"
+                },
+                {
+                    "id": "minecraft:blackstone"
+                },
+                {
+                    "id": "minecraft:obsidian"
+                },
+                {
+                    "id": "minecraft:obsidian"
+                },
+                {
+                    "id": "minecraft:obsidian"
+                },
+                {
+                    "id": "minecraft:blackstone"
+                },
+                {
+                    "id": "minecraft:blackstone"
+                },
+                {
+                    "id": "minecraft:blackstone"
+                },
+                {
+                    "id": "minecraft:obsidian"
+                },
+                {
+                    "id": "minecraft:obsidian"
+                },
+                {
+                    "id": "minecraft:obsidian"
+                },
+                {
+                    "id": "minecraft:blackstone"
+                },
+                {
+                    "id": "minecraft:obsidian"
+                },
+                {
+                    "id": "minecraft:obsidian"
+                },
+                {
+                    "id": "minecraft:obsidian"
+                },
+                {
+                    "id": "minecraft:crying_obsidian"
+                }
+            ]
+        },
+        "inner_placements": [
+            {
+                "id": "minecraft:obsidian"
+            }
+        ],
+        "cannot_replace": "#minecraft:combination_step_sound_blocks",
+        "invalid_blocks": "#nullscape:end_bottom"
+    },
+    "layers": {
+        "filling": 1.75,
+        "inner_layer": 2.5,
+        "middle_layer": 3,
+        "outer_layer": 4
+    },
+    "crack": {
+        "generate_crack_chance": 0.625,
+        "base_crack_size": 1.4,
+        "crack_point_offset": 1
+    },
+    "noise_multiplier": 0.095,
+    "use_potential_placements_chance": 0,
+    "use_alternate_layer0_chance": 0,
+    "placements_require_layer0_alternate": false,
+    "outer_wall_distance": {
+        "type": "minecraft:uniform",
+        "min_inclusive": 3,
+        "max_inclusive": 6
+    },
+    "distribution_points": {
+        "type": "minecraft:biased_to_bottom",
+        "min_inclusive": 3,
+        "max_inclusive": 4
+    },
+    "point_offset": {
+        "type": "minecraft:uniform",
+        "min_inclusive": 3,
+        "max_inclusive": 7
+    },
+    "min_gen_offset": -16,
+    "max_gen_offset": 16,
+    "invalid_blocks_threshold": 25
+}
