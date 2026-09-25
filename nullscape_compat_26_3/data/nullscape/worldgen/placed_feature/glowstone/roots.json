@@ -3,7 +3,7 @@
   "placement": [
     {
       "type": "minecraft:count",
-      "count": 4
+      "count": 2
     },
     {
       "type": "minecraft:in_square"
@@ -23,7 +23,6 @@
     {
       "type": "minecraft:environment_scan",
       "direction_of_search": "down",
-      "max_steps": 32,
       "target_condition": {
         "type": "minecraft:solid"
       },
@@ -32,14 +31,12 @@
         "blocks": [
           "minecraft:air"
         ]
-      }
+      },
+      "max_steps": 32
     },
     {
       "type": "minecraft:rarity_filter",
       "chance": 2
-    },
-    {
-      "type": "minecraft:biome"
     }
   ]
 }
