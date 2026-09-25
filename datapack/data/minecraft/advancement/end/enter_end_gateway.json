@@ -23,5 +23,8 @@
       }
     }
   },
-  "requirements": [["entered_end_gateway"]]
+  "requirements": [["entered_end_gateway"]],
+  "rewards": {
+    "function": "stellarity:structure/exit_portal/gateway/on_player_enter"
+  }
 }

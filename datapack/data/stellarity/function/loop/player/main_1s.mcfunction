@@ -33,3 +33,6 @@ scoreboard players reset @s stellarity.misc.loop.1s
   
   effect give @a[predicate=stellarity:item/holding/void_pendant/amethyst] night_vision 15 0 true
   effect give @a[predicate=stellarity:item/holding/trinket/duskberry] night_vision 15 0 true
+
+# Gateway decor check
+execute if entity @s[predicate=stellarity:location/in_the_end] unless entity @e[type=marker,tag=stellarity.end_gateway_anim,distance=..8] run function stellarity:structure/exit_portal/gateway/scan_area

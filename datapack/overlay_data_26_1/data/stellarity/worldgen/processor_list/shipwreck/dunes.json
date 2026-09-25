@@ -5,19 +5,6 @@
       "rules": [
         {
           "location_predicate": {
-            "predicate_type": "minecraft:block_match",
-            "block": "minecraft:air"
-          },
-          "input_predicate": {
-            "predicate_type": "minecraft:block_match",
-            "block": "minecraft:dirt"
-          },
-          "output_state": {
-            "Name": "minecraft:air"
-          }
-        },
-        {
-          "location_predicate": {
             "predicate_type": "minecraft:always_true"
           },
           "input_predicate": {

@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:add",
+  "type": "minecraft:sub",
   "left": {
     "type": "minecraft:add",
     "left": {
@@ -23,7 +23,7 @@
                 "from_value": 1,
                 "to_value": 0,
                 "from_coordinate": 45,
-                "to_coordinate": 75
+                "to_coordinate": 65
               },
               "right": {
                 "type": "add",
@@ -44,7 +44,19 @@
                     "right": {
                       "type": "add",
                       "left": 1,
-                      "right": "stellarity:main_island/island_builder"
+                      "right": {
+                        "type": "add",
+                        "left": "stellarity:main_island/island_builder",
+                        "right": {
+                          "type": "mul",
+                          "left": 0.35,
+                          "right": {
+                            "type": "minecraft:max",
+                            "left": "nullscape:island/bubble",
+                            "right": "nullscape:island/bubble2"
+                          }
+                        }
+                      }
                     }
                   }
                 }
@@ -56,21 +68,52 @@
     },
     "right": {
       "type": "minecraft:mul",
-      "left": 0.45,
+      "left": -5.0,
       "right": {
         "type": "minecraft:max",
-        "left": "nullscape:island/bubble",
-        "right": "nullscape:island/bubble2"
+        "left": "nullscape:void/void_gauntlet",
+        "right": 0
       }
     }
   },
   "right": {
-    "type": "minecraft:mul",
-    "left": -6.0,
+    "type": "minecraft:add",
+    "left": {
+      "type": "minecraft:spline",
+      "spline": {
+        "coordinate": "nullscape:distance_from_origin",
+        "points": [
+          {
+            "location": 0,
+            "value": 0,
+            "derivative": 0
+          },
+          {
+            "location": 115,
+            "value": 0,
+            "derivative": 0
+          },
+          {
+            "location": 165,
+            "value": 2.5,
+            "derivative": 0
+          },
+          {
+            "location": 200,
+            "value": 100.0,
+            "derivative": 0
+          }
+        ]
+      }
+    },
     "right": {
-      "type": "minecraft:max",
-      "left": "nullscape:void/void_gauntlet",
-      "right": 0
+      "type": "minecraft:gradient",
+      "axis": "y",
+      "from_coordinate": 68,
+      "to_coordinate": 80,
+      "from_value": 0,
+      "to_value": 50,
+      "tiling": "clamp_to_edge"
     }
   }
 }

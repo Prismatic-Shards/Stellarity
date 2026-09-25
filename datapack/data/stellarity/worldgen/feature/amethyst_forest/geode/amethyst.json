@@ -95,8 +95,8 @@
         }
       }
     ],
-    "cannot_replace": "#stellarity:_worldgen/general/invalid_air",
-    "invalid_blocks": "#stellarity:_worldgen/general/invalid_air"
+    "cannot_replace": "#stellarity:_worldgen/amethyst_cannot_replace",
+    "invalid_blocks": "#stellarity:_worldgen/amethyst_invalid_blocks"
   },
   "layers": {
     "filling": 1.7,
@@ -115,20 +115,20 @@
   "placements_require_layer0_alternate": false,
   "outer_wall_distance": {
     "type": "minecraft:uniform",
-    "min_inclusive": 4,
-    "max_inclusive": 6
+    "min_inclusive": 3,
+    "max_inclusive": 4
   },
   "distribution_points": {
     "type": "minecraft:uniform",
-    "min_inclusive": 3,
-    "max_inclusive": 4
+    "min_inclusive": 2,
+    "max_inclusive": 3
   },
   "point_offset": {
     "type": "minecraft:uniform",
     "min_inclusive": 1,
     "max_inclusive": 2
   },
-  "min_gen_offset": -8,
-  "max_gen_offset": 8,
+  "min_gen_offset": -4,
+  "max_gen_offset": 4,
   "invalid_blocks_threshold": 1
 }

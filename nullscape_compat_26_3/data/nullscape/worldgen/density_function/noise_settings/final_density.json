@@ -8,12 +8,12 @@
         "coordinate": "nullscape:distance_from_origin",
         "points": [
           {
-            "location": 250,
+            "location": 200,
             "derivative": 0,
             "value": 0
           },
           {
-            "location": 950,
+            "location": 1200,
             "derivative": 0,
             "value": 1
           }
