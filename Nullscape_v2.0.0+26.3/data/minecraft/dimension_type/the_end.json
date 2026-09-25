@@ -20,7 +20,7 @@
         "minecraft:gameplay/bed_rule": {
             "can_set_spawn": "never",
             "can_sleep": "never",
-            "explodes": true
+            "destroy_on_use": true
         },
         "minecraft:gameplay/respawn_anchor_works": false,
         "minecraft:visual/ambient_light_color": "#3f473f",

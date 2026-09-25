@@ -1,0 +1,20 @@
+{
+  "structures": [
+    {
+      "structure": "minecraft:end_city",
+      "weight": 3
+    },
+    {
+      "structure": "stellarity:village",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 10387313,
+    "frequency": 0.5,
+    "spread_type": "triangular",
+    "spacing": 25,
+    "separation": 24
+  }
+}

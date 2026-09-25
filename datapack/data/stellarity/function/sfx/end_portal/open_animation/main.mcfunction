@@ -1,8 +1,7 @@
 scoreboard players add @s stellarity.misc.end_portal_animation 1
 
 execute if score #stellarity.config stellarity.config.lock_the_end matches 1.. run fill ~1 ~ ~1 ~-1 ~ ~-1 air replace end_portal
-execute if score #stellarity.config stellarity.config.lock_the_end matches 1.. run playsound block.beacon.deactivate block @a[distance=..32] ~ ~ ~ 1 0.5
-execute if score #stellarity.config stellarity.config.lock_the_end matches 1.. run particle smoke ~ ~ ~ 1 0.1 1 0.05 25
+execute if score #stellarity.config stellarity.config.lock_the_end matches 1.. run function stellarity:sfx/end_portal/open_animation/lock_effect
 execute if score #stellarity.config stellarity.config.lock_the_end matches 1.. run kill @s
 
 execute if score @s stellarity.misc.end_portal_animation matches 1..129 run fill ~1 ~ ~1 ~-1 ~ ~-1 air replace end_portal

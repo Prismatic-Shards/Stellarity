@@ -1,14 +1,6 @@
 {
   "type": "minecraft:range_choice",
-  "input": {
-    "type": "minecraft:distance_to_point",
-    "point": [
-      0,
-      0,
-      0
-    ],
-    "metric": "euclidean"
-  },
+  "input": "stellarity:distance_from_center",
   "min_inclusive": 0,
   "max_exclusive": 1000,
   "when_in_range": 0.001,
