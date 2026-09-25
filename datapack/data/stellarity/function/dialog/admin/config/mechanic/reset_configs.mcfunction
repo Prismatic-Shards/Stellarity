@@ -7,5 +7,6 @@ scoreboard players set #stellarity.config stellarity.config.boss_status_messages
 scoreboard players set #stellarity.config stellarity.config.enable_end_crystal_drop 1
 scoreboard players set #stellarity.config stellarity.config.enable_totem_void_saving 1
 scoreboard players set #stellarity.config stellarity.config.migrations 1
+scoreboard players set #stellarity.config stellarity.config.lock_the_end 0
 
 trigger stellarity.dialog.admin set 420

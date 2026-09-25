@@ -3,6 +3,8 @@
   execute if entity @s[tag=stellarity.empress_of_light.no_rotate] run tp @n[type=item_display,tag=stellarity.util.animated_java.eol.root] ~ ~ ~
   execute if entity @s[tag=stellarity.empress_of_light.face_player] as @n[type=item_display,tag=stellarity.util.animated_java.eol.root] at @s facing entity @p eyes run tp @s ~ ~ ~ ~ 0
 
+  effect give @n[type=vindicator, tag=stellarity.empress_of_light] invisibility infinite 0 true
+
 # Ambient particles
   particle portal ~ ~1.2 ~ 0 0 0 1.2 2
   execute if predicate kohara:chance/25percent run particle witch ~ ~2 ~ 0.3 0.3 0.3 0 1

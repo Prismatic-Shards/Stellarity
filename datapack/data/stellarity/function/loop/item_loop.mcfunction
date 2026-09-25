@@ -21,5 +21,5 @@ function stellarity:mechanic/consecration/cauldron/summon_marker
 
 execute \
 if entity @s[tag=stellarity.starlight_soot] \
-if entity @p[distance=..2,predicate=stellarity:item/holding/kaleidoscope] \
+if entity @p[distance=..6,predicate=stellarity:item/holding/kaleidoscope] \
 run tag @s add stellarity.starlight_soot.radiant

@@ -1,0 +1,20 @@
+{
+  "values": [
+    "minecraft:end_midlands",
+    "stellarity:end_wilds",
+    "stellarity:end_shrubland",
+    "stellarity:frozen_shrubland",
+    "stellarity:frozen_marsh",
+    "stellarity:frozen_spikes",
+    "stellarity:warped_marsh",
+    "minecraft:end_highlands",
+    "stellarity:amethyst_forest",
+    "stellarity:prismarine_forest",
+    "stellarity:endless_dunes",
+    "stellarity:crystal_crags",
+    "nullscape:crystal_peaks",
+    "nullscape:shadowlands",
+    "nullscape:void_barrens"
+  ],
+  "replace": false
+}

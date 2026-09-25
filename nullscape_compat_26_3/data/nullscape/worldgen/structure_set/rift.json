@@ -1,0 +1,19 @@
+{
+  "structures": [
+    {
+      "structure": "nullscape:rift",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 917305732,
+    "spread_type": "linear",
+    "spacing": 40,
+    "separation": 20,
+    "exclusion_zone": {
+      "other_set": "minecraft:end_cities",
+      "chunk_count": 4
+    }
+  }
+}

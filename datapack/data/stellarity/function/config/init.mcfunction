@@ -18,6 +18,7 @@ execute unless score #stellarity.config stellarity.config.boss_status_messages m
 execute unless score #stellarity.config stellarity.config.enable_end_crystal_drop matches ..2147483647 run scoreboard players set #stellarity.config stellarity.config.enable_end_crystal_drop 1
 execute unless score #stellarity.config stellarity.config.enable_totem_void_saving matches ..2147483647 run scoreboard players set #stellarity.config stellarity.config.enable_totem_void_saving 1
 execute unless score #stellarity.config stellarity.config.migrations matches ..2147483647 run scoreboard players set #stellarity.config stellarity.config.migrations 1
+execute unless score #stellarity.config stellarity.config.lock_the_end matches ..2147483647 run scoreboard players set #stellarity.config stellarity.config.lock_the_end 0
 execute unless score #stellarity.config stellarity.config.shulking_break matches ..2147483647 run scoreboard players set #stellarity.config stellarity.config.shulking_break 1
 execute unless score #stellarity.config stellarity.config.enable_empress_of_light matches ..2147483647 run scoreboard players set #stellarity.config stellarity.config.enable_empress_of_light 1
 execute unless score #stellarity.config stellarity.config.enable_nighttime_empress_of_light matches ..2147483647 run scoreboard players set #stellarity.config stellarity.config.enable_nighttime_empress_of_light 1

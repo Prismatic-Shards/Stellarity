@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:spline",
+  "spline": {
+    "coordinate": "stellarity:distance_from_center",
+    "points": [
+      {
+        "location": 950,
+        "value": -1.0,
+        "derivative": 0.01
+      },
+      {
+        "location": 1050,
+        "value": 0.0,
+        "derivative": 0.0
+      }
+    ]
+  }
+}
