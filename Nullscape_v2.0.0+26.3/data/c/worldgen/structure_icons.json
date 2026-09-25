@@ -1,0 +1,8 @@
+{
+    "nullscape:dragon_skeleton": {
+        "item": "minecraft:bone_block"
+    },
+    "nullscape:rift": {
+        "item": "minecraft:ender_pearl"
+    }
+}

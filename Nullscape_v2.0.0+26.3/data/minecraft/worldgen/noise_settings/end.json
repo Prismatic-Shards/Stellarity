@@ -1,0 +1,76 @@
+{
+  "sea_level": -96,
+  "disable_mob_generation": false,
+  "legacy_random_source": false,
+  "default_block": {
+    "id": "minecraft:end_stone"
+  },
+  "default_fluid": {
+    "id": "minecraft:air"
+  },
+  "noise": {
+    "min_y": 0,
+    "height": 304
+  },
+  "material_rule": "nullscape:main",
+  "noise_router": {
+    "final_density": "nullscape:noise_settings/final_density",
+    "chunk_surface_level": "nullscape:noise_settings/chunk_surface_level",
+    "erosion": "nullscape:overworld_copy/erosion",
+    "depth": "nullscape:noise_settings/depth",
+    "ridges": "nullscape:overworld_copy/ridges",
+    "temperature": "nullscape:noise_settings/temperature",
+    "vegetation": "nullscape:noise_settings/vegetation",
+    "continents": "nullscape:base/continents"
+  },
+  "spawn_target": [
+    {
+      "nullscape:overworld_copy/erosion": [
+        -1,
+        1
+      ],
+      "nullscape:noise_settings/depth": 0,
+      "nullscape:overworld_copy/ridges": [
+        -1,
+        -0.16
+      ],
+      "minecraft:overworld/offset": 0,
+      "nullscape:noise_settings/temperature": [
+        -1,
+        1
+      ],
+      "nullscape:noise_settings/vegetation": [
+        -1,
+        1
+      ],
+      "nullscape:base/continents": [
+        -0.11,
+        1
+      ]
+    },
+    {
+      "nullscape:overworld_copy/erosion": [
+        -1,
+        1
+      ],
+      "nullscape:noise_settings/depth": 0,
+      "nullscape:overworld_copy/ridges": [
+        0.16,
+        1
+      ],
+      "minecraft:overworld/offset": 0,
+      "nullscape:noise_settings/temperature": [
+        -1,
+        1
+      ],
+      "nullscape:noise_settings/vegetation": [
+        -1,
+        1
+      ],
+      "nullscape:base/continents": [
+        -0.11,
+        1
+      ]
+    }
+  ]
+}

@@ -19,6 +19,7 @@
     scoreboard objectives remove stellarity.config.boss_status_messages
     # 
       scoreboard objectives remove stellarity.config.migrations
+      scoreboard objectives remove stellarity.config.lock_the_end
 
     # Initialize config scoreboards
       # Freshly created scoreboards have no value (not even set to 0)

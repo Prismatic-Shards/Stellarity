@@ -24,3 +24,6 @@ execute if score #stellarity.config stellarity.config.enable_totem_void_saving m
 
 execute if score #stellarity.config stellarity.config.migrations matches 1 run data modify storage stellarity:temp stellarity.config.mechanic.dialog.inputs[{key:"migrations"}].options[1].initial set value true
 execute if score #stellarity.config stellarity.config.migrations matches 0 run data modify storage stellarity:temp stellarity.config.mechanic.dialog.inputs[{key:"migrations"}].options[1].initial set value false
+
+execute if score #stellarity.config stellarity.config.lock_the_end matches 1 run data modify storage stellarity:temp stellarity.config.mechanic.dialog.inputs[{key:"lock_the_end"}].options[1].initial set value true
+execute if score #stellarity.config stellarity.config.lock_the_end matches 0 run data modify storage stellarity:temp stellarity.config.mechanic.dialog.inputs[{key:"lock_the_end"}].options[1].initial set value false

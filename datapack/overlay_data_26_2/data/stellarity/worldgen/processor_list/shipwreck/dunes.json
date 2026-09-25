@@ -13,7 +13,7 @@
             "block": "minecraft:dirt"
           },
           "output_state": {
-            "id": "minecraft:air"
+            "Name": "minecraft:air"
           }
         },
         {
@@ -26,7 +26,7 @@
             "probability": 0.1
           },
           "output_state": {
-            "id": "minecraft:end_stone"
+            "Name": "minecraft:end_stone"
           }
         },
         {
@@ -39,7 +39,7 @@
             "probability": 0.3
           },
           "output_state": {
-            "id": "minecraft:coarse_dirt"
+            "Name": "minecraft:coarse_dirt"
           }
         },
         {
@@ -52,7 +52,7 @@
             "probability": 0.8
           },
           "output_state": {
-            "id": "minecraft:sand"
+            "Name": "minecraft:sand"
           }
         },
         {
@@ -65,7 +65,7 @@
             "probability": 0.15
           },
           "output_state": {
-            "id": "minecraft:gravel"
+            "Name": "minecraft:gravel"
           }
         }
       ]
@@ -83,8 +83,8 @@
             "probability": 0.15
           },
           "output_state": {
-            "id": "minecraft:suspicious_sand",
-            "properties": {
+            "Name": "minecraft:suspicious_sand",
+            "Properties": {
               "dusted": "0"
             }
           },
@@ -108,8 +108,8 @@
             "probability": 0.3
           },
           "output_state": {
-            "id": "minecraft:suspicious_sand",
-            "properties": {
+            "Name": "minecraft:suspicious_sand",
+            "Properties": {
               "dusted": "0"
             }
           },
@@ -132,7 +132,7 @@
             "block": "minecraft:dirt"
           },
           "output_state": {
-            "id": "minecraft:sand"
+            "Name": "minecraft:sand"
           }
         }
       ]
@@ -141,7 +141,7 @@
       "processor_type": "minecraft:block_ignore",
       "blocks": [
         {
-          "id": "minecraft:structure_void"
+          "Name": "minecraft:structure_void"
         }
       ]
     }

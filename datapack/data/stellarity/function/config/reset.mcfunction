@@ -14,6 +14,7 @@ scoreboard players reset #stellarity.config stellarity.config.nerf_elytra
 scoreboard players reset #stellarity.config stellarity.config.enable_end_crystal_drop
 scoreboard players reset #stellarity.config stellarity.config.enable_totem_void_saving
 scoreboard players reset #stellarity.config stellarity.config.migrations
+scoreboard players reset #stellarity.config stellarity.config.lock_the_end
 scoreboard players reset #stellarity.config stellarity.config.shulking_break
 scoreboard players reset #stellarity.config stellarity.config.enable_empress_of_light
 scoreboard players reset #stellarity.config stellarity.config.enable_nighttime_empress_of_light
