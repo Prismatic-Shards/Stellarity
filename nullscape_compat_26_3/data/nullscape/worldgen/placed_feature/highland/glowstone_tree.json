@@ -1,0 +1,40 @@
+{
+  "feature": {
+    "type": "minecraft:block_column",
+    "direction": "down",
+    "allowed_placement": {
+      "type": "minecraft:matching_blocks",
+      "blocks": [
+        "minecraft:air"
+      ]
+    },
+    "prioritize_tip": false,
+    "layers": [
+      {
+        "height": {
+          "type": "minecraft:uniform",
+          "min_inclusive": 1,
+          "max_inclusive": 5
+        },
+        "provider": {
+          "type": "minecraft:weighted",
+          "entries": [
+            {
+              "weight": 5,
+              "data": {
+                "id": "minecraft:glowstone"
+              }
+            },
+            {
+              "weight": 1,
+              "data": {
+                "id": "minecraft:blackstone"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "placement": []
+}

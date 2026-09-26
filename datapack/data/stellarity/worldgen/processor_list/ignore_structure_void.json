@@ -1,0 +1,18 @@
+{
+  "processors": [
+    {
+      "processor_type": "minecraft:block_ignore",
+      "blocks": [
+        {
+          "id": "minecraft:structure_void"
+        },
+        {
+          "id": "minecraft:structure_block"
+        },
+        {
+          "id": "minecraft:barrier"
+        }
+      ]
+    }
+  ]
+}

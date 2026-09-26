@@ -34,19 +34,19 @@
     },
     "gameplay/natural_mob_spawns": {
       "spawn_costs": {
-    "minecraft:enderman": {
-      "energy_budget": 0.3,
-      "charge": 1
-    },
-    "minecraft:zombie": {
-      "energy_budget": 0.14,
-      "charge": 1
-    },
-    "minecraft:skeleton": {
-      "energy_budget": 0.15,
-      "charge": 1
-    }
-  },
+        "minecraft:enderman": {
+          "energy_budget": 1.0,
+          "charge": 0.6
+        },
+        "minecraft:zombie": {
+          "energy_budget": 1.0,
+          "charge": 0.6
+        },
+        "minecraft:skeleton": {
+          "energy_budget": 1.0,
+          "charge": 0.6
+        }
+      },
       "spawns_by_category": {
         "monster": [
           {
@@ -85,9 +85,12 @@
     "grass_color": 9551690,
     "foliage_color": 7712284
   },
-  "carvers": ["stellarity:ravine", "stellarity:crack"],
+  "carvers": [
+    "stellarity:ravine",
+    "stellarity:crack"
+  ],
   "features": [
-    [ 
+    [
       "stellarity:global/stalactite",
       "stellarity:endless_dunes/oasis"
     ],
@@ -107,7 +110,7 @@
       "stellarity:endless_dunes/grass"
     ],
     [
-      "stellarity:global/end_dungeon", 
+      "stellarity:global/end_dungeon",
       "stellarity:global/fossil"
     ]
   ]

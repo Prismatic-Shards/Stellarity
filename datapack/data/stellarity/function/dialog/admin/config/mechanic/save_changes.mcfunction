@@ -7,5 +7,6 @@ $scoreboard players set #stellarity.config stellarity.config.boss_status_message
 $scoreboard players set #stellarity.config stellarity.config.enable_end_crystal_drop $(end_crystal_drop)
 $scoreboard players set #stellarity.config stellarity.config.enable_totem_void_saving $(totem_void_saving)
 $scoreboard players set #stellarity.config stellarity.config.migrations $(migrations)
+$scoreboard players set #stellarity.config stellarity.config.lock_the_end $(lock_the_end)
 
 trigger stellarity.dialog.admin set 420

@@ -50,8 +50,8 @@
   },
   "spawn_costs": {
     "minecraft:vex": {
-      "energy_budget": 0.25,
-      "charge": 1
+      "energy_budget": 1,
+      "charge": 0.6
     }
   },
   "carvers": [],
@@ -66,7 +66,9 @@
       "stellarity:the_hallow/crystals_amethyst",
       "stellarity:the_hallow/rock"
     ],
-    ["stellarity:hallowed_tundra/large_lake"],
+    [
+      "stellarity:hallowed_tundra/large_lake"
+    ],
     [],
     [],
     [],

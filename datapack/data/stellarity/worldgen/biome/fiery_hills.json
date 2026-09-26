@@ -35,8 +35,8 @@
     "gameplay/natural_mob_spawns": {
       "spawn_costs": {
         "minecraft:magma_cube": {
-          "energy_budget": 0.18,
-          "charge": 1
+          "energy_budget": 1.0,
+          "charge": 0.6
         }
       },
       "spawns_by_category": {

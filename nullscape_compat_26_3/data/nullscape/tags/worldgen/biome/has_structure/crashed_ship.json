@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "#nullscape:all_nullscape_biomes",
+    "minecraft:end_barrens",
+    "minecraft:end_highlands",
+    "minecraft:end_midlands",
+    "stellarity:ender_wastes",
+    "stellarity:end_wilds",
+    "stellarity:amethyst_forest",
+    "stellarity:end_shrubland",
+    "stellarity:frosted_valley",
+    "stellarity:prismatic_dunes",
+    "stellarity:endless_dunes",
+    "stellarity:hallowed_tundra",
+    "stellarity:crystal_crags",
+    "stellarity:fiery_hills"
+  ]
+}

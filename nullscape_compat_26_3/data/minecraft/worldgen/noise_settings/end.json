@@ -1,0 +1,23 @@
+{
+  "sea_level": 0,
+  "disable_mob_generation": false,
+  "legacy_random_source": false,
+  "default_block": "minecraft:end_stone",
+  "default_fluid": "minecraft:air",
+  "noise": {
+    "min_y": 0,
+    "height": 384
+  },
+  "noise_router": {
+    "temperature": "stellarity:climate/temperature",
+    "vegetation": "stellarity:climate/humidity",
+    "continents": "stellarity:climate/continents",
+    "erosion": "stellarity:climate/erosion",
+    "depth": "stellarity:climate/depth",
+    "ridges": "stellarity:climate/ridges",
+    "chunk_surface_level": "stellarity:initial_density",
+    "final_density": "stellarity:final_density"
+  },
+  "spawn_target": [],
+  "material_rule": "minecraft:end"
+}

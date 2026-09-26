@@ -1,0 +1,19 @@
+{
+    "structures": [
+        {
+            "structure": "nullscape:crashed_ship",
+            "weight": 1
+        }
+    ],
+    "placement": {
+        "type": "minecraft:random_spread",
+        "spacing": 50,
+        "separation": 30,
+        "spread_type": "triangular",
+        "salt": 1615891543,
+        "exclusion_zone": {
+            "other_set": "minecraft:end_cities",
+            "chunk_count": 7
+        }
+    }
+}

@@ -1,0 +1,19 @@
+{
+  "structures": [
+    {
+      "structure": "nullscape:dragon_skeleton",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 461798080,
+    "spread_type": "linear",
+    "spacing": 22,
+    "separation": 12,
+    "exclusion_zone": {
+      "other_set": "minecraft:end_cities",
+      "chunk_count": 4
+    }
+  }
+}

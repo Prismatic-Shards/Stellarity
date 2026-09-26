@@ -1,90 +1,95 @@
 {
-	"temperature": 0.8,
-	"downfall": 0.9,
-	"has_precipitation": false,
-	"creature_spawn_probability": 0.3,
-	"attributes": {
-		"visual/sky_color": 0,
-		"visual/fog_color": 0,
-		"visual/water_fog_color": 12895439,
-		"audio/ambient_sounds": {
-			"loop": {
-				"sound_id": "stellarity:ambient.the_end.dark"
-			},
-			"mood": {
-				"sound": "minecraft:ambient.basalt_deltas.mood",
-				"tick_delay": 1250,
-				"block_search_extent": 3,
-				"offset": 2
-			},
-			"additions": {
-				"sound": "minecraft:ambient.crimson_forest.additions",
-				"tick_chance": 0.0033
-			}
-		},
-		"visual/ambient_particles": {
-			"modifier": "override",
-			"argument": [
-				{
-					"particle": {
-						"type": "white_ash"
-					},
-					"probability": 0.01
-				}
-			]
-		}
-	},
-	"effects": {
-		"water_color": 15068927,
-		"grass_color": 14606046,
-		"foliage_color": 12763842,
-		"dry_foliage_color": 8750469
-	},
-	"spawners": {
-		"monster": [
-			{
-				"type": "minecraft:skeleton",
-				"weight": 11,
-				"minCount": 2,
-				"maxCount": 2
-			}
-		],
-		"creature": [
-			{
-				"type": "frog",
-				"maxCount": 4,
-				"minCount": 1,
-				"weight": 100
-			}
-		]
-	},
-	"spawn_costs": {
-		"skeleton": {
-			"charge": 1,
-			"energy_budget": 0.75
-		}
-	},
-	"carvers": [],
-	"features": [
-		["stellarity:global/stalactite"],
-		[],
-		[],
-		[
-			"stellarity:ashfall_deltas/aquatic/delta",
-			"stellarity:ashfall_deltas/surface/grass_delta",
-			"stellarity:ashfall_deltas/basalt_columns"
-		],
-		[],
-		[],
-		[],
-		[],
-		[
-			"stellarity:ashfall_deltas/vegetation/water/seagrass",
-			"stellarity:ashfall_deltas/vegetation/land/trees",
-			"stellarity:ashfall_deltas/vegetation",
-			"stellarity:ashfall_deltas/grass",
-			"minecraft:patch_bush"
-		],
-		["stellarity:ashfall_deltas/magma", "stellarity:ashfall_deltas/ash_pile"]
-	]
+  "temperature": 0.8,
+  "downfall": 0.9,
+  "has_precipitation": false,
+  "creature_spawn_probability": 0.3,
+  "attributes": {
+    "visual/sky_color": 0,
+    "visual/fog_color": 0,
+    "visual/water_fog_color": 12895439,
+    "audio/ambient_sounds": {
+      "loop": {
+        "sound_id": "stellarity:ambient.the_end.dark"
+      },
+      "mood": {
+        "sound": "minecraft:ambient.basalt_deltas.mood",
+        "tick_delay": 1250,
+        "block_search_extent": 3,
+        "offset": 2
+      },
+      "additions": {
+        "sound": "minecraft:ambient.crimson_forest.additions",
+        "tick_chance": 0.0033
+      }
+    },
+    "visual/ambient_particles": {
+      "modifier": "override",
+      "argument": [
+        {
+          "particle": {
+            "type": "white_ash"
+          },
+          "probability": 0.01
+        }
+      ]
+    }
+  },
+  "effects": {
+    "water_color": 15068927,
+    "grass_color": 14606046,
+    "foliage_color": 12763842,
+    "dry_foliage_color": 8750469
+  },
+  "spawners": {
+    "monster": [
+      {
+        "type": "minecraft:skeleton",
+        "weight": 11,
+        "minCount": 2,
+        "maxCount": 2
+      }
+    ],
+    "creature": [
+      {
+        "type": "frog",
+        "maxCount": 4,
+        "minCount": 1,
+        "weight": 100
+      }
+    ]
+  },
+  "spawn_costs": {
+    "skeleton": {
+      "charge": 0.6,
+      "energy_budget": 1
+    }
+  },
+  "carvers": [],
+  "features": [
+    [
+      "stellarity:global/stalactite"
+    ],
+    [],
+    [],
+    [
+      "stellarity:ashfall_deltas/aquatic/delta",
+      "stellarity:ashfall_deltas/surface/grass_delta",
+      "stellarity:ashfall_deltas/basalt_columns"
+    ],
+    [],
+    [],
+    [],
+    [],
+    [
+      "stellarity:ashfall_deltas/vegetation/water/seagrass",
+      "stellarity:ashfall_deltas/vegetation/land/trees",
+      "stellarity:ashfall_deltas/vegetation",
+      "stellarity:ashfall_deltas/grass",
+      "minecraft:patch_bush"
+    ],
+    [
+      "stellarity:ashfall_deltas/magma",
+      "stellarity:ashfall_deltas/ash_pile"
+    ]
+  ]
 }

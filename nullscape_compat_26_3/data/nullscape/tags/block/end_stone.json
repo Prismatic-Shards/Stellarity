@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:end_stone",
+    "minecraft:calcite",
+    "minecraft:tuff",
+    "minecraft:smooth_basalt",
+    "minecraft:blackstone"
+  ]
+}

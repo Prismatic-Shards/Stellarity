@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:mul",
+  "left": {
+    "type": "minecraft:gradient",
+    "axis": "y",
+    "from_coordinate": 40,
+    "to_coordinate": 60,
+    "from_value": 1,
+    "to_value": 0
+  },
+  "right": "nullscape:island/island"
+}

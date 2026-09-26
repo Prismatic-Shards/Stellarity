@@ -1,0 +1,19 @@
+{
+  "structures": [
+    {
+      "structure": "stellarity:fossil",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 14357922,
+    "frequency": 0.3,
+    "spacing": 4,
+    "separation": 2,
+    "exclusion_zone": {
+      "other_set": "minecraft:end_cities",
+      "chunk_count": 3
+    }
+  }
+}

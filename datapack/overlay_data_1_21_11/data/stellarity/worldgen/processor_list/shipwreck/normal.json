@@ -1,21 +1,136 @@
 {
   "processors": [
     {
+      "processor_type": "minecraft:capped",
+      "limit": {
+        "type": "minecraft:uniform",
+        "min_inclusive": 6,
+        "max_inclusive": 12
+      },
+      "delegate": {
+        "processor_type": "minecraft:rule",
+        "rules": [
+          {
+            "location_predicate": {
+              "predicate_type": "minecraft:always_true"
+            },
+            "input_predicate": {
+              "predicate_type": "minecraft:block_match",
+              "block": "minecraft:dirt"
+            },
+            "output_state": {
+              "Name": "minecraft:suspicious_sand",
+              "Properties": {
+                "dusted": "0"
+              }
+            },
+            "block_entity_modifier": {
+              "type": "minecraft:append_loot",
+              "loot_table": "stellarity:shipwreck/archaeology/normal/rare"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "processor_type": "minecraft:capped",
+      "limit": {
+        "type": "minecraft:uniform",
+        "min_inclusive": 10,
+        "max_inclusive": 18
+      },
+      "delegate": {
+        "processor_type": "minecraft:rule",
+        "rules": [
+          {
+            "location_predicate": {
+              "predicate_type": "minecraft:always_true"
+            },
+            "input_predicate": {
+              "predicate_type": "minecraft:block_match",
+              "block": "minecraft:dirt"
+            },
+            "output_state": {
+              "Name": "minecraft:suspicious_sand",
+              "Properties": {
+                "dusted": "0"
+              }
+            },
+            "block_entity_modifier": {
+              "type": "minecraft:append_loot",
+              "loot_table": "stellarity:shipwreck/archaeology/normal/common"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "processor_type": "minecraft:capped",
+      "limit": {
+        "type": "minecraft:uniform",
+        "min_inclusive": 5,
+        "max_inclusive": 10
+      },
+      "delegate": {
+        "processor_type": "minecraft:rule",
+        "rules": [
+          {
+            "location_predicate": {
+              "predicate_type": "minecraft:always_true"
+            },
+            "input_predicate": {
+              "predicate_type": "minecraft:block_match",
+              "block": "minecraft:dirt"
+            },
+            "output_state": {
+              "Name": "minecraft:suspicious_gravel",
+              "Properties": {
+                "dusted": "0"
+              }
+            },
+            "block_entity_modifier": {
+              "type": "minecraft:append_loot",
+              "loot_table": "stellarity:shipwreck/archaeology/normal/rare"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "processor_type": "minecraft:capped",
+      "limit": {
+        "type": "minecraft:uniform",
+        "min_inclusive": 8,
+        "max_inclusive": 14
+      },
+      "delegate": {
+        "processor_type": "minecraft:rule",
+        "rules": [
+          {
+            "location_predicate": {
+              "predicate_type": "minecraft:always_true"
+            },
+            "input_predicate": {
+              "predicate_type": "minecraft:block_match",
+              "block": "minecraft:dirt"
+            },
+            "output_state": {
+              "Name": "minecraft:suspicious_gravel",
+              "Properties": {
+                "dusted": "0"
+              }
+            },
+            "block_entity_modifier": {
+              "type": "minecraft:append_loot",
+              "loot_table": "stellarity:shipwreck/archaeology/normal/common"
+            }
+          }
+        ]
+      }
+    },
+    {
       "processor_type": "minecraft:rule",
       "rules": [
-        {
-          "location_predicate": {
-            "predicate_type": "minecraft:block_match",
-            "block": "minecraft:air"
-          },
-          "input_predicate": {
-            "predicate_type": "minecraft:block_match",
-            "block": "minecraft:dirt"
-          },
-          "output_state": {
-            "Name": "minecraft:air"
-          }
-        },
         {
           "location_predicate": {
             "predicate_type": "minecraft:always_true"
@@ -49,7 +164,19 @@
           "input_predicate": {
             "predicate_type": "minecraft:random_block_match",
             "block": "minecraft:dirt",
-            "probability": 0.6
+            "probability": 0.15
+          },
+          "output_state": {
+            "Name": "minecraft:gravel"
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:dirt"
           },
           "output_state": {
             "Name": "minecraft:sand"
@@ -58,68 +185,12 @@
       ]
     },
     {
-      "processor_type": "minecraft:capped",
-      "limit": {
-        "type": "minecraft:uniform",
-        "min_inclusive": 12,
-        "max_inclusive": 20
-      },
-      "delegate": {
-        "processor_type": "minecraft:rule",
-        "rules": [
-          {
-            "location_predicate": {
-              "predicate_type": "minecraft:always_true"
-            },
-            "input_predicate": {
-              "predicate_type": "minecraft:block_match",
-              "block": "minecraft:dirt"
-            },
-            "output_state": {
-              "Name": "minecraft:suspicious_sand",
-              "Properties": {
-                "dusted": "0"
-              }
-            },
-            "block_entity_modifier": {
-              "type": "minecraft:append_loot",
-              "loot_table": "stellarity:shipwreck/archaeology/normal/common"
-            }
-          }
-        ]
-      }
-    },
-    {
-      "processor_type": "minecraft:capped",
-      "limit": {
-        "type": "minecraft:uniform",
-        "min_inclusive": 7,
-        "max_inclusive": 14
-      },
-      "delegate": {
-        "processor_type": "minecraft:rule",
-        "rules": [
-          {
-            "location_predicate": {
-              "predicate_type": "minecraft:always_true"
-            },
-            "input_predicate": {
-              "predicate_type": "minecraft:block_match",
-              "block": "minecraft:dirt"
-            },
-            "output_state": {
-              "Name": "minecraft:suspicious_sand",
-              "Properties": {
-                "dusted": "0"
-              }
-            },
-            "block_entity_modifier": {
-              "type": "minecraft:append_loot",
-              "loot_table": "stellarity:shipwreck/archaeology/normal/rare"
-            }
-          }
-        ]
-      }
+      "processor_type": "minecraft:block_ignore",
+      "blocks": [
+        {
+          "Name": "minecraft:structure_void"
+        }
+      ]
     }
   ]
 }

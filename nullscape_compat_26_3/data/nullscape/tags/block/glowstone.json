@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:glowstone",
+    "minecraft:blackstone",
+    "minecraft:end_stone",
+    "minecraft:calcite",
+    "minecraft:tuff",
+    "minecraft:amethyst_block"
+  ]
+}

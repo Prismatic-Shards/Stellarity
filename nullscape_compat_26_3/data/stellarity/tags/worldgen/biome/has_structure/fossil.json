@@ -1,0 +1,11 @@
+{
+  "values": [
+    "stellarity:flesh_tundra",
+    "stellarity:the_nest",
+    "stellarity:ashfall_deltas",
+    "nullscape:shadowlands",
+    "nullscape:void_barrens",
+    "nullscape:infestation"
+  ],
+  "replace": false
+}

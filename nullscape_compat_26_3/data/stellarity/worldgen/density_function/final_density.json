@@ -1,0 +1,99 @@
+{
+  "type": "minecraft:add",
+  "left": {
+    "type": "minecraft:lerp",
+    "alpha": {
+      "type": "minecraft:spline",
+      "spline": {
+        "coordinate": "nullscape:distance_from_origin",
+        "points": [
+          {
+            "location": 200,
+            "derivative": 0,
+            "value": 0
+          },
+          {
+            "location": 950,
+            "derivative": 0,
+            "value": 0
+          },
+          {
+            "location": 1050,
+            "derivative": 0,
+            "value": 1
+          }
+        ]
+      }
+    },
+    "first": {
+      "type": "minecraft:interpolated",
+      "input": "stellarity:main_island/island",
+      "cell_size_xz": 8,
+      "cell_size_y": 4
+    },
+    "second": {
+      "type": "minecraft:squeeze",
+      "input": {
+        "type": "minecraft:mul",
+        "left": 0.64,
+        "right": {
+          "type": "minecraft:interpolated",
+          "input": {
+            "type": "minecraft:blend_density",
+            "input": {
+              "type": "minecraft:sub",
+              "left": {
+                "type": "minecraft:mul",
+                "left": {
+                  "type": "minecraft:gradient",
+                  "from_coordinate": 4,
+                  "to_coordinate": 32,
+                  "from_value": 0,
+                  "to_value": 1,
+                  "axis": "y",
+                  "tiling": "clamp_to_edge"
+                },
+                "right": {
+                  "type": "minecraft:add",
+                  "left": {
+                    "type": "minecraft:sub",
+                    "left": {
+                      "type": "minecraft:mul",
+                      "left": {
+                        "type": "minecraft:gradient",
+                        "from_coordinate": 256,
+                        "to_coordinate": 304,
+                        "from_value": 1,
+                        "to_value": 0,
+                        "axis": "y",
+                        "tiling": "clamp_to_edge"
+                      },
+                      "right": {
+                        "type": "minecraft:add",
+                        "left": "nullscape:sloped_cheese",
+                        "right": 0.5
+                      }
+                    },
+                    "right": 0.5
+                  },
+                  "right": 0.234375
+                }
+              },
+              "right": 0.234375
+            }
+          },
+          "cell_size_xz": 8,
+          "cell_size_y": 4
+        }
+      }
+    }
+  },
+  "right": {
+    "type": "minecraft:clamp",
+    "input": {
+      "type": "minecraft:beardifier"
+    },
+    "min": -0.15,
+    "max": 1.0
+  }
+}

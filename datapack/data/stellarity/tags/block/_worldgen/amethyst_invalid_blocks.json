@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "#stellarity:_worldgen/general/invalid_air",
+    "minecraft:grass_block"
+  ]
+}

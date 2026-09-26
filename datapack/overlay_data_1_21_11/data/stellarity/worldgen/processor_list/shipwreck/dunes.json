@@ -1,81 +1,43 @@
 {
   "processors": [
     {
-      "processor_type": "minecraft:rule",
-      "rules": [
-        {
-          "location_predicate": {
-            "predicate_type": "minecraft:block_match",
-            "block": "minecraft:air"
-          },
-          "input_predicate": {
-            "predicate_type": "minecraft:block_match",
-            "block": "minecraft:dirt"
-          },
-          "output_state": {
-            "Name": "minecraft:air"
+      "processor_type": "minecraft:capped",
+      "limit": {
+        "type": "minecraft:uniform",
+        "min_inclusive": 6,
+        "max_inclusive": 12
+      },
+      "delegate": {
+        "processor_type": "minecraft:rule",
+        "rules": [
+          {
+            "location_predicate": {
+              "predicate_type": "minecraft:always_true"
+            },
+            "input_predicate": {
+              "predicate_type": "minecraft:block_match",
+              "block": "minecraft:dirt"
+            },
+            "output_state": {
+              "Name": "minecraft:suspicious_sand",
+              "Properties": {
+                "dusted": "0"
+              }
+            },
+            "block_entity_modifier": {
+              "type": "minecraft:append_loot",
+              "loot_table": "stellarity:shipwreck/archaeology/dunes/rare"
+            }
           }
-        },
-        {
-          "location_predicate": {
-            "predicate_type": "minecraft:always_true"
-          },
-          "input_predicate": {
-            "predicate_type": "minecraft:random_block_match",
-            "block": "minecraft:dirt",
-            "probability": 0.1
-          },
-          "output_state": {
-            "Name": "minecraft:end_stone"
-          }
-        },
-        {
-          "location_predicate": {
-            "predicate_type": "minecraft:always_true"
-          },
-          "input_predicate": {
-            "predicate_type": "minecraft:random_block_match",
-            "block": "minecraft:dirt",
-            "probability": 0.3
-          },
-          "output_state": {
-            "Name": "minecraft:coarse_dirt"
-          }
-        },
-        {
-          "location_predicate": {
-            "predicate_type": "minecraft:always_true"
-          },
-          "input_predicate": {
-            "predicate_type": "minecraft:random_block_match",
-            "block": "minecraft:dirt",
-            "probability": 0.8
-          },
-          "output_state": {
-            "Name": "minecraft:sand"
-          }
-        },
-        {
-          "location_predicate": {
-            "predicate_type": "minecraft:always_true"
-          },
-          "input_predicate": {
-            "predicate_type": "minecraft:random_block_match",
-            "block": "minecraft:dirt",
-            "probability": 0.15
-          },
-          "output_state": {
-            "Name": "minecraft:gravel"
-          }
-        }
-      ]
+        ]
+      }
     },
     {
       "processor_type": "minecraft:capped",
       "limit": {
         "type": "minecraft:uniform",
-        "min_inclusive": 16,
-        "max_inclusive": 35
+        "min_inclusive": 10,
+        "max_inclusive": 18
       },
       "delegate": {
         "processor_type": "minecraft:rule",
@@ -106,8 +68,8 @@
       "processor_type": "minecraft:capped",
       "limit": {
         "type": "minecraft:uniform",
-        "min_inclusive": 8,
-        "max_inclusive": 15
+        "min_inclusive": 6,
+        "max_inclusive": 12
       },
       "delegate": {
         "processor_type": "minecraft:rule",
@@ -121,7 +83,7 @@
               "block": "minecraft:dirt"
             },
             "output_state": {
-              "Name": "minecraft:suspicious_sand",
+              "Name": "minecraft:suspicious_gravel",
               "Properties": {
                 "dusted": "0"
               }
@@ -133,6 +95,102 @@
           }
         ]
       }
+    },
+    {
+      "processor_type": "minecraft:capped",
+      "limit": {
+        "type": "minecraft:uniform",
+        "min_inclusive": 10,
+        "max_inclusive": 18
+      },
+      "delegate": {
+        "processor_type": "minecraft:rule",
+        "rules": [
+          {
+            "location_predicate": {
+              "predicate_type": "minecraft:always_true"
+            },
+            "input_predicate": {
+              "predicate_type": "minecraft:block_match",
+              "block": "minecraft:dirt"
+            },
+            "output_state": {
+              "Name": "minecraft:suspicious_gravel",
+              "Properties": {
+                "dusted": "0"
+              }
+            },
+            "block_entity_modifier": {
+              "type": "minecraft:append_loot",
+              "loot_table": "stellarity:shipwreck/archaeology/dunes/common"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "processor_type": "minecraft:rule",
+      "rules": [
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "minecraft:dirt",
+            "probability": 0.1
+          },
+          "output_state": {
+            "Name": "minecraft:end_stone"
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "minecraft:dirt",
+            "probability": 0.25
+          },
+          "output_state": {
+            "Name": "minecraft:coarse_dirt"
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "minecraft:dirt",
+            "probability": 0.35
+          },
+          "output_state": {
+            "Name": "minecraft:gravel"
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:dirt"
+          },
+          "output_state": {
+            "Name": "minecraft:sand"
+          }
+        }
+      ]
+    },
+    {
+      "processor_type": "minecraft:block_ignore",
+      "blocks": [
+        {
+          "Name": "minecraft:structure_void"
+        }
+      ]
     }
   ]
 }

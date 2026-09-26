@@ -31,6 +31,53 @@
           "probability": 0.0094
         }
       ]
+    },
+    "gameplay/natural_mob_spawns": {
+      "spawn_costs": {
+        "minecraft:enderman": {
+          "energy_budget": 1.0,
+          "charge": 0.6
+        },
+        "minecraft:skeleton": {
+          "energy_budget": 1.0,
+          "charge": 0.6
+        },
+        "minecraft:silverfish": {
+          "energy_budget": 1.0,
+          "charge": 0.5
+        }
+      },
+      "spawns_by_category": {
+        "monster": [
+          {
+            "type": "minecraft:enderman",
+            "count": {
+              "type": "uniform",
+              "min_inclusive": 4,
+              "max_inclusive": 4
+            },
+            "weight": 50
+          },
+          {
+            "type": "minecraft:skeleton",
+            "count": {
+              "type": "uniform",
+              "min_inclusive": 4,
+              "max_inclusive": 4
+            },
+            "weight": 40
+          },
+          {
+            "type": "minecraft:silverfish",
+            "count": {
+              "type": "uniform",
+              "min_inclusive": 2,
+              "max_inclusive": 2
+            },
+            "weight": 10
+          }
+        ]
+      }
     }
   },
   "effects": {
@@ -38,7 +85,10 @@
     "grass_color": 16777215,
     "foliage_color": 16777215
   },
-  "carvers": ["stellarity:ravine", "stellarity:crack"],
+  "carvers": [
+    "stellarity:ravine",
+    "stellarity:crack"
+  ],
   "features": [
     [
       "stellarity:global/stalactite",
@@ -55,7 +105,9 @@
     [],
     [],
     [],
-    ["stellarity:frozen_marsh/vegetation_land"],
+    [
+      "stellarity:frozen_marsh/vegetation_land"
+    ],
     [
       "stellarity:global/end_dungeon",
       "stellarity:global/fossil",

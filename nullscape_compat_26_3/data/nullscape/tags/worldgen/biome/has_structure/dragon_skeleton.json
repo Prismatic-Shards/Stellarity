@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "nullscape:shadowlands",
+    "stellarity:flesh_tundra",
+    "stellarity:ashfall_deltas",
+    "stellarity:ender_wastes",
+    "stellarity:fiery_hills",
+    "stellarity:frozen_spikes"
+  ]
+}
