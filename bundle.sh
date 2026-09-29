@@ -13,7 +13,7 @@ zip -r ../artifacts/${version}/Stellarity-${version}.zip data/ overlay_data_26_1
 cp ../artifacts/${version}/Stellarity-${version}.zip ../artifacts/${version}/mod.zip
 cd ../music_pack
 zip -9 -r ../artifacts/${version}/Stellarity-${version}-Music.zip *
-cd ../nullscape_compat
+cd ../nullscape_compat_26_3
 zip -r ../artifacts/${version}/Stellarity-${version}-NSC.zip data/ pack.mcmeta pack.png 
 cd ../resource_pack
 zip -r  ../artifacts/${version}/Stellarity-${version}-RP.zip *
