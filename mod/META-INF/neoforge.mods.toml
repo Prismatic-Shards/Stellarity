@@ -6,7 +6,7 @@ issueTrackerURL = "http://discord.prismaticshards.xyz"
 
 [[mods]]
 modId = "stellarity"
-version = "6.0.0"
+version = "6.0.1"
 displayName = "Stellarity"
 displayURL = "https://modrinth.com/datapack/stellarity"
 description = '''
