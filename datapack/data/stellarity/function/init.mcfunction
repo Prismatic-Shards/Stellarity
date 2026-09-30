@@ -29,7 +29,7 @@
     bossbar set stellarity:shulking visible true
     bossbar set stellarity:shulking players
     bossbar set stellarity:shulking max 900
-    bossbar set stellarity:shulking style progress
+    bossbar set stellarity:shulking style notched_10
 
   ## Scoreboards creation
     # Configuration
@@ -286,7 +286,19 @@
 
 
 
-    ## Mobs
+      # Shulking
+        scoreboard objectives add stellarity.shulking.health dummy
+        scoreboard objectives add stellarity.shulking.health_percent dummy
+        scoreboard objectives add stellarity.shulking.phase dummy
+        scoreboard objectives add stellarity.shulking.attack_timer dummy
+        scoreboard objectives add stellarity.shulking.attack_cooldown dummy
+        scoreboard objectives add stellarity.shulking.bullet_cooldown dummy
+        scoreboard objectives add stellarity.shulking.shockwave_cd dummy
+        scoreboard objectives add stellarity.shulking.fangs_cd dummy
+        scoreboard objectives add stellarity.shulking.state dummy
+        scoreboard objectives add stellarity.shulking.wall dummy
+        scoreboard objectives add stellarity.shulking.action_timer dummy
+
       # Empress of Light
         scoreboard objectives add stellarity.empress_of_light.animation dummy
         scoreboard objectives add stellarity.empress_of_light.health dummy
@@ -328,6 +340,7 @@
       scoreboard objectives add stellarity.mechanics.void_fishing.can_fish dummy
       scoreboard objectives add stellarity.mechanics.consecration.time dummy
       scoreboard objectives add stellarity.mechanics.altar_of_the_sacred.timer dummy
+      scoreboard objectives add stellarity.altar_of_the_endbound_carapace.count dummy
       scoreboard objectives add stellarity.mechanics.cauldron_crafting.items_inside dummy
       scoreboard objectives add stellarity.mechanics.cauldron_crafting.breath_left dummy
 

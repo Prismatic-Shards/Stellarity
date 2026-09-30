@@ -1,17 +1,50 @@
 {
-	"texture_size": [64, 256],
 	"textures": {
 		"0": "stellarity:particle_custom/scythe_sweep_glow",
 		"particle": "stellarity:particle_custom/scythe_sweep_glow"
 	},
 	"elements": [
 		{
-			"from": [-8, 0, 8],
-			"to": [24, 16, 8],
-			"rotation": {"angle": 0, "axis": "y", "origin": [-2, 0, 0]},
+			"from": [
+				-8,
+				0,
+				8
+			],
+			"to": [
+				24,
+				16,
+				8
+			],
+			"rotation": {
+				"angle": 0,
+				"axis": "y",
+				"origin": [
+					-2,
+					0,
+					0
+				]
+			},
 			"faces": {
-				"north": {"uv": [0, 12, 16, 14], "texture": "#0", "tintindex": 0},
-				"south": {"uv": [16, 12, 0, 14], "texture": "#0", "tintindex": 0}
+				"north": {
+					"uv": [
+						0,
+						12,
+						16,
+						14
+					],
+					"texture": "#0",
+					"tintindex": 0
+				},
+				"south": {
+					"uv": [
+						16,
+						12,
+						0,
+						14
+					],
+					"texture": "#0",
+					"tintindex": 0
+				}
 			}
 		}
 	]

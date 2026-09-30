@@ -1,16 +1,34 @@
-execute unless data entity @s Passengers[0] run function stellarity:entity/shulking/death/check with entity @s data."stellarity:owner"
+execute store result score @s stellarity.shulking.health run data get entity @s Health
+execute store result bossbar stellarity:shulking value run scoreboard players get @s stellarity.shulking.health
+bossbar set stellarity:shulking players @a[distance=..64]
 
-# rotate the rods
-  scoreboard players add @s stellarity.misc4 3
-  execute if score @s stellarity.misc4 matches 360.. run scoreboard players remove @s stellarity.misc4 360
-  execute store result storage stellarity:temp shulking_rods.rotation int 1 run scoreboard players get @s stellarity.misc4
+execute as @a[distance=..50,gamemode=!creative,gamemode=!spectator] run effect give @s mining_fatigue 2 2 true
 
+execute unless entity @s[tag=stellarity.shulking.in_dash] if predicate stellarity:entity/riding_vehicle run ride @s dismount
 
-function stellarity:entity/shulking/rods/rotate with storage stellarity:temp shulking_rods
+execute store result score #hurt_time stellarity.misc run data get entity @s HurtTime
+execute if score #hurt_time stellarity.misc matches 9..10 run function stellarity:entity/shulking/hurt
 
-execute if score @s stellarity.misc matches ..0 run function stellarity:entity/shulking/attacks/decide
-execute unless score @s stellarity.misc matches ..0 run scoreboard players remove @s stellarity.misc 1
+execute if score @s stellarity.shulking.health matches ..0 run function stellarity:entity/shulking/phase/phase7_trigger
 
-execute as @a[distance=..4,gamemode=!creative,gamemode=!spectator] run damage @s 4 mob_attack by @n[type=allay,distance=..1,tag=stellarity.shulking]
+function stellarity:entity/shulking/phase/check
 
-execute if predicate stellarity:entity/riding_vehicle run ride @s dismount
+execute as @a[distance=..4,gamemode=!creative,gamemode=!spectator] run damage @s 4 mob_attack by @e[type=shulker,tag=stellarity.shulking,limit=1,sort=nearest]
+
+# 7. State handler:
+# State 0: Ground / Combat
+execute if score @s stellarity.shulking.state matches 0 run function stellarity:entity/shulking/attacks/bullets/tick
+execute if score @s stellarity.shulking.state matches 0 run function stellarity:entity/shulking/attacks/decide
+
+# State 1: Wall Clinging
+execute if score @s stellarity.shulking.state matches 1 run function stellarity:entity/shulking/attacks/bullets/tick
+execute if score @s stellarity.shulking.state matches 1 run function stellarity:entity/shulking/attacks/decide
+
+# State 2: Wall Dash
+execute if score @s stellarity.shulking.state matches 2 run function stellarity:entity/shulking/movement/dash_tick
+
+# State 3: Pancake Slam
+execute if score @s stellarity.shulking.state matches 3 run function stellarity:entity/shulking/attacks/pancake_slam/tick
+
+# 8. Passive block destruction around body
+function stellarity:entity/shulking/movement/break_blocks

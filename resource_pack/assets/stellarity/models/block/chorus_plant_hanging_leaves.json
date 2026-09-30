@@ -1,5 +1,4 @@
 {
-	"credit": "Made by ManuelXXVI (with Blockbench)",
 	"ambientocclusion": false,
 	"textures": {
 		"1": "stellarity:block/chorus_flower/hanging_leaves",
@@ -7,14 +6,45 @@
 	},
 	"elements": [
 		{
-			"from": [8, -12, -4],
-			"to": [8, 4, 12],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8]},
+			"from": [
+				8,
+				-12,
+				-4
+			],
+			"to": [
+				8,
+				4,
+				12
+			],
+			"rotation": {
+				"angle": 0,
+				"axis": "y",
+				"origin": [
+					8,
+					8,
+					8
+				]
+			},
 			"faces": {
-				"east": {"uv": [16, 0, 0, 16], "texture": "#1"},
-				"west": {"uv": [0, 0, 16, 16], "texture": "#1"}
+				"east": {
+					"uv": [
+						16,
+						0,
+						0,
+						16
+					],
+					"texture": "#1"
+				},
+				"west": {
+					"uv": [
+						0,
+						0,
+						16,
+						16
+					],
+					"texture": "#1"
+				}
 			}
 		}
-	],
-	"comment": "Yeah, I used a fragment of Manuel's pack for that, thank you Manuel. I hope I don't get sued."
+	]
 }

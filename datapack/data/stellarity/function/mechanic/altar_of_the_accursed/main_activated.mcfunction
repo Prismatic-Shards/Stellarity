@@ -1,3 +1,6 @@
+execute as @a[distance=..8,tag=!stellarity.heard_altar_approach.accursed] at @s run playsound stellarity:altar_common.approach master @s ~ ~ ~ 1 1
+execute as @a[distance=..8,tag=!stellarity.heard_altar_approach.accursed] run tag @s add stellarity.heard_altar_approach.accursed
+
 execute as @n[type=interaction,tag=stellarity.altar_of_the_accursed.sword_hitbox,distance=..2] run function stellarity:mechanic/altar_of_the_accursed/main_interaction
 
 execute unless entity @s[tag=stellarity.satchel_of_voids] run function stellarity:mechanic/altar_of_the_accursed/sfx/loop

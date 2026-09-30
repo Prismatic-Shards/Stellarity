@@ -25,3 +25,6 @@ logs/2026-09-24-7.log.gz
 logs/latest.log
 nullscape_compat_26_3.zip
 shulking_citadel.nbt
+boss_core.nbt
+citadel_assembly.nbt
+citadel_shell.nbt

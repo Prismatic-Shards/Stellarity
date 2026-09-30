@@ -1,0 +1,31 @@
+{
+  "values": [
+    "minecraft:obsidian",
+    "minecraft:crying_obsidian",
+    "minecraft:end_stone",
+    "minecraft:end_stone_bricks",
+    "minecraft:end_stone_brick_stairs",
+    "minecraft:end_stone_brick_slab",
+    "minecraft:end_stone_brick_wall",
+    "minecraft:purpur_block",
+    "minecraft:purpur_pillar",
+    "minecraft:purpur_stairs",
+    "minecraft:purpur_slab",
+    "minecraft:tuff",
+    "minecraft:tuff_stairs",
+    "minecraft:tuff_slab",
+    "minecraft:tuff_wall",
+    "minecraft:chiseled_tuff",
+    "minecraft:polished_tuff",
+    "minecraft:polished_tuff_stairs",
+    "minecraft:polished_tuff_slab",
+    "minecraft:polished_tuff_wall",
+    "minecraft:tuff_bricks",
+    "minecraft:tuff_brick_stairs",
+    "minecraft:tuff_brick_slab",
+    "minecraft:tuff_brick_wall",
+    "minecraft:chiseled_tuff_bricks",
+    "minecraft:barrier",
+    "minecraft:bedrock"
+  ]
+}
