@@ -19,7 +19,7 @@
                   "translate": "item.stellarity.enderite_shard"
                 },
                 "minecraft:provides_trim_material": "stellarity:enderite",
-                "!minecraft:entity_data": {}
+                "minecraft:entity_data": {}
               }
             },
             {

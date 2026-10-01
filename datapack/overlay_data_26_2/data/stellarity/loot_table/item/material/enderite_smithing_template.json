@@ -20,7 +20,7 @@
                   "color": "light_purple",
                   "italic": false
                 },
-                "!minecraft:entity_data": {}
+                "minecraft:entity_data": {}
               }
             },
             {

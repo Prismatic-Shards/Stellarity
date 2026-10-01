@@ -18,7 +18,7 @@
                 "minecraft:item_name": {
                   "translate": "item.stellarity.starlight_soot"
                 },
-                "!minecraft:entity_data": {}
+                "minecraft:entity_data": {}
               }
             },
             {
