@@ -20,7 +20,7 @@
                                     "italic": false
                                 },
                                 "minecraft:provides_trim_material": "stellarity:chorus",
-                                "minecraft:entity_data": {}
+                                "!minecraft:entity_data": {}
                             }
                         },
                         {

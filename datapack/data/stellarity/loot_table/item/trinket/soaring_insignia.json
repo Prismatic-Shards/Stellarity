@@ -25,7 +25,7 @@
                   "color": "#FF76D0",
                   "italic": false
                 },
-                "minecraft:entity_data": {}
+                "!minecraft:entity_data": {}
               }
             },
             {

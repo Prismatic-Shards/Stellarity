@@ -1,23 +1,30 @@
 {
   "type": "minecraft:range_choice",
   "input": "stellarity:main_island/avg",
-  "min_inclusive": 0,
-  "max_exclusive": 0.0019,
+  "min_inclusive": -1000000,
+  "max_exclusive": 0.00095,
   "when_in_range": "stellarity:main_island/island",
   "when_out_of_range": {
-    "type": "add",
-    "left": {
-      "type": "minecraft:min",
-      "left": "stellarity:sloped_cheese",
-      "right": "stellarity:cave/noodle"
-    },
-    "right": {
-      "type": "minecraft:clamp",
-      "input": {
-        "type": "minecraft:beardifier"
+    "type": "minecraft:range_choice",
+    "input": "stellarity:main_island/avg",
+    "min_inclusive": 0.00095,
+    "max_exclusive": 0.00288,
+    "when_in_range": -1.0,
+    "when_out_of_range": {
+      "type": "add",
+      "left": {
+        "type": "minecraft:min",
+        "left": "stellarity:sloped_cheese",
+        "right": "stellarity:cave/noodle"
       },
-      "min": -0.15,
-      "max": 1.0
+      "right": {
+        "type": "minecraft:clamp",
+        "input": {
+          "type": "minecraft:beardifier"
+        },
+        "min": -0.15,
+        "max": 1.0
+      }
     }
   }
 }

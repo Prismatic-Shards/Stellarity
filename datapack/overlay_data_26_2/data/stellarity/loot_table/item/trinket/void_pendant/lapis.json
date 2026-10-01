@@ -22,7 +22,7 @@
                     "minecraft:enchantments"
                   ]
                 },
-                "minecraft:entity_data": {},
+                "!minecraft:entity_data": {},
                 "minecraft:rarity": "rare"
               },
               "function": "minecraft:set_components"
