@@ -1,14 +1,5 @@
 {
-  "type": "minecraft:slice",
-  "axis": "y",
-  "coordinate": 0,
-  "argument": {
-    "type": "minecraft:distance_to_point",
-    "point": [
-      0,
-      0,
-      0
-    ],
-    "metric": "euclidean"
-  }
+  "type": "minecraft:mul",
+  "argument1": 168421.05,
+  "argument2": "stellarity:main_island/avg"
 }

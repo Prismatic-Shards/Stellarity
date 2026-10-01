@@ -11,13 +11,24 @@
     "max_exclusive": 950,
     "when_in_range": -1.0,
     "when_out_of_range": {
-      "type": "add",
+      "type": "minecraft:add",
       "argument1": {
-        "type": "min",
-        "argument1": "stellarity:sloped_cheese",
-        "argument2": "stellarity:cave/noodle"
+        "type": "minecraft:add",
+        "argument1": {
+          "type": "minecraft:min",
+          "argument1": "stellarity:sloped_cheese",
+          "argument2": "stellarity:cave/noodle"
+        },
+        "argument2": "stellarity:outer_islands_falloff"
       },
-      "argument2": "stellarity:outer_islands_falloff"
+      "argument2": {
+        "type": "minecraft:clamp",
+        "input": {
+          "type": "minecraft:beardifier"
+        },
+        "min": -0.15,
+        "max": 1.0
+      }
     }
   }
 }
