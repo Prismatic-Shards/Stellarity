@@ -338,39 +338,5 @@
     "fixed": {
       "scale": [0.5, 0.5, 0.5]
     }
-  },
-  "groups": [
-    {
-      "name": "corners",
-      "origin": [8, 8, 8],
-      "color": 0,
-      "children": [
-        {
-          "name": "1",
-          "origin": [0, 0, 0],
-          "color": 0,
-          "children": [0, 1, 2, 3]
-        },
-        {
-          "name": "2",
-          "origin": [0, 0, 0],
-          "color": 0,
-          "children": [4, 5, 6, 7]
-        },
-        {
-          "name": "3",
-          "origin": [0, 0, 0],
-          "color": 0,
-          "children": [8, 9, 10, 11]
-        },
-        {
-          "name": "4",
-          "origin": [0, 0, 0],
-          "color": 0,
-          "children": [12, 13, 14, 15]
-        }
-      ]
-    },
-    16
-  ]
+  }
 }

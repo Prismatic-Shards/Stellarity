@@ -226,7 +226,7 @@
     },
     {
       "type": "bitmap",
-      "file": "stellarity:font/icon/wither_skeleton_skull.png",
+      "file": "minecraft:item/wither_skeleton_skull.png",
       "ascent": 18,
       "height": 18,
       "chars": ["@"]

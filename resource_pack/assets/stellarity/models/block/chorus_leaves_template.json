@@ -1,5 +1,6 @@
 {
 	"textures": {
+		"particle": "#leaves",
 		"leaves": "stellarity:block/chorus_flower/side_leaves_4"
 	},
 	"elements": [

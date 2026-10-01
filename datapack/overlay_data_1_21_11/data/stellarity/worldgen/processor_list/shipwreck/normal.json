@@ -71,9 +71,8 @@
               "predicate_type": "minecraft:always_true"
             },
             "input_predicate": {
-              "predicate_type": "minecraft:random_block_match",
-              "block": "minecraft:sand",
-              "probability": 0.08
+              "predicate_type": "minecraft:block_match",
+              "block": "minecraft:sand"
             },
             "output_state": {
               "Name": "minecraft:suspicious_sand",
@@ -104,9 +103,8 @@
               "predicate_type": "minecraft:always_true"
             },
             "input_predicate": {
-              "predicate_type": "minecraft:random_block_match",
-              "block": "minecraft:sand",
-              "probability": 0.08
+              "predicate_type": "minecraft:block_match",
+              "block": "minecraft:sand"
             },
             "output_state": {
               "Name": "minecraft:suspicious_sand",
@@ -137,9 +135,8 @@
               "predicate_type": "minecraft:always_true"
             },
             "input_predicate": {
-              "predicate_type": "minecraft:random_block_match",
-              "block": "minecraft:gravel",
-              "probability": 0.08
+              "predicate_type": "minecraft:block_match",
+              "block": "minecraft:gravel"
             },
             "output_state": {
               "Name": "minecraft:suspicious_gravel",
@@ -170,9 +167,8 @@
               "predicate_type": "minecraft:always_true"
             },
             "input_predicate": {
-              "predicate_type": "minecraft:random_block_match",
-              "block": "minecraft:gravel",
-              "probability": 0.08
+              "predicate_type": "minecraft:block_match",
+              "block": "minecraft:gravel"
             },
             "output_state": {
               "Name": "minecraft:suspicious_gravel",

@@ -6,7 +6,6 @@
   "gui_light": "front",
   "elements": [
     {
-      "name": "body",
       "from": [7.5, -16, 8],
       "to": [8.5, 9, 9],
       "rotation": { "angle": 0, "axis": "y", "origin": [8, -16, 8] },
@@ -20,7 +19,6 @@
       }
     },
     {
-      "name": "base",
       "from": [6.5, 9, 8],
       "to": [9.5, 11, 9],
       "rotation": { "angle": 0, "axis": "y", "origin": [8, -16, 8] },
@@ -34,7 +32,6 @@
       }
     },
     {
-      "name": "left_spike",
       "from": [9.5, 10, 8],
       "to": [10.5, 14, 9],
       "rotation": { "angle": 0, "axis": "y", "origin": [8, -16, 8] },
@@ -48,7 +45,6 @@
       }
     },
     {
-      "name": "middle_spike",
       "from": [7.5, 11, 8],
       "to": [8.5, 15, 9],
       "rotation": { "angle": 0, "axis": "y", "origin": [8, -16, 8] },
@@ -62,7 +58,6 @@
       }
     },
     {
-      "name": "right_spike",
       "from": [5.5, 10, 8],
       "to": [6.5, 14, 9],
       "rotation": { "angle": 0, "axis": "y", "origin": [8, -16, 8] },

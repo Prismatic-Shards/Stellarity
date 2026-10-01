@@ -33,7 +33,7 @@
             {
                 "model": {
                     "type": "minecraft:model",
-                    "model": "minecraft:item/copper_boots_trim"
+                    "model": "minecraft:item/copper_boots_netherite_trim"
                 },
                 "when": "minecraft:netherite"
             },
