@@ -1,0 +1,1 @@
+$summon item_display ~ ~ ~ {item:{id:"end_rod"},transformation:{scale:[1,1,1],left_rotation:[1,0,0,0],right_rotation:[0,0,0,1],translation:[0,.5,0]},Tags:["stellarity.shulking.spike","smithed.entity","smithed.strict"],data:{"stellarity:owner":{UUID:$(UUID)}}}

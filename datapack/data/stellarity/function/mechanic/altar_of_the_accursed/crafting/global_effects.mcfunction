@@ -9,7 +9,6 @@ particle minecraft:flash{color:-1} ~ ~-.4 ~ 0 0 0 0 0 force
 
 particle end_rod ~ ~-.4 ~ 0 0 0 0.13 17 normal
 
-playsound stellarity:altar_of_the_accursed.ready block @a[distance=0..] ~ ~-.4 ~ 1 1
 playsound minecraft:entity.warden.heartbeat block @a[distance=0..] ~ ~-.4 ~ 0.88
 playsound minecraft:item.trident.thunder block @a[distance=0..] ~ ~-.4 ~ 1
 

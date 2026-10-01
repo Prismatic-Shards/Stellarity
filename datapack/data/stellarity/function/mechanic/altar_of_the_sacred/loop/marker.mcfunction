@@ -1,6 +1,3 @@
-execute as @a[distance=..8,tag=!stellarity.heard_altar_approach.sacred] at @s run playsound stellarity:altar_common.approach master @s ~ ~ ~ 1 1
-execute as @a[distance=..8,tag=!stellarity.heard_altar_approach.sacred] run tag @s add stellarity.heard_altar_approach.sacred
-
 execute positioned ~ ~-1 ~ as @n[type=item_display,distance=..0.01,tag=!stellarity.altar_of_the_sacred] run tag @s add stellarity.altar_of_the_sacred
 execute positioned ~ ~-1 ~ as @n[type=item_display,distance=..0.01,tag=stellarity.altar_of_the_sacred] at @s run function stellarity:mechanic/altar_of_the_sacred/loop/item_display
 

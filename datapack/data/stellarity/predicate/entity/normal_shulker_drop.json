@@ -21,20 +21,6 @@
         "entity": "this",
         "type": "entity_properties",
         "predicate": {
-          "nbt": "{Tags:[\"stellarity.shulking\"]}"
-        }
-      },
-      {
-        "entity": "this",
-        "type": "entity_properties",
-        "predicate": {
-          "nbt": "{Tags:[\"stellarity.shulking.minion\"]}"
-        }
-      },
-      {
-        "entity": "this",
-        "type": "entity_properties",
-        "predicate": {
           "nbt": "{Tags:[\"stellarity.shulking.body\"]}"
         }
       }

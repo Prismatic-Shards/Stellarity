@@ -152,19 +152,6 @@
 
 
     ## Mobs
-      # Shulking
-        scoreboard objectives remove stellarity.shulking.health
-        scoreboard objectives remove stellarity.shulking.health_percent
-        scoreboard objectives remove stellarity.shulking.phase
-        scoreboard objectives remove stellarity.shulking.attack_timer
-        scoreboard objectives remove stellarity.shulking.attack_cooldown
-        scoreboard objectives remove stellarity.shulking.bullet_cooldown
-        scoreboard objectives remove stellarity.shulking.shockwave_cd
-        scoreboard objectives remove stellarity.shulking.fangs_cd
-        scoreboard objectives remove stellarity.shulking.state
-        scoreboard objectives remove stellarity.shulking.wall
-        scoreboard objectives remove stellarity.shulking.action_timer
-
       # Empress of Light
         scoreboard objectives remove stellarity.empress_of_light.animation
         scoreboard objectives remove stellarity.empress_of_light.health
@@ -198,7 +185,6 @@
 
       ## Mechanics
         scoreboard objectives remove stellarity.altar_of_the_accursed.count
-        scoreboard objectives remove stellarity.altar_of_the_endbound_carapace.count
         scoreboard objectives remove stellarity.live_time
         scoreboard objectives remove stellarity.health
 
@@ -255,8 +241,6 @@
         bossbar remove stellarity:crystal_count
         # Empress of Light
           bossbar remove stellarity:empress_of_light 
-        # Shulking
-          bossbar remove stellarity:shulking 
 
 
       # Scheduling loops that do not need

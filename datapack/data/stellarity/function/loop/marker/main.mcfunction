@@ -38,6 +38,5 @@ execute if entity @s[tag=stellarity.trial_spawner] run function stellarity:struc
 
 scoreboard players add @s stellarity.misc.loop.1s 1
 execute if entity @s[tag=stellarity.altar_of_the_accursed] run function stellarity:mechanic/altar_of_the_accursed/main
-execute if entity @s[tag=stellarity.altar_of_the_endbound_carapace] run function stellarity:mechanic/altar_of_the_endbound_carapace/main
 execute if entity @s[tag=stellarity.pixie_in_a_jar] run function stellarity:mechanic/pixie_in_a_jar/main
 execute if entity @s[scores={stellarity.misc.loop.1s=20..}] run function stellarity:loop/marker/main_1s
