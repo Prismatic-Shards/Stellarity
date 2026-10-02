@@ -13,7 +13,7 @@ advancement grant @a[distance=..100,advancements={end/kill_dragon=true}] only mi
 tag @s add stellarity.portal_deactivated.spawn_dragon
 tag @s remove stellarity.respawn_dragon
 
-execute as @e[type=minecraft:end_crystal,predicate=stellarity:location/in_the_end] at @s run function stellarity:entity/dragon/spawn/crystal_transitions/normal
+execute in minecraft:the_end positioned 0 80 0 as @e[type=minecraft:end_crystal,distance=..250,tag=!stellarity.end_city.crystal] at @s run function stellarity:entity/dragon/spawn/crystal_transitions/normal
 
 execute in minecraft:the_end run setblock 0 63 0 bedrock
 

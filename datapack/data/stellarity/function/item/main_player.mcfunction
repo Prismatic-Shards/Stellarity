@@ -5,6 +5,8 @@
   execute if entity @s[predicate=stellarity:item/holding/dragonblade,predicate=kohara:player/is_sneaking] as @e[type=!#kohara:invalid_targets,distance=0.001..5,tag=stellarity.item.dragonblade.punch_ready] at @s run function stellarity:item/dragonblade/punch/progress
 
 # The Beginning and The End
+  execute if entity @s[predicate=stellarity:item/holding/spirit_dagger/any] run tag @s add stellarity.holding_spirit_dagger
+  execute if entity @s[tag=stellarity.holding_spirit_dagger,predicate=!stellarity:item/holding/spirit_dagger/any] run tag @s remove stellarity.holding_spirit_dagger
   execute if entity @s[predicate=stellarity:item/holding/spirit_dagger/both,predicate=stellarity:item/spirit_dagger/looking_at_spirit] run function stellarity:item/spirit_dagger/charge/progress
   execute if entity @s[scores={stellarity.item.spirit_dagger.until_consume_reset=1..}] run function stellarity:item/spirit_dagger/charge/reset_countdown
 
