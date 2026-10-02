@@ -1,17 +1,65 @@
 {
   "type": "minecraft:mul",
-  "argument1": 0.25,
+  "argument1": 0.0625,
   "argument2": {
     "type": "minecraft:add",
     "argument1": {
       "type": "minecraft:add",
-      "argument1": "stellarity:main_island/d1",
-      "argument2": "stellarity:main_island/d2"
+      "argument1": {
+        "type": "minecraft:add",
+        "argument1": {
+          "type": "minecraft:add",
+          "argument1": "stellarity:main_island/d1",
+          "argument2": "stellarity:main_island/d2"
+        },
+        "argument2": {
+          "type": "minecraft:add",
+          "argument1": "stellarity:main_island/d3",
+          "argument2": "stellarity:main_island/d4"
+        }
+      },
+      "argument2": {
+        "type": "minecraft:add",
+        "argument1": {
+          "type": "minecraft:add",
+          "argument1": "stellarity:main_island/d5",
+          "argument2": "stellarity:main_island/d6"
+        },
+        "argument2": {
+          "type": "minecraft:add",
+          "argument1": "stellarity:main_island/d7",
+          "argument2": "stellarity:main_island/d8"
+        }
+      }
     },
     "argument2": {
       "type": "minecraft:add",
-      "argument1": "stellarity:main_island/d3",
-      "argument2": "stellarity:main_island/d4"
+      "argument1": {
+        "type": "minecraft:add",
+        "argument1": {
+          "type": "minecraft:add",
+          "argument1": "stellarity:main_island/d9",
+          "argument2": "stellarity:main_island/d10"
+        },
+        "argument2": {
+          "type": "minecraft:add",
+          "argument1": "stellarity:main_island/d11",
+          "argument2": "stellarity:main_island/d12"
+        }
+      },
+      "argument2": {
+        "type": "minecraft:add",
+        "argument1": {
+          "type": "minecraft:add",
+          "argument1": "stellarity:main_island/d13",
+          "argument2": "stellarity:main_island/d14"
+        },
+        "argument2": {
+          "type": "minecraft:add",
+          "argument1": "stellarity:main_island/d15",
+          "argument2": "stellarity:main_island/d16"
+        }
+      }
     }
   }
 }
