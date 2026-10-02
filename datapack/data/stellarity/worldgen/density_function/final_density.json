@@ -2,14 +2,18 @@
   "type": "minecraft:range_choice",
   "input": "stellarity:main_island/avg",
   "min_inclusive": -1000000,
-  "max_exclusive": 1.0,
+  "max_exclusive": 0.45,
   "when_in_range": "stellarity:main_island/island",
   "when_out_of_range": {
     "type": "add",
     "left": {
-      "type": "minecraft:min",
-      "left": "stellarity:sloped_cheese",
-      "right": "stellarity:cave/noodle"
+      "type": "add",
+      "left": {
+        "type": "minecraft:min",
+        "left": "stellarity:sloped_cheese",
+        "right": "stellarity:cave/noodle"
+      },
+      "right": "stellarity:main_island/farlands_taper"
     },
     "right": {
       "type": "minecraft:clamp",
