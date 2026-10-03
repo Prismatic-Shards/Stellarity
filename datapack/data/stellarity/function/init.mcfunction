@@ -412,3 +412,6 @@ execute unless score #stellarity.config stellarity.config.join_message matches 0
 
 # Dialog Admin Menu Trigger
  scoreboard objectives add stellarity.dialog.admin trigger
+
+# End City marker status
+scoreboard objectives add stellarity.end_city.status dummy

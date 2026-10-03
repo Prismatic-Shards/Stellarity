@@ -4,6 +4,7 @@ function stellarity:util/tellraw/help {command:"ender_dragon.kill",description:"
 function stellarity:util/tellraw/help {command:"fix_markers",description:"Fixes broken markers from Stellarity v2.0d and makes them work with Stellarity v2.1a and above."}
 function stellarity:util/tellraw/help {command:"fix_spirit_dagger",description:"Resets Spirit Dagger state, tags, cooldowns and advancements for all players."}
 function stellarity:util/tellraw/help {command:"generate_end_island_features",description:"Forces generation of the Altar of The Accursed."}
+function stellarity:util/tellraw/help {command:"show_end_city_markers",description:"Highlights active End City markers with particles and reports count."}
 
 tellraw @s " "
 

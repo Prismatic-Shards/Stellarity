@@ -35,3 +35,8 @@ hs_err_pid32272.log
 hs_err_pid9728.log
 replay_pid32272.log
 replay_pid9728.log
+deploy.bat
+deploy.ps1
+deploy.sh
+seed_analysis.png
+analyze_seeds.py

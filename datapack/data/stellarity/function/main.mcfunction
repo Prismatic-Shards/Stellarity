@@ -20,6 +20,9 @@ execute as @e[type=item,tag=stellarity.item] at @s run function stellarity:loop/
 # End City Crystal loop
   execute as @e[type=end_crystal,tag=stellarity.end_city.crystal] at @s run function stellarity:structure/end_city/crystal/main
 
+# End City Structure Spawner Marker loop
+  execute as @e[type=marker,tag=stellarity.end_city.marker,tag=!stellarity.oriented] at @s run function stellarity:structure/end_city/marker_init
+
 # Moved from stellarity:structure/check
 
 

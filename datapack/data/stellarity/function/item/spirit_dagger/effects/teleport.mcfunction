@@ -41,12 +41,12 @@ scoreboard players reset @s stellarity.item.spirit_dagger.consume_time
             scoreboard players operation #bane stellarity.misc = #temp_1 stellarity.misc
 
           # Damage
-            execute as @e[type=!#kohara:invalid_targets,distance=..3.8,predicate=!stellarity:item/holding/spirit_dagger/both,predicate=!kohara:player/is_sneaking] at @s run function stellarity:item/spirit_dagger/effects/damage
+            execute as @e[type=!#kohara:invalid_targets,distance=..4.2,predicate=!stellarity:item/holding/spirit_dagger/both,predicate=!kohara:player/is_sneaking] at @s run function stellarity:item/spirit_dagger/effects/damage
 
           # Teleport slash effect
             function stellarity:item/spirit_dagger/effects/teleport/slash
 
           # Kill Spirit
-            kill @n[type=armor_stand,tag=stellarity.spirit_dagger.spirit]
-            kill @n[type=interaction,tag=stellarity.spirit_dagger.spirit]
-            kill @n[type=marker,tag=stellarity.spirit_dagger.spirit]
+            kill @e[tag=stellarity.spirit_dagger.spirit,distance=..5,type=armor_stand]
+            kill @e[tag=stellarity.spirit_dagger.spirit,distance=..5,type=interaction]
+            kill @e[tag=stellarity.spirit_dagger.spirit,distance=..5,type=marker]

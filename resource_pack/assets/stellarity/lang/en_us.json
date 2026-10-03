@@ -255,6 +255,8 @@
   "gui.stellarity.commands.fix_portal.tooltip": "Regenerates the Exit Portal on the End Island",
   "gui.stellarity.commands.generate_end_island_features": "Generate End Island Features",
   "gui.stellarity.commands.generate_end_island_features.tooltip": "Regenerates End Island features, such as the AOTA pillar",
+  "gui.stellarity.commands.show_end_city_markers": "Show End City Markers",
+  "gui.stellarity.commands.show_end_city_markers.tooltip": "Highlights active End City markers with particles and reports count",
   "gui.stellarity.commands.give_armor": "Give Stellarity Armor",
   "gui.stellarity.commands.give_armor.tooltip": "Give yourself all Stellarity armor items",
   "gui.stellarity.commands.give_blocks": "Give Stellarity Blocks",

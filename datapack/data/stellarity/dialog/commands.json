@@ -127,6 +127,28 @@
     },
     {
       "label": {
+        "translate": "gui.stellarity.commands.show_end_city_markers",
+        "fallback": "Show End City Markers"
+      },
+      "tooltip": [
+        {
+          "translate": "gui.stellarity.commands.show_end_city_markers.tooltip",
+          "fallback": "Highlights active End City markers with particles and reports count"
+        },
+        {
+          "text": "\n\"function stellarity:_cmd/show_end_city_markers\"",
+          "color": "gray",
+          "italic": true
+        }
+      ],
+      "width": 180,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function stellarity:_cmd/show_end_city_markers"
+      }
+    },
+    {
+      "label": {
         "translate": "gui.stellarity.commands.uninstall",
         "fallback": "Uninstall"
       },

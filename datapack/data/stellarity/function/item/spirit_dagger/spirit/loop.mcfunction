@@ -2,7 +2,12 @@
 scoreboard players add @s stellarity.misc 1
 
 execute if score @s stellarity.misc matches 10 run tag @s add stellarity.spirit_dagger.spirit_ready
-execute if score @s stellarity.misc matches 10 run tag @n[type=interaction] add stellarity.spirit_dagger.spirit_ready
+execute if score @s stellarity.misc matches 10 at @s as @e[tag=stellarity.spirit_dagger.spirit,distance=..3,type=interaction] run tag @s add stellarity.spirit_dagger.spirit_ready
+execute if score @s stellarity.misc matches 10 at @s as @e[tag=stellarity.spirit_dagger.spirit,distance=..3,type=armor_stand] run tag @s add stellarity.spirit_dagger.spirit_ready
+
+# Instant attack-based teleport
+execute at @s as @e[tag=stellarity.spirit_dagger.spirit,tag=stellarity.spirit_dagger.spirit_ready,distance=..3,type=interaction] if data entity @s attack positioned as @s run function stellarity:item/spirit_dagger/spirit/on_attack
+execute at @s as @e[tag=stellarity.spirit_dagger.spirit,tag=!stellarity.spirit_dagger.spirit_ready,distance=..3,type=interaction] if data entity @s attack run data remove entity @s attack
 
 # 15 seconds of lifespan
 execute if score @s stellarity.misc matches 301.. run function stellarity:item/spirit_dagger/spirit/timeout

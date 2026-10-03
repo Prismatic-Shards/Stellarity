@@ -1,0 +1,1 @@
+function stellarity:debug/show_end_city_markers
