@@ -1,5 +1,5 @@
 execute unless score @s stellarity.item.spirit_dagger.consume_time matches 10.. run scoreboard players add @s stellarity.item.spirit_dagger.consume_time 1
-scoreboard players set @s stellarity.item.spirit_dagger.until_consume_reset 30
+scoreboard players set @s stellarity.item.spirit_dagger.until_consume_reset 50
 
 title @s actionbar [{"text":"•","color":"#EEEEEE"},{"text":" 🗡 ","color":"#F5DC68"},{"score":{"name": "@s","objective": "stellarity.item.spirit_dagger.consume_time"},"color":"#F5DC68"},{"text":"/","color":"#EEEEEE"},{"text":"10","color":"#C781E6"},{"text":" 🗡 ","color":"#C781E6"},{"text":"•","color":"#EEEEEE"}]
 

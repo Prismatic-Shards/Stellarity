@@ -1,13 +1,14 @@
 scoreboard players reset @s stellarity.item.spirit_dagger.consume_time
 
 # Advancement
-  execute if score #distance stellarity.misc matches 600.. run advancement grant @s only stellarity:exploration/spirit_assasin
+  execute if entity @s[distance=58..] run advancement grant @s only stellarity:exploration/spirit_assasin
+  execute if score #distance stellarity.misc matches 580.. run advancement grant @s only stellarity:exploration/spirit_assasin
 
 # Prevent any fall damage
   effect give @s slow_falling 1 0 true
 
 # Teleport
-  tp @s ~ ~-0.35 ~
+  tp @s ~ ~-0.65 ~
   tag @s add stellarity.spirit_dagger.teleport
   schedule function stellarity:item/spirit_dagger/effects/scheduled_remove_tag 1t append
 
@@ -47,6 +48,5 @@ scoreboard players reset @s stellarity.item.spirit_dagger.consume_time
             function stellarity:item/spirit_dagger/effects/teleport/slash
 
           # Kill Spirit
-            kill @e[tag=stellarity.spirit_dagger.spirit,distance=..5,type=armor_stand]
-            kill @e[tag=stellarity.spirit_dagger.spirit,distance=..5,type=interaction]
-            kill @e[tag=stellarity.spirit_dagger.spirit,distance=..5,type=marker]
+            kill @e[tag=stellarity.spirit_dagger.dying]
+            kill @e[tag=stellarity.spirit_dagger.spirit,distance=..2]

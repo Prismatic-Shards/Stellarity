@@ -1,4 +1,4 @@
-summon marker ~ ~-0.5 ~ {Tags:["stellarity.marker","stellarity.end_city.small_tower_crystal","smithed.entity","smithed.strict"]}
+summon marker ~ ~ ~ {Tags:["stellarity.marker","stellarity.end_city.small_tower_crystal","smithed.entity","smithed.strict"]}
 
 setblock ~ ~1 ~ air
 setblock ~ ~ ~ air
