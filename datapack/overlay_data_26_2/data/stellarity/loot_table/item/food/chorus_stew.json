@@ -6,7 +6,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:mushroom_stew",
-          "functions": [
+          "functionS": [
             {
               "function": "minecraft:set_components",
               "components": {
