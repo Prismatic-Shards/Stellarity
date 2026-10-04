@@ -40,3 +40,7 @@ deploy.ps1
 deploy.sh
 seed_analysis.png
 analyze_seeds.py
+replay_pid21564.log
+hs_err_pid21552.log
+hs_err_pid21564.log
+replay_pid21552.log

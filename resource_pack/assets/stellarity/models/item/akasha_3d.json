@@ -1,4 +1,5 @@
 {
+  "format_version": "26.3",
   "credit": "Made with Blockbench",
   "texture_size": [
     64,
@@ -9,7 +10,6 @@
     "1": "stellarity:item/akasha_3d",
     "particle": "stellarity:item/akasha_3d"
   },
-  "gui_light": "front",
   "elements": [
     {
       "from": [
@@ -1103,5 +1103,55 @@
         }
       }
     }
-  ]
+  ],
+  "display": {
+    "thirdperson_righthand": {
+      "rotation": [
+        0,
+        -45,
+        0
+      ],
+      "translation": [
+        0,
+        -8.75,
+        1
+      ]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [
+        0,
+        -45,
+        0
+      ],
+      "translation": [
+        0,
+        -8.75,
+        1
+      ]
+    },
+    "firstperson_righthand": {
+      "rotation": [
+        -25,
+        10,
+        0
+      ],
+      "translation": [
+        0,
+        -7.5,
+        5
+      ]
+    },
+    "firstperson_lefthand": {
+      "rotation": [
+        -25,
+        10,
+        0
+      ],
+      "translation": [
+        0,
+        -7.5,
+        5
+      ]
+    }
+  }
 }
