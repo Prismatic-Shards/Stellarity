@@ -13,6 +13,8 @@ build/
 .spyglassrc.json
 
 stellarity-6.0.0.zip
+stellarity-6.0.1.zip
+stellarity-*.zip
 resource_pack.zip
 nullscape_compat_26_3.zip
 nullscape_compat_26_3.zip
@@ -45,3 +47,4 @@ hs_err_pid21552.log
 hs_err_pid21564.log
 replay_pid21552.log
 datapack/data/stellarity/worldgen/test.txt
+test_run.py
