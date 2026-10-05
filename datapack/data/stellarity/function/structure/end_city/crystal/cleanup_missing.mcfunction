@@ -7,5 +7,6 @@ execute if entity @e[type=marker,tag=stellarity.end_city.crystal_small_tower,dis
 function stellarity:structure/end_city/crystal/spawn_chest
 
 # Clean up any remaining crystal interaction/marker entities nearby
-kill @e[type=interaction,tag=stellarity.end_city.crystal,distance=..3]
-kill @e[type=marker,tag=stellarity.end_city.crystal,distance=..3]
+kill @e[type=interaction,tag=stellarity.end_city.crystal,distance=..4]
+kill @e[type=marker,tag=stellarity.end_city.crystal,distance=..4]
+kill @e[type=end_crystal,tag=stellarity.end_city.crystal,distance=..4]
