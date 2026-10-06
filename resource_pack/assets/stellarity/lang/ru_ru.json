@@ -255,6 +255,8 @@
   "gui.stellarity.commands.fix_portal.tooltip": "Пересоздаёт портал выхода на главном острове Края",
   "gui.stellarity.commands.generate_end_island_features": "Генерировать структуры острова Края",
   "gui.stellarity.commands.generate_end_island_features.tooltip": "Заново генерирует объекты острова Края, включая колонну Алтаря Проклятых",
+  "gui.stellarity.commands.show_end_city_markers": "Показать маркеры Городов Края",
+  "gui.stellarity.commands.show_end_city_markers.tooltip": "Подсвечивает активные маркеры Городов Края частицами и сообщает их количество",
   "gui.stellarity.commands.give_armor": "Выдать броню Stellarity",
   "gui.stellarity.commands.give_armor.tooltip": "Выдаёт все комплекты брони из Stellarity",
   "gui.stellarity.commands.give_blocks": "Выдать блоки Stellarity",

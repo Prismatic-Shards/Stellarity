@@ -1,0 +1,1 @@
+$setblock ~ ~ ~ $(restore_here)

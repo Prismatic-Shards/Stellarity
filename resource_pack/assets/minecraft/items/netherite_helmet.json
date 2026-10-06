@@ -33,7 +33,7 @@
             {
                 "model": {
                     "type": "minecraft:model",
-                    "model": "minecraft:item/netherite_helmet_trim"
+                    "model": "minecraft:item/netherite_helmet_netherite_trim"
                 },
                 "when": "minecraft:netherite"
             },

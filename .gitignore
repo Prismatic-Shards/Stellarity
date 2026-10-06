@@ -7,14 +7,18 @@ new_translations/
 .venv/
 
 craftsmith/
-Nullscape_v2.0.0+26.3/
+nullscape_26_3/
 
 build/
 .spyglassrc.json
 
-hs_err_pid22536.log
 stellarity-6.0.0.zip
+stellarity-6.0.1.zip
+stellarity-*.zip
 resource_pack.zip
+nullscape_compat_26_3.zip
+nullscape_compat_26_3.zip
+
 logs/2026-09-24-1.log.gz
 logs/2026-09-24-2.log.gz
 logs/2026-09-24-3.log.gz
@@ -23,5 +27,34 @@ logs/2026-09-24-5.log.gz
 logs/2026-09-24-6.log.gz
 logs/2026-09-24-7.log.gz
 logs/latest.log
-nullscape_compat_26_3.zip
+hs_err_pid22536.log
+
 shulking_citadel.nbt
+citadel_shell.nbt
+boss_core.nbt
+citadel_assembly.nbt
+hs_err_pid32272.log
+hs_err_pid9728.log
+replay_pid32272.log
+replay_pid9728.log
+deploy.bat
+deploy.ps1
+deploy.sh
+seed_analysis.png
+analyze_seeds.py
+replay_pid21564.log
+hs_err_pid21552.log
+hs_err_pid21564.log
+replay_pid21552.log
+datapack/data/stellarity/worldgen/test.txt
+test_run.py
+hs_err_pid13568.log
+hs_err_pid14116.log
+hs_err_pid17836.log
+hs_err_pid19784.log
+hs_err_pid23812.log
+hs_err_pid24564.log
+replay_pid13568.log
+replay_pid17836.log
+replay_pid23812.log
+replay_pid24564.log

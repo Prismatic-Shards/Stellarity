@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:square",
+  "input": {
+    "type": "minecraft:mul",
+    "left": 345.0,
+    "right": {
+      "type": "minecraft:add",
+      "left": {
+        "type": "minecraft:noise",
+        "noise": "stellarity:main_island/n9",
+        "xz_scale": 1.0,
+        "y_scale": 0.0
+      },
+      "right": {
+        "type": "minecraft:mul",
+        "left": -1.0,
+        "right": {
+          "type": "minecraft:noise",
+          "noise": "stellarity:main_island/n9",
+          "xz_scale": 0.95,
+          "y_scale": 0.0
+        }
+      }
+    }
+  }
+}

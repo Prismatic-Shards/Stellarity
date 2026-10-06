@@ -4,7 +4,7 @@
     "type": "minecraft:range_choice",
     "input": "stellarity:main_island/avg",
     "min_inclusive": -1000000,
-    "max_exclusive": 0.0019,
+    "max_exclusive": 0.12,
     "when_in_range": -2,
     "when_out_of_range": {
       "type": "minecraft:shifted_noise",

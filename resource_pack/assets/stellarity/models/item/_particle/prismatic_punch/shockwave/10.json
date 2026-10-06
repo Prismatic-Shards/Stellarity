@@ -9,7 +9,6 @@
 			"from": [0, 0, 8],
 			"to": [16, 16, 8],
 			"light_emission": 15,
-			"shade": false,
 			"faces": {
 				"north": {"uv": [0, 0, 16, 16], "texture": "#0"},
 				"south": {"uv": [0, 0, 16, 16], "texture": "#0"}

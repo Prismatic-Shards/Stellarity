@@ -1,11 +1,18 @@
 # Age
 scoreboard players add @s stellarity.misc 1
 
-execute if score @s stellarity.misc matches 10 run tag @s add stellarity.spirit_dagger.spirit_ready
-execute if score @s stellarity.misc matches 10 run tag @n[type=interaction] add stellarity.spirit_dagger.spirit_ready
+execute if score @s stellarity.misc matches 10.. unless entity @s[tag=stellarity.spirit_dagger.spirit_ready] run tag @s add stellarity.spirit_dagger.spirit_ready
+execute if score @s stellarity.misc matches 10.. at @s as @e[tag=stellarity.spirit_dagger.spirit,distance=..2] unless entity @s[tag=stellarity.spirit_dagger.spirit_ready] run tag @s add stellarity.spirit_dagger.spirit_ready
 
-# 15 seconds of lifespan
-execute if score @s stellarity.misc matches 301.. run function stellarity:item/spirit_dagger/spirit/timeout
+# Attack-based teleport (only when blades/spirit are fully charged)
+execute at @s as @e[tag=stellarity.spirit_dagger.spirit,tag=stellarity.spirit_dagger.spirit_ready,distance=..2,type=interaction] if data entity @s attack run function stellarity:item/spirit_dagger/spirit/on_attack
+execute at @s as @e[tag=stellarity.spirit_dagger.spirit,tag=!stellarity.spirit_dagger.spirit_ready,distance=..2,type=interaction] if data entity @s attack run data remove entity @s attack
+
+# Auto-teleport if owner is within 7 blocks (only when blades/spirit are fully charged)
+execute if entity @s[tag=stellarity.spirit_dagger.spirit_ready] run function stellarity:item/spirit_dagger/spirit/auto_teleport
+
+# 25 seconds of lifespan
+execute if score @s stellarity.misc matches 501.. run function stellarity:item/spirit_dagger/spirit/timeout
 
 # Particles
 teleport @s ~ ~ ~ ~5 ~

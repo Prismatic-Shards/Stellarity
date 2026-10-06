@@ -11,10 +11,8 @@
   },
   "elements": [
     {
-      "name": "large",
       "from": [1, 11, 1],
       "to": [15, 11, 15],
-      "shade": false,
       "rotation": {
         "angle": 45,
         "axis": "y",
@@ -27,10 +25,8 @@
       }
     },
     {
-      "name": "1",
       "from": [1, 13.89299, -1.74288],
       "to": [15, 13.89299, 5.25712],
-      "shade": false,
       "rotation": {
         "angle": -45,
         "axis": "x",
@@ -43,10 +39,8 @@
       }
     },
     {
-      "name": "2",
       "from": [6.74388, 2.89399, 1],
       "to": [6.74388, 9.89399, 15],
-      "shade": false,
       "rotation": {
         "angle": -45,
         "axis": "z",
@@ -59,10 +53,8 @@
       }
     },
     {
-      "name": "3",
       "from": [1, 13.89299, 10.74288],
       "to": [15, 13.89299, 17.74288],
-      "shade": false,
       "rotation": {
         "angle": 45,
         "axis": "x",
@@ -75,10 +67,8 @@
       }
     },
     {
-      "name": "4",
       "from": [9.25612, 2.89399, 1],
       "to": [9.25612, 9.89399, 15],
-      "shade": false,
       "rotation": {
         "angle": 45,
         "axis": "z",
@@ -91,7 +81,6 @@
       }
     },
     {
-      "name": "large_leaves",
       "from": [2.9, -5, 2.9],
       "to": [13.1, 11, 13.1],
       "rotation": { "angle": 0, "axis": "y", "origin": [0, 11, 0] },
@@ -103,10 +92,8 @@
       }
     },
     {
-      "name": "1",
       "from": [0, 10.9894, -6.84255],
       "to": [16, 10.9894, 9.15745],
-      "shade": false,
       "rotation": {
         "angle": 22.5,
         "axis": "x",
@@ -119,10 +106,8 @@
       }
     },
     {
-      "name": "2",
       "from": [0, 10.9894, 6.84255],
       "to": [16, 10.9894, 22.84255],
-      "shade": false,
       "rotation": {
         "angle": -22.5,
         "axis": "x",
@@ -135,10 +120,8 @@
       }
     },
     {
-      "name": "3",
       "from": [-6.84255, 10.9894, 0],
       "to": [9.15745, 10.9894, 16],
-      "shade": false,
       "rotation": {
         "angle": -22.5,
         "axis": "z",
@@ -151,10 +134,8 @@
       }
     },
     {
-      "name": "4",
       "from": [7.37359, 10.5246, 0],
       "to": [23.37359, 10.5246, 16],
-      "shade": false,
       "rotation": {
         "angle": 22.5,
         "axis": "z",
@@ -167,7 +148,6 @@
       }
     },
     {
-      "name": "large",
       "from": [-8, 11.1, -8],
       "to": [24, 11.1, 24],
       "rotation": { "angle": -45, "axis": "y", "origin": [8, 11, 8] },
@@ -177,7 +157,6 @@
       }
     },
     {
-      "name": "1",
       "from": [3, 11, 8],
       "to": [13, 21, 8],
       "rotation": { "angle": 45, "axis": "y", "origin": [8, 11, 8] },
@@ -187,7 +166,6 @@
       }
     },
     {
-      "name": "2",
       "from": [3, 11, 8],
       "to": [13, 21, 8],
       "rotation": { "angle": -45, "axis": "y", "origin": [8, 11, 8] },
@@ -206,46 +184,5 @@
         "west": { "uv": [2, 2, 14, 14], "texture": "#7" }
       }
     }
-  ],
-  "groups": [
-    {
-      "name": "leaves",
-      "origin": [0, 0, 8],
-      "color": 0,
-      "shade": false,
-      "children": [0, 1, 2, 3, 4, 5]
-    },
-    {
-      "name": "petals",
-      "origin": [8, 0, 8],
-      "color": 0,
-      "children": [
-        {
-          "name": "top",
-          "origin": [8, 8, 8],
-          "color": 0,
-          "children": [6, 7, 8, 9]
-        },
-        {
-          "name": "bottom",
-          "origin": [8, 8, 8],
-          "color": 0,
-          "children": [10]
-        },
-        {
-          "name": "thingies",
-          "origin": [8, 8, 8],
-          "color": 0,
-          "children": [11, 12]
-        }
-      ]
-    },
-    {
-      "name": "roots",
-      "origin": [8, 8, 8],
-      "color": 0,
-      "children": []
-    },
-    13
   ]
 }

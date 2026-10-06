@@ -17,7 +17,7 @@
           "blocked": false
         },
         "entity": {
-          "entity_type": "minecraft:player",
+          "type": "minecraft:player",
           "equipment": {
             "head": {
               "components": {

@@ -29,6 +29,9 @@
 #> Kaleidoscope
   execute if entity @s[tag=stellarity.damage.kaleidoscope] run function stellarity:util/damage/death_messages/kaleidoscope
 
+#> Stellar Striker
+  execute if entity @s[tag=stellarity.damage.stellar_striker] run function stellarity:util/damage/death_messages/stellar_striker
+
 ###> Empress of Light
 #> Prismatic Bolts
   execute if entity @s[tag=stellarity.damage.empress_of_light.prismatic_bolts] run tellraw @a {"translate":"death.attack.stellarity.empress_of_light.prismatic_bolts","with":[{"selector":"@s"}]}

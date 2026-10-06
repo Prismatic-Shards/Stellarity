@@ -49,7 +49,7 @@
               "condition": "minecraft:entity_properties",
               "entity": "this",
               "predicate": {
-                "entity_type": "minecraft:vex"
+                "type": "minecraft:vex"
               }
             }
           ]

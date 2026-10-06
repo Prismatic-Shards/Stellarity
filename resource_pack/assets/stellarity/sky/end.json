@@ -1,6 +1,6 @@
 {
 	"schemaVersion": 2,
-	"type": "single-sprite-square-textured",
+	"type": "square-textured",
 	"texture": "stellarity:sky/end.png",
 	"blend": {
 		"type": "alpha"
