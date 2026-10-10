@@ -6,11 +6,17 @@
         "discipline": "Programming",
         "titles": [
           {
+            "title": "Creator",
+            "names": [
+              "kohara"
+            ]
+          },
+          {
             "title": "Developers",
             "names": [
-              "kohara",
-              "Coder2195",
-              "BananaKingXO"
+              "BananaKingXO",
+              "Void7676_",
+              "Coder2195"
             ]
           },
           {

@@ -5,9 +5,9 @@
     64
   ],
   "textures": {
-    "0": "stellarity:item/akasha_3d",
-    "1": "stellarity:item/akasha_3d",
-    "particle": "stellarity:item/akasha_3d"
+    "0": "stellarity:item/sandstorm_trident_held",
+    "1": "stellarity:item/sandstorm_trident_held",
+    "particle": "stellarity:item/sandstorm_trident_held"
   },
   "gui_light": "front",
   "elements": [

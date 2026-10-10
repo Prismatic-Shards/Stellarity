@@ -16,7 +16,7 @@ description = '''
 logoFile = "pack.png"
 logoBlur = false
 updateJSONURL = "https://api.modrinth.com/updates/bZgeDzN8/forge_updates.json"
-credits = "BananaKingXO (Head Developer), Coder2195 (Developer), Alligator_Gamer (Artist), WildPlacedPixel (Artist), Midas (Artist), brokenemp (Artist), Dat1Mexican (RP Bedrock Port), Bush_King (Builder), Opliz (Builder)"
+credits = "BananaKingXO (Head Developer), Void7676 (Developer), Coder2195 (Developer), Alligator_Gamer (Artist), WildPlacedPixel (Artist), Midas (Artist), brokenemp (Artist), Dat1Mexican (RP Bedrock Port), Bush_King (Builder), Opliz (Builder)"
 authors = "kohara"
 
 [[dependencies.stellarity]]
