@@ -929,6 +929,18 @@
             "depth": [-2, 2],
             "offset": 0
           }
+        },
+        {
+          "biome": "stellarity:the_void",
+          "parameters": {
+            "temperature": 0,
+            "humidity": 0,
+            "continentalness": -2,
+            "erosion": 2,
+            "weirdness": 0,
+            "depth": [-2, 2],
+            "offset": 0
+          }
         }
       ]
     }
