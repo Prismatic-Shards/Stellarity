@@ -31,7 +31,8 @@ execute if score @s stellarity.item.rk.cooldown matches 120 run particle dust{co
 
 # Awakening sound
 execute if score @s stellarity.item.rk.cooldown matches 20 run playsound stellarity:item.radiant_kaleidoscope.soul_totem_awake player @s ~ ~ ~ 1.2 1
-execute if score @s stellarity.item.rk.cooldown matches 20 run particle flash{color:-1} ~ ~1.2 ~ 0 0 0 0 1
+execute if score @s stellarity.item.rk.cooldown matches 20 if predicate stellarity:item/holding/radiant_kaleidoscope_ascended run particle flash{color:[1.0,0.85,0.2,1.0]} ~ ~1.2 ~ 0 0 0 0 1
+execute if score @s stellarity.item.rk.cooldown matches 20 unless predicate stellarity:item/holding/radiant_kaleidoscope_ascended run particle flash{color:[1.0,0.4,0.9,1.0]} ~ ~1.2 ~ 0 0 0 0 1
 
 # Finish cooldown
 execute if score @s stellarity.item.rk.cooldown matches ..0 run function stellarity:item/radiant_kaleidoscope/cooldown/finish

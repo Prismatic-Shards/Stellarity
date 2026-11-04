@@ -3,11 +3,23 @@
     "base": {
       "minecraft:visual/fog_color": "stellarity:biomes/crystal_crags_fog",
       "minecraft:visual/sky_color": "stellarity:biomes/crystal_crags_sky",
-      "minecraft:visual/fog_start_distance": "c.viewDistance() * (((sin(g.time() * 0.00032 + 2.1) + 0.55 * sin(g.time() * 0.00078 + 0.5) + 0.45 * sin(g.time() * 0.00015 + 1.9)) > 0.35) ? 0.03 : (c.y() > 165 ? 0.48 : (c.y() < 60 ? 0.14 : 0.35)))",
-      "minecraft:visual/fog_end_distance": "c.viewDistance() * (((sin(g.time() * 0.00032 + 2.1) + 0.55 * sin(g.time() * 0.00078 + 0.5) + 0.45 * sin(g.time() * 0.00015 + 1.9)) > 0.35) ? 0.42 : (c.y() > 165 ? 0.98 : (c.y() < 60 ? 0.66 : 0.90)))",
+      "minecraft:visual/fog_start_distance": "c.viewDistance() * (c.y() > 165 ? 0.12 : (c.y() < 60 ? 0.01 : 0.04))",
+      "minecraft:visual/fog_end_distance": "c.viewDistance() * (c.y() > 165 ? 0.82 : (c.y() < 60 ? 0.50 : 0.72))",
       "minecraft:visual/ambient_particles": {
         "modifier": "override",
         "argument": [
+          {
+            "particle": {
+              "type": "stellarity:crystal_sparkle"
+            },
+            "probability": 0.007
+          },
+          {
+            "particle": {
+              "type": "stellarity:drift_fog_abyss"
+            },
+            "probability": 0.0025
+          },
           {
             "particle": {
               "type": "minecraft:end_rod"
@@ -16,9 +28,9 @@
           },
           {
             "particle": {
-              "type": "minecraft:portal"
+              "type": "stellarity:cosmic_dust"
             },
-            "probability": 0.002
+            "probability": 0.004
           }
         ]
       }

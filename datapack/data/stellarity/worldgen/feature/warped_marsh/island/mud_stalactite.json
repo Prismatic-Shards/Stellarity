@@ -2,14 +2,14 @@
   "type": "minecraft:vegetation_patch",
   "surface": "ceiling",
   "depth": 1,
-  "vertical_range": 10,
+  "vertical_range": 6,
   "extra_bottom_block_chance": 0,
-  "extra_edge_column_chance": 0.5,
-  "vegetation_chance": 1,
+  "extra_edge_column_chance": 0.3,
+  "vegetation_chance": 0.35,
   "xz_radius": {
     "type": "minecraft:uniform",
-    "min_inclusive": 2,
-    "max_inclusive": 5
+    "min_inclusive": 1,
+    "max_inclusive": 2
   },
   "replaceable": "#stellarity:_worldgen/stalactites_replacable",
   "ground_state": {
@@ -32,7 +32,7 @@
           "height": {
             "type": "minecraft:uniform",
             "min_inclusive": 2,
-            "max_inclusive": 6
+            "max_inclusive": 4
           },
           "provider": {
             "type": "minecraft:weighted",
@@ -61,19 +61,19 @@
                 "data": {
                   "id": "minecraft:spore_blossom"
                 },
-                "weight": 3
+                "weight": 2
               },
               {
                 "data": {
                   "id": "minecraft:shroomlight"
                 },
-                "weight": 2
+                "weight": 1
               },
               {
                 "data": {
                   "id": "minecraft:packed_mud"
                 },
-                "weight": 4
+                "weight": 5
               }
             ]
           }

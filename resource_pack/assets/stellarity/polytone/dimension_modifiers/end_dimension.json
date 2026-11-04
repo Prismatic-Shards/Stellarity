@@ -1,0 +1,16 @@
+{
+  "targets": [
+    "minecraft:the_end"
+  ],
+  "skybox": "end",
+  "attributes_modifiers": {
+    "base": {
+      "minecraft:visual/star_brightness": 0.0
+    },
+    "post_process": {
+      "minecraft:visual/ambient_light_color": "#0c0616",
+      "minecraft:visual/sky_light_color": "#140a22",
+      "minecraft:visual/block_light_tint": "#b478ea"
+    }
+  }
+}

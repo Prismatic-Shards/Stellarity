@@ -3,22 +3,34 @@
     "base": {
       "minecraft:visual/fog_color": "stellarity:biomes/fiery_hills_fog",
       "minecraft:visual/sky_color": "stellarity:biomes/fiery_hills_sky",
-      "minecraft:visual/fog_start_distance": "c.viewDistance() * (c.y() > 165 ? 0.40 : (c.y() < 60 ? 0.09 : 0.24))",
-      "minecraft:visual/fog_end_distance": "c.viewDistance() * (c.y() > 165 ? 0.92 : (c.y() < 60 ? 0.58 : 0.82))",
+      "minecraft:visual/fog_start_distance": "c.viewDistance() * (c.y() > 165 ? 0.10 : (c.y() < 60 ? 0.01 : 0.03))",
+      "minecraft:visual/fog_end_distance": "c.viewDistance() * (c.y() > 165 ? 0.78 : (c.y() < 60 ? 0.48 : 0.66))",
       "minecraft:visual/ambient_particles": {
         "modifier": "override",
         "argument": [
           {
             "particle": {
+              "type": "stellarity:drift_fog_ash"
+            },
+            "probability": 0.0035
+          },
+          {
+            "particle": {
               "type": "minecraft:flame"
             },
-            "probability": 0.005
+            "probability": 0.004
           },
           {
             "particle": {
               "type": "minecraft:smoke"
             },
-            "probability": 0.008
+            "probability": 0.006
+          },
+          {
+            "particle": {
+              "type": "stellarity:ash_cinder"
+            },
+            "probability": 0.004
           }
         ]
       }

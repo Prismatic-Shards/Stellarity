@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:spline",
+  "spline": {
+    "coordinate": {
+      "type": "minecraft:noise",
+      "noise": "stellarity:terrain/macro_gate",
+      "xz_scale": 1.0,
+      "y_scale": 0.0
+    },
+    "points": [
+      {
+        "location": 0.86,
+        "value": 0.0,
+        "derivative": 0.0
+      },
+      {
+        "location": 0.94,
+        "value": 1.0,
+        "derivative": 0.0
+      }
+    ]
+  }
+}

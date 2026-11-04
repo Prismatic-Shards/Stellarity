@@ -3,16 +3,22 @@
     "base": {
       "minecraft:visual/fog_color": "stellarity:biomes/hallowed_tundra_fog",
       "minecraft:visual/sky_color": "stellarity:biomes/hallowed_tundra_sky",
-      "minecraft:visual/fog_start_distance": "c.viewDistance() * (((sin(g.time() * 0.00032 + 2.1) + 0.55 * sin(g.time() * 0.00078 + 0.5) + 0.45 * sin(g.time() * 0.00015 + 1.9)) > 0.35) ? 0.03 : (c.y() > 165 ? 0.48 : (c.y() < 60 ? 0.14 : 0.36)))",
-      "minecraft:visual/fog_end_distance": "c.viewDistance() * (((sin(g.time() * 0.00032 + 2.1) + 0.55 * sin(g.time() * 0.00078 + 0.5) + 0.45 * sin(g.time() * 0.00015 + 1.9)) > 0.35) ? 0.42 : (c.y() > 165 ? 0.98 : (c.y() < 60 ? 0.66 : 0.90)))",
+      "minecraft:visual/fog_start_distance": "c.viewDistance() * (c.y() > 165 ? 0.10 : (c.y() < 60 ? 0.008 : 0.03))",
+      "minecraft:visual/fog_end_distance": "c.viewDistance() * (c.y() > 165 ? 0.78 : (c.y() < 60 ? 0.48 : 0.68))",
       "minecraft:visual/ambient_particles": {
         "modifier": "override",
         "argument": [
           {
             "particle": {
+              "type": "stellarity:blizzard_fog"
+            },
+            "probability": 0.004
+          },
+          {
+            "particle": {
               "type": "minecraft:snowflake"
             },
-            "probability": 0.012
+            "probability": 0.008
           },
           {
             "particle": {
@@ -24,7 +30,7 @@
             "particle": {
               "type": "minecraft:end_rod"
             },
-            "probability": 0.0015
+            "probability": 0.003
           }
         ]
       }

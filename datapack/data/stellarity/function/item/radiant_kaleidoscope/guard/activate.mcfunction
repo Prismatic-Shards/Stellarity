@@ -8,7 +8,8 @@ playsound minecraft:item.shield.block player @a ~ ~ ~ 1.5 0.8
 playsound minecraft:block.beacon.activate player @a ~ ~ ~ 1.0 1.5
 
 # Flash burst
-particle flash{color:-1} ~ ~1 ~ 0 0 0 0 1
+execute if predicate stellarity:item/holding/radiant_kaleidoscope_ascended run particle flash{color:[1.0,0.8,0.1,1.0]} ~ ~1 ~ 0 0 0 0 1
+execute unless predicate stellarity:item/holding/radiant_kaleidoscope_ascended run particle flash{color:[0.1,0.9,1.0,1.0]} ~ ~1 ~ 0 0 0 0 1
 particle end_rod ~ ~1 ~ 0.5 0.5 0.5 0.1 30
 
 # Complete immobility

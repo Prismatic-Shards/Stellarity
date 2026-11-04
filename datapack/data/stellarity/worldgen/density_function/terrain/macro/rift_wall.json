@@ -1,0 +1,56 @@
+{
+  "type": "minecraft:mul",
+  "left": "stellarity:terrain/macro/macro_gate",
+  "right": {
+    "type": "minecraft:mul",
+    "left": {
+      "type": "minecraft:mul",
+      "left": {
+        "type": "minecraft:gradient",
+        "axis": "y",
+        "from_coordinate": 52,
+        "to_coordinate": 58,
+        "from_value": 0.0,
+        "to_value": 1.0
+      },
+      "right": {
+        "type": "minecraft:gradient",
+        "axis": "y",
+        "from_coordinate": 72,
+        "to_coordinate": 80,
+        "from_value": 1.0,
+        "to_value": 0.0
+      }
+    },
+    "right": {
+      "type": "minecraft:add",
+      "left": {
+        "type": "minecraft:sub",
+        "left": 0.45,
+        "right": {
+          "type": "minecraft:mul",
+          "left": 5.5,
+          "right": {
+            "type": "minecraft:abs",
+            "input": {
+              "type": "minecraft:noise",
+              "noise": "stellarity:terrain/rift_ridge",
+              "xz_scale": 1.0,
+              "y_scale": 0.0
+            }
+          }
+        }
+      },
+      "right": {
+        "type": "minecraft:mul",
+        "left": 0.15,
+        "right": {
+          "type": "minecraft:noise",
+          "noise": "stellarity:jagged",
+          "xz_scale": 1.0,
+          "y_scale": 0.8
+        }
+      }
+    }
+  }
+}

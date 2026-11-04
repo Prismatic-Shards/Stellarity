@@ -1,11 +1,39 @@
 {
-  "targets": "minecraft:end_barrens",
   "attributes_modifiers": {
     "base": {
       "minecraft:visual/fog_color": "stellarity:biomes/end_barrens_fog",
       "minecraft:visual/sky_color": "stellarity:biomes/end_barrens_sky",
-      "minecraft:visual/fog_start_distance": "c.viewDistance() * (c.y() > 165 ? 0.45 : (c.y() < 60 ? 0.12 : 0.32))",
-      "minecraft:visual/fog_end_distance": "c.viewDistance() * (c.y() > 165 ? 0.98 : (c.y() < 60 ? 0.65 : 0.88))"
+      "minecraft:visual/fog_start_distance": "c.viewDistance() * (c.y() > 165 ? 0.12 : (c.y() < 60 ? 0.01 : 0.04))",
+      "minecraft:visual/fog_end_distance": "c.viewDistance() * (c.y() > 165 ? 0.82 : (c.y() < 60 ? 0.50 : 0.70))",
+      "minecraft:visual/ambient_particles": {
+        "modifier": "override",
+        "argument": [
+          {
+            "particle": {
+              "type": "stellarity:drift_fog_abyss"
+            },
+            "probability": 0.0025
+          },
+          {
+            "particle": {
+              "type": "minecraft:ash"
+            },
+            "probability": 0.006
+          },
+          {
+            "particle": {
+              "type": "stellarity:ash_cinder"
+            },
+            "probability": 0.003
+          },
+          {
+            "particle": {
+              "type": "minecraft:portal"
+            },
+            "probability": 0.004
+          }
+        ]
+      }
     }
   }
 }

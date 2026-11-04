@@ -1,0 +1,3 @@
+execute if block ~ ~ ~ big_dripleaf[tilt=none] align xyz positioned ~ ~.6875 ~ if entity @s[dx=0,dy=0,dz=0] positioned ~ ~.25 ~ unless entity @s[dx=0,dy=0,dz=0] run scoreboard players set #END2 bdlib.raycast 0
+execute if block ~ ~ ~ big_dripleaf[tilt=unstable] align xyz positioned ~ ~.6875 ~ if entity @s[dx=0,dy=0,dz=0] positioned ~ ~.25 ~ unless entity @s[dx=0,dy=0,dz=0] run scoreboard players set #END2 bdlib.raycast 0
+execute if block ~ ~ ~ big_dripleaf[tilt=partial] align xyz positioned ~ ~.6875 ~ if entity @s[dx=0,dy=0,dz=0] positioned ~ ~.125 ~ unless entity @s[dx=0,dy=0,dz=0] run scoreboard players set #END2 bdlib.raycast 0

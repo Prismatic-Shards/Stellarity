@@ -4,34 +4,34 @@
       "minecraft:visual/fog_color": "stellarity:biomes/cold_biomes_fog",
       "minecraft:visual/sky_color": "stellarity:biomes/cold_biomes_sky",
       "minecraft:visual/ambient_light_color": "#0e1a26",
-      "minecraft:visual/fog_start_distance": "c.viewDistance() * (((sin(g.time() * 0.00034 + 0.8) + 0.55 * sin(g.time() * 0.00080 + 2.0)) > 0.35) ? -0.04 : (c.y() > 165 ? 0.48 : (c.y() < 60 ? 0.13 : 0.36)))",
-      "minecraft:visual/fog_end_distance": "c.viewDistance() * (((sin(g.time() * 0.00034 + 0.8) + 0.55 * sin(g.time() * 0.00080 + 2.0)) > 0.35) ? 0.18 : (c.y() > 165 ? 0.96 : (c.y() < 60 ? 0.66 : 0.90)))",
+      "minecraft:visual/fog_start_distance": "c.viewDistance() * (c.y() > 165 ? 0.09 : (c.y() < 60 ? 0.008 : 0.025))",
+      "minecraft:visual/fog_end_distance": "c.viewDistance() * (c.y() > 165 ? 0.76 : (c.y() < 60 ? 0.46 : 0.64))",
       "minecraft:visual/ambient_particles": {
         "modifier": "override",
         "argument": [
           {
             "particle": {
-              "type": "minecraft:snowflake"
-            },
-            "probability": 0.013
-          },
-          {
-            "particle": {
               "type": "stellarity:blizzard_gust"
             },
-            "probability": 0.008
+            "probability": 0.004
           },
           {
             "particle": {
               "type": "stellarity:blizzard_mote"
             },
-            "probability": 0.01
+            "probability": 0.006
+          },
+          {
+            "particle": {
+              "type": "minecraft:snowflake"
+            },
+            "probability": 0.008
           },
           {
             "particle": {
               "type": "stellarity:crystal_sparkle"
             },
-            "probability": 0.005
+            "probability": 0.004
           }
         ]
       }

@@ -3,28 +3,34 @@
     "base": {
       "minecraft:visual/fog_color": "stellarity:biomes/dragons_den_fog",
       "minecraft:visual/sky_color": "stellarity:biomes/dragons_den_sky",
-      "minecraft:visual/fog_start_distance": "c.viewDistance() * (c.y() > 165 ? 0.35 : (c.y() < 60 ? 0.08 : 0.12))",
-      "minecraft:visual/fog_end_distance": "c.viewDistance() * (c.y() > 165 ? 0.88 : (c.y() < 60 ? 0.55 : 0.70))",
+      "minecraft:visual/fog_start_distance": "c.viewDistance() * (c.y() > 165 ? 0.10 : (c.y() < 60 ? 0.008 : 0.03))",
+      "minecraft:visual/fog_end_distance": "c.viewDistance() * (c.y() > 165 ? 0.78 : (c.y() < 60 ? 0.46 : 0.65))",
       "minecraft:visual/ambient_particles": {
         "modifier": "override",
         "argument": [
           {
             "particle": {
-              "type": "minecraft:sweep_attack"
+              "type": "stellarity:drift_fog_dragon"
             },
-            "probability": 0.0035
+            "probability": 0.004
           },
           {
             "particle": {
-              "type": "minecraft:dragon_breath"
+              "type": "stellarity:ash_cinder"
             },
-            "probability": 0.0018
+            "probability": 0.003
           },
           {
             "particle": {
               "type": "minecraft:ash"
             },
             "probability": 0.008
+          },
+          {
+            "particle": {
+              "type": "minecraft:portal"
+            },
+            "probability": 0.005
           }
         ]
       }

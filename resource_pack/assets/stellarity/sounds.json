@@ -1349,25 +1349,39 @@
     ]
   },
   "item.radiant_kaleidoscope.soul_1": {
-    "sounds": ["stellarity:item/radiant_kaleidoscope/soul_pickup1"]
+    "sounds": [
+      "stellarity:item/radiant_kaleidoscope/soul_pickup1"
+    ]
   },
   "item.radiant_kaleidoscope.soul_2": {
-    "sounds": ["stellarity:item/radiant_kaleidoscope/soul_pickup2"]
+    "sounds": [
+      "stellarity:item/radiant_kaleidoscope/soul_pickup2"
+    ]
   },
   "item.radiant_kaleidoscope.soul_3": {
-    "sounds": ["stellarity:item/radiant_kaleidoscope/soul_pickup3"]
+    "sounds": [
+      "stellarity:item/radiant_kaleidoscope/soul_pickup3"
+    ]
   },
   "item.radiant_kaleidoscope.soul_4": {
-    "sounds": ["stellarity:item/radiant_kaleidoscope/soul_pickup4"]
+    "sounds": [
+      "stellarity:item/radiant_kaleidoscope/soul_pickup4"
+    ]
   },
   "item.radiant_kaleidoscope.soul_5": {
-    "sounds": ["stellarity:item/radiant_kaleidoscope/soul_pickup5"]
+    "sounds": [
+      "stellarity:item/radiant_kaleidoscope/soul_pickup5"
+    ]
   },
   "item.radiant_kaleidoscope.soul_6": {
-    "sounds": ["stellarity:item/radiant_kaleidoscope/soul_pickup6"]
+    "sounds": [
+      "stellarity:item/radiant_kaleidoscope/soul_pickup6"
+    ]
   },
   "item.radiant_kaleidoscope.soul_7": {
-    "sounds": ["stellarity:item/radiant_kaleidoscope/soul_pickup7"]
+    "sounds": [
+      "stellarity:item/radiant_kaleidoscope/soul_pickup7"
+    ]
   },
   "misc.victory_core_bling": {
     "sounds": [

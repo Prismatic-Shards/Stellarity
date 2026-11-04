@@ -1,25 +1,36 @@
 {
-  "targets": "minecraft:small_end_islands",
   "attributes_modifiers": {
     "base": {
       "minecraft:visual/fog_color": "stellarity:biomes/small_end_islands_fog",
       "minecraft:visual/sky_color": "stellarity:biomes/small_end_islands_sky",
-      "minecraft:visual/fog_start_distance": "c.viewDistance() * (c.y() > 165 ? 0.48 : (c.y() < 60 ? 0.12 : 0.35))",
-      "minecraft:visual/fog_end_distance": "c.viewDistance() * (c.y() > 165 ? 0.98 : (c.y() < 60 ? 0.65 : 0.88))",
+      "minecraft:visual/fog_start_distance": "c.viewDistance() * (c.y() > 165 ? 0.12 : (c.y() < 60 ? 0.01 : 0.04))",
+      "minecraft:visual/fog_end_distance": "c.viewDistance() * (c.y() > 165 ? 0.82 : (c.y() < 60 ? 0.50 : 0.70))",
       "minecraft:visual/ambient_particles": {
         "modifier": "override",
         "argument": [
           {
             "particle": {
+              "type": "stellarity:drift_fog_abyss"
+            },
+            "probability": 0.0025
+          },
+          {
+            "particle": {
+              "type": "stellarity:twinkling_star"
+            },
+            "probability": 0.005
+          },
+          {
+            "particle": {
               "type": "minecraft:portal"
             },
-            "probability": 0.0015
+            "probability": 0.005
           },
           {
             "particle": {
               "type": "minecraft:end_rod"
             },
-            "probability": 0.0005
+            "probability": 0.0025
           }
         ]
       }

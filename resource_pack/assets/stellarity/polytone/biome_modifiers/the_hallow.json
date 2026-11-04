@@ -3,8 +3,8 @@
     "base": {
       "minecraft:visual/fog_color": "stellarity:biomes/the_hallow_fog",
       "minecraft:visual/sky_color": "stellarity:biomes/the_hallow_sky",
-      "minecraft:visual/fog_start_distance": "c.viewDistance() * (c.y() > 165 ? 0.50 : (c.y() < 60 ? 0.15 : 0.38))",
-      "minecraft:visual/fog_end_distance": "c.viewDistance() * (c.y() > 165 ? 0.98 : (c.y() < 60 ? 0.68 : 0.92))",
+      "minecraft:visual/fog_start_distance": "c.viewDistance() * (c.y() > 165 ? 0.14 : (c.y() < 60 ? 0.015 : 0.05))",
+      "minecraft:visual/fog_end_distance": "c.viewDistance() * (c.y() > 165 ? 0.85 : (c.y() < 60 ? 0.52 : 0.74))",
       "minecraft:visual/ambient_particles": {
         "modifier": "override",
         "argument": [
@@ -16,9 +16,21 @@
           },
           {
             "particle": {
-              "type": "minecraft:end_rod"
+              "type": "stellarity:drift_fog_astral"
             },
             "probability": 0.0025
+          },
+          {
+            "particle": {
+              "type": "minecraft:end_rod"
+            },
+            "probability": 0.003
+          },
+          {
+            "particle": {
+              "type": "stellarity:celestial_spark"
+            },
+            "probability": 0.004
           }
         ]
       }

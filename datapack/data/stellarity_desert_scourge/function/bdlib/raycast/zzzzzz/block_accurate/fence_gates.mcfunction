@@ -1,0 +1,9 @@
+execute if block ~ ~ ~ #fence_gates[facing=north,in_wall=false] align xyz positioned ~ ~ ~.375 if entity @s[dx=0,dy=0,dz=0] positioned ~ ~ ~.25 unless entity @s[dx=0,dy=0,dz=0] run scoreboard players set #END2 bdlib.raycast 0
+execute if block ~ ~ ~ #fence_gates[facing=south,in_wall=false] align xyz positioned ~ ~ ~.375 if entity @s[dx=0,dy=0,dz=0] positioned ~ ~ ~.25 unless entity @s[dx=0,dy=0,dz=0] run scoreboard players set #END2 bdlib.raycast 0
+execute if block ~ ~ ~ #fence_gates[facing=west,in_wall=false] align xyz positioned ~.375 ~ ~ if entity @s[dx=0,dy=0,dz=0] positioned ~.25 ~ ~ unless entity @s[dx=0,dy=0,dz=0] run scoreboard players set #END2 bdlib.raycast 0
+execute if block ~ ~ ~ #fence_gates[facing=east,in_wall=false] align xyz positioned ~.375 ~ ~ if entity @s[dx=0,dy=0,dz=0] positioned ~.25 ~ ~ unless entity @s[dx=0,dy=0,dz=0] run scoreboard players set #END2 bdlib.raycast 0
+
+execute if block ~ ~ ~ #fence_gates[facing=north,in_wall=true] align xyz positioned ~ ~-.1875 ~.375 if entity @s[dx=0,dy=0,dz=0] positioned ~ ~ ~.25 unless entity @s[dx=0,dy=0,dz=0] run scoreboard players set #END2 bdlib.raycast 0
+execute if block ~ ~ ~ #fence_gates[facing=south,in_wall=true] align xyz positioned ~ ~-.1875 ~.375 if entity @s[dx=0,dy=0,dz=0] positioned ~ ~ ~.25 unless entity @s[dx=0,dy=0,dz=0] run scoreboard players set #END2 bdlib.raycast 0
+execute if block ~ ~ ~ #fence_gates[facing=west,in_wall=true] align xyz positioned ~.375 ~-.1875 ~ if entity @s[dx=0,dy=0,dz=0] positioned ~.25 ~ ~ unless entity @s[dx=0,dy=0,dz=0] run scoreboard players set #END2 bdlib.raycast 0
+execute if block ~ ~ ~ #fence_gates[facing=east,in_wall=true] align xyz positioned ~.375 ~-.1875 ~ if entity @s[dx=0,dy=0,dz=0] positioned ~.25 ~ ~ unless entity @s[dx=0,dy=0,dz=0] run scoreboard players set #END2 bdlib.raycast 0

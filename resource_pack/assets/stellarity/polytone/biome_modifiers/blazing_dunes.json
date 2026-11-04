@@ -3,16 +3,16 @@
     "base": {
       "minecraft:visual/fog_color": "stellarity:biomes/blazing_dunes_fog",
       "minecraft:visual/sky_color": "stellarity:biomes/blazing_dunes_sky",
-      "minecraft:visual/fog_start_distance": "c.viewDistance() * (((sin(g.time() * 0.00035) + 0.6 * sin(g.time() * 0.00085 + 1.7) + 0.4 * sin(g.time() * 0.00017 + 3.1)) > 0.35) ? 0.05 : (c.y() > 165 ? 0.44 : (c.y() < 60 ? 0.12 : 0.30)))",
-      "minecraft:visual/fog_end_distance": "c.viewDistance() * (((sin(g.time() * 0.00035) + 0.6 * sin(g.time() * 0.00085 + 1.7) + 0.4 * sin(g.time() * 0.00017 + 3.1)) > 0.35) ? 0.48 : (c.y() > 165 ? 0.94 : (c.y() < 60 ? 0.62 : 0.86)))",
+      "minecraft:visual/fog_start_distance": "c.viewDistance() * (c.y() > 165 ? 0.10 : (c.y() < 60 ? 0.01 : 0.03))",
+      "minecraft:visual/fog_end_distance": "c.viewDistance() * (c.y() > 165 ? 0.78 : (c.y() < 60 ? 0.48 : 0.66))",
       "minecraft:visual/ambient_particles": {
         "modifier": "override",
         "argument": [
           {
             "particle": {
-              "type": "minecraft:lava"
+              "type": "stellarity:drift_fog_ash"
             },
-            "probability": 0.002
+            "probability": 0.0035
           },
           {
             "particle": {
@@ -22,9 +22,15 @@
           },
           {
             "particle": {
-              "type": "minecraft:ash"
+              "type": "minecraft:lava"
             },
-            "probability": 0.012
+            "probability": 0.002
+          },
+          {
+            "particle": {
+              "type": "stellarity:sandstorm_dust"
+            },
+            "probability": 0.006
           }
         ]
       }

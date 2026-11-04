@@ -2,8 +2,12 @@
   "feature": "stellarity:warped_marsh/cave/floor_mycelium",
   "placement": [
     {
+      "type": "minecraft:rarity_filter",
+      "chance": 2
+    },
+    {
       "type": "minecraft:count",
-      "count": 16
+      "count": 2
     },
     {
       "type": "minecraft:in_square"
@@ -13,10 +17,10 @@
       "height": {
         "type": "minecraft:uniform",
         "min_inclusive": {
-          "above_bottom": 5
+          "absolute": 40
         },
         "max_inclusive": {
-          "absolute": 100
+          "absolute": 65
         }
       }
     },

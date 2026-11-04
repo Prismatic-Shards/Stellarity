@@ -1,0 +1,1 @@
+$execute at @s rotated $(rotation) ~ positioned ^ ^ ^32 positioned over motion_blocking run tp @s ~ ~ ~

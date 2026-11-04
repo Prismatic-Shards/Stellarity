@@ -1,0 +1,25 @@
+{
+  "entity": "this",
+  "scores": {
+    "mobID": {
+      "min": {
+        "type": "minecraft:score",
+        "target": {
+          "type": "minecraft:fixed",
+          "name": "*temp"
+        },
+        "score": "mobID"
+      },
+      "max": {
+        "type": "minecraft:score",
+        "target": {
+          "type": "minecraft:fixed",
+          "name": "*temp"
+        },
+        "score": "mobID"
+      }
+    },
+    "wormPart": 0
+  },
+  "type": "minecraft:entity_scores"
+}

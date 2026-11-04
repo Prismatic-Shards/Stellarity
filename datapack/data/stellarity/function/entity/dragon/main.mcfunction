@@ -8,6 +8,7 @@
 
     # A special helper Marker is spawned right with the Dragon and is used
     # for things like death animations, dropping loot at correct time, etc.
+      execute unless entity @e[type=marker,tag=stellarity.dragon_marker] run summon marker ~ ~ ~ {Tags:["stellarity.dragon_marker","stellarity.marker","smithed.entity","smithed.strict","stellarity.dragon.rk_only"]}
       execute at @s run tp @e[type=marker,tag=stellarity.dragon_marker] ~ ~ ~
 
     # Get health
@@ -22,9 +23,10 @@
         # Prevent Dragon from taking damage while End Crystals are alive
           execute if entity @s[tag=stellarity.dragon.invulnerable] if score @s stellarity.dragon.health < @s stellarity.dragon.health_old run function stellarity:entity/dragon/invulnerability/prevent_damage
         # Check non-RK damage
-          execute if entity @s[tag=stellarity.dragon.rk_only] if score @s stellarity.dragon.health < @s stellarity.dragon.health_old unless score @s stellarity.dragon.rk_damage_window matches 1.. run tag @e[type=marker,tag=stellarity.dragon_marker] remove stellarity.dragon.rk_only
-          execute if entity @s[tag=stellarity.dragon.rk_only] if score @s stellarity.dragon.health < @s stellarity.dragon.health_old unless score @s stellarity.dragon.rk_damage_window matches 1.. run tag @s remove stellarity.dragon.rk_only
+          execute unless entity @s[tag=stellarity.dragon.invulnerable] if entity @s[tag=stellarity.dragon.rk_only] if score @s stellarity.dragon.health < @s stellarity.dragon.health_old unless score @s stellarity.dragon.rk_damage_window matches 1.. run tag @e[type=marker,tag=stellarity.dragon_marker] remove stellarity.dragon.rk_only
+          execute unless entity @s[tag=stellarity.dragon.invulnerable] if entity @s[tag=stellarity.dragon.rk_only] if score @s stellarity.dragon.health < @s stellarity.dragon.health_old unless score @s stellarity.dragon.rk_damage_window matches 1.. run tag @s remove stellarity.dragon.rk_only
           scoreboard players remove @s[scores={stellarity.dragon.rk_damage_window=1..}] stellarity.dragon.rk_damage_window 1
+          execute if score @s stellarity.dragon.rk_damage_window matches 1.. if score @s stellarity.dragon.health matches ..0 run tag @e[type=marker,tag=stellarity.dragon_marker] add stellarity.dragon.killed_by_rk
 
         # Prevent Crystals from healing the Dragon
           execute if score @s stellarity.dragon.health_old < @s stellarity.dragon.health run function stellarity:entity/dragon/prevent_heal

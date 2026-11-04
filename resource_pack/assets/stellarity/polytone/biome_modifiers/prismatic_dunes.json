@@ -3,28 +3,34 @@
     "base": {
       "minecraft:visual/fog_color": "stellarity:biomes/prismatic_dunes_fog",
       "minecraft:visual/sky_color": "stellarity:biomes/prismatic_dunes_sky",
-      "minecraft:visual/fog_start_distance": "c.viewDistance() * (c.y() > 165 ? 0.48 : (c.y() < 60 ? 0.14 : 0.36))",
-      "minecraft:visual/fog_end_distance": "c.viewDistance() * (c.y() > 165 ? 0.98 : (c.y() < 60 ? 0.66 : 0.90))",
+      "minecraft:visual/fog_start_distance": "c.viewDistance() * (c.y() > 165 ? 0.12 : (c.y() < 60 ? 0.01 : 0.04))",
+      "minecraft:visual/fog_end_distance": "c.viewDistance() * (c.y() > 165 ? 0.82 : (c.y() < 60 ? 0.50 : 0.72))",
       "minecraft:visual/ambient_particles": {
         "modifier": "override",
         "argument": [
           {
             "particle": {
-              "type": "minecraft:portal"
+              "type": "stellarity:drift_fog_astral"
             },
-            "probability": 0.008
-          },
-          {
-            "particle": {
-              "type": "minecraft:end_rod"
-            },
-            "probability": 0.002
+            "probability": 0.003
           },
           {
             "particle": {
               "type": "minecraft:cherry_leaves"
             },
-            "probability": 0.0015
+            "probability": 0.005
+          },
+          {
+            "particle": {
+              "type": "stellarity:celestial_spark"
+            },
+            "probability": 0.004
+          },
+          {
+            "particle": {
+              "type": "minecraft:portal"
+            },
+            "probability": 0.004
           }
         ]
       }

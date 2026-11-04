@@ -1,0 +1,6 @@
+execute align xyz positioned ~.4375 ~ ~.4375 if entity @s[dx=0,dy=0,dz=0] positioned ~ ~ ~.125 unless entity @s[dx=0,dy=0,dz=0] positioned ~.125 ~ ~-.125 unless entity @s[dx=0,dy=0,dz=0] run scoreboard players set #END2 bdlib.raycast 0
+
+execute if block ~ ~ ~ iron_bars[north=true] align xyz positioned ~.4375 ~ ~ if entity @s[dx=0,dy=0,dz=0] positioned ~ ~ ~.4375 unless entity @s[dx=0,dy=0,dz=0] positioned ~.125 ~ ~-.4375 unless entity @s[dx=0,dy=0,dz=0] run scoreboard players set #END2 bdlib.raycast 0
+execute if block ~ ~ ~ iron_bars[south=true] align xyz positioned ~.4375 ~ ~.5625 if entity @s[dx=0,dy=0,dz=0] positioned ~ ~ ~.4375 unless entity @s[dx=0,dy=0,dz=0] positioned ~.125 ~ ~-.4375 unless entity @s[dx=0,dy=0,dz=0] run scoreboard players set #END2 bdlib.raycast 0
+execute if block ~ ~ ~ iron_bars[west=true] align xyz positioned ~ ~ ~.4375 if entity @s[dx=0,dy=0,dz=0] positioned ~ ~ ~.125 unless entity @s[dx=0,dy=0,dz=0] positioned ~.4375 ~ ~-.125 unless entity @s[dx=0,dy=0,dz=0] run scoreboard players set #END2 bdlib.raycast 0
+execute if block ~ ~ ~ iron_bars[east=true] align xyz positioned ~.5625 ~ ~.4375 if entity @s[dx=0,dy=0,dz=0] positioned ~ ~ ~.125 unless entity @s[dx=0,dy=0,dz=0] positioned ~.4375 ~ ~-.125 unless entity @s[dx=0,dy=0,dz=0] run scoreboard players set #END2 bdlib.raycast 0

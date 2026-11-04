@@ -26,449 +26,449 @@
     {
       "particle": "stellarity:horizon_glow",
       "chance": "rand() < 0.015",
-      "x": "-POS_X + PLAYER_X + (RENDER_DISTANCE)^2.1 * sin(0 * pi / 32)",
-      "z": "-POS_Z + PLAYER_Z + (RENDER_DISTANCE)^2.1 * cos(0 * pi / 32)",
+      "x": "-POS_X + PLAYER_X + RENDER_DISTANCE * 18 * sin(0 * pi / 32)",
+      "z": "-POS_Z + PLAYER_Z + RENDER_DISTANCE * 18 * cos(0 * pi / 32)",
       "y": "-POS_Y + PLAYER_Y + rand() * 60 - 15"
     },
     {
       "particle": "stellarity:horizon_glow",
       "chance": "rand() < 0.015",
-      "x": "-POS_X + PLAYER_X + (RENDER_DISTANCE)^2.1 * sin(1 * pi / 32)",
-      "z": "-POS_Z + PLAYER_Z + (RENDER_DISTANCE)^2.1 * cos(1 * pi / 32)",
+      "x": "-POS_X + PLAYER_X + RENDER_DISTANCE * 18 * sin(1 * pi / 32)",
+      "z": "-POS_Z + PLAYER_Z + RENDER_DISTANCE * 18 * cos(1 * pi / 32)",
       "y": "-POS_Y + PLAYER_Y + rand() * 60 - 15"
     },
     {
       "particle": "stellarity:horizon_glow",
       "chance": "rand() < 0.015",
-      "x": "-POS_X + PLAYER_X + (RENDER_DISTANCE)^2.1 * sin(2 * pi / 32)",
-      "z": "-POS_Z + PLAYER_Z + (RENDER_DISTANCE)^2.1 * cos(2 * pi / 32)",
+      "x": "-POS_X + PLAYER_X + RENDER_DISTANCE * 18 * sin(2 * pi / 32)",
+      "z": "-POS_Z + PLAYER_Z + RENDER_DISTANCE * 18 * cos(2 * pi / 32)",
       "y": "-POS_Y + PLAYER_Y + rand() * 60 - 15"
     },
     {
       "particle": "stellarity:horizon_glow",
       "chance": "rand() < 0.015",
-      "x": "-POS_X + PLAYER_X + (RENDER_DISTANCE)^2.1 * sin(3 * pi / 32)",
-      "z": "-POS_Z + PLAYER_Z + (RENDER_DISTANCE)^2.1 * cos(3 * pi / 32)",
+      "x": "-POS_X + PLAYER_X + RENDER_DISTANCE * 18 * sin(3 * pi / 32)",
+      "z": "-POS_Z + PLAYER_Z + RENDER_DISTANCE * 18 * cos(3 * pi / 32)",
       "y": "-POS_Y + PLAYER_Y + rand() * 60 - 15"
     },
     {
       "particle": "stellarity:horizon_glow",
       "chance": "rand() < 0.015",
-      "x": "-POS_X + PLAYER_X + (RENDER_DISTANCE)^2.1 * sin(4 * pi / 32)",
-      "z": "-POS_Z + PLAYER_Z + (RENDER_DISTANCE)^2.1 * cos(4 * pi / 32)",
+      "x": "-POS_X + PLAYER_X + RENDER_DISTANCE * 18 * sin(4 * pi / 32)",
+      "z": "-POS_Z + PLAYER_Z + RENDER_DISTANCE * 18 * cos(4 * pi / 32)",
       "y": "-POS_Y + PLAYER_Y + rand() * 60 - 15"
     },
     {
       "particle": "stellarity:horizon_glow",
       "chance": "rand() < 0.015",
-      "x": "-POS_X + PLAYER_X + (RENDER_DISTANCE)^2.1 * sin(5 * pi / 32)",
-      "z": "-POS_Z + PLAYER_Z + (RENDER_DISTANCE)^2.1 * cos(5 * pi / 32)",
+      "x": "-POS_X + PLAYER_X + RENDER_DISTANCE * 18 * sin(5 * pi / 32)",
+      "z": "-POS_Z + PLAYER_Z + RENDER_DISTANCE * 18 * cos(5 * pi / 32)",
       "y": "-POS_Y + PLAYER_Y + rand() * 60 - 15"
     },
     {
       "particle": "stellarity:horizon_glow",
       "chance": "rand() < 0.015",
-      "x": "-POS_X + PLAYER_X + (RENDER_DISTANCE)^2.1 * sin(6 * pi / 32)",
-      "z": "-POS_Z + PLAYER_Z + (RENDER_DISTANCE)^2.1 * cos(6 * pi / 32)",
+      "x": "-POS_X + PLAYER_X + RENDER_DISTANCE * 18 * sin(6 * pi / 32)",
+      "z": "-POS_Z + PLAYER_Z + RENDER_DISTANCE * 18 * cos(6 * pi / 32)",
       "y": "-POS_Y + PLAYER_Y + rand() * 60 - 15"
     },
     {
       "particle": "stellarity:horizon_glow",
       "chance": "rand() < 0.015",
-      "x": "-POS_X + PLAYER_X + (RENDER_DISTANCE)^2.1 * sin(7 * pi / 32)",
-      "z": "-POS_Z + PLAYER_Z + (RENDER_DISTANCE)^2.1 * cos(7 * pi / 32)",
+      "x": "-POS_X + PLAYER_X + RENDER_DISTANCE * 18 * sin(7 * pi / 32)",
+      "z": "-POS_Z + PLAYER_Z + RENDER_DISTANCE * 18 * cos(7 * pi / 32)",
       "y": "-POS_Y + PLAYER_Y + rand() * 60 - 15"
     },
     {
       "particle": "stellarity:horizon_glow",
       "chance": "rand() < 0.015",
-      "x": "-POS_X + PLAYER_X + (RENDER_DISTANCE)^2.1 * sin(8 * pi / 32)",
-      "z": "-POS_Z + PLAYER_Z + (RENDER_DISTANCE)^2.1 * cos(8 * pi / 32)",
+      "x": "-POS_X + PLAYER_X + RENDER_DISTANCE * 18 * sin(8 * pi / 32)",
+      "z": "-POS_Z + PLAYER_Z + RENDER_DISTANCE * 18 * cos(8 * pi / 32)",
       "y": "-POS_Y + PLAYER_Y + rand() * 60 - 15"
     },
     {
       "particle": "stellarity:horizon_glow",
       "chance": "rand() < 0.015",
-      "x": "-POS_X + PLAYER_X + (RENDER_DISTANCE)^2.1 * sin(9 * pi / 32)",
-      "z": "-POS_Z + PLAYER_Z + (RENDER_DISTANCE)^2.1 * cos(9 * pi / 32)",
+      "x": "-POS_X + PLAYER_X + RENDER_DISTANCE * 18 * sin(9 * pi / 32)",
+      "z": "-POS_Z + PLAYER_Z + RENDER_DISTANCE * 18 * cos(9 * pi / 32)",
       "y": "-POS_Y + PLAYER_Y + rand() * 60 - 15"
     },
     {
       "particle": "stellarity:horizon_glow",
       "chance": "rand() < 0.015",
-      "x": "-POS_X + PLAYER_X + (RENDER_DISTANCE)^2.1 * sin(10 * pi / 32)",
-      "z": "-POS_Z + PLAYER_Z + (RENDER_DISTANCE)^2.1 * cos(10 * pi / 32)",
+      "x": "-POS_X + PLAYER_X + RENDER_DISTANCE * 18 * sin(10 * pi / 32)",
+      "z": "-POS_Z + PLAYER_Z + RENDER_DISTANCE * 18 * cos(10 * pi / 32)",
       "y": "-POS_Y + PLAYER_Y + rand() * 60 - 15"
     },
     {
       "particle": "stellarity:horizon_glow",
       "chance": "rand() < 0.015",
-      "x": "-POS_X + PLAYER_X + (RENDER_DISTANCE)^2.1 * sin(11 * pi / 32)",
-      "z": "-POS_Z + PLAYER_Z + (RENDER_DISTANCE)^2.1 * cos(11 * pi / 32)",
+      "x": "-POS_X + PLAYER_X + RENDER_DISTANCE * 18 * sin(11 * pi / 32)",
+      "z": "-POS_Z + PLAYER_Z + RENDER_DISTANCE * 18 * cos(11 * pi / 32)",
       "y": "-POS_Y + PLAYER_Y + rand() * 60 - 15"
     },
     {
       "particle": "stellarity:horizon_glow",
       "chance": "rand() < 0.015",
-      "x": "-POS_X + PLAYER_X + (RENDER_DISTANCE)^2.1 * sin(12 * pi / 32)",
-      "z": "-POS_Z + PLAYER_Z + (RENDER_DISTANCE)^2.1 * cos(12 * pi / 32)",
+      "x": "-POS_X + PLAYER_X + RENDER_DISTANCE * 18 * sin(12 * pi / 32)",
+      "z": "-POS_Z + PLAYER_Z + RENDER_DISTANCE * 18 * cos(12 * pi / 32)",
       "y": "-POS_Y + PLAYER_Y + rand() * 60 - 15"
     },
     {
       "particle": "stellarity:horizon_glow",
       "chance": "rand() < 0.015",
-      "x": "-POS_X + PLAYER_X + (RENDER_DISTANCE)^2.1 * sin(13 * pi / 32)",
-      "z": "-POS_Z + PLAYER_Z + (RENDER_DISTANCE)^2.1 * cos(13 * pi / 32)",
+      "x": "-POS_X + PLAYER_X + RENDER_DISTANCE * 18 * sin(13 * pi / 32)",
+      "z": "-POS_Z + PLAYER_Z + RENDER_DISTANCE * 18 * cos(13 * pi / 32)",
       "y": "-POS_Y + PLAYER_Y + rand() * 60 - 15"
     },
     {
       "particle": "stellarity:horizon_glow",
       "chance": "rand() < 0.015",
-      "x": "-POS_X + PLAYER_X + (RENDER_DISTANCE)^2.1 * sin(14 * pi / 32)",
-      "z": "-POS_Z + PLAYER_Z + (RENDER_DISTANCE)^2.1 * cos(14 * pi / 32)",
+      "x": "-POS_X + PLAYER_X + RENDER_DISTANCE * 18 * sin(14 * pi / 32)",
+      "z": "-POS_Z + PLAYER_Z + RENDER_DISTANCE * 18 * cos(14 * pi / 32)",
       "y": "-POS_Y + PLAYER_Y + rand() * 60 - 15"
     },
     {
       "particle": "stellarity:horizon_glow",
       "chance": "rand() < 0.015",
-      "x": "-POS_X + PLAYER_X + (RENDER_DISTANCE)^2.1 * sin(15 * pi / 32)",
-      "z": "-POS_Z + PLAYER_Z + (RENDER_DISTANCE)^2.1 * cos(15 * pi / 32)",
+      "x": "-POS_X + PLAYER_X + RENDER_DISTANCE * 18 * sin(15 * pi / 32)",
+      "z": "-POS_Z + PLAYER_Z + RENDER_DISTANCE * 18 * cos(15 * pi / 32)",
       "y": "-POS_Y + PLAYER_Y + rand() * 60 - 15"
     },
     {
       "particle": "stellarity:horizon_glow",
       "chance": "rand() < 0.015",
-      "x": "-POS_X + PLAYER_X + (RENDER_DISTANCE)^2.1 * sin(16 * pi / 32)",
-      "z": "-POS_Z + PLAYER_Z + (RENDER_DISTANCE)^2.1 * cos(16 * pi / 32)",
+      "x": "-POS_X + PLAYER_X + RENDER_DISTANCE * 18 * sin(16 * pi / 32)",
+      "z": "-POS_Z + PLAYER_Z + RENDER_DISTANCE * 18 * cos(16 * pi / 32)",
       "y": "-POS_Y + PLAYER_Y + rand() * 60 - 15"
     },
     {
       "particle": "stellarity:horizon_glow",
       "chance": "rand() < 0.015",
-      "x": "-POS_X + PLAYER_X + (RENDER_DISTANCE)^2.1 * sin(17 * pi / 32)",
-      "z": "-POS_Z + PLAYER_Z + (RENDER_DISTANCE)^2.1 * cos(17 * pi / 32)",
+      "x": "-POS_X + PLAYER_X + RENDER_DISTANCE * 18 * sin(17 * pi / 32)",
+      "z": "-POS_Z + PLAYER_Z + RENDER_DISTANCE * 18 * cos(17 * pi / 32)",
       "y": "-POS_Y + PLAYER_Y + rand() * 60 - 15"
     },
     {
       "particle": "stellarity:horizon_glow",
       "chance": "rand() < 0.015",
-      "x": "-POS_X + PLAYER_X + (RENDER_DISTANCE)^2.1 * sin(18 * pi / 32)",
-      "z": "-POS_Z + PLAYER_Z + (RENDER_DISTANCE)^2.1 * cos(18 * pi / 32)",
+      "x": "-POS_X + PLAYER_X + RENDER_DISTANCE * 18 * sin(18 * pi / 32)",
+      "z": "-POS_Z + PLAYER_Z + RENDER_DISTANCE * 18 * cos(18 * pi / 32)",
       "y": "-POS_Y + PLAYER_Y + rand() * 60 - 15"
     },
     {
       "particle": "stellarity:horizon_glow",
       "chance": "rand() < 0.015",
-      "x": "-POS_X + PLAYER_X + (RENDER_DISTANCE)^2.1 * sin(19 * pi / 32)",
-      "z": "-POS_Z + PLAYER_Z + (RENDER_DISTANCE)^2.1 * cos(19 * pi / 32)",
+      "x": "-POS_X + PLAYER_X + RENDER_DISTANCE * 18 * sin(19 * pi / 32)",
+      "z": "-POS_Z + PLAYER_Z + RENDER_DISTANCE * 18 * cos(19 * pi / 32)",
       "y": "-POS_Y + PLAYER_Y + rand() * 60 - 15"
     },
     {
       "particle": "stellarity:horizon_glow",
       "chance": "rand() < 0.015",
-      "x": "-POS_X + PLAYER_X + (RENDER_DISTANCE)^2.1 * sin(20 * pi / 32)",
-      "z": "-POS_Z + PLAYER_Z + (RENDER_DISTANCE)^2.1 * cos(20 * pi / 32)",
+      "x": "-POS_X + PLAYER_X + RENDER_DISTANCE * 18 * sin(20 * pi / 32)",
+      "z": "-POS_Z + PLAYER_Z + RENDER_DISTANCE * 18 * cos(20 * pi / 32)",
       "y": "-POS_Y + PLAYER_Y + rand() * 60 - 15"
     },
     {
       "particle": "stellarity:horizon_glow",
       "chance": "rand() < 0.015",
-      "x": "-POS_X + PLAYER_X + (RENDER_DISTANCE)^2.1 * sin(21 * pi / 32)",
-      "z": "-POS_Z + PLAYER_Z + (RENDER_DISTANCE)^2.1 * cos(21 * pi / 32)",
+      "x": "-POS_X + PLAYER_X + RENDER_DISTANCE * 18 * sin(21 * pi / 32)",
+      "z": "-POS_Z + PLAYER_Z + RENDER_DISTANCE * 18 * cos(21 * pi / 32)",
       "y": "-POS_Y + PLAYER_Y + rand() * 60 - 15"
     },
     {
       "particle": "stellarity:horizon_glow",
       "chance": "rand() < 0.015",
-      "x": "-POS_X + PLAYER_X + (RENDER_DISTANCE)^2.1 * sin(22 * pi / 32)",
-      "z": "-POS_Z + PLAYER_Z + (RENDER_DISTANCE)^2.1 * cos(22 * pi / 32)",
+      "x": "-POS_X + PLAYER_X + RENDER_DISTANCE * 18 * sin(22 * pi / 32)",
+      "z": "-POS_Z + PLAYER_Z + RENDER_DISTANCE * 18 * cos(22 * pi / 32)",
       "y": "-POS_Y + PLAYER_Y + rand() * 60 - 15"
     },
     {
       "particle": "stellarity:horizon_glow",
       "chance": "rand() < 0.015",
-      "x": "-POS_X + PLAYER_X + (RENDER_DISTANCE)^2.1 * sin(23 * pi / 32)",
-      "z": "-POS_Z + PLAYER_Z + (RENDER_DISTANCE)^2.1 * cos(23 * pi / 32)",
+      "x": "-POS_X + PLAYER_X + RENDER_DISTANCE * 18 * sin(23 * pi / 32)",
+      "z": "-POS_Z + PLAYER_Z + RENDER_DISTANCE * 18 * cos(23 * pi / 32)",
       "y": "-POS_Y + PLAYER_Y + rand() * 60 - 15"
     },
     {
       "particle": "stellarity:horizon_glow",
       "chance": "rand() < 0.015",
-      "x": "-POS_X + PLAYER_X + (RENDER_DISTANCE)^2.1 * sin(24 * pi / 32)",
-      "z": "-POS_Z + PLAYER_Z + (RENDER_DISTANCE)^2.1 * cos(24 * pi / 32)",
+      "x": "-POS_X + PLAYER_X + RENDER_DISTANCE * 18 * sin(24 * pi / 32)",
+      "z": "-POS_Z + PLAYER_Z + RENDER_DISTANCE * 18 * cos(24 * pi / 32)",
       "y": "-POS_Y + PLAYER_Y + rand() * 60 - 15"
     },
     {
       "particle": "stellarity:horizon_glow",
       "chance": "rand() < 0.015",
-      "x": "-POS_X + PLAYER_X + (RENDER_DISTANCE)^2.1 * sin(25 * pi / 32)",
-      "z": "-POS_Z + PLAYER_Z + (RENDER_DISTANCE)^2.1 * cos(25 * pi / 32)",
+      "x": "-POS_X + PLAYER_X + RENDER_DISTANCE * 18 * sin(25 * pi / 32)",
+      "z": "-POS_Z + PLAYER_Z + RENDER_DISTANCE * 18 * cos(25 * pi / 32)",
       "y": "-POS_Y + PLAYER_Y + rand() * 60 - 15"
     },
     {
       "particle": "stellarity:horizon_glow",
       "chance": "rand() < 0.015",
-      "x": "-POS_X + PLAYER_X + (RENDER_DISTANCE)^2.1 * sin(26 * pi / 32)",
-      "z": "-POS_Z + PLAYER_Z + (RENDER_DISTANCE)^2.1 * cos(26 * pi / 32)",
+      "x": "-POS_X + PLAYER_X + RENDER_DISTANCE * 18 * sin(26 * pi / 32)",
+      "z": "-POS_Z + PLAYER_Z + RENDER_DISTANCE * 18 * cos(26 * pi / 32)",
       "y": "-POS_Y + PLAYER_Y + rand() * 60 - 15"
     },
     {
       "particle": "stellarity:horizon_glow",
       "chance": "rand() < 0.015",
-      "x": "-POS_X + PLAYER_X + (RENDER_DISTANCE)^2.1 * sin(27 * pi / 32)",
-      "z": "-POS_Z + PLAYER_Z + (RENDER_DISTANCE)^2.1 * cos(27 * pi / 32)",
+      "x": "-POS_X + PLAYER_X + RENDER_DISTANCE * 18 * sin(27 * pi / 32)",
+      "z": "-POS_Z + PLAYER_Z + RENDER_DISTANCE * 18 * cos(27 * pi / 32)",
       "y": "-POS_Y + PLAYER_Y + rand() * 60 - 15"
     },
     {
       "particle": "stellarity:horizon_glow",
       "chance": "rand() < 0.015",
-      "x": "-POS_X + PLAYER_X + (RENDER_DISTANCE)^2.1 * sin(28 * pi / 32)",
-      "z": "-POS_Z + PLAYER_Z + (RENDER_DISTANCE)^2.1 * cos(28 * pi / 32)",
+      "x": "-POS_X + PLAYER_X + RENDER_DISTANCE * 18 * sin(28 * pi / 32)",
+      "z": "-POS_Z + PLAYER_Z + RENDER_DISTANCE * 18 * cos(28 * pi / 32)",
       "y": "-POS_Y + PLAYER_Y + rand() * 60 - 15"
     },
     {
       "particle": "stellarity:horizon_glow",
       "chance": "rand() < 0.015",
-      "x": "-POS_X + PLAYER_X + (RENDER_DISTANCE)^2.1 * sin(29 * pi / 32)",
-      "z": "-POS_Z + PLAYER_Z + (RENDER_DISTANCE)^2.1 * cos(29 * pi / 32)",
+      "x": "-POS_X + PLAYER_X + RENDER_DISTANCE * 18 * sin(29 * pi / 32)",
+      "z": "-POS_Z + PLAYER_Z + RENDER_DISTANCE * 18 * cos(29 * pi / 32)",
       "y": "-POS_Y + PLAYER_Y + rand() * 60 - 15"
     },
     {
       "particle": "stellarity:horizon_glow",
       "chance": "rand() < 0.015",
-      "x": "-POS_X + PLAYER_X + (RENDER_DISTANCE)^2.1 * sin(30 * pi / 32)",
-      "z": "-POS_Z + PLAYER_Z + (RENDER_DISTANCE)^2.1 * cos(30 * pi / 32)",
+      "x": "-POS_X + PLAYER_X + RENDER_DISTANCE * 18 * sin(30 * pi / 32)",
+      "z": "-POS_Z + PLAYER_Z + RENDER_DISTANCE * 18 * cos(30 * pi / 32)",
       "y": "-POS_Y + PLAYER_Y + rand() * 60 - 15"
     },
     {
       "particle": "stellarity:horizon_glow",
       "chance": "rand() < 0.015",
-      "x": "-POS_X + PLAYER_X + (RENDER_DISTANCE)^2.1 * sin(31 * pi / 32)",
-      "z": "-POS_Z + PLAYER_Z + (RENDER_DISTANCE)^2.1 * cos(31 * pi / 32)",
+      "x": "-POS_X + PLAYER_X + RENDER_DISTANCE * 18 * sin(31 * pi / 32)",
+      "z": "-POS_Z + PLAYER_Z + RENDER_DISTANCE * 18 * cos(31 * pi / 32)",
       "y": "-POS_Y + PLAYER_Y + rand() * 60 - 15"
     },
     {
       "particle": "stellarity:horizon_glow",
       "chance": "rand() < 0.015",
-      "x": "-POS_X + PLAYER_X + (RENDER_DISTANCE)^2.1 * sin(32 * pi / 32)",
-      "z": "-POS_Z + PLAYER_Z + (RENDER_DISTANCE)^2.1 * cos(32 * pi / 32)",
+      "x": "-POS_X + PLAYER_X + RENDER_DISTANCE * 18 * sin(32 * pi / 32)",
+      "z": "-POS_Z + PLAYER_Z + RENDER_DISTANCE * 18 * cos(32 * pi / 32)",
       "y": "-POS_Y + PLAYER_Y + rand() * 60 - 15"
     },
     {
       "particle": "stellarity:horizon_glow",
       "chance": "rand() < 0.015",
-      "x": "-POS_X + PLAYER_X + (RENDER_DISTANCE)^2.1 * sin(33 * pi / 32)",
-      "z": "-POS_Z + PLAYER_Z + (RENDER_DISTANCE)^2.1 * cos(33 * pi / 32)",
+      "x": "-POS_X + PLAYER_X + RENDER_DISTANCE * 18 * sin(33 * pi / 32)",
+      "z": "-POS_Z + PLAYER_Z + RENDER_DISTANCE * 18 * cos(33 * pi / 32)",
       "y": "-POS_Y + PLAYER_Y + rand() * 60 - 15"
     },
     {
       "particle": "stellarity:horizon_glow",
       "chance": "rand() < 0.015",
-      "x": "-POS_X + PLAYER_X + (RENDER_DISTANCE)^2.1 * sin(34 * pi / 32)",
-      "z": "-POS_Z + PLAYER_Z + (RENDER_DISTANCE)^2.1 * cos(34 * pi / 32)",
+      "x": "-POS_X + PLAYER_X + RENDER_DISTANCE * 18 * sin(34 * pi / 32)",
+      "z": "-POS_Z + PLAYER_Z + RENDER_DISTANCE * 18 * cos(34 * pi / 32)",
       "y": "-POS_Y + PLAYER_Y + rand() * 60 - 15"
     },
     {
       "particle": "stellarity:horizon_glow",
       "chance": "rand() < 0.015",
-      "x": "-POS_X + PLAYER_X + (RENDER_DISTANCE)^2.1 * sin(35 * pi / 32)",
-      "z": "-POS_Z + PLAYER_Z + (RENDER_DISTANCE)^2.1 * cos(35 * pi / 32)",
+      "x": "-POS_X + PLAYER_X + RENDER_DISTANCE * 18 * sin(35 * pi / 32)",
+      "z": "-POS_Z + PLAYER_Z + RENDER_DISTANCE * 18 * cos(35 * pi / 32)",
       "y": "-POS_Y + PLAYER_Y + rand() * 60 - 15"
     },
     {
       "particle": "stellarity:horizon_glow",
       "chance": "rand() < 0.015",
-      "x": "-POS_X + PLAYER_X + (RENDER_DISTANCE)^2.1 * sin(36 * pi / 32)",
-      "z": "-POS_Z + PLAYER_Z + (RENDER_DISTANCE)^2.1 * cos(36 * pi / 32)",
+      "x": "-POS_X + PLAYER_X + RENDER_DISTANCE * 18 * sin(36 * pi / 32)",
+      "z": "-POS_Z + PLAYER_Z + RENDER_DISTANCE * 18 * cos(36 * pi / 32)",
       "y": "-POS_Y + PLAYER_Y + rand() * 60 - 15"
     },
     {
       "particle": "stellarity:horizon_glow",
       "chance": "rand() < 0.015",
-      "x": "-POS_X + PLAYER_X + (RENDER_DISTANCE)^2.1 * sin(37 * pi / 32)",
-      "z": "-POS_Z + PLAYER_Z + (RENDER_DISTANCE)^2.1 * cos(37 * pi / 32)",
+      "x": "-POS_X + PLAYER_X + RENDER_DISTANCE * 18 * sin(37 * pi / 32)",
+      "z": "-POS_Z + PLAYER_Z + RENDER_DISTANCE * 18 * cos(37 * pi / 32)",
       "y": "-POS_Y + PLAYER_Y + rand() * 60 - 15"
     },
     {
       "particle": "stellarity:horizon_glow",
       "chance": "rand() < 0.015",
-      "x": "-POS_X + PLAYER_X + (RENDER_DISTANCE)^2.1 * sin(38 * pi / 32)",
-      "z": "-POS_Z + PLAYER_Z + (RENDER_DISTANCE)^2.1 * cos(38 * pi / 32)",
+      "x": "-POS_X + PLAYER_X + RENDER_DISTANCE * 18 * sin(38 * pi / 32)",
+      "z": "-POS_Z + PLAYER_Z + RENDER_DISTANCE * 18 * cos(38 * pi / 32)",
       "y": "-POS_Y + PLAYER_Y + rand() * 60 - 15"
     },
     {
       "particle": "stellarity:horizon_glow",
       "chance": "rand() < 0.015",
-      "x": "-POS_X + PLAYER_X + (RENDER_DISTANCE)^2.1 * sin(39 * pi / 32)",
-      "z": "-POS_Z + PLAYER_Z + (RENDER_DISTANCE)^2.1 * cos(39 * pi / 32)",
+      "x": "-POS_X + PLAYER_X + RENDER_DISTANCE * 18 * sin(39 * pi / 32)",
+      "z": "-POS_Z + PLAYER_Z + RENDER_DISTANCE * 18 * cos(39 * pi / 32)",
       "y": "-POS_Y + PLAYER_Y + rand() * 60 - 15"
     },
     {
       "particle": "stellarity:horizon_glow",
       "chance": "rand() < 0.015",
-      "x": "-POS_X + PLAYER_X + (RENDER_DISTANCE)^2.1 * sin(40 * pi / 32)",
-      "z": "-POS_Z + PLAYER_Z + (RENDER_DISTANCE)^2.1 * cos(40 * pi / 32)",
+      "x": "-POS_X + PLAYER_X + RENDER_DISTANCE * 18 * sin(40 * pi / 32)",
+      "z": "-POS_Z + PLAYER_Z + RENDER_DISTANCE * 18 * cos(40 * pi / 32)",
       "y": "-POS_Y + PLAYER_Y + rand() * 60 - 15"
     },
     {
       "particle": "stellarity:horizon_glow",
       "chance": "rand() < 0.015",
-      "x": "-POS_X + PLAYER_X + (RENDER_DISTANCE)^2.1 * sin(41 * pi / 32)",
-      "z": "-POS_Z + PLAYER_Z + (RENDER_DISTANCE)^2.1 * cos(41 * pi / 32)",
+      "x": "-POS_X + PLAYER_X + RENDER_DISTANCE * 18 * sin(41 * pi / 32)",
+      "z": "-POS_Z + PLAYER_Z + RENDER_DISTANCE * 18 * cos(41 * pi / 32)",
       "y": "-POS_Y + PLAYER_Y + rand() * 60 - 15"
     },
     {
       "particle": "stellarity:horizon_glow",
       "chance": "rand() < 0.015",
-      "x": "-POS_X + PLAYER_X + (RENDER_DISTANCE)^2.1 * sin(42 * pi / 32)",
-      "z": "-POS_Z + PLAYER_Z + (RENDER_DISTANCE)^2.1 * cos(42 * pi / 32)",
+      "x": "-POS_X + PLAYER_X + RENDER_DISTANCE * 18 * sin(42 * pi / 32)",
+      "z": "-POS_Z + PLAYER_Z + RENDER_DISTANCE * 18 * cos(42 * pi / 32)",
       "y": "-POS_Y + PLAYER_Y + rand() * 60 - 15"
     },
     {
       "particle": "stellarity:horizon_glow",
       "chance": "rand() < 0.015",
-      "x": "-POS_X + PLAYER_X + (RENDER_DISTANCE)^2.1 * sin(43 * pi / 32)",
-      "z": "-POS_Z + PLAYER_Z + (RENDER_DISTANCE)^2.1 * cos(43 * pi / 32)",
+      "x": "-POS_X + PLAYER_X + RENDER_DISTANCE * 18 * sin(43 * pi / 32)",
+      "z": "-POS_Z + PLAYER_Z + RENDER_DISTANCE * 18 * cos(43 * pi / 32)",
       "y": "-POS_Y + PLAYER_Y + rand() * 60 - 15"
     },
     {
       "particle": "stellarity:horizon_glow",
       "chance": "rand() < 0.015",
-      "x": "-POS_X + PLAYER_X + (RENDER_DISTANCE)^2.1 * sin(44 * pi / 32)",
-      "z": "-POS_Z + PLAYER_Z + (RENDER_DISTANCE)^2.1 * cos(44 * pi / 32)",
+      "x": "-POS_X + PLAYER_X + RENDER_DISTANCE * 18 * sin(44 * pi / 32)",
+      "z": "-POS_Z + PLAYER_Z + RENDER_DISTANCE * 18 * cos(44 * pi / 32)",
       "y": "-POS_Y + PLAYER_Y + rand() * 60 - 15"
     },
     {
       "particle": "stellarity:horizon_glow",
       "chance": "rand() < 0.015",
-      "x": "-POS_X + PLAYER_X + (RENDER_DISTANCE)^2.1 * sin(45 * pi / 32)",
-      "z": "-POS_Z + PLAYER_Z + (RENDER_DISTANCE)^2.1 * cos(45 * pi / 32)",
+      "x": "-POS_X + PLAYER_X + RENDER_DISTANCE * 18 * sin(45 * pi / 32)",
+      "z": "-POS_Z + PLAYER_Z + RENDER_DISTANCE * 18 * cos(45 * pi / 32)",
       "y": "-POS_Y + PLAYER_Y + rand() * 60 - 15"
     },
     {
       "particle": "stellarity:horizon_glow",
       "chance": "rand() < 0.015",
-      "x": "-POS_X + PLAYER_X + (RENDER_DISTANCE)^2.1 * sin(46 * pi / 32)",
-      "z": "-POS_Z + PLAYER_Z + (RENDER_DISTANCE)^2.1 * cos(46 * pi / 32)",
+      "x": "-POS_X + PLAYER_X + RENDER_DISTANCE * 18 * sin(46 * pi / 32)",
+      "z": "-POS_Z + PLAYER_Z + RENDER_DISTANCE * 18 * cos(46 * pi / 32)",
       "y": "-POS_Y + PLAYER_Y + rand() * 60 - 15"
     },
     {
       "particle": "stellarity:horizon_glow",
       "chance": "rand() < 0.015",
-      "x": "-POS_X + PLAYER_X + (RENDER_DISTANCE)^2.1 * sin(47 * pi / 32)",
-      "z": "-POS_Z + PLAYER_Z + (RENDER_DISTANCE)^2.1 * cos(47 * pi / 32)",
+      "x": "-POS_X + PLAYER_X + RENDER_DISTANCE * 18 * sin(47 * pi / 32)",
+      "z": "-POS_Z + PLAYER_Z + RENDER_DISTANCE * 18 * cos(47 * pi / 32)",
       "y": "-POS_Y + PLAYER_Y + rand() * 60 - 15"
     },
     {
       "particle": "stellarity:horizon_glow",
       "chance": "rand() < 0.015",
-      "x": "-POS_X + PLAYER_X + (RENDER_DISTANCE)^2.1 * sin(48 * pi / 32)",
-      "z": "-POS_Z + PLAYER_Z + (RENDER_DISTANCE)^2.1 * cos(48 * pi / 32)",
+      "x": "-POS_X + PLAYER_X + RENDER_DISTANCE * 18 * sin(48 * pi / 32)",
+      "z": "-POS_Z + PLAYER_Z + RENDER_DISTANCE * 18 * cos(48 * pi / 32)",
       "y": "-POS_Y + PLAYER_Y + rand() * 60 - 15"
     },
     {
       "particle": "stellarity:horizon_glow",
       "chance": "rand() < 0.015",
-      "x": "-POS_X + PLAYER_X + (RENDER_DISTANCE)^2.1 * sin(49 * pi / 32)",
-      "z": "-POS_Z + PLAYER_Z + (RENDER_DISTANCE)^2.1 * cos(49 * pi / 32)",
+      "x": "-POS_X + PLAYER_X + RENDER_DISTANCE * 18 * sin(49 * pi / 32)",
+      "z": "-POS_Z + PLAYER_Z + RENDER_DISTANCE * 18 * cos(49 * pi / 32)",
       "y": "-POS_Y + PLAYER_Y + rand() * 60 - 15"
     },
     {
       "particle": "stellarity:horizon_glow",
       "chance": "rand() < 0.015",
-      "x": "-POS_X + PLAYER_X + (RENDER_DISTANCE)^2.1 * sin(50 * pi / 32)",
-      "z": "-POS_Z + PLAYER_Z + (RENDER_DISTANCE)^2.1 * cos(50 * pi / 32)",
+      "x": "-POS_X + PLAYER_X + RENDER_DISTANCE * 18 * sin(50 * pi / 32)",
+      "z": "-POS_Z + PLAYER_Z + RENDER_DISTANCE * 18 * cos(50 * pi / 32)",
       "y": "-POS_Y + PLAYER_Y + rand() * 60 - 15"
     },
     {
       "particle": "stellarity:horizon_glow",
       "chance": "rand() < 0.015",
-      "x": "-POS_X + PLAYER_X + (RENDER_DISTANCE)^2.1 * sin(51 * pi / 32)",
-      "z": "-POS_Z + PLAYER_Z + (RENDER_DISTANCE)^2.1 * cos(51 * pi / 32)",
+      "x": "-POS_X + PLAYER_X + RENDER_DISTANCE * 18 * sin(51 * pi / 32)",
+      "z": "-POS_Z + PLAYER_Z + RENDER_DISTANCE * 18 * cos(51 * pi / 32)",
       "y": "-POS_Y + PLAYER_Y + rand() * 60 - 15"
     },
     {
       "particle": "stellarity:horizon_glow",
       "chance": "rand() < 0.015",
-      "x": "-POS_X + PLAYER_X + (RENDER_DISTANCE)^2.1 * sin(52 * pi / 32)",
-      "z": "-POS_Z + PLAYER_Z + (RENDER_DISTANCE)^2.1 * cos(52 * pi / 32)",
+      "x": "-POS_X + PLAYER_X + RENDER_DISTANCE * 18 * sin(52 * pi / 32)",
+      "z": "-POS_Z + PLAYER_Z + RENDER_DISTANCE * 18 * cos(52 * pi / 32)",
       "y": "-POS_Y + PLAYER_Y + rand() * 60 - 15"
     },
     {
       "particle": "stellarity:horizon_glow",
       "chance": "rand() < 0.015",
-      "x": "-POS_X + PLAYER_X + (RENDER_DISTANCE)^2.1 * sin(53 * pi / 32)",
-      "z": "-POS_Z + PLAYER_Z + (RENDER_DISTANCE)^2.1 * cos(53 * pi / 32)",
+      "x": "-POS_X + PLAYER_X + RENDER_DISTANCE * 18 * sin(53 * pi / 32)",
+      "z": "-POS_Z + PLAYER_Z + RENDER_DISTANCE * 18 * cos(53 * pi / 32)",
       "y": "-POS_Y + PLAYER_Y + rand() * 60 - 15"
     },
     {
       "particle": "stellarity:horizon_glow",
       "chance": "rand() < 0.015",
-      "x": "-POS_X + PLAYER_X + (RENDER_DISTANCE)^2.1 * sin(54 * pi / 32)",
-      "z": "-POS_Z + PLAYER_Z + (RENDER_DISTANCE)^2.1 * cos(54 * pi / 32)",
+      "x": "-POS_X + PLAYER_X + RENDER_DISTANCE * 18 * sin(54 * pi / 32)",
+      "z": "-POS_Z + PLAYER_Z + RENDER_DISTANCE * 18 * cos(54 * pi / 32)",
       "y": "-POS_Y + PLAYER_Y + rand() * 60 - 15"
     },
     {
       "particle": "stellarity:horizon_glow",
       "chance": "rand() < 0.015",
-      "x": "-POS_X + PLAYER_X + (RENDER_DISTANCE)^2.1 * sin(55 * pi / 32)",
-      "z": "-POS_Z + PLAYER_Z + (RENDER_DISTANCE)^2.1 * cos(55 * pi / 32)",
+      "x": "-POS_X + PLAYER_X + RENDER_DISTANCE * 18 * sin(55 * pi / 32)",
+      "z": "-POS_Z + PLAYER_Z + RENDER_DISTANCE * 18 * cos(55 * pi / 32)",
       "y": "-POS_Y + PLAYER_Y + rand() * 60 - 15"
     },
     {
       "particle": "stellarity:horizon_glow",
       "chance": "rand() < 0.015",
-      "x": "-POS_X + PLAYER_X + (RENDER_DISTANCE)^2.1 * sin(56 * pi / 32)",
-      "z": "-POS_Z + PLAYER_Z + (RENDER_DISTANCE)^2.1 * cos(56 * pi / 32)",
+      "x": "-POS_X + PLAYER_X + RENDER_DISTANCE * 18 * sin(56 * pi / 32)",
+      "z": "-POS_Z + PLAYER_Z + RENDER_DISTANCE * 18 * cos(56 * pi / 32)",
       "y": "-POS_Y + PLAYER_Y + rand() * 60 - 15"
     },
     {
       "particle": "stellarity:horizon_glow",
       "chance": "rand() < 0.015",
-      "x": "-POS_X + PLAYER_X + (RENDER_DISTANCE)^2.1 * sin(57 * pi / 32)",
-      "z": "-POS_Z + PLAYER_Z + (RENDER_DISTANCE)^2.1 * cos(57 * pi / 32)",
+      "x": "-POS_X + PLAYER_X + RENDER_DISTANCE * 18 * sin(57 * pi / 32)",
+      "z": "-POS_Z + PLAYER_Z + RENDER_DISTANCE * 18 * cos(57 * pi / 32)",
       "y": "-POS_Y + PLAYER_Y + rand() * 60 - 15"
     },
     {
       "particle": "stellarity:horizon_glow",
       "chance": "rand() < 0.015",
-      "x": "-POS_X + PLAYER_X + (RENDER_DISTANCE)^2.1 * sin(58 * pi / 32)",
-      "z": "-POS_Z + PLAYER_Z + (RENDER_DISTANCE)^2.1 * cos(58 * pi / 32)",
+      "x": "-POS_X + PLAYER_X + RENDER_DISTANCE * 18 * sin(58 * pi / 32)",
+      "z": "-POS_Z + PLAYER_Z + RENDER_DISTANCE * 18 * cos(58 * pi / 32)",
       "y": "-POS_Y + PLAYER_Y + rand() * 60 - 15"
     },
     {
       "particle": "stellarity:horizon_glow",
       "chance": "rand() < 0.015",
-      "x": "-POS_X + PLAYER_X + (RENDER_DISTANCE)^2.1 * sin(59 * pi / 32)",
-      "z": "-POS_Z + PLAYER_Z + (RENDER_DISTANCE)^2.1 * cos(59 * pi / 32)",
+      "x": "-POS_X + PLAYER_X + RENDER_DISTANCE * 18 * sin(59 * pi / 32)",
+      "z": "-POS_Z + PLAYER_Z + RENDER_DISTANCE * 18 * cos(59 * pi / 32)",
       "y": "-POS_Y + PLAYER_Y + rand() * 60 - 15"
     },
     {
       "particle": "stellarity:horizon_glow",
       "chance": "rand() < 0.015",
-      "x": "-POS_X + PLAYER_X + (RENDER_DISTANCE)^2.1 * sin(60 * pi / 32)",
-      "z": "-POS_Z + PLAYER_Z + (RENDER_DISTANCE)^2.1 * cos(60 * pi / 32)",
+      "x": "-POS_X + PLAYER_X + RENDER_DISTANCE * 18 * sin(60 * pi / 32)",
+      "z": "-POS_Z + PLAYER_Z + RENDER_DISTANCE * 18 * cos(60 * pi / 32)",
       "y": "-POS_Y + PLAYER_Y + rand() * 60 - 15"
     },
     {
       "particle": "stellarity:horizon_glow",
       "chance": "rand() < 0.015",
-      "x": "-POS_X + PLAYER_X + (RENDER_DISTANCE)^2.1 * sin(61 * pi / 32)",
-      "z": "-POS_Z + PLAYER_Z + (RENDER_DISTANCE)^2.1 * cos(61 * pi / 32)",
+      "x": "-POS_X + PLAYER_X + RENDER_DISTANCE * 18 * sin(61 * pi / 32)",
+      "z": "-POS_Z + PLAYER_Z + RENDER_DISTANCE * 18 * cos(61 * pi / 32)",
       "y": "-POS_Y + PLAYER_Y + rand() * 60 - 15"
     },
     {
       "particle": "stellarity:horizon_glow",
       "chance": "rand() < 0.015",
-      "x": "-POS_X + PLAYER_X + (RENDER_DISTANCE)^2.1 * sin(62 * pi / 32)",
-      "z": "-POS_Z + PLAYER_Z + (RENDER_DISTANCE)^2.1 * cos(62 * pi / 32)",
+      "x": "-POS_X + PLAYER_X + RENDER_DISTANCE * 18 * sin(62 * pi / 32)",
+      "z": "-POS_Z + PLAYER_Z + RENDER_DISTANCE * 18 * cos(62 * pi / 32)",
       "y": "-POS_Y + PLAYER_Y + rand() * 60 - 15"
     },
     {
       "particle": "stellarity:horizon_glow",
       "chance": "rand() < 0.015",
-      "x": "-POS_X + PLAYER_X + (RENDER_DISTANCE)^2.1 * sin(63 * pi / 32)",
-      "z": "-POS_Z + PLAYER_Z + (RENDER_DISTANCE)^2.1 * cos(63 * pi / 32)",
+      "x": "-POS_X + PLAYER_X + RENDER_DISTANCE * 18 * sin(63 * pi / 32)",
+      "z": "-POS_Z + PLAYER_Z + RENDER_DISTANCE * 18 * cos(63 * pi / 32)",
       "y": "-POS_Y + PLAYER_Y + rand() * 60 - 15"
     }
   ]

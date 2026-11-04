@@ -3,22 +3,34 @@
     "base": {
       "minecraft:visual/fog_color": "stellarity:biomes/ashfall_deltas_fog",
       "minecraft:visual/sky_color": "stellarity:biomes/ashfall_deltas_sky",
-      "minecraft:visual/fog_start_distance": "c.viewDistance() * (c.y() > 165 ? 0.38 : (c.y() < 60 ? 0.08 : 0.22))",
-      "minecraft:visual/fog_end_distance": "c.viewDistance() * (c.y() > 165 ? 0.90 : (c.y() < 60 ? 0.58 : 0.80))",
+      "minecraft:visual/fog_start_distance": "c.viewDistance() * (c.y() > 165 ? 0.08 : (c.y() < 60 ? 0.005 : 0.02))",
+      "minecraft:visual/fog_end_distance": "c.viewDistance() * (c.y() > 165 ? 0.75 : (c.y() < 60 ? 0.45 : 0.62))",
       "minecraft:visual/ambient_particles": {
         "modifier": "override",
         "argument": [
           {
             "particle": {
+              "type": "stellarity:drift_fog_ash"
+            },
+            "probability": 0.005
+          },
+          {
+            "particle": {
               "type": "minecraft:ash"
             },
-            "probability": 0.02
+            "probability": 0.012
           },
           {
             "particle": {
               "type": "minecraft:white_ash"
             },
-            "probability": 0.008
+            "probability": 0.006
+          },
+          {
+            "particle": {
+              "type": "stellarity:ash_cinder"
+            },
+            "probability": 0.004
           }
         ]
       }

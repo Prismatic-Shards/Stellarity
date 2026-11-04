@@ -1,6 +1,7 @@
-#version 150
+#version 330
+#extension GL_ARB_separate_shader_objects : require
 
-#moj_import <matrix.glsl>
+#include <matrix.glsl>
 
 uniform sampler2D Sampler0;
 uniform sampler2D Sampler1;
@@ -8,7 +9,8 @@ uniform sampler2D Sampler1;
 uniform float GameTime;
 uniform int EndPortalLayers;
 
-in vec4 texProj0;
+layout(location = 0) in vec4 texProj0;
+layout(location = 0) out vec4 fragColor;
 
 const vec3 BACKGROUND_COLOR = vec3(0.012549019607843137, 0.0196078431372549, 0.01803921568627451);
 const vec3 LAYER1 = vec3(0.6627450980392157, 0.0784313725490196, 0.5568627450980392);
@@ -54,13 +56,10 @@ mat4 end_portal_layer(float layer) {
     );
 
     mat2 rotate = mat2_rotate_z(radians((layer * layer * 4321.0 + layer * 9.0) * 2.0));
-
     mat2 scale = mat2((4.5 - layer / 4.0) * 2.0);
 
     return mat4(scale * rotate) * translate * SCALE_TRANSLATE;
 }
-
-out vec4 fragColor;
 
 void main() {
     vec3 color = BACKGROUND_COLOR;

@@ -32,11 +32,12 @@ void main() {
     
     float diffGold = min(abs(hsv.x - 0.14), 1.0 - abs(hsv.x - 0.14));
     float diffPink = min(abs(hsv.x - 0.92), 1.0 - abs(hsv.x - 0.92));
-    float affinity = max(1.0 - smoothstep(0.0, 0.22, diffGold), 1.0 - smoothstep(0.0, 0.22, diffPink));
+    float diffCyan = min(abs(hsv.x - 0.50), 1.0 - abs(hsv.x - 0.50));
+    float affinity = max(max(1.0 - smoothstep(0.0, 0.22, diffGold), 1.0 - smoothstep(0.0, 0.22, diffPink)), 1.0 - smoothstep(0.0, 0.22, diffCyan));
     
     hsv.y = clamp(hsv.y + affinity * 0.38 + 0.05, 0.0, 1.0);
     vec3 graded = hsv2rgb(hsv);
-    graded = mix(graded, graded * vec3(1.08, 1.04, 1.02), 0.16);
+    graded = mix(graded, graded * vec3(1.06, 1.03, 1.08), 0.16);
     
     fragColor = vec4(graded, src.a);
 }

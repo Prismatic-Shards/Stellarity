@@ -33,7 +33,9 @@ execute if score #stellarity.config stellarity.config.boss_status_messages match
       advancement grant @a[distance=..100,advancements={minecraft:end/kill_dragon=false}] only minecraft:end/kill_dragon
 
   # 'God of Gods'
-    execute if entity @e[type=marker,tag=stellarity.dragon_marker,tag=stellarity.dragon.rk_only] run advancement grant @a[distance=..100] only stellarity:dragons_den/god_of_gods
+    execute if entity @e[type=marker,tag=stellarity.dragon_marker,tag=stellarity.dragon.rk_only] run advancement grant @a[distance=..250] only stellarity:dragons_den/god_of_gods
+    execute if entity @e[type=marker,tag=stellarity.dragon_marker,tag=stellarity.dragon.killed_by_rk] run advancement grant @a[distance=..250,predicate=stellarity:item/holding/radiant_kaleidoscope] only stellarity:dragons_den/god_of_gods
+    execute as @a[distance=..250,predicate=stellarity:item/holding/radiant_kaleidoscope] if entity @e[type=marker,tag=stellarity.dragon_marker,tag=stellarity.dragon.hit_by_rk] run advancement grant @s only stellarity:dragons_den/god_of_gods
 
   # 'Pure Completion'
     scoreboard players add @a[distance=..100] stellarity.player.dragon_kills 1

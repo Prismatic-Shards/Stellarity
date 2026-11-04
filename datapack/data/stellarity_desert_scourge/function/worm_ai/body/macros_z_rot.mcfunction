@@ -1,0 +1,1 @@
+$data modify entity @s transformation.right_rotation set from storage stellarity_desert_scourge:const worm.z_rotation[$(index)]

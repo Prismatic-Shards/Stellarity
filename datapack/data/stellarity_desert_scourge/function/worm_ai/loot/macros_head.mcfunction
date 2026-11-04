@@ -1,0 +1,1 @@
+$execute positioned ~ $(y) ~ run function stellarity_desert_scourge:worm_ai/loot/loot_head

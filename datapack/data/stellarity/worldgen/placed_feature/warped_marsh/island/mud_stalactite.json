@@ -2,8 +2,8 @@
   "feature": "stellarity:warped_marsh/island/mud_stalactite",
   "placement": [
     {
-      "type": "minecraft:count",
-      "count": 4
+      "type": "minecraft:rarity_filter",
+      "chance": 3
     },
     {
       "type": "minecraft:in_square"
@@ -13,17 +13,17 @@
       "height": {
         "type": "minecraft:uniform",
         "min_inclusive": {
-          "absolute": 0
+          "absolute": 35
         },
         "max_inclusive": {
-          "absolute": 70
+          "absolute": 65
         }
       }
     },
     {
       "type": "minecraft:environment_scan",
       "direction_of_search": "up",
-      "max_steps": 32,
+      "max_steps": 24,
       "target_condition": {
         "type": "minecraft:matching_blocks",
         "blocks": [

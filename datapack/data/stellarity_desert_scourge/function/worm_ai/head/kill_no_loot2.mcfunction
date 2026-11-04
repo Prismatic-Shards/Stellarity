@@ -1,0 +1,1 @@
+$bossbar remove stellarity_desert_scourge:bossbar_$(index)

@@ -1,4 +1,4 @@
-particle flash{color:-1} ~ ~ ~ 0 0 0 0 0 force @a[distance=..128]
+particle flash{color:-214448} ~ ~ ~ 0 0 0 0 0 force @a[distance=..128]
 particle explosion ~ ~ ~ 0 0 0 1 0 force @a[distance=..128]
 particle end_rod ~ ~ ~ 0 0 0 0.15 35 normal
 

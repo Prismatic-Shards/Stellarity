@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:cache",
+  "input": {
+    "type": "minecraft:max",
+    "left": {
+      "type": "minecraft:max",
+      "left": {
+        "type": "minecraft:max",
+        "left": "stellarity:the_hallow/sky_islands",
+        "right": "stellarity:amethyst_forest/peaks"
+      },
+      "right": "stellarity:endless_dunes/dunes"
+    },
+    "right": "stellarity:frozen_spikes/peaks"
+  }
+}

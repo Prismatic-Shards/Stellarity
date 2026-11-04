@@ -1,0 +1,2 @@
+execute align xyz positioned ~ ~.5 ~ if entity @s[dx=0,dy=0,dz=0] run scoreboard players set #END2 bdlib.raycast 0
+execute align xyz positioned ~.375 ~-.5 ~.375 if entity @s[dx=0,dy=0,dz=0] positioned ~ ~ ~.25 unless entity @s[dx=0,dy=0,dz=0] positioned ~.25 ~ ~-.25 unless entity @s[dx=0,dy=0,dz=0] run scoreboard players set #END2 bdlib.raycast 0

@@ -1,0 +1,3 @@
+execute summon interaction run function stellarity_desert_scourge:sand_tornado/spawn
+
+scoreboard players reset @s stellarity_desert_scourge.summon.sand_tornado

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stellarity — Main Island 3D Viewer</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background: #05020a;
+            color: #d1b8ff;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            overflow: hidden;
+            width: 100vw;
+            height: 100vh;
+        }
+        #canvas-container {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+        #ui-overlay {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: rgba(18, 10, 32, 0.8);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(186, 130, 242, 0.3);
+            border-radius: 12px;
+            padding: 18px 22px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+            pointer-events: auto;
+            max-width: 360px;
+            z-index: 10;
+        }
+        h1 {
+            font-size: 1.15rem;
+            color: #f3e8ff;
+            letter-spacing: 0.5px;
+            margin-bottom: 6px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        h1 span {
+            font-size: 0.75rem;
+            background: rgba(186, 130, 242, 0.2);
+            color: #ba82f2;
+            padding: 2px 8px;
+            border-radius: 6px;
+            border: 1px solid rgba(186, 130, 242, 0.3);
+        }
+        p.subtitle {
+            font-size: 0.8rem;
+            color: #a78bfa;
+            margin-bottom: 12px;
+            line-height: 1.35;
+        }
+        .stat-row {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.8rem;
+            padding: 4px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+        }
+        .stat-label { color: #94a3b8; }
+        .stat-value { color: #e2e8f0; font-family: monospace; font-weight: 600; }
+        .button-group {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+            margin-top: 14px;
+        }
+        button {
+            background: rgba(147, 51, 234, 0.25);
+            color: #e9d5ff;
+            border: 1px solid rgba(168, 85, 247, 0.4);
+            border-radius: 8px;
+            padding: 8px 12px;
+            font-size: 0.78rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        button:hover {
+            background: rgba(147, 51, 234, 0.55);
+            border-color: #c084fc;
+            box-shadow: 0 0 16px rgba(168, 85, 247, 0.4);
+        }
+        #hint {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(10, 5, 20, 0.75);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(186, 130, 242, 0.2);
+            padding: 8px 18px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            color: #c084fc;
+            pointer-events: none;
+            z-index: 10;
+        }
+        #loading {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            background: rgba(15, 8, 25, 0.9);
+            border: 1px solid #ba82f2;
+            padding: 24px 36px;
+            border-radius: 16px;
+            box-shadow: 0 0 40px rgba(147, 51, 234, 0.5);
+            z-index: 20;
+        }
+        #loading h2 {
+            font-size: 1.25rem;
+            color: #f3e8ff;
+            margin-bottom: 8px;
+        }
+        #loading p {
+            font-size: 0.85rem;
+            color: #c084fc;
+            margin-bottom: 14px;
+        }
+        #file-picker-btn {
+            display: inline-block;
+            background: #9333ea;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+        #file-input { display: none; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+</head>
+<body>
+    <div id="canvas-container"></div>
+    <div id="loading">
+        <h2>Stellarity Main Island 3D</h2>
+        <p id="loading-status">Loading stellarity_main_island.glb...</p>
+        <label id="file-picker-btn" for="file-input" style="display:none;">Choose .GLB File</label>
+        <input type="file" id="file-input" accept=".glb">
+    </div>
+
+    <div id="ui-overlay">
+        <h1>Stellarity Island <span>1:1 Scale</span></h1>
+        <p class="subtitle">Dragon's Den &bull; 10 Obsidian Towers &bull; Active Portal</p>
+        <div class="stat-row">
+            <span class="stat-label">Noise Seed:</span>
+            <span class="stat-value">767676</span>
+        </div>
+        <div class="stat-row">
+            <span class="stat-label">Dimensions:</span>
+            <span class="stat-value">300m &times; 135m &times; 300m</span>
+        </div>
+        <div class="stat-row">
+            <span class="stat-label">Greedy Quads:</span>
+            <span class="stat-value">28,800</span>
+        </div>
+        <div class="stat-row">
+            <span class="stat-label">Triangles:</span>
+            <span class="stat-value">57,600</span>
+        </div>
+        <div class="button-group">
+            <button id="btn-rotate">Auto Rotate: ON</button>
+            <button id="btn-wire">Wireframe: OFF</button>
+            <button id="btn-reset">Reset View</button>
+            <button id="btn-shot">Screenshot</button>
+            <button id="btn-fs" style="grid-column: span 2;">Toggle Fullscreen</button>
+        </div>
+    </div>
+
+    <div id="hint">Left Click: Rotate | Right Click: Pan | Scroll: Zoom | Drag & Drop .GLB</div>
+
+    <script>
+        const container = document.getElementById('canvas-container');
+        const loadingBox = document.getElementById('loading');
+        const loadingStatus = document.getElementById('loading-status');
+        const filePickerBtn = document.getElementById('file-picker-btn');
+        const fileInput = document.getElementById('file-input');
+
+        const scene = new THREE.Scene();
+        scene.fog = new THREE.FogExp2(0x06020f, 0.0018);
+
+        const camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.5, 3500);
+        camera.position.set(220, 160, 260);
+
+        const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: false, preserveDrawingBuffer: true });
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+        renderer.toneMapping = THREE.ACESFilmicToneMapping;
+        renderer.toneMappingExposure = 1.15;
+        container.appendChild(renderer.domElement);
+
+        const controls = new THREE.OrbitControls(camera, renderer.domElement);
+        controls.enableDamping = true;
+        controls.dampingFactor = 0.05;
+        controls.maxDistance = 1400;
+        controls.minDistance = 8;
+        controls.target.set(0, 55, 0);
+
+        // Lighting
+        const ambientLight = new THREE.AmbientLight(0x3a1d56, 1.9);
+        scene.add(ambientLight);
+
+        const dirLight = new THREE.DirectionalLight(0xdcc8ff, 2.3);
+        dirLight.position.set(160, 320, 110);
+        scene.add(dirLight);
+
+        const underLight = new THREE.DirectionalLight(0x6b21a8, 1.1);
+        underLight.position.set(-100, -200, -100);
+        scene.add(underLight);
+
+        // Starfield
+        const starGeo = new THREE.BufferGeometry();
+        const starCount = 3500;
+        const starPos = new Float32Array(starCount * 3);
+        for(let i = 0; i < starCount * 3; i += 3) {
+            const r = 900 + Math.random() * 800;
+            const theta = Math.random() * Math.PI * 2;
+            const phi = Math.acos(2 * Math.random() - 1);
+            starPos[i] = r * Math.sin(phi) * Math.cos(theta);
+            starPos[i+1] = r * Math.sin(phi) * Math.sin(theta);
+            starPos[i+2] = r * Math.cos(phi);
+        }
+        starGeo.setAttribute('position', new THREE.BufferAttribute(starPos, 3));
+        const starMat = new THREE.PointsMaterial({ color: 0xd8b4fe, size: 2.2, transparent: true, opacity: 0.85 });
+        const starField = new THREE.Points(starGeo, starMat);
+        scene.add(starField);
+
+        let islandMesh = null;
+        let autoRotate = true;
+        let wireframe = false;
+        const loader = new THREE.GLTFLoader();
+
+        function applyModel(gltf) {
+            if (islandMesh) scene.remove(islandMesh);
+            islandMesh = gltf.scene;
+
+            islandMesh.traverse((child) => {
+                if (child.isMesh) {
+                    if (child.material) {
+                        const mats = Array.isArray(child.material) ? child.material : [child.material];
+                        mats.forEach(m => {
+                            if (m.map) {
+                                m.map.magFilter = THREE.NearestFilter;
+                                m.map.minFilter = THREE.NearestFilter;
+                                m.map.needsUpdate = true;
+                            }
+                        });
+                    }
+                }
+            });
+
+            scene.add(islandMesh);
+            loadingBox.style.display = 'none';
+        }
+
+        // 1. Try direct fetch
+        loader.load('stellarity_main_island.glb', (gltf) => {
+            applyModel(gltf);
+        }, undefined, (err) => {
+            loadingStatus.innerText = 'To view directly without a server, pick or drop the .GLB file:';
+            filePickerBtn.style.display = 'inline-block';
+        });
+
+        // 2. Drag & drop or file picker fallback (works 100% locally on file:// without CORS!)
+        function loadArrayBuffer(buffer) {
+            loadingStatus.innerText = 'Parsing 3D Model...';
+            loader.parse(buffer, '', (gltf) => {
+                applyModel(gltf);
+            }, (err) => {
+                loadingStatus.innerText = 'Error parsing GLB: ' + err.message;
+            });
+        }
+
+        fileInput.addEventListener('change', (e) => {
+            const file = e.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = (re) => loadArrayBuffer(re.target.result);
+                reader.readAsArrayBuffer(file);
+            }
+        });
+
+        window.addEventListener('dragover', (e) => e.preventDefault());
+        window.addEventListener('drop', (e) => {
+            e.preventDefault();
+            if (e.dataTransfer.files.length > 0) {
+                const file = e.dataTransfer.files[0];
+                const reader = new FileReader();
+                reader.onload = (re) => loadArrayBuffer(re.target.result);
+                reader.readAsArrayBuffer(file);
+            }
+        });
+
+        // UI Controls
+        const rotateBtn = document.getElementById('btn-rotate');
+        rotateBtn.addEventListener('click', () => {
+            autoRotate = !autoRotate;
+            rotateBtn.innerText = `Auto Rotate: ${autoRotate ? 'ON' : 'OFF'}`;
+        });
+
+        const wireBtn = document.getElementById('btn-wire');
+        wireBtn.addEventListener('click', () => {
+            wireframe = !wireframe;
+            wireBtn.innerText = `Wireframe: ${wireframe ? 'ON' : 'OFF'}`;
+            if (islandMesh) {
+                islandMesh.traverse((child) => {
+                    if (child.isMesh && child.material) {
+                        const mats = Array.isArray(child.material) ? child.material : [child.material];
+                        mats.forEach(m => m.wireframe = wireframe);
+                    }
+                });
+            }
+        });
+
+        document.getElementById('btn-reset').addEventListener('click', () => {
+            camera.position.set(220, 160, 260);
+            controls.target.set(0, 55, 0);
+            controls.update();
+        });
+
+        document.getElementById('btn-shot').addEventListener('click', () => {
+            const link = document.createElement('a');
+            link.download = 'stellarity_main_island.png';
+            link.href = renderer.domElement.toDataURL('image/png');
+            link.click();
+        });
+
+        document.getElementById('btn-fs').addEventListener('click', () => {
+            if (!document.fullscreenElement) {
+                document.documentElement.requestFullscreen();
+            } else {
+                document.exitFullscreen();
+            }
+        });
+
+        function animate() {
+            requestAnimationFrame(animate);
+            if (autoRotate && islandMesh) {
+                islandMesh.rotation.y += 0.0015;
+            }
+            starField.rotation.y += 0.0002;
+            controls.update();
+            renderer.render(scene, camera);
+        }
+        animate();
+
+        window.addEventListener('resize', () => {
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+        });
+    </script>
+</body>
+</html>

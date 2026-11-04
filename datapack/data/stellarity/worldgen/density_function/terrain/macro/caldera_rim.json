@@ -1,0 +1,58 @@
+{
+  "type": "minecraft:mul",
+  "left": {
+    "type": "minecraft:mul",
+    "left": {
+      "type": "minecraft:gradient",
+      "axis": "y",
+      "from_coordinate": 55,
+      "to_coordinate": 70,
+      "from_value": 0.0,
+      "to_value": 1.0
+    },
+    "right": {
+      "type": "minecraft:gradient",
+      "axis": "y",
+      "from_coordinate": 120,
+      "to_coordinate": 140,
+      "from_value": 1.0,
+      "to_value": 0.0
+    }
+  },
+  "right": {
+    "type": "minecraft:spline",
+    "spline": {
+      "coordinate": {
+        "type": "minecraft:abs",
+        "input": {
+          "type": "minecraft:noise",
+          "noise": "stellarity:terrain/caldera",
+          "xz_scale": 1.0,
+          "y_scale": 0.0
+        }
+      },
+      "points": [
+        {
+          "location": 0.0,
+          "value": -0.6,
+          "derivative": 0.0
+        },
+        {
+          "location": 0.12,
+          "value": -0.3,
+          "derivative": 0.0
+        },
+        {
+          "location": 0.22,
+          "value": 0.55,
+          "derivative": 0.0
+        },
+        {
+          "location": 0.32,
+          "value": 0.0,
+          "derivative": 0.0
+        }
+      ]
+    }
+  }
+}

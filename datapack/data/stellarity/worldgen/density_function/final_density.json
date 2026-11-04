@@ -1,43 +1,47 @@
 {
-  "type": "minecraft:range_choice",
-  "input": "stellarity:main_island/avg",
-  "min_inclusive": -1000000,
-  "max_exclusive": 0.45,
-  "when_in_range": "stellarity:main_island/island",
-  "when_out_of_range": {
-    "type": "add",
-    "left": {
-      "type": "add",
-      "left": {
-        "type": "minecraft:max",
-        "left": {
-          "type": "minecraft:max",
-          "left": {
-            "type": "minecraft:max",
-            "left": {
-              "type": "minecraft:max",
-              "left": {
-                "type": "minecraft:min",
-                "left": "stellarity:sloped_cheese",
-                "right": "stellarity:cave/noodle"
+  "type": "minecraft:add",
+  "left": {
+    "type": "minecraft:range_choice",
+    "input": "stellarity:main_island/distance",
+    "min_inclusive": 0,
+    "max_exclusive": 220,
+    "when_in_range": "stellarity:main_island/island",
+    "when_out_of_range": {
+      "type": "minecraft:range_choice",
+      "input": "stellarity:main_island/distance",
+      "min_inclusive": 220,
+      "max_exclusive": 1000,
+      "when_in_range": -10.0,
+      "when_out_of_range": {
+        "type": "minecraft:mul",
+        "left": "stellarity:terrain/landscape",
+        "right": {
+          "type": "minecraft:spline",
+          "spline": {
+            "coordinate": "stellarity:main_island/distance",
+            "points": [
+              {
+                "location": 1000,
+                "value": 0.0,
+                "derivative": 0.0
               },
-              "right": "stellarity:the_hallow/sky_islands"
-            },
-            "right": "stellarity:amethyst_forest/peaks"
-          },
-          "right": "stellarity:endless_dunes/dunes"
-        },
-        "right": "stellarity:frozen_spikes/peaks"
-      },
-      "right": "stellarity:main_island/farlands_taper"
-    },
-    "right": {
-      "type": "minecraft:clamp",
-      "input": {
-        "type": "minecraft:beardifier"
-      },
-      "min": -0.15,
-      "max": 1.0
+              {
+                "location": 1048,
+                "value": 1.0,
+                "derivative": 0.0
+              }
+            ]
+          }
+        }
+      }
     }
+  },
+  "right": {
+    "type": "minecraft:clamp",
+    "input": {
+      "type": "minecraft:beardifier"
+    },
+    "min": -0.08,
+    "max": 0.4
   }
 }

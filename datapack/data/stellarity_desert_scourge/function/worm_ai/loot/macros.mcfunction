@@ -1,0 +1,1 @@
+$summon experience_orb ~ $(y) ~ {Value:8}

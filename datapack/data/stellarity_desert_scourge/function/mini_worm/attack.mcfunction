@@ -1,0 +1,2 @@
+$damage @s $(mini_worm_attack) mob_attack by @e[type=item_display,tag=save.mob,limit=1,distance=..1] from @e[type=item_display,tag=save.mob,limit=1,distance=..1]
+scoreboard players set @s wormAttackCD 10

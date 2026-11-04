@@ -1,0 +1,1 @@
+$return run data get storage stellarity_desert_scourge:bdlib_const tables.easing.sine.in_out[$(index)]

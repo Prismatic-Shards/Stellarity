@@ -17,28 +17,28 @@ layout(location = 2) in vec4 Color;
 
 layout(location = 0) out vec2 texCoord0;
 layout(location = 1) out vec4 vertexColor;
-layout(location = 2) out vec3 worldPos;
-layout(location = 3) flat out int isEndSky;
+layout(location = 2) out vec3 skyDirection;
+layout(location = 3) flat out int endSkyGeometry;
+
+mat4 getSkyProjection() {
+    vec3 rowZ = vec3(ProjMat[0][2], ProjMat[1][2], ProjMat[2][2]);
+    vec3 rowW = vec3(ProjMat[0][3], ProjMat[1][3], ProjMat[2][3]);
+    float depthA = -dot(rowZ, rowW) / max(dot(rowW, rowW), 0.00000001);
+    float depthB = ProjMat[3][2] + depthA * ProjMat[3][3];
+    mat4 skyProjection = ProjMat;
+    skyProjection[3] = vec4(0.0, 0.0, depthB, 0.0);
+    return skyProjection;
+}
 
 void main() {
-    gl_Position = ProjMat * ModelViewMat * vec4(Position, 1.0);
+    bool cubeCorner = all(lessThan(abs(abs(Position) - vec3(100.0)), vec3(0.002)));
+    bool skyColour = all(lessThan(abs(Color - vec4(vec3(40.0 / 255.0), 1.0)), vec4(0.001)));
+    bool skyUv = all(lessThan(abs(UV0 / 16.0 - round(UV0 / 16.0)), vec2(0.001)));
+    endSkyGeometry = cubeCorner && skyColour && skyUv ? 1 : 0;
+    skyDirection = Position;
+    mat4 projection = endSkyGeometry != 0 ? getSkyProjection() : ProjMat;
+    gl_Position = projection * ModelViewMat * vec4(Position, 1.0);
 
+    texCoord0 = UV0;
     vertexColor = Color;
-    worldPos = Position;
-
-    if (ProjMat[3][3] == 0.0 && abs(Position.x) > 50.0 && abs(Position.y) > 50.0 && abs(Position.z) > 50.0) {
-        isEndSky = 1;
-        if (UV0.x < 1.0 && UV0.y < 1.0) {
-            texCoord0 = vec2(1.0, 0.0);
-        } else if (UV0.x < 1.0 && UV0.y > 15.0) {
-            texCoord0 = vec2(1.0, 1.0);
-        } else if (UV0.x > 15.0 && UV0.y > 15.0) {
-            texCoord0 = vec2(0.0, 1.0);
-        } else {
-            texCoord0 = vec2(0.0, 0.0);
-        }
-    } else {
-        isEndSky = 0;
-        texCoord0 = UV0;
-    }
 }

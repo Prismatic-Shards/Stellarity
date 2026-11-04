@@ -1,0 +1,1 @@
+$return run data get storage stellarity_desert_scourge:bdlib_const tables.tan[$(index)]

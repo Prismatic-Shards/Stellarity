@@ -825,5 +825,5 @@
       }
     }
   },
-  "when_out_of_range": -1.0
+  "when_out_of_range": -64.0
 }

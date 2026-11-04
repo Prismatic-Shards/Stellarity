@@ -1,0 +1,4 @@
+{
+  "activation_condition": "(config('stellarity:biome_color_grading') != '§cOFF') && (g.skyType() == 2) && (c.biome() == 'minecraft:the_end' || c.biome() == 'minecraft:end_highlands' || c.biome() == 'minecraft:end_midlands' || c.biome() == 'minecraft:end_barrens' || c.biome() == 'minecraft:small_end_islands' || c.biome() == 'stellarity:end_wilds' || c.biome() == 'stellarity:end_shrubland' || c.biome() == 'stellarity:ender_wastes')",
+  "post_chain": "stellarity:grading_end"
+}

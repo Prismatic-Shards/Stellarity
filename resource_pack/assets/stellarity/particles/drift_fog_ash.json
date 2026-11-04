@@ -1,5 +1,6 @@
 {
   "textures": [
-    "stellarity:horizon_fog"
+    "stellarity:fog/fog_0",
+    "stellarity:fog/fog_1"
   ]
 }

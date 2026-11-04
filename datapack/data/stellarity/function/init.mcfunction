@@ -257,6 +257,15 @@
             scoreboard objectives add stellarity.item.rk.shield_timer dummy
             scoreboard objectives add stellarity.item.rk.recovery dummy
             scoreboard objectives add stellarity.item.rk.low_energy_cd dummy
+            scoreboard objectives add stellarity.item.rk.guard_angle dummy
+            scoreboard objectives add stellarity.item.rk.color_1 dummy
+            scoreboard objectives add stellarity.item.rk.color_2 dummy
+            scoreboard objectives add stellarity.item.rk.color_3 dummy
+            scoreboard objectives add stellarity.item.rk.color_4 dummy
+            scoreboard objectives add stellarity.item.rk.color_5 dummy
+            scoreboard objectives add stellarity.item.rk.color_6 dummy
+            scoreboard objectives add stellarity.item.rk.color_7 dummy
+            scoreboard objectives add stellarity.item.rk.cur_color dummy
             scoreboard objectives add stellarity.item.rk.swing_prev dummy
             scoreboard objectives add stellarity.item.rk.hit_prev dummy
 

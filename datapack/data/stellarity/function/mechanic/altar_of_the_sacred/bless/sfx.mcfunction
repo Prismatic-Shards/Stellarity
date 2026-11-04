@@ -1,4 +1,4 @@
-particle flash{color:-1} ~ ~ ~ 0 0 0 0 0 force @a[distance=..64]
+particle flash{color:-1325490} ~ ~ ~ 0 0 0 0 0 force @a[distance=..64]
 particle explosion ~ ~ ~ 0 0 0 1 0 force @a[distance=..32]
 particle minecraft:happy_villager ~ ~ ~ 0.5 0.5 0.5 0 25 normal
 particle end_rod ~ ~ ~ 0.2 0.5 0.2 0.15 30 force @a[distance=..48]

@@ -1,0 +1,9 @@
+{
+  "entity": "this",
+  "predicate": {
+    "flags": {
+      "is_on_ground": true
+    }
+  },
+  "type": "minecraft:entity_properties"
+}

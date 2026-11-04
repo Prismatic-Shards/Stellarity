@@ -1,48 +1,52 @@
-# Mega crit
-execute store result score #rnd kohara.misc run random value 1..3
-execute if score #rnd kohara.misc matches 1 run playsound stellarity:item/radiant_kaleidoscope/mega_crit1 player @a ~ ~ ~ 1.5 1
-execute if score #rnd kohara.misc matches 2 run playsound stellarity:item/radiant_kaleidoscope/mega_crit2 player @a ~ ~ ~ 1.5 1
-execute if score #rnd kohara.misc matches 3 run playsound stellarity:item/radiant_kaleidoscope/mega_crit3 player @a ~ ~ ~ 1.5 1
+# Crit sounds
+playsound stellarity:item.radiant_kaleidoscope.mega_crit player @a ~ ~ ~ 1.5 1
+playsound stellarity:item.radiant_kaleidoscope.stalactite_impact player @a ~ ~ ~ 1.4 1.1
+schedule function stellarity:item/radiant_kaleidoscope/crush/after_crit 7t append
 
-# Delayed sound
-schedule function stellarity:item/radiant_kaleidoscope/crush/after_crit 2t append
+# Crush VFX
+execute if entity @p[tag=kohara.attacker,predicate=stellarity:item/holding/radiant_kaleidoscope_ascended] run function stellarity:item/radiant_kaleidoscope_ascended/vfx/crush
+execute unless entity @p[tag=kohara.attacker,predicate=stellarity:item/holding/radiant_kaleidoscope_ascended] run function stellarity:item/radiant_kaleidoscope/vfx/crush
 
-# Prismatic explosion
-particle flash{color:-1} ~ ~1.2 ~ 0 0 0 0 2
-particle explosion ~ ~1.2 ~ 0.5 0.5 0.5 0 4
-particle end_rod ~ ~1.2 ~ 0.4 0.4 0.4 0.25 64
-particle crit ~ ~1.2 ~ 0.5 0.5 0.5 1.0 80
+# Target max health
+execute store result score #target_hp kohara.misc run attribute @s minecraft:max_health get 10
+execute if score #target_hp kohara.misc matches ..0 store result score #target_hp kohara.misc run data get entity @s Health 10
+execute if score #target_hp kohara.misc matches ..0 run scoreboard players set #target_hp kohara.misc 200
 
-# Spectrum burst
-particle dust{color:[0.90, 0.20, 0.15],scale:1.6} ~ ~1.2 ~ 0.6 0.4 0.6 0.15 25
-particle dust{color:[1.00, 0.60, 0.05],scale:1.6} ~ ~1.2 ~ 0.6 0.4 0.6 0.15 25
-particle dust{color:[0.95, 0.85, 0.10],scale:1.6} ~ ~1.2 ~ 0.6 0.4 0.6 0.15 25
-particle dust{color:[0.10, 0.75, 0.45],scale:1.6} ~ ~1.2 ~ 0.6 0.4 0.6 0.15 25
-particle dust{color:[0.15, 0.65, 0.95],scale:1.6} ~ ~1.2 ~ 0.6 0.4 0.6 0.15 25
-particle dust{color:[0.20, 0.25, 0.85],scale:1.6} ~ ~1.2 ~ 0.6 0.4 0.6 0.15 25
-particle dust{color:[0.65, 0.20, 0.85],scale:1.6} ~ ~1.2 ~ 0.6 0.4 0.6 0.15 25
+# Percent formula (60% to 84%)
+scoreboard players set #pct kohara.misc 60
+execute if score @s stellarity.item.rk.mark_rank matches 2 run scoreboard players set #pct kohara.misc 64
+execute if score @s stellarity.item.rk.mark_rank matches 3 run scoreboard players set #pct kohara.misc 68
+execute if score @s stellarity.item.rk.mark_rank matches 4 run scoreboard players set #pct kohara.misc 72
+execute if score @s stellarity.item.rk.mark_rank matches 5 run scoreboard players set #pct kohara.misc 76
+execute if score @s stellarity.item.rk.mark_rank matches 6 run scoreboard players set #pct kohara.misc 80
+execute if score @s stellarity.item.rk.mark_rank matches 7 run scoreboard players set #pct kohara.misc 84
 
-# Crush damage
-scoreboard players set #damage kohara.misc 335
-execute if score @s stellarity.item.rk.mark_rank matches 2 run scoreboard players set #damage kohara.misc 342
-execute if score @s stellarity.item.rk.mark_rank matches 3 run scoreboard players set #damage kohara.misc 349
-execute if score @s stellarity.item.rk.mark_rank matches 4 run scoreboard players set #damage kohara.misc 356
-execute if score @s stellarity.item.rk.mark_rank matches 5 run scoreboard players set #damage kohara.misc 364
-execute if score @s stellarity.item.rk.mark_rank matches 6 run scoreboard players set #damage kohara.misc 371
-execute if score @s stellarity.item.rk.mark_rank matches 7 run scoreboard players set #damage kohara.misc 378
+# Multiply and divide
+scoreboard players operation #damage kohara.misc = #target_hp kohara.misc
+scoreboard players operation #damage kohara.misc *= #pct kohara.misc
+scoreboard players set #100 kohara.misc 100
+scoreboard players operation #damage kohara.misc /= #100 kohara.misc
 
-# Tag attacker
-tag @p[predicate=stellarity:item/holding/radiant_kaleidoscope] add kohara.attacker
+# Min damage floor
+execute if score #damage kohara.misc matches ..120 run scoreboard players set #damage kohara.misc 120
 
 # Calculate damage
 function kohara:damage/calculate {armor_penetration:50,damage_boost_efficiency:50,ap_damage_type:"kohara:armor_piercing",damage_type:"stellarity:radiant_kaleidoscope_crush",tag:"stellarity.damage.radiant_kaleidoscope"}
-execute if entity @s[type=ender_dragon] run scoreboard players set @s stellarity.dragon.rk_damage_window 3
+execute as @e[type=ender_dragon,distance=..32] run scoreboard players set @s stellarity.dragon.rk_damage_window 40
+execute as @e[type=ender_dragon,distance=..32] run tag @s add stellarity.dragon.hit_by_rk
+tag @e[type=marker,tag=stellarity.dragon_marker] add stellarity.dragon.hit_by_rk
 
-# Apply inferno
+# Death check
+execute unless entity @s[type=ender_dragon] if data entity @s {Health:0f} at @s run return run function stellarity:item/radiant_kaleidoscope/mark/kill
+execute if entity @e[type=ender_dragon,distance=..32,nbt={DragonPhase:9}] run tag @e[type=marker,tag=stellarity.dragon_marker] add stellarity.dragon.killed_by_rk
+execute if entity @e[type=ender_dragon,distance=..32,nbt={DragonPhase:9}] at @s run return run function stellarity:item/radiant_kaleidoscope/mark/kill
+
+# Inferno
 function stellarity:mechanic/enchantments/infernal_infusion/apply_prismatic_inferno
 
 # Remove mark
 function stellarity:item/radiant_kaleidoscope/mark/remove
 
 # Start cooldown
-execute as @p[predicate=stellarity:item/holding/radiant_kaleidoscope] run function stellarity:item/radiant_kaleidoscope/cooldown/start
+execute as @p[tag=kohara.attacker] run function stellarity:item/radiant_kaleidoscope/cooldown/start
+tag @p[tag=kohara.attacker] remove kohara.attacker

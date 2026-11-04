@@ -2,6 +2,7 @@
   "default_value": "§aON",
   "allowed_values": [
     "§aON",
+    "§eREDUCED",
     "§cOFF"
   ],
   "section": "environment_fx",
@@ -10,8 +11,8 @@
   "performance_impact": "medium",
   "presets": {
     "high_quality": "§aON",
-    "medium_quality": "§aON",
+    "medium_quality": "§eREDUCED",
     "potato": "§cOFF",
-    "only_fx": "§aON"
+    "only_fx": "§eREDUCED"
   }
 }

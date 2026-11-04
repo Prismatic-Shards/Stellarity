@@ -1,0 +1,132 @@
+{
+  "targets": {
+    "stellarity:outline_inner": {},
+    "stellarity:outline_bloom": {},
+    "stellarity:outline_bloom_swap": {}
+  },
+  "passes": [
+    {
+      "vertex_shader": "minecraft:core/screenquad",
+      "fragment_shader": "stellarity:post/outline_entity",
+      "inputs": [
+        {
+          "sampler_name": "In",
+          "target": "minecraft:entity_outline"
+        }
+      ],
+      "output": "stellarity:outline_inner",
+      "uniforms": {
+        "OutlineConfig": [
+          {
+            "name": "InnerAlpha",
+            "type": "float",
+            "value": 0.35
+          },
+          {
+            "name": "Width",
+            "type": "float",
+            "value": 2.0
+          }
+        ]
+      }
+    },
+    {
+      "vertex_shader": "minecraft:core/screenquad",
+      "fragment_shader": "stellarity:post/outline_entity",
+      "inputs": [
+        {
+          "sampler_name": "In",
+          "target": "minecraft:entity_outline"
+        }
+      ],
+      "output": "stellarity:outline_bloom",
+      "uniforms": {
+        "OutlineConfig": [
+          {
+            "name": "InnerAlpha",
+            "type": "float",
+            "value": 0.90
+          },
+          {
+            "name": "Width",
+            "type": "float",
+            "value": 8.0
+          }
+        ]
+      }
+    },
+    {
+      "vertex_shader": "minecraft:core/screenquad",
+      "fragment_shader": "stellarity:post/bloom_box_blur",
+      "inputs": [
+        {
+          "sampler_name": "In",
+          "target": "stellarity:outline_bloom",
+          "bilinear": true
+        }
+      ],
+      "output": "stellarity:outline_bloom_swap",
+      "uniforms": {
+        "BlurConfig": [
+          {
+            "name": "BlurDir",
+            "type": "vec2",
+            "value": [
+              0.0,
+              1.0
+            ]
+          },
+          {
+            "name": "Radius",
+            "type": "float",
+            "value": 8.0
+          }
+        ]
+      }
+    },
+    {
+      "vertex_shader": "minecraft:core/screenquad",
+      "fragment_shader": "stellarity:post/bloom_box_blur",
+      "inputs": [
+        {
+          "sampler_name": "In",
+          "target": "stellarity:outline_bloom_swap",
+          "bilinear": true
+        }
+      ],
+      "output": "stellarity:outline_bloom",
+      "uniforms": {
+        "BlurConfig": [
+          {
+            "name": "BlurDir",
+            "type": "vec2",
+            "value": [
+              1.0,
+              0.0
+            ]
+          },
+          {
+            "name": "Radius",
+            "type": "float",
+            "value": 8.0
+          }
+        ]
+      }
+    },
+    {
+      "vertex_shader": "minecraft:core/screenquad",
+      "fragment_shader": "stellarity:post/entity_outline_combine",
+      "inputs": [
+        {
+          "sampler_name": "In",
+          "target": "stellarity:outline_inner"
+        },
+        {
+          "sampler_name": "Bloom",
+          "target": "stellarity:outline_bloom"
+        }
+      ],
+      "output": "minecraft:entity_outline"
+    }
+  ]
+}

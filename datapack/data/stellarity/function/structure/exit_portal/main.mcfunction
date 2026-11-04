@@ -6,9 +6,13 @@ tag @e[type=marker,tag=stellarity.primary_portal] remove stellarity.primary_port
 execute in minecraft:the_end if block 0 62 1 minecraft:wall_torch run function stellarity:structure/exit_portal/force_init
 execute in minecraft:the_end if block 0 60 4 minecraft:end_stone run function stellarity:structure/exit_portal/force_init
 
+execute in minecraft:the_end if block 0 270 0 minecraft:bedrock run function stellarity:structure/exit_portal/purge_sky
+execute in minecraft:the_end if block 0 260 0 minecraft:bedrock run function stellarity:structure/exit_portal/purge_sky
 execute in minecraft:the_end if block 0 255 0 minecraft:bedrock run function stellarity:structure/exit_portal/purge_sky
+execute in minecraft:the_end if block 0 240 0 minecraft:bedrock run function stellarity:structure/exit_portal/purge_sky
 execute in minecraft:the_end if block 0 200 0 minecraft:bedrock run function stellarity:structure/exit_portal/purge_sky
 execute in minecraft:the_end unless block 0 255 0 air unless block 0 255 0 dirt run function stellarity:structure/exit_portal/purge_sky
+execute in minecraft:the_end unless block 0 265 0 air unless block 0 265 0 dirt run function stellarity:structure/exit_portal/purge_sky
 
           execute if entity @s[tag=stellarity.portal_deactivated] run function stellarity:structure/exit_portal/deactivated/animation_no_dragon
           execute if entity @s[tag=stellarity.portal_deactivated.spawn_dragon] run function stellarity:structure/exit_portal/deactivated/animation

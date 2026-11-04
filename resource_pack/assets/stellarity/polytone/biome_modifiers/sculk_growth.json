@@ -3,22 +3,34 @@
     "base": {
       "minecraft:visual/fog_color": "stellarity:biomes/sculk_growth_fog",
       "minecraft:visual/sky_color": "stellarity:biomes/sculk_growth_sky",
-      "minecraft:visual/fog_start_distance": "c.viewDistance() * (c.y() > 165 ? 0.36 : (c.y() < 60 ? 0.08 : 0.20))",
-      "minecraft:visual/fog_end_distance": "c.viewDistance() * (c.y() > 165 ? 0.88 : (c.y() < 60 ? 0.54 : 0.78))",
+      "minecraft:visual/fog_start_distance": "c.viewDistance() * (c.y() > 165 ? 0.08 : (c.y() < 60 ? 0.005 : 0.02))",
+      "minecraft:visual/fog_end_distance": "c.viewDistance() * (c.y() > 165 ? 0.74 : (c.y() < 60 ? 0.44 : 0.62))",
       "minecraft:visual/ambient_particles": {
         "modifier": "override",
         "argument": [
           {
             "particle": {
-              "type": "minecraft:sculk_charge_pop"
+              "type": "stellarity:drift_fog_abyss"
             },
-            "probability": 0.006
+            "probability": 0.0035
           },
           {
             "particle": {
               "type": "minecraft:sculk_soul"
             },
             "probability": 0.004
+          },
+          {
+            "particle": {
+              "type": "minecraft:sculk_charge_pop"
+            },
+            "probability": 0.003
+          },
+          {
+            "particle": {
+              "type": "stellarity:void_wisp"
+            },
+            "probability": 0.003
           }
         ]
       }

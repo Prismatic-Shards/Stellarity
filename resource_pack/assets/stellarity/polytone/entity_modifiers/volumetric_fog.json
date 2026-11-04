@@ -3,41 +3,24 @@
     "minecraft:player"
   ],
   "emitters": [
-    {
-      "particle": "stellarity:drift_fog_astral",
-      "max_distance": 32,
-      "chance": "(config('stellarity:volumetric_fog') != '§cOFF') && (o.biome() == 'stellarity:the_hallow' || o.biome() == 'stellarity:amethyst_forest' || o.biome() == 'stellarity:prismatic_dunes' || o.biome() == 'stellarity:crystal_crags') ? 0.08 : 0.0",
-      "count": "1",
-      "x": "r.rand(-22.0, 22.0)",
-      "y": "r.rand(-1.5, 3.5)",
-      "z": "r.rand(-22.0, 22.0)"
-    },
-    {
-      "particle": "stellarity:drift_fog_toxic",
-      "max_distance": 32,
-      "chance": "(config('stellarity:volumetric_fog') != '§cOFF') && (o.biome() == 'stellarity:warped_marsh' || o.biome() == 'stellarity:prismarine_forest' || o.biome() == 'stellarity:sculk_growth') ? 0.09 : 0.0",
-      "count": "1",
-      "x": "r.rand(-22.0, 22.0)",
-      "y": "r.rand(-1.5, 3.5)",
-      "z": "r.rand(-22.0, 22.0)"
-    },
-    {
-      "particle": "stellarity:drift_fog_ash",
-      "max_distance": 32,
-      "chance": "(config('stellarity:volumetric_fog') != '§cOFF') && (o.biome() == 'stellarity:ashfall_deltas' || o.biome() == 'dragons_den' || o.biome() == 'stellarity:fiery_hills' || o.biome() == 'stellarity:flesh_tundra') ? 0.09 : 0.0",
-      "count": "1",
-      "x": "r.rand(-22.0, 22.0)",
-      "y": "r.rand(-1.5, 3.5)",
-      "z": "r.rand(-22.0, 22.0)"
-    },
+
     {
       "particle": "stellarity:drift_fog_abyss",
-      "max_distance": 32,
-      "chance": "(config('stellarity:volumetric_fog') != '§cOFF') && (o.biome() == 'stellarity:the_void' || o.biome() == 'stellarity:the_nest' || (g.skyType() == 2 && c.y() < 60)) ? 0.08 : 0.0",
-      "count": "1",
+      "max_distance": 36,
+      "chance": "(config('stellarity:volumetric_fog') == '§aON' ? 0.10 : (config('stellarity:volumetric_fog') == '§eREDUCED' ? 0.05 : 0.0)) * ((o.biome() == 'stellarity:the_void' || o.biome() == 'stellarity:the_nest' || (g.skyType() == 2 && c.y() < 60)) ? 1.0 : 0.0)",
+      "count": "3",
       "x": "r.rand(-24.0, 24.0)",
       "y": "r.rand(-3.0, 2.0)",
       "z": "r.rand(-24.0, 24.0)"
+    },
+    {
+      "particle": "stellarity:drift_fog_dragon",
+      "max_distance": 48,
+      "chance": "(config('stellarity:volumetric_fog') == '§aON' ? 0.22 : (config('stellarity:volumetric_fog') == '§eREDUCED' ? 0.11 : 0.0)) * (o.biome() == 'stellarity:dragons_den' ? 1.0 : 0.0)",
+      "count": "5",
+      "x": "r.rand(-26.0, 26.0)",
+      "y": "r.rand(-3.0, 6.0)",
+      "z": "r.rand(-26.0, 26.0)"
     }
   ]
 }

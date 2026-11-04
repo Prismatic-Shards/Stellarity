@@ -1,26 +1,46 @@
 {
-  "type": "minecraft:lake",
-  "fluid": {
-    "type": "minecraft:simple",
-    "state": {
-      "id": "minecraft:water"
-    }
+  "type": "minecraft:waterlogged_vegetation_patch",
+  "surface": "floor",
+  "depth": {
+    "type": "minecraft:uniform",
+    "min_inclusive": 2,
+    "max_inclusive": 4
   },
-  "barrier": {
-    "type": "minecraft:simple",
-    "state": {
-      "id": "minecraft:mud"
-    }
+  "vertical_range": 5,
+  "extra_bottom_block_chance": 0.8,
+  "extra_edge_column_chance": 0.5,
+  "vegetation_chance": 0.4,
+  "xz_radius": {
+    "type": "minecraft:uniform",
+    "min_inclusive": 6,
+    "max_inclusive": 10
   },
-  "can_place_feature": {
-    "type": "minecraft:true"
+  "replaceable": "#stellarity:_worldgen/warped_marsh/ground",
+  "ground_state": {
+    "type": "minecraft:weighted",
+    "entries": [
+      {
+        "weight": 60,
+        "data": {
+          "id": "minecraft:mud"
+        }
+      },
+      {
+        "weight": 25,
+        "data": {
+          "id": "minecraft:muddy_mangrove_roots"
+        }
+      },
+      {
+        "weight": 15,
+        "data": {
+          "id": "minecraft:packed_mud"
+        }
+      }
+    ]
   },
-  "can_replace_with_air_or_fluid": {
-    "type": "minecraft:matching_block_tag",
-    "tag": "stellarity:_worldgen/warped_marsh/ground"
-  },
-  "can_replace_with_barrier": {
-    "type": "minecraft:matching_block_tag",
-    "tag": "stellarity:_worldgen/warped_marsh/ground"
+  "vegetation_feature": {
+    "feature": "stellarity:warped_marsh/pond_plants",
+    "placement": []
   }
 }

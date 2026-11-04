@@ -1,0 +1,1 @@
+execute facing entity @e[type=item_display,tag=sand.tornado,distance=..16,sort=nearest,limit=1] eyes positioned ^ ^ ^0.25 run tp @s ~ ~ ~

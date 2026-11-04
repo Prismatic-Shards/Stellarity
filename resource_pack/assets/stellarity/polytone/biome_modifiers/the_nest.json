@@ -3,22 +3,34 @@
     "base": {
       "minecraft:visual/fog_color": "stellarity:biomes/the_nest_fog",
       "minecraft:visual/sky_color": "stellarity:biomes/the_nest_sky",
-      "minecraft:visual/fog_start_distance": "c.viewDistance() * (c.y() > 165 ? 0.42 : (c.y() < 60 ? 0.08 : 0.25))",
-      "minecraft:visual/fog_end_distance": "c.viewDistance() * (c.y() > 165 ? 0.92 : (c.y() < 60 ? 0.58 : 0.82))",
+      "minecraft:visual/fog_start_distance": "c.viewDistance() * (c.y() > 165 ? 0.09 : (c.y() < 60 ? 0.008 : 0.025))",
+      "minecraft:visual/fog_end_distance": "c.viewDistance() * (c.y() > 165 ? 0.76 : (c.y() < 60 ? 0.46 : 0.64))",
       "minecraft:visual/ambient_particles": {
         "modifier": "override",
         "argument": [
           {
             "particle": {
+              "type": "stellarity:drift_fog_toxic"
+            },
+            "probability": 0.003
+          },
+          {
+            "particle": {
               "type": "minecraft:mycelium"
             },
-            "probability": 0.01
+            "probability": 0.008
           },
           {
             "particle": {
               "type": "minecraft:portal"
             },
-            "probability": 0.03
+            "probability": 0.005
+          },
+          {
+            "particle": {
+              "type": "stellarity:warped_spore"
+            },
+            "probability": 0.004
           }
         ]
       }

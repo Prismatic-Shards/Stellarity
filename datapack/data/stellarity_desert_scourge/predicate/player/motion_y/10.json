@@ -1,0 +1,12 @@
+{
+  "entity": "this",
+  "predicate": {
+    "movement": {
+      "vertical_speed": {
+        "min": 10,
+        "max": 20
+      }
+    }
+  },
+  "type": "minecraft:entity_properties"
+}

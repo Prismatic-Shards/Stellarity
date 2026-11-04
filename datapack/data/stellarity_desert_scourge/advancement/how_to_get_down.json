@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:feather"
+    },
+    "title": {
+      "translate": "adv.how_to_get_down.name",
+      "fallback": "...How to get down?"
+    },
+    "description": {
+      "translate": "adv.how_to_get_down.desc",
+      "fallback": "Stay in the air for more than 20 seconds when thrown by a Sand Tornado"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "stellarity_desert_scourge:root",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

@@ -77,7 +77,7 @@
                 {
                   "attribute": "minecraft:attack_damage",
                   "id": "minecraft:base_attack_damage",
-                  "amount": 17,
+                  "amount": 11,
                   "operation": "add_value",
                   "slot": "mainhand"
                 },

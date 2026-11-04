@@ -1,0 +1,66 @@
+# Stellarity Main Island Material Library
+
+newmtl end_stone
+Ka 1.0 1.0 1.0
+Kd 1.0 1.0 1.0
+Ks 0.0 0.0 0.0
+d 1.0
+illum 1
+map_Kd textures/end_stone.png
+
+newmtl obsidian
+Ka 1.0 1.0 1.0
+Kd 1.0 1.0 1.0
+Ks 0.0 0.0 0.0
+d 1.0
+illum 1
+map_Kd textures/obsidian.png
+
+newmtl crying_obsidian
+Ka 1.0 1.0 1.0
+Kd 1.0 1.0 1.0
+Ks 0.0 0.0 0.0
+d 1.0
+illum 1
+map_Kd textures/crying_obsidian.png
+
+newmtl bedrock
+Ka 1.0 1.0 1.0
+Kd 1.0 1.0 1.0
+Ks 0.0 0.0 0.0
+d 1.0
+illum 1
+map_Kd textures/bedrock.png
+
+newmtl end_portal
+Ka 1.0 1.0 1.0
+Kd 1.0 1.0 1.0
+Ks 0.0 0.0 0.0
+d 1.0
+illum 1
+map_Kd textures/end_portal.png
+
+newmtl reinforced_deepslate
+Ka 1.0 1.0 1.0
+Kd 1.0 1.0 1.0
+Ks 0.0 0.0 0.0
+d 1.0
+illum 1
+map_Kd textures/reinforced_deepslate.png
+
+newmtl cobbled_deepslate
+Ka 1.0 1.0 1.0
+Kd 1.0 1.0 1.0
+Ks 0.0 0.0 0.0
+d 1.0
+illum 1
+map_Kd textures/cobbled_deepslate.png
+
+newmtl torch
+Ka 1.0 1.0 1.0
+Kd 1.0 1.0 1.0
+Ks 0.0 0.0 0.0
+d 1.0
+illum 1
+map_Kd textures/torch.png
+
