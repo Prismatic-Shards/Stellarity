@@ -1,0 +1,14 @@
+{
+  "model": {
+    "property": "minecraft:using_item",
+    "type": "minecraft:condition",
+    "on_false": {
+      "type": "minecraft:model",
+      "model": "stellarity:item/crest_of_the_end"
+    },
+    "on_true": {
+      "type": "minecraft:model",
+      "model": "stellarity:item/crest_of_the_end_blocking"
+    }
+  }
+}

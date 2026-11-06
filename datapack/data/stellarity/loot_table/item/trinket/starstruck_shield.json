@@ -10,35 +10,10 @@
             {
               "type": "minecraft:set_components",
               "components": {
-                "tooltip_display": {
-                  "hidden_components": ["banner_patterns"]
-                },
                 "minecraft:max_damage": 512,
                 "minecraft:custom_data": {
                   "stellarity:item": "starstruck_shield"
                 },
-                "banner_patterns": [
-                  {
-                    "pattern": "gradient_up",
-                    "color": "orange"
-                  },
-                  {
-                    "pattern": "curly_border",
-                    "color": "orange"
-                  },
-                  {
-                    "pattern": "curly_border",
-                    "color": "yellow"
-                  },
-                  {
-                    "pattern": "rhombus",
-                    "color": "orange"
-                  },
-                  {
-                    "pattern": "rhombus",
-                    "color": "yellow"
-                  }
-                ],
                 "rarity": "epic",
                 "minecraft:damage_resistant": {
                   "types": "#is_fire"
@@ -47,7 +22,8 @@
                   "translate": "item.stellarity.starstruck_shield",
                   "color": "#FF76D0",
                   "italic": false
-                }
+                },
+                "minecraft:item_model": "stellarity:starstruck_shield"
               }
             },
             {

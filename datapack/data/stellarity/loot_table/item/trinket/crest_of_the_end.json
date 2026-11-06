@@ -8,44 +8,6 @@
           "name": "minecraft:shield",
           "modifier": [
             {
-              "type": "minecraft:set_banner_pattern",
-              "patterns": [
-                {
-                  "pattern": "minecraft:base",
-                  "color": "purple"
-                },
-                {
-                  "pattern": "minecraft:gradient",
-                  "color": "magenta"
-                },
-                {
-                  "pattern": "minecraft:triangle_top",
-                  "color": "black"
-                },
-                {
-                  "pattern": "minecraft:triangle_bottom",
-                  "color": "black"
-                },
-                {
-                  "pattern": "minecraft:cross",
-                  "color": "purple"
-                },
-                {
-                  "pattern": "minecraft:curly_border",
-                  "color": "black"
-                },
-                {
-                  "pattern": "minecraft:flower",
-                  "color": "purple"
-                },
-                {
-                  "pattern": "minecraft:flower",
-                  "color": "black"
-                }
-              ],
-              "append": false
-            },
-            {
               "type": "minecraft:set_components",
               "components": {
                 "minecraft:custom_data": {
@@ -60,9 +22,7 @@
                 "minecraft:damage_resistant": {
                   "types": "#is_fire"
                 },
-                "tooltip_display": {
-                  "hidden_components": ["banner_patterns"]
-                }
+                "minecraft:item_model": "stellarity:crest_of_the_end"
               }
             },
             {
