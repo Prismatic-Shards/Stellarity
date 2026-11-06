@@ -1,0 +1,15 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "stellarity:hallowed"
+      }
+    ],
+    "wings": [
+      {
+        "texture": "stellarity:empress",
+        "use_player_texture": false
+      }
+    ]
+  }
+}

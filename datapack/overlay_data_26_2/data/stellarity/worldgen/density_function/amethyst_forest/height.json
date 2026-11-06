@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:cache_once",
+  "argument": {
+    "type": "minecraft:add",
+    "argument1": {
+      "type": "minecraft:add",
+      "argument1": 96,
+      "argument2": {
+        "type": "minecraft:mul",
+        "argument1": 170,
+        "argument2": "stellarity:amethyst_forest/peak_factor"
+      }
+    },
+    "argument2": {
+      "type": "minecraft:mul",
+      "argument1": 1.5,
+      "argument2": {
+        "type": "minecraft:noise",
+        "noise": "stellarity:amethyst_forest/peak_noise",
+        "xz_scale": 2.2,
+        "y_scale": 0,
+        "shift_x": 0,
+        "shift_y": 57,
+        "shift_z": 0
+      }
+    }
+  }
+}

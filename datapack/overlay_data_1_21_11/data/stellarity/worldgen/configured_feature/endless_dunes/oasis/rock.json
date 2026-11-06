@@ -1,68 +1,35 @@
 {
-    "type": "minecraft:simple_random_selector",
-    "config": {
-        "features": [
-            {
-                "feature": {
-                    "config": {
-                        "tries": 1,
-                        "xz_spread": 11,
-                        "y_spread": 4,
-                        "feature": {
-                            "feature": {
-                                "config": {
-                                    "state": {
-                                        "Name": "minecraft:cobblestone"
-                                    }
-                                },
-                                "type": "minecraft:forest_rock"
-                            },
-                            "placement": []
-                        }
-                    },
-                    "type": "minecraft:random_patch"
-                },
-                "placement": []
+  "type": "minecraft:simple_random_selector",
+  "config": {
+    "features": [
+      {
+        "feature": {
+          "type": "minecraft:block_blob",
+          "config": {
+            "can_place_on": {
+              "type": "minecraft:true"
             },
-            {
-                "feature": {
-                    "config": {
-                        "tries": 1,
-                        "xz_spread": 11,
-                        "y_spread": 4,
-                        "feature": {
-                            "feature": {
-                                "config": {
-                                    "state": {
-                                        "Name": "minecraft:mossy_cobblestone"
-                                    }
-                                },
-                                "type": "minecraft:forest_rock"
-                            },
-                            "placement": []
-                        }
-                    },
-                    "type": "minecraft:random_patch"
-                },
-                "placement": [
-                    {
-                        "type": "minecraft:rarity_filter",
-                        "chance": 3
-                    },
-                    {
-                        "type": "minecraft:block_predicate_filter",
-                        "predicate": {
-                            "type": "minecraft:matching_blocks",
-                            "offset": [
-                                0,
-                                -1,
-                                0
-                            ],
-                            "blocks": "minecraft:grass_block"
-                        }
-                    }
-                ]
+            "state": {
+              "Name": "minecraft:cobblestone"
             }
-        ]
-    }
+          }
+        },
+        "placement": []
+      },
+      {
+        "feature": {
+          "type": "minecraft:block_blob",
+          "config": {
+            "can_place_on": {
+              "type": "minecraft:true"
+            },
+            "state": {
+              "Name": "minecraft:mossy_cobblestone"
+            }
+          }
+        },
+        "placement": []
+      }
+    ]
+  }
 }

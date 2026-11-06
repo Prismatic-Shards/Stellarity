@@ -8,7 +8,7 @@
         "projection": "rigid",
         "override_liquid_settings": "ignore_waterlogging",
         "location": "stellarity:village/decorations/campfire_1",
-        "processors": "minecraft:empty"
+        "processors": "stellarity:ignore_structure_void"
       }
     },
     {
@@ -18,7 +18,7 @@
         "projection": "rigid",
         "override_liquid_settings": "ignore_waterlogging",
         "location": "stellarity:village/decorations/campfire_2",
-        "processors": "minecraft:empty"
+        "processors": "stellarity:ignore_structure_void"
       }
     },
     {
@@ -28,7 +28,7 @@
         "projection": "rigid",
         "override_liquid_settings": "ignore_waterlogging",
         "location": "stellarity:village/decorations/lamp_1",
-        "processors": "minecraft:empty"
+        "processors": "stellarity:ignore_structure_void"
       }
     },
     {
@@ -38,7 +38,7 @@
         "projection": "rigid",
         "override_liquid_settings": "ignore_waterlogging",
         "location": "stellarity:village/decorations/lamp_2",
-        "processors": "minecraft:empty"
+        "processors": "stellarity:ignore_structure_void"
       }
     },
     {
@@ -48,7 +48,7 @@
         "projection": "rigid",
         "override_liquid_settings": "ignore_waterlogging",
         "location": "stellarity:village/decorations/lamp_3",
-        "processors": "minecraft:empty"
+        "processors": "stellarity:ignore_structure_void"
       }
     },
     {
@@ -58,7 +58,7 @@
         "projection": "rigid",
         "override_liquid_settings": "ignore_waterlogging",
         "location": "stellarity:village/decorations/lamp_4",
-        "processors": "minecraft:empty"
+        "processors": "stellarity:ignore_structure_void"
       }
     },
     {
@@ -68,7 +68,7 @@
         "projection": "rigid",
         "override_liquid_settings": "ignore_waterlogging",
         "location": "stellarity:village/decorations/lamp_5",
-        "processors": "minecraft:empty"
+        "processors": "stellarity:ignore_structure_void"
       }
     },
     {
@@ -78,7 +78,7 @@
         "projection": "rigid",
         "override_liquid_settings": "ignore_waterlogging",
         "location": "stellarity:village/decorations/lamp_6",
-        "processors": "minecraft:empty"
+        "processors": "stellarity:ignore_structure_void"
       }
     },
     {
@@ -88,7 +88,7 @@
         "projection": "rigid",
         "override_liquid_settings": "ignore_waterlogging",
         "location": "stellarity:village/decorations/lamp_7",
-        "processors": "minecraft:empty"
+        "processors": "stellarity:ignore_structure_void"
       }
     },
     {
@@ -134,7 +134,7 @@
         "projection": "rigid",
         "override_liquid_settings": "ignore_waterlogging",
         "location": "stellarity:village/decorations/planter_box_2",
-        "processors": "minecraft:empty"
+        "processors": "stellarity:ignore_structure_void"
       }
     },
     {
@@ -144,7 +144,7 @@
         "projection": "rigid",
         "override_liquid_settings": "ignore_waterlogging",
         "location": "stellarity:village/decorations/planter_box_3",
-        "processors": "minecraft:empty"
+        "processors": "stellarity:ignore_structure_void"
       }
     },
     {
@@ -154,7 +154,7 @@
         "projection": "rigid",
         "override_liquid_settings": "ignore_waterlogging",
         "location": "stellarity:village/decorations/planter_box_4",
-        "processors": "minecraft:empty"
+        "processors": "stellarity:ignore_structure_void"
       }
     },
     {
@@ -200,7 +200,7 @@
         "projection": "rigid",
         "override_liquid_settings": "ignore_waterlogging",
         "location": "stellarity:village/decorations/planter_box_6",
-        "processors": "minecraft:empty"
+        "processors": "stellarity:ignore_structure_void"
       }
     },
     {
@@ -210,7 +210,7 @@
         "projection": "rigid",
         "override_liquid_settings": "ignore_waterlogging",
         "location": "stellarity:village/decorations/planter_box_7",
-        "processors": "minecraft:empty"
+        "processors": "stellarity:ignore_structure_void"
       }
     }
   ]

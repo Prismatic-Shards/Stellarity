@@ -1,0 +1,117 @@
+{
+  "type": "minecraft:vegetation_patch",
+  "surface": "ceiling",
+  "depth": {
+    "type": "minecraft:uniform",
+    "min_inclusive": 2,
+    "max_inclusive": 5
+  },
+  "vertical_range": 8,
+  "extra_bottom_block_chance": 0.8,
+  "extra_edge_column_chance": 0.8,
+  "vegetation_chance": 0.85,
+  "xz_radius": {
+    "type": "minecraft:uniform",
+    "min_inclusive": 2,
+    "max_inclusive": 4
+  },
+  "replaceable": "#stellarity:_worldgen/stalactites_replacable",
+  "ground_state": {
+    "type": "minecraft:weighted",
+    "entries": [
+      {
+        "weight": 5,
+        "data": {
+          "id": "minecraft:smooth_sandstone"
+        }
+      },
+      {
+        "weight": 3,
+        "data": {
+          "id": "minecraft:sandstone"
+        }
+      },
+      {
+        "weight": 1,
+        "data": {
+          "id": "minecraft:terracotta"
+        }
+      }
+    ]
+  },
+  "vegetation_feature": {
+    "feature": {
+      "type": "minecraft:block_column",
+      "direction": "down",
+      "allowed_placement": {
+        "type": "minecraft:matching_blocks",
+        "blocks": [
+          "minecraft:air"
+        ]
+      },
+      "prioritize_tip": true,
+      "layers": [
+        {
+          "height": {
+            "type": "minecraft:uniform",
+            "min_inclusive": 2,
+            "max_inclusive": 6
+          },
+          "provider": {
+            "type": "minecraft:weighted",
+            "entries": [
+              {
+                "weight": 5,
+                "data": {
+                  "id": "minecraft:smooth_sandstone"
+                }
+              },
+              {
+                "weight": 4,
+                "data": {
+                  "id": "minecraft:sandstone"
+                }
+              },
+              {
+                "weight": 1,
+                "data": {
+                  "id": "minecraft:cut_sandstone"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "height": 1,
+          "provider": {
+            "type": "minecraft:weighted",
+            "entries": [
+              {
+                "weight": 6,
+                "data": {
+                  "id": "minecraft:sandstone"
+                }
+              },
+              {
+                "weight": 2,
+                "data": {
+                  "id": "minecraft:cobweb"
+                }
+              },
+              {
+                "weight": 1,
+                "data": {
+                  "id": "minecraft:bone_block",
+                  "properties": {
+                    "axis": "y"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "placement": []
+  }
+}

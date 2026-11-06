@@ -11,7 +11,7 @@
 		"min_inclusive": 1,
 		"max_inclusive": 3
 	},
-	"replaceable": "#stellarity:_worldgen/single/snow_block",
+	"replaceable": "#stellarity:_worldgen/frozen_spikes/patches_replacable",
 	"ground_state": {
 		"type": "minecraft:weighted",
 		"entries": [

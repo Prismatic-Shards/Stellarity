@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "": {
+      "type": "polytone:expression",
+      "fabric:type": "polytone:expression",
+      "cases": [
+        {
+          "when": "o.biome().contains('frost') || o.biome().contains('frozen')",
+          "model": {
+            "model": "stellarity:block/snowy_short_grass"
+          }
+        }
+      ],
+      "fallback": {
+        "model": "minecraft:block/short_grass"
+      }
+    }
+  }
+}

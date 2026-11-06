@@ -22,6 +22,10 @@
                   "color": "#F816FF",
                   "italic": false
                 },
+                "minecraft:use_cooldown": {
+                  "seconds": 15.0,
+                  "cooldown_group": "stellarity:spellbook_obstruct"
+                },
                 "!max_damage": {}
               }
             },

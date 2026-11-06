@@ -8,7 +8,7 @@
         "projection": "rigid",
         "override_liquid_settings": "ignore_waterlogging",
         "location": "stellarity:chapel/trees/1",
-        "processors": "minecraft:empty"
+        "processors": "stellarity:ignore_structure_void"
       }
     },
     {
@@ -18,7 +18,7 @@
         "projection": "rigid",
         "override_liquid_settings": "ignore_waterlogging",
         "location": "stellarity:chapel/trees/2",
-        "processors": "minecraft:empty"
+        "processors": "stellarity:ignore_structure_void"
       }
     },
     {
@@ -28,7 +28,7 @@
         "projection": "rigid",
         "override_liquid_settings": "ignore_waterlogging",
         "location": "stellarity:chapel/trees/3",
-        "processors": "minecraft:empty"
+        "processors": "stellarity:ignore_structure_void"
       }
     },
     {
@@ -38,7 +38,7 @@
         "projection": "rigid",
         "override_liquid_settings": "ignore_waterlogging",
         "location": "stellarity:chapel/trees/4",
-        "processors": "minecraft:empty"
+        "processors": "stellarity:ignore_structure_void"
       }
     },
     {
@@ -48,7 +48,7 @@
         "projection": "rigid",
         "override_liquid_settings": "ignore_waterlogging",
         "location": "stellarity:chapel/trees/5",
-        "processors": "minecraft:empty"
+        "processors": "stellarity:ignore_structure_void"
       }
     },
     {
@@ -58,7 +58,7 @@
         "projection": "rigid",
         "override_liquid_settings": "ignore_waterlogging",
         "location": "stellarity:chapel/trees/6",
-        "processors": "minecraft:empty"
+        "processors": "stellarity:ignore_structure_void"
       }
     },
     {
@@ -68,7 +68,7 @@
         "projection": "rigid",
         "override_liquid_settings": "ignore_waterlogging",
         "location": "stellarity:chapel/trees/7",
-        "processors": "minecraft:empty"
+        "processors": "stellarity:ignore_structure_void"
       }
     },
     {
@@ -78,7 +78,7 @@
         "projection": "rigid",
         "override_liquid_settings": "ignore_waterlogging",
         "location": "stellarity:chapel/trees/8",
-        "processors": "minecraft:empty"
+        "processors": "stellarity:ignore_structure_void"
       }
     },
     {
@@ -88,7 +88,7 @@
         "projection": "rigid",
         "override_liquid_settings": "ignore_waterlogging",
         "location": "stellarity:chapel/trees/9",
-        "processors": "minecraft:empty"
+        "processors": "stellarity:ignore_structure_void"
       }
     },
     {

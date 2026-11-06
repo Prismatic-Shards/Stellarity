@@ -1,0 +1,8 @@
+{
+  "targets": [
+    "minecraft:campfire",
+    "minecraft:soul_campfire"
+  ],
+  "require_config": "stellarity:colored_lights",
+  "colored_light": "#ad75ea"
+}

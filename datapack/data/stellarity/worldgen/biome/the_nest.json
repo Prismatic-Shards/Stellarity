@@ -3,22 +3,22 @@
   "downfall": 0.4,
   "has_precipitation": false,
   "attributes": {
-    "visual/sky_color": 0,
-    "visual/fog_color": 0,
-    "visual/water_fog_color": 3355443,
+    "visual/sky_color": 1379864,
+    "visual/fog_color": 4731956,
+    "visual/water_fog_color": 2825762,
     "audio/ambient_sounds": {
       "loop": {
-        "sound_id": "stellarity:ambient.the_end.dark_calm"
+        "sound_id": "ambient.warped_forest.loop"
       },
       "mood": {
-        "sound": "ambient.basalt_deltas.mood",
-        "tick_delay": 1600,
-        "block_search_extent": 5,
-        "offset": 1
+        "sound": "entity.endermite.ambient",
+        "tick_delay": 500,
+        "block_search_extent": 6,
+        "offset": 2
       },
       "additions": {
-        "sound": "ambient.basalt_deltas.additions",
-        "tick_chance": 0.0033
+        "sound": "block.chorus_flower.grow",
+        "tick_chance": 0.015
       }
     },
     "visual/ambient_particles": {
@@ -26,9 +26,9 @@
       "argument": [
         {
           "particle": {
-            "type": "minecraft:white_ash"
+            "type": "minecraft:portal"
           },
-          "probability": 0.01
+          "probability": 0.0025
         }
       ]
     },
@@ -58,7 +58,8 @@
   "effects": {
     "water_color": 5855577,
     "grass_color": 8882055,
-    "foliage_color": 9079434
+    "foliage_color": 9079434,
+    "dry_foliage_color": 7164746
   },
   "carvers": [
     "stellarity:ravine",

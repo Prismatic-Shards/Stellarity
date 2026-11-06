@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:moss_block",
+    "minecraft:coarse_dirt",
+    "minecraft:mud",
+    "minecraft:packed_mud",
+    "minecraft:muddy_mangrove_roots",
+    "minecraft:rooted_dirt",
+    "minecraft:mycelium",
+    "minecraft:clay",
+    "minecraft:end_stone",
+    "minecraft:warped_wart_block"
+  ]
+}

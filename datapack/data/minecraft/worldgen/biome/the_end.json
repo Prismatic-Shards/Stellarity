@@ -3,9 +3,24 @@
   "downfall": 0.4,
   "has_precipitation": false,
   "attributes": {
-    "visual/sky_color": 0,
-    "visual/fog_color": 0,
+    "visual/sky_color": 1050650,
+    "visual/fog_color": 6045045,
     "visual/water_fog_color": 4272254,
+    "audio/ambient_sounds": {
+      "loop": {
+        "sound_id": "stellarity:ambient.the_end.heavenly_grim"
+      },
+      "mood": {
+        "sound": "minecraft:ambient.cave",
+        "tick_delay": 6000,
+        "block_search_extent": 8,
+        "offset": 2
+      },
+      "additions": {
+        "sound": "minecraft:ambient.nether_wastes.additions",
+        "tick_chance": 0.01
+      }
+    },
     "gameplay/natural_mob_spawns": {
       "spawn_costs": {
         "minecraft:enderman": {
@@ -31,7 +46,8 @@
   "effects": {
     "water_color": 6443678,
     "grass_color": 14606046,
-    "foliage_color": 12763842
+    "foliage_color": 12763842,
+    "dry_foliage_color": 8415372
   },
   "carvers": [],
   "features": [

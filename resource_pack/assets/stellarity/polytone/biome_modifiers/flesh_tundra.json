@@ -1,0 +1,39 @@
+{
+  "attributes_modifiers": {
+    "base": {
+      "minecraft:visual/fog_color": "stellarity:biomes/flesh_tundra_fog",
+      "minecraft:visual/sky_color": "stellarity:biomes/flesh_tundra_sky",
+      "minecraft:visual/fog_start_distance": "c.viewDistance() * (c.y() > 165 ? 0.09 : (c.y() < 60 ? 0.008 : 0.025))",
+      "minecraft:visual/fog_end_distance": "c.viewDistance() * (c.y() > 165 ? 0.78 : (c.y() < 60 ? 0.46 : 0.65))",
+      "minecraft:visual/ambient_particles": {
+        "modifier": "override",
+        "argument": [
+          {
+            "particle": {
+              "type": "stellarity:drift_fog_toxic"
+            },
+            "probability": 0.003
+          },
+          {
+            "particle": {
+              "type": "minecraft:crimson_spore"
+            },
+            "probability": 0.009
+          },
+          {
+            "particle": {
+              "type": "minecraft:ash"
+            },
+            "probability": 0.005
+          },
+          {
+            "particle": {
+              "type": "stellarity:cosmic_dust"
+            },
+            "probability": 0.003
+          }
+        ]
+      }
+    }
+  }
+}

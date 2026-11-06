@@ -1,0 +1,12 @@
+{
+  "target_type": "entity",
+  "targets": [
+    "minecraft:end_crystal"
+  ],
+  "require_config": "stellarity:colored_lights",
+  "colored_light": {
+    "color": "#c488ff",
+    "radius": 12,
+    "brightness": 0.9
+  }
+}

@@ -1,0 +1,4 @@
+{
+  "activation_condition": "(config('stellarity:particle_glow') != '§cOFF') && (g.skyType() == 2)",
+  "post_chain": "stellarity:particle_glow"
+}

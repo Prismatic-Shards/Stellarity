@@ -1,0 +1,208 @@
+{
+  "model": {
+    "type": "minecraft:condition",
+    "on_false": {
+      "type": "minecraft:select",
+      "property": "minecraft:trim_material",
+      "cases": [
+        {
+          "when": "amethyst",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/elytra/elytra_amethyst_trim"
+          }
+        },
+        {
+          "when": "copper",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/elytra/elytra_copper_trim"
+          }
+        },
+        {
+          "when": "diamond",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/elytra/elytra_diamond_trim"
+          }
+        },
+        {
+          "when": "emerald",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/elytra/elytra_emerald_trim"
+          }
+        },
+        {
+          "when": "gold",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/elytra/elytra_gold_trim"
+          }
+        },
+        {
+          "when": "iron",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/elytra/elytra_iron_trim"
+          }
+        },
+        {
+          "when": "lapis",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/elytra/elytra_lapis_trim"
+          }
+        },
+        {
+          "when": "netherite",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/elytra/elytra_netherite_trim"
+          }
+        },
+        {
+          "when": "quartz",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/elytra/elytra_quartz_trim"
+          }
+        },
+        {
+          "when": "redstone",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/elytra/elytra_redstone_trim"
+          }
+        },
+        {
+          "when": "resin",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/elytra/elytra_resin_trim"
+          }
+        },
+        {
+          "when": "stellarity:chorus",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/elytra/elytra_chorus_trim"
+          }
+        },
+        {
+          "when": "stellarity:enderite",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/elytra/elytra_enderite_trim"
+          }
+        }
+      ],
+      "fallback": {
+        "type": "minecraft:model",
+        "model": "minecraft:item/elytra/elytra"
+      }
+    },
+    "on_true": {
+      "type": "minecraft:select",
+      "property": "minecraft:trim_material",
+      "cases": [
+        {
+          "when": "amethyst",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/broken_elytra/elytra_amethyst_trim"
+          }
+        },
+        {
+          "when": "copper",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/broken_elytra/elytra_copper_trim"
+          }
+        },
+        {
+          "when": "diamond",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/broken_elytra/elytra_diamond_trim"
+          }
+        },
+        {
+          "when": "emerald",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/broken_elytra/elytra_emerald_trim"
+          }
+        },
+        {
+          "when": "gold",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/broken_elytra/elytra_gold_trim"
+          }
+        },
+        {
+          "when": "iron",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/broken_elytra/elytra_iron_trim"
+          }
+        },
+        {
+          "when": "lapis",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/broken_elytra/elytra_lapis_trim"
+          }
+        },
+        {
+          "when": "netherite",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/broken_elytra/elytra_netherite_trim"
+          }
+        },
+        {
+          "when": "quartz",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/broken_elytra/elytra_quartz_trim"
+          }
+        },
+        {
+          "when": "redstone",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/broken_elytra/elytra_redstone_trim"
+          }
+        },
+        {
+          "when": "resin",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/broken_elytra/elytra_resin_trim"
+          }
+        },
+        {
+          "when": "stellarity:chorus",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/broken_elytra/elytra_chorus_trim"
+          }
+        },
+        {
+          "when": "stellarity:enderite",
+          "model": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/broken_elytra/elytra_enderite_trim"
+          }
+        }
+      ],
+      "fallback": {
+        "type": "minecraft:model",
+        "model": "minecraft:item/broken_elytra/elytra"
+      }
+    },
+    "property": "minecraft:broken"
+  }
+}

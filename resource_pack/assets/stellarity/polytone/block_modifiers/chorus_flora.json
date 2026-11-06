@@ -1,0 +1,36 @@
+{
+  "targets": [
+    "minecraft:chorus_flower",
+    "minecraft:chorus_plant"
+  ],
+  "particle_emitters": [
+    {
+      "particle": "minecraft:portal",
+      "chance": 0.02,
+      "x": "0.5 + (r.rand() - 0.5) * 0.8",
+      "y": "0.5 + (r.rand() - 0.5) * 0.8",
+      "z": "0.5 + (r.rand() - 0.5) * 0.8",
+      "dx": "(r.rand() - 0.5) * 0.05",
+      "dy": "0.02 + r.rand() * 0.03",
+      "dz": "(r.rand() - 0.5) * 0.05"
+    },
+    {
+      "particle": "minecraft:end_rod",
+      "chance": 0.008,
+      "x": "0.5 + (r.rand() - 0.5) * 0.6",
+      "y": "0.5 + (r.rand() - 0.5) * 0.6",
+      "z": "0.5 + (r.rand() - 0.5) * 0.6",
+      "dx": "0.0",
+      "dy": "0.015",
+      "dz": "0.0"
+    }
+  ],
+  "sound_emitters": [
+    {
+      "sound": "minecraft:block.chorus_flower.grow",
+      "chance": 0.0008,
+      "volume": 0.25,
+      "pitch": "1.2 + 0.4 * r.rand()"
+    }
+  ]
+}

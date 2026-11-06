@@ -1,0 +1,60 @@
+{
+  "type": "minecraft:block_column",
+  "config": {
+    "direction": "up",
+    "allowed_placement": {
+      "type": "minecraft:matching_blocks",
+      "blocks": [
+        "minecraft:air",
+        "minecraft:cave_air"
+      ]
+    },
+    "prioritize_tip": true,
+    "layers": [
+      {
+        "height": {
+          "type": "minecraft:uniform",
+          "min_inclusive": 3,
+          "max_inclusive": 7
+        },
+        "provider": {
+          "type": "minecraft:weighted_state_provider",
+          "entries": [
+            {
+              "weight": 3,
+              "data": {
+                "Name": "minecraft:obsidian"
+              }
+            },
+            {
+              "weight": 2,
+              "data": {
+                "Name": "minecraft:crying_obsidian"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "height": 1,
+        "provider": {
+          "type": "minecraft:weighted_state_provider",
+          "entries": [
+            {
+              "weight": 1,
+              "data": {
+                "Name": "minecraft:end_rod"
+              }
+            },
+            {
+              "weight": 1,
+              "data": {
+                "Name": "minecraft:crying_obsidian"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

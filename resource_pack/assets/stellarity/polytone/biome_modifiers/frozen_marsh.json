@@ -1,0 +1,40 @@
+{
+  "attributes_modifiers": {
+    "base": {
+      "minecraft:visual/fog_color": "stellarity:biomes/cold_biomes_fog",
+      "minecraft:visual/sky_color": "stellarity:biomes/cold_biomes_sky",
+      "minecraft:visual/ambient_light_color": "#0e1a26",
+      "minecraft:visual/fog_start_distance": "c.viewDistance() * (c.y() > 165 ? 0.07 : (c.y() < 60 ? 0.005 : 0.02))",
+      "minecraft:visual/fog_end_distance": "c.viewDistance() * (c.y() > 165 ? 0.72 : (c.y() < 60 ? 0.42 : 0.60))",
+      "minecraft:visual/ambient_particles": {
+        "modifier": "override",
+        "argument": [
+          {
+            "particle": {
+              "type": "stellarity:drift_fog_toxic"
+            },
+            "probability": 0.004
+          },
+          {
+            "particle": {
+              "type": "stellarity:blizzard_fog"
+            },
+            "probability": 0.004
+          },
+          {
+            "particle": {
+              "type": "minecraft:snowflake"
+            },
+            "probability": 0.007
+          },
+          {
+            "particle": {
+              "type": "stellarity:ice_cave_dust"
+            },
+            "probability": 0.005
+          }
+        ]
+      }
+    }
+  }
+}

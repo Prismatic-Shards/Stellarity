@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/pointed_dripstone_down_frustum",
+  "textures": {
+    "cross": "stellarity:block/frosted_pointed_dripstone_down_frustum",
+    "particle": "stellarity:block/frosted_pointed_dripstone_down_frustum"
+  }
+}

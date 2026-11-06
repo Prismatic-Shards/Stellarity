@@ -1,0 +1,52 @@
+{
+  "type": "minecraft:any_of",
+  "terms": [
+    {
+      "type": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "slots": {
+          "weapon.*": {
+            "predicates": {
+              "minecraft:custom_data": {
+                "stellarity:item": "radiant_kaleidoscope_ascended"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "slots": {
+          "weapon.*": {
+            "predicates": {
+              "minecraft:custom_data": {
+                "stellarity:ascended": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "slots": {
+          "weapon.*": {
+            "predicates": {
+              "minecraft:custom_data": {
+                "stellarity": {
+                  "ascended": 1
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/elytra_broken",
+  "textures": {
+    "layer1": "minecraft:trims/items/broken_elytra_trim_diamond"
+  }
+}

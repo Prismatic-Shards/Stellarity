@@ -1,0 +1,29 @@
+{
+  "type": "custom",
+  "initializer": {
+    "lifetime": "280",
+    "size": "min(128 * (RENDER_DISTANCE / 16), 512)",
+    "alpha": "0",
+    "custom": "rand()"
+  },
+  "ticker": {
+    "alpha": "(0.12 + 0.08 * sin(AGE * 0.025 + CUSTOM * 2 * pi)) * sin((pi / LIFETIME) * AGE)",
+    "dy": "(CUSTOM * 0.4) * sin(CUSTOM * 0.08 * AGE)",
+    "remove_condition": "sqrt(DISTANCE_SQUARED) > 1000"
+  },
+  "render_type": "additive_translucent",
+  "liquid_affinity": "any",
+  "random_sprite": true,
+  "rotation_mode": "look_at_y",
+  "exclusion_radius": 0,
+  "has_physics": false,
+  "kill_on_contact": false,
+  "force_spawn": true,
+  "light_level": 15,
+  "kill_when_still": false,
+  "offset": [
+    0,
+    -5,
+    0
+  ]
+}

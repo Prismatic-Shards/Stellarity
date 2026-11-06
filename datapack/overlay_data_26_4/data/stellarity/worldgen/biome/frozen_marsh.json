@@ -1,0 +1,173 @@
+{
+  "temperature": -0.5,
+  "downfall": 0.4,
+  "has_precipitation": true,
+  "temperature_modifier": "frozen",
+  "attributes": {
+    "minecraft:audio/ambient_sounds": {
+      "loop": {
+        "sound_id": "stellarity:ambient.cold_biomes.loop"
+      },
+      "mood": {
+        "sound": "ambient.soul_sand_valley.mood",
+        "tick_delay": 900,
+        "block_search_extent": 6,
+        "offset": 2
+      },
+      "additions": {
+        "sound": "ambient.underwater.loop.additions.rare",
+        "tick_chance": 0.01
+      }
+    },
+    "minecraft:gameplay/natural_mob_spawns": {
+      "argument": {
+        "spawn_costs": {
+          "minecraft:enderman": {
+            "charge": 0.6,
+            "energy_budget": 1.0
+          },
+          "minecraft:stray": {
+            "charge": 0.6,
+            "energy_budget": 1.0
+          },
+          "minecraft:frostbite": {
+            "charge": 0.6,
+            "energy_budget": 1.0
+          },
+          "minecraft:silverfish": {
+            "charge": 0.5,
+            "energy_budget": 1.0
+          },
+          "minecraft:slime": {
+            "charge": 0.6,
+            "energy_budget": 1.0
+          }
+        },
+        "spawns_by_category": {
+          "monster": [
+            {
+              "type": "minecraft:enderman",
+              "count": {
+                "type": "uniform",
+                "min_inclusive": 2,
+                "max_inclusive": 4
+              },
+              "weight": 45
+            },
+            {
+              "type": "minecraft:stray",
+              "count": {
+                "type": "uniform",
+                "min_inclusive": 2,
+                "max_inclusive": 4
+              },
+              "weight": 30
+            },
+            {
+              "type": "minecraft:frostbite",
+              "count": {
+                "type": "uniform",
+                "min_inclusive": 2,
+                "max_inclusive": 4
+              },
+              "weight": 30
+            },
+            {
+              "type": "minecraft:slime",
+              "count": {
+                "type": "uniform",
+                "min_inclusive": 2,
+                "max_inclusive": 4
+              },
+              "weight": 20
+            },
+            {
+              "type": "minecraft:silverfish",
+              "count": {
+                "type": "uniform",
+                "min_inclusive": 2,
+                "max_inclusive": 2
+              },
+              "weight": 10
+            }
+          ]
+        }
+      },
+      "modifier": "overlay"
+    },
+    "minecraft:visual/fog_color": "#14559b",
+    "minecraft:visual/sky_color": "#0b121b",
+    "minecraft:visual/water_fog_color": "#14559b",
+    "minecraft:visual/water_fog_end_distance": {
+      "argument": 0.85,
+      "modifier": "multiply"
+    },
+    "minecraft:visual/ambient_particles": {
+      "modifier": "override",
+      "argument": [
+        {
+          "particle": {
+            "type": "minecraft:snowflake"
+          },
+          "probability": 0.003
+        }
+      ]
+    }
+  },
+  "effects": {
+    "water_color": "#14559b"
+  },
+  "carvers": [
+    "stellarity:ravine",
+    "stellarity:crack"
+  ],
+  "features": [
+    [
+      "stellarity:frozen_spikes/island/ice_stalactite",
+      "minecraft:large_icicle"
+    ],
+    [
+      "stellarity:frozen_spikes/lake_ice",
+      "stellarity:frozen_spikes/lake_powder_snow"
+    ],
+    [
+      "stellarity:frozen_spikes/large_dripstone",
+      "stellarity:frozen_spikes/crystal_outcrop",
+      "stellarity:frozen_spikes/rock/glacial_erratic",
+      "stellarity:frozen_spikes/rock/frozen_fossil",
+      "stellarity:frozen_spikes/fallen_ice_spike",
+      "stellarity:frozen_spikes/shattered_spike_stump"
+    ],
+    [
+      "stellarity:frozen_spikes/cave/floor_snow",
+      "stellarity:frozen_spikes/cave/ceiling_ice",
+      "stellarity:frozen_spikes/cave/stalagmite",
+      "stellarity:frozen_spikes/cave/dripstone_cluster"
+    ],
+    [
+      "stellarity:frozen_marsh/puddles",
+      "stellarity:frozen_spikes/ore_blue_ice"
+    ],
+    [],
+    [
+      "minecraft:snow_layers",
+      "minecraft:ice_crystals",
+      "minecraft:icicle_cluster"
+    ],
+    [],
+    [
+      "stellarity:frozen_marsh/vegetation_land",
+      "stellarity:frozen_marsh/shrubs",
+      "stellarity:frozen_marsh/grass",
+      "stellarity:frozen_spikes/frost_lichen"
+    ],
+    [
+      "stellarity:frozen_marsh/freeze_water"
+    ],
+    [
+      "minecraft:freeze_top_layer",
+      "stellarity:frozen_spikes/dungeon",
+      "stellarity:frozen_spikes/fossil"
+    ]
+  ]
+}

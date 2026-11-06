@@ -8,7 +8,7 @@
   "root_column_max_height": 100,
   "hanging_root_radius": 3,
   "hanging_roots_vertical_span": 2,
-  "hanging_root_placement_attempts": 15,
+  "hanging_root_placement_attempts": 1,
   "allowed_vertical_water_for_tree": 1,
   "root_replaceable": "#stellarity:_worldgen/stalactites_replacable",
   "root_state_provider": {
@@ -20,7 +20,7 @@
   "hanging_root_state_provider": {
     "type": "minecraft:simple",
     "state": {
-      "id": "minecraft:amethyst_cluster"
+      "id": "minecraft:packed_ice"
     }
   },
   "allowed_tree_position": {
@@ -29,7 +29,6 @@
       {
         "type": "minecraft:matching_blocks",
         "blocks": [
-          "minecraft:end_stone",
           "minecraft:packed_ice",
           "minecraft:blue_ice",
           "minecraft:snow_block"
@@ -38,7 +37,6 @@
       {
         "type": "minecraft:matching_blocks",
         "blocks": [
-          "minecraft:end_stone",
           "minecraft:packed_ice",
           "minecraft:blue_ice",
           "minecraft:snow_block"

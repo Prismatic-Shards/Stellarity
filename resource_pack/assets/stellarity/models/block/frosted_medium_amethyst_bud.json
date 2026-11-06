@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "stellarity:block/frosted_medium_amethyst_bud"
+  },
+  "render_type": "cutout"
+}

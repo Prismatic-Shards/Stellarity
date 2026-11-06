@@ -8,7 +8,7 @@
         "projection": "rigid",
         "override_liquid_settings": "ignore_waterlogging",
         "location": "stellarity:village/butcher_big",
-        "processors": "minecraft:empty"
+        "processors": "stellarity:ignore_structure_void"
       }
     },
     {
@@ -18,7 +18,7 @@
         "projection": "rigid",
         "override_liquid_settings": "ignore_waterlogging",
         "location": "stellarity:village/cartographer_big",
-        "processors": "minecraft:empty"
+        "processors": "stellarity:ignore_structure_void"
       }
     },
     {
@@ -28,7 +28,7 @@
         "projection": "rigid",
         "override_liquid_settings": "ignore_waterlogging",
         "location": "stellarity:village/fletcher_big",
-        "processors": "minecraft:empty"
+        "processors": "stellarity:ignore_structure_void"
       }
     },
     {
@@ -38,7 +38,7 @@
         "projection": "rigid",
         "override_liquid_settings": "ignore_waterlogging",
         "location": "stellarity:village/farm_big",
-        "processors": "minecraft:empty"
+        "processors": "stellarity:ignore_structure_void"
       }
     },
     {
@@ -48,7 +48,7 @@
         "projection": "rigid",
         "override_liquid_settings": "ignore_waterlogging",
         "location": "stellarity:village/temple_big",
-        "processors": "minecraft:empty"
+        "processors": "stellarity:ignore_structure_void"
       }
     },
     {
@@ -58,7 +58,7 @@
         "projection": "rigid",
         "override_liquid_settings": "ignore_waterlogging",
         "location": "stellarity:village/shepherd_big",
-        "processors": "minecraft:empty"
+        "processors": "stellarity:ignore_structure_void"
       }
     },
     {
@@ -68,7 +68,7 @@
         "projection": "rigid",
         "override_liquid_settings": "ignore_waterlogging",
         "location": "stellarity:village/market_1",
-        "processors": "minecraft:empty"
+        "processors": "stellarity:ignore_structure_void"
       }
     },
     {
@@ -78,7 +78,7 @@
         "projection": "rigid",
         "override_liquid_settings": "ignore_waterlogging",
         "location": "stellarity:village/market_2",
-        "processors": "minecraft:empty"
+        "processors": "stellarity:ignore_structure_void"
       }
     }
   ]

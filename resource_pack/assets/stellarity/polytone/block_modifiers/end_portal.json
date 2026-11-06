@@ -1,0 +1,44 @@
+{
+  "targets": [
+    "minecraft:end_portal",
+    "minecraft:end_gateway"
+  ],
+  "particle_emitters": [
+    {
+      "particle": "stellarity:portal_aura",
+      "chance": 0.45,
+      "x": "(r.rand() - 0.5) * 0.85",
+      "y": "0.22 + r.rand() * 0.15",
+      "z": "(r.rand() - 0.5) * 0.85",
+      "dx": "(r.rand() - 0.5) * 0.03",
+      "dy": "0.015 + r.rand() * 0.025",
+      "dz": "(r.rand() - 0.5) * 0.03"
+    },
+    {
+      "particle": "stellarity:celestial_spark",
+      "chance": 0.30,
+      "x": "(r.rand() - 0.5) * 0.75",
+      "y": "0.25 + r.rand() * 0.18",
+      "z": "(r.rand() - 0.5) * 0.75",
+      "dx": "(r.rand() - 0.5) * 0.04",
+      "dy": "0.02 + r.rand() * 0.03",
+      "dz": "(r.rand() - 0.5) * 0.04"
+    },
+    {
+      "particle": "stellarity:void_wisp",
+      "chance": 0.16,
+      "x": "(r.rand() - 0.5) * 0.6",
+      "y": "0.20 + r.rand() * 0.12",
+      "z": "(r.rand() - 0.5) * 0.6",
+      "dy": "0.025 + r.rand() * 0.035"
+    },
+    {
+      "particle": "minecraft:reverse_portal",
+      "chance": 0.22,
+      "x": "(r.rand() - 0.5) * 0.8",
+      "y": "0.20 + r.rand() * 0.1",
+      "z": "(r.rand() - 0.5) * 0.8",
+      "dy": "0.03 + r.rand() * 0.02"
+    }
+  ]
+}

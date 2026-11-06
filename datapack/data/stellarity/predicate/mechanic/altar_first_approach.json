@@ -1,0 +1,12 @@
+{
+  "type": "inverted",
+  "term": {
+    "type": "entity_scores",
+    "entity": "this",
+    "scores": {
+      "stellarity.altar_approached": {
+        "min": 1
+      }
+    }
+  }
+}

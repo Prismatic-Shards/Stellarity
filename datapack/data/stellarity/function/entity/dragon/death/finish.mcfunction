@@ -11,11 +11,16 @@
 
 # Disable bossbar
   bossbar set stellarity:ender_dragon players
+  bossbar set stellarity:crystal_count players
 
 execute as @e[type=marker,tag=stellarity.dragon_marker] at @s run function stellarity:entity/dragon/death/finish_as_marker
 
 scoreboard players reset @s stellarity.dragon.respawn_animation_progress
 tag @s remove stellarity.portal_activated
+
+# Start timer for The Void Gains Focus
+execute unless score #stellarity.void_focus stellarity.void_focus.dragon_timer matches 1.. run scoreboard players set #stellarity.void_focus stellarity.void_focus.dragon_timer 1
+
 
 execute if score #stellarity.config stellarity.config.boss_status_messages matches 1 run tellraw @a ["\n",{"translate":"entity.stellarity.dragon.death","with":[{"translate":"entity.minecraft.ender_dragon"}],"color":"#AF4BFF"},"\n"]
 
@@ -26,6 +31,17 @@ execute if score #stellarity.config stellarity.config.boss_status_messages match
     advancement grant @a[distance=..100,advancements={minecraft:end/kill_dragon=true,stellarity:dragons_den/god_slayer=false}] only stellarity:dragons_den/god_slayer
     # 'Free The End'
       advancement grant @a[distance=..100,advancements={minecraft:end/kill_dragon=false}] only minecraft:end/kill_dragon
+
+  # 'God of Gods'
+    execute if entity @e[type=marker,tag=stellarity.dragon_marker,tag=stellarity.dragon.rk_only] run advancement grant @a[distance=..250] only stellarity:dragons_den/god_of_gods
+    execute if entity @e[type=marker,tag=stellarity.dragon_marker,tag=stellarity.dragon.killed_by_rk] run advancement grant @a[distance=..250,predicate=stellarity:item/holding/radiant_kaleidoscope] only stellarity:dragons_den/god_of_gods
+    execute as @a[distance=..250,predicate=stellarity:item/holding/radiant_kaleidoscope] if entity @e[type=marker,tag=stellarity.dragon_marker,tag=stellarity.dragon.hit_by_rk] run advancement grant @s only stellarity:dragons_den/god_of_gods
+
+  # 'Pure Completion'
+    scoreboard players add @a[distance=..100] stellarity.player.dragon_kills 1
+    execute if score @s stellarity.dragon.times_killed matches 20.. run advancement grant @a[distance=..100] only stellarity:dragons_den/pure_completion
+    advancement grant @a[distance=..100,scores={stellarity.player.dragon_kills=20..}] only stellarity:dragons_den/pure_completion
+    execute as @a[distance=..100,scores={stellarity.player.dragon_kills=20}] run experience add @s 20000 points
 
     # Activate Altar of The Accursed. Now we shall all witness horrible dark magic emerging and crafting fantastic gear!
       # Wonderful! Like ancient forces of darkness were always supposed to 
@@ -49,3 +65,7 @@ execute if score #stellarity.config stellarity.config.boss_status_messages match
           # Or by 3.5 seconds if Altar has been unlocked
             execute if entity @e[type=marker,tag=stellarity.altar_of_the_accursed,tag=stellarity.altar_of_the_accursed_activated] run \
             schedule function stellarity:entity/dragon/play_track 70t
+
+        # Final cleanup: purge vanilla portal replacement and enforce custom exit portal
+        schedule function stellarity:structure/exit_portal/final_cleanup 2s
+        schedule function stellarity:structure/exit_portal/final_cleanup 5s

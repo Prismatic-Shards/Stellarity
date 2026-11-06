@@ -3,22 +3,22 @@
   "downfall": 0.6,
   "has_precipitation": true,
   "attributes": {
-    "visual/sky_color": 8103167,
-    "visual/fog_color": 12638463,
-    "visual/water_fog_color": 15034111,
+    "visual/sky_color": 1909304,
+    "visual/fog_color": 14213852,
+    "visual/water_fog_color": 8623527,
     "audio/ambient_sounds": {
       "loop": {
-        "sound_id": "stellarity:ambient.the_end.heavenly_blessed"
+        "sound_id": "stellarity:ambient.the_hallow.loop"
       },
       "mood": {
-        "sound": "ambient.soul_sand_valley.mood",
-        "tick_delay": 900,
-        "block_search_extent": 2,
+        "sound": "minecraft:block.amethyst_block.resonate",
+        "tick_delay": 650,
+        "block_search_extent": 8,
         "offset": 2
       },
       "additions": {
-        "sound": "ambient.underwater.loop.additions.rare",
-        "tick_chance": 0.00055
+        "sound": "minecraft:block.amethyst_block.chime",
+        "tick_chance": 0.012
       }
     },
     "visual/ambient_particles": {
@@ -28,7 +28,7 @@
           "particle": {
             "type": "minecraft:cherry_leaves"
           },
-          "probability": 0.0012
+          "probability": 0.0025
         }
       ]
     },
@@ -58,7 +58,8 @@
   "effects": {
     "water_color": 15368447,
     "grass_color": 11723263,
-    "foliage_color": 10937599
+    "foliage_color": 10937599,
+    "dry_foliage_color": 14144465
   },
   "carvers": [],
   "features": [

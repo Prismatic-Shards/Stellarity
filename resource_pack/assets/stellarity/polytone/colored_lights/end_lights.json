@@ -1,0 +1,8 @@
+{
+  "targets": [
+    "minecraft:end_rod",
+    "minecraft:end_portal_frame"
+  ],
+  "require_config": "stellarity:colored_lights",
+  "colored_light": "#c89af8"
+}

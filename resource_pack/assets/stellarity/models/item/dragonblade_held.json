@@ -1,4 +1,6 @@
 {
   "parent": "minecraft:item/handheld",
-  "textures": { "layer0": "stellarity:item/dragonblade_held" }
+  "textures": {
+    "layer0": "stellarity:item/dragonblade_held"
+  }
 }

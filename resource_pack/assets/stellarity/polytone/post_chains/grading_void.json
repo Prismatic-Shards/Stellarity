@@ -1,0 +1,4 @@
+{
+  "activation_condition": "(config('stellarity:biome_color_grading') != '§cOFF') && (g.skyType() == 2) && (c.biome() == 'stellarity:the_void' || c.biome() == 'stellarity:the_nest')",
+  "post_chain": "stellarity:grading_void"
+}

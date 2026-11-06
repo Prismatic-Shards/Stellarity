@@ -1,1 +1,6 @@
-{"parent":"minecraft:item/generated","textures":{"layer0":"stellarity:item/chorus_plating"}}
+{
+    "parent": "minecraft:item/generated",
+    "textures": {
+        "layer0": "stellarity:item/chorus_plating"
+    }
+}

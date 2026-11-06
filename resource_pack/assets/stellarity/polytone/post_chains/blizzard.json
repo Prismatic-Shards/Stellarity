@@ -1,0 +1,4 @@
+{
+  "activation_condition": "(config('stellarity:blizzard_effects') == '§aON') && (g.skyType() == 2) && (c.biome() == 'stellarity:frosted_hills' || c.biome() == 'stellarity:frosted_valley' || c.biome() == 'stellarity:frozen_marsh' || c.biome() == 'stellarity:frozen_shrubland' || c.biome() == 'stellarity:frozen_spikes' || c.biome() == 'stellarity:hallowed_tundra') && ((sin(g.time() * 0.00032 + 2.1) + 0.55 * sin(g.time() * 0.00078 + 0.5) + 0.45 * sin(g.time() * 0.00015 + 1.9)) > 0.35)",
+  "post_chain": "stellarity:blizzard"
+}

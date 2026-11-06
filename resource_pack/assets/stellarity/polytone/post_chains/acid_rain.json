@@ -1,0 +1,4 @@
+{
+  "activation_condition": "(config('stellarity:acid_rain_effects') == '§aON') && (g.skyType() == 2) && (c.biome() == 'stellarity:warped_marsh') && ((sin(g.time() * 0.00030 + 1.4) + 0.58 * sin(g.time() * 0.00082 + 2.3) + 0.42 * sin(g.time() * 0.00019 + 0.7)) > 0.35)",
+  "post_chain": "stellarity:acid_rain"
+}

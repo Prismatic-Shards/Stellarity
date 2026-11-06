@@ -1,0 +1,9 @@
+{
+  "targets": [
+    "minecraft:ochre_froglight",
+    "minecraft:pearlescent_froglight",
+    "minecraft:verdant_froglight"
+  ],
+  "require_config": "stellarity:colored_lights",
+  "colored_light": "#b580ea"
+}

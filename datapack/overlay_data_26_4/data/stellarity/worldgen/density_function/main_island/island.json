@@ -1,0 +1,72 @@
+{
+  "type": "minecraft:squeeze",
+  "input": {
+    "type": "minecraft:upscale",
+    "input": {
+      "type": "minecraft:upscale",
+      "input": {
+        "type": "add",
+        "left": -1,
+        "right": {
+          "type": "mul",
+          "left": {
+            "type": "minecraft:gradient",
+            "axis": "y",
+            "from_value": 1,
+            "to_value": 0,
+            "from_coordinate": 45,
+            "to_coordinate": 65
+          },
+          "right": {
+            "type": "add",
+            "left": 1,
+            "right": {
+              "type": "add",
+              "left": -1,
+              "right": {
+                "type": "mul",
+                "left": {
+                  "type": "minecraft:gradient",
+                  "axis": "y",
+                  "from_value": 0,
+                  "to_value": 1,
+                  "from_coordinate": 2,
+                  "to_coordinate": 26
+                },
+                "right": {
+                  "type": "add",
+                  "left": 1,
+                  "right": "stellarity:main_island/island_builder"
+                }
+              }
+            }
+          }
+        }
+      },
+      "x": {
+        "cell_size": 4,
+        "mode": "interpolate_linear"
+      },
+      "y": {
+        "cell_size": 8,
+        "mode": "interpolate_linear"
+      },
+      "z": {
+        "cell_size": 4,
+        "mode": "interpolate_linear"
+      }
+    },
+    "x": {
+      "cell_size": 4,
+      "mode": "interpolate_linear"
+    },
+    "y": {
+      "cell_size": 8,
+      "mode": "interpolate_linear"
+    },
+    "z": {
+      "cell_size": 4,
+      "mode": "interpolate_linear"
+    }
+  }
+}

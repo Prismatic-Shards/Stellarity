@@ -1,102 +1,66 @@
 {
-  "type": "minecraft:random_patch",
+  "type": "minecraft:simple_block",
   "config": {
-    "tries": 12,
-    "xz_spread": 8,
-    "y_spread": 2,
-    "feature": {
-      "feature": {
-        "type": "minecraft:simple_block",
-        "config": {
-          "to_place": {
-            "type": "minecraft:weighted_state_provider",
-            "entries": [
-              {
-                "weight": 2,
-                "data": {
-                  "Name": "minecraft:acacia_leaves",
-                  "Properties": {
-                    "distance": "1",
-                    "persistent": "true",
-                    "waterlogged": "false"
-                  }
-                }
-              },
-              {
-                "weight": 2,
-                "data": {
-                  "Name": "minecraft:azalea_leaves",
-                  "Properties": {
-                    "distance": "1",
-                    "persistent": "true",
-                    "waterlogged": "false"
-                  }
-                }
-              },
-              {
-                "weight": 2,
-                "data": {
-                  "Name": "minecraft:orange_tulip"
-                }
-              },
-              {
-                "weight": 2,
-                "data": {
-                  "Name": "minecraft:pink_tulip"
-                }
-              },
-              {
-                "weight": 2,
-                "data": {
-                  "Name": "minecraft:white_tulip"
-                }
-              },
-              {
-                "weight": 2,
-                "data": {
-                  "Name": "minecraft:allium"
-                }
-              },
-              {
-                "weight": 2,
-                "data": {
-                  "Name": "minecraft:lilac",
-                  "Properties": {
-                    "half": "lower"
-                  }
-                }
-              },
-              {
-                "weight": 1,
-                "data": {
-                  "Name": "minecraft:pitcher_plant",
-                  "Properties": {
-                    "half": "lower"
-                  }
-                }
-              }
-            ]
-          }
-        }
-      },
-      "placement": [
+    "to_place": {
+      "type": "minecraft:weighted_state_provider",
+      "entries": [
         {
-          "type": "minecraft:block_predicate_filter",
-          "predicate": {
-            "type": "minecraft:all_of",
-            "predicates": [
-              {
-                "type": "minecraft:matching_blocks",
-                "blocks": ["minecraft:air", "minecraft:short_grass"]
-              },
-              {
-                "type": "minecraft:would_survive",
-                "state": {
-                  "Name": "minecraft:short_grass"
-                }
-              }
-            ]
-          }
+          "data": {
+            "Name": "minecraft:acacia_leaves",
+            "Properties": {
+              "distance": "7",
+              "persistent": "true",
+              "waterlogged": "false"
+            }
+          },
+          "weight": 2
+        },
+        {
+          "data": {
+            "Name": "minecraft:azalea_leaves",
+            "Properties": {
+              "distance": "7",
+              "persistent": "true",
+              "waterlogged": "false"
+            }
+          },
+          "weight": 2
+        },
+        {
+          "data": {
+            "Name": "minecraft:orange_tulip"
+          },
+          "weight": 2
+        },
+        {
+          "data": {
+            "Name": "minecraft:pink_tulip"
+          },
+          "weight": 2
+        },
+        {
+          "data": {
+            "Name": "minecraft:white_tulip"
+          },
+          "weight": 2
+        },
+        {
+          "data": {
+            "Name": "minecraft:lilac",
+            "Properties": {
+              "half": "lower"
+            }
+          },
+          "weight": 2
+        },
+        {
+          "data": {
+            "Name": "minecraft:pitcher_plant",
+            "Properties": {
+              "half": "lower"
+            }
+          },
+          "weight": 1
         }
       ]
     }

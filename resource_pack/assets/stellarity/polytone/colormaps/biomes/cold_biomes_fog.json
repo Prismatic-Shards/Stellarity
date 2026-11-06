@@ -1,0 +1,5 @@
+{
+  "x_axis": "0",
+  "y_axis": "clamp((o.y - 30) / 160, 0, 1)",
+  "biome_blend": true
+}

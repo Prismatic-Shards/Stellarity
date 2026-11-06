@@ -1,0 +1,36 @@
+{
+  "name": "stellarity:the_hallow/obelisk",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "stellarity:the_hallow/obelisk_1",
+        "projection": "rigid",
+        "processors": "stellarity:ignore_structure_void",
+        "override_liquid_settings": "ignore_waterlogging"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "stellarity:the_hallow/obelisk_2",
+        "projection": "rigid",
+        "processors": "stellarity:ignore_structure_void",
+        "override_liquid_settings": "ignore_waterlogging"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "stellarity:the_hallow/obelisk_3",
+        "projection": "rigid",
+        "processors": "stellarity:ignore_structure_void",
+        "override_liquid_settings": "ignore_waterlogging"
+      }
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "type": "minecraft:cache",
+  "input": {
+    "type": "minecraft:clamp",
+    "input": {
+      "type": "minecraft:mul",
+      "left": {
+        "type": "minecraft:add",
+        "left": {
+          "type": "minecraft:mul",
+          "left": {
+            "type": "minecraft:square",
+            "input": {
+              "type": "minecraft:clamp",
+              "input": {
+                "type": "minecraft:add",
+                "left": 1,
+                "right": {
+                  "type": "minecraft:mul",
+                  "left": -1,
+                  "right": {
+                    "type": "minecraft:mul",
+                    "left": {
+                      "type": "minecraft:abs",
+                      "input": {
+                        "type": "minecraft:noise",
+                        "noise": "stellarity:amethyst_forest/peak_noise",
+                        "xz_scale": 0.17,
+                        "y_scale": 0,
+                        "shift_x": {
+                          "type": "minecraft:mul",
+                          "left": 20,
+                          "right": {
+                            "type": "minecraft:noise",
+                            "noise": "stellarity:amethyst_forest/peak_warp",
+                            "xz_scale": 0.08,
+                            "y_scale": 0,
+                            "shift_x": 0,
+                            "shift_y": 3,
+                            "shift_z": 0
+                          }
+                        },
+                        "shift_y": 11,
+                        "shift_z": {
+                          "type": "minecraft:mul",
+                          "left": 20,
+                          "right": {
+                            "type": "minecraft:noise",
+                            "noise": "stellarity:amethyst_forest/peak_warp",
+                            "xz_scale": 0.08,
+                            "y_scale": 0,
+                            "shift_x": 0,
+                            "shift_y": 44,
+                            "shift_z": 0
+                          }
+                        }
+                      }
+                    },
+                    "right": 2.2
+                  }
+                }
+              },
+              "min": 0,
+              "max": 1
+            }
+          },
+          "right": "stellarity:amethyst_forest/amplitude"
+        },
+        "right": -0.25
+      },
+      "right": 1.33
+    },
+    "min": 0,
+    "max": 1
+  }
+}

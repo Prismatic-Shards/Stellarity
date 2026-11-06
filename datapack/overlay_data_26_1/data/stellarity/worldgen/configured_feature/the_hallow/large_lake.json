@@ -1,20 +1,48 @@
 {
-  "type": "minecraft:lake",
+  "type": "minecraft:waterlogged_vegetation_patch",
   "config": {
-    "fluid": {
-      "type": "minecraft:simple_state_provider",
-      "state": {
-        "Name": "minecraft:water",
-        "Properties": {
-          "level": "0"
-        }
-      }
+    "surface": "floor",
+    "depth": 2,
+    "vertical_range": 6,
+    "extra_bottom_block_chance": 0.35,
+    "extra_edge_column_chance": 0.48,
+    "vegetation_chance": 0.0,
+    "xz_radius": {
+      "type": "minecraft:uniform",
+      "min_inclusive": 4,
+      "max_inclusive": 7
     },
-    "barrier": {
-      "type": "minecraft:simple_state_provider",
-      "state": {
-        "Name": "minecraft:calcite"
-      }
+    "replaceable": "#stellarity:_worldgen/the_hallow/ground",
+    "ground_state": {
+      "type": "minecraft:weighted_state_provider",
+      "entries": [
+        {
+          "weight": 7,
+          "data": {
+            "Name": "minecraft:calcite"
+          }
+        },
+        {
+          "weight": 3,
+          "data": {
+            "Name": "minecraft:diorite"
+          }
+        }
+      ]
+    },
+    "vegetation_feature": {
+      "feature": {
+        "type": "minecraft:simple_block",
+        "config": {
+          "to_place": {
+            "type": "minecraft:simple_state_provider",
+            "state": {
+              "Name": "minecraft:seagrass"
+            }
+          }
+        }
+      },
+      "placement": []
     }
   }
 }

@@ -1,0 +1,27 @@
+{
+  "feature": "stellarity:frozen_spikes/fossil",
+  "placement": [
+    {
+      "type": "minecraft:rarity_filter",
+      "chance": 30
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:uniform",
+        "min_inclusive": {
+          "above_bottom": 8
+        },
+        "max_inclusive": {
+          "absolute": 140
+        }
+      }
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

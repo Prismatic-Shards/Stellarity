@@ -1,6 +1,7 @@
 {
   "type": "minecraft:location_check",
   "predicate": {
+    "dimension": "minecraft:the_end",
     "position": {
       "x": {
         "min": -200,

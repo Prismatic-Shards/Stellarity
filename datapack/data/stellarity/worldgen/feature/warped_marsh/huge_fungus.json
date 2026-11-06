@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:random_selector",
+  "features": [
+    {
+      "chance": 0.65,
+      "feature": {
+        "feature": "stellarity:warped_marsh/warped_mangrove",
+        "placement": []
+      }
+    }
+  ],
+  "default": {
+    "feature": "stellarity:warped_marsh/tall_warped_mangrove",
+    "placement": []
+  }
+}

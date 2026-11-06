@@ -1,0 +1,81 @@
+{
+  "type": "minecraft:block_column",
+  "direction": "up",
+  "allowed_placement": {
+    "type": "minecraft:matching_blocks",
+    "blocks": [
+      "minecraft:air"
+    ]
+  },
+  "prioritize_tip": true,
+  "layers": [
+    {
+      "height": {
+        "type": "minecraft:uniform",
+        "min_inclusive": 1,
+        "max_inclusive": 3
+      },
+      "provider": {
+        "type": "minecraft:weighted",
+        "entries": [
+          {
+            "weight": 4,
+            "data": {
+              "id": "minecraft:smooth_sandstone"
+            }
+          },
+          {
+            "weight": 2,
+            "data": {
+              "id": "minecraft:terracotta"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "height": {
+        "type": "minecraft:uniform",
+        "min_inclusive": 2,
+        "max_inclusive": 4
+      },
+      "provider": {
+        "type": "minecraft:weighted",
+        "entries": [
+          {
+            "weight": 4,
+            "data": {
+              "id": "minecraft:sandstone"
+            }
+          },
+          {
+            "weight": 3,
+            "data": {
+              "id": "minecraft:cut_sandstone"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "height": 1,
+      "provider": {
+        "type": "minecraft:weighted",
+        "entries": [
+          {
+            "weight": 3,
+            "data": {
+              "id": "minecraft:chiseled_sandstone"
+            }
+          },
+          {
+            "weight": 2,
+            "data": {
+              "id": "minecraft:smooth_sandstone"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

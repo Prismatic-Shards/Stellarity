@@ -1,6 +1,7 @@
 {
   "asset_id": "stellarity:entity/chicken/ender_chicken",
   "model": "normal",
+  "baby_asset_id": "stellarity:entity/chicken/ender_chicken_baby",
   "spawn_conditions": [
     {
       "priority": 1000,

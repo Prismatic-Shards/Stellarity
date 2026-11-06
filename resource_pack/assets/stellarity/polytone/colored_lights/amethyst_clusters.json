@@ -1,0 +1,11 @@
+{
+  "targets": [
+    "minecraft:amethyst_cluster"
+  ],
+  "require_config": "stellarity:colored_lights",
+  "colored_light": {
+    "color": "#b57cff",
+    "radius": 8,
+    "brightness": 0.85
+  }
+}

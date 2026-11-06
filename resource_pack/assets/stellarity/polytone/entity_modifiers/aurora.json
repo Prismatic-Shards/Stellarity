@@ -1,0 +1,14 @@
+{
+  "targets": [
+    "minecraft:player"
+  ],
+  "emitters": [
+    {
+      "particle": "stellarity:aurora_controller",
+      "chance": "(config('stellarity:aurora') != '§cOFF') && (!o.biome().contains('caves') && (o.biome().contains('frost') || o.biome().contains('frozen') || o.biome().contains('tundra'))) ? 1.0 : 0.0",
+      "x": "0",
+      "y": "0",
+      "z": "0"
+    }
+  ]
+}

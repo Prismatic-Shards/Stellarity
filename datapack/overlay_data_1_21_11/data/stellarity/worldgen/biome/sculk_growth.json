@@ -3,12 +3,22 @@
   "downfall": 0.5,
   "has_precipitation": false,
   "attributes": {
-    "visual/sky_color": 0,
-    "visual/fog_color": 0,
-    "visual/water_fog_color": 1714487,
+    "visual/sky_color": 68110,
+    "visual/fog_color": 13639,
+    "visual/water_fog_color": 5919,
     "audio/ambient_sounds": {
       "loop": {
-        "sound_id": "stellarity:ambient.the_end.dark_calm"
+        "sound_id": "ambient.soul_sand_valley.loop"
+      },
+      "mood": {
+        "sound": "ambient.soul_sand_valley.mood",
+        "tick_delay": 500,
+        "block_search_extent": 6,
+        "offset": 2
+      },
+      "additions": {
+        "sound": "block.sculk_sensor.clicking",
+        "tick_chance": 0.015
       }
     },
     "visual/ambient_particles": {
@@ -16,9 +26,9 @@
       "argument": [
         {
           "particle": {
-            "type": "minecraft:mycelium"
+            "type": "sculk_charge_pop"
           },
-          "probability": 0.012
+          "probability": 0.002
         }
       ]
     }
@@ -31,5 +41,16 @@
   "spawners": {},
   "spawn_costs": {},
   "carvers": [],
-  "features": [[], [], [], [], [], [], [], [], [], []]
+  "features": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+  ]
 }

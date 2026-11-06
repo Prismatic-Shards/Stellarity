@@ -1,0 +1,8 @@
+{
+  "targets": [
+    "minecraft:flame",
+    "minecraft:soul_fire_flame",
+    "minecraft:small_flame"
+  ],
+  "size": "SIZE * 2.5 + 0.35"
+}

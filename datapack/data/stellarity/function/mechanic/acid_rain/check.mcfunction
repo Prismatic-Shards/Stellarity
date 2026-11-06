@@ -1,0 +1,4 @@
+execute unless score #stellarity.acid_rain stellarity.weather.cooldown matches 1.. unless score #stellarity.acid_rain stellarity.weather.active matches 1.. run scoreboard players set #stellarity.acid_rain stellarity.weather.cooldown 600
+execute if score #stellarity.acid_rain stellarity.weather.active matches 1.. run scoreboard players remove #stellarity.acid_rain stellarity.weather.active 1
+execute unless score #stellarity.acid_rain stellarity.weather.active matches 1.. run scoreboard players remove #stellarity.acid_rain stellarity.weather.cooldown 1
+execute unless score #stellarity.acid_rain stellarity.weather.active matches 1.. if score #stellarity.acid_rain stellarity.weather.cooldown matches ..0 if entity @a[predicate=stellarity:location/in_the_end] run function stellarity:mechanic/acid_rain/trigger

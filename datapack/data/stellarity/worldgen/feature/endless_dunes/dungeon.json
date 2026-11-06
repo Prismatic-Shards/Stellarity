@@ -1,0 +1,82 @@
+{
+  "type": "minecraft:fossil",
+  "max_empty_corners_allowed": 4,
+  "fossil_structures": [
+    "stellarity:endless_dunes/monster_box/1",
+    "stellarity:endless_dunes/monster_box/2",
+    "stellarity:endless_dunes/monster_box/3",
+    "stellarity:endless_dunes/monster_box/4"
+  ],
+  "overlay_structures": [
+    "stellarity:endless_dunes/monster_box/1",
+    "stellarity:endless_dunes/monster_box/2",
+    "stellarity:endless_dunes/monster_box/3",
+    "stellarity:endless_dunes/monster_box/4"
+  ],
+  "fossil_processors": {
+    "processors": [
+      {
+        "processor_type": "minecraft:rule",
+        "rules": [
+          {
+            "position_predicate": {
+              "predicate_type": "minecraft:always_true"
+            },
+            "location_predicate": {
+              "predicate_type": "minecraft:random_block_match",
+              "block": "minecraft:end_stone_bricks",
+              "probability": 0.4
+            },
+            "input_predicate": {
+              "predicate_type": "minecraft:always_true"
+            },
+            "output_state": {
+              "id": "minecraft:smooth_sandstone"
+            }
+          },
+          {
+            "position_predicate": {
+              "predicate_type": "minecraft:always_true"
+            },
+            "location_predicate": {
+              "predicate_type": "minecraft:random_block_match",
+              "block": "minecraft:end_stone",
+              "probability": 0.35
+            },
+            "input_predicate": {
+              "predicate_type": "minecraft:always_true"
+            },
+            "output_state": {
+              "id": "minecraft:sandstone"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "overlay_processors": {
+    "processors": [
+      {
+        "processor_type": "minecraft:rule",
+        "rules": [
+          {
+            "position_predicate": {
+              "predicate_type": "minecraft:always_true"
+            },
+            "location_predicate": {
+              "predicate_type": "minecraft:random_block_match",
+              "block": "minecraft:end_stone_bricks",
+              "probability": 0.3
+            },
+            "input_predicate": {
+              "predicate_type": "minecraft:always_true"
+            },
+            "output_state": {
+              "id": "minecraft:cut_sandstone"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

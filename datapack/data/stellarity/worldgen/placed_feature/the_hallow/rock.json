@@ -2,34 +2,26 @@
   "feature": "stellarity:the_hallow/rock",
   "placement": [
     {
-      "type": "minecraft:count",
-      "count": 1
+      "type": "minecraft:rarity_filter",
+      "chance": 2
     },
     {
       "type": "minecraft:in_square"
-    },
-    {
-      "type": "minecraft:heightmap",
-      "heightmap": "MOTION_BLOCKING"
-    },
-    {
-      "type": "minecraft:biome"
-    },
-    {
-      "type": "minecraft:rarity_filter",
-      "chance": 3
     },
     {
       "type": "minecraft:height_range",
       "height": {
         "type": "minecraft:uniform",
         "min_inclusive": {
-          "above_bottom": 0
+          "absolute": 220
         },
         "max_inclusive": {
-          "below_top": 0
+          "absolute": 380
         }
       }
+    },
+    {
+      "type": "minecraft:biome"
     }
   ]
 }

@@ -1,5 +1,7 @@
 function stellarity:structure/exit_portal/deactivated/generate
 
+execute as @a run function stellarity:ambient/main_island_stop
+
 playsound entity.ender_dragon.ambient block @a[distance=0..] ~ ~ ~ 4 0.75
 playsound minecraft:entity.generic.explode block @a[distance=0..] ~ ~ ~ 4 0.75
 playsound minecraft:entity.blaze.death block @a[distance=0..] ~ ~ ~ 4 0.5

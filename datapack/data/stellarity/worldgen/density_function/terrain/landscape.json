@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:add",
+  "left": {
+    "type": "minecraft:max",
+    "left": {
+      "type": "minecraft:add",
+      "left": "stellarity:terrain/end_mass",
+      "right": "stellarity:terrain/macro/macro_relief"
+    },
+    "right": "stellarity:terrain/biome_relief"
+  },
+  "right": "stellarity:main_island/farlands_taper"
+}

@@ -1,0 +1,59 @@
+{
+  "type": "custom",
+  "initializer": {
+    "lifetime": "300",
+    "alpha": "1",
+    "size": "0.25"
+  },
+  "ticker": {},
+  "liquid_affinity": "any",
+  "has_physics": false,
+  "offset": [
+    0,
+    0,
+    0
+  ],
+  "tick_interval": 2,
+  "limit": 1,
+  "kill_when_not_in_view": false,
+  "render_type": "invisible",
+  "rotation_mode": "look_up",
+  "particle_emitters": [
+    {
+      "particle": "stellarity:aurora_curtain",
+      "count": 2,
+      "custom": "AGE",
+      "chance": "(AGE <= 128) * 1",
+      "x": "-220 + AGE * (9 + rand() * 4)",
+      "z": "-40 + (sin(AGE * 0.08) * 180 + 90) + AGE * 8",
+      "y": "70 + sin(AGE * 0.15) * 8 + AGE * 0.3"
+    },
+    {
+      "particle": "stellarity:aurora_curtain",
+      "count": 2,
+      "custom": "AGE",
+      "chance": "(AGE <= 128) * 1",
+      "x": "-220 + AGE * (9 + rand() * 4)",
+      "z": "-40 + (sin(AGE * 0.08) * 180 + 90) + AGE * 1",
+      "y": "70 + cos(AGE * 0.15) * 8 + AGE * 0.3"
+    },
+    {
+      "particle": "stellarity:aurora_curtain",
+      "count": 2,
+      "custom": "AGE",
+      "chance": "(AGE <= 128) * 1",
+      "x": "220 - AGE * (9 + rand() * 4)",
+      "z": "40 - (sin(AGE * 0.08) * 180 + 90) - AGE * 8",
+      "y": "70 + sin(AGE * 0.15 + rand() * 6) * 8 + AGE * 0.3"
+    },
+    {
+      "particle": "stellarity:aurora_curtain",
+      "count": 2,
+      "custom": "AGE",
+      "chance": "(AGE <= 128) * 1",
+      "x": "220 - AGE * (9 + rand() * 4)",
+      "z": "40 - (sin(AGE * 0.08) * 180 + 90) - AGE * 1",
+      "y": "70 + cos(AGE * 0.15 + rand() * 6) * 14 + AGE * 0.3"
+    }
+  ]
+}

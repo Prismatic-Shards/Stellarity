@@ -25,6 +25,11 @@
 # Kaleidoscope
   execute if entity @s[predicate=stellarity:item/holding/kaleidoscope] run function stellarity:item/kaleidoscope/loop
 
+# Radiant Kaleidoscope
+  execute if entity @s[scores={stellarity.item.rk.cooldown=1..}] run function stellarity:item/radiant_kaleidoscope/cooldown/tick
+  execute if entity @s[scores={stellarity.item.rk.recovery=1..}] run function stellarity:item/radiant_kaleidoscope/guard/recovery_tick
+  execute if entity @s[predicate=stellarity:item/holding/radiant_kaleidoscope] if score #stellarity.config stellarity.config.enable_radiant_kaleidoscope matches 1 run function stellarity:item/radiant_kaleidoscope/loop
+
 # Book of Updraft
   execute if entity @s[tag=stellarity.book_of_updraft.animation] run function stellarity:item/spellbooks/updraft/animation
 

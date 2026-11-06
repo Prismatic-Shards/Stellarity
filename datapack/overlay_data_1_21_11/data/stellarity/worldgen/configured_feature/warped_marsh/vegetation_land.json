@@ -43,7 +43,7 @@
                       "dirt_provider": {
                         "type": "minecraft:simple_state_provider",
                         "state": {
-                          "Name": "minecraft:snow_block"
+                          "Name": "minecraft:moss_block"
                         }
                       },
                       "trunk_provider": {
@@ -177,8 +177,7 @@
                           "offset": [0, -1, 0],
                           "blocks": [
                             "minecraft:moss_block",
-                            "minecraft:coarse_dirt",
-                            "minecraft:snow_block"
+                            "minecraft:coarse_dirt"
                           ]
                         },
                         {

@@ -1,0 +1,40 @@
+{
+  "type": "minecraft:max",
+  "left": "stellarity:climate/biome_depth",
+  "right": {
+    "type": "minecraft:range_choice",
+    "input": "minecraft:y",
+    "min_inclusive": 28,
+    "max_exclusive": 43,
+    "when_out_of_range": 0.0,
+    "when_in_range": {
+      "type": "minecraft:range_choice",
+      "input": "stellarity:climate/temperature",
+      "min_inclusive": -0.405,
+      "max_exclusive": 0.48,
+      "when_out_of_range": 0.0,
+      "when_in_range": {
+        "type": "minecraft:range_choice",
+        "input": "stellarity:climate/humidity",
+        "min_inclusive": 0.265,
+        "max_exclusive": 1.0,
+        "when_out_of_range": 0.0,
+        "when_in_range": {
+          "type": "minecraft:range_choice",
+          "input": "stellarity:climate/continents",
+          "min_inclusive": -0.15,
+          "max_exclusive": 1.0,
+          "when_out_of_range": 0.0,
+          "when_in_range": {
+            "type": "minecraft:range_choice",
+            "input": "stellarity:climate/erosion",
+            "min_inclusive": 0.545,
+            "max_exclusive": 1.0,
+            "when_out_of_range": 0.0,
+            "when_in_range": 0.55
+          }
+        }
+      }
+    }
+  }
+}

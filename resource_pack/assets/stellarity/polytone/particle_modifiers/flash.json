@@ -1,0 +1,10 @@
+{
+  "targets": [
+    "minecraft:flash"
+  ],
+  "size": "SIZE * 0.25",
+  "alpha": "ALPHA * 0.20",
+  "red": "RED * 0.70",
+  "green": "GREEN * 0.30",
+  "blue": "BLUE * 0.90"
+}

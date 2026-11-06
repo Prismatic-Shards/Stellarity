@@ -1,4 +1,6 @@
 {
   "parent": "minecraft:item/generated",
-  "textures": { "layer0": "stellarity:item/ender_egg" }
+  "textures": {
+    "layer0": "stellarity:item/ender_egg"
+  }
 }

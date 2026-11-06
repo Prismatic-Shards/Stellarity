@@ -1,0 +1,33 @@
+{
+  "attributes_modifiers": {
+    "base": {
+      "minecraft:visual/fog_color": "stellarity:biomes/the_void_fog",
+      "minecraft:visual/sky_color": "stellarity:biomes/the_void_sky",
+      "minecraft:visual/fog_start_distance": "c.viewDistance() * (c.y() < 55 ? 0.005 : 0.02)",
+      "minecraft:visual/fog_end_distance": "c.viewDistance() * (c.y() < 55 ? 0.42 : 0.60)",
+      "minecraft:visual/ambient_particles": {
+        "modifier": "override",
+        "argument": [
+          {
+            "particle": {
+              "type": "stellarity:drift_fog_abyss"
+            },
+            "probability": 0.006
+          },
+          {
+            "particle": {
+              "type": "stellarity:void_wisp"
+            },
+            "probability": 0.005
+          },
+          {
+            "particle": {
+              "type": "stellarity:twinkling_star"
+            },
+            "probability": 0.004
+          }
+        ]
+      }
+    }
+  }
+}

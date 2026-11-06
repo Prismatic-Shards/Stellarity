@@ -3,8 +3,8 @@
   "downfall": 0.5,
   "has_precipitation": false,
   "attributes": {
-    "visual/sky_color": 0,
-    "visual/fog_color": 0,
+    "visual/sky_color": 1180708,
+    "visual/fog_color": 2493752,
     "visual/water_fog_color": 3156295,
     "audio/ambient_sounds": {
       "loop": {
@@ -28,7 +28,19 @@
           "particle": {
             "type": "minecraft:ash"
           },
-          "probability": 0.0111
+          "probability": 0.004
+        },
+        {
+          "particle": {
+            "type": "minecraft:portal"
+          },
+          "probability": 0.0018
+        },
+        {
+          "particle": {
+            "type": "minecraft:end_rod"
+          },
+          "probability": 0.0006
         }
       ]
     }
@@ -80,6 +92,9 @@
     [],
     [],
     [],
-    ["stellarity:global/end_dungeon", "stellarity:global/fossil"]
+    [
+      "stellarity:global/end_dungeon",
+      "stellarity:global/fossil"
+    ]
   ]
 }

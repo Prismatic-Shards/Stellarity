@@ -1,39 +1,44 @@
 {
-  "type": "minecraft:lake",
-  "fluid": {
-    "type": "minecraft:simple",
-    "state": {
-      "id": "minecraft:water",
-      "properties": {
-        "level": "0"
+  "type": "minecraft:waterlogged_vegetation_patch",
+  "surface": "floor",
+  "depth": 2,
+  "vertical_range": 6,
+  "extra_bottom_block_chance": 0.35,
+  "extra_edge_column_chance": 0.48,
+  "vegetation_chance": 0.0,
+  "xz_radius": {
+    "type": "minecraft:uniform",
+    "min_inclusive": 4,
+    "max_inclusive": 7
+  },
+  "replaceable": "#stellarity:_worldgen/the_hallow/ground",
+  "ground_state": {
+    "type": "minecraft:weighted",
+    "entries": [
+      {
+        "weight": 7,
+        "data": {
+          "id": "minecraft:calcite"
+        }
+      },
+      {
+        "weight": 3,
+        "data": {
+          "id": "minecraft:diorite"
+        }
       }
-    }
-  },
-  "barrier": {
-    "type": "minecraft:simple",
-    "state": {
-      "id": "minecraft:calcite"
-    }
-  },
-  "can_place_feature": {
-    "type": "minecraft:true"
-  },
-  "can_replace_with_air_or_fluid": {
-    "type": "minecraft:matching_blocks",
-    "blocks": [
-      "minecraft:grass_block",
-      "minecraft:dirt",
-      "minecraft:rooted_dirt",
-      "minecraft:end_stone"
     ]
   },
-  "can_replace_with_barrier": {
-    "type": "minecraft:matching_blocks",
-    "blocks": [
-      "minecraft:grass_block",
-      "minecraft:dirt",
-      "minecraft:rooted_dirt",
-      "minecraft:end_stone"
-    ]
+  "vegetation_feature": {
+    "feature": {
+      "type": "minecraft:simple_block",
+      "to_place": {
+        "type": "minecraft:simple",
+        "state": {
+          "id": "minecraft:water"
+        }
+      }
+    },
+    "placement": []
   }
 }

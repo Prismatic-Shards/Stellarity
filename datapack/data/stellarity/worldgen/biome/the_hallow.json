@@ -3,22 +3,22 @@
   "downfall": 0.6,
   "has_precipitation": false,
   "attributes": {
-    "visual/sky_color": 8103167,
-    "visual/fog_color": 12638463,
+    "visual/sky_color": 4770532,
+    "visual/fog_color": 16167122,
     "visual/water_fog_color": 15034111,
     "audio/ambient_sounds": {
       "loop": {
-        "sound_id": "stellarity:ambient.the_end.heavenly_blessed"
+        "sound_id": "stellarity:ambient.the_hallow.loop"
       },
       "mood": {
-        "sound": "ambient.soul_sand_valley.mood",
-        "tick_delay": 900,
-        "block_search_extent": 2,
+        "sound": "minecraft:block.amethyst_block.resonate",
+        "tick_delay": 600,
+        "block_search_extent": 8,
         "offset": 2
       },
       "additions": {
-        "sound": "ambient.underwater.loop.additions.rare",
-        "tick_chance": 0.00055
+        "sound": "block.amethyst_block.chime",
+        "tick_chance": 0.012
       }
     },
     "visual/ambient_particles": {
@@ -28,7 +28,7 @@
           "particle": {
             "type": "minecraft:cherry_leaves"
           },
-          "probability": 0.0012
+          "probability": 0.0035
         }
       ]
     },
@@ -105,12 +105,17 @@
   "effects": {
     "water_color": 15368447,
     "grass_color": 6078719,
-    "foliage_color": 5819646
+    "foliage_color": 5819646,
+    "dry_foliage_color": 16106678
   },
-  "carvers": [],
+  "carvers": [
+    "stellarity:the_hallow/cave",
+    "stellarity:the_hallow/crevice"
+  ],
   "features": [
     [
-      "stellarity:the_hallow/stalactite"
+      "stellarity:the_hallow/stalactite",
+      "stellarity:the_hallow/island/calcite_bottom"
     ],
     [
       "stellarity:the_hallow/crystals",

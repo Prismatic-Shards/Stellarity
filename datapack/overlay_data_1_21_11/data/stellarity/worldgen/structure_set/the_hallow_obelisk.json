@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "stellarity:the_hallow/obelisk",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 489215033,
+    "spacing": 4,
+    "separation": 2
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:block_blob",
+  "config": {
+    "can_place_on": {
+      "type": "minecraft:matching_blocks",
+      "blocks": [
+        "minecraft:sand",
+        "minecraft:coarse_dirt",
+        "minecraft:sandstone",
+        "minecraft:smooth_sandstone",
+        "minecraft:end_stone"
+      ]
+    },
+    "state": {
+      "Name": "minecraft:smooth_sandstone"
+    }
+  }
+}

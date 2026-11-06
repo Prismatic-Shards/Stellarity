@@ -3,34 +3,34 @@
   "downfall": 0.5,
   "has_precipitation": false,
   "attributes": {
-    "visual/sky_color": 0,
-    "visual/fog_color": 0,
-    "visual/water_fog_color": 6105711,
+    "visual/sky_color": 2038072,
+    "visual/fog_color": 12102089,
+    "visual/water_fog_color": 5060445,
     "audio/ambient_sounds": {
       "loop": {
-        "sound_id": "stellarity:ambient.the_end.heavenly_grim"
+        "sound_id": "stellarity:ambient.the_end.heavenly_blessed"
       },
       "mood": {
-        "sound": "minecraft:ambient.basalt_deltas.mood",
-        "tick_delay": 1100,
-        "block_search_extent": 6,
+        "sound": "block.amethyst_block.resonate",
+        "tick_delay": 600,
+        "block_search_extent": 8,
         "offset": 2
       },
       "additions": {
-        "sound": "ambient.basalt_deltas.additions",
-        "tick_chance": 0.0111
+        "sound": "block.amethyst_block.chime",
+        "tick_chance": 0.015
       }
     },
     "visual/ambient_particles": {
+      "modifier": "override",
       "argument": [
         {
           "particle": {
-            "type": "minecraft:dripping_obsidian_tear"
+            "type": "minecraft:end_rod"
           },
-          "probability": 0.00022
+          "probability": 0.002
         }
-      ],
-      "modifier": "override"
+      ]
     }
   },
   "effects": {
@@ -62,14 +62,19 @@
   },
   "carvers": [],
   "features": [
-    ["stellarity:global/stalactite", "stellarity:crystal_crags/hills"],
+    [
+      "stellarity:global/stalactite",
+      "stellarity:crystal_crags/hills"
+    ],
     [
       "stellarity:crystal_crags/large_crystals",
       "stellarity:crystal_crags/crystals_amethyst",
       "stellarity:crystal_crags/delta_amethyst",
       "stellarity:crystal_crags/delta_grass"
     ],
-    ["stellarity:crystal_crags/ore_budding_amethyst"],
+    [
+      "stellarity:crystal_crags/ore_budding_amethyst"
+    ],
     [],
     [],
     [],
@@ -80,6 +85,9 @@
       "stellarity:crystal_crags/amethyst",
       "stellarity:crystal_crags/vegetation"
     ],
-    ["stellarity:global/end_dungeon", "stellarity:global/fossil"]
+    [
+      "stellarity:global/end_dungeon",
+      "stellarity:global/fossil"
+    ]
   ]
 }

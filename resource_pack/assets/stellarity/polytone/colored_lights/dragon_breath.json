@@ -1,0 +1,12 @@
+{
+  "target_type": "particle",
+  "targets": [
+    "minecraft:dragon_breath"
+  ],
+  "require_config": "stellarity:colored_lights",
+  "colored_light": {
+    "color": "#b54ff0",
+    "radius": 6,
+    "brightness": 0.85
+  }
+}

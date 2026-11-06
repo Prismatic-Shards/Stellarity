@@ -1,4 +1,4 @@
-summon item ~ ~ ~ {Item:{id:"minecraft:stone",count:1},Tags:["stellarity.brewing.ignore"],Motion:[0d,0.15d,0d]}
+summon item ~ ~ ~ {Item:{id:"minecraft:stone",count:1},PickupDelay:0,Tags:["stellarity.brewing.ignore"],Motion:[0d,0.15d,0d]}
 data modify entity @n[type=item,nbt={Item:{id:"minecraft:stone"}}] Item set from entity @n[type=item_display,tag=stellarity.brewing.item_display] item
 
 kill @s

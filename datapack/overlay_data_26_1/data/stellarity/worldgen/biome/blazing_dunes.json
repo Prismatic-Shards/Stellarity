@@ -3,9 +3,35 @@
   "downfall": 0.4,
   "has_precipitation": false,
   "attributes": {
-    "visual/sky_color": 7907327,
-    "visual/fog_color": 12638463,
-    "visual/water_fog_color": 329011
+    "visual/sky_color": 4000770,
+    "visual/fog_color": 16219904,
+    "visual/water_fog_color": 14034984,
+    "audio/ambient_sounds": {
+      "loop": {
+        "sound_id": "ambient.nether_wastes.loop"
+      },
+      "mood": {
+        "sound": "ambient.nether_wastes.mood",
+        "tick_delay": 700,
+        "block_search_extent": 6,
+        "offset": 2
+      },
+      "additions": {
+        "sound": "ambient.nether_wastes.additions",
+        "tick_chance": 0.012
+      }
+    },
+    "visual/ambient_particles": {
+      "modifier": "override",
+      "argument": [
+        {
+          "particle": {
+            "type": "minecraft:small_flame"
+          },
+          "probability": 0.0015
+        }
+      ]
+    }
   },
   "effects": {
     "water_color": 4159204

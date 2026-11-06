@@ -1,0 +1,4 @@
+{
+  "activation_condition": "(config('stellarity:sandstorm_effects') == '§aON') && (g.skyType() == 2) && (c.biome() == 'stellarity:endless_dunes' || c.biome() == 'stellarity:blazing_dunes') && ((sin(g.time() * 0.00035) + 0.6 * sin(g.time() * 0.00085 + 1.7) + 0.4 * sin(g.time() * 0.00017 + 3.1)) > 0.35)",
+  "post_chain": "stellarity:sandstorm"
+}

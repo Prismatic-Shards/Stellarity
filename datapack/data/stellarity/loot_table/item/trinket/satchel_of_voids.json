@@ -61,6 +61,10 @@
                 "minecraft:item_name": {
                   "translate": "item.stellarity.satchel_of_voids"
                 },
+                "minecraft:use_cooldown": {
+                  "seconds": 30.0,
+                  "cooldown_group": "stellarity:satchel_of_voids"
+                },
                 "!max_damage": {},
                 "damage_resistant": {
                   "types": "#is_fire"

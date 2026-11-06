@@ -1,0 +1,39 @@
+{
+  "attributes_modifiers": {
+    "base": {
+      "minecraft:visual/fog_color": "stellarity:biomes/hallowed_tundra_fog",
+      "minecraft:visual/sky_color": "stellarity:biomes/hallowed_tundra_sky",
+      "minecraft:visual/fog_start_distance": "c.viewDistance() * (c.y() > 165 ? 0.10 : (c.y() < 60 ? 0.008 : 0.03))",
+      "minecraft:visual/fog_end_distance": "c.viewDistance() * (c.y() > 165 ? 0.78 : (c.y() < 60 ? 0.48 : 0.68))",
+      "minecraft:visual/ambient_particles": {
+        "modifier": "override",
+        "argument": [
+          {
+            "particle": {
+              "type": "stellarity:blizzard_fog"
+            },
+            "probability": 0.004
+          },
+          {
+            "particle": {
+              "type": "minecraft:snowflake"
+            },
+            "probability": 0.008
+          },
+          {
+            "particle": {
+              "type": "minecraft:cherry_leaves"
+            },
+            "probability": 0.004
+          },
+          {
+            "particle": {
+              "type": "minecraft:end_rod"
+            },
+            "probability": 0.003
+          }
+        ]
+      }
+    }
+  }
+}

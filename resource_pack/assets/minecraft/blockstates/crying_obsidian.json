@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "": {
+      "type": "polytone:expression",
+      "fabric:type": "polytone:expression",
+      "cases": [
+        {
+          "when": "o.biome() == 'stellarity:the_hallow' || o.biome() == 'stellarity:hallowed_tundra'",
+          "model": {
+            "model": "stellarity:block/hallow_crying_obsidian"
+          }
+        }
+      ],
+      "fallback": {
+        "model": "minecraft:block/crying_obsidian"
+      }
+    }
+  }
+}

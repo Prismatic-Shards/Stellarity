@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:simple_block",
+  "to_place": {
+    "type": "minecraft:weighted",
+    "entries": [
+      {
+        "weight": 5,
+        "data": {
+          "id": "minecraft:warped_fungus"
+        }
+      },
+      {
+        "weight": 3,
+        "data": {
+          "id": "minecraft:brown_mushroom"
+        }
+      },
+      {
+        "weight": 2,
+        "data": {
+          "id": "minecraft:red_mushroom"
+        }
+      },
+      {
+        "weight": 1,
+        "data": {
+          "id": "minecraft:crimson_fungus"
+        }
+      }
+    ]
+  }
+}

@@ -36,7 +36,7 @@
       "spawns": []
     }
   },
-  "terrain_adaptation": "beard_box",
+  "terrain_adaptation": "beard_thin",
   "start_pool": "stellarity:village/layouts",
   "size": 6,
   "start_height": {
@@ -45,7 +45,7 @@
   "dimension_padding": {
     "bottom": 4
   },
-  "project_start_to_heightmap": "WORLD_SURFACE",
+  "project_start_to_heightmap": "WORLD_SURFACE_WG",
   "max_distance_from_center": 116,
-  "use_expansion_hack": false
+  "use_expansion_hack": true
 }

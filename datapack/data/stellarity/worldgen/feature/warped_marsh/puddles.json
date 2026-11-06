@@ -1,134 +1,46 @@
 {
-  "type": "minecraft:random_selector",
-  "features": [
-    {
-      "chance": 0.06,
-      "feature": {
-        "feature": {
-          "type": "minecraft:waterlogged_vegetation_patch",
-          "surface": "floor",
-          "depth": {
-            "type": "minecraft:uniform",
-            "min_inclusive": 2,
-            "max_inclusive": 3
-          },
-          "vertical_range": 5,
-          "extra_bottom_block_chance": 0.8,
-          "extra_edge_column_chance": 0.7,
-          "vegetation_chance": 0.4,
-          "xz_radius": {
-            "type": "minecraft:uniform",
-            "min_inclusive": 2,
-            "max_inclusive": 4
-          },
-          "replaceable": "#minecraft:dirt",
-          "ground_state": {
-            "type": "minecraft:weighted",
-            "entries": [
-              {
-                "weight": 25,
-                "data": {
-                  "id": "minecraft:coarse_dirt"
-                }
-              },
-              {
-                "weight": 13,
-                "data": {
-                  "id": "minecraft:rooted_dirt"
-                }
-              }
-            ]
-          },
-          "vegetation_feature": {
-            "feature": {
-              "type": "minecraft:simple_block",
-              "to_place": {
-                "type": "minecraft:weighted",
-                "entries": [
-                  {
-                    "weight": 1,
-                    "data": {
-                      "id": "minecraft:small_dripleaf",
-                      "properties": {
-                        "facing": "east",
-                        "half": "lower",
-                        "waterlogged": "false"
-                      }
-                    }
-                  },
-                  {
-                    "weight": 1,
-                    "data": {
-                      "id": "minecraft:small_dripleaf",
-                      "properties": {
-                        "facing": "west",
-                        "half": "lower",
-                        "waterlogged": "false"
-                      }
-                    }
-                  },
-                  {
-                    "weight": 1,
-                    "data": {
-                      "id": "minecraft:small_dripleaf",
-                      "properties": {
-                        "facing": "north",
-                        "half": "lower",
-                        "waterlogged": "false"
-                      }
-                    }
-                  },
-                  {
-                    "weight": 1,
-                    "data": {
-                      "id": "minecraft:small_dripleaf",
-                      "properties": {
-                        "facing": "south",
-                        "half": "lower",
-                        "waterlogged": "false"
-                      }
-                    }
-                  }
-                ]
-              }
-            },
-            "placement": []
-          }
-        },
-        "placement": []
-      }
-    }
-  ],
-  "default": {
-    "feature": {
-      "type": "minecraft:waterlogged_vegetation_patch",
-      "surface": "floor",
-      "depth": {
-        "type": "minecraft:uniform",
-        "min_inclusive": 1,
-        "max_inclusive": 2
-      },
-      "vertical_range": 10,
-      "extra_bottom_block_chance": 0.6,
-      "extra_edge_column_chance": 0.4,
-      "vegetation_chance": 0.04,
-      "xz_radius": {
-        "type": "minecraft:biased_to_bottom",
-        "min_inclusive": 2,
-        "max_inclusive": 4
-      },
-      "replaceable": "#minecraft:lush_ground_replaceable",
-      "ground_state": {
-        "type": "minecraft:simple",
-        "state": {
-          "id": "minecraft:moss_block"
+  "type": "minecraft:waterlogged_vegetation_patch",
+  "surface": "floor",
+  "depth": {
+    "type": "minecraft:uniform",
+    "min_inclusive": 2,
+    "max_inclusive": 3
+  },
+  "vertical_range": 6,
+  "extra_bottom_block_chance": 0.7,
+  "extra_edge_column_chance": 0.5,
+  "vegetation_chance": 0.35,
+  "xz_radius": {
+    "type": "minecraft:uniform",
+    "min_inclusive": 4,
+    "max_inclusive": 8
+  },
+  "replaceable": "#stellarity:_worldgen/warped_marsh/ground",
+  "ground_state": {
+    "type": "minecraft:weighted",
+    "entries": [
+      {
+        "weight": 55,
+        "data": {
+          "id": "minecraft:mud"
         }
       },
-      "vegetation_feature": {
-        "feature": "stellarity:warped_marsh/pond_plants",
-        "placement": []
+      {
+        "weight": 25,
+        "data": {
+          "id": "minecraft:packed_mud"
+        }
+      },
+      {
+        "weight": 20,
+        "data": {
+          "id": "minecraft:muddy_mangrove_roots"
+        }
       }
-    },
+    ]
+  },
+  "vegetation_feature": {
+    "feature": "stellarity:warped_marsh/pond_plants",
     "placement": []
   }
 }

@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:clamp",
+  "input": "stellarity:terrain/macro/rift_wall",
+  "min": 0.0,
+  "max": 0.55
+}

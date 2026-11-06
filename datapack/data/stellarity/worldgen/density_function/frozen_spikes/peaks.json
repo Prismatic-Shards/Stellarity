@@ -1,0 +1,82 @@
+{
+  "type": "minecraft:range_choice",
+  "input": "stellarity:frozen_spikes/climate_mask",
+  "min_inclusive": 0.001,
+  "max_exclusive": 2.0,
+  "when_in_range": {
+    "type": "minecraft:add",
+    "left": {
+      "type": "minecraft:mul",
+      "left": {
+        "type": "minecraft:mul",
+        "left": {
+          "type": "minecraft:gradient",
+          "axis": "y",
+          "from_coordinate": 50,
+          "to_coordinate": 65,
+          "from_value": 0.0,
+          "to_value": 1.0
+        },
+        "right": {
+          "type": "minecraft:gradient",
+          "axis": "y",
+          "from_coordinate": 155,
+          "to_coordinate": 180,
+          "from_value": 1.0,
+          "to_value": 0.0
+        }
+      },
+      "right": {
+        "type": "minecraft:add",
+        "left": {
+          "type": "minecraft:gradient",
+          "axis": "y",
+          "from_coordinate": 65,
+          "to_coordinate": 165,
+          "from_value": 0.6,
+          "to_value": -1.1
+        },
+        "right": {
+          "type": "minecraft:add",
+          "left": {
+            "type": "minecraft:add",
+            "left": 0.55,
+            "right": {
+              "type": "minecraft:mul",
+              "left": -1.4,
+              "right": {
+                "type": "minecraft:abs",
+                "input": {
+                  "type": "minecraft:noise",
+                  "noise": "stellarity:frozen_spikes/peak_ridge",
+                  "xz_scale": 0.18,
+                  "y_scale": 0.0
+                }
+              }
+            }
+          },
+          "right": {
+            "type": "minecraft:mul",
+            "left": 0.55,
+            "right": {
+              "type": "minecraft:noise",
+              "noise": "stellarity:frozen_spikes/peak_horns",
+              "xz_scale": 0.12,
+              "y_scale": 0.08
+            }
+          }
+        }
+      }
+    },
+    "right": {
+      "type": "minecraft:mul",
+      "left": 1.8,
+      "right": {
+        "type": "minecraft:add",
+        "left": "stellarity:frozen_spikes/climate_mask",
+        "right": -1.0
+      }
+    }
+  },
+  "when_out_of_range": -64.0
+}

@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "interacted_with_seat": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:interaction",
+          "nbt": "{Tags:[\"stellarity.anchor_seat_trigger\"]}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "stellarity:mechanic/sit_anchor/advancement_interact"
+  }
+}

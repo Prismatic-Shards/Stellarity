@@ -1,3 +1,8 @@
 {
-  "values": ["stellarity:kaleidoscope", "kohara:simulated_explosion"]
+  "values": [
+    "stellarity:kaleidoscope",
+    "stellarity:radiant_kaleidoscope",
+    "stellarity:radiant_kaleidoscope_crush",
+    "kohara:simulated_explosion"
+  ]
 }

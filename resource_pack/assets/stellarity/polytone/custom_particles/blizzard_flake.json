@@ -1,0 +1,25 @@
+{
+  "type": "custom",
+  "initializer": {
+    "lifetime": "40 + 25 * rand()",
+    "alpha": "0",
+    "size": "0",
+    "red": "0.92",
+    "green": "0.96",
+    "blue": "1.0",
+    "roll": "rand() * 6.28",
+    "custom": "rand()"
+  },
+  "ticker": {
+    "dx": "-1.6 - CUSTOM * 0.9",
+    "dy": "-0.12 - 0.06 * sin(0.25 * TIME + CUSTOM * 6.28)",
+    "dz": "0.35 * sin(0.2 * TIME + CUSTOM * 6.28)",
+    "size": "(0.22 + CUSTOM * 0.14) * sin((pi / LIFETIME) * AGE)",
+    "alpha": "0.90 * sin((pi / LIFETIME) * AGE)",
+    "roll": "ROLL + 0.08",
+    "remove_condition": "sqrt(DISTANCE_SQUARED) > 45"
+  },
+  "rotation_mode": "movement_aligned",
+  "render_type": "translucent",
+  "has_physics": false
+}

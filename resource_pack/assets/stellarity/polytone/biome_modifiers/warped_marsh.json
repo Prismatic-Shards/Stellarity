@@ -1,0 +1,39 @@
+{
+  "attributes_modifiers": {
+    "base": {
+      "minecraft:visual/fog_color": "stellarity:biomes/warped_marsh_fog",
+      "minecraft:visual/sky_color": "stellarity:biomes/warped_marsh_sky",
+      "minecraft:visual/fog_start_distance": "c.viewDistance() * (c.y() > 165 ? 0.06 : (c.y() < 60 ? 0.005 : 0.02))",
+      "minecraft:visual/fog_end_distance": "c.viewDistance() * (c.y() > 165 ? 0.74 : (c.y() < 60 ? 0.44 : 0.62))",
+      "minecraft:visual/ambient_particles": {
+        "modifier": "override",
+        "argument": [
+          {
+            "particle": {
+              "type": "stellarity:drift_fog_toxic"
+            },
+            "probability": 0.004
+          },
+          {
+            "particle": {
+              "type": "minecraft:warped_spore"
+            },
+            "probability": 0.008
+          },
+          {
+            "particle": {
+              "type": "minecraft:spore_blossom_air"
+            },
+            "probability": 0.006
+          },
+          {
+            "particle": {
+              "type": "stellarity:warped_spore"
+            },
+            "probability": 0.004
+          }
+        ]
+      }
+    }
+  }
+}

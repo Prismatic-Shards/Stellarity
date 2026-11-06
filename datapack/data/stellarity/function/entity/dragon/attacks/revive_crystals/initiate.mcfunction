@@ -3,7 +3,7 @@ tag @s add stellarity.dragon.respawned_crystals
 playsound minecraft:entity.zombie_villager.cure block @a[distance=0..] ~ ~ ~ 6 0
 
 summon minecraft:marker 63 101 0 {Tags:["stellarity.crystal","smithed.entity","smithed.strict"]}
-summon minecraft:marker 50 106 36 {Tags:["stellarity.crystal","smithed.entity","smithed.strict"]}
+summon minecraft:marker 50 122 36 {Tags:["stellarity.crystal","smithed.entity","smithed.strict"]}
 summon minecraft:marker 18 95 59 {Tags:["stellarity.crystal","smithed.entity","smithed.strict"]}
 summon minecraft:marker -19 107 59 {Tags:["stellarity.crystal","smithed.entity","smithed.strict"]}
 summon minecraft:marker -51 106 36 {Tags:["stellarity.crystal","smithed.entity","smithed.strict"]}

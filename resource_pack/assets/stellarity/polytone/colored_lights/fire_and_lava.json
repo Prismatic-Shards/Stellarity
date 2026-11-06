@@ -1,0 +1,10 @@
+{
+  "targets": [
+    "minecraft:fire",
+    "minecraft:soul_fire",
+    "minecraft:lava",
+    "minecraft:magma_block"
+  ],
+  "require_config": "stellarity:colored_lights",
+  "colored_light": "#aa60ea"
+}

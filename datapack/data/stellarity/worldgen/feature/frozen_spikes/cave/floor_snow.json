@@ -1,0 +1,46 @@
+{
+  "type": "minecraft:vegetation_patch",
+  "surface": "floor",
+  "depth": {
+    "type": "minecraft:uniform",
+    "min_inclusive": 2,
+    "max_inclusive": 3
+  },
+  "vertical_range": 5,
+  "extra_bottom_block_chance": 0.5,
+  "extra_edge_column_chance": 0.7,
+  "vegetation_chance": 0.35,
+  "xz_radius": {
+    "type": "minecraft:uniform",
+    "min_inclusive": 2,
+    "max_inclusive": 5
+  },
+  "replaceable": "#stellarity:_worldgen/frozen_spikes/patches_replacable",
+  "ground_state": {
+    "type": "minecraft:weighted",
+    "entries": [
+      {
+        "weight": 5,
+        "data": {
+          "id": "minecraft:snow_block"
+        }
+      },
+      {
+        "weight": 3,
+        "data": {
+          "id": "minecraft:powder_snow"
+        }
+      },
+      {
+        "weight": 2,
+        "data": {
+          "id": "minecraft:packed_ice"
+        }
+      }
+    ]
+  },
+  "vegetation_feature": {
+    "feature": "stellarity:frozen_spikes/ground_crystals",
+    "placement": []
+  }
+}

@@ -1,0 +1,6 @@
+# Project created via BDEngine
+data merge entity @e[type=item_display,tag=project_35,distance=..1,limit=1,sort=nearest] {transformation:[-0.1888406f,9561.308f,0.4984364f,-149.0583f,-0.7048931f,-2561.76f,-0.1335159f,-25.09017f,0.00002054772f,-9898.464f,0.5160133f,154.3078f,0f,0f,0f,1f],interpolation_duration:2,start_interpolation:0}
+data merge entity @e[type=item_display,tag=project_36,distance=..1,limit=1,sort=nearest] {transformation:[0.01074805f,-11863.71f,-0.3872073f,185.1927f,0.7235238f,1135.488f,-0.07446154f,-82.89038f,0.0945137f,-7343.284f,0.614053f,114.3834f,0f,0f,0f,1f],interpolation_duration:2,start_interpolation:0}
+data merge entity @e[type=item_display,tag=project_37,distance=..1,limit=1,sort=nearest] {transformation:[-0.1889134f,11709.51f,-0.3524697f,-183.1275f,0.6808492f,4843.266f,0.0723394f,-140.7326f,0.1824585f,-5949.022f,-0.6348757f,91.98214f,0f,0f,0f,1f],interpolation_duration:2,start_interpolation:0}
+data merge entity @e[type=item_display,tag=project_38,distance=..1,limit=1,sort=nearest] {transformation:[-0.1889134f,11709.51f,-0.3524697f,-183.1275f,0.6808492f,4843.266f,0.0723394f,-140.7326f,0.1824585f,-5949.022f,-0.6348757f,91.98214f,0f,0f,0f,1f],interpolation_duration:2,start_interpolation:0}
+schedule function project:k/default/check_pause_1 0.1s

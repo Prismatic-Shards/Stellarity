@@ -12,4 +12,4 @@ function stellarity:mechanic/cauldron_crafting/add_item/adding_calculations/star
 function stellarity:mechanic/cauldron_crafting/add_item/add
 
 execute if score #count stellarity.misc matches ..0 run kill @n[type=item,distance=..0.5]
-execute if score #count stellarity.misc matches 1.. store result entity @n[type=item,distance=..0.5] Item.count byte 1 run scoreboard players get #count stellarity.misc
+execute if score #count stellarity.misc matches 1.. store result entity @n[type=item,distance=..0.5] Item.count int 1 run scoreboard players get #count stellarity.misc

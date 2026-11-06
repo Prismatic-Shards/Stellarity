@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:score",
+  "target": {
+    "type": "minecraft:fixed",
+    "name": "#stellarity.config"
+  },
+  "score": "stellarity.config.enable_radiant_kaleidoscope"
+}

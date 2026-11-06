@@ -1,30 +1,21 @@
-{   "parent": "block/block",
+{
+	"parent": "minecraft:block/block",
 	"textures": {
 		"particle": "stellarity:block/ender_dirt",
 		"bottom": "stellarity:block/ender_dirt",
-		"top": "stellarity:block/ender_grass_block_top",
-		"side": "stellarity:block/ender_grass_block_side",
-		"overlay": "stellarity:block/ender_grass_block_side_overlay"
+		"top": "stellarity:block/ender_grass_block_top"
 	},
 	"elements": [
-		{   "from": [ 0, 0, 0 ],
+		{
+			"from": [ 0, 0, 0 ],
 			"to": [ 16, 16, 16 ],
 			"faces": {
 				"down":  { "uv": [ 0, 0, 16, 16 ], "texture": "#bottom", "cullface": "down" },
-				"up":    { "uv": [ 0, 0, 16, 16 ], "texture": "#top",    "cullface": "up", "tintindex": 0 },
-				"north": { "uv": [ 0, 0, 16, 16 ], "texture": "#side",   "cullface": "north" },
-				"south": { "uv": [ 0, 0, 16, 16 ], "texture": "#side",   "cullface": "south" },
-				"west":  { "uv": [ 0, 0, 16, 16 ], "texture": "#side",   "cullface": "west" },
-				"east":  { "uv": [ 0, 0, 16, 16 ], "texture": "#side",   "cullface": "east" }
-			}
-		},
-		{   "from": [ 0, 0, 0 ],
-			"to": [ 16, 16, 16 ],
-			"faces": {
-				"north": { "uv": [ 0, 0, 16, 16 ], "texture": "#overlay", "tintindex": 0, "cullface": "north" },
-				"south": { "uv": [ 0, 0, 16, 16 ], "texture": "#overlay", "tintindex": 0, "cullface": "south" },
-				"west":  { "uv": [ 0, 0, 16, 16 ], "texture": "#overlay", "tintindex": 0, "cullface": "west" },
-				"east":  { "uv": [ 0, 0, 16, 16 ], "texture": "#overlay", "tintindex": 0, "cullface": "east" }
+				"up":    { "uv": [ 0, 0, 16, 16 ], "texture": "#top",    "cullface": "up",    "tintindex": 0 },
+				"north": { "uv": [ 0, 0, 16, 16 ], "texture": "#top",    "cullface": "north", "tintindex": 0 },
+				"south": { "uv": [ 0, 0, 16, 16 ], "texture": "#top",    "cullface": "south", "tintindex": 0 },
+				"west":  { "uv": [ 0, 0, 16, 16 ], "texture": "#top",    "cullface": "west",  "tintindex": 0 },
+				"east":  { "uv": [ 0, 0, 16, 16 ], "texture": "#top",    "cullface": "east",  "tintindex": 0 }
 			}
 		}
 	]

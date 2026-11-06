@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:range_choice",
+  "input": "minecraft:y",
+  "min_inclusive": 28,
+  "max_exclusive": 58,
+  "when_out_of_range": 0.0,
+  "when_in_range": {
+    "type": "minecraft:range_choice",
+    "input": "stellarity:climate/temperature",
+    "min_inclusive": -2.0,
+    "max_exclusive": -0.65,
+    "when_out_of_range": 0.0,
+    "when_in_range": {
+      "type": "minecraft:range_choice",
+      "input": "stellarity:climate/continents",
+      "min_inclusive": 0.05,
+      "max_exclusive": 2.0,
+      "when_in_range": 0.55,
+      "when_out_of_range": 0.0
+    }
+  }
+}

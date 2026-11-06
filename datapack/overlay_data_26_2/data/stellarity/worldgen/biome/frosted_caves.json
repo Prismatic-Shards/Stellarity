@@ -1,0 +1,168 @@
+{
+  "temperature": -0.8,
+  "downfall": 0.4,
+  "has_precipitation": false,
+  "attributes": {
+    "audio/ambient_sounds": {
+      "loop": {
+        "sound_id": "stellarity:ambient.the_end.dark"
+      },
+      "mood": {
+        "sound": "minecraft:ambient.cave",
+        "tick_delay": 500,
+        "block_search_extent": 8,
+        "offset": 2
+      },
+      "additions": {
+        "sound": "ambient.soul_sand_valley.additions",
+        "tick_chance": 0.014
+      }
+    },
+    "audio/background_music": {
+      "default": {
+        "sound": "minecraft:music.end",
+        "min_delay": 12000,
+        "max_delay": 24000,
+        "replace_current_music": false
+      }
+    },
+    "audio/firefly_bush_sounds": false,
+    "audio/music_volume": 1.0,
+    "visual/ambient_particles": {
+      "modifier": "override",
+      "argument": [
+        {
+          "particle": {
+            "type": "minecraft:snowflake"
+          },
+          "probability": 0.006
+        }
+      ]
+    },
+    "visual/cloud_color": "#00000000",
+    "visual/cloud_fog_end_distance": 2048.0,
+    "visual/cloud_height": 192.33,
+    "visual/ambient_light_color": "#0a1016",
+    "visual/fog_color": "#141C26",
+    "visual/fog_end_distance": 56.0,
+    "visual/fog_start_distance": 0.0,
+    "visual/moon_angle": 0.0,
+    "visual/moon_phase": "full_moon",
+    "visual/night_vision_color": "#999999",
+    "visual/sky_color": "#070B10",
+    "visual/sky_fog_end_distance": 256.0,
+    "visual/sky_light_color": "#708090",
+    "visual/sky_light_factor": 0.3,
+    "visual/star_angle": 0.0,
+    "visual/star_brightness": 0.0,
+    "visual/sun_angle": 0.0,
+    "visual/sunrise_sunset_color": "#00000000",
+    "visual/water_fog_color": "#081420",
+    "visual/water_fog_end_distance": 48.0,
+    "visual/water_fog_start_distance": -4.0,
+    "gameplay/natural_mob_spawns": {
+      "spawn_costs": {
+        "minecraft:stray": {
+          "energy_budget": 1.0,
+          "charge": 0.6
+        },
+        "minecraft:vex": {
+          "energy_budget": 1.0,
+          "charge": 0.5
+        }
+      },
+      "spawns_by_category": {
+        "monster": [
+          {
+            "type": "minecraft:stray",
+            "count": {
+              "type": "minecraft:uniform",
+              "min_inclusive": 2,
+              "max_inclusive": 4
+            },
+            "weight": 70
+          },
+          {
+            "type": "minecraft:vex",
+            "count": {
+              "type": "minecraft:uniform",
+              "min_inclusive": 1,
+              "max_inclusive": 2
+            },
+            "weight": 30
+          },
+          {
+            "type": "minecraft:enderman",
+            "count": {
+              "type": "minecraft:uniform",
+              "min_inclusive": 1,
+              "max_inclusive": 2
+            },
+            "weight": 20
+          }
+        ],
+        "ambient": [
+          {
+            "type": "minecraft:bat",
+            "count": {
+              "type": "minecraft:uniform",
+              "min_inclusive": 2,
+              "max_inclusive": 4
+            },
+            "weight": 30
+          }
+        ]
+      }
+    },
+    "gameplay/creature_world_gen_spawn_probability": 0.0
+  },
+  "effects": {
+    "water_color": 529440,
+    "water_fog_color": 529440,
+    "grass_color": 9811650,
+    "foliage_color": 9811650,
+    "dry_foliage_color": 11523035,
+    "sky_color": 329240,
+    "fog_color": 526364
+  },
+  "carvers": [
+    "stellarity:large_ice_cave",
+    "stellarity:ice_cave_entrance",
+    "stellarity:ravine",
+    "stellarity:crack"
+  ],
+  "features": [
+    [],
+    [
+      "stellarity:frozen_spikes/lake_ice",
+      "stellarity:frozen_spikes/lake_powder_snow"
+    ],
+    [
+      "stellarity:frozen_spikes/large_dripstone",
+      "stellarity:frozen_spikes/fallen_ice_spike"
+    ],
+    [
+      "stellarity:frozen_spikes/cave/floor_snow",
+      "stellarity:frozen_spikes/cave/ceiling_ice",
+      "stellarity:frozen_spikes/cave/stalagmite",
+      "stellarity:frozen_spikes/cave/dripstone_cluster"
+    ],
+    [
+      "minecraft:ice_patch"
+    ],
+    [],
+    [
+      "stellarity:frozen_spikes/ore_blue_ice"
+    ],
+    [],
+    [
+      "stellarity:frozen_spikes/ground_crystals",
+      "stellarity:frozen_spikes/ice_crystals"
+    ],
+    [],
+    [
+      "minecraft:freeze_top_layer",
+      "stellarity:frozen_spikes/dungeon"
+    ]
+  ]
+}

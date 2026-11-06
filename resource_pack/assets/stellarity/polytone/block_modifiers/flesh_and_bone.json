@@ -1,0 +1,19 @@
+{
+  "targets": [
+    "minecraft:nether_wart_block",
+    "minecraft:bone_block",
+    "minecraft:crimson_nylium"
+  ],
+  "particle_emitters": [
+    {
+      "particle": "minecraft:crimson_spore",
+      "chance": 0.02,
+      "x": "0.5 + (r.rand() - 0.5) * 0.7",
+      "y": "0.95 + r.rand() * 0.1",
+      "z": "0.5 + (r.rand() - 0.5) * 0.7",
+      "dx": "(r.rand() - 0.5) * 0.01",
+      "dy": "0.015 + r.rand() * 0.02",
+      "dz": "(r.rand() - 0.5) * 0.01"
+    }
+  ]
+}

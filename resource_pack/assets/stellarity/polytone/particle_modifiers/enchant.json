@@ -1,0 +1,6 @@
+{
+  "targets": [
+    "minecraft:enchant"
+  ],
+  "size": "SIZE * 2.2 + 0.3"
+}

@@ -1,0 +1,19 @@
+{
+  "targets": [
+    "minecraft:player"
+  ],
+  "emitters": [
+    {
+      "particle": "stellarity:celestial_meteor",
+      "chance": "(config('stellarity:cosmic_meteors') != '§cOFF') && (g.skyType() == 2) ? 0.022 : 0.0",
+      "count": 1,
+      "max_distance": 120,
+      "x": "r.rand(-65.0, 65.0)",
+      "y": "r.rand(35.0, 75.0)",
+      "z": "r.rand(-65.0, 65.0)",
+      "dx": "-1.8 - r.rand() * 1.4",
+      "dy": "-0.7 - r.rand() * 0.5",
+      "dz": "0.9 + r.rand() * 0.7"
+    }
+  ]
+}

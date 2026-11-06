@@ -1,33 +1,26 @@
+# Guard: do nothing if an ascending soot is already active
+execute if entity @e[type=item,tag=stellarity.altar_of_the_sacred.ascending] run return 0
+
+# Initiates ascending starlight soot animation to summon Empress of Light
+# Deduct 1 starlight soot from stack
 execute store result score #count stellarity.misc run data get entity @s Item.count 1
 
-scoreboard players set #1 stellarity.misc 1
-scoreboard players operation #count stellarity.misc -= #1 stellarity.misc
+execute if score #count stellarity.misc matches 2.. run scoreboard players remove #count stellarity.misc 1
+execute if score #count stellarity.misc matches 2.. store result entity @s Item.count int 1 run scoreboard players get #count stellarity.misc
+execute if score #count stellarity.misc matches 2.. run summon item ~ ~0.5 ~ {Item:{id:"minecraft:sugar",count:1,components:{"minecraft:custom_data":{"stellarity:item":"starlight_soot"},"minecraft:item_model":"stellarity:starlight_soot"}},Tags:["stellarity.altar_of_the_sacred.ascending","stellarity.altar.skip","stellarity.checked"],NoGravity:1b,Glowing:1b,PickupDelay:32767s}
 
-scoreboard players set #empress_of_light.is_radiant stellarity.misc 0
+execute if score #count stellarity.misc matches 1 run tag @s add stellarity.altar_of_the_sacred.ascending
+execute if score #count stellarity.misc matches 1 run tag @s add stellarity.altar.skip
+execute if score #count stellarity.misc matches 1 run tag @s add stellarity.checked
+execute if score #count stellarity.misc matches 1 run data merge entity @s {NoGravity:1b,Glowing:1b,PickupDelay:32767s}
 
-execute if score #stellarity.config stellarity.config.enable_radiant_empress_of_light matches 1 \
-if entity @p[distance=..16,predicate=stellarity:item/holding/kaleidoscope] \
-run scoreboard players set #empress_of_light.is_radiant stellarity.misc 1
+# Apply yellow glow to ascending entity
+execute as @e[type=item,tag=stellarity.altar_of_the_sacred.ascending,distance=..3] run team join stellarity.yellow_glow @s
 
-execute if score #stellarity.config stellarity.config.enable_radiant_empress_of_light matches 1 \
-if entity @s[tag=stellarity.starlight_soot.radiant] \
-run scoreboard players set #empress_of_light.is_radiant stellarity.misc 1
+# Set 35-tick (1.75s) ascending sequence
+execute as @e[type=item,tag=stellarity.altar_of_the_sacred.ascending,distance=..2,limit=1] run scoreboard players set @s stellarity.misc 35
 
-execute if score #stellarity.config stellarity.config.enable_radiant_empress_of_light matches 1 \
-if entity @n[type=item,tag=stellarity.starlight_soot.radiant] \
-run scoreboard players set #empress_of_light.is_radiant stellarity.misc 1
-
-execute if score #count stellarity.misc matches 1.. store result entity @s Item.count byte 1 run scoreboard players get #count stellarity.misc
-execute if score #count stellarity.misc matches ..0 run kill @s
-
-particle explosion ~ ~ ~ 0 0 0 1 0 force @a[distance=..128]
-particle smoke ~ ~ ~ 0 0 0 0.12 14 normal
-particle end_rod ~ ~ ~ 0 0 0 0.12 28 normal
-
-playsound minecraft:entity.allay.item_taken block @a[distance=0..] ~ ~ ~ 1 1
-playsound minecraft:entity.zombie.infect block @a[distance=0..] ~ ~ ~ 1 1
-playsound minecraft:entity.zombie.infect block @a[distance=0..] ~ ~ ~ 1 0
-
-scoreboard players set #empress_of_light.is_alive stellarity.misc 1
-
-function stellarity:entity/empress_of_light/summon
+# Audio and visual start
+playsound stellarity:mechanic.altar_of_the_sacred.ambient_loop block @a[distance=0..] ~ ~ ~ 1.0 1.1
+playsound block.amethyst_block.chime block @a[distance=0..] ~ ~ ~ 1.0 1.2
+particle end_rod ~ ~0.5 ~ 0.2 0.2 0.2 0.05 15

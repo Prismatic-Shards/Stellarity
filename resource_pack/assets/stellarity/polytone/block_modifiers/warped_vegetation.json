@@ -1,0 +1,16 @@
+{
+  "targets": [
+    "minecraft:warped_wart_block",
+    "minecraft:warped_nylium",
+    "minecraft:warped_roots"
+  ],
+  "particle_emitters": [
+    {
+      "particle": "stellarity:warped_spore",
+      "chance": 0.025,
+      "x": "0.5 + (r.rand() - 0.5) * 0.7",
+      "y": "0.95 + r.rand() * 0.1",
+      "z": "0.5 + (r.rand() - 0.5) * 0.7"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "attributes_modifiers": {
+    "base": {
+      "minecraft:visual/fog_color": "stellarity:biomes/the_end_fog",
+      "minecraft:visual/sky_color": "stellarity:biomes/the_end_sky",
+      "minecraft:visual/fog_start_distance": "c.viewDistance() * (c.y() > 165 ? 0.12 : (c.y() < 60 ? 0.01 : 0.04))",
+      "minecraft:visual/fog_end_distance": "c.viewDistance() * (c.y() > 165 ? 0.82 : (c.y() < 60 ? 0.50 : 0.70))",
+      "minecraft:visual/ambient_particles": {
+        "modifier": "override",
+        "argument": [
+          {
+            "particle": {
+              "type": "minecraft:sweep_attack"
+            },
+            "probability": 0.0035
+          },
+          {
+            "particle": {
+              "type": "stellarity:ash_cinder"
+            },
+            "probability": 0.0018
+          },
+          {
+            "particle": {
+              "type": "minecraft:ash"
+            },
+            "probability": 0.008
+          },
+          {
+            "particle": {
+              "type": "stellarity:drift_fog_dragon"
+            },
+            "probability": 0.00012
+          },
+          {
+            "particle": {
+              "type": "stellarity:cosmic_dust"
+            },
+            "probability": 0.004
+          }
+        ]
+      }
+    }
+  }
+}

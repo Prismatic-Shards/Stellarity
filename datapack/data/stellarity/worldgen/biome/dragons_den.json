@@ -3,9 +3,9 @@
   "downfall": 0.4,
   "has_precipitation": false,
   "attributes": {
-    "visual/sky_color": 0,
-    "visual/fog_color": 0,
-    "visual/water_fog_color": 4272254,
+    "visual/sky_color": 853524,
+    "visual/fog_color": 4855115,
+    "visual/water_fog_color": 2359366,
     "gameplay/natural_mob_spawns": {
       "spawn_costs": {},
       "spawns_by_category": {
@@ -18,29 +18,64 @@
               "max_inclusive": 4
             },
             "weight": 10
-            
           }
         ]
       }
+    },
+    "audio/ambient_sounds": {
+      "loop": {
+        "sound_id": "ambient.nether_wastes.loop"
+      },
+      "mood": {
+        "sound": "ambient.soul_sand_valley.mood",
+        "tick_delay": 600,
+        "block_search_extent": 6,
+        "offset": 2
+      },
+      "additions": {
+        "sound": "entity.ender_dragon.growl",
+        "tick_chance": 0.005
+      }
+    },
+    "visual/ambient_particles": {
+      "modifier": "override",
+      "argument": [
+        {
+          "particle": {
+            "type": "minecraft:dragon_breath"
+          },
+          "probability": 0.0012
+        }
+      ]
     }
   },
   "effects": {
     "water_color": 6443678,
     "grass_color": 14606046,
-    "foliage_color": 12763842
+    "foliage_color": 12763842,
+    "dry_foliage_color": 6701683
   },
   "carvers": [],
   "features": [
-    ["stellarity:global/stalactite", "stellarity:dragons_den/hills"],
+    [
+      "stellarity:global/stalactite",
+      "stellarity:dragons_den/hills"
+    ],
     [],
     [],
     [],
     [],
     [],
     [],
-    ["stellarity:dragons_den/obsidian"],
-    ["stellarity:dragons_den/patches"],
-    ["stellarity:dragons_den/chorus_plant"],
+    [
+      "stellarity:dragons_den/obsidian"
+    ],
+    [
+      "stellarity:dragons_den/patches"
+    ],
+    [
+      "stellarity:dragons_den/chorus_plant"
+    ],
     [
       "stellarity:dragons_den/end_spike/center",
       "stellarity:dragons_den/end_spike/ring",

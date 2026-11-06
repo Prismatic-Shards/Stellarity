@@ -1,10 +1,10 @@
 {
   "block.end_portal.spawn": {
-    "sounds": [],
+    "sounds": ["stellarity:silent"],
     "replace": true
   },
   "block.end_portal_frame.fill": {
-    "sounds": [],
+    "sounds": ["stellarity:silent"],
     "replace": true
   },
   "entity.enderman.hurt": {

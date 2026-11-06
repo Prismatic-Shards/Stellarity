@@ -1,0 +1,24 @@
+{
+  "targets": [
+    "minecraft:cherry_leaves",
+    "minecraft:pink_petals"
+  ],
+  "particle_emitters": [
+    {
+      "particle": "minecraft:cherry_leaves",
+      "chance": 0.035,
+      "x": "0.5 + (r.rand() - 0.5) * 0.9",
+      "y": "0.5 + (r.rand() - 0.5) * 0.9",
+      "z": "0.5 + (r.rand() - 0.5) * 0.9",
+      "dy": "-0.01 - r.rand() * 0.01"
+    },
+    {
+      "particle": "stellarity:celestial_spark",
+      "chance": 0.015,
+      "x": "0.5 + (r.rand() - 0.5) * 0.8",
+      "y": "0.5 + (r.rand() - 0.5) * 0.8",
+      "z": "0.5 + (r.rand() - 0.5) * 0.8",
+      "dy": "0.015 + r.rand() * 0.01"
+    }
+  ]
+}

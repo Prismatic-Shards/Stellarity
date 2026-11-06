@@ -3,22 +3,22 @@
   "downfall": 0.4,
   "has_precipitation": false,
   "attributes": {
-    "visual/sky_color": 7907327,
-    "visual/fog_color": 12638463,
-    "visual/water_fog_color": 270131,
+    "visual/sky_color": 2103856,
+    "visual/fog_color": 14723437,
+    "visual/water_fog_color": 7817526,
     "audio/ambient_sounds": {
       "loop": {
-        "sound_id": "stellarity:ambient.the_end.heavenly_grim"
+        "sound_id": "stellarity:ambient.the_end.heavenly_blessed"
       },
       "mood": {
-        "sound": "minecraft:ambient.cave",
-        "tick_delay": 1000,
-        "block_search_extent": 4,
-        "offset": 2.0
+        "sound": "ambient.soul_sand_valley.mood",
+        "tick_delay": 850,
+        "block_search_extent": 6,
+        "offset": 2
       },
       "additions": {
-        "sound": "minecraft:ambient.cave",
-        "tick_chance": 0.001
+        "sound": "ambient.underwater.loop.additions.rare",
+        "tick_chance": 0.008
       }
     },
     "visual/ambient_particles": {
@@ -26,9 +26,9 @@
       "argument": [
         {
           "particle": {
-            "type": "white_ash"
+            "type": "minecraft:portal"
           },
-          "probability": 0.0011
+          "probability": 0.001
         }
       ]
     }
@@ -80,12 +80,13 @@
   ],
   "features": [
     [
-      "stellarity:global/stalactite",
+      "stellarity:endless_dunes/island/sandstone_stalactite",
       "stellarity:endless_dunes/oasis"
     ],
     [],
     [
-      "stellarity:endless_dunes/delta_sand_on_endstone"
+      "stellarity:endless_dunes/rock/sandstone_boulder",
+      "stellarity:endless_dunes/rock/fallen_fossil"
     ],
     [],
     [],
@@ -94,9 +95,9 @@
     [],
     [],
     [
-      "stellarity:endless_dunes/vegetation",
-      "minecraft:patch_dry_grass_desert",
-      "stellarity:endless_dunes/grass"
+      "stellarity:endless_dunes/vegetation/arid_patch",
+      "stellarity:endless_dunes/vegetation/bush_clusters",
+      "stellarity:endless_dunes/vegetation/chorus_cactus"
     ],
     [
       "stellarity:global/end_dungeon",

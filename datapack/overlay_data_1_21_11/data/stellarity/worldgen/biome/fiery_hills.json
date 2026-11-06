@@ -3,22 +3,22 @@
   "downfall": 0.5,
   "has_precipitation": false,
   "attributes": {
-    "visual/sky_color": 0,
-    "visual/fog_color": 0,
-    "visual/water_fog_color": 270131,
+    "visual/sky_color": 2819590,
+    "visual/fog_color": 14222377,
+    "visual/water_fog_color": 8392495,
     "audio/ambient_sounds": {
       "loop": {
-        "sound_id": "stellarity:ambient.the_end.dark"
+        "sound_id": "ambient.crimson_forest.loop"
       },
       "mood": {
-        "sound": "ambient.nether_wastes.mood",
-        "tick_delay": 820,
-        "block_search_extent": 8,
+        "sound": "ambient.crimson_forest.mood",
+        "tick_delay": 650,
+        "block_search_extent": 6,
         "offset": 2
       },
       "additions": {
-        "sound": "ambient.basalt_deltas.additions",
-        "tick_chance": 0.005
+        "sound": "ambient.crimson_forest.additions",
+        "tick_chance": 0.012
       }
     },
     "visual/ambient_particles": {
@@ -26,9 +26,9 @@
       "argument": [
         {
           "particle": {
-            "type": "white_ash"
+            "type": "flame"
           },
-          "probability": 0.0055
+          "probability": 0.0018
         }
       ]
     }
@@ -61,7 +61,10 @@
       "charge": 1
     }
   },
-  "carvers": ["stellarity:ravine", "stellarity:crack"],
+  "carvers": [
+    "stellarity:ravine",
+    "stellarity:crack"
+  ],
   "features": [
     [
       "stellarity:global/stalactite",
@@ -69,19 +72,30 @@
       "stellarity:fiery_hills/hills_blackstone",
       "stellarity:fiery_hills/hills_basalt"
     ],
-    ["stellarity:fiery_hills/delta_lava", "stellarity:fiery_hills/delta_sand"],
+    [
+      "stellarity:fiery_hills/delta_lava",
+      "stellarity:fiery_hills/delta_sand"
+    ],
     [],
-    ["stellarity:fiery_hills/ore_gold", "stellarity:fiery_hills/ore_magma"],
+    [
+      "stellarity:fiery_hills/ore_gold",
+      "stellarity:fiery_hills/ore_magma"
+    ],
     [],
     [],
     [],
-    ["stellarity:fiery_hills/sand"],
+    [
+      "stellarity:fiery_hills/sand"
+    ],
     [
       "stellarity:fiery_hills/vents",
       "stellarity:fiery_hills/patch_fire",
       "stellarity:fiery_hills/trees",
       "stellarity:fiery_hills/vegetation"
     ],
-    ["stellarity:global/end_dungeon", "stellarity:global/fossil"]
+    [
+      "stellarity:global/end_dungeon",
+      "stellarity:global/fossil"
+    ]
   ]
 }

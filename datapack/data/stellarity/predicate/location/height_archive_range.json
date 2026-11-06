@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:location_check",
+  "predicate": {
+    "dimension": "minecraft:the_end",
+    "position": {
+      "y": {
+        "min": -64.0,
+        "max": 20.0
+      }
+    }
+  }
+}

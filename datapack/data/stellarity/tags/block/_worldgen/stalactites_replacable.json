@@ -14,10 +14,12 @@
     "packed_mud",
     "basalt",
     "smooth_sandstone",
+    "sandstone",
     "snow_block",
     "ice",
+    "packed_ice",
+    "blue_ice",
     "white_concrete_powder",
-    "calcite",
     "moss_block",
     "warped_wart_block"
   ]

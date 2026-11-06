@@ -3,7 +3,7 @@ execute store result score #count stellarity.misc run data get entity @s Item.co
 scoreboard players set #1 stellarity.misc 1
 scoreboard players operation #count stellarity.misc -= #1 stellarity.misc
 
-execute if score #count stellarity.misc matches 1.. store result entity @s Item.count byte 1 run scoreboard players get #count stellarity.misc
+execute if score #count stellarity.misc matches 1.. store result entity @s Item.count int 1 run scoreboard players get #count stellarity.misc
 execute if score #count stellarity.misc matches ..0 run kill @s
 
 

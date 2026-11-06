@@ -2,10 +2,13 @@
   "temperature": 0.5,
   "downfall": 0.5,
   "has_precipitation": false,
+  "effects": {
+    "water_color": 5261169,
+    "grass_color": 4994644,
+    "foliage_color": 5585503,
+    "dry_foliage_color": 8415372
+  },
   "attributes": {
-    "visual/sky_color": 0,
-    "visual/fog_color": 0,
-    "visual/water_fog_color": 3156295,
     "audio/ambient_sounds": {
       "loop": {
         "sound_id": "stellarity:ambient.the_end.dark"
@@ -21,17 +24,27 @@
         "tick_chance": 0.005
       }
     },
-    "visual/ambient_particles": {
-      "modifier": "override",
-      "argument": [
-        {
-          "particle": {
-            "type": "minecraft:ash"
-          },
-          "probability": 0.0111
-        }
-      ]
+    "audio/background_music": {
+      "default": {
+        "sound": "minecraft:music.end",
+        "min_delay": 12000,
+        "max_delay": 24000,
+        "replace_current_music": false
+      }
     },
+    "audio/firefly_bush_sounds": false,
+    "audio/music_volume": 1.0,
+    "gameplay/bed_rule": {
+      "can_sleep": "never",
+      "can_set_spawn": "never"
+    },
+    "gameplay/can_pillager_patrol_spawn": false,
+    "gameplay/can_start_raid": false,
+    "gameplay/cat_waking_up_gift_chance": 0.0,
+    "gameplay/creaking_active": false,
+    "gameplay/eyeblossom_open": "default",
+    "gameplay/increased_fire_burnout": false,
+    "gameplay/monsters_burn": false,
     "gameplay/natural_mob_spawns": {
       "spawn_costs": {
         "minecraft:enderman": {
@@ -65,12 +78,57 @@
           }
         ]
       }
-    }
-  },
-  "effects": {
-    "water_color": 5261169,
-    "grass_color": 4994644,
-    "foliage_color": 5585503
+    },
+    "gameplay/nether_portal_spawns_piglin": false,
+    "gameplay/piglins_zombify": true,
+    "gameplay/respawn_anchor_works": true,
+    "gameplay/snow_golem_melts": false,
+    "gameplay/turtle_egg_hatch_chance": 0.002,
+    "gameplay/villager_activity": "minecraft:idle",
+    "gameplay/baby_villager_activity": "minecraft:idle",
+    "gameplay/water_evaporates": false,
+    "visual/ambient_light_color": "#000000",
+    "visual/ambient_particles": {
+      "modifier": "override",
+      "argument": [
+        {
+          "particle": {
+            "type": "minecraft:ash"
+          },
+          "probability": 0.0111
+        },
+        {
+          "particle": {
+            "type": "minecraft:end_rod"
+          },
+          "probability": 0.0005
+        }
+      ]
+    },
+    "visual/block_light_tint": "#FFD88C",
+    "visual/cloud_color": "#00000000",
+    "visual/cloud_fog_end_distance": 2048.0,
+    "visual/cloud_height": 192.33,
+    "visual/default_dripstone_particle": {
+      "type": "minecraft:dripping_dripstone_water"
+    },
+    "visual/fog_color": "#9095C1",
+    "visual/fog_end_distance": 640.0,
+    "visual/fog_start_distance": 0.0,
+    "visual/moon_angle": 0.0,
+    "visual/moon_phase": "full_moon",
+    "visual/night_vision_color": "#999999",
+    "visual/sky_color": "#5E70AC",
+    "visual/sky_fog_end_distance": 256.0,
+    "visual/sky_light_color": "#FFFFFF",
+    "visual/sky_light_factor": 1.0,
+    "visual/star_angle": 0.0,
+    "visual/star_brightness": 0.5,
+    "visual/sun_angle": 0.0,
+    "visual/sunrise_sunset_color": "#00000000",
+    "visual/water_fog_color": "#050533",
+    "visual/water_fog_end_distance": 96.0,
+    "visual/water_fog_start_distance": -8.0
   },
   "carvers": [],
   "features": [

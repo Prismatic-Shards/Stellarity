@@ -1,0 +1,11 @@
+{
+  "predicate": {
+    "biomes": "stellarity:warped_marsh",
+    "position": {
+      "y": {
+        "min": 43.0
+      }
+    }
+  },
+  "condition": "minecraft:location_check"
+}

@@ -1,2 +1,3 @@
 scoreboard players remove @s stellarity.item.void_pendant.glow.cooldown 1
+execute if predicate stellarity:item/holding/void_pendant/amethyst if score @s stellarity.item.void_pendant.glow.cooldown matches 1.. run title @s actionbar [{"text":"• ","color":"#404040"},{"text":"✨ ","color":"#C781E6"},{"translate":"item.stellarity.void_pendant.amethyst.description.name"},{"text":": ","color":"#AAAAAA"},{"score":{"name":"@s","objective":"stellarity.item.void_pendant.glow.cooldown"},"color":"#E097E6"},{"text":"t","color":"#888888"},{"text":" •","color":"#404040"}]
 execute if score @s stellarity.item.void_pendant.glow.cooldown matches 0 run function stellarity:item/void_pendant/amethyst/ready

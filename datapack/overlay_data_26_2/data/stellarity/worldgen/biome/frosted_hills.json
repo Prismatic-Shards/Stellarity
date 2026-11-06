@@ -3,9 +3,35 @@
   "downfall": 0.4,
   "has_precipitation": false,
   "attributes": {
-    "visual/sky_color": 7907327,
-    "visual/fog_color": 12638463,
-    "visual/water_fog_color": 329011
+    "visual/sky_color": 725803,
+    "visual/fog_color": 11066076,
+    "visual/water_fog_color": 4553629,
+    "audio/ambient_sounds": {
+      "loop": {
+        "sound_id": "stellarity:ambient.cold_biomes.loop"
+      },
+      "mood": {
+        "sound": "ambient.soul_sand_valley.mood",
+        "tick_delay": 900,
+        "block_search_extent": 6,
+        "offset": 2
+      },
+      "additions": {
+        "sound": "ambient.underwater.loop.additions.rare",
+        "tick_chance": 0.01
+      }
+    },
+    "visual/ambient_particles": {
+      "modifier": "override",
+      "argument": [
+        {
+          "particle": {
+            "type": "minecraft:snowflake"
+          },
+          "probability": 0.003
+        }
+      ]
+    }
   },
   "effects": {
     "water_color": 4159204
@@ -13,5 +39,17 @@
   "spawners": {},
   "spawn_costs": {},
   "carvers": [],
-  "features": [[], [], [], [], [], [], [], [], [], [], []]
+  "features": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+  ]
 }

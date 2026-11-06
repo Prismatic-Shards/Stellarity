@@ -469,6 +469,39 @@
       "label": [
         {
           "atlas": "minecraft:items",
+          "sprite": "stellarity:item/radiant_kaleidoscope"
+        }
+      ],
+      "tooltip": {
+        "translate": "item.stellarity.radiant_kaleidoscope",
+        "fallback": "Radiant Kaleidoscope"
+      },
+      "width": 20,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "loot give @s loot stellarity:item/weapon/radiant_kaleidoscope"
+      }
+    },
+    {
+      "label": [
+        {
+          "atlas": "minecraft:items",
+          "sprite": "stellarity:item/radiant_kaleidoscope_ascended"
+        }
+      ],
+      "tooltip": {
+        "text": "Radiant Kaleidoscope (Ascended)"
+      },
+      "width": 20,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "loot give @s loot stellarity:item/weapon/radiant_kaleidoscope_ascended"
+      }
+    },
+    {
+      "label": [
+        {
+          "atlas": "minecraft:items",
           "sprite": "stellarity:item/prismember"
         }
       ],
@@ -1102,8 +1135,8 @@
       ],
       "tooltip": [
         {
-        "translate": "item.stellarity.void_pendant",
-        "fallback": "Void Pendant"
+          "translate": "item.stellarity.void_pendant",
+          "fallback": "Void Pendant"
         },
         "\n",
         {
@@ -1128,8 +1161,8 @@
       ],
       "tooltip": [
         {
-        "translate": "item.stellarity.void_pendant",
-        "fallback": "Void Pendant"
+          "translate": "item.stellarity.void_pendant",
+          "fallback": "Void Pendant"
         },
         "\n",
         {
@@ -1154,8 +1187,8 @@
       ],
       "tooltip": [
         {
-        "translate": "item.stellarity.void_pendant",
-        "fallback": "Void Pendant"
+          "translate": "item.stellarity.void_pendant",
+          "fallback": "Void Pendant"
         },
         "\n",
         {
@@ -1180,8 +1213,8 @@
       ],
       "tooltip": [
         {
-        "translate": "item.stellarity.void_pendant",
-        "fallback": "Void Pendant"
+          "translate": "item.stellarity.void_pendant",
+          "fallback": "Void Pendant"
         },
         "\n",
         {
@@ -1206,8 +1239,8 @@
       ],
       "tooltip": [
         {
-        "translate": "item.stellarity.void_pendant",
-        "fallback": "Void Pendant"
+          "translate": "item.stellarity.void_pendant",
+          "fallback": "Void Pendant"
         },
         "\n",
         {
@@ -1232,8 +1265,8 @@
       ],
       "tooltip": [
         {
-        "translate": "item.stellarity.void_pendant",
-        "fallback": "Void Pendant"
+          "translate": "item.stellarity.void_pendant",
+          "fallback": "Void Pendant"
         },
         "\n",
         {
@@ -1258,8 +1291,8 @@
       ],
       "tooltip": [
         {
-        "translate": "item.stellarity.void_pendant",
-        "fallback": "Void Pendant"
+          "translate": "item.stellarity.void_pendant",
+          "fallback": "Void Pendant"
         },
         "\n",
         {
@@ -1284,8 +1317,8 @@
       ],
       "tooltip": [
         {
-        "translate": "item.stellarity.void_pendant",
-        "fallback": "Void Pendant"
+          "translate": "item.stellarity.void_pendant",
+          "fallback": "Void Pendant"
         },
         "\n",
         {
@@ -1310,8 +1343,8 @@
       ],
       "tooltip": [
         {
-        "translate": "item.stellarity.void_pendant",
-        "fallback": "Void Pendant"
+          "translate": "item.stellarity.void_pendant",
+          "fallback": "Void Pendant"
         },
         "\n",
         {

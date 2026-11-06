@@ -1,0 +1,29 @@
+{
+  "model": {
+    "type": "minecraft:composite",
+    "models": [
+      {
+        "type": "minecraft:model",
+        "model": "stellarity:item/_particle/rk_ring/normal",
+        "tints": [
+          {
+            "type": "minecraft:custom_model_data",
+            "index": 0,
+            "default": 16777215
+          }
+        ]
+      },
+      {
+        "type": "minecraft:model",
+        "model": "stellarity:item/_particle/rk_ring/glow",
+        "tints": [
+          {
+            "type": "minecraft:custom_model_data",
+            "index": 1,
+            "default": 16777215
+          }
+        ]
+      }
+    ]
+  }
+}

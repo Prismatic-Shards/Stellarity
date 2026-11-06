@@ -1,0 +1,39 @@
+{
+  "attributes_modifiers": {
+    "base": {
+      "minecraft:visual/fog_color": "stellarity:biomes/blazing_dunes_fog",
+      "minecraft:visual/sky_color": "stellarity:biomes/blazing_dunes_sky",
+      "minecraft:visual/fog_start_distance": "c.viewDistance() * (c.y() > 165 ? 0.10 : (c.y() < 60 ? 0.01 : 0.03))",
+      "minecraft:visual/fog_end_distance": "c.viewDistance() * (c.y() > 165 ? 0.78 : (c.y() < 60 ? 0.48 : 0.66))",
+      "minecraft:visual/ambient_particles": {
+        "modifier": "override",
+        "argument": [
+          {
+            "particle": {
+              "type": "stellarity:drift_fog_ash"
+            },
+            "probability": 0.0035
+          },
+          {
+            "particle": {
+              "type": "minecraft:flame"
+            },
+            "probability": 0.004
+          },
+          {
+            "particle": {
+              "type": "minecraft:lava"
+            },
+            "probability": 0.002
+          },
+          {
+            "particle": {
+              "type": "stellarity:sandstorm_dust"
+            },
+            "probability": 0.006
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,1 +1,6 @@
-{"parent":"minecraft:item/generated","textures":{"layer0":"stellarity:item/enderite_upgrade_smithing_template"}}
+{
+    "parent": "minecraft:item/generated",
+    "textures": {
+        "layer0": "stellarity:item/enderite_upgrade_smithing_template"
+    }
+}

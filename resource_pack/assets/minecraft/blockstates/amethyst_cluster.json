@@ -1,0 +1,110 @@
+{
+  "variants": {
+    "facing=down": {
+      "type": "polytone:expression",
+      "fabric:type": "polytone:expression",
+      "cases": [
+        {
+          "when": "o.biome() == 'stellarity:frozen_spikes' || o.biome() == 'stellarity:frosted_valley' || o.biome() == 'stellarity:frosted_hills' || o.biome() == 'stellarity:frozen_shrubland' || o.biome() == 'stellarity:frozen_marsh' || o.biome() == 'stellarity:frosted_caves'",
+          "model": {
+            "model": "stellarity:block/frosted_amethyst_cluster",
+            "x": 180
+          }
+        }
+      ],
+      "fallback": {
+        "model": "minecraft:block/amethyst_cluster",
+        "x": 180
+      }
+    },
+    "facing=east": {
+      "type": "polytone:expression",
+      "fabric:type": "polytone:expression",
+      "cases": [
+        {
+          "when": "o.biome() == 'stellarity:frozen_spikes' || o.biome() == 'stellarity:frosted_valley' || o.biome() == 'stellarity:frosted_hills' || o.biome() == 'stellarity:frozen_shrubland' || o.biome() == 'stellarity:frozen_marsh' || o.biome() == 'stellarity:frosted_caves'",
+          "model": {
+            "model": "stellarity:block/frosted_amethyst_cluster",
+            "x": 90,
+            "y": 90
+          }
+        }
+      ],
+      "fallback": {
+        "model": "minecraft:block/amethyst_cluster",
+        "x": 90,
+        "y": 90
+      }
+    },
+    "facing=north": {
+      "type": "polytone:expression",
+      "fabric:type": "polytone:expression",
+      "cases": [
+        {
+          "when": "o.biome() == 'stellarity:frozen_spikes' || o.biome() == 'stellarity:frosted_valley' || o.biome() == 'stellarity:frosted_hills' || o.biome() == 'stellarity:frozen_shrubland' || o.biome() == 'stellarity:frozen_marsh' || o.biome() == 'stellarity:frosted_caves'",
+          "model": {
+            "model": "stellarity:block/frosted_amethyst_cluster",
+            "x": 90
+          }
+        }
+      ],
+      "fallback": {
+        "model": "minecraft:block/amethyst_cluster",
+        "x": 90
+      }
+    },
+    "facing=south": {
+      "type": "polytone:expression",
+      "fabric:type": "polytone:expression",
+      "cases": [
+        {
+          "when": "o.biome() == 'stellarity:frozen_spikes' || o.biome() == 'stellarity:frosted_valley' || o.biome() == 'stellarity:frosted_hills' || o.biome() == 'stellarity:frozen_shrubland' || o.biome() == 'stellarity:frozen_marsh' || o.biome() == 'stellarity:frosted_caves'",
+          "model": {
+            "model": "stellarity:block/frosted_amethyst_cluster",
+            "x": 90,
+            "y": 180
+          }
+        }
+      ],
+      "fallback": {
+        "model": "minecraft:block/amethyst_cluster",
+        "x": 90,
+        "y": 180
+      }
+    },
+    "facing=up": {
+      "type": "polytone:expression",
+      "fabric:type": "polytone:expression",
+      "cases": [
+        {
+          "when": "o.biome() == 'stellarity:frozen_spikes' || o.biome() == 'stellarity:frosted_valley' || o.biome() == 'stellarity:frosted_hills' || o.biome() == 'stellarity:frozen_shrubland' || o.biome() == 'stellarity:frozen_marsh' || o.biome() == 'stellarity:frosted_caves'",
+          "model": {
+            "model": "stellarity:block/frosted_amethyst_cluster"
+          }
+        }
+      ],
+      "fallback": {
+        "model": "minecraft:block/amethyst_cluster"
+      }
+    },
+    "facing=west": {
+      "type": "polytone:expression",
+      "fabric:type": "polytone:expression",
+      "cases": [
+        {
+          "when": "o.biome() == 'stellarity:frozen_spikes' || o.biome() == 'stellarity:frosted_valley' || o.biome() == 'stellarity:frosted_hills' || o.biome() == 'stellarity:frozen_shrubland' || o.biome() == 'stellarity:frozen_marsh' || o.biome() == 'stellarity:frosted_caves'",
+          "model": {
+            "model": "stellarity:block/frosted_amethyst_cluster",
+            "x": 90,
+            "y": 270
+          }
+        }
+      ],
+      "fallback": {
+        "model": "minecraft:block/amethyst_cluster",
+        "x": 90,
+        "y": 270
+      }
+    }
+  }
+}

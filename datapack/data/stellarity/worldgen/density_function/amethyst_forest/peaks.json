@@ -1,0 +1,829 @@
+{
+  "type": "minecraft:range_choice",
+  "input": "stellarity:amethyst_forest/amplitude",
+  "min_inclusive": 0.25,
+  "max_exclusive": 2.0,
+  "when_in_range": {
+    "type": "minecraft:max",
+    "left": {
+      "type": "minecraft:clamp",
+      "input": {
+        "type": "minecraft:mul",
+        "left": {
+          "type": "minecraft:add",
+          "left": {
+            "type": "minecraft:min",
+            "left": {
+              "type": "minecraft:add",
+              "left": "stellarity:amethyst_forest/height",
+              "right": {
+                "type": "minecraft:mul",
+                "left": -1,
+                "right": "minecraft:y"
+              }
+            },
+            "right": {
+              "type": "minecraft:add",
+              "left": "minecraft:y",
+              "right": {
+                "type": "minecraft:mul",
+                "left": -1,
+                "right": {
+                  "type": "minecraft:add",
+                  "left": 96,
+                  "right": {
+                    "type": "minecraft:mul",
+                    "left": -1,
+                    "right": {
+                      "type": "minecraft:mul",
+                      "left": 55,
+                      "right": "stellarity:amethyst_forest/peak_factor"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "right": {
+            "type": "minecraft:mul",
+            "left": 9.0,
+            "right": {
+              "type": "minecraft:noise",
+              "noise": "stellarity:amethyst_forest/peak_noise",
+              "xz_scale": 1.2,
+              "y_scale": 1.5,
+              "shift_x": 0,
+              "shift_y": 71,
+              "shift_z": 0
+            }
+          }
+        },
+        "right": 0.16666666666666666
+      },
+      "min": -1,
+      "max": 1
+    },
+    "right": {
+      "type": "minecraft:max",
+      "left": {
+        "type": "minecraft:max",
+        "left": {
+          "type": "minecraft:max",
+          "left": {
+            "type": "minecraft:clamp",
+            "input": {
+              "type": "minecraft:mul",
+              "left": {
+                "type": "minecraft:min",
+                "left": {
+                  "type": "minecraft:min",
+                  "left": {
+                    "type": "minecraft:add",
+                    "left": {
+                      "type": "minecraft:add",
+                      "left": {
+                        "type": "minecraft:add",
+                        "left": 150,
+                        "right": {
+                          "type": "minecraft:mul",
+                          "left": 6,
+                          "right": {
+                            "type": "minecraft:noise",
+                            "noise": "stellarity:amethyst_forest/peak_noise",
+                            "xz_scale": 0.18,
+                            "y_scale": 0,
+                            "shift_x": 0,
+                            "shift_y": 90,
+                            "shift_z": 0
+                          }
+                        }
+                      },
+                      "right": 2
+                    },
+                    "right": {
+                      "type": "minecraft:mul",
+                      "left": -1,
+                      "right": "minecraft:y"
+                    }
+                  },
+                  "right": {
+                    "type": "minecraft:add",
+                    "left": "minecraft:y",
+                    "right": {
+                      "type": "minecraft:mul",
+                      "left": -1,
+                      "right": {
+                        "type": "minecraft:add",
+                        "left": {
+                          "type": "minecraft:add",
+                          "left": {
+                            "type": "minecraft:add",
+                            "left": 150,
+                            "right": {
+                              "type": "minecraft:mul",
+                              "left": 6,
+                              "right": {
+                                "type": "minecraft:noise",
+                                "noise": "stellarity:amethyst_forest/peak_noise",
+                                "xz_scale": 0.18,
+                                "y_scale": 0,
+                                "shift_x": 0,
+                                "shift_y": 90,
+                                "shift_z": 0
+                              }
+                            }
+                          },
+                          "right": -2
+                        },
+                        "right": {
+                          "type": "minecraft:mul",
+                          "left": -1,
+                          "right": {
+                            "type": "minecraft:mul",
+                            "left": 14,
+                            "right": {
+                              "type": "minecraft:clamp",
+                              "input": {
+                                "type": "minecraft:mul",
+                                "left": {
+                                  "type": "minecraft:add",
+                                  "left": {
+                                    "type": "minecraft:add",
+                                    "left": "stellarity:amethyst_forest/height",
+                                    "right": {
+                                      "type": "minecraft:mul",
+                                      "left": -1,
+                                      "right": {
+                                        "type": "minecraft:add",
+                                        "left": 150,
+                                        "right": {
+                                          "type": "minecraft:mul",
+                                          "left": 6,
+                                          "right": {
+                                            "type": "minecraft:noise",
+                                            "noise": "stellarity:amethyst_forest/peak_noise",
+                                            "xz_scale": 0.18,
+                                            "y_scale": 0,
+                                            "shift_x": 0,
+                                            "shift_y": 90,
+                                            "shift_z": 0
+                                          }
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "right": 48
+                                },
+                                "right": 0.020833333333333332
+                              },
+                              "min": 0,
+                              "max": 1
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "type": "minecraft:min",
+                  "left": {
+                    "type": "minecraft:mul",
+                    "left": {
+                      "type": "minecraft:add",
+                      "left": {
+                        "type": "minecraft:clamp",
+                        "input": {
+                          "type": "minecraft:mul",
+                          "left": {
+                            "type": "minecraft:add",
+                            "left": {
+                              "type": "minecraft:add",
+                              "left": "stellarity:amethyst_forest/height",
+                              "right": {
+                                "type": "minecraft:mul",
+                                "left": -1,
+                                "right": {
+                                  "type": "minecraft:add",
+                                  "left": 150,
+                                  "right": {
+                                    "type": "minecraft:mul",
+                                    "left": 6,
+                                    "right": {
+                                      "type": "minecraft:noise",
+                                      "noise": "stellarity:amethyst_forest/peak_noise",
+                                      "xz_scale": 0.18,
+                                      "y_scale": 0,
+                                      "shift_x": 0,
+                                      "shift_y": 90,
+                                      "shift_z": 0
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "right": 48
+                          },
+                          "right": 0.020833333333333332
+                        },
+                        "min": 0,
+                        "max": 1
+                      },
+                      "right": -0.15
+                    },
+                    "right": 30
+                  },
+                  "right": {
+                    "type": "minecraft:mul",
+                    "left": {
+                      "type": "minecraft:add",
+                      "left": {
+                        "type": "minecraft:noise",
+                        "noise": "stellarity:amethyst_forest/peak_noise",
+                        "xz_scale": 0.45,
+                        "y_scale": 0,
+                        "shift_x": 0,
+                        "shift_y": 120,
+                        "shift_z": 0
+                      },
+                      "right": -0.04
+                    },
+                    "right": 30
+                  }
+                }
+              },
+              "right": 0.16666666666666666
+            },
+            "min": -1,
+            "max": 1
+          },
+          "right": {
+            "type": "minecraft:clamp",
+            "input": {
+              "type": "minecraft:mul",
+              "left": {
+                "type": "minecraft:min",
+                "left": {
+                  "type": "minecraft:min",
+                  "left": {
+                    "type": "minecraft:add",
+                    "left": {
+                      "type": "minecraft:add",
+                      "left": {
+                        "type": "minecraft:add",
+                        "left": 182,
+                        "right": {
+                          "type": "minecraft:mul",
+                          "left": 6,
+                          "right": {
+                            "type": "minecraft:noise",
+                            "noise": "stellarity:amethyst_forest/peak_noise",
+                            "xz_scale": 0.18,
+                            "y_scale": 0,
+                            "shift_x": 0,
+                            "shift_y": 103,
+                            "shift_z": 0
+                          }
+                        }
+                      },
+                      "right": 2
+                    },
+                    "right": {
+                      "type": "minecraft:mul",
+                      "left": -1,
+                      "right": "minecraft:y"
+                    }
+                  },
+                  "right": {
+                    "type": "minecraft:add",
+                    "left": "minecraft:y",
+                    "right": {
+                      "type": "minecraft:mul",
+                      "left": -1,
+                      "right": {
+                        "type": "minecraft:add",
+                        "left": {
+                          "type": "minecraft:add",
+                          "left": {
+                            "type": "minecraft:add",
+                            "left": 182,
+                            "right": {
+                              "type": "minecraft:mul",
+                              "left": 6,
+                              "right": {
+                                "type": "minecraft:noise",
+                                "noise": "stellarity:amethyst_forest/peak_noise",
+                                "xz_scale": 0.18,
+                                "y_scale": 0,
+                                "shift_x": 0,
+                                "shift_y": 103,
+                                "shift_z": 0
+                              }
+                            }
+                          },
+                          "right": -2
+                        },
+                        "right": {
+                          "type": "minecraft:mul",
+                          "left": -1,
+                          "right": {
+                            "type": "minecraft:mul",
+                            "left": 14,
+                            "right": {
+                              "type": "minecraft:clamp",
+                              "input": {
+                                "type": "minecraft:mul",
+                                "left": {
+                                  "type": "minecraft:add",
+                                  "left": {
+                                    "type": "minecraft:add",
+                                    "left": "stellarity:amethyst_forest/height",
+                                    "right": {
+                                      "type": "minecraft:mul",
+                                      "left": -1,
+                                      "right": {
+                                        "type": "minecraft:add",
+                                        "left": 182,
+                                        "right": {
+                                          "type": "minecraft:mul",
+                                          "left": 6,
+                                          "right": {
+                                            "type": "minecraft:noise",
+                                            "noise": "stellarity:amethyst_forest/peak_noise",
+                                            "xz_scale": 0.18,
+                                            "y_scale": 0,
+                                            "shift_x": 0,
+                                            "shift_y": 103,
+                                            "shift_z": 0
+                                          }
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "right": 48
+                                },
+                                "right": 0.020833333333333332
+                              },
+                              "min": 0,
+                              "max": 1
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "type": "minecraft:min",
+                  "left": {
+                    "type": "minecraft:mul",
+                    "left": {
+                      "type": "minecraft:add",
+                      "left": {
+                        "type": "minecraft:clamp",
+                        "input": {
+                          "type": "minecraft:mul",
+                          "left": {
+                            "type": "minecraft:add",
+                            "left": {
+                              "type": "minecraft:add",
+                              "left": "stellarity:amethyst_forest/height",
+                              "right": {
+                                "type": "minecraft:mul",
+                                "left": -1,
+                                "right": {
+                                  "type": "minecraft:add",
+                                  "left": 182,
+                                  "right": {
+                                    "type": "minecraft:mul",
+                                    "left": 6,
+                                    "right": {
+                                      "type": "minecraft:noise",
+                                      "noise": "stellarity:amethyst_forest/peak_noise",
+                                      "xz_scale": 0.18,
+                                      "y_scale": 0,
+                                      "shift_x": 0,
+                                      "shift_y": 103,
+                                      "shift_z": 0
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "right": 48
+                          },
+                          "right": 0.020833333333333332
+                        },
+                        "min": 0,
+                        "max": 1
+                      },
+                      "right": -0.15
+                    },
+                    "right": 30
+                  },
+                  "right": {
+                    "type": "minecraft:mul",
+                    "left": {
+                      "type": "minecraft:add",
+                      "left": {
+                        "type": "minecraft:noise",
+                        "noise": "stellarity:amethyst_forest/peak_noise",
+                        "xz_scale": 0.45,
+                        "y_scale": 0,
+                        "shift_x": 0,
+                        "shift_y": 137,
+                        "shift_z": 0
+                      },
+                      "right": -0.04
+                    },
+                    "right": 30
+                  }
+                }
+              },
+              "right": 0.16666666666666666
+            },
+            "min": -1,
+            "max": 1
+          }
+        },
+        "right": {
+          "type": "minecraft:clamp",
+          "input": {
+            "type": "minecraft:mul",
+            "left": {
+              "type": "minecraft:min",
+              "left": {
+                "type": "minecraft:min",
+                "left": {
+                  "type": "minecraft:add",
+                  "left": {
+                    "type": "minecraft:add",
+                    "left": {
+                      "type": "minecraft:add",
+                      "left": 214,
+                      "right": {
+                        "type": "minecraft:mul",
+                        "left": 6,
+                        "right": {
+                          "type": "minecraft:noise",
+                          "noise": "stellarity:amethyst_forest/peak_noise",
+                          "xz_scale": 0.18,
+                          "y_scale": 0,
+                          "shift_x": 0,
+                          "shift_y": 116,
+                          "shift_z": 0
+                        }
+                      }
+                    },
+                    "right": 2
+                  },
+                  "right": {
+                    "type": "minecraft:mul",
+                    "left": -1,
+                    "right": "minecraft:y"
+                  }
+                },
+                "right": {
+                  "type": "minecraft:add",
+                  "left": "minecraft:y",
+                  "right": {
+                    "type": "minecraft:mul",
+                    "left": -1,
+                    "right": {
+                      "type": "minecraft:add",
+                      "left": {
+                        "type": "minecraft:add",
+                        "left": {
+                          "type": "minecraft:add",
+                          "left": 214,
+                          "right": {
+                            "type": "minecraft:mul",
+                            "left": 6,
+                            "right": {
+                              "type": "minecraft:noise",
+                              "noise": "stellarity:amethyst_forest/peak_noise",
+                              "xz_scale": 0.18,
+                              "y_scale": 0,
+                              "shift_x": 0,
+                              "shift_y": 116,
+                              "shift_z": 0
+                            }
+                          }
+                        },
+                        "right": -2
+                      },
+                      "right": {
+                        "type": "minecraft:mul",
+                        "left": -1,
+                        "right": {
+                          "type": "minecraft:mul",
+                          "left": 14,
+                          "right": {
+                            "type": "minecraft:clamp",
+                            "input": {
+                              "type": "minecraft:mul",
+                              "left": {
+                                "type": "minecraft:add",
+                                "left": {
+                                  "type": "minecraft:add",
+                                  "left": "stellarity:amethyst_forest/height",
+                                  "right": {
+                                    "type": "minecraft:mul",
+                                    "left": -1,
+                                    "right": {
+                                      "type": "minecraft:add",
+                                      "left": 214,
+                                      "right": {
+                                        "type": "minecraft:mul",
+                                        "left": 6,
+                                        "right": {
+                                          "type": "minecraft:noise",
+                                          "noise": "stellarity:amethyst_forest/peak_noise",
+                                          "xz_scale": 0.18,
+                                          "y_scale": 0,
+                                          "shift_x": 0,
+                                          "shift_y": 116,
+                                          "shift_z": 0
+                                        }
+                                      }
+                                    }
+                                  }
+                                },
+                                "right": 48
+                              },
+                              "right": 0.020833333333333332
+                            },
+                            "min": 0,
+                            "max": 1
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "right": {
+                "type": "minecraft:min",
+                "left": {
+                  "type": "minecraft:mul",
+                  "left": {
+                    "type": "minecraft:add",
+                    "left": {
+                      "type": "minecraft:clamp",
+                      "input": {
+                        "type": "minecraft:mul",
+                        "left": {
+                          "type": "minecraft:add",
+                          "left": {
+                            "type": "minecraft:add",
+                            "left": "stellarity:amethyst_forest/height",
+                            "right": {
+                              "type": "minecraft:mul",
+                              "left": -1,
+                              "right": {
+                                "type": "minecraft:add",
+                                "left": 214,
+                                "right": {
+                                  "type": "minecraft:mul",
+                                  "left": 6,
+                                  "right": {
+                                    "type": "minecraft:noise",
+                                    "noise": "stellarity:amethyst_forest/peak_noise",
+                                    "xz_scale": 0.18,
+                                    "y_scale": 0,
+                                    "shift_x": 0,
+                                    "shift_y": 116,
+                                    "shift_z": 0
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "right": 48
+                        },
+                        "right": 0.020833333333333332
+                      },
+                      "min": 0,
+                      "max": 1
+                    },
+                    "right": -0.15
+                  },
+                  "right": 30
+                },
+                "right": {
+                  "type": "minecraft:mul",
+                  "left": {
+                    "type": "minecraft:add",
+                    "left": {
+                      "type": "minecraft:noise",
+                      "noise": "stellarity:amethyst_forest/peak_noise",
+                      "xz_scale": 0.45,
+                      "y_scale": 0,
+                      "shift_x": 0,
+                      "shift_y": 154,
+                      "shift_z": 0
+                    },
+                    "right": -0.04
+                  },
+                  "right": 30
+                }
+              }
+            },
+            "right": 0.16666666666666666
+          },
+          "min": -1,
+          "max": 1
+        }
+      },
+      "right": {
+        "type": "minecraft:clamp",
+        "input": {
+          "type": "minecraft:mul",
+          "left": {
+            "type": "minecraft:min",
+            "left": {
+              "type": "minecraft:min",
+              "left": {
+                "type": "minecraft:add",
+                "left": {
+                  "type": "minecraft:add",
+                  "left": {
+                    "type": "minecraft:add",
+                    "left": 246,
+                    "right": {
+                      "type": "minecraft:mul",
+                      "left": 6,
+                      "right": {
+                        "type": "minecraft:noise",
+                        "noise": "stellarity:amethyst_forest/peak_noise",
+                        "xz_scale": 0.18,
+                        "y_scale": 0,
+                        "shift_x": 0,
+                        "shift_y": 129,
+                        "shift_z": 0
+                      }
+                    }
+                  },
+                  "right": 2
+                },
+                "right": {
+                  "type": "minecraft:mul",
+                  "left": -1,
+                  "right": "minecraft:y"
+                }
+              },
+              "right": {
+                "type": "minecraft:add",
+                "left": "minecraft:y",
+                "right": {
+                  "type": "minecraft:mul",
+                  "left": -1,
+                  "right": {
+                    "type": "minecraft:add",
+                    "left": {
+                      "type": "minecraft:add",
+                      "left": {
+                        "type": "minecraft:add",
+                        "left": 246,
+                        "right": {
+                          "type": "minecraft:mul",
+                          "left": 6,
+                          "right": {
+                            "type": "minecraft:noise",
+                            "noise": "stellarity:amethyst_forest/peak_noise",
+                            "xz_scale": 0.18,
+                            "y_scale": 0,
+                            "shift_x": 0,
+                            "shift_y": 129,
+                            "shift_z": 0
+                          }
+                        }
+                      },
+                      "right": -2
+                    },
+                    "right": {
+                      "type": "minecraft:mul",
+                      "left": -1,
+                      "right": {
+                        "type": "minecraft:mul",
+                        "left": 14,
+                        "right": {
+                          "type": "minecraft:clamp",
+                          "input": {
+                            "type": "minecraft:mul",
+                            "left": {
+                              "type": "minecraft:add",
+                              "left": {
+                                "type": "minecraft:add",
+                                "left": "stellarity:amethyst_forest/height",
+                                "right": {
+                                  "type": "minecraft:mul",
+                                  "left": -1,
+                                  "right": {
+                                    "type": "minecraft:add",
+                                    "left": 246,
+                                    "right": {
+                                      "type": "minecraft:mul",
+                                      "left": 6,
+                                      "right": {
+                                        "type": "minecraft:noise",
+                                        "noise": "stellarity:amethyst_forest/peak_noise",
+                                        "xz_scale": 0.18,
+                                        "y_scale": 0,
+                                        "shift_x": 0,
+                                        "shift_y": 129,
+                                        "shift_z": 0
+                                      }
+                                    }
+                                  }
+                                }
+                              },
+                              "right": 48
+                            },
+                            "right": 0.020833333333333332
+                          },
+                          "min": 0,
+                          "max": 1
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "right": {
+              "type": "minecraft:min",
+              "left": {
+                "type": "minecraft:mul",
+                "left": {
+                  "type": "minecraft:add",
+                  "left": {
+                    "type": "minecraft:clamp",
+                    "input": {
+                      "type": "minecraft:mul",
+                      "left": {
+                        "type": "minecraft:add",
+                        "left": {
+                          "type": "minecraft:add",
+                          "left": "stellarity:amethyst_forest/height",
+                          "right": {
+                            "type": "minecraft:mul",
+                            "left": -1,
+                            "right": {
+                              "type": "minecraft:add",
+                              "left": 246,
+                              "right": {
+                                "type": "minecraft:mul",
+                                "left": 6,
+                                "right": {
+                                  "type": "minecraft:noise",
+                                  "noise": "stellarity:amethyst_forest/peak_noise",
+                                  "xz_scale": 0.18,
+                                  "y_scale": 0,
+                                  "shift_x": 0,
+                                  "shift_y": 129,
+                                  "shift_z": 0
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "right": 48
+                      },
+                      "right": 0.020833333333333332
+                    },
+                    "min": 0,
+                    "max": 1
+                  },
+                  "right": -0.15
+                },
+                "right": 30
+              },
+              "right": {
+                "type": "minecraft:mul",
+                "left": {
+                  "type": "minecraft:add",
+                  "left": {
+                    "type": "minecraft:noise",
+                    "noise": "stellarity:amethyst_forest/peak_noise",
+                    "xz_scale": 0.45,
+                    "y_scale": 0,
+                    "shift_x": 0,
+                    "shift_y": 171,
+                    "shift_z": 0
+                  },
+                  "right": -0.04
+                },
+                "right": 30
+              }
+            }
+          },
+          "right": 0.16666666666666666
+        },
+        "min": -1,
+        "max": 1
+      }
+    }
+  },
+  "when_out_of_range": -64.0
+}

@@ -1,0 +1,52 @@
+{
+  "targets": [
+    "minecraft:player"
+  ],
+  "emitters": [
+    {
+      "particle": "stellarity:blizzard_wind",
+      "chance": "(config('stellarity:blizzard_effects') != '§cOFF') && ((o.biome() == 'stellarity:frosted_hills' || o.biome() == 'stellarity:frosted_valley' || o.biome() == 'stellarity:frozen_marsh' || o.biome() == 'stellarity:frozen_shrubland' || o.biome() == 'stellarity:frozen_spikes' || o.biome() == 'stellarity:hallowed_tundra') && (sin(g.time() * 0.00032 + 2.1) + 0.55 * sin(g.time() * 0.00078 + 0.5) + 0.45 * sin(g.time() * 0.00015 + 1.9)) > 0.35) ? 0.85 : 0.0",
+      "count": 4,
+      "max_distance": 45,
+      "x": "16.0 + r.rand(0.0, 10.0)",
+      "y": "r.rand(-2.0, 8.0)",
+      "z": "r.rand(-16.0, 16.0)"
+    },
+    {
+      "particle": "stellarity:blizzard_flake",
+      "chance": "(config('stellarity:blizzard_effects') != '§cOFF') && ((o.biome() == 'stellarity:frosted_hills' || o.biome() == 'stellarity:frosted_valley' || o.biome() == 'stellarity:frozen_marsh' || o.biome() == 'stellarity:frozen_shrubland' || o.biome() == 'stellarity:frozen_spikes' || o.biome() == 'stellarity:hallowed_tundra') && (sin(g.time() * 0.00032 + 2.1) + 0.55 * sin(g.time() * 0.00078 + 0.5) + 0.45 * sin(g.time() * 0.00015 + 1.9)) > 0.35) ? 0.95 : 0.0",
+      "count": 18,
+      "max_distance": 45,
+      "x": "16.0 + r.rand(0.0, 8.0)",
+      "y": "r.rand(-2.0, 7.0)",
+      "z": "r.rand(-16.0, 16.0)"
+    },
+    {
+      "particle": "stellarity:blizzard_mote",
+      "chance": "(config('stellarity:blizzard_effects') != '§cOFF') && ((o.biome() == 'stellarity:frosted_hills' || o.biome() == 'stellarity:frosted_valley' || o.biome() == 'stellarity:frozen_marsh' || o.biome() == 'stellarity:frozen_shrubland' || o.biome() == 'stellarity:frozen_spikes' || o.biome() == 'stellarity:hallowed_tundra') && (sin(g.time() * 0.00032 + 2.1) + 0.55 * sin(g.time() * 0.00078 + 0.5) + 0.45 * sin(g.time() * 0.00015 + 1.9)) > 0.35) ? 0.90 : 0.0",
+      "count": 22,
+      "max_distance": 40,
+      "x": "14.0 + r.rand(0.0, 8.0)",
+      "y": "r.rand(-2.0, 7.0)",
+      "z": "r.rand(-14.0, 14.0)"
+    },
+    {
+      "particle": "stellarity:blizzard_fog",
+      "chance": "(config('stellarity:blizzard_effects') != '§cOFF') && ((o.biome() == 'stellarity:frosted_hills' || o.biome() == 'stellarity:frosted_valley' || o.biome() == 'stellarity:frozen_marsh' || o.biome() == 'stellarity:frozen_shrubland' || o.biome() == 'stellarity:frozen_spikes' || o.biome() == 'stellarity:hallowed_tundra') && (sin(g.time() * 0.00032 + 2.1) + 0.55 * sin(g.time() * 0.00078 + 0.5) + 0.45 * sin(g.time() * 0.00015 + 1.9)) > 0.35) ? 0.70 : 0.0",
+      "count": 6,
+      "max_distance": 35,
+      "x": "12.0 + r.rand(0.0, 8.0)",
+      "y": "r.rand(-1.0, 6.0)",
+      "z": "r.rand(-12.0, 12.0)"
+    },
+    {
+      "particle": "stellarity:blizzard_gust",
+      "chance": "(config('stellarity:blizzard_effects') != '§cOFF') && ((o.biome() == 'stellarity:frosted_hills' || o.biome() == 'stellarity:frosted_valley' || o.biome() == 'stellarity:frozen_marsh' || o.biome() == 'stellarity:frozen_shrubland' || o.biome() == 'stellarity:frozen_spikes' || o.biome() == 'stellarity:hallowed_tundra') && (sin(g.time() * 0.00032 + 2.1) + 0.55 * sin(g.time() * 0.00078 + 0.5) + 0.45 * sin(g.time() * 0.00015 + 1.9)) > 0.35) ? 0.50 : 0.0",
+      "count": 3,
+      "max_distance": 40,
+      "x": "15.0 + r.rand(0.0, 6.0)",
+      "y": "r.rand(-1.0, 5.0)",
+      "z": "r.rand(-10.0, 10.0)"
+    }
+  ]
+}

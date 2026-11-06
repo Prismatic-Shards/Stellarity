@@ -1,0 +1,25 @@
+{
+  "type": "custom",
+  "initializer": {
+    "lifetime": "45 + rand() * 20",
+    "alpha": "0",
+    "size": "4.2 + rand() * 1.5",
+    "custom": "rand()"
+  },
+  "ticker": {
+    "dx": "-1.8 - CUSTOM * 0.8",
+    "dy": "-0.04",
+    "dz": "0.3 * sin(0.15 * TIME + CUSTOM * 6.28)",
+    "alpha": "(0.25 + CUSTOM * 0.25) * min(max(AGE / 6, 0), 1) * min(max((LIFETIME - AGE) / 6, 0), 1)"
+  },
+  "liquid_affinity": "non_liquids",
+  "render_type": "additive_translucent",
+  "has_physics": false,
+  "force_spawn": true,
+  "random_sprite": false,
+  "kill_when_not_in_view": false,
+  "kill_on_contact": false,
+  "kill_when_still": false,
+  "exclusion_radius": 2,
+  "rotation_mode": "look_at_x"
+}

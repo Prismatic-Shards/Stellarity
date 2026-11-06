@@ -12,9 +12,13 @@ execute if data storage stellarity:temp {altar_of_the_sacred:{item:{tag:{"stella
 execute if data storage stellarity:temp {altar_of_the_sacred:{item:{tag:{stellarity:{item:"starlight_soot"}}}}} run scoreboard players set #is_starlight_soot stellarity.misc 1
 execute if entity @s[tag=stellarity.starlight_soot] run scoreboard players set #is_starlight_soot stellarity.misc 1
 
+execute if score #is_starlight_soot stellarity.misc matches 1 as @s run team join stellarity.yellow_glow @s
+execute if score #is_starlight_soot stellarity.misc matches 1 as @s run data modify entity @s Glowing set value 1b
+
 execute if predicate stellarity:entity/empress_of_light/is_daytime if score #stellarity.config stellarity.config.enable_empress_of_light matches 1 \
 if score #stellarity.config stellarity.config.enable_daytime_empress_of_light matches 1 unless score #difficulty stellarity.misc matches 0 \
 unless score #empress_of_light.is_alive stellarity.misc matches 1 \
+unless entity @e[type=item,tag=stellarity.altar_of_the_sacred.ascending] \
 unless entity @e[type=marker,tag=stellarity.empress_of_light.spawn_animation] \
 unless entity @e[type=vindicator,tag=stellarity.empress_of_light] \
 if score #is_starlight_soot stellarity.misc matches 1 run \
@@ -23,6 +27,7 @@ function stellarity:mechanic/altar_of_the_sacred/spawn_empress
 execute unless predicate stellarity:entity/empress_of_light/is_daytime if score #stellarity.config stellarity.config.enable_empress_of_light matches 1 \
 if score #stellarity.config stellarity.config.enable_nighttime_empress_of_light matches 1 unless score #difficulty stellarity.misc matches 0 \
 unless score #empress_of_light.is_alive stellarity.misc matches 1 \
+unless entity @e[type=item,tag=stellarity.altar_of_the_sacred.ascending] \
 unless entity @e[type=marker,tag=stellarity.empress_of_light.spawn_animation] \
 unless entity @e[type=vindicator,tag=stellarity.empress_of_light] \
 if score #is_starlight_soot stellarity.misc matches 1 run \
@@ -31,6 +36,7 @@ function stellarity:mechanic/altar_of_the_sacred/spawn_empress
 execute unless predicate stellarity:entity/empress_of_light/is_daytime if predicate stellarity:location/in_the_end if score #stellarity.config stellarity.config.enable_empress_of_light matches 1 \
 if score #stellarity.config stellarity.config.enable_nighttime_empress_of_light matches 1 unless score #difficulty stellarity.misc matches 0 \
 unless score #empress_of_light.is_alive stellarity.misc matches 1 \
+unless entity @e[type=item,tag=stellarity.altar_of_the_sacred.ascending] \
 unless entity @e[type=marker,tag=stellarity.empress_of_light.spawn_animation] \
 unless entity @e[type=vindicator,tag=stellarity.empress_of_light] \
 if score #is_starlight_soot stellarity.misc matches 1 run \
@@ -54,3 +60,5 @@ function stellarity:mechanic/altar_of_the_sacred/bless/materials/diamond
 
 execute if data storage stellarity:temp {altar_of_the_sacred:{item:{id:"minecraft:netherite_ingot"}}} run \
 function stellarity:mechanic/altar_of_the_sacred/bless/materials/netherite
+
+

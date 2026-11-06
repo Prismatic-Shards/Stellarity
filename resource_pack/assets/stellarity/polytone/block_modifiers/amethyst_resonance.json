@@ -1,0 +1,37 @@
+{
+  "targets": [
+    "minecraft:amethyst_cluster",
+    "minecraft:small_amethyst_bud",
+    "minecraft:medium_amethyst_bud",
+    "minecraft:large_amethyst_bud",
+    "minecraft:budding_amethyst",
+    "minecraft:amethyst_block"
+  ],
+  "particle_emitters": [
+    {
+      "particle": "stellarity:crystal_sparkle",
+      "chance": 0.025,
+      "x": "0.5 + (r.rand() - 0.5) * 0.6",
+      "y": "0.5 + (r.rand() - 0.5) * 0.6",
+      "z": "0.5 + (r.rand() - 0.5) * 0.6",
+      "dx": "(r.rand() - 0.5) * 0.005",
+      "dy": "0.01 + r.rand() * 0.01",
+      "dz": "(r.rand() - 0.5) * 0.005"
+    },
+    {
+      "particle": "stellarity:amethyst_spark",
+      "chance": 0.018,
+      "x": "0.5 + (r.rand() - 0.5) * 0.5",
+      "y": "0.5 + (r.rand() - 0.5) * 0.5",
+      "z": "0.5 + (r.rand() - 0.5) * 0.5"
+    }
+  ],
+  "sound_emitters": [
+    {
+      "sound": "minecraft:block.amethyst_block.chime",
+      "chance": 0.0015,
+      "volume": 0.35,
+      "pitch": "0.85 + 0.3 * r.rand()"
+    }
+  ]
+}

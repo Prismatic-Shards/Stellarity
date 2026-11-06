@@ -1,0 +1,24 @@
+{
+  "type": "custom",
+  "initializer": {
+    "lifetime": "70 + 35 * rand()",
+    "alpha": "0.1",
+    "size": "0",
+    "custom": "rand()",
+    "red": "0.82 + rand() * 0.14",
+    "green": "0.62 + rand() * 0.25",
+    "blue": "0.98 + rand() * 0.02",
+    "hitbox_size": 0.15
+  },
+  "ticker": {
+    "dx": "DX + 0.003 * sin(0.06 * AGE + CUSTOM * 6.28)",
+    "dy": "DY",
+    "dz": "DZ + 0.003 * cos(0.06 * AGE + CUSTOM * 6.28)",
+    "size": "(0.09 + CUSTOM * 0.04) * sin((pi / LIFETIME) * AGE)",
+    "alpha": "0.92 * sin((pi / LIFETIME) * AGE)",
+    "remove_condition": "sqrt(DISTANCE_SQUARED) > 140"
+  },
+  "light_level": 15,
+  "render_type": "additive_translucent",
+  "has_physics": false
+}

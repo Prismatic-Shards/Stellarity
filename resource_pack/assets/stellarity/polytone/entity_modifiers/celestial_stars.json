@@ -1,0 +1,16 @@
+{
+  "targets": [
+    "minecraft:player"
+  ],
+  "emitters": [
+    {
+      "particle": "stellarity:twinkling_star",
+      "chance": "(config('stellarity:cosmic_meteors') != '§cOFF') && (g.skyType() == 2) ? 0.35 : 0.0",
+      "count": 2,
+      "max_distance": 120,
+      "x": "r.rand(-70.0, 70.0)",
+      "y": "r.rand(28.0, 75.0)",
+      "z": "r.rand(-70.0, 70.0)"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "placed_anchor": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "location": {
+          "type": "minecraft:match_tool",
+          "predicate": {
+            "items": [
+              "minecraft:respawn_anchor"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "stellarity:mechanic/sit_anchor/placed_anchor"
+  }
+}

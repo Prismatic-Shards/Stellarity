@@ -2,7 +2,7 @@
   "feature": "stellarity:frozen_shrubland/shrubs",
   "placement": [
     {
-      "type": "minecraft:count_on_every_layer",
+      "type": "minecraft:count",
       "count": {
         "type": "minecraft:uniform",
         "min_inclusive": 1,
@@ -10,21 +10,56 @@
       }
     },
     {
-      "type": "minecraft:biome"
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:heightmap",
+      "heightmap": "WORLD_SURFACE_WG"
     },
     {
       "type": "minecraft:block_predicate_filter",
       "predicate": {
-        "type": "minecraft:matching_blocks",
-        "offset": [
-          0,
-          -1,
-          0
-        ],
-        "blocks": [
-          "minecraft:snow_block"
+        "type": "minecraft:all_of",
+        "predicates": [
+          {
+            "type": "minecraft:matching_blocks",
+            "offset": [
+              0,
+              -1,
+              0
+            ],
+            "blocks": [
+              "minecraft:snow_block",
+              "minecraft:packed_ice",
+              "minecraft:blue_ice",
+              "minecraft:ice",
+              "minecraft:coarse_dirt",
+              "minecraft:dirt",
+              "minecraft:rooted_dirt"
+            ]
+          },
+          {
+            "type": "minecraft:matching_blocks",
+            "blocks": [
+              "minecraft:air"
+            ]
+          },
+          {
+            "type": "minecraft:matching_blocks",
+            "offset": [
+              0,
+              1,
+              0
+            ],
+            "blocks": [
+              "minecraft:air"
+            ]
+          }
         ]
       }
+    },
+    {
+      "type": "minecraft:biome"
     }
   ]
 }

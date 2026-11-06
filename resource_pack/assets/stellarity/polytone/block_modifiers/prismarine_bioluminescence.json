@@ -1,0 +1,30 @@
+{
+  "targets": [
+    "minecraft:prismarine",
+    "minecraft:prismarine_bricks",
+    "minecraft:dark_prismarine",
+    "minecraft:sea_lantern"
+  ],
+  "particle_emitters": [
+    {
+      "particle": "minecraft:glow",
+      "chance": 0.018,
+      "x": "0.5 + (r.rand() - 0.5) * 0.7",
+      "y": "0.5 + (r.rand() - 0.5) * 0.7",
+      "z": "0.5 + (r.rand() - 0.5) * 0.7",
+      "dx": "0.0",
+      "dy": "0.012",
+      "dz": "0.0"
+    },
+    {
+      "particle": "minecraft:underwater",
+      "chance": 0.01,
+      "x": "0.5 + (r.rand() - 0.5) * 0.8",
+      "y": "0.5 + (r.rand() - 0.5) * 0.8",
+      "z": "0.5 + (r.rand() - 0.5) * 0.8",
+      "dx": "(r.rand() - 0.5) * 0.01",
+      "dy": "0.015",
+      "dz": "(r.rand() - 0.5) * 0.01"
+    }
+  ]
+}

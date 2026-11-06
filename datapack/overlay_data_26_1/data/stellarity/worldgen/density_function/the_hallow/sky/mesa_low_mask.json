@@ -1,0 +1,44 @@
+{
+  "type": "minecraft:cache_2d",
+  "argument": {
+    "type": "minecraft:mul",
+    "argument1": 4.4,
+    "argument2": {
+      "type": "minecraft:add",
+      "argument1": {
+        "type": "minecraft:noise",
+        "noise": "stellarity:the_hallow/sky_islet_noise",
+        "xz_scale": 0.34,
+        "y_scale": 0,
+        "shift_x": {
+          "type": "minecraft:mul",
+          "argument1": 18,
+          "argument2": {
+            "type": "minecraft:noise",
+            "noise": "stellarity:the_hallow/sky_islet_warp",
+            "xz_scale": 0.12,
+            "y_scale": 0,
+            "shift_x": 0,
+            "shift_y": 11,
+            "shift_z": 0
+          }
+        },
+        "shift_y": 18,
+        "shift_z": {
+          "type": "minecraft:mul",
+          "argument1": 18,
+          "argument2": {
+            "type": "minecraft:noise",
+            "noise": "stellarity:the_hallow/sky_islet_warp",
+            "xz_scale": 0.12,
+            "y_scale": 0,
+            "shift_x": 0,
+            "shift_y": 52,
+            "shift_z": 0
+          }
+        }
+      },
+      "argument2": -0.26
+    }
+  }
+}

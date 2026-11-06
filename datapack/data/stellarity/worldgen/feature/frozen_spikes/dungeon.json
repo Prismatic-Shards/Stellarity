@@ -1,0 +1,82 @@
+{
+  "type": "minecraft:fossil",
+  "max_empty_corners_allowed": 4,
+  "fossil_structures": [
+    "stellarity:frozen_spikes/monster_box/1",
+    "stellarity:frozen_spikes/monster_box/2",
+    "stellarity:frozen_spikes/monster_box/3",
+    "stellarity:frozen_spikes/monster_box/4"
+  ],
+  "overlay_structures": [
+    "stellarity:frozen_spikes/monster_box/1",
+    "stellarity:frozen_spikes/monster_box/2",
+    "stellarity:frozen_spikes/monster_box/3",
+    "stellarity:frozen_spikes/monster_box/4"
+  ],
+  "fossil_processors": {
+    "processors": [
+      {
+        "processor_type": "minecraft:rule",
+        "rules": [
+          {
+            "position_predicate": {
+              "predicate_type": "minecraft:always_true"
+            },
+            "location_predicate": {
+              "predicate_type": "minecraft:random_block_match",
+              "block": "minecraft:end_stone_bricks",
+              "probability": 0.25
+            },
+            "input_predicate": {
+              "predicate_type": "minecraft:always_true"
+            },
+            "output_state": {
+              "id": "minecraft:packed_ice"
+            }
+          },
+          {
+            "position_predicate": {
+              "predicate_type": "minecraft:always_true"
+            },
+            "location_predicate": {
+              "predicate_type": "minecraft:random_block_match",
+              "block": "minecraft:end_stone",
+              "probability": 0.2
+            },
+            "input_predicate": {
+              "predicate_type": "minecraft:always_true"
+            },
+            "output_state": {
+              "id": "minecraft:packed_ice"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "overlay_processors": {
+    "processors": [
+      {
+        "processor_type": "minecraft:rule",
+        "rules": [
+          {
+            "position_predicate": {
+              "predicate_type": "minecraft:always_true"
+            },
+            "location_predicate": {
+              "predicate_type": "minecraft:random_block_match",
+              "block": "minecraft:purpur_pillar",
+              "probability": 0.3
+            },
+            "input_predicate": {
+              "predicate_type": "minecraft:always_true"
+            },
+            "output_state": {
+              "id": "minecraft:blue_ice"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -30,6 +30,10 @@
                   "animation": "none",
                   "consume_seconds": 100,
                   "has_consume_particles": false
+                },
+                "minecraft:use_cooldown": {
+                  "seconds": 2.0,
+                  "cooldown_group": "stellarity:fluffy_hammer"
                 }
               }
             },

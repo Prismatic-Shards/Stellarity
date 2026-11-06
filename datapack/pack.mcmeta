@@ -14,6 +14,17 @@
   "overlays": {
     "entries": [
       {
+        "directory": "overlay_data_26_4",
+        "min_format": [
+          123,
+          0
+        ],
+        "max_format": [
+          999,
+          0
+        ]
+      },
+      {
         "directory": "overlay_data_26_2",
         "min_format": [
           94,

@@ -11,5 +11,8 @@ execute if score @s stellarity.misc2 matches 9.. run function stellarity:entity/
 execute if score @s stellarity.misc2 matches 1.. run function stellarity:entity/pixie/particles/hurt
 execute if score @s stellarity.misc2 matches 0 run function stellarity:entity/pixie/particles/regular
 
+execute store result score @s stellarity.health run data get entity @s Health
+execute if score @s stellarity.health matches ..0 run function stellarity:entity/pixie/sounds/death
+
 effect clear @s glowing
 

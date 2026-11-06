@@ -1,3 +1,7 @@
 {
-  "values": ["stellarity:kaleidoscope"]
+  "values": [
+    "stellarity:kaleidoscope",
+    "stellarity:radiant_kaleidoscope",
+    "stellarity:radiant_kaleidoscope_crush"
+  ]
 }

@@ -2,25 +2,24 @@
   "temperature": 0.8,
   "downfall": 0.4,
   "has_precipitation": false,
-  "creature_spawn_probability": 0,
   "creature_spawn_probability": 0.3,
   "attributes": {
-    "visual/sky_color": 0,
-    "visual/fog_color": 0,
-    "visual/water_fog_color": 1456474,
+    "visual/sky_color": 147082,
+    "visual/fog_color": 4770532,
+    "visual/water_fog_color": 30646,
     "audio/ambient_sounds": {
       "loop": {
-        "sound_id": "stellarity:ambient.the_end.heavenly_blessed"
+        "sound_id": "ambient.underwater.loop"
       },
       "mood": {
-        "sound": "ambient.warped_forest.mood",
-        "tick_delay": 800,
-        "block_search_extent": 4,
-        "offset": 4
+        "sound": "ambient.underwater.loop.additions.rare",
+        "tick_delay": 700,
+        "block_search_extent": 6,
+        "offset": 2
       },
       "additions": {
-        "sound": "ambient.underwater.loop.additions.rare",
-        "tick_chance": 0.0111
+        "sound": "block.conduit.ambient.short",
+        "tick_chance": 0.015
       }
     },
     "visual/ambient_particles": {
@@ -28,9 +27,9 @@
       "argument": [
         {
           "particle": {
-            "type": "minecraft:dripping_dripstone_water"
+            "type": "glow"
           },
-          "probability": 0.001
+          "probability": 0.0022
         }
       ]
     }
@@ -53,11 +52,18 @@
     ]
   },
   "spawn_costs": {},
-  "carvers": ["stellarity:ravine", "stellarity:crack"],
+  "carvers": [
+    "stellarity:ravine",
+    "stellarity:crack"
+  ],
   "features": [
-    ["stellarity:prismarine_forest/island_bottom"],
+    [
+      "stellarity:prismarine_forest/island_bottom"
+    ],
     [],
-    ["stellarity:prismarine_forest/puddle"],
+    [
+      "stellarity:prismarine_forest/puddle"
+    ],
     [],
     [],
     [],

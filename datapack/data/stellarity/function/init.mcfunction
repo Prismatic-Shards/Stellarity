@@ -66,6 +66,7 @@
       scoreboard objectives add stellarity.config.enable_dragonblade dummy
       scoreboard objectives add stellarity.config.enable_harvester dummy
       scoreboard objectives add stellarity.config.enable_kaleidoscope dummy
+      scoreboard objectives add stellarity.config.enable_radiant_kaleidoscope dummy
       scoreboard objectives add stellarity.config.enable_prismember dummy
       scoreboard objectives add stellarity.config.enable_fluffy_hammer_of_justice dummy
       scoreboard objectives add stellarity.config.enable_the_beginning dummy
@@ -97,6 +98,7 @@
       scoreboard objectives add stellarity.config.enable_prismatic_pearl dummy
       scoreboard objectives add stellarity.config.enable_void_pendant dummy
       scoreboard objectives add stellarity.config.enable_radiant_jewel dummy
+      scoreboard objectives add stellarity.config.enable_phantom_item_frame dummy
 
       scoreboard objectives add stellarity.config.enable_shulker_armor dummy
       scoreboard objectives add stellarity.config.enable_champion_armor dummy
@@ -243,6 +245,30 @@
             scoreboard objectives add stellarity.item.kaleidoscope.charge dummy
             scoreboard objectives add stellarity.item.kaleidoscope.charge_progress dummy
 
+          # Radiant Kaleidoscope
+            scoreboard objectives add stellarity.item.rk.cooldown dummy
+            scoreboard objectives add stellarity.item.rk.cooldown_initialized dummy
+            scoreboard objectives add stellarity.item.rk.mark_rank dummy
+            scoreboard objectives add stellarity.item.rk.mark_timer dummy
+            scoreboard objectives add stellarity.item.rk.mark_phase dummy
+            scoreboard objectives add stellarity.item.rk.phase_timer dummy
+            scoreboard objectives add stellarity.item.rk.crown_angle dummy
+            scoreboard objectives add stellarity.item.rk.charge_shift dummy
+            scoreboard objectives add stellarity.item.rk.shield_timer dummy
+            scoreboard objectives add stellarity.item.rk.recovery dummy
+            scoreboard objectives add stellarity.item.rk.low_energy_cd dummy
+            scoreboard objectives add stellarity.item.rk.guard_angle dummy
+            scoreboard objectives add stellarity.item.rk.color_1 dummy
+            scoreboard objectives add stellarity.item.rk.color_2 dummy
+            scoreboard objectives add stellarity.item.rk.color_3 dummy
+            scoreboard objectives add stellarity.item.rk.color_4 dummy
+            scoreboard objectives add stellarity.item.rk.color_5 dummy
+            scoreboard objectives add stellarity.item.rk.color_6 dummy
+            scoreboard objectives add stellarity.item.rk.color_7 dummy
+            scoreboard objectives add stellarity.item.rk.cur_color dummy
+            scoreboard objectives add stellarity.item.rk.swing_prev dummy
+            scoreboard objectives add stellarity.item.rk.hit_prev dummy
+
           # Prismatic Pearl
             scoreboard objectives add stellarity.item.prismatic_pearl.cooldown dummy
 
@@ -318,18 +344,38 @@
         scoreboard objectives add stellarity.music.ender_dragon.timer dummy
         scoreboard objectives add stellarity.music.empress_of_light.timer dummy
 
+      ## Ambient & AFK soundscapes
+        scoreboard objectives add stellarity.afk.timer dummy
+        scoreboard objectives add stellarity.afk.pos_x dummy
+        scoreboard objectives add stellarity.afk.pos_y dummy
+        scoreboard objectives add stellarity.afk.pos_z dummy
+        scoreboard objectives add stellarity.ambient.loop_timer dummy
+        scoreboard objectives add stellarity.ambient.cave_timer dummy
+        scoreboard objectives add stellarity.ambient.archives_timer dummy
+        scoreboard objectives add stellarity.ambient.chapel_timer dummy
+        scoreboard objectives add stellarity.ambient.biome_id dummy
+        scoreboard objectives add stellarity.ambient.last_biome_id dummy
+
       ## Mechanics
         scoreboard objectives add stellarity.altar_of_the_accursed.count dummy
         scoreboard objectives add stellarity.live_time dummy
         scoreboard objectives add stellarity.health dummy
 
       scoreboard objectives add stellarity.mechanics.void_fishing.length dummy
+      scoreboard objectives add stellarity.abyss.sound_loop dummy
+      scoreboard objectives add stellarity.void_focus.dragon_timer dummy
+      scoreboard objectives add stellarity.void_focus.cooldown dummy
+      scoreboard objectives add stellarity.void_focus.active dummy
       scoreboard objectives add stellarity.mechanics.void_fishing.max_time dummy
       scoreboard objectives add stellarity.mechanics.void_fishing.can_fish dummy
       scoreboard objectives add stellarity.mechanics.consecration.time dummy
       scoreboard objectives add stellarity.mechanics.altar_of_the_sacred.timer dummy
       scoreboard objectives add stellarity.mechanics.cauldron_crafting.items_inside dummy
       scoreboard objectives add stellarity.mechanics.cauldron_crafting.breath_left dummy
+      scoreboard objectives add stellarity.altar.craft_progress dummy
+      scoreboard objectives add stellarity.altar_approached dummy
+      scoreboard objectives add stellarity.sit_timer dummy
+      scoreboard objectives add sit trigger
 
     ## Enchantments
       scoreboard objectives add stellarity.enchantments.critical_strike.can_crit dummy
@@ -363,11 +409,20 @@
   team add stellarity.purple_glow
   team modify stellarity.purple_glow color dark_purple
 
+  team add stellarity.bright_purple_glow
+  team modify stellarity.bright_purple_glow color light_purple
+
 team add stellarity.golden_glow
 team modify stellarity.golden_glow color gold
 
+team add stellarity.yellow_glow
+team modify stellarity.yellow_glow color yellow
+
 team add stellarity.spirit_glow
 team modify stellarity.spirit_glow color aqua
+
+scoreboard objectives add stellarity.altar_id dummy
+scoreboard objectives add stellarity.altar_items dummy
 
 team add stellarity.homing_targets
 team modify stellarity.homing_targets color aqua
@@ -395,6 +450,38 @@ team modify stellarity.dragons_eye.pacified collisionRule pushOtherTeams
 team add stellarity.dragon.pacify_others
 team modify stellarity.dragon.pacify_others friendlyFire false
 
+team add ste_cos.purple_glow
+team modify ste_cos.purple_glow color dark_purple
+team add ste_cos.cyan_glow
+team modify ste_cos.cyan_glow color dark_aqua
+team add ste_cos.anim_crystal
+team modify ste_cos.anim_crystal color light_purple
+team modify ste_cos.anim_crystal collisionRule never
+
+# Radiant Kaleidoscope Glowing Teams
+team add stellarity.rk.red_glow
+team modify stellarity.rk.red_glow color red
+team add stellarity.rk.gold_glow
+team modify stellarity.rk.gold_glow color gold
+team add stellarity.rk.yellow_glow
+team modify stellarity.rk.yellow_glow color yellow
+team add stellarity.rk.green_glow
+team modify stellarity.rk.green_glow color green
+team add stellarity.rk.aqua_glow
+team modify stellarity.rk.aqua_glow color aqua
+team add stellarity.rk.blue_glow
+team modify stellarity.rk.blue_glow color blue
+team add stellarity.rk.purple_glow
+team modify stellarity.rk.purple_glow color light_purple
+
+scoreboard objectives add ste_cos.stage dummy
+scoreboard objectives add ste_cos.flags dummy
+scoreboard objectives add ste_cos.timer dummy
+scoreboard objectives add ste_cos.age dummy
+scoreboard objectives add ste_cos.id dummy
+scoreboard objectives add ste_cos.radius dummy
+scoreboard objectives add ste_cos.orbit_y dummy
+
 
 
 # Scheduling loops that do not need
@@ -415,3 +502,9 @@ execute unless score #stellarity.config stellarity.config.join_message matches 0
 
 # End City marker status
 scoreboard objectives add stellarity.end_city.status dummy
+
+# Player connection & dragon tracking
+scoreboard objectives add join_check dummy
+scoreboard objectives add leave_game minecraft.custom:minecraft.leave_game
+scoreboard objectives add stellarity.player.dragon_kills dummy
+scoreboard objectives add stellarity.dragon.rk_damage_window dummy

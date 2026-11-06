@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:simple_block",
+  "to_place": {
+    "type": "minecraft:weighted",
+    "entries": [
+      {
+        "data": {
+          "id": "minecraft:bush"
+        },
+        "weight": 60
+      },
+      {
+        "data": {
+          "id": "minecraft:dead_bush"
+        },
+        "weight": 40
+      }
+    ]
+  }
+}

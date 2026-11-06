@@ -1,0 +1,88 @@
+{
+  "variants": {
+    "eye=true,facing=east": [
+      {
+        "model": "minecraft:block/end_portal_frame_filled", 
+        "weight": 1,
+        "y": 270
+      },
+      {
+        "model": "minecraft:block/end_portal_frame_filled_2", 
+        "weight": 1,
+        "y": 270
+      },
+      {
+        "model": "minecraft:block/end_portal_frame_filled_3", 
+        "weight": 1,
+        "y": 270
+      },
+      {
+        "model": "minecraft:block/end_portal_frame_filled_4", 
+        "weight": 1,
+        "y": 270
+      }
+    ],
+    "eye=true,facing=north": [
+      {
+        "model": "minecraft:block/end_portal_frame_filled", 
+        "weight": 1,
+        "y": 180
+      },
+      {
+        "model": "minecraft:block/end_portal_frame_filled_2", 
+        "weight": 1,
+        "y": 180
+      },
+      {
+        "model": "minecraft:block/end_portal_frame_filled_3", 
+        "weight": 1,
+        "y": 180
+      },
+      {
+        "model": "minecraft:block/end_portal_frame_filled_4", 
+        "weight": 1,
+        "y": 180
+      }
+    ],
+    "eye=true,facing=south": [
+      {
+        "model": "minecraft:block/end_portal_frame_filled", 
+        "weight": 1
+      },
+      {
+        "model": "minecraft:block/end_portal_frame_filled_2", 
+        "weight": 1
+      },
+      {
+        "model": "minecraft:block/end_portal_frame_filled_3", 
+        "weight": 1
+      },
+      {
+        "model": "minecraft:block/end_portal_frame_filled_4", 
+        "weight": 1
+      }
+    ],
+    "eye=true,facing=west": [
+      {
+        "model": "minecraft:block/end_portal_frame_filled", 
+        "weight": 1,
+        "y": 90
+      },
+      {
+        "model": "minecraft:block/end_portal_frame_filled_2", 
+        "weight": 1,
+        "y": 90
+      },
+      {
+        "model": "minecraft:block/end_portal_frame_filled_3", 
+        "weight": 1,
+        "y": 90
+      },
+      {
+        "model": "minecraft:block/end_portal_frame_filled_4", 
+        "weight": 1,
+        "y": 90
+      }
+    ]
+    }
+  }

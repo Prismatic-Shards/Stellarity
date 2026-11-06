@@ -1,5 +1,6 @@
 {
   "asset_id": "stellarity:entity/cat/ender_cat",
+  "baby_asset_id": "stellarity:entity/cat/ender_cat_baby",
   "spawn_conditions": [
     {
       "priority": 1000,

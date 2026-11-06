@@ -1,0 +1,43 @@
+{
+  "targets": [
+    "minecraft:blue_ice",
+    "minecraft:packed_ice",
+    "minecraft:powder_snow",
+    "minecraft:frosted_ice"
+  ],
+  "particle_emitters": [
+    {
+      "particle": "minecraft:snowflake",
+      "chance": 0.02,
+      "x": "0.5 + (r.rand() - 0.5) * 0.8",
+      "y": "1.0",
+      "z": "0.5 + (r.rand() - 0.5) * 0.8",
+      "dx": "(r.rand() - 0.5) * 0.01",
+      "dy": "0.01 + r.rand() * 0.015",
+      "dz": "(r.rand() - 0.5) * 0.01"
+    },
+    {
+      "particle": "stellarity:ice_cave_dust",
+      "chance": 0.015,
+      "x": "0.5 + (r.rand() - 0.5) * 0.7",
+      "y": "1.02",
+      "z": "0.5 + (r.rand() - 0.5) * 0.7",
+      "dy": "0.008 + r.rand() * 0.012"
+    },
+    {
+      "particle": "stellarity:crystal_sparkle",
+      "chance": 0.01,
+      "x": "0.5 + (r.rand() - 0.5) * 0.85",
+      "y": "1.01",
+      "z": "0.5 + (r.rand() - 0.5) * 0.85"
+    },
+    {
+      "particle": "stellarity:blizzard_fog",
+      "chance": 0.008,
+      "x": "0.5 + (r.rand() - 0.5) * 0.6",
+      "y": "1.05",
+      "z": "0.5 + (r.rand() - 0.5) * 0.6",
+      "dy": "0.01 + r.rand() * 0.008"
+    }
+  ]
+}

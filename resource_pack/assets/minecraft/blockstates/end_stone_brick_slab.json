@@ -1,0 +1,25 @@
+{
+  "variants": {
+    "type=bottom": {
+      "type": "polytone:expression",
+      "fabric:type": "polytone:expression",
+      "cases": [
+        {
+          "when": "o.canSeeSky() && (o.biome().contains('frost') || o.biome().contains('frozen'))",
+          "model": {
+            "model": "stellarity:block/snowy_end_stone_brick_slab"
+          }
+        }
+      ],
+      "fallback": {
+        "model": "minecraft:block/end_stone_brick_slab"
+      }
+    },
+    "type=double": {
+      "model": "minecraft:block/end_stone_bricks"
+    },
+    "type=top": {
+      "model": "minecraft:block/end_stone_brick_slab_top"
+    }
+  }
+}

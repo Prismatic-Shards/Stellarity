@@ -2,6 +2,8 @@ loot give @s loot stellarity:item/weapon/ancient_wooden_sword
 loot give @s loot stellarity:item/weapon/dragonblade
 loot give @s loot stellarity:item/weapon/harvester
 loot give @s loot stellarity:item/weapon/kaleidoscope
+loot give @s loot stellarity:item/weapon/radiant_kaleidoscope
+loot give @s loot stellarity:item/weapon/radiant_kaleidoscope_ascended
 loot give @s loot stellarity:item/weapon/prismatic_punch
 loot give @s loot stellarity:item/weapon/prismember
 loot give @s loot stellarity:item/weapon/sharanga

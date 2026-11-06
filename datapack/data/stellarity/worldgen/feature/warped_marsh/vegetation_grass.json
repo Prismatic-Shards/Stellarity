@@ -2,36 +2,23 @@
   "type": "minecraft:random_selector",
   "features": [
     {
-      "chance": 0.08,
+      "chance": 0.25,
       "feature": {
         "feature": {
           "type": "minecraft:simple_block",
           "to_place": {
-            "type": "minecraft:noise",
-            "seed": 0,
-            "noise": {
-              "base_octave": -7,
-              "octave_count": 2,
-              "amplitude_modifiers": [
-                1,
-                1
-              ]
-            },
-            "scale": 1,
-            "states": [
+            "type": "minecraft:weighted",
+            "entries": [
               {
-                "id": "minecraft:blue_orchid"
+                "weight": 6,
+                "data": {
+                  "id": "minecraft:blue_orchid"
+                }
               },
               {
-                "id": "minecraft:blue_orchid"
-              },
-              {
-                "id": "minecraft:blue_orchid"
-              },
-              {
-                "id": "minecraft:pitcher_plant",
-                "properties": {
-                  "half": "lower"
+                "weight": 4,
+                "data": {
+                  "id": "minecraft:warped_roots"
                 }
               }
             ]
@@ -40,28 +27,10 @@
         "placement": [
           {
             "type": "minecraft:count",
-            "count": 40
+            "count": 20
           },
           {
-            "type": "minecraft:offset",
-            "x": {
-              "type": "minecraft:trapezoid",
-              "min": -7,
-              "max": 7,
-              "plateau": 0
-            },
-            "y": {
-              "type": "minecraft:trapezoid",
-              "min": -3,
-              "max": 3,
-              "plateau": 0
-            },
-            "z": {
-              "type": "minecraft:trapezoid",
-              "min": -7,
-              "max": 7,
-              "plateau": 0
-            }
+            "type": "minecraft:in_square"
           },
           {
             "type": "minecraft:block_predicate_filter",
@@ -71,7 +40,7 @@
                 {
                   "type": "minecraft:would_survive",
                   "state": {
-                    "id": "minecraft:short_grass"
+                    "id": "minecraft:blue_orchid"
                   }
                 },
                 {
@@ -94,36 +63,33 @@
         "type": "minecraft:weighted",
         "entries": [
           {
-            "weight": 4,
-            "data": {
-              "id": "minecraft:nether_sprouts"
-            }
-          },
-          {
-            "weight": 8,
+            "weight": 10,
             "data": {
               "id": "minecraft:warped_roots"
             }
           },
           {
-            "weight": 6,
+            "weight": 8,
             "data": {
-              "id": "minecraft:tall_grass",
-              "properties": {
-                "half": "lower"
-              }
+              "id": "minecraft:nether_sprouts"
             }
           },
           {
-            "weight": 3,
+            "weight": 6,
             "data": {
               "id": "minecraft:short_grass"
             }
           },
           {
-            "weight": 1,
+            "weight": 4,
             "data": {
-              "id": "minecraft:firefly_bush"
+              "id": "minecraft:red_mushroom"
+            }
+          },
+          {
+            "weight": 4,
+            "data": {
+              "id": "minecraft:brown_mushroom"
             }
           }
         ]
@@ -132,28 +98,10 @@
     "placement": [
       {
         "type": "minecraft:count",
-        "count": 32
+        "count": 28
       },
       {
-        "type": "minecraft:offset",
-        "x": {
-          "type": "minecraft:trapezoid",
-          "min": -7,
-          "max": 7,
-          "plateau": 0
-        },
-        "y": {
-          "type": "minecraft:trapezoid",
-          "min": -3,
-          "max": 3,
-          "plateau": 0
-        },
-        "z": {
-          "type": "minecraft:trapezoid",
-          "min": -7,
-          "max": 7,
-          "plateau": 0
-        }
+        "type": "minecraft:in_square"
       },
       {
         "type": "minecraft:block_predicate_filter",

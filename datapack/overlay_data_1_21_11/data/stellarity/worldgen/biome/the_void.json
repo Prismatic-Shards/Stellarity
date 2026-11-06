@@ -5,18 +5,21 @@
   "creature_spawn_probability": 0,
   "attributes": {
     "visual/sky_color": 0,
-    "visual/fog_color": 0,
-    "visual/water_fog_color": 4405100,
+    "visual/fog_color": 328714,
+    "visual/water_fog_color": 131332,
     "audio/ambient_sounds": {
+      "loop": {
+        "sound_id": "ambient.soul_sand_valley.loop"
+      },
       "mood": {
-        "sound": "minecraft:ambient.nether_wastes.mood",
-        "tick_delay": 800,
+        "sound": "ambient.soul_sand_valley.mood",
+        "tick_delay": 400,
         "block_search_extent": 6,
         "offset": 2
       },
       "additions": {
-        "sound": "minecraft:ambient.nether_wastes.additions",
-        "tick_chance": 0.001111
+        "sound": "ambient.soul_sand_valley.additions",
+        "tick_chance": 0.02
       }
     },
     "visual/ambient_particles": {
@@ -24,9 +27,9 @@
       "argument": [
         {
           "particle": {
-            "type": "minecraft:mycelium"
+            "type": "reverse_portal"
           },
-          "probability": 0.012
+          "probability": 0.001
         }
       ]
     }
@@ -49,7 +52,9 @@
   "spawn_costs": {},
   "carvers": [],
   "features": [
-    ["stellarity:the_void/stalactite"],
+    [
+      "stellarity:the_void/stalactite"
+    ],
     [],
     [],
     [],
@@ -59,6 +64,8 @@
     [],
     [],
     [],
-    ["stellarity:global/end_dungeon"]
+    [
+      "stellarity:global/end_dungeon"
+    ]
   ]
 }

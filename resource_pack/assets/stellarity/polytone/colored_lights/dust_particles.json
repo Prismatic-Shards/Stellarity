@@ -1,0 +1,17 @@
+{
+  "target_type": "particle",
+  "targets": [
+    "minecraft:dust",
+    "minecraft:dust_color_transition",
+    "minecraft:falling_dust",
+    "minecraft:glow",
+    "minecraft:glow_squid_ink",
+    ".*:.*dust.*"
+  ],
+  "require_config": "stellarity:colored_lights",
+  "colored_light": {
+    "color": "#c48ff0",
+    "radius": 3,
+    "brightness": "0.75 * (1.0 - (o.age() * 1.0 / o.life()))"
+  }
+}

@@ -1,34 +1,6 @@
-execute rotated ~ ~ run tp @n[type=item_display,distance=..1.5,tag=stellarity.brewing.1] ^ ^0.65 ^1
-$execute rotated ~-$(base) ~ \
-	run tp @n[type=item_display,distance=..1.5,tag=stellarity.brewing.2] ^ ^0.65 ^1
-$execute rotated ~-$(base) ~ \
-	rotated ~-$(base) ~ run tp @n[type=item_display,distance=..1.5,tag=stellarity.brewing.3] ^ ^0.65 ^1
-$execute rotated ~-$(base) ~ \
-	rotated ~-$(base) ~ \
-	rotated ~-$(base) ~ run tp @n[type=item_display,distance=..1.5,tag=stellarity.brewing.4] ^ ^0.65 ^1
-$execute rotated ~-$(base) ~ \
-	rotated ~-$(base) ~ \
-	rotated ~-$(base) ~ \
-	rotated ~-$(base) ~ run tp @n[type=item_display,distance=..1.5,tag=stellarity.brewing.5] ^ ^0.65 ^1
-$execute rotated ~-$(base) ~ \
-	rotated ~-$(base) ~ \
-	rotated ~-$(base) ~ \
-	rotated ~-$(base) ~ \
-	rotated ~-$(base) ~ run tp @n[type=item_display,distance=..1.5,tag=stellarity.brewing.6] ^ ^0.65 ^1
+# Dynamic orbital positioning for any number of cauldron items
+tag @e[type=item_display,distance=..1.5,tag=stellarity.brewing.item_display] add stellarity.brewing.need_tp
+function stellarity:mechanic/cauldron_crafting/teleport_displays_loop with storage stellarity:temp cauldron_crafting.angle
 
-execute rotated ~ ~ run tp @n[type=interaction,distance=..1.5,tag=stellarity.brewing.1] ^ ^0.65 ^1
-$execute rotated ~-$(base) ~ run tp @n[type=interaction,distance=..1.5,tag=stellarity.brewing.2] ^ ^0.65 ^1
-$execute rotated ~-$(base) ~ \
-	rotated ~-$(base) ~ run tp @n[type=interaction,distance=..1.5,tag=stellarity.brewing.3] ^ ^0.65 ^1
-$execute rotated ~-$(base) ~ \
-	rotated ~-$(base) ~ \
-	rotated ~-$(base) ~ run tp @n[type=interaction,distance=..1.5,tag=stellarity.brewing.4] ^ ^0.65 ^1
-$execute rotated ~-$(base) ~ \
-	rotated ~-$(base) ~ \
-	rotated ~-$(base) ~ \
-	rotated ~-$(base) ~ run tp @n[type=interaction,distance=..1.5,tag=stellarity.brewing.5] ^ ^0.65 ^1
-$execute rotated ~-$(base) ~ \
-	rotated ~-$(base) ~ \
-	rotated ~-$(base) ~ \
-	rotated ~-$(base) ~ \
-	rotated ~-$(base) ~ run tp @n[type=interaction,distance=..1.5,tag=stellarity.brewing.6] ^ ^0.65 ^1
+tag @e[type=interaction,distance=..1.5,tag=stellarity.brewing.interaction] add stellarity.brewing.need_tp
+function stellarity:mechanic/cauldron_crafting/teleport_interactions_loop with storage stellarity:temp cauldron_crafting.angle

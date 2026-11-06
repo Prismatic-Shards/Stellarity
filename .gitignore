@@ -1,3 +1,4 @@
+# folders
 /.vscode/
 /scratch/
 spyglass.json
@@ -12,13 +13,27 @@ nullscape_26_3/
 build/
 .spyglassrc.json
 
+stb-test/
+
+tools/
+
+# nbt
+shulking_citadel.nbt
+citadel_shell.nbt
+boss_core.nbt
+citadel_assembly.nbt
+citadel_shell2.nbt
+
+# .zip
 stellarity-6.0.0.zip
 stellarity-6.0.1.zip
 stellarity-*.zip
+the_hallow_patch.zip
 resource_pack.zip
 nullscape_compat_26_3.zip
 nullscape_compat_26_3.zip
 
+# logs, hmm?
 logs/2026-09-24-1.log.gz
 logs/2026-09-24-2.log.gz
 logs/2026-09-24-3.log.gz
@@ -27,60 +42,78 @@ logs/2026-09-24-5.log.gz
 logs/2026-09-24-6.log.gz
 logs/2026-09-24-7.log.gz
 logs/latest.log
-hs_err_pid22536.log
 
-shulking_citadel.nbt
-citadel_shell.nbt
-boss_core.nbt
-citadel_assembly.nbt
+# errrr
+hs_err_pid22536.log
 hs_err_pid32272.log
 hs_err_pid9728.log
-replay_pid32272.log
-replay_pid9728.log
-deploy.bat
-deploy.ps1
-deploy.sh
-seed_analysis.png
-analyze_seeds.py
-replay_pid21564.log
 hs_err_pid21552.log
 hs_err_pid21564.log
-replay_pid21552.log
-datapack/data/stellarity/worldgen/test.txt
-test_run.py
 hs_err_pid13568.log
 hs_err_pid14116.log
 hs_err_pid17836.log
 hs_err_pid19784.log
 hs_err_pid23812.log
 hs_err_pid24564.log
+
+replay_pid32272.log
+replay_pid9728.log
+replay_pid21564.log
+replay_pid21552.log
 replay_pid13568.log
 replay_pid17836.log
 replay_pid23812.log
 replay_pid24564.log
 
+# auto
+deploy.bat
+deploy.ps1
+deploy.sh
 
+# test + analyz
+test_run.py
+datapack/data/stellarity/worldgen/test.txt
+seed_analysis.png
+the_hallow_analysis.png
+logs/
+tools/validators/cache/
+tools/validators/__pycache__/
+analyze_seeds.py
+stb-test/*
+
+# my note
 .note/*
 
+# valid
 __pycache__/visualize_the_hallow.cpython-314.pyc
-glsl-show/*
-logs/2026-10-10-1.log.gz
-logs/2026-10-10-2.log.gz
-logs/2026-10-10-3.log.gz
-logs/2026-10-10-4.log.gz
-logs/2026-10-10-5.log.gz
-logs/2026-10-10-6.log.gz
-logs/2026-10-10-7.log.gz
-stb-test/*
-the_hallow_analysis.png
-the_hallow_patch.zip
-tools/validator/*
 validate.bat
 validate.sh
 validate_datapack.py
 visualize_the_hallow.py
-
-tools/validators/Validate26_1.java
-tools/validators/Validate26_2.java
-tools/validators/Validate26_3.java
 tools/validators/validate_1_21_11.py
+tools/validators/Validate26_3.java
+tools/validators/Validate26_2.java
+tools/validators/Validate26_1.java
+tools/validator/README.md
+tools/validator/pack_info.py
+tools/validator/mojang.py
+tools/validator/runner.py
+tools/validator/__pycache__/runner.cpython-314.pyc
+tools/validator/__pycache__/pack_info.cpython-314.pyc
+tools/validator/__pycache__/mojang.cpython-314.pyc
+validate_phase3.py
+
+#posteffect
+glsl-show/*
+scripts/polytone_validator.py
+
+__pycache__/
+*.pyc
+
+
+
+
+
+
+# SOOOOON///
+datapack/data/stellarity_desert_scourge/**

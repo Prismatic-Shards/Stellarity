@@ -1,0 +1,14 @@
+{
+  "targets": [
+    "minecraft:player"
+  ],
+  "emitters": [
+    {
+      "particle": "stellarity:horizon_gradient",
+      "chance": "0.0",
+      "x": "0",
+      "y": "0",
+      "z": "0"
+    }
+  ]
+}

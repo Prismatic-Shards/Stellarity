@@ -1,0 +1,12 @@
+{
+  "targets": [
+    "minecraft:torch",
+    "minecraft:wall_torch",
+    "minecraft:lantern",
+    "minecraft:soul_torch",
+    "minecraft:soul_wall_torch",
+    "minecraft:soul_lantern"
+  ],
+  "require_config": "stellarity:colored_lights",
+  "colored_light": "#b585ea"
+}

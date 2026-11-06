@@ -7,7 +7,7 @@
         "element_type": "minecraft:single_pool_element",
         "projection": "rigid",
         "location": "stellarity:village/animal_pen_1",
-        "processors": "minecraft:empty"
+        "processors": "stellarity:ignore_structure_void"
       }
     },
     {
@@ -16,7 +16,7 @@
         "element_type": "minecraft:single_pool_element",
         "projection": "rigid",
         "location": "stellarity:village/animal_pen_2",
-        "processors": "minecraft:empty"
+        "processors": "stellarity:ignore_structure_void"
       }
     },
     {
@@ -25,7 +25,7 @@
         "element_type": "minecraft:single_pool_element",
         "projection": "rigid",
         "location": "stellarity:village/archer_tower_1",
-        "processors": "minecraft:empty"
+        "processors": "stellarity:ignore_structure_void"
       }
     },
     {
@@ -34,7 +34,7 @@
         "element_type": "minecraft:single_pool_element",
         "projection": "rigid",
         "location": "stellarity:village/archer_tower_2",
-        "processors": "minecraft:empty"
+        "processors": "stellarity:ignore_structure_void"
       }
     },
     {
@@ -43,7 +43,7 @@
         "element_type": "minecraft:single_pool_element",
         "projection": "rigid",
         "location": "stellarity:village/archer_tower_3",
-        "processors": "minecraft:empty"
+        "processors": "stellarity:ignore_structure_void"
       }
     },
     {
@@ -52,7 +52,7 @@
         "element_type": "minecraft:single_pool_element",
         "projection": "rigid",
         "location": "stellarity:village/armorer_1",
-        "processors": "minecraft:empty"
+        "processors": "stellarity:ignore_structure_void"
       }
     },
     {
@@ -61,7 +61,7 @@
         "element_type": "minecraft:single_pool_element",
         "projection": "rigid",
         "location": "stellarity:village/butcher_1",
-        "processors": "minecraft:empty"
+        "processors": "stellarity:ignore_structure_void"
       }
     },
     {
@@ -70,7 +70,7 @@
         "element_type": "minecraft:single_pool_element",
         "projection": "rigid",
         "location": "stellarity:village/cartographer_1",
-        "processors": "minecraft:empty"
+        "processors": "stellarity:ignore_structure_void"
       }
     },
     {
@@ -79,7 +79,7 @@
         "element_type": "minecraft:single_pool_element",
         "projection": "rigid",
         "location": "stellarity:village/farm_1",
-        "processors": "minecraft:empty"
+        "processors": "stellarity:ignore_structure_void"
       }
     },
     {
@@ -88,7 +88,7 @@
         "element_type": "minecraft:single_pool_element",
         "projection": "rigid",
         "location": "stellarity:village/farm_2",
-        "processors": "minecraft:empty"
+        "processors": "stellarity:ignore_structure_void"
       }
     },
     {
@@ -97,7 +97,7 @@
         "element_type": "minecraft:single_pool_element",
         "projection": "rigid",
         "location": "stellarity:village/farm_3",
-        "processors": "minecraft:empty"
+        "processors": "stellarity:ignore_structure_void"
       }
     },
     {
@@ -106,7 +106,7 @@
         "element_type": "minecraft:single_pool_element",
         "projection": "rigid",
         "location": "stellarity:village/farm_4",
-        "processors": "minecraft:empty"
+        "processors": "stellarity:ignore_structure_void"
       }
     },
     {
@@ -115,7 +115,7 @@
         "element_type": "minecraft:single_pool_element",
         "projection": "rigid",
         "location": "stellarity:village/farm_5",
-        "processors": "minecraft:empty"
+        "processors": "stellarity:ignore_structure_void"
       }
     },
     {
@@ -124,7 +124,7 @@
         "element_type": "minecraft:single_pool_element",
         "projection": "rigid",
         "location": "stellarity:village/farm_6",
-        "processors": "minecraft:empty"
+        "processors": "stellarity:ignore_structure_void"
       }
     },
     {
@@ -133,7 +133,7 @@
         "element_type": "minecraft:single_pool_element",
         "projection": "rigid",
         "location": "stellarity:village/fisherman_1",
-        "processors": "minecraft:empty"
+        "processors": "stellarity:ignore_structure_void"
       }
     },
     {
@@ -142,7 +142,7 @@
         "element_type": "minecraft:single_pool_element",
         "projection": "rigid",
         "location": "stellarity:village/garden_1",
-        "processors": "minecraft:empty"
+        "processors": "stellarity:ignore_structure_void"
       }
     },
     {
@@ -151,7 +151,7 @@
         "element_type": "minecraft:single_pool_element",
         "projection": "rigid",
         "location": "stellarity:village/library_1",
-        "processors": "minecraft:empty"
+        "processors": "stellarity:ignore_structure_void"
       }
     },
     {
@@ -160,7 +160,7 @@
         "element_type": "minecraft:single_pool_element",
         "projection": "rigid",
         "location": "stellarity:village/mason_1",
-        "processors": "minecraft:empty"
+        "processors": "stellarity:ignore_structure_void"
       }
     },
     {
@@ -169,7 +169,7 @@
         "element_type": "minecraft:single_pool_element",
         "projection": "rigid",
         "location": "stellarity:village/shepherd_1",
-        "processors": "minecraft:empty"
+        "processors": "stellarity:ignore_structure_void"
       }
     },
     {
@@ -178,7 +178,7 @@
         "element_type": "minecraft:single_pool_element",
         "projection": "rigid",
         "location": "stellarity:village/small_house_1",
-        "processors": "minecraft:empty"
+        "processors": "stellarity:ignore_structure_void"
       }
     },
     {
@@ -187,7 +187,7 @@
         "element_type": "minecraft:single_pool_element",
         "projection": "rigid",
         "location": "stellarity:village/small_house_2",
-        "processors": "minecraft:empty"
+        "processors": "stellarity:ignore_structure_void"
       }
     },
     {
@@ -196,7 +196,7 @@
         "element_type": "minecraft:single_pool_element",
         "projection": "rigid",
         "location": "stellarity:village/small_house_3",
-        "processors": "minecraft:empty"
+        "processors": "stellarity:ignore_structure_void"
       }
     },
     {
@@ -205,7 +205,7 @@
         "element_type": "minecraft:single_pool_element",
         "projection": "rigid",
         "location": "stellarity:village/small_house_4",
-        "processors": "minecraft:empty"
+        "processors": "stellarity:ignore_structure_void"
       }
     },
     {
@@ -214,7 +214,7 @@
         "element_type": "minecraft:single_pool_element",
         "projection": "rigid",
         "location": "stellarity:village/small_house_5",
-        "processors": "minecraft:empty"
+        "processors": "stellarity:ignore_structure_void"
       }
     },
     {
@@ -223,7 +223,7 @@
         "element_type": "minecraft:single_pool_element",
         "projection": "rigid",
         "location": "stellarity:village/tannery_1",
-        "processors": "minecraft:empty"
+        "processors": "stellarity:ignore_structure_void"
       }
     },
     {
@@ -232,7 +232,7 @@
         "element_type": "minecraft:single_pool_element",
         "projection": "rigid",
         "location": "stellarity:village/temple_1",
-        "processors": "minecraft:empty"
+        "processors": "stellarity:ignore_structure_void"
       }
     },
     {
@@ -241,7 +241,7 @@
         "element_type": "minecraft:single_pool_element",
         "projection": "rigid",
         "location": "stellarity:village/toolsmith_1",
-        "processors": "minecraft:empty"
+        "processors": "stellarity:ignore_structure_void"
       }
     },
     {
@@ -250,7 +250,7 @@
         "element_type": "minecraft:single_pool_element",
         "projection": "rigid",
         "location": "stellarity:village/weaponsmith_1",
-        "processors": "minecraft:empty"
+        "processors": "stellarity:ignore_structure_void"
       }
     }
   ]

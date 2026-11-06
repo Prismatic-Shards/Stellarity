@@ -1,0 +1,17 @@
+{
+  "default_value": "§aON",
+  "allowed_values": [
+    "§aON",
+    "§cOFF"
+  ],
+  "section": "weather_storms",
+  "section_order": 20,
+  "display_order": 2,
+  "performance_impact": "low",
+  "presets": {
+    "high_quality": "§aON",
+    "medium_quality": "§aON",
+    "potato": "§cOFF",
+    "only_fx": "§aON"
+  }
+}

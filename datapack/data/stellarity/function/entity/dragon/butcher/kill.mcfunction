@@ -1,11 +1,18 @@
 kill @s
 
-# fixed workaround for incorrect clearing of end portal
-  execute positioned 0 250 0 run fill ~3 ~ ~3 ~-3 ~15 ~-3 air strict
+  execute in minecraft:the_end run fill -4 55 -4 4 75 4 air replace minecraft:bedrock
+  execute in minecraft:the_end run fill -4 55 -4 4 75 4 air replace minecraft:end_portal
+  execute in minecraft:the_end run fill -4 55 -4 4 75 4 air replace minecraft:torch
 
-# Clear any vanilla End Gateways
-# 20 total, so 20 somewhat laggy /fill commands
-# Afaik, there is no better way to do this
+  function stellarity:structure/exit_portal/purge_sky
+  schedule function stellarity:structure/exit_portal/purge_sky 1t
+  schedule function stellarity:structure/exit_portal/purge_sky 20t
+  schedule function stellarity:structure/exit_portal/purge_sky 40t
+
+  execute as @e[type=end_crystal,predicate=stellarity:location/dragons_den/in_biome,tag=!stellarity.respawn_crystal,tag=!stellarity.new_crystal] at @s run function stellarity:post_gen/remove_crystals
+
+  execute in minecraft:the_end positioned 0.5 61 0.5 run function stellarity:structure/exit_portal/deactivated/generate
+
   execute if block 96 75 0 end_gateway positioned 96 75 0 run fill ~1 ~2 ~1 ~-1 ~-2 ~-1 air
   execute if block 91 75 29 end_gateway positioned 91 75 29 run fill ~1 ~2 ~1 ~-1 ~-2 ~-1 air
   execute if block 77 75 56 end_gateway positioned 77 75 56 run fill ~1 ~2 ~1 ~-1 ~-2 ~-1 air

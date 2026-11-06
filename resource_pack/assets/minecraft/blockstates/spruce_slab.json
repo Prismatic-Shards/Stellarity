@@ -1,0 +1,25 @@
+{
+  "variants": {
+    "type=bottom": {
+      "type": "polytone:expression",
+      "fabric:type": "polytone:expression",
+      "cases": [
+        {
+          "when": "o.canSeeSky() && (o.biome().contains('frost') || o.biome().contains('frozen'))",
+          "model": {
+            "model": "stellarity:block/snowy_spruce_slab"
+          }
+        }
+      ],
+      "fallback": {
+        "model": "minecraft:block/spruce_slab"
+      }
+    },
+    "type=double": {
+      "model": "minecraft:block/spruce_planks"
+    },
+    "type=top": {
+      "model": "minecraft:block/spruce_slab_top"
+    }
+  }
+}

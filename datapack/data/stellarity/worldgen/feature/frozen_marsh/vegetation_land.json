@@ -2,90 +2,58 @@
   "type": "minecraft:random_selector",
   "features": [
     {
-      "chance": 0.2137,
+      "chance": 0.22,
       "feature": {
         "feature": {
-          "type": "minecraft:simple_random_selector",
-          "features": [
-            {
-              "feature": {
-                "type": "minecraft:huge_red_mushroom",
-                "cap_provider": {
-                  "type": "minecraft:simple",
-                  "state": {
-                    "id": "minecraft:warped_wart_block"
-                  }
-                },
-                "stem_provider": {
-                  "type": "minecraft:simple",
-                  "state": {
-                    "id": "minecraft:warped_stem",
-                    "properties": {
-                      "axis": "y"
-                    }
-                  }
-                },
-                "foliage_radius": 1,
-                "can_place_on": {
-                  "type": "minecraft:true"
-                }
-              },
-              "placement": []
-            },
-            {
-              "feature": {
-                "type": "minecraft:tree",
-                "minimum_size": {
-                  "type": "minecraft:two_layers_feature_size"
-                },
-                "below_trunk_provider": {
-                  "type": "minecraft:simple",
-                  "state": {
-                    "id": "minecraft:rooted_dirt"
-                  }
-                },
-                "trunk_provider": {
-                  "type": "minecraft:simple",
-                  "state": {
-                    "id": "minecraft:warped_hyphae",
-                    "properties": {
-                      "axis": "y"
-                    }
-                  }
-                },
-                "foliage_provider": {
-                  "type": "minecraft:simple",
-                  "state": {
-                    "id": "minecraft:warped_wart_block"
-                  }
-                },
-                "trunk_placer": {
-                  "type": "minecraft:forking_trunk_placer",
-                  "base_height": 5,
-                  "height_rand_a": 0,
-                  "height_rand_b": 3
-                },
-                "foliage_placer": {
-                  "type": "minecraft:fancy_foliage_placer",
-                  "radius": 1,
-                  "offset": 0,
-                  "height": 2
-                },
-                "decorators": [
-                  {
-                    "type": "minecraft:trunk_vine"
-                  }
-                ]
-              },
-              "placement": []
+          "type": "minecraft:tree",
+          "minimum_size": {
+            "type": "minecraft:two_layers_feature_size"
+          },
+          "below_trunk_provider": {
+            "type": "minecraft:simple",
+            "state": {
+              "id": "minecraft:packed_ice"
             }
-          ]
+          },
+          "trunk_provider": {
+            "type": "minecraft:simple",
+            "state": {
+              "id": "minecraft:pale_oak_wood",
+              "properties": {
+                "axis": "y"
+              }
+            }
+          },
+          "foliage_provider": {
+            "type": "minecraft:simple",
+            "state": {
+              "id": "minecraft:pale_oak_leaves",
+              "properties": {
+                "distance": "7",
+                "persistent": "false",
+                "waterlogged": "false"
+              }
+            }
+          },
+          "trunk_placer": {
+            "type": "minecraft:forking_trunk_placer",
+            "base_height": 4,
+            "height_rand_a": 1,
+            "height_rand_b": 2
+          },
+          "foliage_placer": {
+            "type": "minecraft:fancy_foliage_placer",
+            "radius": 1,
+            "offset": 0,
+            "height": 2
+          },
+          "decorators": []
         },
         "placement": []
       }
     },
     {
-      "chance": 0.14,
+      "chance": 0.35,
       "feature": {
         "feature": {
           "type": "minecraft:block_column",
@@ -100,56 +68,26 @@
           "layers": [
             {
               "height": {
-                "type": "minecraft:weighted_list",
-                "distribution": [
+                "type": "minecraft:uniform",
+                "min_inclusive": 1,
+                "max_inclusive": 3
+              },
+              "provider": {
+                "type": "minecraft:weighted",
+                "entries": [
                   {
-                    "weight": 4,
+                    "weight": 2,
                     "data": {
-                      "type": "minecraft:uniform",
-                      "min_inclusive": 2,
-                      "max_inclusive": 3
+                      "id": "minecraft:packed_ice"
                     }
                   },
                   {
                     "weight": 1,
-                    "data": 1
-                  },
-                  {
-                    "weight": 4,
                     "data": {
-                      "type": "minecraft:uniform",
-                      "min_inclusive": 2,
-                      "max_inclusive": 5
+                      "id": "minecraft:blue_ice"
                     }
                   }
                 ]
-              },
-              "provider": {
-                "type": "minecraft:simple",
-                "state": {
-                  "id": "minecraft:twisting_vines_plant"
-                }
-              }
-            },
-            {
-              "height": 1,
-              "provider": {
-                "type": "minecraft:randomized_int",
-                "property": "age",
-                "values": {
-                  "type": "minecraft:uniform",
-                  "min_inclusive": 18,
-                  "max_inclusive": 25
-                },
-                "source": {
-                  "type": "minecraft:simple",
-                  "state": {
-                    "id": "minecraft:twisting_vines",
-                    "properties": {
-                      "age": "0"
-                    }
-                  }
-                }
               }
             }
           ]

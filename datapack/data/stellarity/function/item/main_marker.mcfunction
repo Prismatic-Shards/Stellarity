@@ -19,7 +19,7 @@ function stellarity:item/spellbooks/main
   execute if entity @s[tag=stellarity.star] run function stellarity:item/stellar_striker/star/projectile/loop
 
 # Phantom Item Frame
-  execute if entity @s[tag=stellarity.phantom_item_frame] run function stellarity:item/phantom_item_frame/main_marker
+  execute if score #stellarity.config stellarity.config.enable_phantom_item_frame matches 1 if entity @s[tag=stellarity.phantom_item_frame] run function stellarity:item/phantom_item_frame/main_marker
 
 execute if entity @s[tag=stellarity.satchel_of_voids,tag=!stellarity.satchel_of_voids.stationary] run function stellarity:item/satchel_of_voids/marker_loop
 execute if entity @s[tag=stellarity.satchel_of_voids.stationary] run function stellarity:item/satchel_of_voids/marker_loop_stationary

@@ -1,0 +1,9 @@
+{
+  "targets": [
+    "minecraft:dust",
+    "minecraft:dust_color_transition",
+    "minecraft:falling_dust",
+    ".*:.*dust.*"
+  ],
+  "size": "SIZE * 1.35 + 0.15"
+}

@@ -1,0 +1,12 @@
+{
+  "targets": [
+    "minecraft:amethyst_block",
+    "minecraft:budding_amethyst"
+  ],
+  "require_config": "stellarity:colored_lights",
+  "colored_light": {
+    "color": "#9b60ec",
+    "radius": 6,
+    "brightness": 0.7
+  }
+}

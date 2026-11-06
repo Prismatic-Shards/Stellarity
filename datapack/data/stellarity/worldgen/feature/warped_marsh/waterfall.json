@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:spring_feature",
+  "state": {
+    "id": "minecraft:water",
+    "properties": {
+      "falling": "true"
+    }
+  },
+  "valid_blocks": [
+    "minecraft:packed_mud",
+    "minecraft:mud",
+    "minecraft:muddy_mangrove_roots",
+    "minecraft:moss_block",
+    "minecraft:end_stone"
+  ]
+}

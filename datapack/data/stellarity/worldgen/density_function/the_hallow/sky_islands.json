@@ -1,0 +1,63 @@
+{
+  "type": "minecraft:range_choice",
+  "input": "stellarity:the_hallow/climate_mask",
+  "min_inclusive": 0.001,
+  "max_exclusive": 2.0,
+  "when_in_range": {
+    "type": "minecraft:add",
+    "left": {
+      "type": "minecraft:add",
+      "left": {
+        "type": "minecraft:mul",
+        "left": {
+          "type": "minecraft:mul",
+          "left": {
+            "type": "minecraft:gradient",
+            "axis": "y",
+            "from_coordinate": 135,
+            "to_coordinate": 150,
+            "from_value": 0,
+            "to_value": 1
+          },
+          "right": {
+            "type": "minecraft:gradient",
+            "axis": "y",
+            "from_coordinate": 310,
+            "to_coordinate": 324,
+            "from_value": 1,
+            "to_value": 0
+          }
+        },
+        "right": {
+          "type": "minecraft:add",
+          "left": {
+            "type": "minecraft:clamp",
+            "input": {
+              "type": "minecraft:max",
+              "left": {
+                "type": "minecraft:max",
+                "left": "stellarity:the_hallow/sky/organic",
+                "right": "stellarity:the_hallow/sky/mesa_low"
+              },
+              "right": "stellarity:the_hallow/sky/mesa_high"
+            },
+            "min": -1,
+            "max": 1
+          },
+          "right": 1
+        }
+      },
+      "right": -1
+    },
+    "right": {
+      "type": "minecraft:mul",
+      "left": 1.8,
+      "right": {
+        "type": "minecraft:add",
+        "left": "stellarity:the_hallow/climate_mask",
+        "right": -1.0
+      }
+    }
+  },
+  "when_out_of_range": -1.8
+}

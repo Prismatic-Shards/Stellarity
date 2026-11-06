@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:fallen_tree",
+  "log_decorators": [
+    {
+      "type": "minecraft:attached_to_logs",
+      "block_provider": {
+        "type": "minecraft:weighted",
+        "entries": [
+          {
+            "data": "minecraft:dead_bush",
+            "weight": 3
+          },
+          {
+            "data": "minecraft:bush",
+            "weight": 1
+          }
+        ]
+      },
+      "directions": [
+        "up"
+      ],
+      "probability": 0.3
+    }
+  ],
+  "log_length": {
+    "type": "minecraft:uniform",
+    "min_inclusive": 4,
+    "max_inclusive": 8
+  },
+  "stump_decorators": [],
+  "trunk_provider": {
+    "id": "minecraft:bone_block"
+  }
+}

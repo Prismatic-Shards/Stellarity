@@ -1,0 +1,44 @@
+{
+  "type": "minecraft:random_selector",
+  "default": {
+    "feature": {
+      "type": "minecraft:block_blob",
+      "can_place_on": {
+        "type": "minecraft:matching_block_tag",
+        "tag": "stellarity:_worldgen/frozen_spikes/crystals_host"
+      },
+      "state": "minecraft:blue_ice"
+    },
+    "placement": []
+  },
+  "features": [
+    {
+      "chance": 0.45,
+      "feature": {
+        "feature": {
+          "type": "minecraft:block_blob",
+          "can_place_on": {
+            "type": "minecraft:matching_block_tag",
+            "tag": "stellarity:_worldgen/frozen_spikes/crystals_host"
+          },
+          "state": "minecraft:packed_ice"
+        },
+        "placement": []
+      }
+    },
+    {
+      "chance": 0.25,
+      "feature": {
+        "feature": {
+          "type": "minecraft:block_blob",
+          "can_place_on": {
+            "type": "minecraft:matching_block_tag",
+            "tag": "stellarity:_worldgen/frozen_spikes/crystals_host"
+          },
+          "state": "minecraft:snow_block"
+        },
+        "placement": []
+      }
+    }
+  ]
+}

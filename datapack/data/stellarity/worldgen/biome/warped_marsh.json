@@ -1,94 +1,165 @@
 {
-	"temperature": 0.8,
-	"downfall": 0.4,
-	"has_precipitation": false,
-	"attributes": {
-		"visual/sky_color": 0,
-		"visual/fog_color": 0,
-		"visual/water_fog_color": 6798273,
-		"audio/ambient_sounds": {
-			"loop": {
-				"sound_id": "stellarity:ambient.the_end.heavenly_blessed"
-			},
-			"mood": {
-				"sound": "ambient.warped_forest.mood",
-				"tick_delay": 1200,
-				"block_search_extent": 4,
-				"offset": 1
-			},
-			"additions": {
-				"sound": "ambient.warped_forest.additions",
-				"tick_chance": 0.0111
-			}
-		},
-		"visual/ambient_particles": {
-			"modifier": "override",
-			"argument": [
-				{
-					"particle": {
-						"type": "minecraft:spore_blossom_air"
-					},
-					"probability": 0.001
-				}
-			]
-		},
-		"gameplay/natural_mob_spawns": {
-			"spawn_costs": {},
-			"spawns_by_category": {
-				"water_creature": [
-					{
-						"type": "minecraft:tropical_fish",
-						"count": {
-							"type": "uniform",
-							"min_inclusive": 6,
-							"max_inclusive": 8
-						},
-						"weight": 25
-					}
-				],
-				"creature": [
-					{
-						"type": "minecraft:frog",
-						"count": {
-							"type": "minecraft:uniform",
-							"min_inclusive": 1,
-							"max_inclusive": 4
-						},
-						"weight": 25
-					}
-				]
-			}
-		},
-		"gameplay/creature_world_gen_spawn_probability": 0.3
-	},
-	"effects": {
-		"water_color": 10672615,
-		"grass_color": 117978,
-		"foliage_color": 56800
-	},
-	"carvers": [],
-	"features": [
-		[
-			"stellarity:global/stalactite"
-		],
-		[
-			"stellarity:warped_marsh/dripping_water"
-		],
-		[],
-		[
-			"stellarity:warped_marsh/puddles"
-		],
-		[],
-		[],
-		[],
-		[],
-		[
-			"stellarity:warped_marsh/vegetation_grass",
-			"stellarity:warped_marsh/vegetation_water",
-			"stellarity:warped_marsh/vegetation_land",
-			"stellarity:warped_marsh/slime",
-			"stellarity:warped_marsh/froglight"
-		],
-		[]
-	]
+  "temperature": 0.8,
+  "downfall": 0.4,
+  "has_precipitation": false,
+  "attributes": {
+    "visual/sky_color": 730437,
+    "visual/fog_color": 1492890,
+    "visual/water_fog_color": 279363,
+    "audio/ambient_sounds": {
+      "loop": {
+        "sound_id": "ambient.warped_forest.loop"
+      },
+      "mood": {
+        "sound": "ambient.warped_forest.mood",
+        "tick_delay": 800,
+        "block_search_extent": 4,
+        "offset": 1
+      },
+      "additions": {
+        "sound": "ambient.warped_forest.additions",
+        "tick_chance": 0.012
+      }
+    },
+    "visual/ambient_particles": {
+      "modifier": "override",
+      "argument": [
+        {
+          "particle": {
+            "type": "minecraft:warped_spore"
+          },
+          "probability": 0.0035
+        }
+      ]
+    },
+    "gameplay/natural_mob_spawns": {
+      "spawn_costs": {
+        "minecraft:enderman": {
+          "energy_budget": 1.0,
+          "charge": 0.6
+        },
+        "minecraft:slime": {
+          "energy_budget": 1.0,
+          "charge": 0.4
+        },
+        "minecraft:bogged": {
+          "energy_budget": 1.0,
+          "charge": 0.6
+        }
+      },
+      "spawns_by_category": {
+        "monster": [
+          {
+            "type": "minecraft:enderman",
+            "count": {
+              "type": "minecraft:uniform",
+              "min_inclusive": 1,
+              "max_inclusive": 3
+            },
+            "weight": 20
+          },
+          {
+            "type": "minecraft:slime",
+            "count": {
+              "type": "minecraft:uniform",
+              "min_inclusive": 2,
+              "max_inclusive": 4
+            },
+            "weight": 40
+          },
+          {
+            "type": "minecraft:bogged",
+            "count": {
+              "type": "minecraft:uniform",
+              "min_inclusive": 2,
+              "max_inclusive": 4
+            },
+            "weight": 60
+          }
+        ],
+        "water_creature": [
+          {
+            "type": "minecraft:tropical_fish",
+            "count": {
+              "type": "uniform",
+              "min_inclusive": 6,
+              "max_inclusive": 8
+            },
+            "weight": 25
+          }
+        ],
+        "creature": [
+          {
+            "type": "minecraft:frog",
+            "count": {
+              "type": "minecraft:uniform",
+              "min_inclusive": 1,
+              "max_inclusive": 4
+            },
+            "weight": 25
+          },
+          {
+            "type": "minecraft:allay",
+            "count": {
+              "type": "minecraft:uniform",
+              "min_inclusive": 1,
+              "max_inclusive": 2
+            },
+            "weight": 15
+          }
+        ]
+      }
+    },
+    "gameplay/creature_world_gen_spawn_probability": 0.3
+  },
+  "effects": {
+    "water_color": 10672615,
+    "grass_color": 117978,
+    "foliage_color": 56800,
+    "dry_foliage_color": 3445610
+  },
+  "carvers": [
+    "stellarity:ravine",
+    "stellarity:crack"
+  ],
+  "features": [
+    [
+      "stellarity:warped_marsh/island/mud_stalactite",
+      "stellarity:warped_marsh/swamp_hills"
+    ],
+    [
+      "stellarity:warped_marsh/large_swamp_lake",
+      "stellarity:warped_marsh/dripping_water"
+    ],
+    [
+      "stellarity:warped_marsh/fallen_log",
+      "stellarity:warped_marsh/creeping_infection"
+    ],
+    [
+      "stellarity:warped_marsh/cave/floor_mycelium",
+      "stellarity:warped_marsh/cave/ceiling_fungus"
+    ],
+    [
+      "stellarity:warped_marsh/puddles"
+    ],
+    [],
+    [],
+    [],
+    [
+      "stellarity:warped_marsh/waterfall"
+    ],
+    [
+      "stellarity:warped_marsh/huge_fungus",
+      "stellarity:warped_marsh/vegetation_land",
+      "stellarity:warped_marsh/vegetation_grass",
+      "stellarity:warped_marsh/vegetation_water",
+      "stellarity:warped_marsh/lily_pad",
+      "stellarity:warped_marsh/slime",
+      "stellarity:warped_marsh/froglight"
+    ],
+    [
+      "stellarity:warped_marsh/dungeon",
+      "stellarity:warped_marsh/fossil"
+    ]
+  ]
 }

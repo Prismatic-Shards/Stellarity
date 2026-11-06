@@ -1,0 +1,39 @@
+{
+  "type": "custom",
+  "initializer": {
+    "lifetime": "35 + 15 * rand()",
+    "alpha": "0.90",
+    "size": "0.14",
+    "red": "0.22",
+    "green": "0.95",
+    "blue": "0.65",
+    "hitbox_size": 0.12
+  },
+  "ticker": {
+    "dy": "-0.85",
+    "dx": "0.03 * sin(0.15 * AGE)",
+    "dz": "0.03 * cos(0.15 * AGE)",
+    "remove_condition": "sqrt(DISTANCE_SQUARED) > 42"
+  },
+  "render_type": "additive_translucent",
+  "rotation_mode": "movement_aligned",
+  "has_physics": true,
+  "kill_on_contact": true,
+  "particle_emitters": [
+    {
+      "particle": "stellarity:acid_splash",
+      "chance": "AGE == LIFETIME",
+      "x": "0",
+      "y": "0.02",
+      "z": "0"
+    }
+  ],
+  "sound_emitters": [
+    {
+      "sound": "minecraft:block.lava.extinguish",
+      "chance": 0.003,
+      "volume": 0.45,
+      "pitch": "1.3 + 0.3 * rand()"
+    }
+  ]
+}

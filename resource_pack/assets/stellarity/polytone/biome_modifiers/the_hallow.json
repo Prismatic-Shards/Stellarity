@@ -1,0 +1,39 @@
+{
+  "attributes_modifiers": {
+    "base": {
+      "minecraft:visual/fog_color": "stellarity:biomes/the_hallow_fog",
+      "minecraft:visual/sky_color": "stellarity:biomes/the_hallow_sky",
+      "minecraft:visual/fog_start_distance": "c.viewDistance() * (c.y() > 165 ? 0.14 : (c.y() < 60 ? 0.015 : 0.05))",
+      "minecraft:visual/fog_end_distance": "c.viewDistance() * (c.y() > 165 ? 0.85 : (c.y() < 60 ? 0.52 : 0.74))",
+      "minecraft:visual/ambient_particles": {
+        "modifier": "override",
+        "argument": [
+          {
+            "particle": {
+              "type": "minecraft:cherry_leaves"
+            },
+            "probability": 0.008
+          },
+          {
+            "particle": {
+              "type": "stellarity:drift_fog_astral"
+            },
+            "probability": 0.0025
+          },
+          {
+            "particle": {
+              "type": "minecraft:end_rod"
+            },
+            "probability": 0.003
+          },
+          {
+            "particle": {
+              "type": "stellarity:celestial_spark"
+            },
+            "probability": 0.004
+          }
+        ]
+      }
+    }
+  }
+}

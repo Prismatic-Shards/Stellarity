@@ -1,1 +1,7 @@
-{"parent":"minecraft:item/generated","textures":{"layer0":"stellarity:item/champion_chestplate","layer1":"stellarity:item/champion_chestplate"}}
+{
+    "parent": "minecraft:item/generated",
+    "textures": {
+        "layer0": "stellarity:item/champion_chestplate",
+        "layer1": "stellarity:item/champion_chestplate"
+    }
+}

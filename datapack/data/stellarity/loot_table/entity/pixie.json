@@ -29,32 +29,6 @@
           ]
         }
       ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:structure_void",
-          "modifier": [
-            {
-              "type": "minecraft:set_components",
-              "components": {
-                "minecraft:custom_data": {
-                  "kohara:mob_death_sound": "pixie"
-                }
-              }
-            }
-          ],
-          "condition": {
-            "type": "minecraft:entity_properties",
-            "entity": "this",
-            "predicate": {
-              "entity_type": "minecraft:vex"
-            }
-          }
-        }
-      ]
     }
   ]
 }

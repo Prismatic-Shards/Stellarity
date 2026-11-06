@@ -1,123 +1,154 @@
 {
-  "type": "minecraft:random_boolean_selector",
-  "feature_false": {
-    "feature": {
-      "type": "minecraft:block_column",
-      "direction": "up",
-      "allowed_placement": {
-        "type": "minecraft:matching_blocks",
-        "blocks": [
-          "minecraft:air",
-          "minecraft:water"
-        ]
-      },
-      "prioritize_tip": false,
-      "layers": [
-        {
-          "height": {
-            "type": "minecraft:uniform",
-            "min_inclusive": 1,
-            "max_inclusive": 4
-          },
-          "provider": {
-            "type": "minecraft:simple",
-            "state": {
-              "id": "minecraft:spruce_fence",
-              "properties": {
-                "east": "false",
-                "north": "false",
-                "waterlogged": "false",
-                "south": "false",
-                "west": "false"
-              }
-            }
-          }
+  "type": "minecraft:simple_random_selector",
+  "features": [
+    {
+      "feature": {
+        "type": "minecraft:block_column",
+        "direction": "up",
+        "allowed_placement": {
+          "type": "minecraft:matching_blocks",
+          "blocks": [
+            "minecraft:air",
+            "minecraft:water"
+          ]
         },
-        {
-          "height": {
-            "type": "minecraft:uniform",
-            "min_inclusive": 1,
-            "max_inclusive": 3
-          },
-          "provider": {
-            "type": "minecraft:weighted",
-            "entries": [
-              {
-                "weight": 1,
-                "data": {
-                  "id": "minecraft:oak_leaves",
-                  "properties": {
-                    "distance": "1",
-                    "persistent": "true",
-                    "waterlogged": "false"
-                  }
+        "prioritize_tip": false,
+        "layers": [
+          {
+            "height": {
+              "type": "minecraft:uniform",
+              "min_inclusive": 1,
+              "max_inclusive": 3
+            },
+            "provider": {
+              "type": "minecraft:simple",
+              "state": {
+                "id": "minecraft:warped_fence",
+                "properties": {
+                  "east": "false",
+                  "north": "false",
+                  "south": "false",
+                  "waterlogged": "false",
+                  "west": "false"
                 }
               }
-            ]
-          }
-        }
-      ]
-    },
-    "placement": []
-  },
-  "feature_true": {
-    "feature": {
-      "type": "minecraft:block_column",
-      "direction": "up",
-      "allowed_placement": {
-        "type": "minecraft:matching_blocks",
-        "blocks": [
-          "minecraft:air",
-          "minecraft:water"
-        ]
-      },
-      "prioritize_tip": false,
-      "layers": [
-        {
-          "height": {
-            "type": "minecraft:uniform",
-            "min_inclusive": 1,
-            "max_inclusive": 4
-          },
-          "provider": {
-            "type": "minecraft:simple",
-            "state": {
-              "id": "minecraft:dark_oak_fence",
-              "properties": {
-                "east": "false",
-                "north": "false",
-                "waterlogged": "false",
-                "south": "false",
-                "west": "false"
-              }
             }
-          }
-        },
-        {
-          "height": {
-            "type": "minecraft:uniform",
-            "min_inclusive": 1,
-            "max_inclusive": 3
           },
-          "provider": {
-            "type": "minecraft:weighted",
-            "entries": [
-              {
-                "weight": 1,
-                "data": {
-                  "id": "minecraft:mangrove_leaves",
-                  "properties": {
-                    "distance": "1",
-                    "persistent": "true",
-                    "waterlogged": "false"
+          {
+            "height": {
+              "type": "minecraft:uniform",
+              "min_inclusive": 1,
+              "max_inclusive": 2
+            },
+            "provider": {
+              "type": "minecraft:weighted",
+              "entries": [
+                {
+                  "weight": 8,
+                  "data": {
+                    "id": "minecraft:warped_wart_block"
+                  }
+                },
+                {
+                  "weight": 2,
+                  "data": {
+                    "id": "minecraft:shroomlight"
                   }
                 }
-              }
-            ]
+              ]
+            }
           }
-        }
-      ]
+        ]
+      },
+      "placement": []
     },
-    "placement": []
-  }
+    {
+      "feature": {
+        "type": "minecraft:block_column",
+        "direction": "up",
+        "allowed_placement": {
+          "type": "minecraft:matching_blocks",
+          "blocks": [
+            "minecraft:air",
+            "minecraft:water"
+          ]
+        },
+        "prioritize_tip": false,
+        "layers": [
+          {
+            "height": {
+              "type": "minecraft:uniform",
+              "min_inclusive": 2,
+              "max_inclusive": 4
+            },
+            "provider": {
+              "type": "minecraft:simple",
+              "state": {
+                "id": "minecraft:dark_oak_fence",
+                "properties": {
+                  "east": "false",
+                  "north": "false",
+                  "south": "false",
+                  "waterlogged": "false",
+                  "west": "false"
+                }
+              }
+            }
+          },
+          {
+            "height": {
+              "type": "minecraft:uniform",
+              "min_inclusive": 1,
+              "max_inclusive": 3
+            },
+            "provider": {
+              "type": "minecraft:weighted",
+              "entries": [
+                {
+                  "weight": 7,
+                  "data": {
+                    "id": "minecraft:warped_wart_block"
+                  }
+                },
+                {
+                  "weight": 3,
+                  "data": {
+                    "id": "minecraft:shroomlight"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "placement": []
+    },
+    {
+      "feature": {
+        "type": "minecraft:simple_block",
+        "to_place": {
+          "type": "minecraft:weighted",
+          "entries": [
+            {
+              "weight": 4,
+              "data": {
+                "id": "minecraft:sea_pickle",
+                "properties": {
+                  "pickles": "3",
+                  "waterlogged": "true"
+                }
+              }
+            },
+            {
+              "weight": 3,
+              "data": {
+                "id": "minecraft:seagrass"
+              }
+            }
+          ]
+        }
+      },
+      "placement": []
+    }
+  ]
 }

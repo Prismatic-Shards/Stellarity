@@ -1,0 +1,45 @@
+{
+  "feature": "stellarity:warped_marsh/island/mud_stalactite",
+  "placement": [
+    {
+      "type": "minecraft:rarity_filter",
+      "chance": 3
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:uniform",
+        "min_inclusive": {
+          "absolute": 35
+        },
+        "max_inclusive": {
+          "absolute": 65
+        }
+      }
+    },
+    {
+      "type": "minecraft:environment_scan",
+      "direction_of_search": "up",
+      "max_steps": 24,
+      "target_condition": {
+        "type": "minecraft:matching_blocks",
+        "blocks": [
+          "minecraft:packed_mud",
+          "minecraft:muddy_mangrove_roots",
+          "minecraft:mud",
+          "minecraft:end_stone"
+        ]
+      },
+      "allowed_search_condition": {
+        "type": "minecraft:matching_block_tag",
+        "tag": "minecraft:air"
+      }
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

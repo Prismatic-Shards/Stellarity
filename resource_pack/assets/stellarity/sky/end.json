@@ -1,6 +1,6 @@
 {
 	"schemaVersion": 2,
-	"type": "square-textured",
+	"type": "single-sprite-square-textured",
 	"texture": "stellarity:sky/end.png",
 	"blend": {
 		"type": "alpha"
@@ -62,6 +62,6 @@
 		"moon": "minecraft:textures/environment/moon_phases.png",
 		"showSun": false,
 		"showMoon": false,
-		"showStars": true
+		"showStars": false
 	}
 }

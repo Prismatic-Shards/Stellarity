@@ -1,0 +1,80 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:written_book",
+      "components": {
+        "minecraft:item_model": "stellarity:endonomicon"
+      }
+    },
+    "title": {
+      "translate": "advancement.stellarity.root.title",
+      "fallback": "Also use Stellarity as a Resource Pack!"
+    },
+    "description": {
+      "translate": "advancement.stellarity.root",
+      "fallback": "Copy Stellarity into your Resource Pack folder for custom textures, models, music, and skies!"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "parent": "minecraft:adventure/root",
+  "criteria": {
+    "stellarity_discover_dimension": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "minecraft:the_end"
+      }
+    },
+    "stellarity_discover_item": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "predicates": {
+              "minecraft:custom_data": {
+                "stellarity:item": "endonomicon"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "stellarity_discover_structure": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "type": "minecraft:location_check",
+          "predicate": {
+            "structures": "stellarity:chapel_of_light"
+          }
+        }
+      }
+    },
+    "stellarity_discover_biome": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "type": "minecraft:location_check",
+          "predicate": {
+            "biomes": [
+              "stellarity:the_hallow",
+              "stellarity:amethyst_forest",
+              "stellarity:crystal_crags"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "stellarity_discover_dimension",
+      "stellarity_discover_item",
+      "stellarity_discover_structure",
+      "stellarity_discover_biome"
+    ]
+  ],
+  "sends_telemetry_event": false
+}

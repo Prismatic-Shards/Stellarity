@@ -1,0 +1,9 @@
+{
+  "base_octave": -5,
+  "octave_count": 3,
+  "amplitude_modifiers": [
+    1.0,
+    0.4,
+    0.2
+  ]
+}

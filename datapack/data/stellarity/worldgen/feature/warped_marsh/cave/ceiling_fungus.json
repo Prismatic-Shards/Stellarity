@@ -1,0 +1,102 @@
+{
+  "type": "minecraft:vegetation_patch",
+  "surface": "ceiling",
+  "depth": {
+    "type": "minecraft:uniform",
+    "min_inclusive": 1,
+    "max_inclusive": 2
+  },
+  "vertical_range": 4,
+  "extra_bottom_block_chance": 0.4,
+  "extra_edge_column_chance": 0.4,
+  "vegetation_chance": 0.35,
+  "xz_radius": {
+    "type": "minecraft:uniform",
+    "min_inclusive": 1,
+    "max_inclusive": 2
+  },
+  "replaceable": "#stellarity:_worldgen/stalactites_replacable",
+  "ground_state": {
+    "type": "minecraft:weighted",
+    "entries": [
+      {
+        "weight": 5,
+        "data": {
+          "id": "minecraft:packed_mud"
+        }
+      },
+      {
+        "weight": 3,
+        "data": {
+          "id": "minecraft:muddy_mangrove_roots"
+        }
+      }
+    ]
+  },
+  "vegetation_feature": {
+    "feature": {
+      "type": "minecraft:block_column",
+      "direction": "down",
+      "allowed_placement": {
+        "type": "minecraft:matching_blocks",
+        "blocks": [
+          "minecraft:air"
+        ]
+      },
+      "prioritize_tip": true,
+      "layers": [
+        {
+          "height": {
+            "type": "minecraft:uniform",
+            "min_inclusive": 2,
+            "max_inclusive": 3
+          },
+          "provider": {
+            "type": "minecraft:weighted",
+            "entries": [
+              {
+                "weight": 5,
+                "data": {
+                  "id": "minecraft:packed_mud"
+                }
+              },
+              {
+                "weight": 3,
+                "data": {
+                  "id": "minecraft:muddy_mangrove_roots"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "height": 1,
+          "provider": {
+            "type": "minecraft:weighted",
+            "entries": [
+              {
+                "weight": 3,
+                "data": {
+                  "id": "minecraft:spore_blossom"
+                }
+              },
+              {
+                "weight": 2,
+                "data": {
+                  "id": "minecraft:shroomlight"
+                }
+              },
+              {
+                "weight": 5,
+                "data": {
+                  "id": "minecraft:packed_mud"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "placement": []
+  }
+}

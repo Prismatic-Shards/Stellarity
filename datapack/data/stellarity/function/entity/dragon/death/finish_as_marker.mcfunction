@@ -14,6 +14,10 @@ particle minecraft:end_rod ~ ~ ~ 0 0 0 0.6 100 force
 playsound minecraft:entity.warden.death hostile @a[distance=0..] ~ ~ ~ 8 .7
 playsound minecraft:entity.warden.sonic_boom hostile @a[distance=0..] ~ ~ ~ 8 0
 
+execute in minecraft:the_end as @a run posteffect add @s custom:dragon_death_flash
+schedule function stellarity:entity/dragon/death/flash_fade 12t
+schedule function stellarity:entity/dragon/death/flash_remove 36t
+
 
 loot spawn ~ ~ ~ loot stellarity:entity/ender_dragon
 

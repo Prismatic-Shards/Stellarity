@@ -3,22 +3,22 @@
   "downfall": 0.4,
   "has_precipitation": false,
   "attributes": {
-    "visual/sky_color": 0,
-    "visual/fog_color": 0,
-    "visual/water_fog_color": 270131,
+    "visual/sky_color": 1183012,
+    "visual/fog_color": 2957127,
+    "visual/water_fog_color": 2626871,
     "audio/ambient_sounds": {
       "loop": {
-        "sound_id": "stellarity:ambient.the_end.dark"
+        "sound_id": "stellarity:ambient.the_end.heavenly_blessed"
       },
       "mood": {
         "sound": "ambient.soul_sand_valley.mood",
-        "tick_delay": 1000,
-        "block_search_extent": 2,
-        "offset": 1
+        "tick_delay": 900,
+        "block_search_extent": 6,
+        "offset": 2
       },
       "additions": {
-        "sound": "ambient.soul_sand_valley.additions",
-        "tick_chance": 0.0111
+        "sound": "ambient.underwater.loop.additions.rare",
+        "tick_chance": 0.008
       }
     },
     "visual/ambient_particles": {
@@ -26,9 +26,9 @@
       "argument": [
         {
           "particle": {
-            "type": "spore_blossom_air"
+            "type": "minecraft:portal"
           },
-          "probability": 0.0002
+          "probability": 0.0015
         }
       ]
     },

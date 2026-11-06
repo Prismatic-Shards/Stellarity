@@ -183,18 +183,35 @@
         scoreboard objectives remove stellarity.music.ender_dragon.timer
         scoreboard objectives remove stellarity.music.empress_of_light.timer
 
+      ## Ambient & AFK soundscapes
+        scoreboard objectives remove stellarity.afk.timer
+        scoreboard objectives remove stellarity.afk.pos_x
+        scoreboard objectives remove stellarity.afk.pos_y
+        scoreboard objectives remove stellarity.afk.pos_z
+        scoreboard objectives remove stellarity.ambient.loop_timer
+        scoreboard objectives remove stellarity.ambient.cave_timer
+        scoreboard objectives remove stellarity.ambient.archives_timer
+        scoreboard objectives remove stellarity.ambient.chapel_timer
+        scoreboard objectives remove stellarity.ambient.biome_id
+        scoreboard objectives remove stellarity.ambient.last_biome_id
+
       ## Mechanics
         scoreboard objectives remove stellarity.altar_of_the_accursed.count
         scoreboard objectives remove stellarity.live_time
         scoreboard objectives remove stellarity.health
 
       scoreboard objectives remove stellarity.mechanics.void_fishing.length
+      scoreboard objectives remove stellarity.abyss.sound_loop
+      scoreboard objectives remove stellarity.void_focus.dragon_timer
+      scoreboard objectives remove stellarity.void_focus.cooldown
+      scoreboard objectives remove stellarity.void_focus.active
       scoreboard objectives remove stellarity.mechanics.void_fishing.max_time
       scoreboard objectives remove stellarity.mechanics.void_fishing.can_fish
       scoreboard objectives remove stellarity.mechanics.consecration.time
       scoreboard objectives remove stellarity.mechanics.altar_of_the_sacred.timer
       scoreboard objectives remove stellarity.mechanics.cauldron_crafting.items_inside
       scoreboard objectives remove stellarity.mechanics.cauldron_crafting.breath_left
+      scoreboard objectives remove stellarity.altar.craft_progress
 
     ## Enchantments
       scoreboard objectives remove stellarity.enchantments.critical_strike.can_crit

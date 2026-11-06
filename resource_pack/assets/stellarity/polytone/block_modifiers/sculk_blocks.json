@@ -1,0 +1,46 @@
+{
+  "targets": [
+    "minecraft:sculk",
+    "minecraft:sculk_catalyst",
+    "minecraft:sculk_shrieker",
+    "minecraft:sculk_sensor",
+    "minecraft:sculk_vein"
+  ],
+  "particle_emitters": [
+    {
+      "particle": "minecraft:sculk_soul",
+      "chance": 0.012,
+      "x": "0.5 + (r.rand() - 0.5) * 0.7",
+      "y": "0.95 + r.rand() * 0.1",
+      "z": "0.5 + (r.rand() - 0.5) * 0.7",
+      "dx": "0.0",
+      "dy": "0.035",
+      "dz": "0.0"
+    },
+    {
+      "particle": "minecraft:sculk_charge_pop",
+      "chance": 0.005,
+      "x": "0.5 + (r.rand() - 0.5) * 0.6",
+      "y": "1.0",
+      "z": "0.5 + (r.rand() - 0.5) * 0.6",
+      "dx": "0.0",
+      "dy": "0.02",
+      "dz": "0.0"
+    },
+    {
+      "particle": "stellarity:void_wisp",
+      "chance": 0.008,
+      "x": "0.5 + (r.rand() - 0.5) * 0.7",
+      "y": "0.95 + r.rand() * 0.1",
+      "z": "0.5 + (r.rand() - 0.5) * 0.7"
+    }
+  ],
+  "sound_emitters": [
+    {
+      "sound": "minecraft:block.sculk_catalyst.bloom",
+      "chance": 0.0006,
+      "volume": 0.3,
+      "pitch": "0.6 + 0.3 * r.rand()"
+    }
+  ]
+}

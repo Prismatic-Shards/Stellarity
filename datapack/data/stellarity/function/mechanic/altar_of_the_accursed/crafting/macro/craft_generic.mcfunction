@@ -1,3 +1,2 @@
-$loot spawn ~ ~-.4 ~ loot $(loot)
-
-function stellarity:mechanic/altar_of_the_accursed/crafting/global_effects
+$data modify storage stellarity:temp altar.craft set value {type:"generic",loot:"$(loot)"}
+function stellarity:mechanic/altar_common/start_craft

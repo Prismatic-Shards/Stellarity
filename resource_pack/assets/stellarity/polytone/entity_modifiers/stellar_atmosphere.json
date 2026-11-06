@@ -1,0 +1,115 @@
+{
+  "targets": [
+    "minecraft:player"
+  ],
+  "emitters": [
+    {
+      "particle": "stellarity:celestial_spark",
+      "max_distance": 32,
+      "chance": "(config('stellarity:stellar_atmosphere') == '§cOFF' ? 0.0 : (config('stellarity:stellar_atmosphere') == '§eREDUCED' ? 0.5 : 1.0)) * ((o.biome() == 'stellarity:the_hallow' || o.biome() == 'stellarity:hallowed_tundra') ? 0.12 : 0.0)",
+      "count": "2",
+      "x": "r.rand(-14.0, 14.0)",
+      "y": "r.rand(-2.0, 8.0)",
+      "z": "r.rand(-14.0, 14.0)"
+    },
+    {
+      "particle": "minecraft:cherry_leaves",
+      "max_distance": 32,
+      "chance": "(config('stellarity:stellar_atmosphere') == '§cOFF' ? 0.0 : (config('stellarity:stellar_atmosphere') == '§eREDUCED' ? 0.5 : 1.0)) * ((o.biome() == 'stellarity:the_hallow') ? 0.08 : 0.0)",
+      "count": "1",
+      "x": "r.rand(-14.0, 14.0)",
+      "y": "r.rand(2.0, 10.0)",
+      "z": "r.rand(-14.0, 14.0)"
+    },
+    {
+      "particle": "minecraft:wax_off",
+      "max_distance": 32,
+      "chance": "(config('stellarity:stellar_atmosphere') == '§cOFF' ? 0.0 : (config('stellarity:stellar_atmosphere') == '§eREDUCED' ? 0.5 : 1.0)) * ((o.biome() == 'stellarity:prismatic_dunes') ? 0.12 : 0.0)",
+      "count": "2",
+      "x": "r.rand(-14.0, 14.0)",
+      "y": "r.rand(-1.0, 7.0)",
+      "z": "r.rand(-14.0, 14.0)"
+    },
+    {
+      "particle": "stellarity:warped_spore",
+      "max_distance": 32,
+      "chance": "(config('stellarity:stellar_atmosphere') == '§cOFF' ? 0.0 : (config('stellarity:stellar_atmosphere') == '§eREDUCED' ? 0.5 : 1.0)) * ((o.biome() == 'stellarity:warped_marsh' || o.biome() == 'stellarity:prismarine_forest') ? 0.12 : 0.0)",
+      "count": "2",
+      "x": "r.rand(-14.0, 14.0)",
+      "y": "r.rand(-2.0, 8.0)",
+      "z": "r.rand(-14.0, 14.0)"
+    },
+    {
+      "particle": "stellarity:void_wisp",
+      "max_distance": 32,
+      "chance": "(config('stellarity:stellar_atmosphere') == '§cOFF' ? 0.0 : (config('stellarity:stellar_atmosphere') == '§eREDUCED' ? 0.5 : 1.0)) * ((o.biome() == 'stellarity:the_void') ? 0.10 : 0.0)",
+      "count": "1",
+      "x": "r.rand(-16.0, 16.0)",
+      "y": "r.rand(0.0, 12.0)",
+      "z": "r.rand(-16.0, 16.0)"
+    },
+    {
+      "particle": "stellarity:amethyst_spark",
+      "max_distance": 30,
+      "chance": "(config('stellarity:stellar_atmosphere') == '§cOFF' ? 0.0 : (config('stellarity:stellar_atmosphere') == '§eREDUCED' ? 0.5 : 1.0)) * ((o.biome() == 'stellarity:amethyst_forest') ? 0.12 : 0.0)",
+      "count": "2",
+      "x": "r.rand(-14.0, 14.0)",
+      "y": "r.rand(-2.0, 8.0)",
+      "z": "r.rand(-14.0, 14.0)"
+    },
+    {
+      "particle": "stellarity:ash_cinder",
+      "max_distance": 32,
+      "chance": "(config('stellarity:stellar_atmosphere') == '§cOFF' ? 0.0 : (config('stellarity:stellar_atmosphere') == '§eREDUCED' ? 0.5 : 1.0)) * ((o.biome() == 'stellarity:ashfall_deltas' || o.biome() == 'stellarity:fiery_hills') ? 0.12 : 0.0)",
+      "count": "2",
+      "x": "r.rand(-14.0, 14.0)",
+      "y": "r.rand(-2.0, 8.0)",
+      "z": "r.rand(-14.0, 14.0)"
+    },
+    {
+      "particle": "stellarity:cosmic_dust",
+      "max_distance": 32,
+      "chance": "(config('stellarity:stellar_atmosphere') == '§cOFF' ? 0.0 : (config('stellarity:stellar_atmosphere') == '§eREDUCED' ? 0.5 : 1.0)) * ((o.biome() == 'stellarity:the_nest') ? 0.10 : 0.0)",
+      "count": "1",
+      "x": "r.rand(-14.0, 14.0)",
+      "y": "r.rand(-2.0, 8.0)",
+      "z": "r.rand(-14.0, 14.0)"
+    },
+    {
+      "particle": "stellarity:cosmic_dust",
+      "max_distance": 32,
+      "chance": "(config('stellarity:stellar_atmosphere') == '§cOFF' ? 0.0 : (config('stellarity:stellar_atmosphere') == '§eREDUCED' ? 0.5 : 1.0)) * ((o.biome() == 'stellarity:ender_wastes' || o.biome() == 'stellarity:end_wilds' || o.biome() == 'stellarity:end_shrubland' || o.biome() == 'minecraft:the_end' || o.biome() == 'minecraft:end_highlands' || o.biome() == 'minecraft:end_midlands' || o.biome() == 'minecraft:small_end_islands' || o.biome() == 'minecraft:end_barrens') ? 0.08 : 0.0)",
+      "count": "1",
+      "x": "r.rand(-16.0, 16.0)",
+      "y": "r.rand(-2.0, 8.0)",
+      "z": "r.rand(-16.0, 16.0)"
+    },
+    {
+      "particle": "stellarity:acid_drop",
+      "max_distance": 32,
+      "chance": "(config('stellarity:stellar_atmosphere') == '§cOFF' ? 0.0 : (config('stellarity:stellar_atmosphere') == '§eREDUCED' ? 0.5 : 1.0)) * ((o.biome() == 'stellarity:warped_marsh') ? 0.85 : 0.0)",
+      "count": "6",
+      "x": "r.rand(-16.0, 16.0)",
+      "y": "r.rand(8.0, 16.0)",
+      "z": "r.rand(-16.0, 16.0)"
+    },
+    {
+      "particle": "minecraft:sweep_attack",
+      "max_distance": 28,
+      "chance": "(config('stellarity:stellar_atmosphere') == '§cOFF' ? 0.0 : (config('stellarity:stellar_atmosphere') == '§eREDUCED' ? 0.5 : 1.0)) * ((o.biome() == 'stellarity:dragons_den') ? 0.045 : 0.0)",
+      "count": "1",
+      "x": "r.rand(-12.0, 12.0)",
+      "y": "r.rand(0.5, 4.0)",
+      "z": "r.rand(-12.0, 12.0)"
+    },
+    {
+      "particle": "stellarity:void_wisp",
+      "max_distance": 32,
+      "chance": "(config('stellarity:stellar_atmosphere') == '§cOFF' ? 0.0 : (config('stellarity:stellar_atmosphere') == '§eREDUCED' ? 0.5 : 1.0)) * ((o.biome() == 'stellarity:the_nest' || o.biome() == 'stellarity:the_void') ? 0.16 : 0.0)",
+      "count": "2",
+      "x": "r.rand(-14.0, 14.0)",
+      "y": "r.rand(-1.8, 0.2)",
+      "z": "r.rand(-14.0, 14.0)"
+    }
+  ]
+}

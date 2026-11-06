@@ -1,0 +1,45 @@
+{
+  "targets": [
+    "minecraft:magma_block",
+    "minecraft:basalt",
+    "minecraft:smooth_basalt",
+    "minecraft:blackstone"
+  ],
+  "particle_emitters": [
+    {
+      "particle": "minecraft:lava",
+      "chance": 0.015,
+      "x": "0.5 + (r.rand() - 0.5) * 0.7",
+      "y": "1.0",
+      "z": "0.5 + (r.rand() - 0.5) * 0.7",
+      "dx": "0.0",
+      "dy": "0.03",
+      "dz": "0.0"
+    },
+    {
+      "particle": "minecraft:smoke",
+      "chance": 0.02,
+      "x": "0.5 + (r.rand() - 0.5) * 0.6",
+      "y": "1.0",
+      "z": "0.5 + (r.rand() - 0.5) * 0.6",
+      "dx": "0.0",
+      "dy": "0.02",
+      "dz": "0.0"
+    },
+    {
+      "particle": "stellarity:ash_cinder",
+      "chance": 0.02,
+      "x": "0.5 + (r.rand() - 0.5) * 0.7",
+      "y": "1.0",
+      "z": "0.5 + (r.rand() - 0.5) * 0.7"
+    }
+  ],
+  "sound_emitters": [
+    {
+      "sound": "minecraft:block.lava.ambient",
+      "chance": 0.003,
+      "volume": 0.35,
+      "pitch": "0.8 + 0.3 * r.rand()"
+    }
+  ]
+}

@@ -36,7 +36,7 @@
             "blocks": [
               "minecraft:dirt",
               "minecraft:grass_block",
-              "minecraft:snow_block"
+              "minecraft:calcite"
             ]
           }
         ]
@@ -102,7 +102,8 @@
             ],
             "blocks": [
               "minecraft:dirt",
-              "minecraft:grass_block"
+              "minecraft:grass_block",
+              "minecraft:calcite"
             ]
           }
         ]

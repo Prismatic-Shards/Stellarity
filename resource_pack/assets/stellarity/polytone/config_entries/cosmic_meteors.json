@@ -1,0 +1,17 @@
+{
+  "default_value": "§aON",
+  "allowed_values": [
+    "§aON",
+    "§cOFF"
+  ],
+  "section": "sky_atmosphere",
+  "section_order": 10,
+  "display_order": 3,
+  "performance_impact": "low",
+  "presets": {
+    "high_quality": "§aON",
+    "medium_quality": "§aON",
+    "potato": "§cOFF",
+    "only_fx": "§aON"
+  }
+}

@@ -8,7 +8,7 @@
         "projection": "rigid",
         "override_liquid_settings": "ignore_waterlogging",
         "location": "stellarity:village/layouts/1",
-        "processors": "minecraft:empty"
+        "processors": "stellarity:ignore_structure_void"
       }
     }
   ]

@@ -1,0 +1,11 @@
+{
+  "values": [
+    "minecraft:grass_block",
+    "minecraft:dirt",
+    "minecraft:coarse_dirt",
+    "minecraft:rooted_dirt",
+    "minecraft:calcite",
+    "minecraft:diorite",
+    "minecraft:end_stone"
+  ]
+}

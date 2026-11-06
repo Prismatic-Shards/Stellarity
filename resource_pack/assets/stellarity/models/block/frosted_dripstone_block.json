@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "stellarity:block/frosted_dripstone_block"
+  }
+}

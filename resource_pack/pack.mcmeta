@@ -1,6 +1,8 @@
 {
   "pack": {
     "pack_format": 88,
+    "min_format": 75,
+    "max_format": 100,
     "description": [
       {
         "translate": "stellarity.resource_pack",
@@ -12,31 +14,64 @@
         "text": "⭐",
         "color": "gold"
       }
-    ],
-    "min_format": 75,
-    "max_format": [97,1]
+    ]
   },
   "overlays": {
     "entries": [
       {
         "directory": "overlay_assets_1_21_11",
-        "min_format": 75,
-        "max_format": 75
+        "min_format": [
+          75,
+          0
+        ],
+        "max_format": [
+          75,
+          0
+        ]
       },
       {
         "directory": "overlay_assets_26_1",
-        "min_format": 84,
-        "max_format": 84
+        "min_format": [
+          84,
+          0
+        ],
+        "max_format": [
+          84,
+          0
+        ]
       },
       {
         "directory": "overlay_assets_26_2",
-        "min_format": 88,
-        "max_format": 88
+        "min_format": [
+          88,
+          0
+        ],
+        "max_format": [
+          88,
+          0
+        ]
       },
       {
         "directory": "overlay_assets_26_3",
-        "min_format": 97,
-        "max_format": 97
+        "min_format": [
+          97,
+          0
+        ],
+        "max_format": [
+          97,
+          0
+        ]
+      },
+      {
+        "directory": "overlay_assets_26_4",
+        "min_format": [
+          100,
+          0
+        ],
+        "max_format": [
+          100,
+          0
+        ]
       }
     ]
   }

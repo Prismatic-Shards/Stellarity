@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:simple_block",
+  "to_place": {
+    "type": "minecraft:weighted",
+    "entries": [
+      {
+        "data": {
+          "id": "minecraft:short_dry_grass"
+        },
+        "weight": 40
+      },
+      {
+        "data": {
+          "id": "minecraft:tall_dry_grass"
+        },
+        "weight": 25
+      },
+      {
+        "data": {
+          "id": "minecraft:bush"
+        },
+        "weight": 18
+      },
+      {
+        "data": {
+          "id": "minecraft:dead_bush"
+        },
+        "weight": 12
+      },
+      {
+        "data": {
+          "id": "minecraft:cactus_flower"
+        },
+        "weight": 5
+      }
+    ]
+  }
+}

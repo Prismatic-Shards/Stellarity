@@ -8,7 +8,7 @@
         "projection": "rigid",
         "override_liquid_settings": "ignore_waterlogging",
         "location": "stellarity:chapel/decorations/lamp_1",
-        "processors": "minecraft:empty"
+        "processors": "stellarity:ignore_structure_void"
       }
     },
     {
@@ -18,7 +18,7 @@
         "projection": "rigid",
         "override_liquid_settings": "ignore_waterlogging",
         "location": "stellarity:chapel/decorations/lamp_2",
-        "processors": "minecraft:empty"
+        "processors": "stellarity:ignore_structure_void"
       }
     },
     {
@@ -28,7 +28,7 @@
         "projection": "rigid",
         "override_liquid_settings": "ignore_waterlogging",
         "location": "stellarity:chapel/decorations/lamp_3",
-        "processors": "minecraft:empty"
+        "processors": "stellarity:ignore_structure_void"
       }
     },
     {
@@ -38,7 +38,7 @@
         "projection": "rigid",
         "override_liquid_settings": "ignore_waterlogging",
         "location": "stellarity:chapel/decorations/rock_1",
-        "processors": "minecraft:empty"
+        "processors": "stellarity:ignore_structure_void"
       }
     },
     {
@@ -48,7 +48,7 @@
         "projection": "rigid",
         "override_liquid_settings": "ignore_waterlogging",
         "location": "stellarity:chapel/decorations/rock_2",
-        "processors": "minecraft:empty"
+        "processors": "stellarity:ignore_structure_void"
       }
     },
     {
@@ -58,7 +58,7 @@
         "projection": "rigid",
         "override_liquid_settings": "ignore_waterlogging",
         "location": "stellarity:chapel/decorations/fountain",
-        "processors": "minecraft:empty"
+        "processors": "stellarity:ignore_structure_void"
       }
     },
     {
@@ -68,7 +68,7 @@
         "projection": "rigid",
         "override_liquid_settings": "ignore_waterlogging",
         "location": "stellarity:chapel/decorations/pots_1",
-        "processors": "minecraft:empty"
+        "processors": "stellarity:ignore_structure_void"
       }
     },
     {
@@ -78,7 +78,7 @@
         "projection": "rigid",
         "override_liquid_settings": "ignore_waterlogging",
         "location": "stellarity:chapel/decorations/pots_2",
-        "processors": "minecraft:empty"
+        "processors": "stellarity:ignore_structure_void"
       }
     },
     {
@@ -88,7 +88,7 @@
         "projection": "rigid",
         "override_liquid_settings": "ignore_waterlogging",
         "location": "stellarity:chapel/decorations/pots_3",
-        "processors": "minecraft:empty"
+        "processors": "stellarity:ignore_structure_void"
       }
     },
     {
@@ -98,7 +98,7 @@
         "projection": "rigid",
         "override_liquid_settings": "ignore_waterlogging",
         "location": "stellarity:chapel/decorations/pots_4",
-        "processors": "minecraft:empty"
+        "processors": "stellarity:ignore_structure_void"
       }
     }
   ]

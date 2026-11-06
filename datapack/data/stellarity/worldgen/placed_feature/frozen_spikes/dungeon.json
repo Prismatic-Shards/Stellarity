@@ -1,0 +1,27 @@
+{
+  "feature": "stellarity:frozen_spikes/dungeon",
+  "placement": [
+    {
+      "type": "minecraft:rarity_filter",
+      "chance": 35
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:uniform",
+        "min_inclusive": {
+          "above_bottom": 15
+        },
+        "max_inclusive": {
+          "below_top": 15
+        }
+      }
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

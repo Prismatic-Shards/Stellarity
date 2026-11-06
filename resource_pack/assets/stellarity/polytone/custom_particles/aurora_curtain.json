@@ -1,0 +1,38 @@
+{
+  "type": "custom",
+  "render_type": "additive_translucent",
+  "rotation_mode": "look_at_y",
+  "offset": [
+    0,
+    15,
+    0
+  ],
+  "has_physics": false,
+  "kill_on_contact": false,
+  "kill_when_not_in_view": false,
+  "kill_when_still": false,
+  "liquid_affinity": "non_liquids",
+  "light_level": 15,
+  "initializer": {
+    "lifetime": "220 + rand() * 30",
+    "size": "0",
+    "alpha": "0",
+    "roll": "0",
+    "red": "0.35 + rand() * 0.2",
+    "green": "0.95",
+    "blue": "0.85 + rand() * 0.15",
+    "custom": "rand()"
+  },
+  "ticker": {
+    "dx": "0",
+    "dy": "0",
+    "dz": "0",
+    "size": "((0.2 + max(0, min(1, CUSTOM / (LIFETIME / 2))) * 0.8) * (0.9 + sin(TIME * (0.04 + CUSTOM * 0.01) + CUSTOM * 6.28) * 0.1)) * 95",
+    "alpha": "0.16 * sin(3.14159 * AGE / LIFETIME)",
+    "red": "0.25 + 0.35 * sin(0.03 * AGE)",
+    "green": "0.75 + 0.25 * cos(0.03 * AGE)",
+    "blue": "0.90",
+    "remove_condition": "sqrt(DISTANCE_SQUARED) > 800"
+  },
+  "force_spawn": true
+}

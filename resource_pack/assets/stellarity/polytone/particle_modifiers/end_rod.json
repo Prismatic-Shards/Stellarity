@@ -1,0 +1,6 @@
+{
+  "targets": [
+    "minecraft:end_rod"
+  ],
+  "size": "SIZE * 2.4 + 0.35"
+}

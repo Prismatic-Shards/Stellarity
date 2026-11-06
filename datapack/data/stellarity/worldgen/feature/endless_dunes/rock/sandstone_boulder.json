@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:random_selector",
+  "default": {
+    "feature": {
+      "type": "minecraft:block_blob",
+      "can_place_on": {
+        "type": "minecraft:matching_blocks",
+        "blocks": [
+          "minecraft:sand",
+          "minecraft:coarse_dirt",
+          "minecraft:sandstone",
+          "minecraft:smooth_sandstone",
+          "minecraft:end_stone"
+        ]
+      },
+      "state": "minecraft:smooth_sandstone"
+    },
+    "placement": []
+  },
+  "features": [
+    {
+      "chance": 0.4,
+      "feature": {
+        "feature": {
+          "type": "minecraft:block_blob",
+          "can_place_on": {
+            "type": "minecraft:matching_blocks",
+            "blocks": [
+              "minecraft:sand",
+              "minecraft:coarse_dirt",
+              "minecraft:sandstone",
+              "minecraft:smooth_sandstone",
+              "minecraft:end_stone"
+            ]
+          },
+          "state": "minecraft:sandstone"
+        },
+        "placement": []
+      }
+    }
+  ]
+}

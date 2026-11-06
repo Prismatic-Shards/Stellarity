@@ -1,0 +1,9 @@
+{
+  "targets": [
+    "minecraft:glowstone",
+    "minecraft:shroomlight",
+    "minecraft:sea_lantern"
+  ],
+  "require_config": "stellarity:colored_lights",
+  "colored_light": "#ba85f0"
+}

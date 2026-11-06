@@ -1,0 +1,39 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:paper",
+      "components": {
+        "minecraft:item_model": "stellarity:pure_completion"
+      }
+    },
+    "title": {
+      "translate": "advancements.stellarity.pure_completion"
+    },
+    "description": [
+      {
+        "translate": "advancements.stellarity.pure_completion.description",
+        "color": "#00FFAA"
+      },
+      "\n\n",
+      {
+        "translate": "Stellarity",
+        "color": "#eaa7ff",
+        "font": "stellarity:tooltip",
+        "italic": false
+      }
+    ],
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "stellarity:dragons_den/god_slayer",
+  "criteria": {
+    "kill_dragon_20_times": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 20000
+  }
+}

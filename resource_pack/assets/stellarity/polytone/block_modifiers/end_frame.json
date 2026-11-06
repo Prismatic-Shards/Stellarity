@@ -1,0 +1,30 @@
+{
+  "targets": [
+    "minecraft:end_portal_frame"
+  ],
+  "particle_emitters": [
+    {
+      "particle": "stellarity:celestial_spark",
+      "chance": 0.12,
+      "x": "0.5 + (r.rand() - 0.5) * 0.4",
+      "y": "0.85 + r.rand() * 0.2",
+      "z": "0.5 + (r.rand() - 0.5) * 0.4",
+      "dy": "0.015 + r.rand() * 0.02"
+    },
+    {
+      "particle": "stellarity:portal_aura",
+      "chance": 0.08,
+      "x": "0.5 + (r.rand() - 0.5) * 0.35",
+      "y": "0.82 + r.rand() * 0.1",
+      "z": "0.5 + (r.rand() - 0.5) * 0.35"
+    },
+    {
+      "particle": "stellarity:cosmic_dust",
+      "chance": 0.06,
+      "x": "0.5 + (r.rand() - 0.5) * 0.5",
+      "y": "0.9 + r.rand() * 0.25",
+      "z": "0.5 + (r.rand() - 0.5) * 0.5",
+      "dy": "0.008 + r.rand() * 0.01"
+    }
+  ]
+}

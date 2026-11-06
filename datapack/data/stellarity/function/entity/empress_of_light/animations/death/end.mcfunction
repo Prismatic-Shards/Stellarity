@@ -10,6 +10,7 @@ kill @e[type=marker,tag=stellarity.empress_of_light.tracker]
 execute as @e[type=block_display,tag=stellarity.empress_of_light.wing] on passengers run kill @s
 kill @e[type=block_display,tag=stellarity.empress_of_light.wing]
 execute at @s run function stellarity:entity/empress_of_light/attacks/clear_all
+execute if entity @s[tag=stellarity.empress_of_light.daytime] at @s run function stellarity:entity/empress_of_light/animations/death/spawn_corpse
 kill @s
 
 scoreboard players set #empress_of_light.is_alive stellarity.misc 0

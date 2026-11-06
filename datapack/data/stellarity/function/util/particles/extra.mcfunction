@@ -8,3 +8,7 @@ execute if entity @s[tag=kohara.particle.prismatic_punch] run function stellarit
 execute if entity @s[tag=kohara.particle.prismatic_punch_large] run function stellarity:util/particles/prismatic_punch/loop
 execute if entity @s[tag=kohara.particle.end_portal_fill] run function stellarity:util/particles/end_portal_fill/loop
 execute if entity @s[tag=kohara.particle.satchel_of_voids] run function stellarity:util/particles/satchel_of_voids/loop
+execute if entity @s[tag=kohara.particle.rk_hit] run function stellarity:util/particles/rk_hit/loop
+execute if entity @s[tag=kohara.particle.rk_mark] run function stellarity:util/particles/rk_mark/loop
+execute if entity @s[tag=kohara.particle.rk_crush] run function stellarity:util/particles/rk_crush/loop
+execute if entity @s[tag=kohara.particle.rk_ring] run function stellarity:util/particles/rk_ring/loop

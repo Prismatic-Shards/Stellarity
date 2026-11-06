@@ -2,12 +2,8 @@
   "feature": "stellarity:warped_marsh/froglight",
   "placement": [
     {
-      "type": "minecraft:count",
-      "count": {
-        "type": "minecraft:uniform",
-        "min_inclusive": 0,
-        "max_inclusive": 6
-      }
+      "type": "minecraft:rarity_filter",
+      "chance": 3
     },
     {
       "type": "minecraft:in_square"
@@ -17,10 +13,10 @@
       "height": {
         "type": "minecraft:uniform",
         "min_inclusive": {
-          "above_bottom": 40
+          "absolute": 40
         },
         "max_inclusive": {
-          "below_top": 170
+          "absolute": 70
         }
       }
     },

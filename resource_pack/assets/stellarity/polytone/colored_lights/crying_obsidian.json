@@ -1,0 +1,8 @@
+{
+  "targets": [
+    "minecraft:crying_obsidian",
+    "minecraft:respawn_anchor"
+  ],
+  "require_config": "stellarity:colored_lights",
+  "colored_light": "#9c48f2"
+}

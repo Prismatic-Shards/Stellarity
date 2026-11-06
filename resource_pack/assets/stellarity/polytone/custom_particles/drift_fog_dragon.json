@@ -1,0 +1,26 @@
+{
+  "type": "custom",
+  "initializer": {
+    "lifetime": "180 + 70 * rand()",
+    "alpha": "0",
+    "size": "5.0 + 2.0 * rand()",
+    "custom": "rand()",
+    "red": "0.32 + 0.10 * rand()",
+    "green": "0.08 + 0.04 * rand()",
+    "blue": "0.26 + 0.12 * rand()",
+    "hitbox_size": 0.1
+  },
+  "ticker": {
+    "alpha": "(0.20 + 0.08 * CUSTOM) * sin((pi / LIFETIME) * AGE)",
+    "dx": "0.010 * sin(0.012 * AGE + CUSTOM * 6.28)",
+    "dy": "0.003 + 0.001 * sin(0.02 * AGE)",
+    "dz": "0.010 * cos(0.012 * AGE + CUSTOM * 6.28)",
+    "remove_condition": "sqrt(DISTANCE_SQUARED) > 48"
+  },
+  "render_type": "translucent",
+  "rotation_mode": "look_at_xyz",
+  "exclusion_radius": 2,
+  "has_physics": false,
+  "light_level": 4,
+  "liquid_affinity": "any"
+}

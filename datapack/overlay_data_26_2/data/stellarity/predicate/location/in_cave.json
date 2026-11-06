@@ -1,0 +1,7 @@
+{
+  "predicate": {
+    "dimension": "minecraft:the_end",
+    "can_see_sky": false
+  },
+  "condition": "minecraft:location_check"
+}

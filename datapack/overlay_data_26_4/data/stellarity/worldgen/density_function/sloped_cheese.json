@@ -1,0 +1,97 @@
+{
+  "type": "minecraft:mul",
+  "left": 0.1111111,
+  "right": {
+    "type": "minecraft:add",
+    "left": -0.2,
+    "right": {
+      "type": "minecraft:upscale",
+      "input": {
+        "type": "minecraft:blend_density",
+        "input": {
+          "type": "minecraft:add",
+          "left": -1.4,
+          "right": {
+            "type": "minecraft:mul",
+            "left": {
+              "type": "minecraft:gradient",
+              "axis": "y",
+              "from_coordinate": -10,
+              "to_coordinate": 27,
+              "from_value": 0,
+              "to_value": 1
+            },
+            "right": {
+              "type": "minecraft:add",
+              "left": 1.4,
+              "right": {
+                "type": "minecraft:add",
+                "left": -0.1,
+                "right": {
+                  "type": "minecraft:mul",
+                  "left": {
+                    "type": "minecraft:gradient",
+                    "axis": "y",
+                    "from_coordinate": 105,
+                    "to_coordinate": 165,
+                    "from_value": 1,
+                    "to_value": 0
+                  },
+                  "right": {
+                    "type": "minecraft:add",
+                    "left": 0.1,
+                    "right": {
+                      "type": "minecraft:add",
+                      "left": {
+                        "type": "minecraft:mul",
+                        "left": 0.8,
+                        "right": {
+                          "type": "minecraft:mul",
+                          "left": {
+                            "type": "minecraft:add",
+                            "left": "stellarity:climate/depth",
+                            "right": {
+                              "type": "minecraft:mul",
+                              "left": "stellarity:jaggedness",
+                              "right": {
+                                "type": "minecraft:half_negative",
+                                "input": {
+                                  "type": "minecraft:mul",
+                                  "left": "stellarity:factor",
+                                  "right": {
+                                    "type": "minecraft:noise",
+                                    "noise": "minecraft:jagged",
+                                    "xz_scale": 1500,
+                                    "y_scale": 0
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "right": "stellarity:factor"
+                        }
+                      },
+                      "right": "stellarity:base_3d_noise"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "x": {
+        "cell_size": 4,
+        "mode": "interpolate_linear"
+      },
+      "y": {
+        "cell_size": 8,
+        "mode": "interpolate_linear"
+      },
+      "z": {
+        "cell_size": 4,
+        "mode": "interpolate_linear"
+      }
+    }
+  }
+}

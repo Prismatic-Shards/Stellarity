@@ -1,0 +1,52 @@
+{
+  "type": "minecraft:clamp",
+  "input": {
+    "type": "minecraft:add",
+    "argument1": {
+      "type": "minecraft:y_clamped_gradient",
+      "from_y": 160,
+      "to_y": 320,
+      "from_value": -0.42,
+      "to_value": -0.66
+    },
+    "argument2": {
+      "type": "minecraft:mul",
+      "argument1": 0.95,
+      "argument2": {
+        "type": "minecraft:noise",
+        "noise": "stellarity:the_hallow/sky_islet_noise",
+        "xz_scale": 0.6,
+        "y_scale": 1.6,
+        "shift_x": {
+          "type": "minecraft:mul",
+          "argument1": 24,
+          "argument2": {
+            "type": "minecraft:noise",
+            "noise": "stellarity:the_hallow/sky_islet_warp",
+            "xz_scale": 0.2,
+            "y_scale": 0,
+            "shift_x": 0,
+            "shift_y": 5,
+            "shift_z": 0
+          }
+        },
+        "shift_y": 0,
+        "shift_z": {
+          "type": "minecraft:mul",
+          "argument1": 24,
+          "argument2": {
+            "type": "minecraft:noise",
+            "noise": "stellarity:the_hallow/sky_islet_warp",
+            "xz_scale": 0.2,
+            "y_scale": 0.0,
+            "shift_x": 0,
+            "shift_y": 46,
+            "shift_z": 0
+          }
+        }
+      }
+    }
+  },
+  "min": -1,
+  "max": 1
+}

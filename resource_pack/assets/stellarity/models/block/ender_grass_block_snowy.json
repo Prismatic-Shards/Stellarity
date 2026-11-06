@@ -3,7 +3,7 @@
 	"textures": {
 		"bottom": "stellarity:block/ender_dirt",
 		"particle": "stellarity:block/ender_dirt",
-		"side": "stellarity:block/ender_grass_block_snow",
+		"side": "stellarity:block/ender_grass_block_side_snow",
 		"top": "stellarity:block/ender_grass_block_top"
 	}
 }

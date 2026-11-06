@@ -1,0 +1,36 @@
+{
+  "type": "custom",
+  "initializer": {
+    "lifetime": "(60 + r.rand(20)) * 4.0",
+    "alpha": "0",
+    "size": "0.75 + r.rand(0.25)",
+    "hitbox_size": "0.45",
+    "friction": "1.0",
+    "roll": "r.rand() * TAU",
+    "custom": "r.rand()"
+  },
+  "ticker": {
+    "dx": "timer=floor(o.custom()); phase=o.custom()-timer; blend=min(1,timer/8.0); normal_dx=-0.22-0.08*sin(o.age()*0.10+phase*TAU); climb_dx=-0.18; base_dx=normal_dx*(1-blend)+climb_dx*blend; rx=o.x()-p.x(); rz=o.z()-p.z(); pd2=rx*rx+rz*rz; pd=sqrt(max(pd2,0.0001)); proximity=min(max(2.0-pd,0),1); push=0.15*proximity*(3-2*proximity); dir_x=pd2>0.0001 ? rx/pd : cos(phase*TAU); base_dx+dir_x*push",
+    "dy": "timer=floor(o.custom()); o.age()<2 ? -0.06 : (timer>=25 ? 0.22 : (abs(o.yd())<0.00001 ? 0.06 : max(-0.20,o.yd()-0.022)))",
+    "dz": "timer=floor(o.custom()); phase=o.custom()-timer; blend=min(1,timer/8.0); normal_dz=0.05*sin(o.age()*0.07+phase*TAU); climb_dz=phase<0.5 ? 0.06 : -0.06; base_dz=normal_dz*(1-blend)+climb_dz*blend; rx=o.x()-p.x(); rz=o.z()-p.z(); pd2=rx*rx+rz*rz; pd=sqrt(max(pd2,0.0001)); proximity=min(max(2.0-pd,0),1); push=0.15*proximity*(3-2*proximity); dir_z=pd2>0.0001 ? rz/pd : sin(phase*TAU); base_dz+dir_z*push",
+    "roll": "timer=floor(o.custom()); phase=o.custom()-timer; next_timer=o.age()>1&&abs(o.xd())<0.001&&timer<=0 ? 25 : max(0,timer-1); o.custom(phase+next_timer); blend=min(1,next_timer/8.0); normal_spin=o.xd(); climb_spin=-0.16; spin=normal_spin*(1-blend)+climb_spin*blend; o.roll()+spin*(1.45+0.2*sin(o.age()*0.10+phase*TAU))",
+    "size": "0.75 + 0.10 * sin(o.age() * 0.18)",
+    "alpha": "dxp=o.x()-p.x(); dyp=o.y()-p.y(); dzp=o.z()-p.z(); d2=dxp*dxp+dyp*dyp+dzp*dzp; max(0,min(1,(900-d2)/260))*min(max(o.age()/6,0),1)*min(max((o.life()-o.age())/10,0),1)"
+  },
+  "liquid_affinity": "non_liquids",
+  "render_type": "translucent",
+  "rotation_mode": {
+    "x_rot": "0.18 * sin(o.age() * 0.14)",
+    "y_rot": "o.zd() * (-5.5)",
+    "z_rot": "o.roll()"
+  },
+  "model": "stellarity:block/ice_tumble",
+  "has_physics": true,
+  "kill_on_contact": false,
+  "kill_when_still": false,
+  "kill_when_not_in_view": false,
+  "sticky": false,
+  "exclusion_radius": 3,
+  "limit": 16,
+  "offset": [0, 0.45, 0]
+}

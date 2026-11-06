@@ -1,0 +1,17 @@
+{
+  "default_value": "§aON",
+  "allowed_values": [
+    "§aON",
+    "§cOFF"
+  ],
+  "section": "lighting_shaders",
+  "section_order": 30,
+  "display_order": 4,
+  "performance_impact": "low",
+  "presets": {
+    "high_quality": "§aON",
+    "medium_quality": "§aON",
+    "potato": "§aON",
+    "only_fx": "§aON"
+  }
+}

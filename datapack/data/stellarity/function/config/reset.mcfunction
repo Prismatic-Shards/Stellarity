@@ -25,3 +25,4 @@ scoreboard players reset #stellarity.config stellarity.config.enable_ender_drago
 scoreboard players reset #stellarity.config stellarity.config.enable_pixie
 scoreboard players reset #stellarity.config stellarity.config.enable_harvester_mb
 scoreboard players reset #stellarity.config stellarity.config.harvester_mb_health
+scoreboard players reset #stellarity.config stellarity.config.enable_phantom_item_frame

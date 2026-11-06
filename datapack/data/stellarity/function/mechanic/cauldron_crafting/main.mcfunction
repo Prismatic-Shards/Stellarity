@@ -5,11 +5,11 @@ data merge storage stellarity:temp {cauldron_crafting:{angle:{base:0}}}
 execute store result storage stellarity:temp cauldron_crafting.angle.base int 1 run scoreboard players get #base_angle stellarity.misc
 function stellarity:mechanic/cauldron_crafting/teleport_displays with storage stellarity:temp cauldron_crafting.angle
 
-execute unless score @s stellarity.mechanics.cauldron_crafting.items_inside matches 6 \
-if entity @e[type=item,distance=..0.5,tag=!stellarity.brewing.ignore] run \
+execute if entity @e[type=item,distance=..0.5,tag=!stellarity.brewing.ignore] run \
 function stellarity:mechanic/cauldron_crafting/add_item/count
 
 execute positioned ~ ~0.8 ~ as @e[type=interaction,distance=..1.1,tag=stellarity.brewing.interaction] if data entity @s interaction at @s run function stellarity:mechanic/cauldron_crafting/drop_item
+execute if entity @a[distance=..2.5,predicate=kohara:player/is_sneaking] positioned ~ ~0.8 ~ as @e[type=interaction,distance=..1.1,tag=stellarity.brewing.interaction,limit=1] at @s run function stellarity:mechanic/cauldron_crafting/drop_item
 
 data merge storage stellarity:temp {cauldron_crafting:{item:{},ingredients:[],result:{}}}
 execute positioned ~ ~0.8 ~ as @e[type=item_display,distance=..1.1,tag=stellarity.brewing.item_display] run function stellarity:mechanic/cauldron_crafting/list_insides/list

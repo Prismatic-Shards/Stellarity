@@ -55,6 +55,18 @@
           }
         },
         {
+          "biome": "stellarity:frosted_caves",
+          "parameters": {
+            "temperature": [-1, -0.7],
+            "humidity": [-0.5, 0.8],
+            "continentalness": [0.0, 0.55],
+            "erosion": [-0.5, 0.5],
+            "weirdness": [-0.6, 0.6],
+            "depth": [0.35, 0.8],
+            "offset": 0
+          }
+        },
+        {
           "biome": "minecraft:end_barrens",
           "parameters": {
             "temperature": [-0.405, -0.15],
@@ -418,23 +430,11 @@
           "biome": "stellarity:warped_marsh",
           "parameters": {
             "temperature": [-0.405, 0.48],
-            "humidity": [-0.19, 0.265],
+            "humidity": [0.265, 1],
             "continentalness": [-0.15, 1],
             "erosion": [0.545, 1],
             "weirdness": [-1, 1],
-            "depth": [0, 0],
-            "offset": 0
-          }
-        },
-        {
-          "biome": "stellarity:warped_marsh",
-          "parameters": {
-            "temperature": [-0.405, -0.15],
-            "humidity": [0.265, 0.685],
-            "continentalness": [-0.15, 1],
-            "erosion": [0.545, 1],
-            "weirdness": [-1, -0.05],
-            "depth": [0, 0],
+            "depth": [0.35, 0.8],
             "offset": 0
           }
         },

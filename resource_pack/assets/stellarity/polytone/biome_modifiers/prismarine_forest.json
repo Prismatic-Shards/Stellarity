@@ -1,0 +1,39 @@
+{
+  "attributes_modifiers": {
+    "base": {
+      "minecraft:visual/fog_color": "stellarity:biomes/prismarine_forest_fog",
+      "minecraft:visual/sky_color": "stellarity:biomes/prismarine_forest_sky",
+      "minecraft:visual/fog_start_distance": "c.viewDistance() * (c.y() > 165 ? 0.10 : (c.y() < 60 ? 0.01 : 0.035))",
+      "minecraft:visual/fog_end_distance": "c.viewDistance() * (c.y() > 165 ? 0.80 : (c.y() < 60 ? 0.48 : 0.68))",
+      "minecraft:visual/ambient_particles": {
+        "modifier": "override",
+        "argument": [
+          {
+            "particle": {
+              "type": "stellarity:drift_fog_toxic"
+            },
+            "probability": 0.003
+          },
+          {
+            "particle": {
+              "type": "minecraft:glow_squid_ink"
+            },
+            "probability": 0.004
+          },
+          {
+            "particle": {
+              "type": "minecraft:underwater"
+            },
+            "probability": 0.007
+          },
+          {
+            "particle": {
+              "type": "stellarity:crystal_sparkle"
+            },
+            "probability": 0.003
+          }
+        ]
+      }
+    }
+  }
+}

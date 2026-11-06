@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:location_check",
+  "predicate": {
+    "dimension": "minecraft:the_end",
+    "can_see_sky": false
+  }
+}

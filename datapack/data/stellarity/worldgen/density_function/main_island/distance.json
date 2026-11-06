@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:slice",
+  "axis": "y",
+  "coordinate": 0,
+  "input": {
+    "type": "minecraft:distance_to_point",
+    "metric": "euclidean",
+    "point": [0, 0, 0]
+  }
+}

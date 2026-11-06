@@ -1,0 +1,9 @@
+{
+  "targets": [
+    "minecraft:end_portal",
+    "minecraft:end_gateway",
+    "minecraft:nether_portal"
+  ],
+  "require_config": "stellarity:colored_lights",
+  "colored_light": "#8c3ce8"
+}

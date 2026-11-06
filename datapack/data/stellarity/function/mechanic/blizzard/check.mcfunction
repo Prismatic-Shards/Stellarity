@@ -1,0 +1,4 @@
+execute unless score #stellarity.blizzard stellarity.weather.cooldown matches 1.. unless score #stellarity.blizzard stellarity.weather.active matches 1.. run scoreboard players set #stellarity.blizzard stellarity.weather.cooldown 30
+execute if score #stellarity.blizzard stellarity.weather.active matches 1.. run scoreboard players remove #stellarity.blizzard stellarity.weather.active 1
+execute unless score #stellarity.blizzard stellarity.weather.active matches 1.. run scoreboard players remove #stellarity.blizzard stellarity.weather.cooldown 1
+execute unless score #stellarity.blizzard stellarity.weather.active matches 1.. if score #stellarity.blizzard stellarity.weather.cooldown matches ..0 if entity @a[predicate=stellarity:location/in_the_end] run function stellarity:mechanic/blizzard/trigger

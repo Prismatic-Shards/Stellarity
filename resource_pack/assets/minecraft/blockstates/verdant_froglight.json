@@ -1,0 +1,55 @@
+{
+  "variants": {
+    "axis=x": {
+      "type": "polytone:expression",
+      "fabric:type": "polytone:expression",
+      "cases": [
+        {
+          "when": "o.biome().contains('stellarity:') || o.biome().contains('end')",
+          "model": {
+            "model": "stellarity:block/ashen_froglight",
+            "x": 90,
+            "y": 90
+          }
+        }
+      ],
+      "fallback": {
+        "model": "minecraft:block/verdant_froglight",
+        "x": 90,
+        "y": 90
+      }
+    },
+    "axis=y": {
+      "type": "polytone:expression",
+      "fabric:type": "polytone:expression",
+      "cases": [
+        {
+          "when": "o.biome().contains('stellarity:') || o.biome().contains('end')",
+          "model": {
+            "model": "stellarity:block/ashen_froglight"
+          }
+        }
+      ],
+      "fallback": {
+        "model": "minecraft:block/verdant_froglight"
+      }
+    },
+    "axis=z": {
+      "type": "polytone:expression",
+      "fabric:type": "polytone:expression",
+      "cases": [
+        {
+          "when": "o.biome().contains('stellarity:') || o.biome().contains('end')",
+          "model": {
+            "model": "stellarity:block/ashen_froglight",
+            "x": 90
+          }
+        }
+      ],
+      "fallback": {
+        "model": "minecraft:block/verdant_froglight",
+        "x": 90
+      }
+    }
+  }
+}

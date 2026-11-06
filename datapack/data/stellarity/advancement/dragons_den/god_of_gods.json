@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:netherite_axe",
+      "components": {
+        "minecraft:item_model": "stellarity:radiant_kaleidoscope_ascended"
+      }
+    },
+    "title": {
+      "translate": "advancements.stellarity.god_of_gods"
+    },
+    "description": [
+      {
+        "translate": "advancements.stellarity.god_of_gods.description",
+        "color": "#FFD700"
+      },
+      "\n\n",
+      {
+        "translate": "Stellarity",
+        "color": "#eaa7ff",
+        "font": "stellarity:tooltip",
+        "italic": false
+      }
+    ],
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "stellarity:dragons_den/god_slayer",
+  "criteria": {
+    "kill_dragon_rk_only": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

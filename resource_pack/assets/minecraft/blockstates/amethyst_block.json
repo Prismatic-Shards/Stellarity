@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "": {
+      "type": "polytone:expression",
+      "fabric:type": "polytone:expression",
+      "cases": [
+        {
+          "when": "o.biome() == 'stellarity:frozen_spikes' || o.biome() == 'stellarity:frosted_valley' || o.biome() == 'stellarity:frosted_hills' || o.biome() == 'stellarity:frozen_shrubland' || o.biome() == 'stellarity:frozen_marsh' || o.biome() == 'stellarity:frosted_caves'",
+          "model": {
+            "model": "stellarity:block/frosted_amethyst_block"
+          }
+        }
+      ],
+      "fallback": {
+        "model": "minecraft:block/amethyst_block"
+      }
+    }
+  }
+}

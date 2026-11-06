@@ -32,7 +32,27 @@
         "minecraft:trims/items/helmet_trim",
         "minecraft:trims/items/chestplate_trim",
         "minecraft:trims/items/leggings_trim",
-        "minecraft:trims/items/boots_trim"
+        "minecraft:trims/items/boots_trim",
+        "minecraft:trims/items/elytra_trim",
+        "minecraft:trims/items/broken_elytra_trim",
+        "trims/entity/wings/bolt",
+        "trims/entity/wings/coast",
+        "trims/entity/wings/dune",
+        "trims/entity/wings/eye",
+        "trims/entity/wings/flow",
+        "trims/entity/wings/host",
+        "trims/entity/wings/raiser",
+        "trims/entity/wings/rib",
+        "trims/entity/wings/sentry",
+        "trims/entity/wings/shaper",
+        "trims/entity/wings/silence",
+        "trims/entity/wings/snout",
+        "trims/entity/wings/spire",
+        "trims/entity/wings/tide",
+        "trims/entity/wings/vex",
+        "trims/entity/wings/ward",
+        "trims/entity/wings/wayfinder",
+        "trims/entity/wings/wild"
       ]
     }
   ]

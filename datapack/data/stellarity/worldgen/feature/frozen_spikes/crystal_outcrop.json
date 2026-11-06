@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:vegetation_patch",
+  "surface": "floor",
+  "depth": 2,
+  "vertical_range": 6,
+  "extra_bottom_block_chance": 0.3,
+  "extra_edge_column_chance": 0.4,
+  "vegetation_chance": 0.85,
+  "xz_radius": {
+    "type": "minecraft:uniform",
+    "min_inclusive": 2,
+    "max_inclusive": 4
+  },
+  "replaceable": "#stellarity:_worldgen/frozen_spikes/patches_replacable",
+  "ground_state": {
+    "type": "minecraft:weighted",
+    "entries": [
+      {
+        "weight": 5,
+        "data": {
+          "id": "minecraft:amethyst_block"
+        }
+      },
+      {
+        "weight": 3,
+        "data": {
+          "id": "minecraft:packed_ice"
+        }
+      },
+      {
+        "weight": 2,
+        "data": {
+          "id": "minecraft:blue_ice"
+        }
+      }
+    ]
+  },
+  "vegetation_feature": {
+    "feature": "stellarity:frozen_spikes/ice_crystals",
+    "placement": []
+  }
+}

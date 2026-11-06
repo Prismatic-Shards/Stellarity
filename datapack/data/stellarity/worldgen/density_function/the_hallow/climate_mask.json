@@ -1,0 +1,59 @@
+{
+  "type": "minecraft:min",
+  "left": {
+    "type": "minecraft:spline",
+    "spline": {
+      "coordinate": "stellarity:climate/continents",
+      "points": [
+        {
+          "location": -1.26,
+          "value": 0.0,
+          "derivative": 0.0
+        },
+        {
+          "location": -1.18,
+          "value": 1.0,
+          "derivative": 0.0
+        },
+        {
+          "location": -0.74,
+          "value": 1.0,
+          "derivative": 0.0
+        },
+        {
+          "location": -0.68,
+          "value": 0.0,
+          "derivative": 0.0
+        }
+      ]
+    }
+  },
+  "right": {
+    "type": "minecraft:spline",
+    "spline": {
+      "coordinate": "stellarity:climate/temperature",
+      "points": [
+        {
+          "location": -0.46,
+          "value": 0.0,
+          "derivative": 0.0
+        },
+        {
+          "location": -0.38,
+          "value": 1.0,
+          "derivative": 0.0
+        },
+        {
+          "location": 0.46,
+          "value": 1.0,
+          "derivative": 0.0
+        },
+        {
+          "location": 0.52,
+          "value": 0.0,
+          "derivative": 0.0
+        }
+      ]
+    }
+  }
+}

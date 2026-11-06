@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "snowy=false": {
+      "type": "polytone:expression",
+      "fabric:type": "polytone:expression",
+      "cases": [
+        {
+          "when": "o.biome().contains('stellarity:') || o.biome().contains('end')",
+          "model": {
+            "model": "stellarity:block/ender_grass_block"
+          }
+        }
+      ],
+      "fallback": {
+        "model": "minecraft:block/grass_block"
+      }
+    },
+    "snowy=true": {
+      "type": "polytone:expression",
+      "fabric:type": "polytone:expression",
+      "cases": [
+        {
+          "when": "o.biome().contains('stellarity:') || o.biome().contains('end')",
+          "model": {
+            "model": "stellarity:block/ender_grass_block_snowy"
+          }
+        }
+      ],
+      "fallback": {
+        "model": "minecraft:block/grass_block_snow"
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "default_value": "§aON",
+  "allowed_values": [
+    "§aON",
+    "§cOFF"
+  ],
+  "section": "environment_fx",
+  "section_order": 40,
+  "display_order": 5,
+  "performance_impact": "low",
+  "presets": {
+    "high_quality": "§aON",
+    "medium_quality": "§aON",
+    "potato": "§cOFF",
+    "only_fx": "§aON"
+  }
+}

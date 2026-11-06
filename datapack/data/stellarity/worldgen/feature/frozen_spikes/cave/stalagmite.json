@@ -1,0 +1,108 @@
+{
+  "type": "minecraft:vegetation_patch",
+  "surface": "floor",
+  "depth": {
+    "type": "minecraft:uniform",
+    "min_inclusive": 1,
+    "max_inclusive": 3
+  },
+  "vertical_range": 6,
+  "extra_bottom_block_chance": 0.5,
+  "extra_edge_column_chance": 0.6,
+  "vegetation_chance": 0.8,
+  "xz_radius": {
+    "type": "minecraft:uniform",
+    "min_inclusive": 2,
+    "max_inclusive": 4
+  },
+  "replaceable": "#stellarity:_worldgen/frozen_spikes/patches_replacable",
+  "ground_state": {
+    "type": "minecraft:weighted",
+    "entries": [
+      {
+        "weight": 3,
+        "data": {
+          "id": "minecraft:blue_ice"
+        }
+      },
+      {
+        "weight": 2,
+        "data": {
+          "id": "minecraft:packed_ice"
+        }
+      }
+    ]
+  },
+  "vegetation_feature": {
+    "feature": {
+      "type": "minecraft:block_column",
+      "direction": "up",
+      "allowed_placement": {
+        "type": "minecraft:matching_blocks",
+        "blocks": [
+          "minecraft:air"
+        ]
+      },
+      "prioritize_tip": true,
+      "layers": [
+        {
+          "height": {
+            "type": "minecraft:uniform",
+            "min_inclusive": 1,
+            "max_inclusive": 4
+          },
+          "provider": {
+            "type": "minecraft:weighted",
+            "entries": [
+              {
+                "weight": 4,
+                "data": {
+                  "id": "minecraft:blue_ice"
+                }
+              },
+              {
+                "weight": 3,
+                "data": {
+                  "id": "minecraft:packed_ice"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "height": 1,
+          "provider": {
+            "type": "minecraft:weighted",
+            "entries": [
+              {
+                "weight": 3,
+                "data": {
+                  "id": "minecraft:amethyst_cluster",
+                  "properties": {
+                    "facing": "up"
+                  }
+                }
+              },
+              {
+                "weight": 2,
+                "data": {
+                  "id": "minecraft:small_amethyst_bud",
+                  "properties": {
+                    "facing": "up"
+                  }
+                }
+              },
+              {
+                "weight": 3,
+                "data": {
+                  "id": "minecraft:blue_ice"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "placement": []
+  }
+}

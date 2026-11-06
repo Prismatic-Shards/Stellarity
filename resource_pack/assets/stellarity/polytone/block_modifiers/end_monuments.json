@@ -1,0 +1,21 @@
+{
+  "targets": [
+    "minecraft:purpur_block",
+    "minecraft:purpur_pillar",
+    "minecraft:end_stone_bricks",
+    "minecraft:dragon_egg",
+    "minecraft:end_portal_frame"
+  ],
+  "particle_emitters": [
+    {
+      "particle": "minecraft:portal",
+      "chance": 0.01,
+      "x": "0.5 + (r.rand() - 0.5) * 0.7",
+      "y": "0.5 + (r.rand() - 0.5) * 0.7",
+      "z": "0.5 + (r.rand() - 0.5) * 0.7",
+      "dx": "(r.rand() - 0.5) * 0.02",
+      "dy": "(r.rand() - 0.5) * 0.02",
+      "dz": "(r.rand() - 0.5) * 0.02"
+    }
+  ]
+}

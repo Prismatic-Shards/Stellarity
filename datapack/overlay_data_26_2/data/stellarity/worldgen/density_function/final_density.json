@@ -9,9 +9,17 @@
     "argument1": {
       "type": "minecraft:add",
       "argument1": {
-        "type": "minecraft:min",
-        "argument1": "stellarity:sloped_cheese",
-        "argument2": "stellarity:cave/noodle"
+        "type": "minecraft:max",
+        "argument1": {
+          "type": "minecraft:max",
+          "argument1": {
+            "type": "minecraft:min",
+            "argument1": "stellarity:sloped_cheese",
+            "argument2": "stellarity:cave/noodle"
+          },
+          "argument2": "stellarity:the_hallow/sky_islands"
+        },
+        "argument2": "stellarity:amethyst_forest/peaks"
       },
       "argument2": "stellarity:main_island/farlands_taper"
     },

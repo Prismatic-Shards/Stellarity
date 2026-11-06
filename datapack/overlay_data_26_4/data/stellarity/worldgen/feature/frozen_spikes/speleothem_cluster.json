@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:speleothem_cluster",
+  "base_block": "minecraft:packed_ice",
+  "pointed_block": "minecraft:icicle",
+  "replaceable_blocks": "#minecraft:large_icicle_replaceable",
+  "floor_to_ceiling_search_range": 32,
+  "height": {
+    "type": "minecraft:uniform",
+    "min_inclusive": 3,
+    "max_inclusive": 8
+  },
+  "radius": {
+    "type": "minecraft:uniform",
+    "min_inclusive": 3,
+    "max_inclusive": 7
+  },
+  "max_stalagmite_stalactite_height_diff": 4,
+  "height_deviation": 2,
+  "speleothem_block_layer_thickness": {
+    "type": "minecraft:uniform",
+    "min_inclusive": 1,
+    "max_inclusive": 3
+  },
+  "density": {
+    "type": "minecraft:uniform",
+    "min_inclusive": 0.4,
+    "max_exclusive": 0.8
+  },
+  "wetness": {
+    "type": "minecraft:uniform",
+    "min_inclusive": 0.05,
+    "max_exclusive": 0.25
+  },
+  "chance_of_speleothem_at_max_distance_from_center": 0.1,
+  "max_distance_from_edge_affecting_chance_of_speleothem": 3,
+  "max_distance_from_center_affecting_height_bias": 3
+}

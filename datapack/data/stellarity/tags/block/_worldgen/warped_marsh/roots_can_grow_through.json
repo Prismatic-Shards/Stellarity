@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "#minecraft:mangrove_roots_can_grow_through",
+    "minecraft:moss_block",
+    "minecraft:mud",
+    "minecraft:packed_mud",
+    "minecraft:muddy_mangrove_roots",
+    "minecraft:rooted_dirt",
+    "minecraft:coarse_dirt",
+    "minecraft:clay",
+    "minecraft:end_stone",
+    "minecraft:warped_wart_block"
+  ]
+}

@@ -1,0 +1,4 @@
+{
+  "activation_condition": "(config('stellarity:biome_color_grading') != '§cOFF') && (c.biome() == 'stellarity:frosted_caves')",
+  "post_chain": "stellarity:frosted_caves"
+}

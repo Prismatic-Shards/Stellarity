@@ -4,22 +4,22 @@
   "has_precipitation": false,
   "creature_spawn_probability": 0,
   "attributes": {
-    "visual/sky_color": 0,
-    "visual/fog_color": 0,
-    "visual/water_fog_color": 329011,
+    "visual/sky_color": 725803,
+    "visual/fog_color": 11066076,
+    "visual/water_fog_color": 4553629,
     "audio/ambient_sounds": {
       "loop": {
-        "sound_id": "stellarity:ambient.the_end.dark"
+        "sound_id": "stellarity:ambient.the_end.heavenly_blessed"
       },
       "mood": {
-        "sound": "ambient.warped_forest.mood",
-        "tick_delay": 200,
-        "block_search_extent": 4,
-        "offset": 4
+        "sound": "ambient.soul_sand_valley.mood",
+        "tick_delay": 900,
+        "block_search_extent": 6,
+        "offset": 2
       },
       "additions": {
-        "sound": "ambient.nether_wastes.additions",
-        "tick_chance": 0.011111
+        "sound": "ambient.underwater.loop.additions.rare",
+        "tick_chance": 0.01
       }
     },
     "visual/ambient_particles": {
@@ -27,9 +27,9 @@
       "argument": [
         {
           "particle": {
-            "type": "minecraft:white_ash"
+            "type": "minecraft:snowflake"
           },
-          "probability": 0.0094
+          "probability": 0.003
         }
       ]
     }

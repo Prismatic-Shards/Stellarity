@@ -3,25 +3,121 @@
   "downfall": 0.4,
   "has_precipitation": false,
   "attributes": {
-    "visual/sky_color": 7907327,
-    "visual/fog_color": 12638463,
-    "visual/water_fog_color": 329011
+    "visual/sky_color": 4002568,
+    "visual/fog_color": 16219904,
+    "visual/water_fog_color": 14034984,
+    "audio/ambient_sounds": {
+      "loop": {
+        "sound_id": "ambient.nether_wastes.loop"
+      },
+      "mood": {
+        "sound": "ambient.nether_wastes.mood",
+        "tick_delay": 700,
+        "block_search_extent": 6,
+        "offset": 2
+      },
+      "additions": {
+        "sound": "ambient.nether_wastes.additions",
+        "tick_chance": 0.012
+      }
+    },
+    "visual/ambient_particles": {
+      "modifier": "override",
+      "argument": [
+        {
+          "particle": {
+            "type": "minecraft:small_flame"
+          },
+          "probability": 0.0015
+        }
+      ]
+    },
+    "gameplay/natural_mob_spawns": {
+      "spawn_costs": {
+        "minecraft:enderman": {
+          "energy_budget": 1.0,
+          "charge": 0.6
+        },
+        "minecraft:wither_skeleton": {
+          "energy_budget": 1.0,
+          "charge": 0.1
+        },
+        "minecraft:magma_cube": {
+          "energy_budget": 1.0,
+          "charge": 0.4
+        }
+      },
+      "spawns_by_category": {
+        "monster": [
+          {
+            "type": "minecraft:enderman",
+            "count": {
+              "type": "uniform",
+              "min_inclusive": 2,
+              "max_inclusive": 4
+            },
+            "weight": 50
+          },
+          {
+            "type": "minecraft:wither_skeleton",
+            "count": {
+              "type": "uniform",
+              "min_inclusive": 1,
+              "max_inclusive": 2
+            },
+            "weight": 1
+          },
+          {
+            "type": "minecraft:magma_cube",
+            "count": {
+              "type": "uniform",
+              "min_inclusive": 1,
+              "max_inclusive": 3
+            },
+            "weight": 30
+          }
+        ]
+      }
+    }
   },
   "effects": {
-    "water_color": 4159204
+    "water_color": 4159204,
+    "dry_foliage_color": 14452002
   },
-  "carvers": [],
+  "carvers": [
+    "stellarity:ravine",
+    "stellarity:crack"
+  ],
   "features": [
+    [
+      "stellarity:endless_dunes/island/sandstone_stalactite"
+    ],
+    [
+      "stellarity:endless_dunes/sinkhole"
+    ],
+    [
+      "stellarity:endless_dunes/rock/sandstone_pillar",
+      "stellarity:endless_dunes/rock/fallen_sandstone_pillar",
+      "stellarity:endless_dunes/rock/fallen_fossil"
+    ],
+    [
+      "stellarity:endless_dunes/cave/ceiling_sandstone",
+      "stellarity:endless_dunes/cave/floor_sand",
+      "stellarity:endless_dunes/cave/cobwebs"
+    ],
     [],
     [],
     [],
     [],
+    [
+      "stellarity:endless_dunes/vegetation/arid_patch",
+      "stellarity:endless_dunes/vegetation/bush_clusters",
+      "stellarity:endless_dunes/vegetation/chorus_cactus"
+    ],
     [],
-    [],
-    [],
-    [],
-    [],
-    [],
-    []
+    [
+      "stellarity:endless_dunes/dungeon",
+      "stellarity:endless_dunes/fossil"
+    ]
   ]
 }

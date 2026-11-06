@@ -1,0 +1,126 @@
+{
+  "type": "minecraft:cache",
+  "input": {
+    "type": "minecraft:add",
+    "left": {
+      "type": "minecraft:add",
+      "left": 208,
+      "right": {
+        "type": "minecraft:mul",
+        "left": 10,
+        "right": {
+          "type": "minecraft:add",
+          "left": 1,
+          "right": {
+            "type": "minecraft:mul",
+            "left": -1,
+            "right": {
+              "type": "minecraft:square",
+              "input": {
+                "type": "minecraft:add",
+                "left": 1,
+                "right": {
+                  "type": "minecraft:mul",
+                  "left": -1,
+                  "right": {
+                    "type": "minecraft:mul",
+                    "left": {
+                      "type": "minecraft:clamp",
+                      "input": {
+                        "type": "minecraft:mul",
+                        "left": "stellarity:the_hallow/sky/mesa_low_mask",
+                        "right": 0.7692307692307692
+                      },
+                      "min": 0,
+                      "max": 1
+                    },
+                    "right": {
+                      "type": "minecraft:clamp",
+                      "input": {
+                        "type": "minecraft:mul",
+                        "left": {
+                          "type": "minecraft:add",
+                          "left": "stellarity:the_hallow/climate_mask",
+                          "right": -0.35
+                        },
+                        "right": 1.8181818181818181
+                      },
+                      "min": 0,
+                      "max": 1
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "right": {
+      "type": "minecraft:add",
+      "left": {
+        "type": "minecraft:mul",
+        "left": 5,
+        "right": {
+          "type": "minecraft:spline",
+          "spline": {
+            "coordinate": {
+              "type": "minecraft:noise",
+              "noise": "stellarity:the_hallow/sky_islet_noise",
+              "xz_scale": 0.55,
+              "y_scale": 0,
+              "shift_x": 0,
+              "shift_y": 30,
+              "shift_z": 0
+            },
+            "points": [
+              {
+                "location": -0.5,
+                "value": -1,
+                "derivative": 0
+              },
+              {
+                "location": -0.2,
+                "value": -1,
+                "derivative": 0
+              },
+              {
+                "location": -0.14,
+                "value": 0,
+                "derivative": 0
+              },
+              {
+                "location": 0.14,
+                "value": 0,
+                "derivative": 0
+              },
+              {
+                "location": 0.2,
+                "value": 1,
+                "derivative": 0
+              },
+              {
+                "location": 0.5,
+                "value": 1,
+                "derivative": 0
+              }
+            ]
+          }
+        }
+      },
+      "right": {
+        "type": "minecraft:mul",
+        "left": 2.0,
+        "right": {
+          "type": "minecraft:noise",
+          "noise": "stellarity:the_hallow/sky_islet_noise",
+          "xz_scale": 2.0,
+          "y_scale": 0,
+          "shift_x": 0,
+          "shift_y": 42,
+          "shift_z": 0
+        }
+      }
+    }
+  }
+}

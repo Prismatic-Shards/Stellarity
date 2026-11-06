@@ -1,4 +1,8 @@
-execute store result score #count stellarity.misc run data get storage stellarity:temp altar_of_the_sacred.item.count 10
+execute unless entity @s run return 0
+execute store result score #count stellarity.misc run data get entity @s Item.count 10
+execute as @e[type=item,distance=0.01..2.5,tag=!stellarity.checked] if items entity @s contents minecraft:diamond store result score #extra stellarity.misc run data get entity @s Item.count 10
+execute if score #extra stellarity.misc matches 1.. run scoreboard players operation #count stellarity.misc += #extra stellarity.misc
+execute as @e[type=item,distance=0.01..2.5,tag=!stellarity.checked] if items entity @s contents minecraft:diamond run kill @s
 
 scoreboard players set #mul stellarity.misc 110
 

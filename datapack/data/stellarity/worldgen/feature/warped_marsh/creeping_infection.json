@@ -1,0 +1,160 @@
+{
+  "type": "minecraft:vegetation_patch",
+  "surface": "floor",
+  "depth": {
+    "type": "minecraft:uniform",
+    "min_inclusive": 1,
+    "max_inclusive": 2
+  },
+  "vertical_range": 5,
+  "extra_bottom_block_chance": 0.6,
+  "extra_edge_column_chance": 0.7,
+  "vegetation_chance": 0.4,
+  "xz_radius": {
+    "type": "minecraft:uniform",
+    "min_inclusive": 1,
+    "max_inclusive": 3
+  },
+  "replaceable": "#stellarity:_worldgen/warped_marsh/ground",
+  "ground_state": {
+    "type": "minecraft:weighted",
+    "entries": [
+      {
+        "weight": 6,
+        "data": {
+          "id": "minecraft:warped_wart_block"
+        }
+      },
+      {
+        "weight": 3,
+        "data": {
+          "id": "minecraft:warped_stem"
+        }
+      },
+      {
+        "weight": 1,
+        "data": {
+          "id": "minecraft:shroomlight"
+        }
+      }
+    ]
+  },
+  "vegetation_feature": {
+    "feature": {
+      "type": "minecraft:simple_random_selector",
+      "features": [
+        {
+          "feature": {
+            "type": "minecraft:block_column",
+            "direction": "up",
+            "allowed_placement": {
+              "type": "minecraft:matching_blocks",
+              "blocks": [
+                "minecraft:air"
+              ]
+            },
+            "prioritize_tip": true,
+            "layers": [
+              {
+                "height": {
+                  "type": "minecraft:uniform",
+                  "min_inclusive": 1,
+                  "max_inclusive": 2
+                },
+                "provider": {
+                  "type": "minecraft:weighted",
+                  "entries": [
+                    {
+                      "weight": 7,
+                      "data": {
+                        "id": "minecraft:warped_wart_block"
+                      }
+                    },
+                    {
+                      "weight": 2,
+                      "data": {
+                        "id": "minecraft:warped_stem"
+                      }
+                    },
+                    {
+                      "weight": 1,
+                      "data": {
+                        "id": "minecraft:shroomlight"
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "placement": []
+        },
+        {
+          "feature": {
+            "type": "minecraft:block_column",
+            "direction": "up",
+            "allowed_placement": {
+              "type": "minecraft:matching_blocks",
+              "blocks": [
+                "minecraft:air"
+              ]
+            },
+            "prioritize_tip": true,
+            "layers": [
+              {
+                "height": {
+                  "type": "minecraft:uniform",
+                  "min_inclusive": 2,
+                  "max_inclusive": 5
+                },
+                "provider": {
+                  "type": "minecraft:simple",
+                  "state": {
+                    "id": "minecraft:twisting_vines_plant"
+                  }
+                }
+              },
+              {
+                "height": 1,
+                "provider": {
+                  "type": "minecraft:simple",
+                  "state": {
+                    "id": "minecraft:twisting_vines",
+                    "properties": {
+                      "age": "15"
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          "placement": []
+        },
+        {
+          "feature": {
+            "type": "minecraft:simple_block",
+            "to_place": {
+              "type": "minecraft:weighted",
+              "entries": [
+                {
+                  "weight": 5,
+                  "data": {
+                    "id": "minecraft:warped_roots"
+                  }
+                },
+                {
+                  "weight": 3,
+                  "data": {
+                    "id": "minecraft:nether_sprouts"
+                  }
+                }
+              ]
+            }
+          },
+          "placement": []
+        }
+      ]
+    },
+    "placement": []
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "type": "minecraft:tree",
+  "below_trunk_provider": {
+    "type": "minecraft:simple",
+    "state": {
+      "id": "minecraft:muddy_mangrove_roots",
+      "properties": {
+        "axis": "y"
+      }
+    }
+  },
+  "decorators": [
+    {
+      "type": "minecraft:leave_vine",
+      "probability": 0.2
+    },
+    {
+      "type": "minecraft:attached_to_leaves",
+      "block_provider": {
+        "type": "minecraft:simple",
+        "state": {
+          "id": "minecraft:shroomlight"
+        }
+      },
+      "directions": [
+        "down"
+      ],
+      "exclusion_radius_xz": 1,
+      "exclusion_radius_y": 0,
+      "probability": 0.15,
+      "required_empty_blocks": 1
+    }
+  ],
+  "foliage_placer": {
+    "type": "minecraft:acacia_foliage_placer",
+    "offset": 0,
+    "radius": {
+      "type": "minecraft:uniform",
+      "max_inclusive": 3,
+      "min_inclusive": 2
+    }
+  },
+  "foliage_provider": {
+    "type": "minecraft:simple",
+    "state": {
+      "id": "minecraft:warped_wart_block"
+    }
+  },
+  "ignore_vines": false,
+  "minimum_size": {
+    "type": "minecraft:two_layers_feature_size",
+    "limit": 1,
+    "lower_size": 0,
+    "upper_size": 1
+  },
+  "trunk_placer": {
+    "type": "minecraft:straight_trunk_placer",
+    "base_height": 2,
+    "height_rand_a": 2,
+    "height_rand_b": 1
+  },
+  "trunk_provider": {
+    "type": "minecraft:simple",
+    "state": {
+      "id": "minecraft:warped_stem",
+      "properties": {
+        "axis": "y"
+      }
+    }
+  }
+}

@@ -29,6 +29,9 @@
 #> Kaleidoscope
   execute if entity @s[tag=stellarity.damage.kaleidoscope] run function stellarity:util/damage/death_messages/kaleidoscope
 
+#> Radiant Kaleidoscope
+  execute if entity @s[tag=stellarity.damage.radiant_kaleidoscope] run function stellarity:util/damage/death_messages/radiant_kaleidoscope
+
 #> Stellar Striker
   execute if entity @s[tag=stellarity.damage.stellar_striker] run function stellarity:util/damage/death_messages/stellar_striker
 

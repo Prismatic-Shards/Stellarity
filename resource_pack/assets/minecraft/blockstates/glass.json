@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "": {
+      "type": "polytone:expression",
+      "fabric:type": "polytone:expression",
+      "cases": [
+        {
+          "when": "o.biome() == 'stellarity:prismatic_dunes'",
+          "model": {
+            "model": "stellarity:block/prismatic_crystal_glass"
+          }
+        }
+      ],
+      "fallback": {
+        "model": "minecraft:block/glass"
+      }
+    }
+  }
+}

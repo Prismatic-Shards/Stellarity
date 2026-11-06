@@ -1,1 +1,6 @@
-{"parent":"minecraft:item/handheld_rod","textures":{"layer0":"stellarity:item/fisher_of_voids"}}
+{
+    "parent": "minecraft:item/handheld_rod",
+    "textures": {
+        "layer0": "stellarity:item/fisher_of_voids"
+    }
+}

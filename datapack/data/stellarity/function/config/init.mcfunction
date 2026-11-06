@@ -36,6 +36,7 @@ execute unless score #stellarity.config stellarity.config.enable_prismember matc
 execute unless score #stellarity.config stellarity.config.enable_tamaris matches ..2147483647 run scoreboard players set #stellarity.config stellarity.config.enable_tamaris 1
 execute unless score #stellarity.config stellarity.config.enable_stellar_striker matches ..2147483647 run scoreboard players set #stellarity.config stellarity.config.enable_stellar_striker 1
 execute unless score #stellarity.config stellarity.config.enable_kaleidoscope matches ..2147483647 run scoreboard players set #stellarity.config stellarity.config.enable_kaleidoscope 1
+execute unless score #stellarity.config stellarity.config.enable_radiant_kaleidoscope matches ..2147483647 run scoreboard players set #stellarity.config stellarity.config.enable_radiant_kaleidoscope 1
 execute unless score #stellarity.config stellarity.config.enable_fluffy_hammer_of_justice matches ..2147483647 run scoreboard players set #stellarity.config stellarity.config.enable_fluffy_hammer_of_justice 1
 execute unless score #stellarity.config stellarity.config.enable_starless_scythe matches ..2147483647 run scoreboard players set #stellarity.config stellarity.config.enable_starless_scythe 1
 execute unless score #stellarity.config stellarity.config.enable_sandstorm_trident matches ..2147483647 run scoreboard players set #stellarity.config stellarity.config.enable_sandstorm_trident 1
@@ -61,6 +62,7 @@ execute unless score #stellarity.config stellarity.config.enable_soaring_insigni
 execute unless score #stellarity.config stellarity.config.enable_enderman_hand matches ..2147483647 run scoreboard players set #stellarity.config stellarity.config.enable_enderman_hand 1
 execute unless score #stellarity.config stellarity.config.enable_void_pendant matches ..2147483647 run scoreboard players set #stellarity.config stellarity.config.enable_void_pendant 1
 execute unless score #stellarity.config stellarity.config.enable_radiant_jewel matches ..2147483647 run scoreboard players set #stellarity.config stellarity.config.enable_radiant_jewel 1
+execute unless score #stellarity.config stellarity.config.enable_phantom_item_frame matches ..2147483647 run scoreboard players set #stellarity.config stellarity.config.enable_phantom_item_frame 1
 execute unless score #stellarity.config stellarity.config.enable_life_crystal matches ..2147483647 run scoreboard players set #stellarity.config stellarity.config.enable_life_crystal 1
 execute unless score #stellarity.config stellarity.config.enable_duskberry matches ..2147483647 run scoreboard players set #stellarity.config stellarity.config.enable_duskberry 1
 execute unless score #stellarity.config stellarity.config.enable_satchel_of_voids matches ..2147483647 run scoreboard players set #stellarity.config stellarity.config.enable_satchel_of_voids 1

@@ -1,0 +1,443 @@
+{
+  "type": "minecraft:cache",
+  "input": {
+    "type": "minecraft:clamp",
+    "input": {
+      "type": "minecraft:mul",
+      "left": {
+        "type": "minecraft:add",
+        "left": {
+          "type": "minecraft:max",
+          "left": {
+            "type": "minecraft:max",
+            "left": {
+              "type": "minecraft:max",
+              "left": {
+                "type": "minecraft:max",
+                "left": {
+                  "type": "minecraft:max",
+                  "left": {
+                    "type": "minecraft:clamp",
+                    "input": {
+                      "type": "minecraft:add",
+                      "left": {
+                        "type": "minecraft:mul",
+                        "left": {
+                          "type": "minecraft:min",
+                          "left": {
+                            "type": "minecraft:min",
+                            "left": {
+                              "type": "minecraft:min",
+                              "left": {
+                                "type": "minecraft:min",
+                                "left": {
+                                  "type": "minecraft:min",
+                                  "left": {
+                                    "type": "minecraft:add",
+                                    "left": "stellarity:climate/temperature",
+                                    "right": 0.405
+                                  },
+                                  "right": {
+                                    "type": "minecraft:add",
+                                    "left": {
+                                      "type": "minecraft:mul",
+                                      "left": -1,
+                                      "right": "stellarity:climate/temperature"
+                                    },
+                                    "right": 0.48
+                                  }
+                                },
+                                "right": {
+                                  "type": "minecraft:add",
+                                  "left": "stellarity:climate/humidity",
+                                  "right": -0.265
+                                }
+                              },
+                              "right": {
+                                "type": "minecraft:add",
+                                "left": "stellarity:climate/continents",
+                                "right": 0.15
+                              }
+                            },
+                            "right": {
+                              "type": "minecraft:add",
+                              "left": {
+                                "type": "minecraft:mul",
+                                "left": -1,
+                                "right": "stellarity:climate/erosion"
+                              },
+                              "right": -0.065
+                            }
+                          },
+                          "right": {
+                            "type": "minecraft:add",
+                            "left": {
+                              "type": "minecraft:mul",
+                              "left": -1,
+                              "right": "stellarity:climate/ridges"
+                            },
+                            "right": -0.26666668
+                          }
+                        },
+                        "right": 8.333333333333334
+                      },
+                      "right": 0.9
+                    },
+                    "min": 0,
+                    "max": 1
+                  },
+                  "right": {
+                    "type": "minecraft:clamp",
+                    "input": {
+                      "type": "minecraft:add",
+                      "left": {
+                        "type": "minecraft:mul",
+                        "left": {
+                          "type": "minecraft:min",
+                          "left": {
+                            "type": "minecraft:min",
+                            "left": {
+                              "type": "minecraft:min",
+                              "left": {
+                                "type": "minecraft:min",
+                                "left": {
+                                  "type": "minecraft:min",
+                                  "left": {
+                                    "type": "minecraft:add",
+                                    "left": "stellarity:climate/temperature",
+                                    "right": -0.2
+                                  },
+                                  "right": {
+                                    "type": "minecraft:add",
+                                    "left": {
+                                      "type": "minecraft:mul",
+                                      "left": -1,
+                                      "right": "stellarity:climate/temperature"
+                                    },
+                                    "right": 0.48
+                                  }
+                                },
+                                "right": {
+                                  "type": "minecraft:add",
+                                  "left": "stellarity:climate/humidity",
+                                  "right": -0.045
+                                }
+                              },
+                              "right": {
+                                "type": "minecraft:add",
+                                "left": "stellarity:climate/continents",
+                                "right": 0.15
+                              }
+                            },
+                            "right": {
+                              "type": "minecraft:add",
+                              "left": {
+                                "type": "minecraft:mul",
+                                "left": -1,
+                                "right": "stellarity:climate/erosion"
+                              },
+                              "right": -0.065
+                            }
+                          },
+                          "right": {
+                            "type": "minecraft:add",
+                            "left": {
+                              "type": "minecraft:mul",
+                              "left": -1,
+                              "right": "stellarity:climate/ridges"
+                            },
+                            "right": -0.26666668
+                          }
+                        },
+                        "right": 8.333333333333334
+                      },
+                      "right": 0.9
+                    },
+                    "min": 0,
+                    "max": 1
+                  }
+                },
+                "right": {
+                  "type": "minecraft:clamp",
+                  "input": {
+                    "type": "minecraft:add",
+                    "left": {
+                      "type": "minecraft:mul",
+                      "left": {
+                        "type": "minecraft:min",
+                        "left": {
+                          "type": "minecraft:min",
+                          "left": {
+                            "type": "minecraft:min",
+                            "left": {
+                              "type": "minecraft:min",
+                              "left": {
+                                "type": "minecraft:min",
+                                "left": {
+                                  "type": "minecraft:add",
+                                  "left": "stellarity:climate/temperature",
+                                  "right": 0.405
+                                },
+                                "right": {
+                                  "type": "minecraft:add",
+                                  "left": {
+                                    "type": "minecraft:mul",
+                                    "left": -1,
+                                    "right": "stellarity:climate/temperature"
+                                  },
+                                  "right": 0.48
+                                }
+                              },
+                              "right": {
+                                "type": "minecraft:add",
+                                "left": "stellarity:climate/humidity",
+                                "right": -0.265
+                              }
+                            },
+                            "right": {
+                              "type": "minecraft:add",
+                              "left": "stellarity:climate/continents",
+                              "right": 0.15
+                            }
+                          },
+                          "right": {
+                            "type": "minecraft:add",
+                            "left": {
+                              "type": "minecraft:mul",
+                              "left": -1,
+                              "right": "stellarity:climate/erosion"
+                            },
+                            "right": -0.375
+                          }
+                        },
+                        "right": {
+                          "type": "minecraft:add",
+                          "left": "stellarity:climate/ridges",
+                          "right": 0.26666668
+                        }
+                      },
+                      "right": 8.333333333333334
+                    },
+                    "right": 0.9
+                  },
+                  "min": 0,
+                  "max": 1
+                }
+              },
+              "right": {
+                "type": "minecraft:clamp",
+                "input": {
+                  "type": "minecraft:add",
+                  "left": {
+                    "type": "minecraft:mul",
+                    "left": {
+                      "type": "minecraft:min",
+                      "left": {
+                        "type": "minecraft:min",
+                        "left": {
+                          "type": "minecraft:min",
+                          "left": {
+                            "type": "minecraft:min",
+                            "left": {
+                              "type": "minecraft:min",
+                              "left": {
+                                "type": "minecraft:add",
+                                "left": "stellarity:climate/temperature",
+                                "right": -0.2
+                              },
+                              "right": {
+                                "type": "minecraft:add",
+                                "left": {
+                                  "type": "minecraft:mul",
+                                  "left": -1,
+                                  "right": "stellarity:climate/temperature"
+                                },
+                                "right": 0.48
+                              }
+                            },
+                            "right": {
+                              "type": "minecraft:add",
+                              "left": "stellarity:climate/humidity",
+                              "right": -0.045
+                            }
+                          },
+                          "right": {
+                            "type": "minecraft:add",
+                            "left": "stellarity:climate/continents",
+                            "right": 0.15
+                          }
+                        },
+                        "right": {
+                          "type": "minecraft:add",
+                          "left": {
+                            "type": "minecraft:mul",
+                            "left": -1,
+                            "right": "stellarity:climate/erosion"
+                          },
+                          "right": -0.375
+                        }
+                      },
+                      "right": {
+                        "type": "minecraft:add",
+                        "left": "stellarity:climate/ridges",
+                        "right": 0.26666668
+                      }
+                    },
+                    "right": 8.333333333333334
+                  },
+                  "right": 0.9
+                },
+                "min": 0,
+                "max": 1
+              }
+            },
+            "right": {
+              "type": "minecraft:clamp",
+              "input": {
+                "type": "minecraft:add",
+                "left": {
+                  "type": "minecraft:mul",
+                  "left": {
+                    "type": "minecraft:min",
+                    "left": {
+                      "type": "minecraft:min",
+                      "left": {
+                        "type": "minecraft:min",
+                        "left": {
+                          "type": "minecraft:min",
+                          "left": {
+                            "type": "minecraft:min",
+                            "left": {
+                              "type": "minecraft:add",
+                              "left": "stellarity:climate/temperature",
+                              "right": 0.405
+                            },
+                            "right": {
+                              "type": "minecraft:add",
+                              "left": {
+                                "type": "minecraft:mul",
+                                "left": -1,
+                                "right": "stellarity:climate/temperature"
+                              },
+                              "right": 0.48
+                            }
+                          },
+                          "right": {
+                            "type": "minecraft:add",
+                            "left": "stellarity:climate/humidity",
+                            "right": -0.045
+                          }
+                        },
+                        "right": {
+                          "type": "minecraft:add",
+                          "left": "stellarity:climate/continents",
+                          "right": 0.15
+                        }
+                      },
+                      "right": {
+                        "type": "minecraft:add",
+                        "left": {
+                          "type": "minecraft:mul",
+                          "left": -1,
+                          "right": "stellarity:climate/erosion"
+                        },
+                        "right": -0.375
+                      }
+                    },
+                    "right": {
+                      "type": "minecraft:add",
+                      "left": "stellarity:climate/ridges",
+                      "right": 0.05
+                    }
+                  },
+                  "right": 8.333333333333334
+                },
+                "right": 0.9
+              },
+              "min": 0,
+              "max": 1
+            }
+          },
+          "right": {
+            "type": "minecraft:clamp",
+            "input": {
+              "type": "minecraft:add",
+              "left": {
+                "type": "minecraft:mul",
+                "left": {
+                  "type": "minecraft:min",
+                  "left": {
+                    "type": "minecraft:min",
+                    "left": {
+                      "type": "minecraft:min",
+                      "left": {
+                        "type": "minecraft:min",
+                        "left": {
+                          "type": "minecraft:min",
+                          "left": {
+                            "type": "minecraft:min",
+                            "left": {
+                              "type": "minecraft:add",
+                              "left": "stellarity:climate/temperature",
+                              "right": 0.405
+                            },
+                            "right": {
+                              "type": "minecraft:add",
+                              "left": {
+                                "type": "minecraft:mul",
+                                "left": -1,
+                                "right": "stellarity:climate/temperature"
+                              },
+                              "right": 0.48
+                            }
+                          },
+                          "right": {
+                            "type": "minecraft:add",
+                            "left": "stellarity:climate/humidity",
+                            "right": -0.045
+                          }
+                        },
+                        "right": {
+                          "type": "minecraft:add",
+                          "left": "stellarity:climate/continents",
+                          "right": 0.15
+                        }
+                      },
+                      "right": {
+                        "type": "minecraft:add",
+                        "left": "stellarity:climate/erosion",
+                        "right": 0.375
+                      }
+                    },
+                    "right": {
+                      "type": "minecraft:add",
+                      "left": {
+                        "type": "minecraft:mul",
+                        "left": -1,
+                        "right": "stellarity:climate/erosion"
+                      },
+                      "right": -0.065
+                    }
+                  },
+                  "right": {
+                    "type": "minecraft:add",
+                    "left": "stellarity:climate/ridges",
+                    "right": -0.05
+                  }
+                },
+                "right": 8.333333333333334
+              },
+              "right": 0.9
+            },
+            "min": 0,
+            "max": 1
+          }
+        },
+        "right": -0.5
+      },
+      "right": 2.5
+    },
+    "min": 0,
+    "max": 1
+  }
+}

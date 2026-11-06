@@ -50,6 +50,8 @@ function stellarity:util/tellraw/config {title:"Enable Empress of Light",descrip
 
 function stellarity:util/tellraw/config {title:"Enable Shulking",description:"Allows the Shulking to be summoned.",default:{"translate":"gui.stellarity.enabled","color":"#91FF7B"},score:"enable_shulking",numerical:0,suggested_value:1}
 
+function stellarity:util/tellraw/config {title:"Enable Phantom Item Frames",description:"Enables custom Phantom Item Frame mechanics. On servers with existing invisible item frame plugins or heavy frame usage, disable this to maximize tick performance.",default:{"translate":"gui.stellarity.enabled","color":"#91FF7B"},score:"enable_phantom_item_frame",numerical:0,suggested_value:1}
+
 
 tellraw @s {"text":"                                ","color":"gray","strikethrough":true,"bold":true}
 

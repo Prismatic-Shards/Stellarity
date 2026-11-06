@@ -1,1 +1,6 @@
-{"parent":"minecraft:item/generated","textures":{"layer0":"stellarity:item/enderite_shard"}}
+{
+    "parent": "minecraft:item/generated",
+    "textures": {
+        "layer0": "stellarity:item/enderite_shard"
+    }
+}

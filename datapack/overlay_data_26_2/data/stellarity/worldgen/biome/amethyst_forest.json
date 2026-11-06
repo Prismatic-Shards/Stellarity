@@ -4,22 +4,22 @@
   "has_precipitation": false,
   "creature_spawn_probability": 0.2,
   "attributes": {
-    "visual/sky_color": 0,
-    "visual/fog_color": 0,
-    "visual/water_fog_color": 0,
+    "visual/sky_color": 2359366,
+    "visual/fog_color": 10309341,
+    "visual/water_fog_color": 3934572,
     "audio/ambient_sounds": {
       "loop": {
         "sound_id": "stellarity:ambient.the_end.heavenly_grim"
       },
       "mood": {
-        "sound": "ambient.underwater.loop.additions.rare",
-        "tick_delay": 1000,
-        "block_search_extent": 4,
+        "sound": "block.amethyst_block.resonate",
+        "tick_delay": 600,
+        "block_search_extent": 8,
         "offset": 2
       },
       "additions": {
-        "sound": "ambient.underwater.loop.additions.ultra_rare",
-        "tick_chance": 0.001
+        "sound": "block.amethyst_block.chime",
+        "tick_chance": 0.012
       }
     },
     "visual/ambient_particles": {
@@ -27,9 +27,9 @@
       "argument": [
         {
           "particle": {
-            "type": "cherry_leaves"
+            "type": "minecraft:end_rod"
           },
-          "probability": 0.00077
+          "probability": 0.0018
         }
       ]
     }

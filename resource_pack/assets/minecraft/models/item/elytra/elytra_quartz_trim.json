@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/elytra",
+  "textures": {
+    "layer1": "minecraft:trims/items/elytra_trim_quartz"
+  }
+}

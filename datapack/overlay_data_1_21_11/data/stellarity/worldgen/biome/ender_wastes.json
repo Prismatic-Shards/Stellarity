@@ -3,22 +3,22 @@
   "downfall": 0.5,
   "has_precipitation": false,
   "attributes": {
-    "visual/sky_color": 0,
-    "visual/fog_color": 0,
-    "visual/water_fog_color": 3156295,
+    "visual/sky_color": 1050650,
+    "visual/fog_color": 6045045,
+    "visual/water_fog_color": 2626871,
     "audio/ambient_sounds": {
       "loop": {
-        "sound_id": "stellarity:ambient.the_end.dark"
+        "sound_id": "stellarity:ambient.the_end.heavenly_blessed"
       },
       "mood": {
-        "sound": "minecraft:ambient.cave",
-        "tick_delay": 1100,
+        "sound": "ambient.soul_sand_valley.mood",
+        "tick_delay": 900,
         "block_search_extent": 6,
         "offset": 2
       },
       "additions": {
-        "sound": "ambient.nether_wastes.additions",
-        "tick_chance": 0.0111
+        "sound": "ambient.underwater.loop.additions.rare",
+        "tick_chance": 0.008
       }
     },
     "visual/ambient_particles": {
@@ -26,9 +26,9 @@
       "argument": [
         {
           "particle": {
-            "type": "minecraft:ash"
+            "type": "portal"
           },
-          "probability": 0.0055
+          "probability": 0.0012
         }
       ]
     }
@@ -70,9 +70,14 @@
       "energy_budget": 1
     }
   },
-  "carvers": [],
+  "carvers": [
+    "stellarity:the_hallow/crevice"
+  ],
   "features": [
-    ["stellarity:global/stalactite", "stellarity:ender_wastes/hills"],
+    [
+      "stellarity:global/stalactite",
+      "stellarity:ender_wastes/hills"
+    ],
     [],
     [],
     [],
@@ -80,7 +85,16 @@
     [],
     [],
     [],
-    ["stellarity:ender_wastes/chorus_plant"],
-    ["stellarity:global/end_dungeon", "stellarity:global/fossil"]
+    [
+      "stellarity:ender_wastes/chorus_plant"
+    ],
+    [
+      "stellarity:global/end_dungeon",
+      "stellarity:global/fossil",
+      "stellarity:ender_wastes/obsidian_spires",
+      "stellarity:ender_wastes/bone_outcrops",
+      "stellarity:ender_wastes/crying_fissures"
+    ],
+    []
   ]
 }

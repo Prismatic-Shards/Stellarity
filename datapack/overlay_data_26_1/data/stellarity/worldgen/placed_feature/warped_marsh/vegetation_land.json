@@ -41,8 +41,7 @@
             ],
             "blocks": [
               "minecraft:moss_block",
-              "minecraft:coarse_dirt",
-              "minecraft:snow_block"
+              "minecraft:coarse_dirt"
             ]
           },
           {

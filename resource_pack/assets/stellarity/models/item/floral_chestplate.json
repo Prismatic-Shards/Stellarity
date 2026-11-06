@@ -1,1 +1,7 @@
-{"parent":"minecraft:item/generated","textures":{"layer0":"stellarity:item/floral_chestplate","layer1":"stellarity:item/floral_chestplate"}}
+{
+    "parent": "minecraft:item/generated",
+    "textures": {
+        "layer0": "stellarity:item/floral_chestplate",
+        "layer1": "stellarity:item/floral_chestplate"
+    }
+}

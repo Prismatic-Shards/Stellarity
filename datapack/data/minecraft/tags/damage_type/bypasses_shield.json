@@ -7,6 +7,8 @@
     "kohara:true_damage_respects_resistance",
     "kohara:true_damage_difficulty_scaling",
     "stellarity:kaleidoscope",
+    "stellarity:radiant_kaleidoscope",
+    "stellarity:radiant_kaleidoscope_crush",
     "stellarity:dragonblade",
     "#stellarity:dot",
     "stellarity:electric"

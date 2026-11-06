@@ -1,0 +1,32 @@
+{
+  "targets": [
+    "minecraft:crying_obsidian",
+    "minecraft:lodestone",
+    "minecraft:respawn_anchor",
+    "minecraft:enchanting_table"
+  ],
+  "particle_emitters": [
+    {
+      "particle": "stellarity:altar_glyph",
+      "chance": 0.045,
+      "x": "0.5 + (r.rand() - 0.5) * 0.5",
+      "y": "1.05",
+      "z": "0.5 + (r.rand() - 0.5) * 0.5"
+    },
+    {
+      "particle": "stellarity:void_wisp",
+      "chance": 0.02,
+      "x": "0.5 + (r.rand() - 0.5) * 0.6",
+      "y": "0.5 + (r.rand() - 0.5) * 0.6",
+      "z": "0.5 + (r.rand() - 0.5) * 0.6"
+    }
+  ],
+  "sound_emitters": [
+    {
+      "sound": "minecraft:block.respawn_anchor.ambient",
+      "chance": 0.005,
+      "volume": 0.3,
+      "pitch": "0.8 + 0.4 * r.rand()"
+    }
+  ]
+}

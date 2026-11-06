@@ -1,3 +1,9 @@
 {
-  "values": ["kohara:main", "stellarity:main","animated_java:global/on_tick","animated_java:global/data_manager/on_tick"]
+  "values": [
+    "kohara:main",
+    "stellarity:main",
+    "animated_java:global/on_tick",
+    "animated_java:global/data_manager/on_tick",
+    "stellarity_desert_scourge:tick"
+  ]
 }

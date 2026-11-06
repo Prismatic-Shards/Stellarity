@@ -1,0 +1,6 @@
+{
+  "targets": [
+    "minecraft:dragon_breath"
+  ],
+  "size": "SIZE * 3.2 + 1.2"
+}

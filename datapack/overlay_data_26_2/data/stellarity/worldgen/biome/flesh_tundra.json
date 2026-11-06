@@ -3,22 +3,22 @@
   "downfall": 0.4,
   "has_precipitation": false,
   "attributes": {
-    "visual/sky_color": 0,
-    "visual/fog_color": 0,
-    "visual/water_fog_color": 16711680,
+    "visual/sky_color": 1966089,
+    "visual/fog_color": 9051190,
+    "visual/water_fog_color": 5836066,
     "audio/ambient_sounds": {
       "loop": {
-        "sound_id": "stellarity:ambient.the_end.dark"
+        "sound_id": "ambient.crimson_forest.loop"
       },
       "mood": {
         "sound": "ambient.crimson_forest.mood",
-        "tick_delay": 1200,
+        "tick_delay": 600,
         "block_search_extent": 6,
         "offset": 2
       },
       "additions": {
-        "sound": "ambient.warped_forest.additions",
-        "tick_chance": 0.00111
+        "sound": "ambient.crimson_forest.additions",
+        "tick_chance": 0.012
       }
     },
     "visual/ambient_particles": {
@@ -26,9 +26,9 @@
       "argument": [
         {
           "particle": {
-            "type": "crimson_spore"
+            "type": "minecraft:crimson_spore"
           },
-          "probability": 0.0056
+          "probability": 0.003
         }
       ]
     }

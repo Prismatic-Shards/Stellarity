@@ -1,0 +1,14 @@
+{
+  "targets": [
+    "minecraft:glow_lichen",
+    "minecraft:sea_pickle",
+    "minecraft:cave_vines",
+    "minecraft:cave_vines_plant"
+  ],
+  "require_config": "stellarity:colored_lights",
+  "colored_light": {
+    "color": "#9e62e4",
+    "radius": 4,
+    "brightness": 0.6
+  }
+}

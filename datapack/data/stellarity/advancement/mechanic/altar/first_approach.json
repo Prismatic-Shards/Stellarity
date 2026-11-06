@@ -1,0 +1,7 @@
+{
+  "criteria": {
+    "first_altar_approach": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

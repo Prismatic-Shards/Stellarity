@@ -1,0 +1,154 @@
+{
+  "variants": {
+    "thickness=base,vertical_direction=down": {
+      "type": "polytone:expression",
+      "fabric:type": "polytone:expression",
+      "cases": [
+        {
+          "when": "o.biome().contains('frost') || o.biome().contains('frozen')",
+          "model": {
+            "model": "stellarity:block/frosted_pointed_dripstone_down_base"
+          }
+        }
+      ],
+      "fallback": {
+        "model": "minecraft:block/pointed_dripstone_down_base"
+      }
+    },
+    "thickness=frustum,vertical_direction=down": {
+      "type": "polytone:expression",
+      "fabric:type": "polytone:expression",
+      "cases": [
+        {
+          "when": "o.biome().contains('frost') || o.biome().contains('frozen')",
+          "model": {
+            "model": "stellarity:block/frosted_pointed_dripstone_down_frustum"
+          }
+        }
+      ],
+      "fallback": {
+        "model": "minecraft:block/pointed_dripstone_down_frustum"
+      }
+    },
+    "thickness=middle,vertical_direction=down": {
+      "type": "polytone:expression",
+      "fabric:type": "polytone:expression",
+      "cases": [
+        {
+          "when": "o.biome().contains('frost') || o.biome().contains('frozen')",
+          "model": {
+            "model": "stellarity:block/frosted_pointed_dripstone_down_middle"
+          }
+        }
+      ],
+      "fallback": {
+        "model": "minecraft:block/pointed_dripstone_down_middle"
+      }
+    },
+    "thickness=tip,vertical_direction=down": {
+      "type": "polytone:expression",
+      "fabric:type": "polytone:expression",
+      "cases": [
+        {
+          "when": "o.biome().contains('frost') || o.biome().contains('frozen')",
+          "model": {
+            "model": "stellarity:block/frosted_pointed_dripstone_down_tip"
+          }
+        }
+      ],
+      "fallback": {
+        "model": "minecraft:block/pointed_dripstone_down_tip"
+      }
+    },
+    "thickness=tip_merge,vertical_direction=down": {
+      "type": "polytone:expression",
+      "fabric:type": "polytone:expression",
+      "cases": [
+        {
+          "when": "o.biome().contains('frost') || o.biome().contains('frozen')",
+          "model": {
+            "model": "stellarity:block/frosted_pointed_dripstone_down_tip_merge"
+          }
+        }
+      ],
+      "fallback": {
+        "model": "minecraft:block/pointed_dripstone_down_tip_merge"
+      }
+    },
+    "thickness=base,vertical_direction=up": {
+      "type": "polytone:expression",
+      "fabric:type": "polytone:expression",
+      "cases": [
+        {
+          "when": "o.biome().contains('frost') || o.biome().contains('frozen')",
+          "model": {
+            "model": "stellarity:block/frosted_pointed_dripstone_up_base"
+          }
+        }
+      ],
+      "fallback": {
+        "model": "minecraft:block/pointed_dripstone_up_base"
+      }
+    },
+    "thickness=frustum,vertical_direction=up": {
+      "type": "polytone:expression",
+      "fabric:type": "polytone:expression",
+      "cases": [
+        {
+          "when": "o.biome().contains('frost') || o.biome().contains('frozen')",
+          "model": {
+            "model": "stellarity:block/frosted_pointed_dripstone_up_frustum"
+          }
+        }
+      ],
+      "fallback": {
+        "model": "minecraft:block/pointed_dripstone_up_frustum"
+      }
+    },
+    "thickness=middle,vertical_direction=up": {
+      "type": "polytone:expression",
+      "fabric:type": "polytone:expression",
+      "cases": [
+        {
+          "when": "o.biome().contains('frost') || o.biome().contains('frozen')",
+          "model": {
+            "model": "stellarity:block/frosted_pointed_dripstone_up_middle"
+          }
+        }
+      ],
+      "fallback": {
+        "model": "minecraft:block/pointed_dripstone_up_middle"
+      }
+    },
+    "thickness=tip,vertical_direction=up": {
+      "type": "polytone:expression",
+      "fabric:type": "polytone:expression",
+      "cases": [
+        {
+          "when": "o.biome().contains('frost') || o.biome().contains('frozen')",
+          "model": {
+            "model": "stellarity:block/frosted_pointed_dripstone_up_tip"
+          }
+        }
+      ],
+      "fallback": {
+        "model": "minecraft:block/pointed_dripstone_up_tip"
+      }
+    },
+    "thickness=tip_merge,vertical_direction=up": {
+      "type": "polytone:expression",
+      "fabric:type": "polytone:expression",
+      "cases": [
+        {
+          "when": "o.biome().contains('frost') || o.biome().contains('frozen')",
+          "model": {
+            "model": "stellarity:block/frosted_pointed_dripstone_up_tip_merge"
+          }
+        }
+      ],
+      "fallback": {
+        "model": "minecraft:block/pointed_dripstone_up_tip_merge"
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "": {
+      "type": "polytone:expression",
+      "fabric:type": "polytone:expression",
+      "cases": [
+        {
+          "when": "o.biome().contains('stellarity:') || o.biome().contains('end')",
+          "model": {
+            "model": "stellarity:block/rooted_ender_dirt"
+          }
+        }
+      ],
+      "fallback": {
+        "model": "minecraft:block/rooted_dirt"
+      }
+    }
+  }
+}

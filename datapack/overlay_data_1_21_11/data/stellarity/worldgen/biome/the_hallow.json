@@ -2,24 +2,24 @@
   "temperature": 0.6,
   "downfall": 0.6,
   "has_precipitation": false,
-  "creature_spawn_probability": 0.3,
+  "creature_spawn_probability": 0.2,
   "attributes": {
-    "visual/sky_color": 8103167,
-    "visual/fog_color": 12638463,
-    "visual/water_fog_color": 15034111,
+    "visual/sky_color": 5100001,
+    "visual/fog_color": 16295362,
+    "visual/water_fog_color": 16027569,
     "audio/ambient_sounds": {
       "loop": {
-        "sound_id": "stellarity:ambient.the_end.heavenly_blessed"
+        "sound_id": "stellarity:ambient.the_hallow.loop"
       },
       "mood": {
-        "sound": "ambient.soul_sand_valley.mood",
-        "tick_delay": 900,
-        "block_search_extent": 2,
+        "sound": "minecraft:block.amethyst_block.resonate",
+        "tick_delay": 600,
+        "block_search_extent": 8,
         "offset": 2
       },
       "additions": {
-        "sound": "ambient.underwater.loop.additions.rare",
-        "tick_chance": 0.00055
+        "sound": "minecraft:block.amethyst_block.chime",
+        "tick_chance": 0.015
       }
     },
     "visual/ambient_particles": {
@@ -27,15 +27,15 @@
       "argument": [
         {
           "particle": {
-            "type": "minecraft:cherry_leaves"
+            "type": "cherry_leaves"
           },
-          "probability": 0.0012
+          "probability": 0.0035
         }
       ]
     }
   },
   "effects": {
-    "water_color": 15368447,
+    "water_color": 5100001,
     "grass_color": 6078719,
     "foliage_color": 5819646
   },
@@ -51,51 +51,59 @@
     "creature": [
       {
         "type": "pig",
-        "maxCount": 4,
+        "weight": 20,
         "minCount": 1,
-        "weight": 20
-      },
-      {
-        "type": "cow",
-        "maxCount": 4,
-        "minCount": 1,
-        "weight": 20
+        "maxCount": 4
       },
       {
         "type": "sheep",
-        "maxCount": 4,
+        "weight": 20,
         "minCount": 1,
-        "weight": 20
+        "maxCount": 4
+      },
+      {
+        "type": "cow",
+        "weight": 20,
+        "minCount": 1,
+        "maxCount": 4
       },
       {
         "type": "chicken",
-        "maxCount": 4,
+        "weight": 20,
         "minCount": 1,
-        "weight": 20
+        "maxCount": 4
       },
       {
         "type": "wolf",
-        "maxCount": 4,
+        "weight": 20,
         "minCount": 1,
-        "weight": 20
+        "maxCount": 4
       }
     ]
   },
   "spawn_costs": {
     "minecraft:vex": {
-      "energy_budget": 0.25,
-      "charge": 1
+      "energy_budget": 1.0,
+      "charge": 0.6
     }
   },
-  "carvers": [],
+  "carvers": [
+    "stellarity:the_hallow/cave",
+    "stellarity:the_hallow/crevice"
+  ],
   "features": [
-    ["stellarity:the_hallow/stalactite"],
+    [
+      "stellarity:the_hallow/stalactite",
+      "stellarity:the_hallow/island/calcite_bottom"
+    ],
+    [
+      "stellarity:the_hallow/large_lake"
+    ],
     [
       "stellarity:the_hallow/crystals",
       "stellarity:the_hallow/crystals_amethyst",
       "stellarity:the_hallow/rock"
     ],
-    ["stellarity:the_hallow/large_lake"],
     [],
     [],
     [],
