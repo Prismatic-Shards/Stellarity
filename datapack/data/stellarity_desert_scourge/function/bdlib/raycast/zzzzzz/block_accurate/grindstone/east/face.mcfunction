@@ -1,3 +1,0 @@
-execute if block ~ ~ ~ grindstone[face=floor] run function stellarity_desert_scourge:bdlib/raycast/zzzzzz/block_accurate/grindstone/east/floor
-execute if block ~ ~ ~ grindstone[face=wall] run function stellarity_desert_scourge:bdlib/raycast/zzzzzz/block_accurate/grindstone/east/wall
-execute if block ~ ~ ~ grindstone[face=ceiling] run function stellarity_desert_scourge:bdlib/raycast/zzzzzz/block_accurate/grindstone/east/ceiling

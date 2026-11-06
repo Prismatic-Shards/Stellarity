@@ -1,2 +1,0 @@
-#> player_motion:internal/summon/main
-$execute facing ~$(motion_x) ~$(motion_y) ~$(motion_z) run function stellarity_desert_scourge:player_motion/internal/summon/crystal with storage stellarity_desert_scourge:player_motion_math

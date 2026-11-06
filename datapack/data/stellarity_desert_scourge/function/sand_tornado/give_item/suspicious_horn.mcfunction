@@ -1,3 +1,0 @@
-playsound minecraft:entity.breeze.slide player @s ~ ~ ~ 1 2
-item replace entity @s weapon.mainhand with goat_horn[custom_name='{"fallback":"Suspicious Horn","italic":false,"translate":"item.suspicious_horn.name"}',lore=['{"color":"gold","fallback":"\\"...There is always a bigger fish in the sea.\\"","italic":false,"translate":"item.suspicious_horn.lore"}'],rarity="rare",custom_model_data={floats:[2385701f]},custom_data={suspicious_horn:1},instrument="minecraft:yearn_goat_horn",tooltip_display={hidden_components:["instrument"]}] 1
-advancement grant @s only stellarity_desert_scourge:the_doom_horn

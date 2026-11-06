@@ -1,1 +1,0 @@
-$execute positioned ~ ~-6 ~ rotated $(rotation) ~ positioned ^ ^ ^8 run function stellarity_desert_scourge:worm_create/init with storage stellarity_desert_scourge:temp spawn_worm

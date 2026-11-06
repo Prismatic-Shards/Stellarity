@@ -1,2 +1,0 @@
-data remove storage stellarity_desert_scourge:bdlib_temp block.offset
-$execute store success score #HAS bdlib.block.offset run data modify storage stellarity_desert_scourge:bdlib_temp block.offset set from storage stellarity_desert_scourge:bdlib_temp block.offsets[{coords:[$(x), $(z)]}]

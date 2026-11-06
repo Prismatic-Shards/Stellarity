@@ -1,9 +1,0 @@
-{
-  "entity": "this",
-  "predicate": {
-    "effects": {
-      "minecraft:glowing": {}
-    }
-  },
-  "type": "minecraft:entity_properties"
-}

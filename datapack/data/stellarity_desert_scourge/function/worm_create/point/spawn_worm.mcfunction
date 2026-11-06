@@ -1,2 +1,0 @@
-execute store result storage stellarity_desert_scourge:temp spawn_worm.rotation int 1 run random value 0..360
-function stellarity_desert_scourge:worm_create/point/spawn_worm_macros with storage stellarity_desert_scourge:temp spawn_worm

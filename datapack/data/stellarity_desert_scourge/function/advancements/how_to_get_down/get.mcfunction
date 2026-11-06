@@ -1,2 +1,0 @@
-advancement grant @s only stellarity_desert_scourge:how_to_get_down
-scoreboard players reset @s sandTornadoAdvancementTimer

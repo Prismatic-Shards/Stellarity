@@ -1,1 +1,0 @@
-$execute store result score #OUT bdlib.vector run data get storage stellarity_desert_scourge:bdlib_const tables.1_div_sin[$(t)] $(y)

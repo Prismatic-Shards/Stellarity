@@ -1,6 +1,0 @@
-{
-  "predicate": {
-    "biomes": "stellarity:endless_dunes"
-  },
-  "type": "minecraft:location_check"
-}
